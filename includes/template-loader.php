@@ -51,7 +51,7 @@ if(!function_exists('elemental_addons_get_widgetcore_template_part')) {
 	 */
 	function elemental_addons_get_widgetcore_template_part( $slug, $name = null, $folder = '', $params = array(), $shortcode_ob_start = false ) {
 
-		$template_path = 'widgets-core/' . $folder . '/' . $slug;
+		$template_path = 'widgets/' . $folder . '/' . $slug;
 
 		return elemental_addons_get_template_part( $template_path, $name, $params, $shortcode_ob_start );
 

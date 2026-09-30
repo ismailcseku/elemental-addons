@@ -32,14 +32,14 @@ if ( ! class_exists( 'Elemental_Addons_Plugin' ) ) {
 				'widgets/image-gallery'          => '\ElementalAddons\Widgets\ImageGallery\TM_Elementor_Image_Gallery',
 				'widgets/features-block'         => '\ElementalAddons\Widgets\FeaturesBlock\TM_Elementor_FeaturesBlock',
 				'widgets/counter-block'          => '\ElementalAddons\Widgets\CounterBlock\TM_Elementor_CounterBlock',
-				'widgets-core/accordion'         => '\ElementalAddons\Widgets\Accordion\TM_Elementor_Accordion',
-				'widgets-core/animated-layers'   => '\ElementalAddons\Widgets\TM_Elementor_Animated_Layers',
-				'widgets-core/clients-logo'      => '\ElementalAddons\Widgets\TM_Elementor_Clients_logo',
-				'widgets-core/contact-form-7'    => '\ElementalAddons\Widgets\TM_Elementor_Contact_Form_7',
-				'widgets-core/floating-objects'  => '\ElementalAddons\Widgets\TM_Elementor_Floating_Objects',
-				'widgets-core/funfact-counter'   => '\ElementalAddons\Widgets\TM_Elementor_Funfact_Counter',
-				'widgets-core/progress-bar'      => '\ElementalAddons\Widgets\TM_Elementor_Progress_Bar',
-				'widgets-core/section-title'     => '\ElementalAddons\Widgets\TM_Elementor_Section_Title',
+				'widgets/accordion'              => '\ElementalAddons\Widgets\Accordion\TM_Elementor_Accordion',
+				'widgets/animated-layers'        => '\ElementalAddons\Widgets\TM_Elementor_Animated_Layers',
+				'widgets/clients-logo'           => '\ElementalAddons\Widgets\TM_Elementor_Clients_logo',
+				'widgets/contact-form-7'         => '\ElementalAddons\Widgets\TM_Elementor_Contact_Form_7',
+				'widgets/floating-objects'       => '\ElementalAddons\Widgets\TM_Elementor_Floating_Objects',
+				'widgets/funfact-counter'        => '\ElementalAddons\Widgets\TM_Elementor_Funfact_Counter',
+				'widgets/progress-bar'           => '\ElementalAddons\Widgets\TM_Elementor_Progress_Bar',
+				'widgets/section-title'          => '\ElementalAddons\Widgets\TM_Elementor_Section_Title',
 			);
 		}
 
