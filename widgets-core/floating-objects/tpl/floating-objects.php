@@ -1,0 +1,1 @@
+<span class="<?php echo esc_attr(implode(' ', $img_classes)); ?>" <?php if(isset($parallax_params)) : ?> data-parallax="<?php echo esc_attr($parallax_params); ?>" <?php endif; ?> style="<?php echo esc_attr($wrapper_inline_css); ?>"></span>

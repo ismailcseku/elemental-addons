@@ -1,0 +1,44 @@
+.counter-item-style4 .inner-block {
+  position: relative;
+}
+.counter-item-style4 .inner-block .content {
+  border-bottom: 1px solid rgba(var(--theme-color2-rgb), 0.1);
+  padding-bottom: 10px;
+  margin-bottom: 26px;
+}
+.counter-item-style4 .inner-block .content .title {
+  font-weight: 500;
+  padding-left: 18px;
+  position: relative;
+  color: var(--theme-color2);
+}
+.counter-item-style4 .inner-block .content .title:before {
+  background-color: var(--theme-color1);
+  border-radius: 1px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  height: 6px;
+  width: 6px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.counter-item-style4 .inner-block .title-box .count-box {
+  color: var(--theme-color2);
+}
+.counter-item-style4 .inner-block .title-box .count-box .counter {
+  font-weight: 600;
+}
+.counter-item-style4 .inner-block .title-box .count-box .counter .animate-number {
+  color: var(--theme-color2);
+  font-size: 80px;
+  line-height: 1;
+}
+.counter-item-style4 .inner-block .title-box .count-box .counter .counter-postfix {
+  color: var(--theme-color2);
+  font-size: 80px;
+  line-height: 1;
+}

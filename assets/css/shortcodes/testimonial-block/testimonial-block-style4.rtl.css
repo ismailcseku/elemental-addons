@@ -1,0 +1,114 @@
+.tm-sc-testimonials .star-rating {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  height: 1.1em;
+  line-height: 1.2;
+  font-size: 0.9em;
+  width: 5.6em;
+}
+.tm-sc-testimonials .star-rating::before {
+  content: "\f005\f005\f005\f005\f005";
+  color: #d3ced2;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 500;
+  float: right;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+.tm-sc-testimonials .star-rating span {
+  overflow: hidden;
+  float: right;
+  top: 0;
+  right: 0;
+  position: absolute;
+  padding-top: 1.5em;
+}
+.tm-sc-testimonials .star-rating span::before {
+  content: "\f005\f005\f005\f005\f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 500;
+  color: #f1c40f;
+  top: 0;
+  position: absolute;
+  right: 0;
+}
+.tm-sc-testimonials .star-rating {
+  float: none;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  overflow: visible;
+}
+.tm-sc-testimonials .star-rating span:before {
+  color: var(--theme-color2);
+}
+.tm-sc-testimonials .author-text,
+.tm-sc-testimonials .name,
+.tm-sc-testimonials .job-position {
+  transition: all 0.3s ease-in-out;
+}
+.tm-sc-testimonials .star-rating span:before {
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonial-block-style4 {
+  position: relative;
+  margin-bottom: 30px;
+}
+.testimonial-block-style4 .inner {
+  position: relative;
+  padding: 40px;
+  border-radius: 30px;
+  background-color: #f6f6f6;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+}
+@media (max-width: 767.98px) {
+  .testimonial-block-style4 .inner {
+    padding: 25px;
+  }
+}
+.testimonial-block-style4 .inner .author {
+  position: relative;
+  width: 65px;
+  height: 65px;
+  overflow: hidden;
+  border-radius: 120px;
+}
+.testimonial-block-style4 .inner .testimonial-title {
+  position: relative;
+  color: var(--theme-color3);
+  font-weight: 500;
+  margin-top: 30px;
+}
+.testimonial-block-style4 .inner .author-text {
+  position: relative;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  color: var(--headings-color);
+}
+.testimonial-block-style4 .inner .info {
+  position: relative;
+  font-size: 14px;
+  margin-top: 25px;
+}
+.testimonial-block-style4 .inner .info i,
+.testimonial-block-style4 .inner .info svg {
+  position: absolute;
+  font-size: 66px;
+  display: block;
+  color: #e9eded;
+  left: 0;
+  top: -10px;
+}
+.testimonial-block-style4 .inner .info svg {
+  width: 54px;
+}
+.testimonial-block-style4 .inner .info .testimonial-name {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  color: var(--theme-color2);
+}

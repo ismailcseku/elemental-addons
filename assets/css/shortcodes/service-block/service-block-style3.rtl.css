@@ -1,0 +1,223 @@
+.tm-sc-service .icon {
+  display: inline-block;
+}
+.tm-sc-service .icon,
+.tm-sc-service .feature-title,
+.tm-sc-service .feature-details {
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.service-block-style3 .inner-block {
+  background-color: #fff;
+  border-radius: 20px;
+  position: relative;
+  transition: all 300ms ease;
+}
+.service-block-style3 .inner-block:hover,
+.service-block-style3 .inner-block .active {
+  background-color: var(--theme-color2);
+}
+.service-block-style3 .inner-block:hover .image-box .image,
+.service-block-style3 .inner-block .active .image-box .image {
+  opacity: 1;
+}
+.service-block-style3 .inner-block:hover .image-box .image:before,
+.service-block-style3 .inner-block .active .image-box .image:before {
+  height: 0;
+}
+.service-block-style3 .inner-block:hover .image-box .image:after,
+.service-block-style3 .inner-block .active .image-box .image:after {
+  height: 100%;
+}
+.service-block-style3 .inner-block:hover .image-box .image img:first-child,
+.service-block-style3 .inner-block .active .image-box .image img:first-child {
+  transform: translateX(0) scaleX(1);
+  opacity: 1;
+  filter: blur(0);
+}
+.service-block-style3 .inner-block:hover .image-box .image img:nth-child(2),
+.service-block-style3 .inner-block .active .image-box .image img:nth-child(2) {
+  transform: translateX(50%) scaleX(2);
+  opacity: 0;
+  filter: blur(10px);
+}
+.service-block-style3 .inner-block:hover .content-box .icon-block,
+.service-block-style3 .inner-block .active .content-box .icon-block {
+  background-color: #fff;
+}
+.service-block-style3 .inner-block:hover .content-box .icon-block i,
+.service-block-style3 .inner-block:hover .content-box .icon-block img,
+.service-block-style3 .inner-block .active .content-box .icon-block i,
+.service-block-style3 .inner-block .active .content-box .icon-block img {
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.service-block-style3 .inner-block:hover .content-box .service-title,
+.service-block-style3 .inner-block .active .content-box .service-title {
+  color: #fff;
+}
+.service-block-style3 .inner-block:hover .content-box .service-details,
+.service-block-style3 .inner-block .active .content-box .service-details {
+  color: #fff;
+}
+.service-block-style3 .inner-block:hover .content-box .btn-more,
+.service-block-style3 .inner-block .active .content-box .btn-more {
+  background-color: var(--theme-color3);
+  color: var(--theme-color3-text-color);
+}
+.service-block-style3 .inner-block:hover .shape-style1 svg path,
+.service-block-style3 .inner-block .active .shape-style1 svg path {
+  fill: var(--theme-color1);
+}
+.service-block-style3 .inner-block .image-box {
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+.service-block-style3 .inner-block .image-box .image {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  z-index: 0;
+  opacity: 0;
+}
+.service-block-style3 .inner-block .image-box .image:before {
+  background-color: #fff;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  transition: all 300ms ease;
+}
+.service-block-style3 .inner-block .image-box .image:after {
+  background-color: rgba(var(--theme-color2-rgb), 0.8);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 0;
+  width: 100%;
+  z-index: 2;
+  transition: all 300ms ease;
+}
+.service-block-style3 .inner-block .image-box .image img {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: all 500ms ease;
+}
+.service-block-style3 .inner-block .image-box .image img:first-child {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  z-index: 1;
+  transform: translateX(-50%) scaleX(2);
+  opacity: 0;
+  filter: blur(10px);
+}
+.service-block-style3 .inner-block .content-box {
+  padding: 30px 30px 24px;
+  position: relative;
+}
+.service-block-style3 .inner-block .content-box .icon-block {
+  background-color: #f5fbf7;
+  border-radius: 50%;
+  height: 70px;
+  line-height: 1;
+  width: 70px;
+  font-size: 40px;
+  color: var(--theme-color1);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  margin-bottom: 23px;
+  transition: all 300ms ease;
+}
+.service-block-style3 .inner-block .content-box .icon-block .icon {
+  position: relative;
+  top: 4px;
+}
+.service-block-style3 .inner-block .content-box .icon-block i,
+.service-block-style3 .inner-block .content-box .icon-block img {
+  display: inline-block;
+  position: relative;
+  transition: all 300ms ease;
+}
+.service-block-style3 .inner-block .content-box .service-title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  transition: all 300ms ease;
+}
+.service-block-style3 .inner-block .content-box .service-title a:hover, .service-block-style3 .inner-block .content-box .service-title a:focus {
+  color: #fff;
+}
+.service-block-style3 .inner-block .content-box .service-details {
+  margin-bottom: 34px;
+  color: #6d827c;
+  transition: all 300ms ease;
+}
+.service-block-style3 .inner-block .content-box .btn-more {
+  background-color: #f5fbf7;
+  border-radius: 10px;
+  color: var(--theme-color2);
+  padding: 6px 20px 6px 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 300ms ease;
+}
+.service-block-style3 .inner-block .content-box .btn-more .btn-title {
+  transition: all 300ms ease;
+}
+.service-block-style3 .inner-block .content-box .btn-more .btn-icon {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 40px;
+  line-height: 1;
+  width: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms ease;
+}
+.service-block-style3 .inner-block .content-box .btn-more i,
+.service-block-style3 .inner-block .content-box .btn-more img {
+  display: inline-block;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition: all 300ms ease;
+}
+.service-block-style3 .inner-block .content-box .btn-more:hover i,
+.service-block-style3 .inner-block .content-box .btn-more:hover img {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.service-block-style3 .inner-block .shape-style1 {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 30px;
+  width: 93px;
+  height: 61px;
+  background-image: url(../../../images/current-theme/leaf.png);
+  transition: all 300ms ease;
+}

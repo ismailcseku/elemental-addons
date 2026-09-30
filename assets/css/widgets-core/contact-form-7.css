@@ -1,0 +1,37 @@
+.tm-contact-form-7 {
+  transition: all 0.3s ease;
+}
+.tm-contact-form-7 .wpcf7-form {
+  display: flex;
+  flex-direction: column;
+}
+.tm-contact-form-7.labels-hide .wpcf7-form label {
+  display: none;
+}
+
+.tm-contact-form-7-button-align-left .tm-contact-form-7 .wpcf7-form .wpcf7-submit {
+  margin-right: auto;
+  display: inline-block;
+}
+
+.tm-contact-form-7-button-align-center .tm-contact-form-7 .wpcf7-form .wpcf7-submit {
+  margin: 0 auto;
+  display: block;
+}
+
+.tm-contact-form-7-button-align-right .tm-contact-form-7 .wpcf7-form .wpcf7-submit {
+  margin-left: auto;
+  margin-right: 0;
+  display: block;
+}
+
+.tm-contact-form-7-button-full-width .tm-contact-form-7 .wpcf7-form .wpcf7-submit {
+  display: grid;
+  width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tm-contact-form-7 {
+    transition: none;
+  }
+}

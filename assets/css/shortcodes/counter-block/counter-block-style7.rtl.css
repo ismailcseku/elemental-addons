@@ -1,0 +1,61 @@
+.counter-block-seven {
+  position: relative;
+  margin-bottom: 50px;
+}
+.counter-block-seven:last-child .inner:before {
+  display: none;
+}
+.counter-block-seven .inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 300ms ease;
+}
+.counter-block-seven .content {
+  position: relative;
+  text-align: center;
+  transition: all 300ms ease;
+  z-index: 9;
+}
+.counter-block-seven .content:hover .icon {
+  -webkit-transform: scale(-1) rotate(-180deg);
+  -moz-transform: scale(-1) rotate(-180deg);
+  -ms-transform: scale(-1) rotate(-180deg);
+  transform: scale(-1) rotate(-180deg);
+}
+.counter-block-seven .icon {
+  position: absolute;
+  left: -70px;
+  top: -20px;
+  color: var(--headings-color);
+  font-family: var(--body-font-family);
+  font-size: 80px;
+  z-index: 1;
+  transition: all 300ms ease;
+  margin-bottom: 20px;
+}
+.counter-block-seven .count-box {
+  position: relative;
+  font-size: 60px;
+  color: var(--theme-color2);
+  line-height: 1em;
+  letter-spacing: -0.04em;
+  display: block;
+  margin-bottom: 15px;
+}
+.counter-block-seven .count-box .counter {
+  font-size: 60px;
+  line-height: 1em;
+  display: block;
+}
+.counter-block-seven .title {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6a6f78;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-bottom: 0;
+}

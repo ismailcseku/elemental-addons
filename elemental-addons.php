@@ -1,0 +1,65 @@
+<?php
+/**
+ * Plugin Name:       Elemental Addons for Elementor
+ * Plugin URI:        https://wordpress.org/plugins/elemental-addons/
+ * Description:       Extra Elementor widgets for teams, services, pricing, galleries, testimonials, counters, and section titles.
+ * Version:           1.0.0
+ * Requires at least: 6.2
+ * Requires PHP:      7.4
+ * Author:            ThemeMascot
+ * Author URI:        https://kodesolution.com
+ * License:           GPL-2.0-or-later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain:       elemental-addons
+ * Domain Path:       /languages
+ *
+ * @package Elemental_Addons
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+define( 'ELEMENTAL_ADDONS_VERSION', '1.0.0' );
+define( 'ELEMENTAL_ADDONS_FILE', __FILE__ );
+define( 'ELEMENTAL_ADDONS_ABS_PATH', plugin_dir_path( __FILE__ ) );
+define( 'ELEMENTAL_ADDONS_URI', plugin_dir_url( __FILE__ ) );
+define( 'ELEMENTAL_ADDONS_ASSETS_URI', ELEMENTAL_ADDONS_URI . 'assets' );
+
+/**
+ * Show an admin notice when Elementor is not active.
+ */
+function elemental_addons_missing_elementor_notice() {
+	if ( ! current_user_can( 'activate_plugins' ) ) {
+		return;
+	}
+
+	echo '<div class="notice notice-warning"><p>';
+	echo esc_html__( 'Elemental Addons for Elementor requires Elementor to be installed and active.', 'elemental-addons' );
+	echo '</p></div>';
+}
+
+/**
+ * Bootstrap after Elementor is available.
+ */
+function elemental_addons_init() {
+	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/compat.php';
+	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/template-loader.php';
+	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/helpers.php';
+	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/controls.php';
+	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/class-plugin.php';
+
+	Elemental_Addons_Plugin::instance();
+}
+add_action( 'elementor/loaded', 'elemental_addons_init' );
+
+/**
+ * Notice only when Elementor never loaded.
+ */
+function elemental_addons_maybe_missing_elementor_notice() {
+	if ( did_action( 'elementor/loaded' ) ) {
+		return;
+	}
+	elemental_addons_missing_elementor_notice();
+}
+add_action( 'admin_notices', 'elemental_addons_maybe_missing_elementor_notice' );

@@ -1,0 +1,1 @@
+<div class="pricing-date"><?php echo $date;?></div>

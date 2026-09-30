@@ -1,0 +1,1 @@
+<img class="title-icon" src="<?php $image = wp_get_attachment_image_src( $title_icon['id'], 'full'); echo esc_url( $image[0] );?>" alt="<?php esc_attr_e( 'icon', 'elemental-addons'); ?>">

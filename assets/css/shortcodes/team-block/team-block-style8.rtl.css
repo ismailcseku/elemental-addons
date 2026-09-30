@@ -1,0 +1,86 @@
+.team-current-theme8 .inner-box {
+  position: relative;
+  margin-bottom: 26px;
+  text-align: center;
+}
+.team-current-theme8 .inner-box:hover .image-box .image .shape-style1 path {
+  fill: var(--theme-color1);
+}
+.team-current-theme8 .inner-box:hover .social-links {
+  opacity: 1;
+  transform: translateY(-30px);
+}
+.team-current-theme8 .inner-box .image-box {
+  position: relative;
+}
+.team-current-theme8 .inner-box .image-box .image {
+  background-color: #222222;
+  border-radius: 20px;
+  display: block;
+  margin-bottom: 0;
+  padding-top: 48px;
+  position: relative;
+  z-index: 1;
+  transition: all 300ms ease;
+}
+.team-current-theme8 .inner-box .image-box .image .shape-style1 {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  z-index: -1;
+  height: 543px;
+  width: 304px;
+  transform: translateX(50%);
+  transition: all 300ms ease;
+}
+.team-current-theme8 .inner-box .image-box .image .shape-style1 path {
+  fill: rgba(102, 102, 102, 0.2705882353);
+  transition: all 300ms ease;
+}
+.team-current-theme8 .social-links {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  list-style: none;
+  opacity: 0;
+  transition: all 300ms ease;
+  transform: translateY(0);
+}
+.team-current-theme8 .social-links li {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: var(--theme-color-gray);
+  margin-bottom: 0;
+}
+.team-current-theme8 .social-links li:hover {
+  background-color: var(--theme-color1);
+}
+.team-current-theme8 .social-links li:hover a {
+  color: var(--theme-color2);
+}
+.team-current-theme8 .social-links li a {
+  color: #fff;
+}
+.team-current-theme8 .content-box {
+  position: relative;
+  margin: 20px 0 0;
+}
+.team-current-theme8 .content-box .team-title {
+  color: var(--headings-color);
+  margin-bottom: 0;
+  transition: all 300ms ease;
+}
+.team-current-theme8 .content-box .team-title a:hover {
+  color: var(--theme-color1);
+}
+.team-current-theme8 .content-box .team-subtitle {
+  color: #666666;
+  font-size: 14px;
+  transition: all 300ms ease;
+}

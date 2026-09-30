@@ -1,0 +1,12 @@
+:root {
+	--theme-color1: #1b6bff;
+	--theme-color2: #111827;
+	--theme-color3: #0f766e;
+	--theme-color4: #f59e0b;
+}
+
+.elemental-addons-notice {
+	padding: 12px 16px;
+	background: #fff8e5;
+	border: 1px solid #f0d48a;
+}

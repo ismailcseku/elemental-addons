@@ -1,0 +1,82 @@
+/*
+ * progress-bar.scss
+ * -----------------------------------------------
+*/
+.progress-bar-striped .progress-bar,
+.progress-striped .progress-bar {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 40px 40px;
+}
+
+.tm-sc-progress-bar .progress-title-holder {
+  position: relative;
+}
+.tm-sc-progress-bar .progress-title-holder .pb-title {
+  margin-bottom: 1rem;
+}
+.tm-sc-progress-bar .progress-title-holder p {
+  margin-bottom: 0;
+}
+.tm-sc-progress-bar .progress-holder {
+  position: relative;
+  height: 3px;
+  background-color: #e9ecef;
+}
+.tm-sc-progress-bar .progress-holder .progress-content {
+  height: 3px;
+  width: 0;
+  max-width: 100%;
+  overflow: visible !important;
+  background-color: var(--theme-color1);
+  position: relative;
+}
+.tm-sc-progress-bar .progress-holder .progress-content:after {
+  box-shadow: inset 0 0 0 3px var(--theme-color1);
+}
+.tm-sc-progress-bar.progress-bar-default .progress-holder {
+  display: flex;
+  height: 1.1rem;
+  font-size: 0.75rem;
+}
+.tm-sc-progress-bar.progress-bar-default .progress-holder .progress-content {
+  color: #fff;
+  height: 1.1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+}
+.tm-sc-progress-bar.progress-bar-default .progress-holder .progress-content span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tm-sc-progress-bar.progress-bar-floating-percent .progress-title-holder {
+  position: relative;
+}
+.tm-sc-progress-bar.progress-bar-floating-percent .progress-title-holder .percent {
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.tm-sc-progress-bar.progress-bar-fixed-right-percent .progress-title-holder {
+  position: relative;
+}
+.tm-sc-progress-bar.progress-bar-fixed-right-percent .progress-title-holder .percent {
+  position: absolute;
+  right: 0;
+  bottom: 1px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 10;
+}

@@ -1,0 +1,76 @@
+.team-current-theme2 .inner-block {
+  border-radius: 10px;
+  position: relative;
+}
+.team-current-theme2 .inner-block:hover .content {
+  background: linear-gradient(180deg, rgba(15, 53, 45, 0.4) -6.25%, rgba(18, 66, 56, 0.35) 100%);
+}
+.team-current-theme2 .inner-block:hover .content .social-links {
+  margin-bottom: 0;
+  opacity: 1;
+  visibility: visible;
+}
+.team-current-theme2 .inner-block .image {
+  position: relative;
+  border-radius: 10px;
+}
+.team-current-theme2 .inner-block .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  transition: all 300ms ease;
+}
+.team-current-theme2 .inner-block .content {
+  background: linear-gradient(180deg, rgba(15, 53, 45, 0.45) -6.25%, rgba(18, 66, 56, 0.4) 100%);
+  backdrop-filter: blur(60px);
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  text-align: center;
+  padding: 22px 25px 25px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 300ms ease;
+}
+@media (max-width: 575.98px) {
+  .team-current-theme2 .inner-block .content {
+    padding: 22px 15px 25px;
+  }
+}
+.team-current-theme2 .inner-block .content .team-title {
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.team-current-theme2 .inner-block .content .team-subtitle {
+  color: rgba(255, 255, 255, 0.65);
+}
+.team-current-theme2 .inner-block .content .social-links {
+  gap: 3.5px;
+  margin-top: 18px;
+  margin-bottom: -60px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms ease;
+}
+.team-current-theme2 .inner-block .content .social-links a {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  display: inline-block;
+  color: #fff;
+  height: 36px;
+  line-height: 38px;
+  text-align: center;
+  width: 36px;
+}
+.team-current-theme2 .inner-block .content .social-links a:hover {
+  background-color: var(--theme-color1);
+  border-color: var(--theme-color1);
+  color: var(--theme-color1-text-color);
+}

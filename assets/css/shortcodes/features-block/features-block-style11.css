@@ -1,0 +1,122 @@
+.tm-sc-features .icon {
+  display: inline-block;
+}
+.tm-sc-features .icon,
+.tm-sc-features .features-title,
+.tm-sc-features .features-details {
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.feature-side-line {
+  position: relative;
+}
+.feature-side-line .icon-box-wrapper:after {
+  content: "";
+  background: #333;
+  width: 2px;
+  position: absolute;
+  left: 25px;
+  top: 60px;
+  bottom: -12px;
+}
+@media (max-width: 575.98px) {
+  .feature-side-line .icon-box-wrapper:after {
+    display: none;
+  }
+}
+
+.features-block-style11 {
+  position: relative;
+  margin-bottom: 30px;
+}
+.features-block-style11 .info-box-wrapper {
+  background-color: var(--theme-color-white);
+  position: relative;
+  display: block;
+  text-align: center;
+  padding: 50px 25px 45px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 40px 0px rgba(22, 32, 60, 0.08);
+  overflow: hidden;
+  transition: all 500ms ease;
+}
+.features-block-style11 .info-box-wrapper:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  background-image: url(../../../images/current-theme/icon-shape-9.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  content: "";
+}
+.features-block-style11 .info-box-wrapper .elementor-icon {
+  color: var(--theme-color1);
+}
+.features-block-style11 .info-box-wrapper:before {
+  content: "";
+  background: var(--theme-color1);
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  right: 0;
+  transition: all 500ms ease;
+}
+.features-block-style11 .info-box-wrapper:hover .icon-wrapper {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.features-block-style11 .info-box-wrapper:hover .icon-wrapper::after {
+  opacity: 0.32;
+  transform: scaleX(-1);
+}
+.features-block-style11 .info-box-wrapper:hover .icon-wrapper:before {
+  opacity: 0.28;
+  transform: scaleX(-1);
+}
+.features-block-style11 .info-box-wrapper:hover .features-title {
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+  transition: all 500ms ease;
+}
+.features-block-style11 .info-box-wrapper:hover .features-title a {
+  color: #ffffff;
+}
+.features-block-style11 .info-box-wrapper:hover .features-details {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.features-block-style11 .info-box-wrapper:hover:before {
+  height: 100%;
+  top: 0;
+}
+.features-block-style11 .features-details {
+  position: relative;
+  display: block;
+  z-index: 1;
+  transition: all 500ms ease;
+}
+.features-block-style11 .link-box {
+  position: absolute;
+  right: 3px;
+  bottom: 8px;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+}
+.features-block-style11 .link-box a {
+  position: relative;
+  line-height: 30px;
+  font-size: 20px;
+  color: #ffffff;
+}

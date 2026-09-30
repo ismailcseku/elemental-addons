@@ -1,0 +1,25 @@
+/*
+ * Shortcode: animated-layer-images.scss
+ * -----------------------------------------------
+*/
+.tm-sc-animated-layer-images {
+  position: relative;
+  line-height: 0;
+  max-width: 100%;
+}
+.tm-sc-animated-layer-images .layer-image-wrapper {
+  position: relative;
+  line-height: 0;
+  display: block;
+  width: inherit;
+  max-width: 100%;
+  height: inherit;
+  max-height: 100%;
+}
+.tm-sc-animated-layer-images .layer-image-wrapper:not(:first-child) {
+  position: absolute;
+  top: 0;
+}
+.tm-sc-animated-layer-images .layer-image-wrapper .layer-image {
+  transition: all 1s ease;
+}

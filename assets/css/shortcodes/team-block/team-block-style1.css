@@ -1,0 +1,169 @@
+.team-current-theme1 {
+  padding: 10px;
+  background-color: var(--theme-color-white);
+  border-radius: 20px;
+  position: relative;
+  z-index: 9;
+}
+.team-current-theme1 .thumb {
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+}
+.team-current-theme1 .thumb img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: block;
+  object-fit: cover;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.team-current-theme1 .thumb img:first-child {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  -webkit-transform: translateX(50%) scaleX(2);
+  transform: translate(50%) scaleX(2);
+  opacity: 0;
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+.team-current-theme1 .team-content {
+  background-color: #f7f8ed;
+  padding: 20px 20px;
+  border-radius: 20px;
+  position: relative;
+}
+.team-current-theme1 .team-content .team-title {
+  margin: 0;
+}
+[data-tm-layout=dark] .team-current-theme1 .team-content .team-title {
+  color: var(--theme-color3);
+}
+.team-current-theme1 .team-content .team-title a {
+  background-position: 0 95%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  display: inline;
+}
+.team-current-theme1 .team-content .team-title a:hover {
+  color: var(--theme-color1);
+  background-size: 100% 2px;
+  background-image: linear-gradient(180deg, var(--theme-color1) 0%, var(--theme-color1) 100%);
+}
+.team-current-theme1 .team-content .share-icon {
+  background-color: var(--theme-color-white);
+  background-size: 200%;
+  border-radius: 50%;
+  bottom: 19px;
+  color: var(--theme-color3);
+  cursor: pointer;
+  font-size: 16px;
+  height: 50px;
+  line-height: 50px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 50px;
+  transition: all 300ms ease;
+  z-index: 3;
+}
+[data-tm-layout=dark] .team-current-theme1 .team-content .share-icon {
+  color: #fff;
+}
+@media (max-width: 575.98px) {
+  .team-current-theme1 .team-content .share-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+  }
+}
+.team-current-theme1 .team-content .share-icon:hover {
+  background-position: 100% 0;
+}
+.team-current-theme1 .team-content .social-links {
+  position: absolute;
+  right: 20px;
+  bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: transparent;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: bottom;
+  transform-origin: bottom;
+  opacity: 0;
+  z-index: 3;
+  visibility: hidden;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+.team-current-theme1 .team-content .social-links a {
+  background: var(--theme-color1);
+  background-size: 200%;
+  border-radius: 50%;
+  color: var(--theme-color3);
+  display: block;
+  font-size: 16px;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  text-align: center;
+  width: 50px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+@media (max-width: 575.98px) {
+  .team-current-theme1 .team-content .social-links a {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+  }
+}
+.team-current-theme1 .team-content .social-links a:hover {
+  background: #ffffff;
+  background-position: 100% 0;
+}
+.team-current-theme1:hover .thumb img:first-child {
+  -webkit-transform: translateX(0) scaleX(1);
+  transform: translate(0) scaleX(1);
+  opacity: 1;
+  -webkit-filter: blur(0);
+  filter: blur(0);
+}
+.team-current-theme1:hover .thumb img:nth-child(2) {
+  -webkit-transform: translateX(-50%) scaleX(2);
+  transform: translateX(-50%) scaleX(2);
+  opacity: 0;
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+.team-current-theme1:hover .team-content .social-links {
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  visibility: visible;
+}
+.team-current-theme1:hover .team-content .share-icon {
+  background-color: var(--theme-color1);
+}
+[data-tm-layout=dark] .team-current-theme1:hover .team-content .share-icon {
+  color: var(--theme-color3);
+}

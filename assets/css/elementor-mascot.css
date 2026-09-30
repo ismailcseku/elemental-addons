@@ -1,0 +1,14 @@
+.tm-elementor-widget-icon {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background: url(../images/admin-menu/dashicons-mascot.png) !important;
+}
+.tm-elementor-widget-badge {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: url(../images/admin-menu/dashicons-mascot-small.png) !important;
+    margin-right: 5px;
+    vertical-align: bottom;
+}

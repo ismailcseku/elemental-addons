@@ -1,0 +1,121 @@
+.tm-sc-features .icon {
+  display: inline-block;
+}
+.tm-sc-features .icon,
+.tm-sc-features .features-title,
+.tm-sc-features .features-details {
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.feature-side-line {
+  position: relative;
+}
+.feature-side-line .icon-box-wrapper:after {
+  content: "";
+  background: #333;
+  width: 2px;
+  position: absolute;
+  right: 25px;
+  top: 60px;
+  bottom: -12px;
+}
+@media (max-width: 575.98px) {
+  .feature-side-line .icon-box-wrapper:after {
+    display: none;
+  }
+}
+
+.features-block-style16 {
+  position: relative;
+  margin-bottom: 40px;
+}
+.features-block-style16:last-child .image-box:before {
+  display: none;
+}
+.features-block-style16 .inner-box {
+  position: relative;
+}
+.features-block-style16 .inner-box .icon-box {
+  position: relative;
+  padding-top: 60px;
+}
+.features-block-style16 .inner-box .icon-box::before {
+  position: absolute;
+  right: 60px;
+  top: 0;
+  width: 190px;
+  height: 146px;
+  transition: all 300ms linear;
+  background-image: url(../../../images/current-theme/process-arrow.png);
+  content: "";
+}
+.features-block-style16 .inner-box .icon-box .icon {
+  position: relative;
+}
+.features-block-style16 .inner-box .icon-box .icon::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 155px;
+  width: 155px;
+  display: block;
+  background-color: #ffffff;
+  border-radius: 50%;
+  z-index: -1;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  -webkit-box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
+  content: "";
+}
+[data-tm-layout=dark] .features-block-style16 .inner-box .icon-box .icon::after {
+  background-color: #141212;
+}
+.features-block-style16 .inner-box .icon-box .icon i {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 135px;
+  width: 135px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 30px;
+  color: var(--theme-color1-text-color);
+  font-size: 72px;
+  background-color: var(--theme-color1);
+  transition: all 300ms linear;
+}
+.features-block-style16 .inner-box .icon-box .count {
+  position: absolute;
+  top: -30px;
+  right: 140px;
+  margin-top: -30px;
+  font-size: 7rem;
+  font-family: var(--heading-font-family);
+  font-weight: 800;
+  color: #e3e7f1;
+  opacity: 0.3;
+  z-index: -1;
+  transition: all 300ms linear;
+}
+.features-block-style16 .inner-box .feature-title {
+  z-index: 2;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.features-block-style16 .inner-box:hover .icon-box .icon::after {
+  height: 135px;
+  width: 135px;
+}
+.features-block-style16 .inner-box:hover .icon-box .icon i {
+  color: var(--theme-color1);
+  background-color: var(--theme-color1-text-color);
+}
