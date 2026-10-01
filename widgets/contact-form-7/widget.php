@@ -79,6 +79,10 @@ class TM_Elementor_Contact_Form_7 extends Widget_Base {
 	 *
 	 * @return array Widget categories.
 	 */
+	public function get_keywords() {
+		return array( 'elemental', 'elemental addons' );
+	}
+
 	public function get_categories() {
 		return [ 'elemental-addons' ];
 	}

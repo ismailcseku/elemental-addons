@@ -77,6 +77,10 @@ class TM_Elementor_FeaturesBlock extends Widget_Base {
 	 *
 	 * @return array Widget categories.
 	 */
+	public function get_keywords() {
+		return array( 'elemental', 'elemental addons' );
+	}
+
 	public function get_categories() {
 		return [ 'elemental-addons' ];
 	}
@@ -1106,7 +1110,7 @@ class TM_Elementor_FeaturesBlock extends Widget_Base {
 		$icon_classes = array();
 		$settings['icon_classes'] = $icon_classes;
 
-		$settings['holder_id'] = elemental_addons_get_isotope_holder_ID('features-block');
+		$settings['holder_id'] = \elemental_addons_get_isotope_holder_ID('features-block');
 
 		$settings['settings'] = $settings;
 

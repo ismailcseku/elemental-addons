@@ -77,6 +77,10 @@ class TM_Elementor_Image_Gallery extends Widget_Base {
 	 *
 	 * @return array Widget categories.
 	 */
+	public function get_keywords() {
+		return array( 'elemental', 'elemental addons' );
+	}
+
 	public function get_categories() {
 		return [ 'elemental-addons' ];
 	}
@@ -393,7 +397,7 @@ class TM_Elementor_Image_Gallery extends Widget_Base {
 		}
 		$settings['classes'] = $classes;
 
-		$settings['holder_id'] = mascot_core_elemental_addons_get_isotope_holder_ID('gallery');
+		$settings['holder_id'] = \elemental_addons_get_isotope_holder_ID('gallery');
 
 
 		$settings['settings'] = $settings;

@@ -76,6 +76,10 @@ class TM_Elementor_Section_Title extends Widget_Base {
 	 *
 	 * @return array Widget categories.
 	 */
+	public function get_keywords() {
+		return array( 'elemental', 'elemental addons' );
+	}
+
 	public function get_categories() {
 		return [ 'elemental-addons' ];
 	}
@@ -1582,7 +1586,7 @@ class TM_Elementor_Section_Title extends Widget_Base {
 		$settings['title_part1_classes'] = $title_part1_classes;
 
 
-		$settings['holder_id'] = elemental_addons_get_isotope_holder_ID('typed');
+		$settings['holder_id'] = \elemental_addons_get_isotope_holder_ID('typed');
 		if( $settings['enable_typed_text_effect'] == "yes" ) {
 			wp_enqueue_script( 'typed', ELEMENTAL_ADDONS_ASSETS_URI . '/js/plugins/typed.min.js', array('jquery'), false, true );
 			wp_enqueue_script( 'typed-custom', ELEMENTAL_ADDONS_ASSETS_URI . '/js/widgets/typed-custom.js', array('typed'), false, true );

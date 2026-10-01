@@ -46,7 +46,7 @@ class Skin_Style3 extends Elementor_Skin_Base {
 		$icon_classes = array();
 		$settings['icon_classes'] = $icon_classes;
 
-		$settings['holder_id'] = elemental_addons_get_isotope_holder_ID('team-block');
+		$settings['holder_id'] = \elemental_addons_get_isotope_holder_ID('team-block');
 
 		$settings['settings'] = $settings;
 

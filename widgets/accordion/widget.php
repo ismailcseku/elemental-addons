@@ -73,6 +73,10 @@ class TM_Elementor_Accordion extends Widget_Base {
 	 *
 	 * @return array Widget categories.
 	 */
+	public function get_keywords() {
+		return array( 'elemental', 'elemental addons' );
+	}
+
 	public function get_categories() {
 		return [ 'elemental-addons' ];
 	}
@@ -1193,7 +1197,7 @@ class TM_Elementor_Accordion extends Widget_Base {
 		$classes[] = $settings['display_type'];
 		$settings['classes'] = $classes;
 
-		$settings['holder_id'] = mascot_core_elemental_addons_get_isotope_holder_ID('accordion');
+		$settings['holder_id'] = \elemental_addons_get_isotope_holder_ID('accordion');
 	?>
 		<div id="<?php echo esc_attr( $settings['holder_id'] ) ?>" class="<?php if( !empty($classes) ) echo esc_attr(implode(' ', $classes)); ?>">
 	<?php

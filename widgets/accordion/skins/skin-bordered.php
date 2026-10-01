@@ -40,7 +40,7 @@ class Skin_Accordion_Bordered extends Elementor_Skin_Base {
 		$classes[] = $settings['_skin'];
 		$settings['classes'] = $classes;
 
-		$settings['holder_id'] = mascot_core_elemental_addons_get_isotope_holder_ID('accordion');
+		$settings['holder_id'] = \elemental_addons_get_isotope_holder_ID('accordion');
 	?>
 		<div id="<?php echo esc_attr( $settings['holder_id'] ) ?>" class="<?php if( !empty($classes) ) echo esc_attr(implode(' ', $classes)); ?>">
 	<?php

@@ -41,7 +41,7 @@ class Skin_Style_Current_Theme1 extends Elementor_Skin_Base {
 		}
 		$settings['classes'] = $classes;
 
-		$settings['holder_id'] = mascot_core_elemental_addons_get_isotope_holder_ID('gallery');
+		$settings['holder_id'] = \elemental_addons_get_isotope_holder_ID('gallery');
 
 
 		$settings['settings'] = $settings;

@@ -2258,12 +2258,14 @@ if(!function_exists('elemental_addons_if_numeric_add_suffix')) {
 	}
 }
 
-if ( ! function_exists( 'mascot_core_elemental_addons_get_isotope_holder_ID' ) ) {
+if ( ! function_exists( 'elemental_addons_get_isotope_holder_ID' ) ) {
 	/**
-	 * Returns Portfolio Holder ID
+	 * Returns a unique holder ID for isotope layouts.
 	 *
+	 * @param string $id_prefix Prefix for the holder ID.
+	 * @return string
 	 */
-	function mascot_core_elemental_addons_get_isotope_holder_ID( $id_prefix = 'id' ) {
+	function elemental_addons_get_isotope_holder_ID( $id_prefix = 'id' ) {
 		$random_number = wp_rand( 111111, 999999 );
 		$holder_id = $id_prefix . '-holder-' . $random_number;
 		return $holder_id;
