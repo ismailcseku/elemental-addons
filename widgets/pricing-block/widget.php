@@ -98,7 +98,7 @@ class TM_Elementor_PricingBlock extends Widget_Base {
 	 * @return array Widget scripts dependencies.
 	 */
 	public function get_script_depends() {
-		return [ 'elemental-addons-js' ];
+		return [ 'elemental-addons-js', 'elemental-addons-isotope' ];
 	}
 
 

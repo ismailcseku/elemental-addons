@@ -36,6 +36,8 @@ Contact Form 7 is optional. The Contact Form widget shows a notice in the editor
 
 LightGallery 1.6.10 is included under GPLv3 for the image gallery lightbox.
 
+Isotope 3.0.6 (https://isotope.metafizzy.co) by Metafizzy is included under GPLv3 for grid and masonry layouts.
+
 == Installation ==
 
 1. Upload the plugin folder to `/wp-content/plugins/elemental-addons`, or install the zip from Plugins > Add New.

@@ -1,0 +1,237 @@
+/**
+ * Elemental Addons - Isotope grid / masonry layout.
+ */
+
+.isotope-layout::after,
+.isotope-layout .isotope-layout-inner::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.isotope-layout .isotope-layout-inner {
+	position: relative;
+	margin: 0 -15px;
+}
+
+.isotope-layout .isotope-item {
+	box-sizing: border-box;
+	float: left;
+	width: 24.98%;
+	padding: 0 15px;
+	margin: 0 0 30px;
+}
+
+.isotope-layout .isotope-item .isotope-item-inner {
+	position: relative;
+	height: 100%;
+}
+
+.isotope-layout .isotope-item.tm-masonry-large-wide,
+.isotope-layout .isotope-item.tm-masonry-large-width-height {
+	width: 49.98%;
+}
+
+.isotope-layout .isotope-item.isotope-item-sizer {
+	padding: 0 !important;
+	margin-bottom: 0 !important;
+	width: 24.98%;
+}
+
+.isotope-layout .isotope-item.isotope-item-sizer.tm-masonry-large-wide,
+.isotope-layout .isotope-item.isotope-item-sizer.tm-masonry-large-width-height {
+	width: 49.98%;
+}
+
+.isotope-layout .isotope-item img {
+	max-width: 100%;
+	height: auto;
+}
+
+.isotope-layout .isotope-item .thumb img {
+	width: 100%;
+}
+
+/* Single item */
+.isotope-layout.isotope-layout-single-item .isotope-layout-inner {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.isotope-layout.isotope-layout-single-item .isotope-item {
+	padding-left: 0;
+	padding-right: 0;
+	margin-bottom: 0;
+	width: 100% !important;
+	position: relative !important;
+}
+
+/* Columns */
+.isotope-layout.grid-1 .isotope-item,
+.isotope-layout.grid-1 .isotope-item.tm-masonry-large-wide,
+.isotope-layout.grid-1 .isotope-item.tm-masonry-large-width-height {
+	width: 100% !important;
+}
+
+.isotope-layout.grid-2 .isotope-item {
+	width: 49.98%;
+}
+
+.isotope-layout.grid-2 .isotope-item.tm-masonry-large-wide,
+.isotope-layout.grid-2 .isotope-item.tm-masonry-large-width-height {
+	width: 100%;
+}
+
+.isotope-layout.grid-3 .isotope-item {
+	width: 33.33%;
+}
+
+.isotope-layout.grid-3 .isotope-item.tm-masonry-large-wide,
+.isotope-layout.grid-3 .isotope-item.tm-masonry-large-width-height {
+	width: 66.66%;
+}
+
+.isotope-layout.grid-4 .isotope-item {
+	width: 24.98%;
+}
+
+.isotope-layout.grid-4 .isotope-item.tm-masonry-large-wide,
+.isotope-layout.grid-4 .isotope-item.tm-masonry-large-width-height {
+	width: 49.98%;
+}
+
+.isotope-layout.grid-5 .isotope-item {
+	width: 20%;
+}
+
+.isotope-layout.grid-5 .isotope-item.tm-masonry-large-wide,
+.isotope-layout.grid-5 .isotope-item.tm-masonry-large-width-height {
+	width: 40%;
+}
+
+.isotope-layout.grid-6 .isotope-item {
+	width: 16.66%;
+}
+
+.isotope-layout.grid-6 .isotope-item.tm-masonry-large-wide,
+.isotope-layout.grid-6 .isotope-item.tm-masonry-large-width-height {
+	width: 33.33%;
+}
+
+/* Gutters */
+.isotope-layout.gutter .isotope-layout-inner,
+.isotope-layout.gutter-15 .isotope-layout-inner {
+	margin: 0 -15px;
+}
+
+.isotope-layout.gutter .isotope-item,
+.isotope-layout.gutter-15 .isotope-item {
+	padding: 0 15px;
+	margin: 0 0 30px;
+}
+
+.isotope-layout.gutter-0 .isotope-layout-inner {
+	margin: 0;
+}
+
+.isotope-layout.gutter-0 .isotope-item {
+	padding: 0;
+	margin: 0;
+}
+
+.isotope-layout.gutter-2 .isotope-layout-inner {
+	margin: 0 -1px;
+}
+
+.isotope-layout.gutter-2 .isotope-item {
+	padding: 0 1px;
+	margin: 0 0 2px;
+}
+
+.isotope-layout.gutter-5 .isotope-layout-inner {
+	margin: 0 -5px;
+}
+
+.isotope-layout.gutter-5 .isotope-item {
+	padding: 0 5px;
+	margin: 0 0 10px;
+}
+
+.isotope-layout.gutter-10 .isotope-layout-inner {
+	margin: 0 -10px;
+}
+
+.isotope-layout.gutter-10 .isotope-item {
+	padding: 0 10px;
+	margin: 0 0 20px;
+}
+
+.isotope-layout.gutter-20 .isotope-layout-inner {
+	margin: 0 -20px;
+}
+
+.isotope-layout.gutter-20 .isotope-item {
+	padding: 0 20px;
+	margin: 0 0 40px;
+}
+
+.isotope-layout.gutter-30 .isotope-layout-inner {
+	margin: 0 -30px;
+}
+
+.isotope-layout.gutter-30 .isotope-item {
+	padding: 0 30px;
+	margin: 0 0 60px;
+}
+
+.isotope-layout.gutter-40 .isotope-layout-inner {
+	margin: 0 -40px;
+}
+
+.isotope-layout.gutter-40 .isotope-item {
+	padding: 0 40px;
+	margin: 0 0 80px;
+}
+
+.isotope-layout.gutter-50 .isotope-layout-inner {
+	margin: 0 -50px;
+}
+
+.isotope-layout.gutter-50 .isotope-item {
+	padding: 0 50px;
+	margin: 0 0 100px;
+}
+
+.isotope-layout.gutter-60 .isotope-layout-inner {
+	margin: 0 -60px;
+}
+
+.isotope-layout.gutter-60 .isotope-item {
+	padding: 0 60px;
+	margin: 0 0 120px;
+}
+
+.isotope-layout .isotope-item.isotope-item-sizer {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+	.isotope-layout:not(.grid-1) .isotope-item {
+		width: 49.98% !important;
+	}
+
+	.isotope-layout .isotope-item.tm-masonry-large-wide,
+	.isotope-layout .isotope-item.tm-masonry-large-width-height {
+		width: 100% !important;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.isotope-layout .isotope-item,
+	.isotope-layout .isotope-item.tm-masonry-large-wide,
+	.isotope-layout .isotope-item.tm-masonry-large-width-height {
+		width: 100% !important;
+	}
+}

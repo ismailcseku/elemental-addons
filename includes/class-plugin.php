@@ -92,9 +92,15 @@ if ( ! class_exists( 'Elemental_Addons_Plugin' ) ) {
 				$ver
 			);
 			wp_register_style(
+				'elemental-addons-isotope',
+				ELEMENTAL_ADDONS_ASSETS_URI . '/css/isotope-layout.css',
+				array(),
+				$ver
+			);
+			wp_register_style(
 				'elemental-addons',
 				ELEMENTAL_ADDONS_ASSETS_URI . '/css/elementor-mascot.css',
-				array( 'elemental-addons-base' ),
+				array( 'elemental-addons-base', 'elemental-addons-isotope' ),
 				$ver
 			);
 
@@ -119,6 +125,17 @@ if ( ! class_exists( 'Elemental_Addons_Plugin' ) ) {
 				wp_register_script( 'swiper', ELEMENTAL_ADDONS_ASSETS_URI . '/js/plugins/swiper/swiper.min.js', array( 'jquery' ), '8.4.7', true );
 				wp_register_style( 'swiper', ELEMENTAL_ADDONS_ASSETS_URI . '/js/plugins/swiper/swiper.min.css', array(), '8.4.7' );
 			}
+
+			if ( ! wp_script_is( 'isotope', 'registered' ) ) {
+				wp_register_script( 'isotope', ELEMENTAL_ADDONS_ASSETS_URI . '/js/plugins/isotope/isotope.pkgd.min.js', array( 'jquery' ), '3.0.6', true );
+			}
+			wp_register_script(
+				'elemental-addons-isotope',
+				ELEMENTAL_ADDONS_ASSETS_URI . '/js/isotope-init.js',
+				array( 'jquery', 'imagesloaded', 'isotope' ),
+				$ver,
+				true
+			);
 
 			wp_register_script( 'lightgallery', ELEMENTAL_ADDONS_ASSETS_URI . '/js/plugins/lightgallery/js/lightgallery.min.js', array( 'jquery' ), '1.6.10', true );
 			wp_register_style( 'lightgallery', ELEMENTAL_ADDONS_ASSETS_URI . '/js/plugins/lightgallery/css/lightgallery.min.css', array(), '1.6.10' );
