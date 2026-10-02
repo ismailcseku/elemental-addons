@@ -34,7 +34,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 	 * @return string Widget name.
 	 */
 	public function get_name() {
-		return 'elemental-team-block';
+		return 'tm-ele-team-block';
 	}
 
 	/**

@@ -34,7 +34,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 	 * @return string Widget name.
 	 */
 	public function get_name() {
-		return 'elemental-service-block';
+		return 'tm-ele-service-block';
 	}
 
 	/**

@@ -36,7 +36,7 @@ class TM_Elementor_Contact_Form_7 extends Widget_Base {
 	 * @return string Widget name.
 	 */
 	public function get_name() {
-		return 'elemental-contact-form-7';
+		return 'tm-ele-contact-form-7';
 	}
 
 	/**

@@ -47,11 +47,25 @@ function elemental_addons_init() {
 	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/template-loader.php';
 	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/helpers.php';
 	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/controls.php';
+	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/blog-compat.php';
 	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/class-plugin.php';
 
 	Elemental_Addons_Plugin::instance();
 }
 add_action( 'elementor/loaded', 'elemental_addons_init' );
+
+/**
+ * Admin tools (converter) load even if Elementor init order is late.
+ */
+function elemental_addons_admin_init() {
+	if ( ! is_admin() ) {
+		return;
+	}
+	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/class-layout-converter.php';
+	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/admin/class-converter-page.php';
+	Elemental_Addons_Converter_Page::init();
+}
+add_action( 'plugins_loaded', 'elemental_addons_admin_init' );
 
 /**
  * Notice only when Elementor never loaded.

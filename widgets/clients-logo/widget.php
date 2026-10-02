@@ -32,7 +32,7 @@ class TM_Elementor_Clients_logo extends Widget_Base {
 	 * @return string Widget name.
 	 */
 	public function get_name() {
-		return 'elemental-clients-logo';
+		return 'tm-ele-clients-logo';
 	}
 
 	/**

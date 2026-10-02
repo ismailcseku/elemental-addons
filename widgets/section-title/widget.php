@@ -33,7 +33,7 @@ class TM_Elementor_Section_Title extends Widget_Base {
 	 * @return string Widget name.
 	 */
 	public function get_name() {
-		return 'elemental-section-title';
+		return 'tm-ele-section-title';
 	}
 
 	/**

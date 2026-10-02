@@ -32,7 +32,7 @@ class TM_Elementor_TextEditorAdvanced extends Widget_Base {
 	 * @return string Widget name.
 	 */
 	public function get_name() {
-		return 'elemental-text-editor-advanced';
+		return 'tm-ele-text-editor-advanced';
 	}
 
 	/**

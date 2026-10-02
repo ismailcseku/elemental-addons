@@ -29,7 +29,7 @@ class TM_Elementor_Floating_Objects extends Widget_Base {
 	 * @return string Widget name.
 	 */
 	public function get_name() {
-		return 'elemental-floating-objects';
+		return 'tm-ele-floating-objects';
 	}
 
 	/**
@@ -534,7 +534,7 @@ class TM_Elementor_Floating_Objects extends Widget_Base {
 		$html = '';
 		//classes
 		$classes = array();
-		$classes[] = 'elemental-floating-objects';
+		$classes[] = 'tm-ele-floating-objects';
 		$classes[] = $settings['custom_css_class'];
 		if ( $settings['visible_mobile'] != 'yes' ) {
 			$classes[] = 'd-none d-lg-block';

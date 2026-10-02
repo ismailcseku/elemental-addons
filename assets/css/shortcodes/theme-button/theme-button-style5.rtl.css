@@ -1,0 +1,140 @@
+.theme-btn {
+  display: inline-flex;
+  gap: 8px;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  transition: all 300ms ease;
+}
+.theme-btn .btn-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/*Btn Style 5*/
+.btn-style5 {
+  position: relative;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 60px;
+  padding: 7px 31px 7px 7px;
+  color: var(--theme-color1-text-color);
+  border: 1px solid transparent;
+  background-color: var(--theme-color1);
+  text-transform: capitalize;
+  overflow: hidden;
+  z-index: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 300ms ease;
+}
+.btn-style5:hover {
+  color: #fff;
+  border: 1px solid rgba(248, 248, 248, 0.2);
+  background: rgba(248, 248, 248, 0.2);
+}
+.btn-style5:hover:focus, .btn-style5:hover:active {
+  color: #fff;
+}
+.btn-style5:hover .dot-box {
+  background: var(--theme-color1);
+}
+.btn-style5:hover .dot-box .dot-item {
+  right: calc(50% - 7px);
+  top: calc(50% - 2.5px);
+  background: #333;
+}
+.btn-style5:hover .dot-box .dot-item:before {
+  right: 7px;
+  top: 7px;
+  background: #333;
+}
+.btn-style5:hover .dot-box .dot-item:after {
+  right: 7px;
+  bottom: 7px;
+  background: #333;
+}
+.btn-style5:hover:before {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-transform-origin: bottom right;
+  transform-origin: bottom right;
+}
+.btn-style5:focus, .btn-style5:active {
+  color: var(--theme-color1-text-color);
+}
+.btn-style5 .dot-box {
+  background-color: var(--theme-color-gray);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 12px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 12px;
+  text-align: center;
+  position: relative;
+  width: 40px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.btn-style5 .dot-box .dot-item {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  display: inline-block;
+  position: absolute;
+  right: calc(50% + 3px);
+  top: calc(50% - 2.5px);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.btn-style5 .dot-box .dot-item:before {
+  background-color: #fff;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  right: -7px;
+  top: -7px;
+  height: 5px;
+  width: 5px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.btn-style5 .dot-box .dot-item:after {
+  background-color: #fff;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  right: -7px;
+  bottom: -7px;
+  height: 5px;
+  width: 5px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.btn-style5:before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 101%;
+  height: 100%;
+  content: "";
+  border-radius: 0;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+  background-color: var(--theme-color2);
+  transition: -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  -webkit-transition: -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  z-index: -1;
+}

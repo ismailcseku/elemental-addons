@@ -1,0 +1,67 @@
+.btn-style1 {
+  display: inline-flex;
+  align-items: center;
+  gap: 0px;
+  position: relative;
+  transition: all 400ms ease;
+  height: 56px;
+  line-height: 56px;
+  background: var(--theme-color1);
+  color: var(--theme-color2);
+  gap: 10px;
+  border-radius: 40px;
+  padding-left: 10px;
+  padding-right: 30px;
+}
+.btn-style1:hover {
+  padding-left: 38px;
+  padding-right: 10px !important;
+  gap: 0;
+}
+.btn-style1:hover .theme-btn-arrow-left {
+  scale: 1;
+  right: 10px;
+}
+.btn-style1:hover .theme-btn-arrow-right {
+  scale: 0;
+}
+.btn-style1:hover .theme-btn {
+  transform: translateX(-55px);
+  color: var(--theme-color2);
+}
+.btn-style1 .theme-btn-arrow-left,
+.btn-style1 .theme-btn-arrow-right {
+  height: 40px;
+  line-height: 40px;
+  width: 40px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--theme-color1);
+  color: var(--theme-color1-text-color);
+  border-radius: 50%;
+  transition: 0.4s;
+  text-align: center;
+}
+.btn-style1 .theme-btn-arrow-left i,
+.btn-style1 .theme-btn-arrow-right i {
+  rotate: -30deg;
+}
+.btn-style1 .theme-btn-arrow-left {
+  scale: 0;
+  right: 0;
+  left: auto;
+  position: absolute;
+}
+.btn-style1 .theme-btn {
+  font-weight: 400;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.4s;
+}
+.btn-style1.bg-white {
+  background-color: #fff !important;
+}

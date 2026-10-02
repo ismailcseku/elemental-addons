@@ -14,7 +14,7 @@ class Skin_Single extends Elementor_Skin_Base {
 			$direction_suffix = is_rtl() ? '.rtl' : '';
 			wp_enqueue_script( 'tm-testimonial-thumb-carousel-script', ELEMENTAL_ADDONS_ASSETS_URI . '/js/widgets/testimonial-thumb-carousel.js', array('jquery'), false, true );
 		}
-		add_action( 'elementor/element/elemental-testimonial-block/tm_general/after_section_end', [ $this, 'register_layout_controls' ] );
+		add_action( 'elementor/element/tm-ele-testimonial-block/tm_general/after_section_end', [ $this, 'register_layout_controls' ] );
 	}
 
 	public function get_id() {

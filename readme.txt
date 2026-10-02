@@ -33,12 +33,21 @@ Widgets included:
 * Section Title
 * Text Editor
 * Text Editor Advanced
+* Theme Button
+* List
+* Icon Box
+* Working Process Block
+* Swiper Carousel Arrow
+* Pricing Plan
+* Blog / News Grid
 
 Contact Form 7 is optional. The Contact Form widget shows a notice in the editor when Contact Form 7 is not active.
 
 LightGallery 1.6.10 is included under GPLv3 for the image gallery lightbox.
 
 Isotope 3.0.6 (https://isotope.metafizzy.co) by Metafizzy is included under GPLv3 for grid and masonry layouts.
+
+Widget type IDs match the ThemeMascot Evolta Elementor widgets (tm-ele-*), so sections that only use supported widgets can be copied between sites. For full layouts that include unsupported widgets, use Tools → Elemental Converter.
 
 == Installation ==
 

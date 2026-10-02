@@ -32,7 +32,7 @@ class TM_Elementor_Funfact_Counter extends Widget_Base {
 	 * @return string Widget name.
 	 */
 	public function get_name() {
-		return 'elemental-funfact-counter';
+		return 'tm-ele-funfact-counter';
 	}
 
 	/**

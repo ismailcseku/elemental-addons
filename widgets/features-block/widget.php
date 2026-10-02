@@ -34,7 +34,7 @@ class TM_Elementor_FeaturesBlock extends Widget_Base {
 	 * @return string Widget name.
 	 */
 	public function get_name() {
-		return 'elemental-features-block';
+		return 'tm-ele-features-block';
 	}
 
 	/**

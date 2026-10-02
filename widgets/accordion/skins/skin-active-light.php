@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 class Skin_Accordion_Light_Active extends Elementor_Skin_Base {
 
 	protected function _register_controls_actions() {
-		add_action( 'elementor/element/elemental-accordion/tm_general/after_section_end', [ $this, 'register_layout_controls' ] );
+		add_action( 'elementor/element/tm-ele-accordion/tm_general/after_section_end', [ $this, 'register_layout_controls' ] );
 	}
 
 	public function get_id() {

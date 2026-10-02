@@ -1,0 +1,441 @@
+/*
+ * Shortcode: Icon Boxes
+ * -----------------------------------------------
+*/
+.icon-box {
+  position: relative;
+  z-index: 0;
+  transition: all 0.4s ease;
+}
+.icon-box .icon-wrapper {
+  position: relative;
+  z-index: 0;
+}
+.icon-box .icon-wrapper .icon-bg-img {
+  position: absolute;
+  width: 100px;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.icon-box .icon-wrapper .icon-bg-img img {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.icon-box .icon {
+  display: inline-block;
+  margin-bottom: 0;
+  transition: all 0.3s ease;
+  text-align: center;
+  font-weight: normal;
+  line-height: 70px;
+}
+.icon-box .icon i,
+.icon-box .icon svg {
+  display: inline-flex;
+  font-size: 30px;
+  line-height: 70px;
+  transition: all 0.3s ease;
+}
+.icon-box .icon svg {
+  width: 1em;
+  height: 1em;
+  line-height: 70px;
+}
+.icon-box .icon svg:before {
+  line-height: 1;
+}
+.icon-box .icon.icon-default {
+  margin-bottom: 5px;
+}
+.icon-box .icon.icon-bordered {
+  border: 3px solid #eee;
+}
+.icon-box:hover .icon.icon-bordered {
+  background-color: #eee;
+  color: #111;
+}
+
+.icon-box .icon.icon-rounded {
+  border-radius: 3px;
+}
+.icon-box .icon.icon-round {
+  border-radius: 50%;
+}
+.icon-box .icon.icon-type-image.icon-bordered {
+  padding: 5px;
+}
+.icon-box .icon.icon-type-icon-text .icon-text {
+  transition: all 0.3s ease;
+}
+.icon-box .icon.icon-xs {
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+}
+.icon-box .icon.icon-xs i,
+.icon-box .icon.icon-xs svg {
+  font-size: 18px;
+  line-height: 30px;
+}
+.icon-box .icon.icon-sm {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+}
+.icon-box .icon.icon-sm i,
+.icon-box .icon.icon-sm svg {
+  font-size: 22px;
+  line-height: 50px;
+}
+.icon-box .icon.icon-md {
+  height: 75px;
+  width: 75px;
+  line-height: 75px;
+}
+.icon-box .icon.icon-md i,
+.icon-box .icon.icon-md svg {
+  font-size: 36px;
+  line-height: 75px;
+}
+.icon-box .icon.icon-lg {
+  height: 90px;
+  width: 90px;
+  line-height: 90px;
+}
+.icon-box .icon.icon-lg i,
+.icon-box .icon.icon-lg svg {
+  font-size: 48px;
+  line-height: 90px;
+}
+.icon-box .icon.icon-xl {
+  height: 120px;
+  width: 120px;
+  line-height: 120px;
+}
+.icon-box .icon.icon-xl i,
+.icon-box .icon.icon-xl svg {
+  font-size: 60px;
+  line-height: 120px;
+}
+.icon-box .icon.icon-top {
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  top: -32px;
+}
+.icon-box.text-center .icon.icon-type-image {
+  text-align: center;
+  display: inline-block;
+}
+.icon-box.text-right .icon.icon-type-image {
+  text-align: left;
+  display: inline-block;
+}
+.icon-box.iconbox-border {
+  border: 3px solid #dcdcdc;
+}
+.icon-box.iconbox-bg {
+  background-color: #fafafa;
+}
+.icon-box.iconbox-bg.iconbox-bg-dark {
+  background-color: #333;
+}
+.icon-box .content {
+  transition: all 0.3s ease;
+}
+.icon-box .content p {
+  transition: all 0.3s ease;
+  margin-bottom: 0;
+}
+.icon-box .content a {
+  color: var(--text-color);
+  font-weight: var(--body-font-weight);
+}
+.icon-box.icon-left .icon-box-wrapper {
+  display: flex;
+}
+.icon-box.icon-left .icon {
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+}
+.icon-box.icon-left .icon.no-bg {
+  width: auto;
+  height: auto;
+}
+.icon-box.icon-left .icon-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+.icon-box.icon-right .icon-box-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.icon-box.icon-right .icon {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .icon-box.icon-right .icon {
+    margin-right: 20px;
+  }
+}
+.icon-box.icon-right .icon.no-bg {
+  width: auto;
+  height: auto;
+}
+.icon-box.icon-right .icon.icon-default {
+  margin-right: 10px;
+}
+.icon-box.icon-right .icon-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  flex: 1 0 0;
+}
+.icon-box.icon-left-style2 .icon-box-wrapper {
+  display: block;
+}
+@media (min-width: 768px) {
+  .icon-box.icon-left-style2 .icon-left-block {
+    align-items: center;
+    display: flex;
+  }
+}
+.icon-box.icon-left-style2 .icon.icon-default {
+  height: auto;
+  width: auto;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+.icon-box.icon-left-style2 .icon.icon-default i {
+  line-height: 1;
+}
+.icon-box.icon-right-style2 .icon-box-wrapper {
+  display: block;
+}
+@media (min-width: 768px) {
+  .icon-box.icon-right-style2 .icon-right-block {
+    display: flex;
+    flex-direction: inherit;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.icon-box.icon-right-style2 .icon.icon-default {
+  height: auto;
+  width: auto;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+.icon-box.icon-right-style2 .icon.icon-default i {
+  line-height: 1;
+}
+.icon-box .icon-box-title,
+.icon-box .icon-box-title a {
+  transition: all 0.3s ease;
+  font-family: var(--heading-font-family);
+  font-weight: var(--headings-font-weight-h6);
+  line-height: var(--section-title-subtitle-line-height);
+}
+.icon-box .btn-view-details {
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+.icon-box.iconbox-box-shadow {
+  box-shadow: 0px 0px 50px rgba(5, 5, 5, 0.08);
+}
+.icon-box.iconbox-box-shadow:hover {
+  box-shadow: 0px 0px 50px rgba(5, 5, 5, 0.15);
+}
+.icon-box.iconbox-box-shadow-on-hover:hover {
+  box-shadow: 0px 0px 50px rgba(5, 5, 5, 0.15);
+}
+@media (max-width: 1024px) {
+  .icon-box.responsive-tablet {
+    text-align: center !important;
+  }
+  .icon-box.responsive-tablet .icon {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .icon-box.responsive-tablet .icon.icon-type-image {
+    text-align: center !important;
+  }
+  .icon-box.responsive-tablet.icon-left .icon-box-wrapper {
+    display: block;
+  }
+  .icon-box.responsive-tablet.icon-left .icon.icon-default {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .icon-box.responsive-tablet.icon-left-style2 .icon-left-block {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (max-width: 1024px) {
+  .icon-box.responsive-tablet.icon-left-style2 .icon {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 1024px) {
+  .icon-box.responsive-tablet.icon-right .icon-box-wrapper {
+    display: block;
+  }
+  .icon-box.responsive-tablet.icon-right .icon.icon-default {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 767.98px) {
+  .icon-box.responsive-mobile {
+    text-align: center !important;
+  }
+  .icon-box.responsive-mobile .icon {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .icon-box.responsive-mobile .icon.icon-type-image {
+    text-align: center !important;
+  }
+  .icon-box.responsive-mobile.icon-left .icon-box-wrapper {
+    display: block;
+  }
+  .icon-box.responsive-mobile.icon-left .icon.icon-default {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 767.98px) and (min-width: 768px) {
+  .icon-box.responsive-mobile.icon-left-style2 .icon-left-block {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (max-width: 767.98px) {
+  .icon-box.responsive-mobile.icon-left-style2 .icon {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 767.98px) {
+  .icon-box.responsive-mobile.icon-right .icon-box-wrapper {
+    display: block;
+  }
+  .icon-box.responsive-mobile.icon-right .icon.icon-default {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.icon-box.iconbox-border-radius {
+  border-radius: 10px;
+}
+.icon-box.animate-hover:hover.icon-rotate .icon-wrapper .icon {
+  transform: rotate(-360deg);
+}
+.icon-box.animate-hover:hover.icon-rotate-x .icon-wrapper .icon {
+  transform: rotateX(360deg);
+}
+.icon-box.animate-hover:hover.icon-rotate-y .icon-wrapper .icon {
+  transform: rotateY(-180deg);
+}
+.icon-box.animate-hover:hover.icon-translate .icon-wrapper .icon {
+  transform: translate(10px, 10px);
+}
+.icon-box.animate-hover:hover.icon-translate-x .icon-wrapper .icon {
+  transform: translateX(10px);
+}
+.icon-box.animate-hover:hover.icon-translate-y .icon-wrapper .icon {
+  transform: translateY(-10px);
+}
+.icon-box.animate-hover:hover.icon-scale .icon-wrapper .icon {
+  transform: scale(1.1);
+}
+.icon-box.icon-area-box-shadow .icon-wrapper .icon {
+  box-shadow: 0px 0px 50px rgba(5, 5, 5, 0.08);
+}
+.icon-box .bg-shadow-icon {
+  position: absolute;
+  left: -30px;
+  bottom: 0px;
+  font-size: 8rem;
+  line-height: 1;
+  color: #687f9b;
+  opacity: 0.25;
+  transition: all 0.3s ease;
+}
+.icon-box.iconbox-bg-img-on-hover {
+  overflow: hidden;
+}
+.icon-box.iconbox-bg-img-on-hover .bg-img-wrapper {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+.icon-box.iconbox-bg-img-on-hover .bg-img-wrapper:before, .icon-box.iconbox-bg-img-on-hover .bg-img-wrapper:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.icon-box.iconbox-bg-img-on-hover .bg-img-wrapper:before {
+  background-image: url("../images/shadow-overlay2.png");
+  background-position: center bottom;
+  z-index: 1;
+  background-repeat: no-repeat;
+}
+.icon-box.iconbox-bg-img-on-hover .bg-img-wrapper:after {
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 2;
+}
+.icon-box.iconbox-bg-img-on-hover:hover .bg-img-wrapper {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.icon-box.iconbox-bg-img-on-hover:hover .icon {
+  color: #fff;
+}
+.icon-box.iconbox-bg-img-on-hover:hover .icon i {
+  color: #fff;
+}
+.icon-box.iconbox-bg-img-on-hover:hover .icon-box-title,
+.icon-box.iconbox-bg-img-on-hover:hover .icon-box-title a {
+  color: #fff;
+}
+.icon-box.iconbox-bg-img-on-hover:hover .content {
+  color: #fff;
+}
+.icon-box.iconbox-bg-img-on-hover:hover .content p {
+  color: #fff;
+}
+
+.icon-box.iconbox-bg-img-on-hover .icon-box-wrapper {
+  position: relative;
+  z-index: 99;
+}
+.icon-box.iconbox-bg-img-on-hover.bg-img-hover-always-visible .bg-img-wrapper {
+  opacity: 1;
+}

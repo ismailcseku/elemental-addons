@@ -1,0 +1,84 @@
+.tm-sc-blog article .box-hover-effect {
+  display: block;
+}
+.tm-sc-blog article .post-thumb .post-thumb-inner .thumb {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+.tm-sc-blog article .post-thumb .post-thumb-inner .thumb img {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  transition: all 0.4s ease-in-out;
+}
+.tm-sc-blog article .post-thumb .post-thumb-inner .thumb .icon-link {
+  background: #2d1212;
+  color: #fff;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transition: all 0.45s;
+  width: 32px;
+  height: 32px;
+  line-height: 33px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 99;
+  text-align: center;
+  margin-top: 45px;
+}
+.tm-sc-blog article .entry-content > :nth-last-child {
+  margin-bottom: 0;
+}
+
+.tm-sc-blog.blog-vertical-list .isotope-layout {
+  margin-left: 0;
+}
+.tm-sc-blog.blog-vertical-list article {
+  padding: 35px 0;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  transition: all 0.4s ease-in-out;
+}
+@media (min-width: 768px) {
+  .tm-sc-blog.blog-vertical-list article {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .tm-sc-blog.blog-vertical-list article .entry-header {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .tm-sc-blog.blog-vertical-list article .entry-header {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .tm-sc-blog.blog-vertical-list article .entry-header img {
+    max-width: 175px;
+  }
+}
+.tm-sc-blog.blog-vertical-list article .entry-content .entry-title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.tm-sc-blog.blog-vertical-list article .entry-content .entry-meta {
+  margin-bottom: 10px;
+}
+.tm-sc-blog.blog-vertical-list article .entry-content .entry-meta li i {
+  color: var(--theme-color2);
+}
+.tm-sc-blog.blog-vertical-list article .entry-content .entry-meta li a:hover {
+  color: var(--theme-color2);
+}
+.tm-sc-blog.blog-vertical-list article:first-child {
+  padding-top: 0;
+}
+.tm-sc-blog.blog-vertical-list article:last-child {
+  border-bottom: none;
+}

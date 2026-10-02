@@ -32,7 +32,7 @@ class TM_Elementor_Animated_Layers extends Widget_Base {
 	 * @return string Widget name.
 	 */
 	public function get_name() {
-		return 'elemental-animated-layers';
+		return 'tm-ele-animated-layers';
 	}
 
 	/**

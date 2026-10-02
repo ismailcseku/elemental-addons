@@ -35,7 +35,7 @@ class TM_Elementor_Progress_Bar extends Widget_Base {
 	 * @return string Widget name.
 	 */
 	public function get_name() {
-		return 'elemental-progress-bar';
+		return 'tm-ele-progress-bar';
 	}
 
 	/**

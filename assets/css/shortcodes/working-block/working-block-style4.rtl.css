@@ -1,0 +1,113 @@
+.tm-sc-working .icon {
+  display: inline-block;
+}
+.tm-sc-working .icon,
+.tm-sc-working .working-title,
+.tm-sc-working .working-details {
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.working-block-style4 {
+  padding: 0 23px;
+  position: relative;
+}
+.working-block-style4::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -10px;
+  height: calc(100% + 22px);
+  content: "";
+  width: 1px;
+  background: rgba(217, 217, 217, 0.1);
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+.working-block-style4::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  width: 1px;
+  height: calc(100% + 22px);
+  background: var(--theme-color1);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  left: -10px;
+  right: auto;
+}
+.working-block-style4 .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+}
+@media (max-width: 575.98px) {
+  .working-block-style4 .head {
+    align-items: center;
+  }
+}
+.working-block-style4 .head .image {
+  width: 150px;
+  height: 150px;
+}
+.working-block-style4 .head .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.working-block-style4 .head .working-count {
+  font-size: 120px;
+  font-weight: 500;
+  font-family: var(--heading-font-family);
+  line-height: 1;
+  background: linear-gradient(0deg, rgba(21, 21, 21, 0.2) 5.71%, rgba(136, 255, 42, 0.2) 99.78%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 575.98px) {
+  .working-block-style4 .head .working-count {
+    font-size: 90px;
+  }
+}
+.working-block-style4 .content {
+  padding-top: 40px;
+}
+.working-block-style4 .content .working-title {
+  margin: 0;
+  color: #fff;
+}
+.working-block-style4 .content .working-details {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+  padding-top: 9px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.working-block-style4 .content .working-details li {
+  display: inline-block;
+  margin-left: 10px;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: -0.32px;
+}
+.working-block-style4 .content .working-details li i {
+  color: var(--theme-color1);
+  padding-left: 10px;
+}
+.working-block-style4:hover::after {
+  opacity: 1;
+}
+
+.working-block:last-child .working-block-style4::before, .working-block:last-child .working-block-style4::after {
+  display: none;
+}

@@ -42,6 +42,13 @@ if ( ! class_exists( 'Elemental_Addons_Plugin' ) ) {
 				'widgets/section-title'          => '\ElementalAddons\Widgets\TM_Elementor_Section_Title',
 				'widgets/text-editor'            => '\ElementalAddons\Widgets\TM_Elementor_TextEditor',
 				'widgets/text-editor-advanced'   => '\ElementalAddons\Widgets\TM_Elementor_TextEditorAdvanced',
+				'widgets/theme-button'           => '\ElementalAddons\Widgets\ThemeButton\TM_Elementor_Theme_Button',
+				'widgets/list'                   => '\ElementalAddons\Widgets\TM_Elementor_List',
+				'widgets/icon-box'               => '\ElementalAddons\Widgets\TM_Elementor_Iconbox',
+				'widgets/working-block'          => '\ElementalAddons\Widgets\WorkingBlock\TM_Elementor_WorkingBlock',
+				'widgets/swiper-carousel-arrow'  => '\ElementalAddons\Widgets\TM_Elementor_Swiper_Carousel_Arrow',
+				'widgets/pricing-plan'           => '\ElementalAddons\Widgets\PricingPlan\TM_Elementor_Pricing_Plan',
+				'cpt/blog'                       => '\ElementalAddons\Widgets\Blog\TM_Elementor_Blog',
 			);
 		}
 

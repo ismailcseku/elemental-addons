@@ -34,7 +34,7 @@ class TM_Elementor_TestimonialBlock extends Widget_Base {
 	 * @return string Widget name.
 	 */
 	public function get_name() {
-		return 'elemental-testimonial-block';
+		return 'tm-ele-testimonial-block';
 	}
 
 	/**

@@ -1,0 +1,60 @@
+.tm-swiper-carousel-arrow-wrap {
+  display: flex;
+}
+.tm-swiper-carousel-arrow-wrap .tm-swiper-arrow {
+  cursor: pointer;
+  background-color: var(--theme-color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: all 0.3s ease;
+  -khtml-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 72px 0 rgba(0, 0, 0, 0.14);
+}
+.tm-swiper-carousel-arrow-wrap .tm-swiper-arrow i {
+  color: var(--theme-color1);
+  font-size: 16px;
+  -webkit-transition: all 0.3s ease;
+  -khtml-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.tm-swiper-carousel-arrow-wrap .tm-swiper-arrow i:before {
+  position: relative;
+  top: 1px;
+}
+.tm-swiper-carousel-arrow-wrap .tm-swiper-arrow:hover, .tm-swiper-carousel-arrow-wrap .tm-swiper-arrow:active {
+  background-color: var(--theme-color1);
+}
+.tm-swiper-carousel-arrow-wrap .tm-swiper-arrow:hover i, .tm-swiper-carousel-arrow-wrap .tm-swiper-arrow:active i {
+  color: var(--theme-color1-text-color);
+}
+.tm-swiper-carousel-arrow-wrap .tm-swiper-arrow.tm-swiper-arrow-prev {
+  margin-right: 12px;
+}
+.tm-swiper-carousel-arrow-wrap.style1 .tm-swiper-arrow {
+  width: 52px;
+  height: 52px;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+.tm-swiper-carousel-arrow-wrap.style2 .tm-swiper-arrow {
+  width: 60px;
+  height: 60px;
+}
+.tm-swiper-carousel-arrow-wrap .tm-swiper-arrow.tm-swiper-arrow-prev:hover i::before {
+  content: "\e879";
+}
+.tm-swiper-carousel-arrow-wrap .tm-swiper-arrow.tm-swiper-arrow-next:hover i::before {
+  content: "\e87a";
+}

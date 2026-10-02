@@ -34,7 +34,7 @@ class TM_Elementor_Image_Gallery extends Widget_Base {
 	 * @return string Widget name.
 	 */
 	public function get_name() {
-		return 'elemental-image-gallery2';
+		return 'tm-ele-image-gallery2';
 	}
 
 	/**

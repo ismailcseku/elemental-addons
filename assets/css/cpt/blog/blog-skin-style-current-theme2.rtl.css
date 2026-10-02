@@ -1,0 +1,176 @@
+.tm-sc-blog article .box-hover-effect {
+  display: block;
+}
+.tm-sc-blog article .post-thumb .post-thumb-inner .thumb {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+.tm-sc-blog article .post-thumb .post-thumb-inner .thumb img {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  transition: all 0.4s ease-in-out;
+}
+.tm-sc-blog article .post-thumb .post-thumb-inner .thumb .icon-link {
+  background: #2d1212;
+  color: #fff;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transition: all 0.45s;
+  width: 32px;
+  height: 32px;
+  line-height: 33px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 99;
+  text-align: center;
+  margin-top: 45px;
+}
+.tm-sc-blog article .entry-content > :nth-last-child {
+  margin-bottom: 0;
+}
+
+.blog-item-current-style2 {
+  border-radius: 20px;
+  background-color: #f7f8ed;
+}
+.blog-item-current-style2 .thumb {
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.blog-item-current-style2 .thumb .date {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-color: var(--theme-color1);
+  color: var(--theme-color3);
+  font-size: 30px;
+  border-radius: 10px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+}
+.blog-item-current-style2 .thumb img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: block;
+  object-fit: cover;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.blog-item-current-style2 .thumb img:first-child {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  -webkit-transform: translateX(-50%) scaleX(2);
+  transform: translate(-50%) scaleX(2);
+  opacity: 0;
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+.blog-item-current-style2 .content {
+  padding: 30px 40px;
+}
+@media (max-width: 1399.98px) {
+  .blog-item-current-style2 .content {
+    padding: 30px 35px;
+  }
+}
+@media (max-width: 991.98px) {
+  .blog-item-current-style2 .content {
+    padding: 30px;
+  }
+}
+@media (max-width: 575.98px) {
+  .blog-item-current-style2 .content {
+    padding: 28px 30px;
+  }
+}
+@media (max-width: 575.98px) {
+  .blog-item-current-style2 .content {
+    padding: 26px 28px;
+  }
+}
+.blog-item-current-style2 .content .tag {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--theme-color3);
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.blog-item-current-style2 .content .tag:hover {
+  color: var(--theme-color1);
+}
+.blog-item-current-style2 .content .entry-title {
+  margin-bottom: 14px;
+  margin-top: 0;
+}
+@media (max-width: 575.98px) {
+  .blog-item-current-style2 .content .entry-title {
+    margin-bottom: 9px;
+  }
+}
+.blog-item-current-style2 .content .entry-title a {
+  background-position: 100% 95%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  display: inline;
+}
+.blog-item-current-style2 .content .entry-title a:hover {
+  color: var(--theme-color1);
+  background-size: 100% 2px;
+  background-image: linear-gradient(-180deg, var(--theme-color1) 0%, var(--theme-color1) 100%);
+}
+.blog-item-current-style2 .content .link-btn {
+  display: inline-flex;
+  gap: 12px;
+  color: var(--theme-color2);
+  text-transform: capitalize;
+  margin-top: 22px;
+}
+@media (max-width: 575.98px) {
+  .blog-item-current-style2 .content .link-btn {
+    margin-top: 18px;
+  }
+}
+.blog-item-current-style2 .content .link-btn i {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  line-height: 32px;
+  background-color: var(--theme-color-white);
+  text-align: center;
+  color: var(--theme-color3);
+  transform: rotate(45deg);
+  transition: all 0.4s ease-in-out;
+}
+.blog-item-current-style2 .content .link-btn:hover i {
+  background: var(--theme-color1);
+  transform: rotate(0deg);
+}
+.blog-item-current-style2:hover .thumb img:first-child {
+  -webkit-transform: translateX(0) scaleX(1);
+  transform: translate(0) scaleX(1);
+  opacity: 1;
+  -webkit-filter: blur(0);
+  filter: blur(0);
+}
+.blog-item-current-style2:hover .thumb img:nth-child(2) {
+  -webkit-transform: translateX(50%) scaleX(2);
+  transform: translateX(50%) scaleX(2);
+  opacity: 0;
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
