@@ -31,6 +31,8 @@ Widgets included:
 * Funfact Counter
 * Progress Bar
 * Section Title
+* Text Editor
+* Text Editor Advanced
 
 Contact Form 7 is optional. The Contact Form widget shows a notice in the editor when Contact Form 7 is not active.
 

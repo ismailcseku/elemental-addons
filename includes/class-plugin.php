@@ -40,6 +40,8 @@ if ( ! class_exists( 'Elemental_Addons_Plugin' ) ) {
 				'widgets/funfact-counter'        => '\ElementalAddons\Widgets\TM_Elementor_Funfact_Counter',
 				'widgets/progress-bar'           => '\ElementalAddons\Widgets\TM_Elementor_Progress_Bar',
 				'widgets/section-title'          => '\ElementalAddons\Widgets\TM_Elementor_Section_Title',
+				'widgets/text-editor'            => '\ElementalAddons\Widgets\TM_Elementor_TextEditor',
+				'widgets/text-editor-advanced'   => '\ElementalAddons\Widgets\TM_Elementor_TextEditorAdvanced',
 			);
 		}
 

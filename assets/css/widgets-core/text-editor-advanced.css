@@ -1,0 +1,28 @@
+.elementor-widget-tm-ele-text-editor-advanced .elementor-widget-container {
+  z-index: 0;
+  position: relative;
+}
+.elementor-widget-tm-ele-text-editor-advanced .elementor-widget-container:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  opacity: 0.9;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.elementor-widget-tm-ele-text-editor-advanced .elementor-widget-container .tm-text-editor-advanced {
+  z-index: 1;
+}
+
+.tm-text-editor-advanced .each-item,
+.tm-text-editor-advanced .each-item * {
+  transition: all 0.3s ease;
+}
+
+.tm-text-editor,
+.tm-text-editor * {
+  transition: all 0.3s ease;
+}
