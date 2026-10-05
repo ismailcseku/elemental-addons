@@ -57,7 +57,7 @@ class TM_Elementor_Swiper_Carousel_Arrow extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'tm-elementor-widget-icon';
+		return 'eicon-navigation-horizontal';
 	}
 
 	/**

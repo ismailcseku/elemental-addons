@@ -58,7 +58,7 @@ class TM_Elementor_TextEditorAdvanced extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'tm-elementor-widget-icon';
+		return 'eicon-text-area';
 	}
 
 	/**

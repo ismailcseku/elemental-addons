@@ -59,7 +59,7 @@ class TM_Elementor_Pricing_Plan extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'tm-elementor-widget-icon';
+		return 'eicon-price-list';
 	}
 
 	/**

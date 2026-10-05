@@ -61,7 +61,7 @@ class TM_Elementor_Progress_Bar extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'tm-elementor-widget-icon';
+		return 'eicon-skill-bar';
 	}
 
 	/**

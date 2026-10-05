@@ -62,7 +62,7 @@ class TM_Elementor_Contact_Form_7 extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'tm-elementor-widget-icon';
+		return 'eicon-form-horizontal';
 	}
 
 	/**
