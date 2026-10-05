@@ -2519,6 +2519,6 @@ class TM_Elementor_Iconbox extends Widget_Base {
 		//Produce HTML version by using the parameters (filename, variation, folder name, parameters, shortcode_ob_start)
 		$html = \elemental_addons_get_widgetcore_template_part( 'icon-box-' . $settings['icon_position'], null, 'icon-box/tpl', $settings, true );
 
-		echo $html;
+		\elemental_addons_print_html( $html );
 	}
 }

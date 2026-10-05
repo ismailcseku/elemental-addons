@@ -1213,7 +1213,7 @@ class TM_Elementor_Accordion extends Widget_Base {
 				$i++;
 			}
 		}
-		echo $html;
+		\elemental_addons_print_html( $html );
 	?>
 		</div>
 	<?php

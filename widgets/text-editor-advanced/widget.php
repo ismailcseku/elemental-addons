@@ -477,7 +477,7 @@ class TM_Elementor_TextEditorAdvanced extends Widget_Base {
 				?>
 				<div class="<?php echo esc_attr(implode(' ', $item_classes)); ?>" <?php if( ! empty( $parallax_params ) ) : ?> data-parallax="<?php echo esc_attr($parallax_params); ?>" <?php endif; ?>>
 				<?php
-				echo do_shortcode($item['content']);
+				\elemental_addons_print_html( do_shortcode( $item['content'] ) );
 				?>
 				</div>
 				<?php

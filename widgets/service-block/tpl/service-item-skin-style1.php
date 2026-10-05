@@ -13,7 +13,7 @@ $url = ( $feature_link && $feature_link['url'] ) ? $feature_link['url'] : '';
   <div class="inner-block">
     <div class="title-box">
       <div class="title-inner">
-        <div class="count-number">/<?php echo $count;?>/</div>
+        <div class="count-number">/<?php echo esc_html( $count );?>/</div>
         <?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'service-block/tpl', $service_item, false );?>
       </div>
       <div class="arrow-icon">

@@ -8,7 +8,7 @@
     </div>
     <div id="collapse<?php echo esc_attr($rand); ?>" class="collapse multi-collapse <?php if($expand === 'yes') { echo esc_html( 'show' ); }?>" aria-labelledby="heading<?php echo esc_attr($rand); ?>">
       <div class="card-body">
-        <?php echo do_shortcode($content); ?>
+        <?php elemental_addons_print_html( do_shortcode( $content ) ); ?>
       </div>
     </div>
   </div>

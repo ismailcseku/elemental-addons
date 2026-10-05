@@ -1,1 +1,1 @@
-<?php echo $count;?>
+<?php echo esc_html( $count ); ?>

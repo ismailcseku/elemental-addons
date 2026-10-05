@@ -1,1 +1,1 @@
-<div class="features-count"><?php echo $count;?></div>
+<div class="features-count"><?php echo esc_html( $count ); ?></div>

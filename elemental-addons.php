@@ -44,6 +44,7 @@ function elemental_addons_missing_elementor_notice() {
  */
 function elemental_addons_init() {
 	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/compat.php';
+	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/security.php';
 	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/template-loader.php';
 	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/helpers.php';
 	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/controls.php';
@@ -59,6 +60,7 @@ add_action( 'elementor/loaded', 'elemental_addons_init' );
  * Admin UI pages load only in wp-admin.
  */
 function elemental_addons_admin_init() {
+	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/security.php';
 	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/widgets-manager/class-widgets-manager.php';
 	elemental_addons_widgets_manager();
 

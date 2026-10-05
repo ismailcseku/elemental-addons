@@ -8,7 +8,7 @@
 				<?php \elemental_addons_get_shortcode_template_part( 'title', null, 'pricing-plan/tpl', $settings, false );?>
 				<?php if( in_array('has-label', $classes) ) { ?>
 				<div class="discoun-box">
-					<span class="pricing-plan-label"><?php echo $label_text ?></span>
+					<span class="pricing-plan-label"><?php echo esc_html( $label_text );?></span>
 					<span class="icon-arrow"></span>
 				</div>
 				<?php } ?>

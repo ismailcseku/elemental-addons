@@ -123,7 +123,7 @@ if ( ! function_exists( 'evolta_get_comments_number' ) ) {
 if ( ! function_exists( 'evolta_get_excerpt' ) ) {
 	function evolta_get_excerpt( $excerpt_length = '' ) {
 		if ( post_password_required() ) {
-			echo get_the_password_form();
+			echo wp_kses_post( get_the_password_form() );
 			return;
 		}
 		$word_count = 20;

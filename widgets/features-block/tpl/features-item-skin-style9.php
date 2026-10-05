@@ -16,7 +16,7 @@ if( empty($image[0])) {
 <div class="features-block-style9">
   <div class="inner-box" style="--block-feature-style9-bg-featured-image: url('<?php echo esc_url( $image[0] );?>')">
     <?php elemental_addons_get_shortcode_template_part( 'icon-type', $features_item['icon_type'], 'features-block/tpl', $features_item, false );?>
-    <span class="count"><?php echo $features_item['count']; ?></span>
+    <span class="count"><?php echo esc_html( $features_item['count'] ); ?></span>
     <?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'features-block/tpl', $features_item, false );?>
     <?php if ( $show_view_details_button == 'yes' ) : ?>
       <?php elemental_addons_get_shortcode_template_part( 'button', null, 'features-block/tpl', $features_item, false );?>

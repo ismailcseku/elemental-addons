@@ -12,7 +12,7 @@ $first_letter_title = substr($title, 0, 1);
   <div class="inner-box">
     <div class="image">
       <?php elemental_addons_get_shortcode_template_part( 'part-featured-image', null, 'service-block/tpl', $service_item, false );?>
-      <span class="icon"><?php echo $first_letter_title; ?></span>
+      <span class="icon"><?php echo esc_html( $first_letter_title ); ?></span>
     </div>
     <?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'service-block/tpl', $service_item, false );?>
     <?php elemental_addons_get_shortcode_template_part( 'part-content', null, 'service-block/tpl', $service_item, false );?>

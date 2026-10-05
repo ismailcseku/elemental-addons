@@ -1458,7 +1458,7 @@ class TM_Elementor_Animated_Layers extends Widget_Base {
 				$html .= elemental_addons_get_widgetcore_template_part( $item['display_type'], null, 'animated-layers/tpl', $item, true );
 			}
 		}
-		echo $html;
+		\elemental_addons_print_html( $html );
 	?>
 			</div>
 			<div class="clearfix"></div>

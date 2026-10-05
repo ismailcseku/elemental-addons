@@ -1610,6 +1610,6 @@ class TM_Elementor_Section_Title extends Widget_Base {
 
 		$html = elemental_addons_get_widgetcore_template_part( 'section-title-' . $settings['design_style'], null, 'section-title/tpl', $settings, true );
 
-		echo $html;
+		\elemental_addons_print_html( $html );
 	}
 }

@@ -211,6 +211,6 @@ class TM_Elementor_Theme_Button extends Widget_Base {
 		//Produce HTML version by using the parameters (filename, variation, folder name, parameters, shortcode_ob_start)
 		$html = \elemental_addons_get_shortcode_template_part( 'theme-button-skin-default', null, 'theme-button/tpl', $settings, true );
 
-		echo $html;
+		\elemental_addons_print_html( $html );
 	}
 }

@@ -506,6 +506,6 @@ class TM_Elementor_Progress_Bar extends Widget_Base {
 
 		$html = elemental_addons_get_widgetcore_template_part( 'progress-bar-' . $settings['design_style'], null, 'progress-bar/tpl', $settings, true );
 
-		echo $html;
+		\elemental_addons_print_html( $html );
 	}
 }

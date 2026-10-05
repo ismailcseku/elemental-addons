@@ -7,7 +7,7 @@ $features_item['subtitle_tag'] = $subtitle_tag;
 <div class="features-block-style16">
   <div class="inner-box">
     <div class="icon-box">
-      <span class="count"><?php echo $features_item['count']; ?></span>
+      <span class="count"><?php echo esc_html( $features_item['count'] ); ?></span>
       <div class="icon">
         <?php elemental_addons_get_shortcode_template_part( 'icon-type', $features_item['icon_type'], 'features-block/tpl', $features_item, false );?>
       </div>

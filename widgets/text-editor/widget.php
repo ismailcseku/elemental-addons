@@ -816,7 +816,7 @@ class TM_Elementor_TextEditor extends Widget_Base {
 		$settings['classes'] = $classes;
 	?>
 		<div class="<?php if( !empty($classes) ) echo esc_attr(implode(' ', $classes)); ?>" <?php if( ! empty( $parallax_params ) ) : ?> data-parallax="<?php echo esc_attr($parallax_params); ?>" <?php endif; ?>>
-		<?php echo do_shortcode($settings['content']); ?>
+		<?php \elemental_addons_print_html( do_shortcode( $settings['content'] ) ); ?>
 		</div>
 	<?php
 	}

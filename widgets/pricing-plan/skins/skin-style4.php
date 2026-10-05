@@ -65,6 +65,6 @@ class Skin_Pricing_Style4 extends Elementor_Skin_Base {
 		//Produce HTML version by using the parameters (filename, variation, folder name, parameters, shortcode_ob_start)
 		$html = \elemental_addons_get_shortcode_template_part( 'pricing-plan', $settings['_skin'], 'pricing-plan/tpl', $settings, true );
 
-		echo $html;
+		\elemental_addons_print_html( $html );
 	}
 }

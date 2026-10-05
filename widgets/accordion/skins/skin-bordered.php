@@ -56,7 +56,7 @@ class Skin_Accordion_Bordered extends Elementor_Skin_Base {
 				$i++;
 			}
 		}
-		echo $html;
+		\elemental_addons_print_html( $html );
 	?>
 		</div>
 	<?php

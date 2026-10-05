@@ -326,6 +326,6 @@ class Skin_Vertical_List extends Elementor_Skin_Base {
 		//Produce HTML version by using the parameters (filename, variation, folder name, parameters, shortcode_ob_start)
 		$html = \elemental_addons_get_cpt_shortcode_template_part( 'blog', $settings['_skin'], 'blog/tpl/design-style', $settings, true );
 
-		echo $html;
+		\elemental_addons_print_html( $html );
 	}
 }

@@ -760,6 +760,6 @@ class TM_Elementor_Clients_logo extends Widget_Base {
 		//Produce HTML version by using the parameters (filename, variation, folder name, parameters, shortcode_ob_start)
 		$html = elemental_addons_get_widgetcore_template_part( 'clients', $settings['display_type'], 'clients-logo/tpl', $settings, true );
 
-		echo $html;
+		\elemental_addons_print_html( $html );
 	}
 }

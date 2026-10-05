@@ -2506,14 +2506,19 @@ class TM_Elementor_Contact_Form_7 extends Widget_Base {
 				}
 
 				if ($settings['form_description'] == 'yes' && $settings['form_description_text'] != '') {
-					echo '<div class="tm-contact-form-description tm-contact-form-7-description">
-								' . $this->parse_text_editor($settings['form_description_text']) . '
-							</div>';
+					\elemental_addons_print_html(
+						'<div class="tm-contact-form-description tm-contact-form-7-description">' .
+						$this->parse_text_editor( $settings['form_description_text'] ) .
+						'</div>'
+					);
 				}
 
 				echo '</div>';
 			}
-			echo do_shortcode('[contact-form-7 id="' . $settings['contact_form_list'] . '" ]');
+			$form_id = absint( $settings['contact_form_list'] );
+			if ( $form_id ) {
+				\elemental_addons_print_html( do_shortcode( '[contact-form-7 id="' . $form_id . '"]' ) );
+			}
 			echo '</div>
 			</div>';
 		}

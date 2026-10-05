@@ -574,7 +574,7 @@ class TM_Elementor_Floating_Objects extends Widget_Base {
 				$html .= elemental_addons_get_widgetcore_template_part( 'floating-objects', null, 'floating-objects/tpl', $item, true );
 			}
 		}
-		echo $html;
+		\elemental_addons_print_html( $html );
 	?>
 		</div>
 	<?php

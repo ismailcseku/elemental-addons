@@ -15,6 +15,6 @@
 ?>
 <div class="layer-image-wrapper <?php echo esc_attr($animation_type); ?> <?php echo esc_attr(implode(' ', $classes_first)); ?> elementor-repeater-item-<?php echo esc_attr( $item['_id'] ); ?>" style="<?php echo esc_attr($wrapper_inline_css); ?>">
 	<div class="layer-inner">
-		<?php echo do_shortcode($content); ?>
+		<?php elemental_addons_print_html( do_shortcode( $content ) ); ?>
 	</div>
 </div>

@@ -1568,6 +1568,6 @@ class TM_Elementor_CounterBlock extends Widget_Base {
 		//Produce HTML version by using the parameters (filename, variation, folder name, parameters, shortcode_ob_start)
 		$html = elemental_addons_get_shortcode_template_part( 'counter-skin-style1', null, 'counter-block/tpl', $settings, true );
 
-		echo $html;
+		\elemental_addons_print_html( $html );
 	}
 }

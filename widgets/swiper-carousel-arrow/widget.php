@@ -447,6 +447,6 @@ class TM_Elementor_Swiper_Carousel_Arrow extends Widget_Base {
 
 		$html = \elemental_addons_get_shortcode_template_part( 'swiper-carousel-arrow', null, 'swiper-carousel-arrow/tpl', $settings, true );
 
-		echo $html;
+		\elemental_addons_print_html( $html );
 	}
 }

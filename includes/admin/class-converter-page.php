@@ -162,12 +162,17 @@ if ( ! class_exists( 'Elemental_Addons_Converter_Page' ) ) {
 
 			$raw = '';
 			if ( ! empty( $_FILES['elemental_json_file']['tmp_name'] ) && is_uploaded_file( $_FILES['elemental_json_file']['tmp_name'] ) ) {
-				// phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
-				$raw = file_get_contents( $_FILES['elemental_json_file']['tmp_name'] );
+				$tmp  = $_FILES['elemental_json_file']['tmp_name']; // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
+				$size = isset( $_FILES['elemental_json_file']['size'] ) ? (int) $_FILES['elemental_json_file']['size'] : 0;
+				if ( $size > 0 && $size <= 5 * MB_IN_BYTES ) {
+					// phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
+					$raw = (string) file_get_contents( $tmp );
+				}
 			}
 			if ( '' === $raw && isset( $_POST['elemental_json'] ) ) {
-				$raw = wp_unslash( $_POST['elemental_json'] );
+				$raw = (string) wp_unslash( $_POST['elemental_json'] ); // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
 			}
+			$raw = trim( $raw );
 
 			$document = Elemental_Addons_Layout_Converter::decode( $raw );
 			if ( is_wp_error( $document ) ) {

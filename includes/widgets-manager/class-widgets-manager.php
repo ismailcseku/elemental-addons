@@ -262,13 +262,25 @@ if ( ! class_exists( 'Elemental_Addons_Widgets_Manager' ) ) {
 
 			check_admin_referer( self::NONCE_ACTION );
 
-			$submitted = isset( $_POST['elemental_widgets'] ) ? (array) wp_unslash( $_POST['elemental_widgets'] ) : array();
-			$disabled  = array();
+			$submitted_raw = isset( $_POST['elemental_widgets'] ) ? wp_unslash( $_POST['elemental_widgets'] ) : array(); // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
+			$submitted     = array();
+			if ( is_array( $submitted_raw ) ) {
+				foreach ( $submitted_raw as $group_key => $items ) {
+					$group_key = sanitize_key( $group_key );
+					if ( ! is_array( $items ) ) {
+						continue;
+					}
+					foreach ( $items as $slug_key => $value ) {
+						$submitted[ $group_key ][ sanitize_key( $slug_key ) ] = (string) absint( $value );
+					}
+				}
+			}
 
+			$disabled = array();
 			foreach ( $this->get_groups() as $group => $data ) {
 				$checked = isset( $submitted[ $group ] ) && is_array( $submitted[ $group ] ) ? $submitted[ $group ] : array();
 				foreach ( $this->get_group_widgets( $group ) as $slug => $widget ) {
-					if ( ! isset( $checked[ $slug ] ) ) {
+					if ( empty( $checked[ $slug ] ) ) {
 						$disabled[ $group ][] = $slug;
 					}
 				}

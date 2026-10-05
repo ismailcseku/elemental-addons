@@ -502,6 +502,6 @@ class TM_Elementor_List extends Widget_Base {
 		//Produce HTML version by using the parameters (filename, variation, folder name, parameters, shortcode_ob_start)
 		$html = \elemental_addons_get_widgetcore_template_part( 'list', null, 'list/tpl', $settings, true );
 
-		echo $html;
+		\elemental_addons_print_html( $html );
 	}
 }

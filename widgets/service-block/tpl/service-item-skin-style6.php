@@ -12,7 +12,7 @@ $url = ( $feature_link && $feature_link['url'] ) ? $feature_link['url'] : '';
 <div class="service-block-style6">
 	<div class="inner-box">
 		<div class="title-box">
-			<div class="number">{<span><?php echo $count;?></span>}</div>
+			<div class="number">{<span><?php echo esc_html( $count );?></span>}</div>
 			<?php if( !empty( $title ) ) : ?>
 			<<?php echo esc_attr( $title_tag );?> class="service-title">
 				<?php echo wp_kses_post( $title ); ?>
