@@ -1,5 +1,5 @@
 === Elemental Addons for Elementor ===
-Contributors: kodesolution
+Contributors: ismailcseku
 Tags: elementor, addons, widgets, gallery, team
 Requires at least: 6.2
 Tested up to: 6.9
