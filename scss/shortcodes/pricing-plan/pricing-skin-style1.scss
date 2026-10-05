@@ -1,0 +1,269 @@
+@import "../../bootstrap-loader";
+
+.pricing-plan-skin-style1 {
+  border-radius: 30px;
+  overflow: hidden;
+  padding-top: 24px;
+  position: relative;
+  margin-bottom: 30px;
+  z-index: 0;
+  &:before {
+    background-color: var(--theme-color-white);
+    border-radius: 30px 30px 0 0;
+    content: "";
+    height: 110px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+    @include transition(all 300ms ease);
+  }
+  &.pricing-active,
+  &:hover {
+    .pricing-plan-inner {
+      &:before {
+        height: 100%;
+      }
+      .pricing-plan-head {
+        background-color: var(--theme-color1);
+        .title-box {
+          .pricing-plan-title {
+            color: var(--theme-color1-text-color);
+          }
+          .pricing-plan-subtitle {
+            color: var(--theme-color1-text-color);
+          }
+          .pricing-plan-thumb {
+            i,
+            img {
+              color: var(--theme-color1-text-color);
+            }
+            img {
+              filter: brightness(0);
+            }
+          }
+        }
+        .price-box {
+          color: var(--theme-color1-text-color);
+          .pricing-plan-pricing {
+            .price {
+              color: var(--theme-color1-text-color);
+            }
+          }
+        }
+      }
+      .features-list {
+        li {
+          color: var(--theme-color1-text-color);
+          &.no-action {
+            color: #ddd;
+            i {
+              color: rgba(var(--theme-color1-rgb), 0.4);
+            }
+          }
+        }
+      }
+      .btn-view-details {
+        .btn {
+          background-color: var(--theme-color1);
+          color: var(--theme-color1-text-color) !important;
+          &:before {
+            background-color: var(--theme-color-white);
+          }
+          &:hover {
+            color: var(--theme-color2);
+          }
+        }
+      }
+    }
+  }
+  &.pricing-active {
+    &:before {
+      background-color: var(--theme-color-white);
+      opacity: 1;
+    }
+    &:hover {
+      &:before {
+        background-color: var(--theme-color-white);
+        opacity: 1;
+      }
+    }
+  }
+
+  &:hover {
+    &:before {
+      opacity: 0;
+    }
+  }
+  .pricing-plan-label {
+    color: var(--theme-color1);
+    font-size: 20px;
+    font-weight: 500;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 7px;
+    width: 100%;
+    z-index: -1;
+    @include transition(all 300ms ease);
+  }
+  .pricing-plan-inner {
+    border: 1px solid rgba(var(--theme-color2-rgb), 0.1);
+    border-radius: 30px;
+    margin-top: 30px;
+    padding: 10px 10px 39px;
+    position: relative;
+    mask-image: url(../../../images/current-theme/price1-mask1.png);
+    mask-size: cover;
+    mask-position: right bottom;
+    mask-repeat: no-repeat;
+    @include transition(all 300ms ease);
+    z-index: 0;
+    &:before {
+      background-color: var(--theme-color2);
+      border-radius: 30px;
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0px;
+      height: 0;
+      width: 100%;
+      z-index: -1;
+      @include transition(all 300ms ease);
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      background: linear-gradient(360deg, rgba(82, 200, 52, 0.28) 0%, rgba(255, 255, 255, 0) 81.66%);
+      transition: all 300ms ease;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .pricing-plan-head {
+    background-color: var(--theme-color-white);
+    border: 1px solid rgba(215, 215, 215, 0.2);
+    border-radius: 20px;
+    margin-bottom: 29px;
+    overflow: hidden;
+    padding: 30px 39px;
+    position: relative;
+    z-index: 0;
+    @include transition(all 300ms ease);
+    .title-box {
+      margin-bottom: 26px;
+      padding-right: 40px;
+      position: relative;
+      .pricing-plan-title {
+        margin-top: 0;
+        margin-bottom: 2px;
+        @include transition(all 300ms ease);
+      }
+      .pricing-plan-subtitle {
+        line-height: 1.5;
+        margin-bottom: 0;
+        @include transition(all 300ms ease);
+      }
+      .pricing-plan-thumb {
+        position: absolute;
+        top: 6px;
+        right: -1px;
+        @include transition(all 300ms ease);
+        i,
+        img {
+          @include transition(all 300ms ease);
+        }
+      }
+    }
+    .price-box {
+      @include transition(all 300ms ease);
+      .pricing-plan-pricing {
+        .price {
+          color: var(--headings-color);
+          font-family: var(--heading-font-family);
+          font-weight: 500;
+          font-size: 65px;
+          line-height: 1;
+          display: flex;
+          align-items: flex-end;
+          @include transition(all 300ms ease);
+          @include media-breakpoint-down(lg) {
+            font-size: 40px;
+          }
+          .pricing-plan-separator,
+          .pricing-plan-postfix {
+            font-size: 16px;
+            font-weight: 400;
+            position: relative;
+            top: -7px;
+            @include transition(all 300ms ease);
+          }
+        }
+      }
+    }
+  }
+  .features-list {
+    margin-top: 0;
+    margin-bottom: 38px;
+    padding: 0 39px;
+    li {
+      color: var(--headings-color);
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      list-style-type: none;
+      margin-bottom: 0;
+      padding: 3px 0;
+      @include transition(all 300ms ease);
+      i {
+        color: var(--theme-color1);
+        padding-right: 12px;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+      &.no-action {
+        color: rgba(var(--theme-color2-rgb), 0.6);
+        i {
+          color: rgba(var(--theme-color1-rgb), 0.6);
+        }
+      }
+    }
+  }
+  .btn-view-details {
+    padding: 0 29px;
+    .btn {
+      background-color: var(--theme-color2);
+      border-radius: 40px;
+      color: var(--theme-color2-text-color);
+      display: inline-block;
+      font-family: var(--heading-font-family);
+      font-weight: 500;
+      letter-spacing: -0.03em;
+      line-height: 1;
+      padding: 19px 15px;
+      position: relative;
+      text-align: center;
+      width: 100%;
+      z-index: 0;
+      @include transition(all 300ms ease);
+      &:before {
+        background-color: var(--theme-color1);
+      }
+      i {
+        margin-left: 7px;
+      }
+      &:hover {
+        color: var(--theme-color-white);
+        &:before {
+        }
+      }
+    }
+  }
+}

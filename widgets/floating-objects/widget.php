@@ -17,6 +17,12 @@ class TM_Elementor_Floating_Objects extends Widget_Base {
 	public function __construct($data = [], $args = null) {
 		parent::__construct($data, $args);
 		$direction_suffix = is_rtl() ? '.rtl' : '';
+		wp_register_style(
+			'tm-floating-objects-style',
+			ELEMENTAL_ADDONS_ASSETS_URI . '/css/widgets-core/floating-objects' . $direction_suffix . '.css',
+			array(),
+			ELEMENTAL_ADDONS_VERSION
+		);
 	}
 
 	/**
@@ -93,6 +99,10 @@ class TM_Elementor_Floating_Objects extends Widget_Base {
 	 */
 	public function get_script_depends() {
 		return [ 'elemental-addons-js' ];
+	}
+
+	public function get_style_depends() {
+		return [ 'tm-floating-objects-style' ];
 	}
 
 	/**
@@ -537,7 +547,7 @@ class TM_Elementor_Floating_Objects extends Widget_Base {
 		$classes[] = 'tm-ele-floating-objects';
 		$classes[] = $settings['custom_css_class'];
 		if ( $settings['visible_mobile'] != 'yes' ) {
-			$classes[] = 'd-none d-lg-block';
+			$classes[] = 'hide-on-mobile';
 		}
 		$settings['classes'] = $classes;
 	?>
@@ -551,13 +561,13 @@ class TM_Elementor_Floating_Objects extends Widget_Base {
 
 				$img_classes = array();
 				$img_classes[] = 'each-object elementor-repeater-item-' . $item['_id'];
-				$img_classes[] = $item['image_clip_path_animation'];
-				$img_classes[] = $item['animation_type'];
-				$img_classes[] = $item['image_custom_css_class'];
-				$item['img_classes'] = $img_classes;
+				$img_classes[] = ! empty( $item['image_clip_path_animation'] ) ? $item['image_clip_path_animation'] : '';
+				$img_classes[] = ! empty( $item['animation_type'] ) ? $item['animation_type'] : '';
+				$img_classes[] = ! empty( $item['image_custom_css_class'] ) ? $item['image_custom_css_class'] : '';
+				$item['img_classes'] = array_filter( $img_classes );
 
 
-				if($item['gsap_scrolling_effect'] === 'parallax') {
+				if( ! empty( $item['gsap_scrolling_effect'] ) && $item['gsap_scrolling_effect'] === 'parallax') {
 					wp_enqueue_script( 'gsap' );
 					wp_enqueue_script( 'gsap-scrolltrigger' );
 					wp_enqueue_script( 'tm-gsap-parallax' );
@@ -568,13 +578,12 @@ class TM_Elementor_Floating_Objects extends Widget_Base {
 							'rotate' => $item['gsap_motion_rotate'],
 							'opacity' => $item['gsap_motion_opacity']['size'],
 					];
-					$item['parallax_params'] = json_encode($parallax_params);
+					$item['parallax_params'] = wp_json_encode($parallax_params);
 				}
-				//Produce HTML version by using the parameters (filename, variation, folder name, parameters, shortcode_ob_start)
-				$html .= elemental_addons_get_widgetcore_template_part( 'floating-objects', null, 'floating-objects/tpl', $item, true );
+				// Echo template directly so style/data attributes are not stripped by kses.
+				elemental_addons_get_widgetcore_template_part( 'floating-objects', null, 'floating-objects/tpl', $item, false );
 			}
 		}
-		\elemental_addons_print_html( $html );
 	?>
 		</div>
 	<?php
@@ -586,10 +595,12 @@ class TM_Elementor_Floating_Objects extends Widget_Base {
 	protected function inline_css( $params ) {
 		$css_array = array();
 
-		if( $params['image'] != '' ) {
-			$image = wp_get_attachment_image_src( $params['image']['id'], 'full');
-			if( $image !== false ) {
-				$css_array[] = 'background-image: url('.$image[0].')';
+		if( ! empty( $params['image']['url'] ) ) {
+			$css_array[] = 'background-image: url(' . esc_url_raw( $params['image']['url'] ) . ')';
+		} elseif ( ! empty( $params['image']['id'] ) ) {
+			$image = wp_get_attachment_image_src( $params['image']['id'], 'full' );
+			if ( $image !== false ) {
+				$css_array[] = 'background-image: url(' . esc_url_raw( $image[0] ) . ')';
 			}
 		}
 		if( !empty($params['z_index']) ) {

@@ -1,0 +1,76 @@
+@import "../../bootstrap-loader";
+@import "working-block-common";
+
+.working-block-style3 {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+  margin-left: 35px;
+  padding: 29px 0;
+  gap: 65px;
+  position: relative;
+  z-index: 1;
+  @include media-breakpoint-down (xl){
+    gap: 30px;
+  }
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.13);
+    left: 0;
+    z-index: -1;
+  }
+
+  .working-title {
+    color: #fff;
+    margin-top: 0;
+  }
+
+  .working-count {
+    background-color: #000;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 50%;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--heading-font-family);
+    font-size: 30px;
+    font-weight: 600;
+    width: 70px;
+    height: 70px;
+    margin-left: -35px;
+    @include transition;
+  }
+  &:hover {
+    .working-count {
+      background-color: var(--theme-color1);
+      color: var(--theme-color1-text-color);
+    }
+  }
+}
+
+.working-block {
+  &:first-child {
+    .working-block-style3 {
+      &:before {
+        height: calc(100% + 0px);
+        top: 0;
+      }
+    }
+  }
+  &:last-child {
+    .working-block-style3 {
+      border-bottom: none;
+      &:before {
+        height: calc(100% + 0px);
+      }
+    }
+  }
+}

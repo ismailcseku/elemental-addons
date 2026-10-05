@@ -1,0 +1,79 @@
+@import "../bootstrap-loader";
+.tm-swiper-carousel-arrow-wrap {
+  display: flex;
+  align-items: center;
+  width: auto;
+  max-width: 100%;
+
+  .tm-swiper-arrow {
+    cursor: pointer;
+    background-color: var(--theme-color-white, #fff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    width: 52px;
+    height: 52px;
+    -webkit-transition: all 0.3s ease;
+    -khtml-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 72px 0 rgba(0, 0, 0, 0.14);
+
+    i,
+    svg {
+      color: var(--theme-color1);
+      fill: currentColor;
+      font-size: 16px;
+      width: 1em;
+      height: 1em;
+      -webkit-transition: all 0.3s ease;
+      -khtml-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+
+      &:before {
+        position: relative;
+        top: 1px;
+      }
+    }
+
+    &:hover,
+    &:active {
+      background-color: var(--theme-color1);
+      i,
+      svg {
+        color: var(--theme-color1-text-color, #fff);
+        fill: currentColor;
+      }
+    }
+
+    &.tm-swiper-arrow-prev {
+      margin-right: 12px;
+    }
+  }
+
+  &.style1 {
+    .tm-swiper-arrow {
+      width: 52px;
+      height: 52px;
+      -webkit-border-radius: 50%;
+      -khtml-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+    }
+  }
+
+  &.style2 {
+    .tm-swiper-arrow {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}

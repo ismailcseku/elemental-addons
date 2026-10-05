@@ -1,0 +1,11 @@
+.tm-sc-service {
+  .icon {
+    display: inline-block;
+  }
+  .icon,
+  .feature-title,
+  .feature-details {
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+  }
+}

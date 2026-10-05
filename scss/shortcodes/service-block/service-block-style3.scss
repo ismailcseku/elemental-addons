@@ -1,0 +1,212 @@
+@import "../../bootstrap-loader";
+@import "service-common";
+
+.service-block-style3 {
+  .inner-block {
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+    @include transition(all 300ms ease);
+    &:hover,
+    .active {
+      background-color: var(--theme-color2);
+      .image-box {
+        .image {
+          opacity: 1;
+          &:before {
+            height: 0;
+          }
+          &:after {
+            height: 100%;
+          }
+          img {
+            &:first-child {
+              transform: translateX(0) scaleX(1);
+              opacity: 1;
+              filter: blur(0);
+            }
+            &:nth-child(2) {
+              transform: translateX(-50%) scaleX(2);
+              opacity: 0;
+              filter: blur(10px);
+            }
+          }
+        }
+      }
+      .content-box {
+        .icon-block {
+          background-color: #fff;
+          i,
+          img {
+            @include transform(scaleX(-1));
+          }
+        }
+        .service-title {
+          color: #fff;
+        }
+        .service-details {
+          color: #fff;
+        }
+        .btn-more {
+          background-color: var(--theme-color3);
+          color: var(--theme-color3-text-color);
+        }
+      }
+      .shape-style1 {
+        svg {
+          path {
+            fill: var(--theme-color1);
+          }
+        }
+      }
+    }
+    .image-box {
+      border-radius: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      .image {
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+        z-index: 0;
+        opacity: 0;
+        &:before {
+          background-color: #fff;
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          z-index: 2;
+          @include transition(all 300ms ease);
+        }
+        &:after {
+          background-color: rgba(var(--theme-color2-rgb), 0.8);
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 0;
+          width: 100%;
+          z-index: 2;
+          @include transition(all 300ms ease);
+        }
+        img {
+          position: relative;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          display: block;
+          @include transition(all 500ms ease);
+          &:first-child {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            z-index: 1;
+            transform: translateX(50%) scaleX(2);
+            opacity: 0;
+            filter: blur(10px);
+          }
+        }
+      }
+    }
+    .content-box {
+      padding: 30px 30px 24px;
+      position: relative;
+      .icon-block {
+        background-color: #f5fbf7;
+        border-radius: 50%;
+        height: 70px;
+        line-height: 1;
+        width: 70px;
+        font-size: 40px;
+        color: var(--theme-color1);
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        margin-bottom: 23px;
+        @include transition(all 300ms ease);
+        .icon {
+          position: relative;
+          top: 4px;
+        }
+        i,
+        img {
+          display: inline-block;
+          position: relative;
+          @include transition(all 300ms ease);
+        }
+      }
+      .service-title {
+        margin-top: 0;
+        margin-bottom: 16px;
+        @include transition(all 300ms ease);
+        a {
+          &:hover,
+          &:focus {
+            color: #fff;
+          }
+        }
+      }
+      .service-details {
+        margin-bottom: 34px;
+        color: #6d827c;
+        @include transition(all 300ms ease);
+      }
+      .btn-more {
+        background-color: #f5fbf7;
+        border-radius: 10px;
+        color: var(--theme-color2);
+        padding: 6px 6px 6px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include transition(all 300ms ease);
+        .btn-title {
+          @include transition(all 300ms ease);
+        }
+        .btn-icon {
+          background-color: #fff;
+          border-radius: 50%;
+          height: 40px;
+          line-height: 1;
+          width: 40px;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          @include transition(all 300ms ease);
+        }
+        i,
+        img {
+          display: inline-block;
+          @include transform(rotate(-45deg));
+          @include transition(all 300ms ease);
+        }
+        &:hover {
+          i,
+          img {
+            @include transform(rotate(0deg));
+          }
+        }
+      }
+    }
+    .shape-style1 {
+      position: absolute;
+      content: "";
+      right: 0;
+      top: 30px;
+      width: 93px;
+      height: 61px;
+      background-image: url(../../../images/current-theme/leaf.png);
+      @include transition(all 300ms ease);
+    }
+  }
+}

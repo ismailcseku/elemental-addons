@@ -25,11 +25,6 @@
 .service-block-style7 .inner-box .image-box {
   position: relative;
 }
-.service-block-style7 .inner-box .image-box .service-featured-img {
-  position: relative;
-  margin-bottom: 0;
-  background-color: var(--theme-color2);
-}
 .service-block-style7 .inner-box .image-box .service-featured-img:before {
   position: absolute;
   left: 0;
@@ -41,6 +36,11 @@
   content: "";
   z-index: 1;
   transition: all 200ms ease;
+}
+.service-block-style7 .inner-box .image-box .service-featured-img {
+  position: relative;
+  margin-bottom: 0;
+  background-color: var(--theme-color2);
 }
 .service-block-style7 .inner-box .image-box .service-featured-img img {
   width: 100%;

@@ -1,0 +1,187 @@
+@import "../bootstrap-loader";
+
+/*
+ * Shortcode: funfacts.scss
+ * -----------------------------------------------
+*/
+.tm-sc-funfact {
+  @include transition(all 0.3s ease);
+  position: relative;
+  .funfact-inner {
+    .funfact-icon {
+      display: inline-block;
+      @include transition(all 0.3s ease-in-out);
+      i {
+        font-size: 45px;
+        @include transition(all 0.3s ease-in-out);
+      }
+      svg {
+        width: 1em;
+        height: 1em;
+        position: relative;
+        display: inline-block;
+      }
+    }
+    .counter {
+      margin-top: 0;
+      @include transition(all 0.3s ease);
+      .animate-number {
+        line-height: 1;
+      }
+    }
+    .subtitle {
+      margin-bottom: 0;
+      @include transition(all 0.3s ease);
+    }
+    .title {
+      @include transition(all 0.3s ease);
+    }
+    &.funfact-lefticon {
+      .details {
+        margin-left: 60px;
+      }
+    }
+  }
+  &.funfact-number-behind-text {
+    .counter {
+      position: absolute;
+      font-size: 100px;
+      line-height: 0.8;
+      text-transform: uppercase;
+      color: #ebeced;
+      left: 0;
+      right: 0;
+    }
+    .title-wrapper {
+      padding-top: 40px;
+      position: relative;
+      z-index: 1;
+    }
+  }
+  &.funfact-iconleft {
+    .element-left {
+      float: left;
+      margin-right: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+  &.funfact-iconright {
+    @include media-breakpoint-up(md) {
+      .funfact-inner {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .element-right {
+        margin-left: 2rem;
+      }
+      .details {
+        text-align: right;
+      }
+    }
+    @include media-breakpoint-down(md) {
+      text-align: center;
+    }
+  }
+
+  &.tm-animate-hover {
+    &:hover {
+      &.icon-rotate {
+        .funfact-icon {
+          transform: rotate(360deg);
+        }
+      }
+      &.icon-rotate-x {
+        .funfact-icon {
+          transform: rotateX(360deg);
+        }
+      }
+      &.icon-rotate-y {
+        .funfact-icon {
+          transform: rotateY(180deg);
+        }
+      }
+      &.icon-translate {
+        .funfact-icon {
+          transform: translate(-10px, 10px);
+        }
+      }
+      &.icon-translate-x {
+        .funfact-icon {
+          transform: translateX(-10px);
+        }
+      }
+      &.icon-translate-y {
+        .funfact-icon {
+          transform: translateY(-10px);
+        }
+      }
+      &.icon-scale {
+        .funfact-icon {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  &.funfact-centered-in-responsive-tablet {
+    &.funfact-iconleft {
+      @include media-breakpoint-down(lg) {
+        text-align: center;
+        .element-left {
+          float: none;
+          margin-right: 0;
+          margin-bottom: 1rem;
+          .funfact-icon {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &.funfact-centered-in-responsive-mobile {
+    &.funfact-iconleft {
+      @include media-breakpoint-down(md) {
+        text-align: center;
+        .element-left {
+          float: none;
+          margin-right: 0;
+          margin-bottom: 1rem;
+          .funfact-icon {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.funfact-horizontal {
+  .funfact-inner {
+    @include media-breakpoint-down(md) {
+      text-align: center;
+    }
+    .icon-wrapper {
+      @include media-breakpoint-up(md) {
+        float: left;
+        margin-right: 1.5rem;
+      }
+      @include media-breakpoint-down(md) {
+        margin-bottom: 10px;
+      }
+    }
+    .details-wrapper {
+      @include media-breakpoint-up(md) {
+        display: flex;
+        align-items: center;
+      }
+      .counter-wrapper {
+        @include media-breakpoint-up(md) {
+          margin-right: 1.5rem;
+        }
+      }
+    }
+  }
+}

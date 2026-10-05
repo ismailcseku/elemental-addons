@@ -1,0 +1,459 @@
+/*
+ * Shortcode: unordered-list.scss
+ * -----------------------------------------------
+*/
+.list-style-none {
+  list-style: none;
+}
+
+.tm-ordered-list ol {
+  list-style: none;
+  counter-reset: li;
+}
+.tm-ordered-list ol li {
+  position: relative;
+  counter-increment: li;
+}
+.tm-ordered-list ol li:before {
+  content: "." counter(li);
+  color: #333;
+  display: inline-block;
+  width: 1em;
+  margin-right: -1.5em;
+  margin-left: 0.5em;
+  font-weight: 600;
+  direction: ltr;
+}
+.tm-sc-unordered-list ul li:before {
+  color: var(--theme-color1);
+  display: inline-block;
+}
+.tm-sc-unordered-list.list-style1 ul {
+  list-style: none;
+}
+.tm-sc-unordered-list.list-style1 ul > li {
+  position: relative;
+}
+.tm-sc-unordered-list.list-style1 ul li {
+  list-style-type: none;
+}
+.tm-sc-unordered-list.list-style1 ul li:before {
+  z-index: 0;
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 95%;
+  padding-left: 13px;
+  vertical-align: middle;
+}
+.tm-sc-unordered-list.list-style1 ul li li {
+  padding-right: 15px;
+}
+.tm-sc-unordered-list.list-style1 ul li:before {
+  content: "\f058";
+}
+.tm-sc-unordered-list.list-style2 ul {
+  list-style: none;
+}
+.tm-sc-unordered-list.list-style2 ul > li {
+  position: relative;
+}
+.tm-sc-unordered-list.list-style2 ul li {
+  list-style-type: none;
+}
+.tm-sc-unordered-list.list-style2 ul li:before {
+  z-index: 0;
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 95%;
+  padding-left: 13px;
+  vertical-align: middle;
+}
+.tm-sc-unordered-list.list-style2 ul li li {
+  padding-right: 15px;
+}
+.tm-sc-unordered-list.list-style2 ul li:before {
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+}
+.tm-sc-unordered-list.list-style3 ul {
+  list-style: none;
+}
+.tm-sc-unordered-list.list-style3 ul > li {
+  position: relative;
+}
+.tm-sc-unordered-list.list-style3 ul li {
+  list-style-type: none;
+}
+.tm-sc-unordered-list.list-style3 ul li:before {
+  z-index: 0;
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 95%;
+  padding-left: 13px;
+  vertical-align: middle;
+}
+.tm-sc-unordered-list.list-style3 ul li li {
+  padding-right: 15px;
+}
+.tm-sc-unordered-list.list-style3 ul li:before {
+  content: "\f14a";
+}
+.tm-sc-unordered-list.list-style4 ul {
+  list-style: none;
+}
+.tm-sc-unordered-list.list-style4 ul > li {
+  position: relative;
+}
+.tm-sc-unordered-list.list-style4 ul li {
+  list-style-type: none;
+}
+.tm-sc-unordered-list.list-style4 ul li:before {
+  z-index: 0;
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 95%;
+  padding-left: 13px;
+  vertical-align: middle;
+}
+.tm-sc-unordered-list.list-style4 ul li li {
+  padding-right: 15px;
+}
+.tm-sc-unordered-list.list-style4 ul li:before {
+  content: "\f14a";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+}
+.tm-sc-unordered-list.list-style5 ul {
+  list-style: none;
+}
+.tm-sc-unordered-list.list-style5 ul > li {
+  position: relative;
+}
+.tm-sc-unordered-list.list-style5 ul li {
+  list-style-type: none;
+}
+.tm-sc-unordered-list.list-style5 ul li:before {
+  z-index: 0;
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 95%;
+  padding-left: 13px;
+  vertical-align: middle;
+}
+.tm-sc-unordered-list.list-style5 ul li li {
+  padding-right: 15px;
+}
+.tm-sc-unordered-list.list-style5 ul li:before {
+  content: "\f00c";
+}
+.tm-sc-unordered-list.list-style6 ul {
+  list-style: none;
+}
+.tm-sc-unordered-list.list-style6 ul > li {
+  position: relative;
+}
+.tm-sc-unordered-list.list-style6 ul li {
+  list-style-type: none;
+}
+.tm-sc-unordered-list.list-style6 ul li:before {
+  z-index: 0;
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 95%;
+  padding-left: 13px;
+  vertical-align: middle;
+}
+.tm-sc-unordered-list.list-style6 ul li li {
+  padding-right: 15px;
+}
+.tm-sc-unordered-list.list-style6 ul li:before {
+  content: "\f560";
+}
+.tm-sc-unordered-list.list-style7 ul {
+  list-style: none;
+}
+.tm-sc-unordered-list.list-style7 ul > li {
+  position: relative;
+}
+.tm-sc-unordered-list.list-style7 ul li {
+  list-style-type: none;
+}
+.tm-sc-unordered-list.list-style7 ul li:before {
+  z-index: 0;
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 95%;
+  padding-left: 13px;
+  vertical-align: middle;
+}
+.tm-sc-unordered-list.list-style7 ul li li {
+  padding-right: 15px;
+}
+.tm-sc-unordered-list.list-style7 ul li:before {
+  content: "\f35a";
+}
+.tm-sc-unordered-list.list-style8 ul {
+  list-style: none;
+}
+.tm-sc-unordered-list.list-style8 ul > li {
+  position: relative;
+}
+.tm-sc-unordered-list.list-style8 ul li {
+  list-style-type: none;
+}
+.tm-sc-unordered-list.list-style8 ul li:before {
+  z-index: 0;
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 95%;
+  padding-left: 13px;
+  vertical-align: middle;
+}
+.tm-sc-unordered-list.list-style8 ul li li {
+  padding-right: 15px;
+}
+.tm-sc-unordered-list.list-style8 ul li:before {
+  content: "\f30b";
+}
+.tm-sc-unordered-list.list-style9 ul {
+  list-style: none;
+}
+.tm-sc-unordered-list.list-style9 ul > li {
+  position: relative;
+}
+.tm-sc-unordered-list.list-style9 ul li {
+  list-style-type: none;
+}
+.tm-sc-unordered-list.list-style9 ul li:before {
+  z-index: 0;
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 95%;
+  padding-left: 13px;
+  vertical-align: middle;
+}
+.tm-sc-unordered-list.list-style9 ul li li {
+  padding-right: 15px;
+}
+.tm-sc-unordered-list.list-style9 ul li:before {
+  content: "\f054";
+}
+.tm-sc-unordered-list.list-style10 ul {
+  list-style: none;
+}
+.tm-sc-unordered-list.list-style10 ul > li {
+  position: relative;
+}
+.tm-sc-unordered-list.list-style10 ul li {
+  list-style-type: none;
+}
+.tm-sc-unordered-list.list-style10 ul li:before {
+  z-index: 0;
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 95%;
+  padding-left: 13px;
+  vertical-align: middle;
+}
+.tm-sc-unordered-list.list-style10 ul li li {
+  padding-right: 15px;
+}
+.tm-sc-unordered-list.list-style10 ul li:before {
+  content: "\f138";
+}
+.tm-sc-unordered-list.list-style11 ul {
+  list-style: none;
+}
+.tm-sc-unordered-list.list-style11 ul > li {
+  position: relative;
+}
+.tm-sc-unordered-list.list-style11 ul li {
+  list-style-type: none;
+}
+.tm-sc-unordered-list.list-style11 ul li:before {
+  z-index: 0;
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 95%;
+  padding-left: 13px;
+  vertical-align: middle;
+}
+.tm-sc-unordered-list.list-style11 ul li li {
+  padding-right: 15px;
+}
+.tm-sc-unordered-list.list-style11 ul li:before {
+  content: "\f152";
+}
+.tm-sc-unordered-list.list-style12 ul {
+  list-style: none;
+}
+.tm-sc-unordered-list.list-style12 ul > li {
+  position: relative;
+}
+.tm-sc-unordered-list.list-style12 ul li {
+  list-style-type: none;
+}
+.tm-sc-unordered-list.list-style12 ul li:before {
+  z-index: 0;
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 95%;
+  padding-left: 13px;
+  vertical-align: middle;
+}
+.tm-sc-unordered-list.list-style12 ul li li {
+  padding-right: 15px;
+}
+.tm-sc-unordered-list.list-style12 ul li:before {
+  content: "\f0da";
+}
+.tm-sc-unordered-list.list-style11 ul {
+  list-style: none;
+}
+.tm-sc-unordered-list.list-style11 ul > li {
+  position: relative;
+}
+.tm-sc-unordered-list.list-style11 ul li {
+  list-style-type: none;
+}
+.tm-sc-unordered-list.list-style11 ul li:before {
+  z-index: 0;
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 95%;
+  padding-left: 13px;
+  vertical-align: middle;
+}
+.tm-sc-unordered-list.list-style11 ul li li {
+  padding-right: 15px;
+}
+.tm-sc-unordered-list.list-style11 ul li:before {
+  content: "\f105";
+}
+.tm-sc-unordered-list.list-style13 ul {
+  list-style: none;
+}
+.tm-sc-unordered-list.list-style13 ul > li {
+  position: relative;
+}
+.tm-sc-unordered-list.list-style13 ul li {
+  list-style-type: none;
+}
+.tm-sc-unordered-list.list-style13 ul li:before {
+  z-index: 0;
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 95%;
+  padding-left: 13px;
+  vertical-align: middle;
+}
+.tm-sc-unordered-list.list-style13 ul li li {
+  padding-right: 15px;
+}
+.tm-sc-unordered-list.list-style13 ul li:before {
+  content: "\f101";
+}
+.tm-sc-unordered-list.list-style14 ul {
+  list-style: none;
+}
+.tm-sc-unordered-list.list-style14 ul > li {
+  position: relative;
+}
+.tm-sc-unordered-list.list-style14 ul li {
+  list-style-type: none;
+}
+.tm-sc-unordered-list.list-style14 ul li:before {
+  z-index: 0;
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 95%;
+  padding-left: 13px;
+  vertical-align: middle;
+}
+.tm-sc-unordered-list.list-style14 ul li li {
+  padding-right: 15px;
+}
+.tm-sc-unordered-list.list-style14 ul li:before {
+  content: "\f152";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+}
+.tm-sc-unordered-list.list-style15 ul {
+  list-style: none;
+}
+.tm-sc-unordered-list.list-style15 ul > li {
+  position: relative;
+}
+.tm-sc-unordered-list.list-style15 ul li {
+  list-style-type: none;
+}
+.tm-sc-unordered-list.list-style15 ul li:before {
+  z-index: 0;
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 95%;
+  padding-left: 13px;
+  vertical-align: middle;
+}
+.tm-sc-unordered-list.list-style15 ul li li {
+  padding-right: 15px;
+}
+.tm-sc-unordered-list.list-style15 ul li:before {
+  content: "\f152";
+}
+.tm-sc-unordered-list.list-style16 ul {
+  list-style: none;
+}
+.tm-sc-unordered-list.list-style16 ul > li {
+  position: relative;
+}
+.tm-sc-unordered-list.list-style16 ul li {
+  list-style-type: none;
+}
+.tm-sc-unordered-list.list-style16 ul li:before {
+  z-index: 0;
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 95%;
+  padding-left: 13px;
+  vertical-align: middle;
+}
+.tm-sc-unordered-list.list-style16 ul li li {
+  padding-right: 15px;
+}
+.tm-sc-unordered-list.list-style16 ul li:before {
+  content: "\f140";
+}
+
+.list-with-image ul {
+  list-style: none;
+}
+.list-with-image li img {
+  float: right;
+}
+.list-with-image li strong {
+  font-weight: 600;
+  color: #111c16;
+  margin-top: 8px;
+  display: block;
+  width: calc(100% - 64px);
+  float: right;
+}

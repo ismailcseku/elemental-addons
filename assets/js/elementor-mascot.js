@@ -1,41 +1,32 @@
-(function($) {
-    'use strict';
+(function ($) {
+  'use strict';
 
-    var elementorBlogSlider = {};
-
-    elementorBlogSlider.MascotCoreElementorInitScript = MascotCoreElementorInitScript;
-
-
-    elementorBlogSlider.MascotCoreElementorOnWindowLoad = MascotCoreElementorOnWindowLoad;
-
-    $(window).load(MascotCoreElementorOnWindowLoad);
-
-    /*
-     ** All functions to be called on $(window).load() should be in this function
-     */
-    function MascotCoreElementorOnWindowLoad() {
-
-        var isEditMode = Boolean(elementorFrontend.isEditMode());
-        if (isEditMode) {
-            MascotCoreElementorInitScript();
-        }
+  function safeThemeMascotInit() {
+    if (typeof THEMEMASCOT === 'undefined') {
+      return;
     }
-
-    function MascotCoreElementorInitScript(){
-        $(window).on('elementor/frontend/init', function () {
-            elementorFrontend.hooks.addAction( 'frontend/element_ready/init', function() {
-            // Do something that is based on the elementorFrontend object.
-            } );
-            elementorFrontend.hooks.addAction( 'frontend/element_ready/tm-ele-animated-layers.default', function() {
-            } );
-            elementorFrontend.hooks.addAction( 'frontend/element_ready/global', function( $scope ) {
-            } );
-            elementorFrontend.hooks.addAction( 'frontend/element_ready/widget', function( $scope ) {
-                THEMEMASCOT.documentOnReady.init();
-                THEMEMASCOT.windowOnLoad.init();
-            } );
-        });
+    if (THEMEMASCOT.documentOnReady && typeof THEMEMASCOT.documentOnReady.init === 'function') {
+      THEMEMASCOT.documentOnReady.init();
     }
+    if (THEMEMASCOT.windowOnLoad && typeof THEMEMASCOT.windowOnLoad.init === 'function') {
+      THEMEMASCOT.windowOnLoad.init();
+    }
+  }
 
+  function MascotCoreElementorInitScript() {
+    $(window).on('elementor/frontend/init', function () {
+      if (typeof elementorFrontend === 'undefined' || !elementorFrontend.hooks) {
+        return;
+      }
+      elementorFrontend.hooks.addAction('frontend/element_ready/widget', function () {
+        safeThemeMascotInit();
+      });
+    });
+  }
 
+  $(window).on('load', function () {
+    if (typeof elementorFrontend !== 'undefined' && elementorFrontend.isEditMode && elementorFrontend.isEditMode()) {
+      MascotCoreElementorInitScript();
+    }
+  });
 })(jQuery);

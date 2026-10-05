@@ -76,11 +76,6 @@
   min-height: 304px;
   overflow: hidden;
 }
-.service-block-style8 .inner-box .image-box .service-featured-img {
-  position: relative;
-  margin-bottom: 0;
-  background-color: var(--theme-color2);
-}
 .service-block-style8 .inner-box .image-box .service-featured-img:before {
   position: absolute;
   left: 0;
@@ -90,6 +85,11 @@
   background-color: #fff;
   content: "";
   transition: all 200ms ease;
+}
+.service-block-style8 .inner-box .image-box .service-featured-img {
+  position: relative;
+  margin-bottom: 0;
+  background-color: var(--theme-color2);
 }
 .service-block-style8 .inner-box .image-box .service-featured-img img {
   width: 100%;

@@ -22,11 +22,23 @@ if ( ! function_exists( 'evolta_get_rwmb_group' ) ) {
 }
 
 if ( ! function_exists( 'evolta_get_post_thumbnail_img' ) ) {
-	function evolta_get_post_thumbnail_img( $img_size = '' ) {
+	/**
+	 * Echo only the <img> for the featured image.
+	 *
+	 * @param string $post_format_or_size Post format or image size (Evolta used format first).
+	 * @param string $img_size            Image size when first arg is post format.
+	 */
+	function evolta_get_post_thumbnail_img( $post_format_or_size = '', $img_size = '' ) {
 		if ( ! has_post_thumbnail() ) {
 			return;
 		}
-		$size = $img_size ? $img_size : 'large';
+		// Compatible with both evolta_get_post_thumbnail_img( $size ) and ( $format, $size ).
+		$size = $img_size ? $img_size : ( $post_format_or_size ? $post_format_or_size : 'large' );
+		// If first arg looks like a post format, prefer second arg / large.
+		$formats = array( 'standard', 'video', 'gallery', 'audio', 'quote', 'link', 'image', 'status', 'aside', 'chat' );
+		if ( in_array( $post_format_or_size, $formats, true ) ) {
+			$size = $img_size ? $img_size : 'large';
+		}
 		$image = wp_get_attachment_image_src( get_post_thumbnail_id(), $size );
 		if ( empty( $image[0] ) ) {
 			return;
@@ -36,12 +48,17 @@ if ( ! function_exists( 'evolta_get_post_thumbnail_img' ) ) {
 }
 
 if ( ! function_exists( 'evolta_get_post_thumbnail' ) ) {
+	/**
+	 * Output featured image markup (templates call this without capturing return).
+	 *
+	 * @param string $post_format Unused; kept for Evolta signature compatibility.
+	 * @param string $img_size    Image size slug.
+	 */
 	function evolta_get_post_thumbnail( $post_format = '', $img_size = '' ) {
 		if ( ! has_post_thumbnail() ) {
-			return '';
+			return;
 		}
 		$size = $img_size ? $img_size : 'large';
-		ob_start();
 		?>
 		<div class="post-thumb">
 			<figure class="post-thumb-inner">
@@ -51,7 +68,6 @@ if ( ! function_exists( 'evolta_get_post_thumbnail' ) ) {
 			</figure>
 		</div>
 		<?php
-		return ob_get_clean();
 	}
 }
 

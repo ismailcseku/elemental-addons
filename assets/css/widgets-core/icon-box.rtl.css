@@ -284,8 +284,6 @@
   .icon-box.responsive-tablet.icon-left-style2 .icon {
     margin-bottom: 15px;
   }
-}
-@media (max-width: 1024px) {
   .icon-box.responsive-tablet.icon-right .icon-box-wrapper {
     display: block;
   }
@@ -323,8 +321,6 @@
   .icon-box.responsive-mobile.icon-left-style2 .icon {
     margin-bottom: 15px;
   }
-}
-@media (max-width: 767.98px) {
   .icon-box.responsive-mobile.icon-right .icon-box-wrapper {
     display: block;
   }

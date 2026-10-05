@@ -1,0 +1,10 @@
+@import "../bootstrap-loader";
+
+.tm-section-box-bg {
+  position: absolute;
+  top: -150px;
+  left: 225px;
+  bottom: -150px;
+  right: -100000px;
+  background-color: var(--theme-color1);
+}

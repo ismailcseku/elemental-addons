@@ -1,0 +1,63 @@
+@import "../../bootstrap-loader";
+.counter-block-seven {
+  position: relative;
+  margin-bottom: 50px;
+  &:last-child {
+    .inner:before {
+      display: none;
+    }
+  }
+  .inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @include transition(all 300ms ease);
+  }
+  .content {
+    position: relative;
+    text-align: center;
+    @include transition(all 300ms ease);
+    z-index: 9;
+    &:hover {
+      .icon {
+        @include transform(scale(-1) rotate(180deg));
+      }
+    }
+  }
+  .icon {
+    position: absolute;
+    right: -70px;
+    top: -20px;
+    color: var(--headings-color);
+    font-family: var(--body-font-family);
+    font-size: 80px;
+    z-index: 1;
+    @include transition(all 300ms ease);
+    margin-bottom: 20px;
+  }
+  .count-box {
+    position: relative;
+    font-size: 60px;
+    color: var(--theme-color2);
+    line-height: 1em;
+    letter-spacing: -0.04em;
+    display: block;
+    margin-bottom: 15px;
+    .counter {
+      font-size: 60px;
+      line-height: 1em;
+      display: block;
+    }
+  }
+  .title {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6a6f78;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    margin-bottom: 0;
+  }
+}

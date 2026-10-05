@@ -1,0 +1,105 @@
+@import "../../bootstrap-loader";
+@import "features-common";
+// Feature Current Style7
+.features-block-style7 {
+  position: relative;
+  overflow: hidden;
+  .inner-box {
+    position: relative;
+    &:hover {
+      .image-box .image {
+        img {
+          transform: scale(1.1);
+        }
+        &:after {
+          left: 0;
+          right: 0;
+          opacity: 0;
+          @include transition(all 400ms linear);
+        }
+      }
+      .info-box {
+        bottom: -30px;
+      }
+      .overlay-content {
+        transform: translate(0);
+      }
+    }
+  }
+  .image-box {
+    position: relative;
+    padding-right: 20px;
+    @include transition(all 300ms ease);
+    .image {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 0;
+      img {
+        width: 100%;
+        @include transition(all 300ms ease);
+      }
+      &:after {
+        background: rgba(255, 255, 255, 0.3);
+        bottom: 0;
+        content: "";
+        left: 50%;
+        position: absolute;
+        right: 51%;
+        top: 0;
+        opacity: 1;
+        pointer-events: none;
+        @include transition(all 400ms linear);
+      }
+    }
+  }
+  .info-box {
+    position: absolute;
+    right: 0;
+    left: 20px;
+    bottom: 20px;
+    background-color: #fff;
+    padding: 25px 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+    @include transition(all 300ms ease);
+    .features-title {
+      font-weight: 700;
+      line-height: 35px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .read-more {
+      position: absolute;
+      @include flex-center;
+      right: 20px;
+      top: 22px;
+      height: 40px;
+      width: 40px;
+      background-color: #ecf0f4;
+      border-radius: 50%;
+      @include transition(all 300ms ease);
+      &:hover {
+        background-color: var(--theme-color1);
+        color: #fff;
+      }
+    }
+  }
+  .overlay-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    transform: translateY(100%);
+    @include transition(all 500ms ease);
+    .info-box {
+      position: relative;
+      left: 0;
+      bottom: 0 !important;
+      .features-title {
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

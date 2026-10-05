@@ -1,0 +1,85 @@
+@import "../bootstrap-loader";
+
+.tm-contact-form-7 {
+  transition: all 0.3s ease;
+  .wpcf7-form {
+    display: flex;
+    flex-direction: column;
+
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="date"],
+    textarea,
+    select {
+      width: 100%;
+      max-width: 100%;
+      padding: 12px 16px;
+      border: 1px solid rgba(var(--theme-color2-rgb, 17, 24, 39), 0.2);
+      background-color: #fff;
+      color: var(--theme-color2, #111827);
+      border-radius: 4px;
+      box-sizing: border-box;
+
+      &:focus {
+        outline: none;
+        border-color: var(--theme-color1, #1b6bff);
+      }
+    }
+  }
+  &.labels-hide {
+    .wpcf7-form {
+      label {
+        display: none;
+      }
+    }
+  }
+}
+.tm-contact-form-7-button-align-left {
+  .tm-contact-form-7 {
+    .wpcf7-form {
+      .wpcf7-submit {
+        margin-right: auto;
+        display: inline-block;
+      }
+    }
+  }
+}
+.tm-contact-form-7-button-align-center {
+  .tm-contact-form-7 {
+    .wpcf7-form {
+      .wpcf7-submit {
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  }
+}
+.tm-contact-form-7-button-align-right {
+  .tm-contact-form-7 {
+    .wpcf7-form {
+      .wpcf7-submit {
+        margin-left: auto;
+        margin-right: 0;
+        display: block;
+      }
+    }
+  }
+}
+.tm-contact-form-7-button-full-width {
+  .tm-contact-form-7 {
+    .wpcf7-form {
+      .wpcf7-submit {
+        display: grid;
+        width: 100%;
+      }
+    }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tm-contact-form-7 {
+    transition: none;
+  }
+}

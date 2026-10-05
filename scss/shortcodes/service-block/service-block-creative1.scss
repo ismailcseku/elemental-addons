@@ -1,0 +1,120 @@
+@import "../../bootstrap-loader";
+@import "service-common";
+
+.service-creative-tab {
+  .service-item {
+    display: flex;
+    align-items: center;
+    padding: 0 0 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    .info {
+      .service-subtitle {
+        color: #9b9b9b;
+      }
+    }
+
+    &:last-of-type {
+      border-bottom: 0;
+    }
+
+    .link-block {
+      margin-left: auto;
+
+      i, svg {
+        margin-left: 15px;
+        color: #999;
+        fill: #999;
+        opacity: 0.25;
+        transition: all 0.7s ease;
+      }
+
+      a {
+        display: inline-block;
+        color: inherit;
+
+        &:hover {
+          display: inline-block;
+          color: inherit;
+          i, svg {
+            color: #000;
+            fill: #000;
+          }
+        }
+      }
+    }
+
+    &.current {
+      border-left-color: transparent;
+      .link-block {
+        i, svg {
+          color: #000;
+          fill: #000;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .item-images {
+    width: 100%;
+    max-width: 360px;
+    min-height: 460px;
+    position: relative;
+
+    .each-image {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      transform: rotate(0deg) translateX(-100px);
+      opacity: 0;
+      transition: all 0.7s ease;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background-color: var(--theme-color1);
+        transition: all 0.7s;
+        transform: rotate(15deg);
+      }
+      &.current {
+        transform: rotate(15deg);
+        opacity: 1;
+        &:after {
+          transform: rotate(-10deg);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .service-creative-tab {
+    .item-images {
+      display: none;
+    }
+
+    .service-item {
+      svg, i {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .service-creative-tab {
+    .service-item {
+      padding: 30px 10px;
+      margin: 0;
+    }
+  }
+}

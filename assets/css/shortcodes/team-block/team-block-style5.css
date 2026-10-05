@@ -9,11 +9,13 @@
   bottom: 120px;
   width: 100%;
   background-color: #f4f5f8;
-  content: "";
-  transition: all 400ms ease;
 }
 [data-tm-layout=dark] .team-current-theme5 .inner-box:before {
   background-color: #1b1b1b;
+}
+.team-current-theme5 .inner-box:before {
+  content: "";
+  transition: all 400ms ease;
 }
 .team-current-theme5 .inner-box .info-box {
   position: relative;

@@ -1,0 +1,62 @@
+@import "../../bootstrap-loader";
+@import "blog-common";
+
+.tm-sc-blog {
+  &.blog-vertical-list {
+    .isotope-layout {
+      margin-left: 0;
+      .isotope-item {
+      }
+    }
+    article {
+      padding: 35px 0;
+      background-color: #fff;
+      border-bottom: 1px solid #eee;
+      @include transition(all 0.4s ease-in-out);
+      @include media-breakpoint-up(md) {
+        display: flex;
+        align-items: center;
+      }
+      .entry-header {
+        @include media-breakpoint-up(md) {
+          margin-right: 20px;
+        }
+        @include media-breakpoint-down(md) {
+          margin-bottom: 20px;
+        }
+        @include media-breakpoint-up(md) {
+          img {
+            max-width: 175px;
+          }
+        }
+      }
+      .entry-content {
+        .entry-title {
+          margin-top: 0;
+          margin-bottom: 1rem;
+        }
+        .entry-meta {
+          margin-bottom: 10px;
+          li {
+            i {
+              color: var(--theme-color2);
+            }
+            a {
+              &:hover {
+                color: var(--theme-color2);
+              }
+            }
+          }
+        }
+      }
+      &:hover {
+      }
+      &:first-child {
+        padding-top: 0;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}

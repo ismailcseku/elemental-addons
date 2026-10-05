@@ -149,6 +149,50 @@ if ( ! class_exists( 'Elemental_Addons_Plugin' ) ) {
 			wp_register_script( 'matchHeight', ELEMENTAL_ADDONS_ASSETS_URI . '/js/plugins/jquery.matchHeight-min.js', array( 'jquery' ), '0.7.2', true );
 			wp_register_script( 'jquery-parallax-scroll', ELEMENTAL_ADDONS_ASSETS_URI . '/js/plugins/jquery.parallax-scroll.js', array( 'jquery' ), $ver, true );
 
+			wp_register_script(
+				'jquery-appear',
+				ELEMENTAL_ADDONS_ASSETS_URI . '/js/plugins/jquery.appear.js',
+				array( 'jquery' ),
+				'0.3.6',
+				true
+			);
+			wp_register_script(
+				'jquery-animatenumbers',
+				ELEMENTAL_ADDONS_ASSETS_URI . '/js/plugins/jquery.animatenumbers.min.js',
+				array( 'jquery' ),
+				$ver,
+				true
+			);
+			wp_register_script(
+				'jquery-countto',
+				ELEMENTAL_ADDONS_ASSETS_URI . '/js/plugins/jquery.countto.js',
+				array( 'jquery' ),
+				$ver,
+				true
+			);
+			wp_register_script(
+				'funfact-animate-number',
+				ELEMENTAL_ADDONS_ASSETS_URI . '/js/widgets/funfact-animate-number.js',
+				array( 'jquery', 'jquery-appear', 'jquery-animatenumbers' ),
+				$ver,
+				true
+			);
+			wp_register_script(
+				'tm-progress-bar',
+				ELEMENTAL_ADDONS_ASSETS_URI . '/js/widgets/progress-bar.js',
+				array( 'jquery', 'jquery-countto' ),
+				$ver,
+				true
+			);
+
+			wp_register_script(
+				'elemental-addons-swiper-init',
+				ELEMENTAL_ADDONS_ASSETS_URI . '/js/swiper-init.js',
+				array( 'jquery', 'swiper' ),
+				$ver,
+				true
+			);
+
 			wp_enqueue_style( 'elemental-addons-widgets' );
 		}
 

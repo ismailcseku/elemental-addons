@@ -1,0 +1,43 @@
+.tm-sc-blog {
+  article {
+    .entry-meta i {
+    }
+    .box-hover-effect {
+      display: block;
+    }
+    .post-thumb {
+      .post-thumb-inner {
+        .thumb {
+          display: flex;
+          overflow: hidden;
+          position: relative;
+          img {
+            @include scale(1);
+            @include transition(all 0.4s ease-in-out);
+          }
+          .icon-link {
+            background: #2d1212;
+            color: #fff;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            @include transition(all 0.45s);
+            width: 32px;
+            height: 32px;
+            line-height: 33px;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            z-index: 99;
+            text-align: center;
+            margin-top: 45px;
+          }
+        }
+      }
+    }
+    .entry-content {
+      > :nth-last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

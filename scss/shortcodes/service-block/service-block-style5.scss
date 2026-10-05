@@ -1,0 +1,220 @@
+@import "../../bootstrap-loader";
+@import "service-common";
+.service-block-style5 {
+  background-color: #000;
+  padding: 50px;
+  border-radius: 40px;
+  overflow: hidden;
+  position: relative;
+  padding-top: 270px;
+
+  @include media-breakpoint-down(sm) {
+    padding: 50px 30px;
+    padding-top: 270px;
+  }
+
+  .thumb {
+    position: absolute;
+    top: 50px;
+    left: 45px;
+    transform: translateX(0);
+    transition: all 0.5s ease-in-out;
+
+    @include media-breakpoint-down(sm) {
+      max-width: 280px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    img {
+      transition: all 0.5s ease-in-out;
+    }
+  }
+
+  .content {
+    transform: translateY(180px);
+    transition: all 0.5s ease-in-out;
+    @include media-breakpoint-down(xl) {
+      transform: translateY(160px);
+    }
+    @include media-breakpoint-down(lg) {
+      transform: translateY(190px);
+    }
+
+    .service-subtitle {
+      display: inline-block;
+      margin-bottom: 15px;
+      color: #9d9d9d;
+    }
+
+    .service-title {
+      font-size: 30px;
+      font-weight: 500;
+      margin-bottom: 20px;
+      color: #fff;
+      a {
+        &:hover,
+        &:focus {
+          color: #fff;
+        }
+      }
+    }
+
+    .service-details {
+      color: rgba(255, 255, 255, 0.6);
+      margin-top: 25px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      padding-top: 30px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .theme-btn-main {
+      display: inline-flex;
+      align-items: center;
+      gap: 0px;
+      position: relative;
+      transition: all 400ms ease;
+
+      &:hover {
+        .theme-btn-arrow-left {
+          scale: 1;
+        }
+        .theme-btn-arrow-right {
+          scale: 0;
+        }
+        .btn-title {
+          transform: translateX(56px);
+        }
+      }
+
+      .theme-btn-arrow-left,
+      .theme-btn-arrow-right {
+        width: 56px;
+        height: 56px;
+        line-height: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--theme-color-white);
+        color: var(--theme-color-black);
+        border-radius: 50%;
+        transition: 0.4s;
+        i {
+          rotate: -30deg;
+        }
+        &.theme-btn-arrow-small {
+          width: 40px;
+          height: 40px;
+        }
+        &.black-arrow {
+          background: var(--theme-color-black);
+          color: var(--theme-color1);
+        }
+        &.transparent-arrow {
+          border: 1px solid var(--theme-color1);
+          background: transparent;
+          color: var(--theme-color1);
+        }
+      }
+
+      .theme-btn-arrow-left {
+        scale: 0;
+        left: 0;
+        right: auto;
+        position: absolute;
+      }
+      .btn-title {
+        background: var(--theme-color1);
+        color: var(--theme-color-black);
+        font-weight: 700;
+        font-size: 16px;
+        padding: 13px 30px;
+        display: inline-flex;
+        align-items: center;
+        gap: 30px;
+        border-radius: 40px;
+        transition: 0.4s;
+      }
+    }
+
+    .theme-btn-main {
+      margin-top: 40px;
+      opacity: 0;
+      transition: all 0.5s ease-in-out;
+
+      .theme-btn-arrow-left,
+      .theme-btn-arrow-right {
+        width: 29px;
+        height: 29px;
+        line-height: 29px;
+        text-align: center;
+        background-color: var(--theme-color1);
+        color: var(--theme-color1-text-color);
+        border-radius: 5px;
+
+        i {
+          rotate: (0deg) !important;
+        }
+      }
+
+      .theme-btn-arrow-right {
+        margin-left: 15px;
+      }
+
+      .btn-title {
+        background-color: transparent;
+        width: initial;
+        color: #fff;
+        height: initial;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 0;
+      }
+
+      &:hover {
+        .theme-btn-arrow-left {
+          scale: 1;
+        }
+        .theme-btn-arrow-right {
+          scale: 0;
+        }
+        .btn-title {
+          transform: translateX(45px);
+        }
+      }
+    }
+  }
+
+  &:hover {
+    .thumb {
+      top: 20px;
+      transform: translateX(130px);
+
+      img {
+        width: 210px;
+
+        @include media-breakpoint-down(sm) {
+          width: 160px;
+        }
+      }
+    }
+
+    .content {
+      transform: translateY(0);
+
+      .service-details {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .theme-btn-main {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}

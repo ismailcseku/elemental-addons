@@ -1,0 +1,11 @@
+.tm-sc-working {
+  .icon {
+    display: inline-block;
+  }
+  .icon,
+  .working-title,
+  .working-details {
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+  }
+}

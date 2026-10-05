@@ -1,0 +1,40 @@
+@import "../../bootstrap-loader";
+@import "blog-common";
+
+.tm-sc-blog {
+  &.tm-sc-blog-floating-parallax {
+    .floating-posts-holder {
+      text-align: center;
+      article {
+        padding: 30px;
+      }
+      &:nth-child(4n + 1), &:nth-child(4n + 4) {
+        article {
+          @include media-breakpoint-down(xl) {
+          }
+        }
+      }
+
+      .entry-meta i {
+        display: none;
+      }
+      .entry-header {
+        clip-path: inset(0% 0% 0% 0%);
+        -webkit-transition: all .3s cubic-bezier(.70,.04,.37,1);
+        transition: all .3s cubic-bezier(.70,.04,.37,1);
+      }
+      .post-thumb {
+        .post-thumb-inner {
+          .thumb {
+            border-radius: 7px;
+          }
+        }
+      }
+      &:hover {
+        .entry-header {
+          clip-path: inset(3% 3% 3% 3%);
+        }
+      }
+    }
+  }
+}

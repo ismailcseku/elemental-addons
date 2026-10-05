@@ -1,0 +1,95 @@
+@import "../../bootstrap-loader";
+@import "testimonial-common";
+
+.testimonial-block-style2 {
+  .inner-block {
+    background-color: #ecf9ed;
+    border: 1px solid rgba(var(--theme-color2-rgb), 0.1);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    padding: 40px 39px 39px;
+    &:hover {
+      .bottom-box {
+        .author-info {
+          .icon {
+            i,
+            img {
+              @include transform(scaleX(-1));
+            }
+          }
+        }
+      }
+    }
+    .rating-star {
+      color: var(--theme-color1);
+      font-size: 20px;
+      line-height: 1;
+      margin-bottom: 19px;
+      .star-rating {
+        &:before {
+          color: var(--theme-color1);
+          font-weight: 600;
+        }
+        span {
+          &:before {
+            color: var(--theme-color1);
+          }
+        }
+      }
+    }
+    .author-text {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: -2%;
+      margin-bottom: 45px;
+      color: var(--theme-color2);
+      margin: 0 auto;
+      @include media-breakpoint-down(sm) {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    }
+    .bottom-box {
+      border-top: 1px solid rgba(var(--theme-color2-rgb), 0.1);
+      padding-top: 30px;
+      margin-top: 65px;
+      display: flex;
+      align-items: center;
+      .author-info {
+        display: inline-flex;
+        gap: 16px;
+        align-items: center;
+        @include media-breakpoint-down(sm) {
+          flex-direction: column;
+          align-items: start;
+        }
+        .image {
+          width: 60px;
+          height: 60px;
+          border-radius: 8px;
+          object-fit: cover;
+          img {
+            width: 60px;
+            height: 60px;
+            border-radius: 8px;
+            object-fit: cover;
+          }
+        }
+        .info {
+          position: relative;
+          top: -2px;
+        }
+        .testimonial-name {
+          font-family: var(--body-font-family);
+          margin-bottom: 2px;
+          margin-top: 0;
+        }
+        .testimonial-position {
+          line-height: 1.2;
+        }
+      }
+    }
+  }
+}

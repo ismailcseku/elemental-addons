@@ -970,6 +970,10 @@ if ( ! function_exists( 'elemental_addons_swiper_data_params' ) ) {
 	 * Return Swiper Slider Data Collecting From Params
 	 */
 	function elemental_addons_swiper_data_params( $params = array(), $prefix = '' ) {
+		wp_enqueue_style( 'swiper' );
+		wp_enqueue_script( 'swiper' );
+		wp_enqueue_script( 'elemental-addons-swiper-init' );
+
 		$swiper_data = array();
 
 

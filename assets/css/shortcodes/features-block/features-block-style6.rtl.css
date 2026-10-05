@@ -65,6 +65,11 @@
   background-color: var(--theme-color-light);
   border-radius: 12px;
   color: var(--theme-color1);
+}
+[data-tm-layout=dark] .features-block-style6 .inner-box .icon {
+  color: #fff;
+}
+.features-block-style6 .inner-box .icon {
   flex-shrink: 0;
   font-size: 40px;
   height: 80px;
@@ -73,9 +78,6 @@
   text-align: center;
   width: 80px;
   transition: all 300ms ease;
-}
-[data-tm-layout=dark] .features-block-style6 .inner-box .icon {
-  color: #fff;
 }
 @media (max-width: 991.98px) {
   .features-block-style6 .inner-box .icon {

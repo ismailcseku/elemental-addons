@@ -1,0 +1,253 @@
+@import "../../bootstrap-loader";
+
+.tm-sc-pricing-plan {
+  position: relative;
+  .pricing-plan-inner-wrapper {
+    background: #fff;
+    z-index: 0;
+    @include transition(all 0.3s ease);
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      transition: all 400ms ease;
+    }
+  }
+  .pricing-plan-thumb {
+    img {
+      @include transition(all 0.3s ease);
+    }
+    &.has-thumb-hover {
+      .thumb {
+        display: inline-block;
+      }
+      .thumb-hover {
+        display: none;
+      }
+    }
+  }
+  .pricing-plan-inner {
+    .pricing-plan-pricing {
+      .price {
+        display: flex;
+        align-items: baseline;
+      }
+      .price-secondary {
+        display: none;
+      }
+      .on-sale {
+        .pricing-plan-price {
+          color: #aaa;
+          font-size: 20px;
+          margin-right: 5px;
+          text-decoration: line-through;
+        }
+      }
+    }
+    .pricing-plan-content {
+      .features-list-title {
+        color: var(--theme-color1);
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+      ul {
+        list-style: none;
+        li {
+          color: #171e2e;
+          font-size: 15px;
+          padding: 0;
+          padding-bottom: 5px;
+          margin-bottom: 5px;
+          position: relative;
+          &:before {
+            color: var(--theme-color1);
+          }
+          &.no-action {
+            color: #bbb;
+            .icon {
+              color: #bbb;
+            }
+          }
+          &.line-through {
+            color: #999;
+            text-decoration: line-through;
+            .icon {
+              color: #999;
+            }
+          }
+          i,
+          svg {
+            margin-right: 8px;
+            font-size: 11px;
+            color: #111;
+            display: inline-block;
+            @include transition(all 0.3s ease);
+          }
+          svg {
+            width: 16px;
+          }
+          .has-tooltip {
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: #294dff;
+            padding: 3px;
+            &:before {
+              pointer-events: none;
+              content: attr(title);
+              visibility: hidden;
+              opacity: 0;
+              width: 245px;
+              font-size: 12px;
+              padding: 15px 20px;
+              background: var(--theme-color1);
+              color: var(--theme-color1-text-color);
+              position: absolute;
+              z-index: 99;
+              right: 0;
+              top: 33px;
+              border-radius: 0;
+              text-align: left;
+              transition: opacity 0.3s ease-in-out;
+              box-shadow: 0 0 12px rgba(37, 48, 83, 0.25);
+            }
+            &:after {
+              pointer-events: none;
+              opacity: 0;
+              visibility: hidden;
+              content: "";
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 0 6.47px 6.47px;
+              border-color: transparent transparent var(--theme-color1) transparent;
+              position: absolute;
+              top: 27px;
+              left: 3px;
+              transition: opacity 0.3s ease-in-out;
+              box-shadow: 0 0 12px rgba(37, 48, 83, 0.25);
+            }
+            i {
+              font-size: 14px;
+              color: var(--theme-color1);
+            }
+            &:hover {
+              &:before,
+              &:after {
+                opacity: 1;
+                visibility: visible;
+              }
+            }
+          }
+        }
+      }
+    }
+    .pricing-plan-footer {
+    }
+    .footer-hint-text {
+      font-size: 13px;
+      margin-top: 5px;
+      @include transition(all 0.3s ease);
+    }
+  }
+  &.show-secondary-price {
+    .pricing-plan-inner {
+      .pricing-plan-pricing {
+        .price-normal {
+          display: none;
+        }
+        .price-secondary {
+          display: flex;
+        }
+      }
+    }
+  }
+  &.pricing-list-bordered {
+    .pricing-plan-content {
+      ul {
+        li {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+          padding-top: 5px;
+          padding-bottom: 5px;
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+
+  &.pricing-list-bullet {
+    .pricing-plan-content {
+      ul {
+        li {
+          padding-left: 20px;
+          &:before {
+            border: none;
+            color: #777;
+            content: "\f0da";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 600;
+            font-size: 15px;
+            padding: 0;
+            left: 0;
+            position: absolute;
+            top: 6px;
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+
+  &.pricing-plan-box-shadow {
+    .pricing-plan-inner-wrapper {
+      box-shadow: 0 5px 70px rgba(32, 35, 66, 0.1);
+    }
+  }
+
+  $pricing-plan-featured-scale-ratio: 1.1;
+  &.pricing-plan-featured {
+    z-index: 1;
+    @include scale($pricing-plan-featured-scale-ratio);
+    &.animated {
+    }
+  }
+
+  &.pricing-plan-hover-effect {
+    &:hover {
+      -webkit-transform: translateY(-15px);
+      -ms-transform: translateY(-15px); // IE9 only
+      -o-transform: translateY(-15px);
+      -moz-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+    &.pricing-plan-featured {
+      &:hover {
+        -webkit-transform: translateY(-15px) scale($pricing-plan-featured-scale-ratio);
+        -ms-transform: translateY(-15px) scale($pricing-plan-featured-scale-ratio); // IE9 only
+        -o-transform: translateY(-15px) scale($pricing-plan-featured-scale-ratio);
+        -moz-transform: translateY(-15px) scale($pricing-plan-featured-scale-ratio);
+        transform: translateY(-15px) scale($pricing-plan-featured-scale-ratio);
+      }
+    }
+  }
+
+  &:hover {
+    .pricing-plan-thumb {
+      &.has-thumb-hover {
+        .thumb {
+          display: none;
+        }
+        .thumb-hover {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

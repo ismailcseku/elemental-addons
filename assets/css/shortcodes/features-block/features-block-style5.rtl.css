@@ -112,6 +112,11 @@
 }
 .features-block-style5 .inner-box .icon-box:before {
   border: 1px dashed var(--theme-color2);
+}
+[data-tm-layout=dark] .features-block-style5 .inner-box .icon-box:before {
+  border-color: #fff;
+}
+.features-block-style5 .inner-box .icon-box:before {
   border-radius: 50%;
   content: "";
   position: absolute;
@@ -120,9 +125,6 @@
   height: 84px;
   width: 84px;
   transform: translate(50%, -50%);
-}
-[data-tm-layout=dark] .features-block-style5 .inner-box .icon-box:before {
-  border-color: #fff;
 }
 .features-block-style5 .inner-box .icon-box i {
   display: inline-block;

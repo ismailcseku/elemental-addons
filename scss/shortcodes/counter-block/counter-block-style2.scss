@@ -1,0 +1,47 @@
+@import "../../bootstrap-loader";
+
+.counter-item-style2 {
+  .inner-block {
+    position: relative;
+    .content {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding-bottom: 10px;
+      margin-bottom: 26px;
+      .title {
+        font-weight: 500;
+        padding-left: 18px;
+        position: relative;
+        color: #fff;
+        &:before {
+          background-color: var(--theme-color1);
+          border-radius: 1px;
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 12px;
+          height: 6px;
+          width: 6px;
+          @include transform(rotate(45deg));
+        }
+      }
+    }
+    .title-box {
+      .count-box {
+        color: #fff;
+        .counter {
+          font-weight: 600;
+          .animate-number {
+            color: #fff;
+            font-size: 80px;
+            line-height: 1;
+          }
+          .counter-postfix {
+            color: #fff;
+            font-size: 80px;
+            line-height: 1;
+          }
+        }
+      }
+    }
+  }
+}

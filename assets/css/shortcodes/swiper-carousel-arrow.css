@@ -1,12 +1,18 @@
 .tm-swiper-carousel-arrow-wrap {
   display: flex;
+  align-items: center;
+  width: auto;
+  max-width: 100%;
 }
 .tm-swiper-carousel-arrow-wrap .tm-swiper-arrow {
   cursor: pointer;
-  background-color: var(--theme-color-white);
+  background-color: var(--theme-color-white, #fff);
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 0 0 auto;
+  width: 52px;
+  height: 52px;
   -webkit-transition: all 0.3s ease;
   -khtml-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -15,9 +21,13 @@
   transition: all 0.3s ease;
   box-shadow: 0 1px 72px 0 rgba(0, 0, 0, 0.14);
 }
-.tm-swiper-carousel-arrow-wrap .tm-swiper-arrow i {
+.tm-swiper-carousel-arrow-wrap .tm-swiper-arrow i,
+.tm-swiper-carousel-arrow-wrap .tm-swiper-arrow svg {
   color: var(--theme-color1);
+  fill: currentColor;
   font-size: 16px;
+  width: 1em;
+  height: 1em;
   -webkit-transition: all 0.3s ease;
   -khtml-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -25,15 +35,19 @@
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.tm-swiper-carousel-arrow-wrap .tm-swiper-arrow i:before {
+.tm-swiper-carousel-arrow-wrap .tm-swiper-arrow i:before,
+.tm-swiper-carousel-arrow-wrap .tm-swiper-arrow svg:before {
   position: relative;
   top: 1px;
 }
 .tm-swiper-carousel-arrow-wrap .tm-swiper-arrow:hover, .tm-swiper-carousel-arrow-wrap .tm-swiper-arrow:active {
   background-color: var(--theme-color1);
 }
-.tm-swiper-carousel-arrow-wrap .tm-swiper-arrow:hover i, .tm-swiper-carousel-arrow-wrap .tm-swiper-arrow:active i {
-  color: var(--theme-color1-text-color);
+.tm-swiper-carousel-arrow-wrap .tm-swiper-arrow:hover i,
+.tm-swiper-carousel-arrow-wrap .tm-swiper-arrow:hover svg, .tm-swiper-carousel-arrow-wrap .tm-swiper-arrow:active i,
+.tm-swiper-carousel-arrow-wrap .tm-swiper-arrow:active svg {
+  color: var(--theme-color1-text-color, #fff);
+  fill: currentColor;
 }
 .tm-swiper-carousel-arrow-wrap .tm-swiper-arrow.tm-swiper-arrow-prev {
   margin-right: 12px;
@@ -51,10 +65,4 @@
 .tm-swiper-carousel-arrow-wrap.style2 .tm-swiper-arrow {
   width: 60px;
   height: 60px;
-}
-.tm-swiper-carousel-arrow-wrap .tm-swiper-arrow.tm-swiper-arrow-prev:hover i::before {
-  content: "\e879";
-}
-.tm-swiper-carousel-arrow-wrap .tm-swiper-arrow.tm-swiper-arrow-next:hover i::before {
-  content: "\e87a";
 }

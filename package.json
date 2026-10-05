@@ -1,0 +1,19 @@
+{
+  "name": "elemental-addons",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Build Elemental Addons widget CSS from SCSS (same pipeline as Evolta).",
+  "scripts": {
+    "build": "gulp build",
+    "watch": "gulp"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-error-handle": "^1.0.1",
+    "gulp-line-ending-corrector": "^1.0.3",
+    "gulp-rename": "^2.0.0",
+    "gulp-rtlcss": "^1.4.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.0"
+  }
+}

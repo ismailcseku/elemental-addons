@@ -31,8 +31,14 @@ class Skin_Style1 extends Elementor_Skin_Base {
 		$settings = $this->parent->get_settings_for_display();
 
 		$direction_suffix = is_rtl() ? '.rtl' : '';
-		wp_enqueue_style( 'service-block-style1', ELEMENTAL_ADDONS_ASSETS_URI . '/css/shortcodes/service-block/service-block-style1' . $direction_suffix . '.css' );
-        wp_enqueue_script( 'tm-service-block-style1-script', ELEMENTAL_ADDONS_ASSETS_URI . '/js/widgets/service-block.js', array('jquery'), false, true );
+		wp_enqueue_style( 'service-block-style1', ELEMENTAL_ADDONS_ASSETS_URI . '/css/shortcodes/service-block/service-block-style1' . $direction_suffix . '.css', array(), ELEMENTAL_ADDONS_VERSION );
+		wp_enqueue_script(
+			'tm-service-block-style1-script',
+			ELEMENTAL_ADDONS_ASSETS_URI . '/js/widgets/service-block.js',
+			array( 'jquery', 'elementor-frontend' ),
+			ELEMENTAL_ADDONS_VERSION,
+			true
+		);
 
 
 		if( $settings['animate_icon_on_hover'] ) {

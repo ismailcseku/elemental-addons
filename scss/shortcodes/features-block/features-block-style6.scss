@@ -1,0 +1,67 @@
+@import "../../bootstrap-loader";
+@import "features-common";
+
+.features-block-style6 {
+  .inner-box {
+    position: relative;
+    padding: 0 0 30px 30px;
+    @include transition(all 300ms ease);
+    @include media-breakpoint-down(sm) {
+      padding: 0;
+    }
+    &:hover {
+      .icon {
+        background-color: var(--theme-color3);
+        color: var(--theme-color3-text-color);
+        i {
+          transform: scaleX(-1);
+        }
+      }
+    }
+    &:before {
+      background-color: var(--theme-color3);
+      border-radius: 4px;
+      content: "";
+      height: 100px;
+      left: -2px;
+      position: absolute;
+      right: 0;
+      top: 0px;
+      width: 3px;
+      @include transition(all 300ms ease);
+      z-index: 1;
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
+    }
+    .icon {
+      background-color: var(--theme-color-light);
+      border-radius: 12px;
+      color: var(--theme-color1);
+      [data-tm-layout="dark"] & {
+        color: #fff;
+      }
+      flex-shrink: 0;
+      font-size: 40px;
+      height: 80px;
+      line-height: 80px;
+      margin-bottom: 38px;
+      text-align: center;
+      width: 80px;
+      @include transition(all 300ms ease);
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 10px;
+      }
+      i {
+        @include transition(all 300ms ease);
+      }
+    }
+    .content-box {
+      .title {
+        margin-bottom: 14px;
+        margin-top: 0;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

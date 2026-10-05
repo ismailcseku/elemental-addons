@@ -1,0 +1,34 @@
+.tm-ele-floating-objects {
+  position: relative;
+  width: 100%;
+  min-height: 120px;
+  pointer-events: none;
+}
+.tm-ele-floating-objects .each-object {
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  pointer-events: none;
+}
+.tm-ele-floating-objects .tm-animation-floating,
+.tm-ele-floating-objects .each-object.tm-animation-floating {
+  animation: elemental-float 3s ease-in-out infinite;
+}
+@media (max-width: 991px) {
+  .tm-ele-floating-objects.hide-on-mobile {
+    display: none !important;
+  }
+}
+
+@keyframes elemental-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}

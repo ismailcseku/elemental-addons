@@ -1,0 +1,49 @@
+@import "../../bootstrap-loader";
+@import "features-common";
+// Feature Current Style15
+.features-block-style15 {
+  position: relative;
+  margin-bottom: 30px;
+  .inner-box {
+    position: relative;
+    background-color: #ffffff;
+    padding: 54px 30px 54px;
+    text-align: center;
+    height: 100%;
+    background-image: var(--block-feature-style15-bg-featured-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 300ms ease;
+    &:before {
+      @include overlay;
+      @include background;
+      background-color: var(--theme-color1);
+      opacity: 0.9;
+      content: "";
+    }
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+    .count,
+    .icon {
+      position: relative;
+      display: block;
+      font-size: 60px;
+      color: var(--theme-color2);
+      font-family: var(--title-font);
+      line-height: 1em;
+      font-weight: 700;
+      margin-bottom: 10px;
+      transition: all 300ms ease;
+    }
+    .features-title {
+      margin-bottom: 25px;
+      position: relative;
+      font-weight: 400;
+      a {
+        color: var(--theme-color2);
+      }
+    }
+  }
+}

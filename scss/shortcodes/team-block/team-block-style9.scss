@@ -1,0 +1,113 @@
+@import "../../bootstrap-loader";
+.team-current-theme9 {
+  .inner-box {
+    position: relative;
+    margin-bottom: 50px;
+    text-align: center;
+    &:hover {
+      .social-links {
+        transform: translateY(-40px);
+        opacity: 1;
+      }
+      .image-box {
+        .image {
+          background-color: var(--theme-color1);
+        }
+      }
+    }
+    .image-box {
+      position: relative;
+      .image {
+        background-color: var(--theme-color-gray);
+        border-radius: 50%;
+        display: inline-block;
+        margin-bottom: 0;
+        overflow: hidden;
+        width: 348px;
+        @include transition(all 300ms ease);
+        img {
+          height: 348px;
+          object-fit: cover;
+          object-position: top center;
+        }
+      }
+    }
+    .team-member {
+      display: flex;
+      justify-content: center;
+      .inner {
+        background-color: var(--theme-color-gray);
+        border-radius: 50%;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 1;
+        min-height: 348px;
+        max-width: 348px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+    }
+  }
+  .social-links {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-8px);
+    @include transition(all 300ms ease);
+    li {
+      margin-right: 10px;
+      list-style: none;
+      margin-bottom: 0;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        background-color: var(--theme-color-gray);
+        border-radius: 50%;
+        color: #fff;
+        display: inline-block;
+        font-size: 20px;
+        height: 46px;
+        line-height: 46px;
+        text-align: center;
+        width: 46px;
+        @include transition(all 300ms ease);
+        &:hover {
+          background-color: var(--theme-color1);
+          color: var(--theme-color1-text-color);
+        }
+      }
+    }
+  }
+  .content-box {
+    position: relative;
+    margin: 32px 0 0;
+    .team-title {
+      color: var(--headings-color);
+      margin-bottom: 0;
+      @include transition(all 300ms ease);
+      a {
+        &:hover {
+          color: var(--theme-color1);
+        }
+      }
+    }
+    .team-subtitle {
+      color: var(--theme-color6);
+      font-size: 14px;
+      @include transition(all 300ms ease);
+    }
+    .btn-link-style {
+      font-size: 14px;
+      text-decoration: underline;
+    }
+  }
+}

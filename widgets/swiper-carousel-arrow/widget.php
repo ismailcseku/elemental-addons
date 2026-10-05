@@ -94,7 +94,7 @@ class TM_Elementor_Swiper_Carousel_Arrow extends Widget_Base {
 	 * @return array Widget scripts dependencies.
 	 */
 	public function get_script_depends() {
-		return [ 'elemental-addons-js' ];
+		return [ 'elemental-addons-js', 'swiper', 'elemental-addons-swiper-init' ];
 	}
 
 	public function get_style_depends() {

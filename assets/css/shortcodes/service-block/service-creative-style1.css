@@ -75,11 +75,6 @@
     padding-left: 0;
   }
 }
-.service-creative-style1 .inner-colmun .services-list .service-creative-detials {
-  width: 50%;
-  flex: 0 0 50%;
-  margin-bottom: 50px;
-}
 .service-creative-style1 .inner-colmun .services-list .service-creative-detials:last-child {
   margin-bottom: 0;
 }
@@ -124,6 +119,11 @@
   content: "";
   background-color: #fff;
   transition: all 500ms ease;
+}
+.service-creative-style1 .inner-colmun .services-list .service-creative-detials {
+  width: 50%;
+  flex: 0 0 50%;
+  margin-bottom: 50px;
 }
 @media (max-width: 1199.98px) {
   .service-creative-style1 .inner-colmun .services-list .service-creative-detials {

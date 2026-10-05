@@ -1,0 +1,126 @@
+@import "../../bootstrap-loader";
+
+.team-current-theme3 {
+  .inner-box {
+    background-color: var(--theme-color-white);
+    // border: 1px solid rgba(28, 32, 41, 0.1);
+    border-radius: 30px;
+    margin-bottom: 70px;
+    position: relative;
+    @include transition(all 400ms ease);
+    @include media-breakpoint-down(xl) {
+      margin-bottom: 70px;
+    }
+    &:hover {
+      background-color: var(--theme-color1);
+      .image-box {
+        background-color: var(--theme-color1);
+        img {
+          transform: scale(1.1);
+        }
+      }
+      .content-box,
+      .content-box:before {
+        background-color: var(--theme-color1);
+      }
+      .content-box {
+        .team-title,
+        .team-subtitle {
+          color: var(--theme-color1-text-color);
+        }
+      }
+      .social-links {
+        opacity: 1;
+        -webkit-transform: translateY(-20px);
+        visibility: visible;
+      }
+    }
+    .image-box {
+      background-color: var(--theme-color-light);
+      border-radius: 30px;
+      overflow: hidden;
+      position: relative;
+      @include transition(all 400ms ease);
+      .image {
+        margin-bottom: 0;
+        img {
+          height: 100%;
+          object-fit: cover;
+          position: relative;
+          width: 100%;
+          @include transition(all 1200ms ease);
+        }
+      }
+    }
+    .social-links {
+      bottom: 0;
+      left: 0;
+      margin: 0 auto;
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      transform: translateY(30px);
+      visibility: hidden;
+      @include transition(all 300ms ease);
+      z-index: 2;
+      a {
+        background-color: #fff;
+        backdrop-filter: blur(33.9px);
+        border-radius: 50%;
+        color: var(--theme-color2);
+        display: inline-block;
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+        position: relative;
+        text-align: center;
+        width: 40px;
+        @include transition(all 300ms ease);
+        &:hover {
+          color: var(--theme-color2-text-color);
+          background-color: var(--theme-color2);
+        }
+      }
+    }
+    .content-box {
+      border: 1px solid rgba(28, 32, 41, 0.1);
+      margin-bottom: 0;
+      mask-image: url(../../../images/current-theme/team-masking-img.png);
+      mask-size: cover;
+      mask-position: top;
+      mask-repeat: no-repeat;
+      background-color: var(--theme-color-white);
+      padding: 25px 0 30px;
+      position: absolute;
+      border-radius: 10px 10px 30px 30px;
+      bottom: -70px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      z-index: 1;
+      @include transition(all 400ms ease);
+      @include media-breakpoint-only(md) {
+      }
+      .team-title {
+        margin-bottom: 5px;
+        margin-top: 0;
+        position: relative;
+        @include transition(all 300ms ease);
+        a:hover {
+          color: var(--theme-color2);
+        }
+      }
+      .team-subtitle {
+        padding-bottom: 0;
+        position: relative;
+        @include transition(all 300ms ease);
+      }
+    }
+    &:hover {
+      .icon {
+        transform: scale(-1);
+      }
+    }
+  }
+}

@@ -1,12 +1,46 @@
 :root {
-	--theme-color1: #1b6bff;
-	--theme-color2: #111827;
-	--theme-color3: #0f766e;
-	--theme-color4: #f59e0b;
+  --theme-color1: #1b6bff;
+  --theme-color2: #111827;
+  --theme-color3: #0f766e;
+  --theme-color4: #f59e0b;
+  --theme-color1-rgb: 27, 107, 255;
+  --theme-color2-rgb: 17, 24, 39;
+  --theme-color3-rgb: 15, 118, 110;
+  --theme-color4-rgb: 245, 158, 11;
+  --theme-color1-lighter: #4d8cff;
+  --theme-color1-darker: #1554cc;
+  --theme-color2-lighter: #374151;
+  --theme-color2-darker: #030712;
+  --text-color-bg-theme-color1: #ffffff;
+  --text-color-bg-theme-color2: #ffffff;
+  --text-color-bg-theme-color3: #ffffff;
+  --text-color-bg-theme-color4: #111827;
+  --theme-color-white: #ffffff;
+  --theme-color1-text-color: #ffffff;
+  --theme-color2-text-color: #ffffff;
 }
 
 .elemental-addons-notice {
-	padding: 12px 16px;
-	background: #fff8e5;
-	border: 1px solid #f0d48a;
+  padding: 12px 16px;
+  background: #fff8e5;
+  border: 1px solid #f0d48a;
+}
+
+[class*=tm-sc-] svg,
+[class*=tm-ele-] svg,
+.elementor-widget-tm-ele-features-block svg,
+.elementor-widget-tm-ele-working-block svg,
+.elementor-widget-tm-ele-service-block svg,
+.elementor-widget-tm-ele-icon-box svg,
+.elementor-widget-tm-ele-funfact-counter svg,
+.elementor-widget-tm-ele-counter-block svg,
+.elementor-widget-tm-ele-theme-button svg,
+.elementor-widget-tm-ele-list svg,
+.elementor-widget-tm-ele-accordion svg {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
 }

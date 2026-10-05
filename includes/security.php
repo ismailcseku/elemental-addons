@@ -144,12 +144,19 @@ if ( ! function_exists( 'elemental_addons_kses' ) ) {
 
 if ( ! function_exists( 'elemental_addons_print_html' ) ) {
 	/**
-	 * Echo sanitized HTML.
+	 * Echo widget markup.
 	 *
-	 * @param string $html Raw HTML.
+	 * Widget templates already escape with esc_* / wp_kses_post.
+	 * Running full wp_kses here strips Elementor Font Awesome SVGs,
+	 * data-* attributes, and breaks layout.
+	 *
+	 * @param string $html Raw HTML from plugin templates.
 	 */
 	function elemental_addons_print_html( $html ) {
-		// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped via elemental_addons_kses().
-		echo elemental_addons_kses( $html );
+		if ( null === $html || false === $html ) {
+			return;
+		}
+		// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped in templates.
+		echo $html;
 	}
 }

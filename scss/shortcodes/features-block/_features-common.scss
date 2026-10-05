@@ -1,0 +1,29 @@
+.tm-sc-features {
+  .icon {
+    display: inline-block;
+  }
+  .icon,
+  .features-title,
+  .features-details {
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+  }
+}
+
+.feature-side-line {
+  position: relative;
+  .icon-box-wrapper {
+    &:after {
+      content: "";
+      background: #333;
+      width: 2px;
+      position: absolute;
+      left: 25px;
+      top: 60px;
+      bottom: -12px;
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+  }
+}

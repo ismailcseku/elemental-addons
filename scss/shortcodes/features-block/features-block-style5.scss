@@ -1,0 +1,107 @@
+@import "../../bootstrap-loader";
+@import "features-common";
+.features-item {
+  &:last-child {
+    .features-block-style5 {
+      .inner-box {
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+}
+.features-block-style5 {
+  margin-bottom: 42px;
+  .inner-box {
+    position: relative;
+    margin-bottom: 55px;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 30px;
+    }
+    &:before {
+      background: rgba(12, 47, 37, 0.1);
+      content: "";
+      position: absolute;
+      left: 42px;
+      top: 30px;
+      height: calc(100% + 55px);
+      width: 1px;
+      [data-tm-layout="dark"] & {
+        background: rgba(255, 255, 255, 0.1);
+      }
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+    &:hover {
+      .content-box {
+        border-color: var(--theme-color1);
+        .icon-box {
+          background: var(--theme-color1);
+          color: var(--theme-color1-text-color);
+          border-color: var(--theme-color1);
+          i {
+            @include transform(scaleX(-1));
+          }
+        }
+      }
+    }
+    .content-box {
+      display: flex;
+      @include transition(all 300ms ease);
+      @include media-breakpoint-down(sm) {
+        display: block;
+      }
+      .features-title {
+        margin-bottom: 6px;
+        margin-top: 0;
+      }
+      .details {
+        line-height: 1.5;
+      }
+    }
+    .icon-box {
+      background-color: var(--theme-color2);
+      border: 1px solid var(--theme-color2);
+      border-radius: 50%;
+      color: var(--theme-color2-text-color);
+      font-size: 30px;
+      line-height: 1;
+      margin: 11px 37px 0 10px;
+      height: 66px;
+      line-height: 68px;
+      text-align: center;
+      width: 66px;
+      min-width: 66px;
+      position: relative;
+      @include transition(all 300ms ease);
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 20px;
+      }
+      &:before {
+        border: 1px dashed var(--theme-color2);
+        [data-tm-layout="dark"] & {
+          border-color: #fff;
+        }
+        border-radius: 50%;
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: 84px;
+        width: 84px;
+        transform: translate(-50%, -50%);
+      }
+      i {
+        display: inline-block;
+        @include transition(all 300ms ease);
+      }
+      .icon {
+        color: var(--theme-color-white);
+        display: inline-block;
+        @include transition(all 300ms ease);
+      }
+    }
+  }
+}

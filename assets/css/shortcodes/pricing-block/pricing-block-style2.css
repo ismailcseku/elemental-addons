@@ -15,12 +15,14 @@
   margin-left: 15px;
   flex: 1;
   will-change: flex;
-  transition: all 300ms ease;
 }
 @media (max-width: 1024px) {
   .pricing-block-basic-wrapper .pricing-block-style2 {
     margin-bottom: 20px;
   }
+}
+.pricing-block-basic-wrapper .pricing-block-style2 {
+  transition: all 300ms ease;
 }
 .pricing-block-basic-wrapper .pricing-block-style2 .inner-box {
   overflow: hidden;

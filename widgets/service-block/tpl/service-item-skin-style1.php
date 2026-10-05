@@ -10,14 +10,14 @@ $url = ( $feature_link && $feature_link['url'] ) ? $feature_link['url'] : '';
 ?>
 
 <div class="service-block-style1">
-  <div class="inner-block">
+  <div class="inner-block<?php echo ! empty( $service_is_first ) ? ' active' : ''; ?>">
     <div class="title-box">
       <div class="title-inner">
         <div class="count-number">/<?php echo esc_html( $count );?>/</div>
         <?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'service-block/tpl', $service_item, false );?>
       </div>
       <div class="arrow-icon">
-        <i class="flaticon-common-right-arrow"></i>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
       </div>
     </div>
     <div class="content-box">

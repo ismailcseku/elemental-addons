@@ -1,0 +1,99 @@
+@import "../../bootstrap-loader";
+@import "working-block-common";
+.working-block-style4 {
+  padding: 0 23px;
+  position: relative;
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -10px;
+    height: calc(100% + 22px);
+    content: "";
+    width: 1px;
+    background: rgba(217, 217, 217, 0.1);
+    opacity: 1;
+    @include transition;
+  }
+  &::after {
+    @include after;
+    width: 1px;
+    height: calc(100% + 22px);
+    background: var(--theme-color1);
+    opacity: 0;
+    @include transition;
+    right: -10px;
+    left: auto;
+  }
+  .head {
+    @include flex-between;
+    align-items: start;
+    flex-wrap: wrap;
+
+    @include media-breakpoint-down(sm) {
+      align-items: center;
+    }
+    .image {
+      width: 150px;
+      height: 150px;
+      img {
+        @include imgw;
+        border-radius: 50%;
+      }
+    }
+    .working-count {
+      font-size: 120px;
+      font-weight: 500;
+      font-family: var(--heading-font-family);
+      line-height: 1;
+      background: linear-gradient(0deg, rgba(21, 21, 21, 0.2) 5.71%, rgba(136, 255, 42, 0.2) 99.78%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      @include media-breakpoint-down(sm) {
+        font-size: 90px;
+      }
+    }
+  }
+  .content {
+    padding-top: 40px;
+    .working-title {
+      margin: 0;
+      color: #fff;
+    }
+    .working-details {
+      @include flex;
+      gap: 22px;
+      flex-wrap: wrap;
+      padding-top: 9px;
+      color: rgba(255, 255, 255, 0.6);
+      li {
+        display: inline-block;
+        margin-right: 10px;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: -0.32px;
+        i {
+          color: var(--theme-color1);
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+.working-block {
+  &:last-child {
+    .working-block-style4 {
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

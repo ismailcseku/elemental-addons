@@ -1,0 +1,37 @@
+/*
+ * Shortcode: line-with-text.scss
+ * -----------------------------------------------
+*/
+.tm-sc-line-with-text .horizontal-line {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2px;
+  width: 50px;
+  background-color: #fac400;
+}
+.tm-sc-line-with-text .horizontal-text {
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: 0.09em;
+  padding-right: 15px;
+}
+.tm-sc-line-with-text.line-after-title .horizontal-text {
+  padding-right: 0;
+  padding-left: 15px;
+}
+.tm-sc-line-with-text.line-above-title .horizontal-line {
+  display: block;
+}
+.tm-sc-line-with-text.line-above-title .horizontal-text {
+  display: block;
+  padding-right: 0;
+  padding-top: 15px;
+}
+.tm-sc-line-with-text.line-below-title .horizontal-line {
+  display: block;
+}
+.tm-sc-line-with-text.line-below-title .horizontal-text {
+  display: block;
+  padding-right: 0;
+  padding-bottom: 15px;
+}

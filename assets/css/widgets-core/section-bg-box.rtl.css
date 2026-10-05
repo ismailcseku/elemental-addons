@@ -1,0 +1,8 @@
+.tm-section-box-bg {
+  position: absolute;
+  top: -150px;
+  right: 225px;
+  bottom: -150px;
+  left: -100000px;
+  background-color: var(--theme-color1);
+}

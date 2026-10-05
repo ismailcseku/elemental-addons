@@ -1,0 +1,32 @@
+@import "../bootstrap-loader";
+
+.elementor-widget-tm-ele-text-editor-advanced {
+  .elementor-widget-container {
+    z-index: 0;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      left: 0px;
+      top: 0px;
+      opacity: 0.9;
+      z-index: -1;
+      @include transition(all 0.3s ease);
+    }
+    .tm-text-editor-advanced {
+      z-index: 1;
+    }
+  }
+}
+
+.tm-text-editor-advanced .each-item,
+.tm-text-editor-advanced .each-item * {
+  @include transition(all 0.3s ease);
+}
+
+.tm-text-editor,
+.tm-text-editor * {
+  @include transition(all 0.3s ease);
+}

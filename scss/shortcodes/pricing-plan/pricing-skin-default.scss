@@ -1,0 +1,152 @@
+@import "../../bootstrap-loader";
+
+.pricing-plan-skin-default {
+  position: relative;
+  margin-bottom: 50px;
+  z-index: 2;
+  @include transition(all 300ms ease);
+  .pricing-plan-inner {
+    position: relative;
+    padding: 40px 35px;
+    border-radius: 10px;
+    border: 1px solid #d4d0e4;
+    -webkit-box-shadow: 0 10px 60px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 10px 60px rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+    @include transition(all 300ms ease);
+  }
+  .title-box {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(129, 129, 129, 0.2);
+    margin-bottom: 30px;
+    .icon {
+      position: relative;
+      display: block;
+      font-size: 48px;
+      line-height: 1em;
+      background: linear-gradient(to left, var(--theme-color1), var(--theme-color1));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+    }
+    .pricing-plan-title {
+    }
+    .discoun-box {
+      position: absolute;
+      right: -20px;
+      top: -15px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #2e2d2d;
+      display: flex;
+      align-items: center;
+      .pricing-plan-label {
+        span {
+          font-size: 16px;
+          line-height: 23px;
+          color: #fff;
+          background-color: var(--theme-color1);
+          padding: 3px 7px;
+          border-radius: 5px;
+          margin-left: 7px;
+        }
+      }
+      .icon-arrow {
+        position: absolute;
+        top: 100%;
+        left: 10px;
+        width: 54px;
+        height: 49px;
+        opacity: 0.1;
+        background-image: url(../../../images/current-theme/icon-arrow.png);
+        margin-top: 5px;
+      }
+    }
+  }
+  .price {
+    position: relative;
+    display: flex;
+    font-size: 55px;
+    line-height: 1em;
+    font-weight: 600;
+    align-items: flex-end;
+    margin-bottom: 30px;
+    color: var(--headings-color);
+    .pricing-plan-postfix {
+      position: relative;
+      display: block;
+      top: -5px;
+      font-size: 18px;
+      line-height: 1em;
+      color: #67687a;
+    }
+  }
+  .btn-pricing {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    position: relative;
+    line-height: 30px;
+    padding: 15px 30px;
+  }
+  .features-list {
+    position: relative;
+    li {
+      position: relative;
+      display: block;
+      padding-left: 40px;
+      line-height: 30px;
+      color: #2e2d2d;
+      font-weight: 600;
+      margin-bottom: 14px;
+      &:before {
+        position: absolute;
+        left: 4px;
+        top: 5px;
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+        text-align: center;
+        background: linear-gradient(to left, var(--theme-color1), var(--theme-color1));
+        color: #fff;
+        border-radius: 50%;
+        font-weight: 900;
+        font-size: 12px;
+        content: "\f00c";
+        font-family: "Font Awesome 5 Free";
+      }
+      &.no-action {
+        color: #999;
+        &:before {
+          color: #999;
+          background: linear-gradient(to left, #ddd, #ddd);
+        }
+      }
+      &.line-through {
+        color: #999;
+        &:before {
+          color: #999;
+          background: linear-gradient(to left, #ddd, #ddd);
+        }
+        &:after {
+          position: absolute;
+          left: -20px;
+          right: 0;
+          top: 50%;
+          height: 2px;
+          background-color: #999;
+          content: "";
+        }
+      }
+    }
+  }
+}

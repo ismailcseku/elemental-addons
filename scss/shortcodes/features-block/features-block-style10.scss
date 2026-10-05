@@ -1,0 +1,66 @@
+@import "../../bootstrap-loader";
+@import "features-common";
+// Feature Current Style10
+.features-block-style10 {
+  position: relative;
+  margin-bottom: 30px;
+  z-index: 1;
+  .inner-box {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    padding: 30px 20px 25px;
+    background-image: var(--block-feature-style10-bg-featured-image);
+    background-color: var(--theme-color1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    min-height: 175px;
+    -webkit-box-shadow: 0 10px 60px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 10px 60px rgba(0, 0, 0, 0.07);
+    @include transition(all 300ms linear);
+    .features-title {
+      color: #fff;
+      margin-top: 0;
+      margin-bottom: 0;
+      position: relative;
+      a {
+        color: inherit;
+      }
+      &:hover {
+        color: var(--theme-color1);
+      }
+    }
+    .icon {
+      position: relative;
+      display: block;
+      font-size: 64px;
+      color: #fff;
+      font-weight: 900;
+      line-height: 64px;
+      margin-bottom: 30px;
+      @include transition(all 200ms linear);
+    }
+    &:hover {
+      .features-title,
+      .icon {
+        color: #000;
+      }
+      &:before {
+        height: 0;
+      }
+    }
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #2c2e33;
+      content: "";
+      -webkit-transition: all 300ms linear;
+      transition: all 300ms linear;
+    }
+  }
+}

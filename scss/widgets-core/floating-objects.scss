@@ -1,0 +1,40 @@
+// Floating Objects — self-contained styles (Hello Elementor has no theme/Bootstrap helpers).
+.tm-ele-floating-objects {
+	position: relative;
+	width: 100%;
+	min-height: 120px;
+	pointer-events: none;
+
+	.each-object {
+		position: absolute;
+		display: block;
+		width: 120px;
+		height: 120px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: contain;
+		pointer-events: none;
+	}
+
+	.tm-animation-floating,
+	.each-object.tm-animation-floating {
+		animation: elemental-float 3s ease-in-out infinite;
+	}
+
+	// Replace Bootstrap d-none d-lg-block when "Visible on Mobile" is off.
+	&.hide-on-mobile {
+		@media (max-width: 991px) {
+			display: none !important;
+		}
+	}
+}
+
+@keyframes elemental-float {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-12px);
+	}
+}

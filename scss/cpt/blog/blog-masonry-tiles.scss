@@ -1,0 +1,31 @@
+@import "../../bootstrap-loader";
+@import "blog-common";
+
+.tm-sc-blog {
+  &.tm-sc-blog-masonry-tiles {
+    .has-masonry-tiles-fixed-image-size {
+      &.isotope-layout {
+        .isotope-item {
+          .isotope-item-inner {
+            height: 100%;
+            .post {
+              height: 100%;
+              .entry-header {
+                height: 100%;
+                .post-thumb {
+                  height: 100%;
+                  .post-thumb-inner {
+                    height: 100%;
+                    .thumb {
+                      height: 100%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

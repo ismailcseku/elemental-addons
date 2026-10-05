@@ -1,0 +1,124 @@
+@import "../../bootstrap-loader";
+@import "service-common";
+.service-creative-style1 {
+  position: relative;
+  padding-top: 40px;
+  .image-column {
+    height: 525px;
+    @include media-breakpoint-down(lg) {
+      height: 620px;
+    }
+    @include media-breakpoint-down(sm) {
+      height: 440px;
+    }
+    .inner-colmun {
+      position: relative;
+      &.active {
+        .image-box {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      .image-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 400ms ease;
+        border-radius: 20px;
+      }
+    }
+  }
+  .inner-colmun {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    .image-box {
+      transform: rotate(4deg);
+      background-color: #363636;
+      @include media-breakpoint-down(md) {
+        margin-bottom: 50px;
+      }
+      img {
+        transform: rotate(-8deg);
+        border-radius: 20px;
+        transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+      }
+    }
+    .services-list {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      @include media-breakpoint-down(lg) {
+        padding-left: 0;
+      }
+      @include media-breakpoint-down(sm) {
+        padding-left: 0;
+      }
+      .service-creative-detials {
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &.active {
+          .title-area {
+            padding-left: 30px;
+            .icon-img {
+              transform: scale(1);
+            }
+            .service-title:before {
+              width: 100%;
+            }
+          }
+        }
+        .title-area {
+          position: relative;
+          display: inline-block;
+          padding-left: 0px;
+          transition: all 300ms ease;
+          .service-icon {
+            position: absolute;
+            top: 8px;
+            left: 0;
+            line-height: 1;
+            transform: scale(0);
+            transition: all 300ms ease;
+          }
+          .service-title {
+            position: relative;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 34px;
+            margin-top: 0;
+            color: #fff;
+            transition: all 300ms ease;
+            &:before {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 0;
+              height: 1px;
+              content: "";
+              background-color: #fff;
+              transition: all 500ms ease;
+            }
+          }
+        }
+        width: 50%;
+        flex: 0 0 50%;
+        margin-bottom: 50px;
+        @include media-breakpoint-down(xl) {
+          width: 100%;
+          flex: 0 0 100%;
+          margin-bottom: 30px;
+        }
+        @include media-breakpoint-down(lg) {
+          margin-bottom: 15px;
+        }
+        @include media-breakpoint-down(md) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+/*
+ * social-links.scss
+ * -----------------------------------------------
+*/
+.tm-sc-social-links {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+.tm-sc-social-links li {
+  font-size: 1rem;
+}
+.tm-sc-social-links li a.social-link {
+  position: relative;
+  display: block;
+  background: #333;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+  transition: all 0.3s;
+}
+.tm-sc-social-links li a.social-link:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  z-index: -1;
+  transition: all 0.3s;
+}
+.tm-sc-social-links li a.social-link:hover {
+  background: #eee;
+  color: #31354c;
+}
+.tm-sc-social-links li:not(:last-child) {
+  margin-right: 10px;
+}
+.tm-sc-social-links.icon-light li a.social-link {
+  background: #f5f5f5;
+  color: #333;
+  border: 1px solid #fff;
+}
+.tm-sc-social-links.icon-light li a.social-link:hover {
+  background: #333;
+  color: #fff;
+  border: 1px solid #333;
+}
+.tm-sc-social-links.icon-rounded li a {
+  border-radius: 5px;
+}
+.tm-sc-social-links.icon-square li a {
+  border-radius: 0;
+}
+.tm-sc-social-links.icon-xs li a {
+  font-size: 10px;
+  height: 26px;
+  width: 26px;
+  line-height: 26px;
+}
+.tm-sc-social-links.icon-sm li a {
+  font-size: 14px;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+}
+.tm-sc-social-links.icon-md li a {
+  font-size: 18px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+}
+.tm-sc-social-links.icon-lg li a {
+  font-size: 23px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+}
+.tm-sc-social-links.icon-xl li a {
+  font-size: 28px;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+}
+
+.tm-sc-social-links.links-theme-colored1 li a {
+  background: var(--theme-color1);
+}
+.tm-sc-social-links.links-theme-colored2 li a {
+  background: var(--theme-color2);
+}
+.tm-sc-social-links.links-theme-colored3 li a {
+  background: var(--theme-color3);
+}
+.tm-sc-social-links.links-theme-colored4 li a {
+  background: var(--theme-color4);
+}

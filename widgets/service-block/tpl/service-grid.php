@@ -5,8 +5,9 @@
 		<div id="<?php echo esc_attr( $holder_id ) ?>" class="isotope-layout grid-<?php echo esc_attr( $columns ); ?> <?php echo esc_attr( $gutter );?>  <?php if( !empty($classes) ) echo esc_attr(implode(' ', $classes)); ?> clearfix">
 			<div class="isotope-layout-inner">
 				<!-- the loop -->
-				<?php foreach (  $service_items_array as $service_item ) { ?>
+				<?php $service_index = 0; foreach (  $service_items_array as $service_item ) { $service_index++; ?>
 				<?php $settings['service_item'] = $service_item; ?>
+				<?php $settings['service_is_first'] = ( 1 === $service_index ); ?>
 				<?php
 					$animation = "";
 					$animation_delay = "";

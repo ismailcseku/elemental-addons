@@ -1,0 +1,8 @@
+// Import bootstrap variables and mixins for reference
+@import "scss-bootstrap/functions";
+@import "scss-bootstrap/variables";
+@import "scss-bootstrap/mixins";
+
+// Initialize Variables
+@import "scss-core/mixins/loader";
+@import "scss-core/variables";

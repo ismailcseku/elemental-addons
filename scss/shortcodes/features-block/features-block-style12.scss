@@ -1,0 +1,81 @@
+@import "../../bootstrap-loader";
+@import "features-common";
+// Feature Current Style12
+.features-block-style12 {
+  position: relative;
+  z-index: 1;
+  &:after {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    content: "";
+    background-color: #171717;
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+    transition: all 0.2s ease;
+  }
+  .inner-box {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    padding: 40px 30px 35px;
+    z-index: 2;
+    padding-right: 110px;
+    @include transition(all 300ms ease);
+    background: #1a1b1d;
+    &:hover {
+      &:after {
+        height: 24px;
+      }
+    }
+    &:before {
+      position: absolute;
+      left: 30px;
+      top: 0;
+      width: 2px;
+      height: 24px;
+      background-color: rgba(255, 255, 255, 0.1);
+      content: "";
+      @include transition(all 300ms ease);
+    }
+    &:after {
+      position: absolute;
+      left: 30px;
+      top: 0;
+      width: 2px;
+      height: 0;
+      background-color: var(--theme-color1);
+      content: "";
+      @include transition(all 300ms ease);
+    }
+  }
+  .features-icon {
+    position: absolute;
+    right: 30px;
+    top: 0;
+    height: 100%;
+    @include flex-center;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1em;
+    background: linear-gradient(173deg, var(--theme-color1), #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .features-title {
+    position: relative;
+    color: #fff;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    background: linear-gradient(32deg, #fff, rgba(var(--theme-color1-rgb), 0.2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    &:hover {
+      color: var(--theme-color1);
+    }
+  }
+}

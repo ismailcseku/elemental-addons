@@ -1,0 +1,88 @@
+@import "../bootstrap-loader";
+
+/*
+ * Shortcode: list.scss
+ * -----------------------------------------------
+*/
+.tm-sc-list {
+  list-style: none;
+  @include transition(all 0.3s ease);
+  li {
+    @include transition(all 0.3s ease);
+    i,
+    svg {
+      margin-right: 5px;
+    }
+    svg {
+      width: 16px;
+    }
+    i {
+      @include transition(all 0.3s ease);
+    }
+  }
+  &.tm-animate-hover {
+    &.icon-rotate {
+      li {
+        &:hover {
+          i {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+    &.icon-rotate-x {
+      li {
+        &:hover {
+          i {
+            transform: rotateX(360deg);
+          }
+        }
+      }
+    }
+    &.icon-rotate-y {
+      li {
+        &:hover {
+          i {
+            transform: rotateY(180deg);
+          }
+        }
+      }
+    }
+    &.icon-translate {
+      li {
+        &:hover {
+          i {
+            transform: translate(-10px, 10px);
+          }
+        }
+      }
+    }
+    &.icon-translate-x {
+      li {
+        &:hover {
+          i {
+            transform: translateX(-10px);
+          }
+        }
+      }
+    }
+    &.icon-translate-y {
+      li {
+        &:hover {
+          i {
+            transform: translateY(-10px);
+          }
+        }
+      }
+    }
+    &.icon-scale {
+      li {
+        &:hover {
+          i {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}

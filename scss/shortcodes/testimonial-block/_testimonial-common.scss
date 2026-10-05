@@ -1,0 +1,26 @@
+.tm-sc-testimonials {
+  @include star-rating-function();
+  .star-rating {
+    float: none;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    overflow: visible;
+    span {
+      &:before {
+        color: var(--theme-color2);
+      }
+    }
+  }
+  .author-text,
+  .name,
+  .job-position {
+    @include transition(all .3s ease-in-out);
+  }
+  .star-rating {
+    span {
+      &:before {
+        @include transition(all .3s ease-in-out);
+      }
+    }
+  }
+}

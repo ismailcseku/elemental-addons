@@ -1,0 +1,259 @@
+@import "../../bootstrap-loader";
+.pricing-block-basic-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+  @media (max-width: $ele-breakpoint-tablet-max) {
+    flex-direction: column;
+  }
+  .pricing-block-style2 {
+    margin-right: 15px;
+    margin-left: 15px;
+    flex: 1;
+    will-change: flex;
+    @media (max-width: $ele-breakpoint-tablet-max) {
+      margin-bottom: 20px;
+    }
+    @include transition(all 300ms ease);
+    .inner-box {
+      overflow: hidden;
+      position: relative;
+      .image-box {
+        @include media-breakpoint-down(md) {
+          display: none;
+        }
+        .image {
+          min-width: 169px;
+          height: 100%;
+          margin: 0;
+          img {
+            min-width: 169px;
+            min-height: 503px;
+          }
+        }
+      }
+      .content-box-hover {
+        align-items: center;
+        background-color: white;
+        display: flex;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 100%;
+        @include transition(all 300ms ease);
+        @include media-breakpoint-down(md) {
+          position: relative;
+        }
+        @include media-breakpoint-down(sm) {
+          display: block;
+          padding: 15px;
+        }
+        .image-box-hover {
+          margin: 40px 0 40px 40px;
+          flex: 1;
+          will-change: flex;
+          @include transition(all 300ms ease);
+          @include media-breakpoint-down(xl) {
+            max-width: 328px;
+          }
+          @include media-breakpoint-down(md) {
+            max-width: 240px;
+            margin: 15px 0 15px 15px;
+          }
+          @include media-breakpoint-down(sm) {
+            max-width: none;
+            margin: 0 0 30px;
+          }
+          .image {
+            margin: 0;
+            opacity: 0;
+            @include transition(all 300ms ease);
+            img {
+              min-width: 328px;
+              @include media-breakpoint-down(md) {
+                min-width: 240px;
+              }
+              @include media-breakpoint-down(sm) {
+                min-width: auto;
+                width: 100%;
+              }
+            }
+          }
+        }
+        .content-box {
+          flex: 1;
+          margin: 40px 40px 40px 33px;
+          will-change: flex;
+          pointer-events: none;
+          @include transition(all 300ms ease);
+          @include media-breakpoint-down(md) {
+            margin: 15px 15px 15px 22px;
+          }
+          @include media-breakpoint-down(sm) {
+            margin: 0;
+          }
+          .inner-content-box {
+            opacity: 0;
+            @include transition(all 300ms ease);
+            .price {
+              background-color: var(--theme-color1);
+              border-radius: 50%;
+              color: white;
+              height: 66px;
+              width: 66px;
+              line-height: 66px;
+              display: inline-block;
+              font-size: 24px;
+              font-family: Playfair Display;
+              text-align: center;
+              margin-bottom: 19px;
+              opacity: 0;
+              transform: translateY(30px);
+              @include transition(all 300ms ease);
+            }
+            .pricing-title {
+              font-size: 48px;
+              margin-bottom: 23px;
+              opacity: 0;
+              transform: translateY(40px);
+              @include transition(all 300ms ease);
+              @include media-breakpoint-down(md) {
+                font-size: 24px;
+                margin-bottom: 20px;
+                br {
+                  display: none;
+                }
+              }
+              &:hover {
+                color: var(--theme-color1);
+              }
+            }
+            .pricing-details {
+              margin-bottom: 26px;
+              min-width: 329.5px;
+              opacity: 0;
+              transform: translateY(40px);
+              @include transition(all 300ms ease);
+              @include media-breakpoint-down(md) {
+                min-width: auto;
+                font-size: 14px;
+                margin-bottom: 10px;
+                br {
+                  display: none;
+                }
+              }
+            }
+            .list-style {
+              opacity: 0;
+              transform: translateY(40px);
+              @include transition(all 300ms ease);
+              li {
+                color: var(--theme-color2);
+                font-size: 14px;
+                font-weight: 600;
+                margin-bottom: 8px;
+                i {
+                  color: var(--theme-color2);
+                  margin-right: 10px;
+                  position: relative;
+                  top: 3px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.active {
+      flex: 5;
+      .inner-box {
+        .image-box {
+          opacity: 0;
+        }
+        .content-box-hover {
+          right: 0;
+          .image-box-hover {
+            flex: 1;
+            .image {
+              opacity: 1;
+            }
+          }
+          .content-box {
+            flex: 1;
+            pointer-events: auto;
+            .inner-content-box {
+              opacity: 1;
+              .price {
+                opacity: 1;
+                transform: translate(0);
+                transition-delay: 150ms;
+              }
+              .pricing-title {
+                opacity: 1;
+                transform: translate(0);
+                transition-delay: 200ms;
+              }
+              .pricing-details {
+                opacity: 1;
+                transform: translate(0);
+                transition-delay: 230ms;
+              }
+              .list-style {
+                opacity: 1;
+                transform: translate(0);
+                transition-delay: 250ms;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: $ele-breakpoint-tablet-max) {
+      flex: 5;
+      .inner-box {
+        .image-box {
+          opacity: 0;
+        }
+        .content-box-hover {
+          right: 0;
+          .image-box-hover {
+            flex: 1;
+            .image {
+              opacity: 1;
+            }
+          }
+          .content-box {
+            flex: 1;
+            pointer-events: auto;
+            .inner-content-box {
+              opacity: 1;
+              .price {
+                opacity: 1;
+                transform: translate(0);
+                transition-delay: 150ms;
+              }
+              .pricing-title {
+                opacity: 1;
+                transform: translate(0);
+                transition-delay: 200ms;
+              }
+              .pricing-details {
+                opacity: 1;
+                transform: translate(0);
+                transition-delay: 230ms;
+              }
+              .list-style {
+                opacity: 1;
+                transform: translate(0);
+                transition-delay: 250ms;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

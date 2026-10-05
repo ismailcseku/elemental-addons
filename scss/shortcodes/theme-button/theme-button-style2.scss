@@ -1,0 +1,72 @@
+@import "../../bootstrap-loader";
+
+.btn-style2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 0px;
+  position: relative;
+  height: 56px;
+  line-height: 56px;
+  background: var(--theme-color1);
+  color: var(--theme-color1-text-color);
+  gap: 10px;
+  border-radius: 40px;
+  padding-right: 10px;
+  padding-left: 30px;
+  @include transition(all 300ms ease);
+
+  &:hover {
+    color: var(--theme-color1-text-color);
+    padding-right: 38px;
+    padding-left: 10px !important;
+    gap: 0;
+
+    .theme-btn-arrow-left {
+      scale: 1;
+      left: 10px;
+    }
+    .theme-btn-arrow-right {
+      scale: 0;
+    }
+    .theme-btn {
+      transform: translateX(55px);
+    }
+  }
+
+  .theme-btn-arrow-left,
+  .theme-btn-arrow-right {
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--theme-color-white);
+    color: var(--theme-color2);
+    border-radius: 50%;
+    transition: 0.4s;
+    text-align: center;
+  }
+
+  .theme-btn-arrow-right {
+    i {
+      rotate: -30deg;
+    }
+  }
+
+  .theme-btn-arrow-left {
+    scale: 0;
+    left: 0;
+    right: auto;
+    position: absolute;
+  }
+  .theme-btn {
+    font-weight: 400;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.4s;
+  }
+}

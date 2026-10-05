@@ -95,7 +95,7 @@ class TM_Elementor_Funfact_Counter extends Widget_Base {
 	 * @return array Widget scripts dependencies.
 	 */
 	public function get_script_depends() {
-		return [ 'elemental-addons-js' ];
+		return [ 'elemental-addons-js', 'jquery-appear', 'jquery-animatenumbers', 'funfact-animate-number' ];
 	}
 
 	public function get_style_depends() {

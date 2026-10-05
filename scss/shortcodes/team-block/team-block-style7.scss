@@ -1,0 +1,83 @@
+@import "../../bootstrap-loader";
+.team-current-theme7 {
+  .inner-box {
+    position: relative;
+    margin-bottom: 26px;
+    text-align: center;
+    &:hover {
+      .image-box {
+        .image {
+          img {
+            border-color: var(--theme-color1);
+          }
+        }
+      }
+      .social-links {
+        opacity: 1;
+        transform: translateY(-30px);
+      }
+    }
+    .image-box {
+      position: relative;
+      overflow: hidden;
+      .image {
+        display: inline-block;
+        margin-bottom: 0;
+        @include transition(all 300ms ease);
+        img {
+          border: 3px solid var(--theme-color2);
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  .social-links {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    list-style: none;
+    opacity: 0;
+    @include transition(all 300ms ease);
+    transform: translateY(0);
+    li {
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      display: inline-block;
+      border-radius: 50%;
+      background-color: var(--theme-color2);
+      margin-bottom: 0;
+      &:hover {
+        background-color: var(--theme-color1);
+        a {
+          color: var(--theme-color2);
+        }
+      }
+      a {
+        color: #fff;
+      }
+    }
+  }
+  .content-box {
+    position: relative;
+    margin: 32px 0 0;
+    .team-title {
+      color: #fff;
+      margin-bottom: 0;
+      @include transition(all 300ms ease);
+      a {
+        &:hover {
+          color: var(--theme-color1);
+        }
+      }
+    }
+    .team-subtitle {
+      color: #666666;
+      font-size: 14px;
+      @include transition(all 300ms ease);
+    }
+  }
+}
