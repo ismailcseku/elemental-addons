@@ -55,14 +55,22 @@ function elemental_addons_init() {
 add_action( 'elementor/loaded', 'elemental_addons_init' );
 
 /**
- * Admin tools (converter) load even if Elementor init order is late.
+ * Always load the widgets manager (needed for Elementor registration).
+ * Admin UI pages load only in wp-admin.
  */
 function elemental_addons_admin_init() {
+	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/widgets-manager/class-widgets-manager.php';
+	elemental_addons_widgets_manager();
+
 	if ( ! is_admin() ) {
 		return;
 	}
+
+	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/admin/class-admin.php';
 	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/class-layout-converter.php';
 	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/admin/class-converter-page.php';
+
+	Elemental_Addons_Admin::instance();
 	Elemental_Addons_Converter_Page::init();
 }
 add_action( 'plugins_loaded', 'elemental_addons_admin_init' );

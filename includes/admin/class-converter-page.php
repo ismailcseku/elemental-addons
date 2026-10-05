@@ -21,9 +21,10 @@ if ( ! class_exists( 'Elemental_Addons_Converter_Page' ) ) {
 		}
 
 		public static function register_menu() {
-			add_management_page(
-				__( 'Elemental Layout Converter', 'elemental-addons' ),
-				__( 'Elemental Converter', 'elemental-addons' ),
+			add_submenu_page(
+				Elemental_Addons_Admin::MENU_SLUG,
+				__( 'Layout Converter', 'elemental-addons' ),
+				__( 'Layout Converter', 'elemental-addons' ),
 				'manage_options',
 				self::SLUG,
 				array( __CLASS__, 'render_page' )
@@ -202,7 +203,7 @@ if ( ! class_exists( 'Elemental_Addons_Converter_Page' ) ) {
 				10 * MINUTE_IN_SECONDS
 			);
 
-			wp_safe_redirect( admin_url( 'tools.php?page=' . self::SLUG ) );
+			wp_safe_redirect( admin_url( 'admin.php?page=' . self::SLUG ) );
 			exit;
 		}
 	}

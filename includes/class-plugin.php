@@ -19,37 +19,33 @@ if ( ! class_exists( 'Elemental_Addons_Plugin' ) ) {
 		private static $instance = null;
 
 		/**
-		 * Widget folders and class names.
+		 * Widget folders and class names (respects Widgets Manager enable/disable).
 		 *
 		 * @return array
 		 */
 		private function widgets() {
-			return array(
-				'widgets/team-block'             => '\ElementalAddons\Widgets\TeamBlock\TM_Elementor_TeamBlock',
-				'widgets/testimonial-block'      => '\ElementalAddons\Widgets\TestimonialBlock\TM_Elementor_TestimonialBlock',
-				'widgets/service-block'          => '\ElementalAddons\Widgets\ServiceBlock\TM_Elementor_ServiceBlock',
-				'widgets/pricing-block'          => '\ElementalAddons\Widgets\PricingBlock\TM_Elementor_PricingBlock',
-				'widgets/image-gallery'          => '\ElementalAddons\Widgets\ImageGallery\TM_Elementor_Image_Gallery',
-				'widgets/features-block'         => '\ElementalAddons\Widgets\FeaturesBlock\TM_Elementor_FeaturesBlock',
-				'widgets/counter-block'          => '\ElementalAddons\Widgets\CounterBlock\TM_Elementor_CounterBlock',
-				'widgets/accordion'              => '\ElementalAddons\Widgets\Accordion\TM_Elementor_Accordion',
-				'widgets/animated-layers'        => '\ElementalAddons\Widgets\TM_Elementor_Animated_Layers',
-				'widgets/clients-logo'           => '\ElementalAddons\Widgets\TM_Elementor_Clients_logo',
-				'widgets/contact-form-7'         => '\ElementalAddons\Widgets\TM_Elementor_Contact_Form_7',
-				'widgets/floating-objects'       => '\ElementalAddons\Widgets\TM_Elementor_Floating_Objects',
-				'widgets/funfact-counter'        => '\ElementalAddons\Widgets\TM_Elementor_Funfact_Counter',
-				'widgets/progress-bar'           => '\ElementalAddons\Widgets\TM_Elementor_Progress_Bar',
-				'widgets/section-title'          => '\ElementalAddons\Widgets\TM_Elementor_Section_Title',
-				'widgets/text-editor'            => '\ElementalAddons\Widgets\TM_Elementor_TextEditor',
-				'widgets/text-editor-advanced'   => '\ElementalAddons\Widgets\TM_Elementor_TextEditorAdvanced',
-				'widgets/theme-button'           => '\ElementalAddons\Widgets\ThemeButton\TM_Elementor_Theme_Button',
-				'widgets/list'                   => '\ElementalAddons\Widgets\TM_Elementor_List',
-				'widgets/icon-box'               => '\ElementalAddons\Widgets\TM_Elementor_Iconbox',
-				'widgets/working-block'          => '\ElementalAddons\Widgets\WorkingBlock\TM_Elementor_WorkingBlock',
-				'widgets/swiper-carousel-arrow'  => '\ElementalAddons\Widgets\TM_Elementor_Swiper_Carousel_Arrow',
-				'widgets/pricing-plan'           => '\ElementalAddons\Widgets\PricingPlan\TM_Elementor_Pricing_Plan',
-				'cpt/blog'                       => '\ElementalAddons\Widgets\Blog\TM_Elementor_Blog',
-			);
+			if ( function_exists( 'elemental_addons_widgets_manager' ) ) {
+				return elemental_addons_widgets_manager()->get_enabled_widget_map();
+			}
+
+			// Fallback if manager is not loaded yet.
+			$map = array();
+			$registry = include ELEMENTAL_ADDONS_ABS_PATH . 'includes/widgets-manager/widgets-registry.php';
+			if ( ! is_array( $registry ) ) {
+				return $map;
+			}
+			foreach ( $registry as $group ) {
+				if ( empty( $group['widgets'] ) || ! is_array( $group['widgets'] ) ) {
+					continue;
+				}
+				foreach ( $group['widgets'] as $widget ) {
+					if ( empty( $widget['folder'] ) || empty( $widget['class'] ) ) {
+						continue;
+					}
+					$map[ $widget['folder'] ] = $widget['class'];
+				}
+			}
+			return $map;
 		}
 
 		/**

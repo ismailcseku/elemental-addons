@@ -1,0 +1,77 @@
+/**
+ * Elemental Addons — About admin page.
+ */
+
+.elemental-about__hero {
+	margin: 20px 0 24px;
+	padding: 28px 32px;
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 8px;
+}
+
+.elemental-about__eyebrow {
+	margin: 0 0 6px;
+	color: #646970;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.elemental-about__hero h1 {
+	margin: 0 0 10px;
+	padding: 0;
+	font-size: 28px;
+	line-height: 1.2;
+}
+
+.elemental-about__lead {
+	max-width: 720px;
+	margin: 0 0 14px;
+	color: #50575e;
+	font-size: 15px;
+}
+
+.elemental-about__meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px 18px;
+	margin: 0;
+	color: #646970;
+	font-size: 13px;
+}
+
+.elemental-about__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 16px;
+	max-width: 1100px;
+}
+
+.elemental-about__card {
+	padding: 20px 22px;
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 8px;
+}
+
+.elemental-about__card h2 {
+	margin: 0 0 8px;
+	font-size: 16px;
+}
+
+.elemental-about__card p,
+.elemental-about__card ol,
+.elemental-about__card ul {
+	margin-top: 0;
+	color: #50575e;
+}
+
+.elemental-about__list {
+	padding-left: 18px;
+}
+
+.elemental-about__list li {
+	margin: 0 0 6px;
+}
