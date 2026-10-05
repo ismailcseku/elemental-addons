@@ -123,7 +123,7 @@ if ( ! class_exists( 'Elemental_Addons_Admin' ) ) {
 					<div class="elemental-about__card">
 						<h2><?php esc_html_e( 'Plugin Info', 'elemental-addons' ); ?></h2>
 						<ul class="elemental-about__list">
-							<li><strong><?php esc_html_e( 'Author:', 'elemental-addons' ); ?></strong> ThemeMascot</li>
+							<li><strong><?php esc_html_e( 'Author:', 'elemental-addons' ); ?></strong> KodeSolution</li>
 							<li><strong><?php esc_html_e( 'Requires:', 'elemental-addons' ); ?></strong> WordPress 6.2+, PHP 7.4+, Elementor</li>
 							<li><strong><?php esc_html_e( 'License:', 'elemental-addons' ); ?></strong> GPL-2.0-or-later</li>
 							<li><strong><?php esc_html_e( 'Text Domain:', 'elemental-addons' ); ?></strong> elemental-addons</li>

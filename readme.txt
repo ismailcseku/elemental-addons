@@ -1,5 +1,5 @@
 === Elemental Addons for Elementor ===
-Contributors: thememascot
+Contributors: kodesolution
 Tags: elementor, addons, widgets, gallery, team
 Requires at least: 6.2
 Tested up to: 6.9
@@ -47,7 +47,7 @@ LightGallery 1.6.10 is included under GPLv3 for the image gallery lightbox.
 
 Isotope 3.0.6 (https://isotope.metafizzy.co) by Metafizzy is included under GPLv3 for grid and masonry layouts.
 
-Widget type IDs match the ThemeMascot Evolta Elementor widgets (tm-ele-*), so sections that only use supported widgets can be copied between sites. For full layouts that include unsupported widgets, use **Elemental Addons → Layout Converter**.
+Widget type IDs match the KodeSolution Evolta Elementor widgets (tm-ele-*), so sections that only use supported widgets can be copied between sites. For full layouts that include unsupported widgets, use **Elemental Addons → Layout Converter**.
 
 Enable or disable individual widgets from **Elemental Addons → Widgets Manager**.
 
