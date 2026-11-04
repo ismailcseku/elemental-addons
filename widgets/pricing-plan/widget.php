@@ -104,10 +104,7 @@ class TM_Elementor_Pricing_Plan extends Widget_Base {
 	 * Skins
 	 */
 	protected function register_skins() {
-		$this->add_skin( new Skins\Skin_Pricing_Style1( $this ) );
-		$this->add_skin( new Skins\Skin_Pricing_Style2( $this ) );
-		$this->add_skin( new Skins\Skin_Pricing_Style3( $this ) );
-		$this->add_skin( new Skins\Skin_Pricing_Style4( $this ) );
+		elemental_addons_register_widget_skins( $this, 'pricing-plan' );
 	}
 
 	/**

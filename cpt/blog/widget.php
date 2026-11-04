@@ -103,12 +103,7 @@ class TM_Elementor_Blog extends Widget_Base {
 	 * Skins
 	 */
 	protected function register_skins() {
-		$this->add_skin( new Skins\Skin_Style_Current_Theme1( $this ) );
-		$this->add_skin( new Skins\Skin_Style_Current_Theme2( $this ) );
-		$this->add_skin( new Skins\Skin_Style_Current_Theme3( $this ) );
-		$this->add_skin( new Skins\Skin_Style_Current_Theme4( $this ) );
-		$this->add_skin( new Skins\Skin_Style_Current_Theme5( $this ) );
-		$this->add_skin( new Skins\Skin_Vertical_List( $this ) );
+		elemental_addons_register_widget_skins( $this, 'blog' );
 	}
 
 	protected function get_supported_ids() {

@@ -104,12 +104,7 @@ class TM_Elementor_Accordion extends Widget_Base {
 	 * Skins
 	 */
 	protected function register_skins() {
-		$this->add_skin( new Skins\Skin_Accordion_Bordered( $this ) );
-		$this->add_skin( new Skins\Skin_Accordion_Bordered2( $this ) );
-		$this->add_skin( new Skins\Skin_Accordion_Basic( $this ) );
-		$this->add_skin( new Skins\Skin_Accordion_Classic( $this ) );
-		$this->add_skin( new Skins\Skin_Accordion_Gradient( $this ) );
-		$this->add_skin( new Skins\Skin_Accordion_Light_Active( $this ) );
+		elemental_addons_register_widget_skins( $this, 'accordion' );
 	}
 
 	/**

@@ -78,7 +78,9 @@ if ( ! class_exists( 'Elemental_Addons_Admin' ) ) {
 			}
 
 			$counts          = function_exists( 'elemental_addons_widgets_manager' ) ? elemental_addons_widgets_manager()->get_counts() : array( 'total' => 0, 'enabled' => 0 );
+			$skin_counts     = function_exists( 'elemental_addons_skins_manager' ) ? elemental_addons_skins_manager()->get_counts() : array( 'total' => 0, 'enabled' => 0 );
 			$widgets_url     = admin_url( 'admin.php?page=' . Elemental_Addons_Widgets_Manager::PAGE_SLUG );
+			$skins_url       = admin_url( 'admin.php?page=' . Elemental_Addons_Skins_Manager::PAGE_SLUG );
 			$converter_url   = admin_url( 'admin.php?page=' . Elemental_Addons_Converter_Page::SLUG );
 			$elementor_ok    = did_action( 'elementor/loaded' );
 			?>
@@ -93,6 +95,7 @@ if ( ! class_exists( 'Elemental_Addons_Admin' ) ) {
 						<p class="elemental-about__meta">
 							<span><?php echo esc_html( sprintf( __( 'Version %s', 'elemental-addons' ), ELEMENTAL_ADDONS_VERSION ) ); ?></span>
 							<span><?php echo esc_html( sprintf( __( '%1$d of %2$d widgets enabled', 'elemental-addons' ), (int) $counts['enabled'], (int) $counts['total'] ) ); ?></span>
+							<span><?php echo esc_html( sprintf( __( '%1$d of %2$d skins enabled', 'elemental-addons' ), (int) $skin_counts['enabled'], (int) $skin_counts['total'] ) ); ?></span>
 							<span><?php echo $elementor_ok ? esc_html__( 'Elementor: Active', 'elemental-addons' ) : esc_html__( 'Elementor: Not detected', 'elemental-addons' ); ?></span>
 						</p>
 					</div>
@@ -103,6 +106,12 @@ if ( ! class_exists( 'Elemental_Addons_Admin' ) ) {
 						<h2><?php esc_html_e( 'Widgets Manager', 'elemental-addons' ); ?></h2>
 						<p><?php esc_html_e( 'Enable or disable individual widgets. Disabled widgets are not loaded in the Elementor editor.', 'elemental-addons' ); ?></p>
 						<p><a class="button button-primary" href="<?php echo esc_url( $widgets_url ); ?>"><?php esc_html_e( 'Manage Widgets', 'elemental-addons' ); ?></a></p>
+					</div>
+
+					<div class="elemental-about__card">
+						<h2><?php esc_html_e( 'Skins Manager', 'elemental-addons' ); ?></h2>
+						<p><?php esc_html_e( 'Visually enable or disable design skins. Disabled skins are not registered, which keeps the Elementor editor lighter.', 'elemental-addons' ); ?></p>
+						<p><a class="button button-primary" href="<?php echo esc_url( $skins_url ); ?>"><?php esc_html_e( 'Manage Skins', 'elemental-addons' ); ?></a></p>
 					</div>
 
 					<div class="elemental-about__card">

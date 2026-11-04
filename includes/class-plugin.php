@@ -209,8 +209,13 @@ if ( ! class_exists( 'Elemental_Addons_Plugin' ) ) {
 
 				require_once $widget_file;
 
-				foreach ( glob( ELEMENTAL_ADDONS_ABS_PATH . $folder . '/skins/*.php' ) as $skin_file ) {
-					require_once $skin_file;
+				if ( function_exists( 'elemental_addons_skins_manager' ) ) {
+					$skin_slug = elemental_addons_skins_manager()->folder_to_slug( $folder );
+					elemental_addons_skins_manager()->require_enabled_skin_files( $folder, $skin_slug );
+				} else {
+					foreach ( glob( ELEMENTAL_ADDONS_ABS_PATH . $folder . '/skins/*.php' ) as $skin_file ) {
+						require_once $skin_file;
+					}
 				}
 
 				if ( class_exists( $class_name ) ) {

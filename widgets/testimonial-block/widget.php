@@ -105,8 +105,7 @@ class TM_Elementor_TestimonialBlock extends Widget_Base {
 	 * Skins
 	 */
 	protected function register_skins() {
-		$this->add_skin( new Skins\Skin_Style1( $this ) );
-		$this->add_skin( new Skins\Skin_Style2( $this ) );
+		elemental_addons_register_widget_skins( $this, 'testimonial-block' );
 	}
 
 	/**

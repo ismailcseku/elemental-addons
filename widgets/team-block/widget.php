@@ -105,9 +105,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 	 * Skins
 	 */
 	protected function register_skins() {
-		$this->add_skin( new Skins\Skin_Style1( $this ) );
-		$this->add_skin( new Skins\Skin_Style2( $this ) );
-		$this->add_skin( new Skins\Skin_Style3( $this ) );
+		elemental_addons_register_widget_skins( $this, 'team-block' );
 	}
 
 	/**

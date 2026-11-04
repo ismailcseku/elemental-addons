@@ -104,11 +104,7 @@ class TM_Elementor_Theme_Button extends Widget_Base {
 	 * Skins
 	 */
 	protected function register_skins() {
-		$this->add_skin( new Skins\Skin_Style1( $this ) );
-		$this->add_skin( new Skins\Skin_Style2( $this ) );
-		$this->add_skin( new Skins\Skin_Style3( $this ) );
-		$this->add_skin( new Skins\Skin_Style4( $this ) );
-		$this->add_skin( new Skins\Skin_Style5( $this ) );
+		elemental_addons_register_widget_skins( $this, 'theme-button' );
 	}
 
 	/**

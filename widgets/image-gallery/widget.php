@@ -105,9 +105,7 @@ class TM_Elementor_Image_Gallery extends Widget_Base {
 	 * Skins
 	 */
 	protected function register_skins() {
-		$this->add_skin( new Skins\Skin_Style_Current_Theme1( $this ) );
-		$this->add_skin( new Skins\Skin_Style_Current_Theme2( $this ) );
-		$this->add_skin( new Skins\Skin_Style_Current_Theme3( $this ) );
+		elemental_addons_register_widget_skins( $this, 'image-gallery' );
 	}
 
 	/**

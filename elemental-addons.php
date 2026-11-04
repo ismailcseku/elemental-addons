@@ -62,7 +62,9 @@ add_action( 'elementor/loaded', 'elemental_addons_init' );
 function elemental_addons_admin_init() {
 	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/security.php';
 	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/widgets-manager/class-widgets-manager.php';
+	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/skins-manager/class-skins-manager.php';
 	elemental_addons_widgets_manager();
+	elemental_addons_skins_manager();
 
 	if ( ! is_admin() ) {
 		return;
