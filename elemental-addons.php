@@ -63,8 +63,11 @@ function elemental_addons_admin_init() {
 	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/security.php';
 	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/widgets-manager/class-widgets-manager.php';
 	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/skins-manager/class-skins-manager.php';
+	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/admin/class-base-colors.php';
 	elemental_addons_widgets_manager();
 	elemental_addons_skins_manager();
+	// Front + admin: publish --theme-color1…4 from saved options.
+	Elemental_Addons_Base_Colors::init();
 
 	if ( ! is_admin() ) {
 		return;

@@ -121,6 +121,12 @@ if ( ! class_exists( 'Elemental_Addons_Admin' ) ) {
 					</div>
 
 					<div class="elemental-about__card">
+						<h2><?php esc_html_e( 'Base default colors', 'elemental-addons' ); ?></h2>
+						<p><?php esc_html_e( 'Set Theme Color 1–4 used by widget skins (--theme-color1 through --theme-color4).', 'elemental-addons' ); ?></p>
+						<p><a class="button button-primary" href="<?php echo esc_url( admin_url( 'admin.php?page=' . Elemental_Addons_Base_Colors::SLUG ) ); ?>"><?php esc_html_e( 'Edit colors', 'elemental-addons' ); ?></a></p>
+					</div>
+
+					<div class="elemental-about__card">
 						<h2><?php esc_html_e( 'Getting Started', 'elemental-addons' ); ?></h2>
 						<ol>
 							<li><?php esc_html_e( 'Make sure Elementor is installed and active.', 'elemental-addons' ); ?></li>

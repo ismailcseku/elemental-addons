@@ -1,0 +1,61 @@
+/**
+ * Elemental Addons — Base default colors admin page.
+ */
+
+.elemental-base-colors__intro {
+	max-width: 720px;
+	color: #50575e;
+}
+
+.elemental-base-colors__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+	gap: 16px;
+	max-width: 1040px;
+	margin: 20px 0;
+}
+
+.elemental-base-colors__card {
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 8px;
+	padding: 18px 18px 14px;
+	box-sizing: border-box;
+}
+
+.elemental-base-colors__label {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 12px;
+	font-weight: 600;
+	font-size: 14px;
+	color: #1d2327;
+}
+
+.elemental-base-colors__swatch {
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	flex: 0 0 auto;
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+}
+
+.elemental-base-colors__card .wp-picker-container {
+	display: block;
+}
+
+.elemental-base-colors__card .description {
+	margin: 10px 0 6px;
+}
+
+.elemental-base-colors__var {
+	margin: 0;
+	color: #646970;
+	font-size: 12px;
+}
+
+.elemental-base-colors__var code {
+	font-size: 11px;
+}
