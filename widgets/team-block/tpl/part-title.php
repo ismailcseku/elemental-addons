@@ -4,6 +4,7 @@
 	$raw_url      = isset( $feature_link['url'] ) ? trim( (string) $feature_link['url'] ) : '';
 	$url          = ( '' !== $raw_url && '#' !== $raw_url ) ? $raw_url : '';
 	$target       = ( ! empty( $feature_link['is_external'] ) ) ? ' target="_blank"' : '';
+	$title_tag    = ! empty( $title_tag ) ? $title_tag : 'h4';
 ?>
 
 	<?php if ( ! empty( $title ) ) : ?>

@@ -8,11 +8,11 @@ $target = ( $feature_link && $feature_link['is_external'] ) ? ' target="_blank"'
 $url = ( $feature_link && $feature_link['url'] ) ? $feature_link['url'] : '';
 ?>
 <div class="team-skin-style21 team-item">
-  <div class="team-info">
-    <div class="image">
+  <div class="team-content team-info">
+    <div class="team-media image">
       <?php elemental_addons_get_shortcode_template_part( 'part-thumb', null, 'team-block/tpl', $team_item, false );?>
     </div>
-    <div class="content">
+    <div class="team-content content">
       <?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'team-block/tpl', $team_item, false );?>
       <?php elemental_addons_get_shortcode_template_part( 'part-subtitle', null, 'team-block/tpl', $team_item, false );?>
       <?php elemental_addons_get_shortcode_template_part( 'part-social-links', null, 'team-block/tpl', $team_item, false );?>

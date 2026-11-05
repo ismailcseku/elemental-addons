@@ -15,14 +15,14 @@ $count = $team_item['count'];
 				<?php elemental_addons_get_shortcode_template_part( 'part-thumb2', null, 'team-block/tpl', $team_item, false );?>
 			</div>
 		</div>
-		<div class="content-box">
+		<div class="team-content content-box">
 			<div class="row">
 				<div class="col-lg-5 col-md-6">
 					<div class="number">{<span><?php echo $count;?></span>}</div>
 				</div>
 				<div class="col-lg-7 col-md-6">
-					<div class="content">
-						<div class="info-box">
+					<div class="team-content content">
+						<div class="team-content info-box">
 							<?php elemental_addons_get_shortcode_template_part( 'part-subtitle', null, 'team-block/tpl', $team_item, false );?>
 							<?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'team-block/tpl', $team_item, false );?>
 							<?php elemental_addons_get_shortcode_template_part( 'part-social-links', null, 'team-block/tpl', $team_item, false );?>

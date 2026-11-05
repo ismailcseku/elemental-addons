@@ -76,7 +76,7 @@
       cursor: pointer;
       font-size: 14px;
       @include transition(all 300ms ease);
-      .fa-plus {
+      .team-share {
         @include transition(all 300ms ease);
       }
       ul {
@@ -140,7 +140,7 @@
       .socials {
         background-color: var(--theme-color2);
         color: #fff;
-        .fa-plus {
+        .team-share {
           display: inline-block;
           @include transform(rotate(135deg));
         }

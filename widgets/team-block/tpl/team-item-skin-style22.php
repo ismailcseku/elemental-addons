@@ -5,10 +5,10 @@ $team_item['title_tag'] = $title_tag;
 $team_item['subtitle_tag'] = $subtitle_tag;
 ?>
 
-<div class="team-skin-style22 team-item team-block">
+<div class="team-skin-style22 team-block team-item">
 	<div class="inner-block rr-hover-reveal-item2">
-		<div class="content-box">
-			<div class="content">
+		<div class="team-content content-box">
+			<div class="team-content content">
 				<?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'team-block/tpl', $team_item, false );?>
 				<div class="team-memeber-designation">
 					<?php elemental_addons_get_shortcode_template_part( 'part-subtitle', null, 'team-block/tpl', $team_item, false );?>

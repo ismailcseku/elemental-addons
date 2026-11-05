@@ -4,6 +4,7 @@
 		$raw_url      = isset( $feature_link['url'] ) ? trim( (string) $feature_link['url'] ) : '';
 		$url          = ( '' !== $raw_url && '#' !== $raw_url ) ? $raw_url : '';
 		$target       = ( ! empty( $feature_link['is_external'] ) ) ? ' target="_blank"' : '';
+		$subtitle_tag = ! empty( $subtitle_tag ) ? $subtitle_tag : 'div';
 	?>
 	<?php if ( ! empty( $subtitle ) ) : ?>
 	<<?php echo esc_attr( $subtitle_tag ); ?> class="team-subtitle">

@@ -6,7 +6,7 @@ $team_item['subtitle_tag'] = $subtitle_tag;
 ?>
 <div class="team-skin-style26 team-item">
   <div class="team-content">
-    <div class="image">
+    <div class="team-media image">
       <?php elemental_addons_get_shortcode_template_part( 'part-thumb', null, 'team-block/tpl', $team_item, false );?>
       <span class="icon team-share fa fa-share-alt"></span>
       <?php elemental_addons_get_shortcode_template_part( 'part-social-links', null, 'team-block/tpl', $team_item, false );?>

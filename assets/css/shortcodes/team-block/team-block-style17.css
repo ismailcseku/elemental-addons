@@ -67,7 +67,7 @@
   font-size: 14px;
   transition: all 300ms ease;
 }
-.team-skin-style17 .inner-box .socials .fa-plus {
+.team-skin-style17 .inner-box .socials .team-share {
   transition: all 300ms ease;
 }
 .team-skin-style17 .inner-box .socials ul {
@@ -75,6 +75,7 @@
   position: absolute;
   bottom: 45px;
   right: 0;
+  left: -100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -162,7 +163,7 @@
   background-color: var(--theme-color3);
   color: var(--theme-color3-text-color);
 }
-.team-skin-style17 .inner-box:hover .socials .fa-plus {
+.team-skin-style17 .inner-box:hover .socials .team-share {
   display: inline-block;
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);

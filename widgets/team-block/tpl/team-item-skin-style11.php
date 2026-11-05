@@ -14,13 +14,13 @@ if ( $image_id ) {
 
 <div class="team-skin-style11 team-item">
 	<div class="inner-box">
-		<div class="member-image" style="background-image: url(<?php echo esc_url( $image_url ); ?>)"></div>
-		<div class="content-box">
+		<div class="team-media member-image" style="background-image: url(<?php echo esc_url( $image_url ); ?>)"></div>
+		<div class="team-content content-box">
 			<?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'team-block/tpl', $team_item, false );?>
       <?php elemental_addons_get_shortcode_template_part( 'part-subtitle', null, 'team-block/tpl', $team_item, false );?>
 		</div>
 		<div class="team-share">
-			<span class="plus fa fa-solid fa-plus"></span>
+			<span class="icon team-share fa fa-share-alt"></span>
 				<?php elemental_addons_get_shortcode_template_part( 'part-social-links', null, 'team-block/tpl', $team_item, false );?>
 		</div>
 	</div>

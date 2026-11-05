@@ -68,7 +68,7 @@
       cursor: pointer;
       font-size: 14px;
       @include transition(all 300ms ease);
-      .fa-plus {
+      .team-share {
         @include transition(all 300ms ease);
       }
       ul {
@@ -76,6 +76,7 @@
         position: absolute;
         bottom: 45px;
         right: 0;
+        left: -100%;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -159,7 +160,7 @@
       .socials {
         background-color: var(--theme-color3);
         color: var(--theme-color3-text-color);
-        .fa-plus {
+        .team-share {
           display: inline-block;
           @include transform(rotate(135deg));
         }

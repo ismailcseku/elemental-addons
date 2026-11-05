@@ -25,19 +25,19 @@
 ?>
 
 
-<div class="team-social">
+<ul class="team-social">
 
     <?php
         foreach( $social_links as $key => $value ) {
             $icon = ( 'twitter' === $key ) ? 'x-twitter' : $key;
             $label = ( 'twitter' === $key ) ? 'x' : $key;
     ?>
-    <a aria-label="<?php echo esc_attr($label);?>" href="<?php echo esc_url($value);?>"><i class="fab fa-<?php echo esc_attr($icon);?>"></i></a>
+    <li><a aria-label="<?php echo esc_attr($label);?>" href="<?php echo esc_url($value);?>"><i class="fab fa-<?php echo esc_attr($icon);?>"></i></a></li>
     <?php
         }
     ?>
 
-</div>
+</ul>
 
 <?php
     }

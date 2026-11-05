@@ -6,15 +6,15 @@ $team_item['subtitle_tag'] = $subtitle_tag;
 ?>
   <div class="team-skin-style57 team-item">
     <div class="inner">
-      <div class="image_outer">
-        <div class="image">
+      <div class="team-media image_outer">
+        <div class="team-media image">
           <?php elemental_addons_get_shortcode_template_part( 'part-thumb', null, 'team-block/tpl', $team_item, false );?>
         </div>
         <div class="shares">
           <?php elemental_addons_get_shortcode_template_part( 'part-social-links', null, 'team-block/tpl', $team_item, false );?>
         </div>
       </div>
-      <div class="content">
+      <div class="team-content content">
         <?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'team-block/tpl', $team_item, false );?>
         <?php elemental_addons_get_shortcode_template_part( 'part-subtitle', null, 'team-block/tpl', $team_item, false );?>
       </div>

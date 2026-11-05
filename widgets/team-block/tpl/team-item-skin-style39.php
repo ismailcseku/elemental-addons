@@ -7,7 +7,7 @@ $team_item['subtitle_tag'] = $subtitle_tag;
 
 <div class="team-skin-style39 team-item">
 	<div class="inner-box">
-		<div class="image-box">
+		<div class="team-media image-box">
 			<figure class="image1">
 				<img class="team-bg" src="<?php echo plugins_url('assets/images/current-theme/team-bg01.jpg', dirname(__FILE__, 3)); ?>" alt="">
 			</figure>
@@ -17,7 +17,7 @@ $team_item['subtitle_tag'] = $subtitle_tag;
 			<?php elemental_addons_get_shortcode_template_part( 'part-social-links', null, 'team-block/tpl', $team_item, false );?>
 			<span class="team-share fa fa-share-alt"></span>
 		</div>
-		<div class="info-box">
+		<div class="team-content info-box">
 			<?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'team-block/tpl', $team_item, false );?>
 			<?php elemental_addons_get_shortcode_template_part( 'part-subtitle', null, 'team-block/tpl', $team_item, false );?>
 			<div class="nexella-hover-bx hover-bx"></div>

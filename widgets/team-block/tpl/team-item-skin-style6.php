@@ -4,10 +4,8 @@
 $team_item['title_tag'] = $title_tag;
 $team_item['subtitle_tag'] = $subtitle_tag;
 ?>
-<!-- Team block -->
-<div <?php post_class( 'team-item' ); ?>>
-	<div class="team-skin-style6 team-item">
-		<div class="image-box">
+<div class="team-skin-style6 team-item">
+		<div class="team-media image-box">
 			<?php elemental_addons_get_shortcode_template_part( 'part-thumb', null, 'team-block/tpl', $team_item, false );?>
 		</div>
 		<div class="team-content">
@@ -17,7 +15,7 @@ $team_item['subtitle_tag'] = $subtitle_tag;
 			</div>
 			<div class="share-option">
 				<div class="share-link">
-					<i class="fas fa-share-alt"></i>
+					<span class="team-share fa fa-share-alt"></span>
 				</div>
 				<div class="team-social">
         	<?php elemental_addons_get_shortcode_template_part( 'part-social-links', null, 'team-block/tpl', $team_item, false );?>
@@ -25,4 +23,4 @@ $team_item['subtitle_tag'] = $subtitle_tag;
 			</div>
 		</div>
 	</div>
-</div>
+

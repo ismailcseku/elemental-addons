@@ -69,7 +69,7 @@
   font-size: 14px;
   transition: all 300ms ease;
 }
-.team-skin-style48 .inner-box .socials .fa-plus {
+.team-skin-style48 .inner-box .socials .team-share {
   transition: all 300ms ease;
 }
 .team-skin-style48 .inner-box .socials ul {
@@ -144,7 +144,7 @@
   background-color: var(--theme-color1);
   color: #fff;
 }
-.team-skin-style48 .inner-box:hover .socials .fa-plus {
+.team-skin-style48 .inner-box:hover .socials .team-share {
   display: inline-block;
   transform: rotate(-135deg);
 }

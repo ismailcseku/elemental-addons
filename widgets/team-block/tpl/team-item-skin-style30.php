@@ -9,13 +9,13 @@ $featured_image_url = isset($team_item['featured_image']['url']) ? $team_item['f
 ?>
 <div class="team-skin-style30 team-item">
   <div class="inner-block">
-    <div class="images-box">
+    <div class="team-media images-box">
       <?php elemental_addons_get_shortcode_template_part('part-thumb', null, 'team-block/tpl', $team_item, false); ?>
     </div>
     <div class="rating"><i class="fas fa-star"></i>
       <?php echo esc_attr($rating_size); ?>
     </div>
-    <div class="author-info">
+    <div class="team-content author-info">
       <?php elemental_addons_get_shortcode_template_part('part-title', null, 'team-block/tpl', $team_item, false); ?>
       <?php elemental_addons_get_shortcode_template_part('part-subtitle', null, 'team-block/tpl', $team_item, false); ?>
     </div>

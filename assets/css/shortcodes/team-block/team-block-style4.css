@@ -138,6 +138,9 @@
   right: 30px;
   bottom: 30px;
   z-index: 3;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .team-skin-style4 .team-social li {
   display: block;

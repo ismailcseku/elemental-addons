@@ -59,11 +59,23 @@
       opacity: 0;
       position: absolute;
       right: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      list-style: none;
+      padding: 0;
       text-align: center;
       transform: translateY(30px);
       visibility: hidden;
       @include transition(all 300ms ease);
       z-index: 2;
+      li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
       a {
         background-color: #fff;
         backdrop-filter: blur(33.9px);
