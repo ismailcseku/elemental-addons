@@ -482,6 +482,37 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 
 
 		$this->start_controls_section(
+			'team_content_styling',
+			[
+				'label' => esc_html__( 'Content Box Styling', 'elemental-addons' ),
+				'tab'   => \Elementor\Controls_Manager::TAB_STYLE,
+			]
+		);
+		$this->add_control(
+			'team_content_bg_theme_colored',
+			[
+				'label'   => esc_html__( 'BG Theme Colored', 'elemental-addons' ),
+				'type'    => \Elementor\Controls_Manager::SELECT,
+				'options' => elemental_addons_theme_color_list(),
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .team-item .team-content' => 'background-color: var(--theme-color{{VALUE}});',
+				],
+			]
+		);
+		$this->add_control(
+			'team_content_custom_bg_color',
+			[
+				'label' => esc_html__( 'Custom BG Color', 'elemental-addons' ),
+				'type'  => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .team-item .team-content' => 'background-color: {{VALUE}};',
+				],
+			]
+		);
+		$this->end_controls_section();
+
+		$this->start_controls_section(
 			'title_options_styling',
 			[
 				'label' => esc_html__( 'Name Styling', 'elemental-addons' ),
@@ -1205,6 +1236,151 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'selectors' => [
 					'{{WRAPPER}} .team-item .team-social a:hover' => 'background-color: {{VALUE}};'
 				]
+			]
+		);
+		$this->end_controls_tab();
+		$this->end_controls_tabs();
+
+		$this->end_controls_section();
+
+		$this->start_controls_section(
+			'share_icon_styling',
+			[
+				'label' => esc_html__( 'Share Icon Styling', 'elemental-addons' ),
+				'tab'   => \Elementor\Controls_Manager::TAB_STYLE,
+			]
+		);
+		$this->start_controls_tabs( 'tabs_share_icon_styling' );
+		$this->start_controls_tab(
+			'tabs_share_icon_styling_normal',
+			[
+				'label' => esc_html__( 'Normal', 'elemental-addons' ),
+			]
+		);
+		$this->add_control(
+			'share_icon_color_heading',
+			[
+				'label' => esc_html__( 'Icon Color', 'elemental-addons' ),
+				'type'  => \Elementor\Controls_Manager::HEADING,
+			]
+		);
+		$this->add_control(
+			'share_icon_theme_colored',
+			[
+				'label'   => esc_html__( 'Make Icon Theme Colored', 'elemental-addons' ),
+				'type'    => \Elementor\Controls_Manager::SELECT,
+				'options' => elemental_addons_theme_color_list(),
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .team-item .team-share' => 'color: var(--theme-color{{VALUE}});',
+				],
+			]
+		);
+		$this->add_control(
+			'share_icon_custom_color',
+			[
+				'label' => esc_html__( 'Icon Custom Color', 'elemental-addons' ),
+				'type'  => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .team-item .team-share' => 'color: {{VALUE}};',
+				],
+			]
+		);
+		$this->add_control(
+			'share_icon_bg_heading',
+			[
+				'label'     => esc_html__( 'Background Color', 'elemental-addons' ),
+				'type'      => \Elementor\Controls_Manager::HEADING,
+				'separator' => 'before',
+			]
+		);
+		$this->add_control(
+			'share_icon_bg_theme_colored',
+			[
+				'label'   => esc_html__( 'BG Theme Colored', 'elemental-addons' ),
+				'type'    => \Elementor\Controls_Manager::SELECT,
+				'options' => elemental_addons_theme_color_list(),
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .team-item .team-share' => 'background-color: var(--theme-color{{VALUE}});',
+				],
+			]
+		);
+		$this->add_control(
+			'share_icon_custom_bg_color',
+			[
+				'label' => esc_html__( 'Custom BG Color', 'elemental-addons' ),
+				'type'  => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .team-item .team-share' => 'background-color: {{VALUE}};',
+				],
+			]
+		);
+		$this->end_controls_tab();
+
+		$this->start_controls_tab(
+			'tabs_share_icon_styling_hover',
+			[
+				'label' => esc_html__( 'Hover', 'elemental-addons' ),
+			]
+		);
+		$this->add_control(
+			'share_icon_color_heading_hover',
+			[
+				'label' => esc_html__( 'Icon Color', 'elemental-addons' ),
+				'type'  => \Elementor\Controls_Manager::HEADING,
+			]
+		);
+		$this->add_control(
+			'share_icon_theme_colored_hover',
+			[
+				'label'   => esc_html__( 'Make Icon Theme Colored', 'elemental-addons' ),
+				'type'    => \Elementor\Controls_Manager::SELECT,
+				'options' => elemental_addons_theme_color_list(),
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .team-item .team-share:hover' => 'color: var(--theme-color{{VALUE}});',
+				],
+			]
+		);
+		$this->add_control(
+			'share_icon_custom_color_hover',
+			[
+				'label' => esc_html__( 'Icon Custom Color', 'elemental-addons' ),
+				'type'  => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .team-item .team-share:hover' => 'color: {{VALUE}};',
+				],
+			]
+		);
+		$this->add_control(
+			'share_icon_bg_heading_hover',
+			[
+				'label'     => esc_html__( 'Background Color', 'elemental-addons' ),
+				'type'      => \Elementor\Controls_Manager::HEADING,
+				'separator' => 'before',
+			]
+		);
+		$this->add_control(
+			'share_icon_bg_theme_colored_hover',
+			[
+				'label'   => esc_html__( 'BG Theme Colored', 'elemental-addons' ),
+				'type'    => \Elementor\Controls_Manager::SELECT,
+				'options' => elemental_addons_theme_color_list(),
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .team-item .team-share:hover' => 'background-color: var(--theme-color{{VALUE}});',
+				],
+			]
+		);
+		$this->add_control(
+			'share_icon_custom_bg_color_hover',
+			[
+				'label' => esc_html__( 'Custom BG Color', 'elemental-addons' ),
+				'type'  => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .team-item .team-share:hover' => 'background-color: {{VALUE}};',
+				],
 			]
 		);
 		$this->end_controls_tab();
