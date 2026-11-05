@@ -1,13 +1,13 @@
 @import "../../bootstrap-loader";
 
-.team-current-theme1 {
+.team-skin-style1 {
   padding: 10px;
   background-color: var(--theme-color-white);
   border-radius: 20px;
   position: relative;
   z-index: 9;
 
-  .thumb {
+  .team-media {
     overflow: hidden;
     position: relative;
     border-radius: 20px;
@@ -67,7 +67,7 @@
       }
     }
 
-    .share-icon {
+    .team-share {
       background-color: var(--theme-color-white);
       background-size: 200%;
       border-radius: 50%;
@@ -101,7 +101,7 @@
       }
     }
 
-    .social-links {
+    .team-social {
       position: absolute;
       right: 20px;
       bottom: 80px;
@@ -156,7 +156,7 @@
   }
 
   &:hover {
-    .thumb {
+    .team-media {
       img {
         &:first-child {
           -webkit-transform: translateX(0) scaleX(1);
@@ -177,14 +177,14 @@
     }
 
     .team-content {
-      .social-links {
+      .team-social {
         opacity: 1;
         -webkit-transform: scaleY(1);
         transform: scaleY(1);
         visibility: visible;
       }
 
-      .share-icon {
+      .team-share {
         background-color: var(--theme-color1);
         [data-tm-layout="dark"] & {
           color: var(--theme-color3);

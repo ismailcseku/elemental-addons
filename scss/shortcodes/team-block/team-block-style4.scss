@@ -1,11 +1,11 @@
 @import "../../bootstrap-loader";
-.team-current-theme4 {
+.team-skin-style4 {
   position: relative;
   margin-bottom: 40px !important;
   .inner-box {
     position: relative;
     &:hover {
-      .social-links {
+      .team-social {
         li {
           a {
             @include transform(scale(1));
@@ -123,7 +123,7 @@
       }
     }
   }
-  .social-links {
+  .team-social {
     position: absolute;
     right: 30px;
     bottom: 30px;

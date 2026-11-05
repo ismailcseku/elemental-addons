@@ -1,0 +1,170 @@
+.team-skin-style39 {
+  position: relative;
+  margin-bottom: 30px;
+}
+.team-skin-style39 .inner-box {
+  position: relative;
+}
+.team-skin-style39 .inner-box:hover .image1 {
+  mix-blend-mode: normal;
+}
+.team-skin-style39 .inner-box:hover .image1 .team-bg {
+  transform: scale(1.1);
+}
+.team-skin-style39 .inner-box:hover .team-social {
+  transform: scaleY(1);
+  opacity: 1;
+  visibility: visible;
+}
+.team-skin-style39 .inner-box:hover .team-title a {
+  color: var(--theme-color-black);
+  z-index: 2;
+  position: relative;
+}
+.team-skin-style39 .inner-box:hover .team-subtitle {
+  color: var(--theme-color-black);
+}
+.team-skin-style39 .inner-box:hover .team-subtitle:before {
+  background: var(--theme-color-black);
+}
+.team-skin-style39 .inner-box:hover .nexella-hover-bx {
+  opacity: 1;
+  z-index: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.team-skin-style39 .image-box {
+  position: relative;
+  overflow: hidden;
+}
+.team-skin-style39 .image-box .image1 {
+  margin-bottom: 0;
+  mix-blend-mode: luminosity;
+  transition: all 400ms ease;
+}
+.team-skin-style39 .image-box .image1 .team-bg {
+  width: 100%;
+  transition: all 400ms ease;
+}
+.team-skin-style39 .image-box .image2 {
+  margin-bottom: 0;
+}
+.team-skin-style39 .image-box .image2 img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.team-skin-style39 .info-box {
+  padding: 32px 35px 36px;
+  background: var(--body-bg);
+  margin-left: 42px;
+  position: relative;
+  transition: all 300ms ease;
+  z-index: 1;
+}
+.team-skin-style39 .info-box .team-title {
+  margin-bottom: 8px;
+}
+.team-skin-style39 .info-box .team-title a {
+  z-index: 2;
+  transition: all 300ms ease;
+  display: inline-block;
+}
+.team-skin-style39 .info-box .team-subtitle {
+  position: relative;
+  display: block;
+  z-index: 2;
+  font-family: var(--heading-font-family);
+  transition: all 300ms ease;
+  padding-left: 50px;
+}
+.team-skin-style39 .info-box .team-subtitle::before {
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 40px;
+  content: "";
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 300ms ease;
+}
+.team-skin-style39 .info-box .nexella-hover-bx {
+  background: var(--theme-color1);
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  position: absolute;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  width: 25%;
+  z-index: -1;
+}
+.team-skin-style39 .info-box .hover-bx {
+  left: 0;
+  -webkit-transition-delay: 0.105s;
+  transition-delay: 0.105s;
+}
+.team-skin-style39 .info-box .hover-bx2 {
+  left: 25%;
+  -webkit-transition-delay: 0.105s;
+  transition-delay: 0.105s;
+}
+.team-skin-style39 .info-box .hover-bx3 {
+  left: 50%;
+  -webkit-transition-delay: 0.105s;
+  transition-delay: 0.105s;
+}
+.team-skin-style39 .info-box .hover-bx4 {
+  left: 75%;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.team-skin-style39 .team-share {
+  position: absolute;
+  left: 42px;
+  bottom: 0px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+  background-color: var(--theme-color1);
+  transition: all 300ms ease;
+  z-index: 3;
+  color: var(--theme-color2);
+}
+.team-skin-style39 .team-social {
+  position: absolute;
+  left: 42px;
+  bottom: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  z-index: 3;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 400ms ease;
+}
+.team-skin-style39 .team-social a {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  display: block;
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;
+  color: var(--theme-color-white);
+  transition: all 300ms ease;
+  backdrop-filter: blur(10px);
+  background: rgba(244, 245, 248, 0.1490196078);
+  margin-bottom: 10px;
+}
+.team-skin-style39 .team-social a:hover {
+  color: var(--theme-color-black);
+  background-color: var(--theme-color1);
+}

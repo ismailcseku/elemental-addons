@@ -1,29 +1,29 @@
-.team-current-theme7 .inner-box {
+.team-skin-style7 .inner-box {
   position: relative;
   margin-bottom: 26px;
   text-align: center;
 }
-.team-current-theme7 .inner-box:hover .image-box .image img {
+.team-skin-style7 .inner-box:hover .image-box .image img {
   border-color: var(--theme-color1);
 }
-.team-current-theme7 .inner-box:hover .social-links {
+.team-skin-style7 .inner-box:hover .team-social {
   opacity: 1;
   transform: translateY(-30px);
 }
-.team-current-theme7 .inner-box .image-box {
+.team-skin-style7 .inner-box .image-box {
   position: relative;
   overflow: hidden;
 }
-.team-current-theme7 .inner-box .image-box .image {
+.team-skin-style7 .inner-box .image-box .image {
   display: inline-block;
   margin-bottom: 0;
   transition: all 300ms ease;
 }
-.team-current-theme7 .inner-box .image-box .image img {
+.team-skin-style7 .inner-box .image-box .image img {
   border: 3px solid var(--theme-color2);
   border-radius: 50%;
 }
-.team-current-theme7 .social-links {
+.team-skin-style7 .team-social {
   position: absolute;
   right: 0;
   left: 0;
@@ -34,7 +34,7 @@
   transition: all 300ms ease;
   transform: translateY(0);
 }
-.team-current-theme7 .social-links li {
+.team-skin-style7 .team-social li {
   width: 50px;
   height: 50px;
   line-height: 50px;
@@ -44,28 +44,28 @@
   background-color: var(--theme-color2);
   margin-bottom: 0;
 }
-.team-current-theme7 .social-links li:hover {
+.team-skin-style7 .team-social li:hover {
   background-color: var(--theme-color1);
 }
-.team-current-theme7 .social-links li:hover a {
+.team-skin-style7 .team-social li:hover a {
   color: var(--theme-color2);
 }
-.team-current-theme7 .social-links li a {
+.team-skin-style7 .team-social li a {
   color: #fff;
 }
-.team-current-theme7 .content-box {
+.team-skin-style7 .content-box {
   position: relative;
   margin: 32px 0 0;
 }
-.team-current-theme7 .content-box .team-title {
+.team-skin-style7 .content-box .team-title {
   color: #fff;
   margin-bottom: 0;
   transition: all 300ms ease;
 }
-.team-current-theme7 .content-box .team-title a:hover {
+.team-skin-style7 .content-box .team-title a:hover {
   color: var(--theme-color1);
 }
-.team-current-theme7 .content-box .team-subtitle {
+.team-skin-style7 .content-box .team-subtitle {
   color: #666666;
   font-size: 14px;
   transition: all 300ms ease;

@@ -1,0 +1,101 @@
+@import "../../bootstrap-loader";
+
+.team-skin-style56 {
+  .inner-block {
+    position: relative;
+    &:hover {
+      .image-box {
+        img {
+          transform: scale(1.1);
+        }
+      }
+      .content-box {
+        .inner-box {
+          transform: translateY(0);
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+  .image-box {
+    border-radius: 15px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      transform: scale(1);
+      @include transition(all 500ms ease);
+    }
+  }
+  .content-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 30px 20px;
+    overflow: hidden;
+    .inner-box {
+      background-color: #fff;
+      padding: 19px 15px 17px;
+      border-radius: 4px;
+      text-align: center;
+      max-width: 310px;
+      margin: 0 auto;
+      transform: translateY(100px);
+      opacity: 0;
+      visibility: hidden;
+      @include transition(all 500ms ease);
+      .team-title {
+        color: #000002;
+        margin-bottom: 3px;
+        margin-top: 0;
+        span {
+          font-weight: 300;
+        }
+      }
+      .team-subtitle {
+        margin: 0;
+        color: #505050;
+      }
+      .team-social {
+        margin-top: 11px;
+        gap: 11px;
+        display: flex;
+        justify-content: center;
+        li {
+          list-style-type: none;
+          a {
+            border: 1px solid rgba(0, 0, 0, 0.16);
+            display: inline-block;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            width: 32px;
+            @include transition(all 300ms ease);
+            &:hover {
+              background-color: var(--theme-color1);
+              border-color: var(--theme-color1);
+              i {
+                color: var(--theme-color1-text-color);
+              }
+            }
+            i {
+              color: #000;
+              @include transition(all 300ms ease);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.swiper-slide-active,
+.swiper-slide-duplicate-prev {
+  .team-skin-style56 .inner-block .content-box .inner-box {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}

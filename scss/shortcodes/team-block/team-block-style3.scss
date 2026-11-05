@@ -1,6 +1,6 @@
 @import "../../bootstrap-loader";
 
-.team-current-theme3 {
+.team-skin-style3 {
   .inner-box {
     background-color: var(--theme-color-white);
     // border: 1px solid rgba(28, 32, 41, 0.1);
@@ -29,7 +29,7 @@
           color: var(--theme-color1-text-color);
         }
       }
-      .social-links {
+      .team-social {
         opacity: 1;
         -webkit-transform: translateY(-20px);
         visibility: visible;
@@ -52,7 +52,7 @@
         }
       }
     }
-    .social-links {
+    .team-social {
       bottom: 0;
       left: 0;
       margin: 0 auto;

@@ -1,0 +1,198 @@
+@import "../../bootstrap-loader";
+.team-skin-style59 {
+  position: relative;
+  padding: 20px;
+  border-radius: 20px;
+  transform: translateY(0);
+  background: #1c1c1c;
+  .image-box {
+    position: relative;
+    z-index: 1;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+    figure {
+      margin: 0;
+      img {
+        mask-image: url(../../../images/current-theme/team-mask1.png);
+        mask-size: contain;
+        mask-position: center center;
+        mask-repeat: no-repeat;
+        width: 100%;
+      }
+    }
+  }
+
+  // team content box
+  .info-box {
+    position: relative;
+    transition: all 300ms ease;
+    z-index: 1;
+    margin-top: 20px;
+
+    .team-title {
+      margin: 0;
+      @include transition(all 300ms ease);
+      display: inline-block;
+      color: #fff;
+      a {
+        &:hover,
+        &:focus {
+          color: var(--theme-color2);
+        }
+      }
+    }
+
+    .team-subtitle {
+      position: relative;
+      display: block;
+      z-index: 2;
+      font-family: var(--heading-font-family);
+      @include transition(all 300ms ease);
+      font-size: 15px;
+      color: #fff;
+    }
+  }
+
+  // social icon
+  .team-share {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    background-color: #616161;
+    z-index: 3;
+    color: #fff;
+    @include transition(all 300ms ease);
+  }
+
+  @include media-breakpoint-between(lg, xl) {
+    .team-share {
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      left: 15px;
+    }
+  }
+
+  @include media-breakpoint-only(md) {
+    .team-share {
+      height: 45px;
+      width: 45px;
+      line-height: 45px;
+    }
+  }
+
+  .team-social {
+    position: absolute;
+    left: 20px;
+    top: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @include transform(scaleX(0));
+    z-index: 3;
+    visibility: visible;
+    opacity: 1;
+    @include transition(all 400ms ease);
+
+    a {
+      position: relative;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      display: block;
+      font-size: 16px;
+      line-height: 50px;
+      text-align: center;
+      @include transition(all 300ms ease);
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      margin-bottom: 10px;
+
+      &:hover {
+        background: var(--theme-color1);
+        color: var(--theme-color1-text-color);
+      }
+    }
+  }
+
+  //all hover
+  &:hover {
+    .team-share {
+      background: var(--theme-color2);
+      color: var(--theme-color2-text-color);
+    }
+    .team-social {
+      @include transform(scaleX(1));
+      opacity: 1;
+      visibility: visible;
+    }
+    .info-box {
+      margin-left: 20px;
+    }
+    .image-box {
+      z-index: 1;
+    }
+    .team-title {
+      color: var(--theme-color2);
+    }
+    .team-subtitle {
+      color: var(--theme-color2);
+      &:before {
+        background: var(--theme-color1);
+      }
+    }
+  }
+
+  // hover box
+
+  .degency-hover-bx {
+    background: var(--theme-color1);
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    position: absolute;
+    @include transform(scaleX(0));
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 25%;
+  }
+
+  .hover-bx {
+    left: 0;
+    -webkit-transition-delay: 0.105s;
+    transition-delay: 0.105s;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .hover-bx2 {
+    left: 25%;
+    -webkit-transition-delay: 0.105s;
+    transition-delay: 0.105s;
+  }
+
+  .hover-bx3 {
+    left: 50%;
+    -webkit-transition-delay: 0.105s;
+    transition-delay: 0.105s;
+  }
+
+  .hover-bx4 {
+    left: 75%;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    border-radius: 0 20px 20px 0;
+  }
+
+  &:hover .degency-hover-bx {
+    opacity: 1;
+    @include transform(scale(1));
+  }
+}

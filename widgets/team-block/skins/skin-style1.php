@@ -29,6 +29,7 @@ class Skin_Style1 extends Elementor_Skin_Base {
 	}
 
 	public function render() {
+		elemental_addons_enqueue_font_awesome();
 		$settings = $this->parent->get_settings_for_display();
 
 		$direction_suffix = is_rtl() ? '.rtl' : '';
@@ -36,17 +37,7 @@ class Skin_Style1 extends Elementor_Skin_Base {
 		wp_register_script( 'team-block-style1', ELEMENTAL_ADDONS_ASSETS_URI . '/js/widgets/team-block1.js', array( 'jquery' ), false, true );
 		wp_enqueue_script( 'team-block-style1' );
 
-		//icon classes
-		$icon_classes = array();
-		$settings['icon_classes'] = $icon_classes;
-
-		//button classes
-		$settings['btn_classes'] = elemental_addons_prepare_button_classes_from_params( $settings );
-
-
-		//icon classes
-		$icon_classes = array();
-		$settings['icon_classes'] = $icon_classes;
+		$settings['icon_classes'] = array();
 
 		$settings['holder_id'] = \elemental_addons_get_isotope_holder_ID('team-block');
 

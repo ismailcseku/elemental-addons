@@ -2295,3 +2295,29 @@ if(!function_exists('elemental_addons_heading_tag_list_all')) {
 		return $heading_tag_list_all;
 	}
 }
+if ( ! function_exists( 'elemental_addons_enqueue_font_awesome' ) ) {
+	/**
+	 * Enqueue Font Awesome brands/solid from Elementor assets for hardcoded fab/fas icons.
+	 */
+	function elemental_addons_enqueue_font_awesome() {
+		if ( ! defined( 'ELEMENTOR_ASSETS_URL' ) ) {
+			return;
+		}
+
+		$fa_css = ELEMENTOR_ASSETS_URL . 'lib/font-awesome/css/';
+		$ver    = defined( 'ELEMENTOR_VERSION' ) ? ELEMENTOR_VERSION : ( defined( 'ELEMENTAL_ADDONS_VERSION' ) ? ELEMENTAL_ADDONS_VERSION : '5.15.3' );
+
+		if ( ! wp_style_is( 'elemental-addons-fa', 'registered' ) ) {
+			wp_register_style( 'elemental-addons-fa', $fa_css . 'fontawesome.min.css', array(), $ver );
+		}
+		if ( ! wp_style_is( 'elemental-addons-fa-brands', 'registered' ) ) {
+			wp_register_style( 'elemental-addons-fa-brands', $fa_css . 'brands.min.css', array( 'elemental-addons-fa' ), $ver );
+		}
+		if ( ! wp_style_is( 'elemental-addons-fa-solid', 'registered' ) ) {
+			wp_register_style( 'elemental-addons-fa-solid', $fa_css . 'solid.min.css', array( 'elemental-addons-fa' ), $ver );
+		}
+
+		wp_enqueue_style( 'elemental-addons-fa-brands' );
+		wp_enqueue_style( 'elemental-addons-fa-solid' );
+	}
+}

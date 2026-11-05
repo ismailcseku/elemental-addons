@@ -1,0 +1,151 @@
+.team-skin-style27 .inner-block {
+  border-radius: 0;
+  overflow: hidden;
+  position: relative;
+}
+@media (max-width: 799.98px) {
+  .team-skin-style27 .inner-block {
+    height: 500px;
+  }
+}
+@media (max-width: 575.98px) {
+  .team-skin-style27 .inner-block {
+    height: 350px;
+  }
+}
+.team-skin-style27 .inner-block:hover .team-items-hover .inner-box {
+  opacity: 1;
+  visibility: visible;
+  right: 0;
+}
+.team-skin-style27 .inner-block:hover .team-items-hover .inner-box .bottom-box .team-social {
+  opacity: 1;
+}
+.team-skin-style27 .inner-block .images {
+  border-radius: 0;
+  overflow: hidden;
+}
+@media (max-width: 799.98px) {
+  .team-skin-style27 .inner-block .images {
+    height: 100%;
+    width: 100%;
+  }
+}
+.team-skin-style27 .inner-block .images img {
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+.team-skin-style27 .inner-block .team-items-hover .inner-box {
+  background: linear-gradient(180deg, rgba(12, 19, 21, 0.8) -19.27%, #0c1315 100%);
+  padding: 47px 42px 45px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  right: -100%;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 300ms ease;
+}
+@media (max-width: 1199.98px) {
+  .team-skin-style27 .inner-block .team-items-hover .inner-box {
+    padding: 27px 22px 30px;
+  }
+}
+@media (max-width: 1024.98px) {
+  .team-skin-style27 .inner-block .team-items-hover .inner-box {
+    padding: 47px 42px 45px;
+  }
+}
+@media (max-width: 575.98px) {
+  .team-skin-style27 .inner-block .team-items-hover .inner-box {
+    padding: 27px 22px 30px;
+  }
+}
+.team-skin-style27 .inner-block .team-items-hover .inner-box .team-title {
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.team-skin-style27 .inner-block .team-items-hover .inner-box .team-subtitle {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 30px;
+}
+.team-skin-style27 .inner-block .team-items-hover .inner-box .team-short-bio {
+  color: rgba(255, 255, 255, 0.6);
+}
+.team-skin-style27 .inner-block .team-items-hover .inner-box .text {
+  color: rgba(255, 255, 255, 0.6);
+}
+.team-skin-style27 .inner-block .team-items-hover .inner-box .bottom-box {
+  border-top: 1px solid rgba(255, 255, 255, 0.1215686275);
+  padding-top: 66px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 1365.98px) {
+  .team-skin-style27 .inner-block .team-items-hover .inner-box .bottom-box {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 575.98px) {
+  .team-skin-style27 .inner-block .team-items-hover .inner-box .bottom-box {
+    padding-top: 30px;
+    margin-top: 30px;
+  }
+}
+.team-skin-style27 .inner-block .team-items-hover .inner-box .bottom-box .team-social {
+  display: flex;
+}
+.team-skin-style27 .inner-block .team-items-hover .inner-box .bottom-box .team-social li {
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: #000000;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  width: 40px;
+  margin-right: 7px;
+  list-style: none;
+  margin-bottom: 0;
+  transition: all 300ms ease;
+}
+.team-skin-style27 .inner-block .team-items-hover .inner-box .bottom-box .team-social li:hover {
+  background-color: var(--theme-color1);
+}
+.team-skin-style27 .inner-block .team-items-hover .inner-box .bottom-box .team-social li:hover a {
+  color: var(--theme-color1-text-color);
+}
+.team-skin-style27 .inner-block .team-items-hover .inner-box .bottom-box .team-social li a {
+  color: #000000;
+  transition: all 300ms ease;
+}
+.team-skin-style27 .inner-block .team-items-hover .inner-box .bottom-box .team-social li a i {
+  transition: all 300ms ease;
+}
+.team-skin-style27 .inner-block .team-items-hover .inner-box .bottom-box .arrow-icon {
+  color: #fff;
+  font-size: 40px;
+  line-height: 1;
+}
+.team-skin-style27 .inner-block .team-items-hover .inner-box .bottom-box .arrow-icon:hover svg,
+.team-skin-style27 .inner-block .team-items-hover .inner-box .bottom-box .arrow-icon:hover i {
+  transform: rotate(0deg);
+  transition: all 300ms ease;
+}
+.team-skin-style27 .inner-block .team-items-hover .inner-box .bottom-box .arrow-icon svg,
+.team-skin-style27 .inner-block .team-items-hover .inner-box .bottom-box .arrow-icon i {
+  display: inline-block;
+  transform: rotate(-45deg);
+  transition: all 300ms ease;
+}

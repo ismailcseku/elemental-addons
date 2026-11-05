@@ -1,0 +1,201 @@
+@import "../../bootstrap-loader";
+
+.team-skin-style22 {
+  .inner-block {
+    padding: 40px 50px;
+    background-color: transparent;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 40px;
+    @include transition(all 300ms ease);
+    @include media-breakpoint-down(lg) {
+      padding: 40px 20px;
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 40px 20px 26px;
+    }
+    .content-box{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include media-breakpoint-down(md) {
+        flex-direction: column;
+        align-items: start;
+      }
+    }
+
+    &:hover {
+      &:before {
+        transform: scale(1, 1);
+        transform-origin: bottom left;
+      }
+      .content {
+        .team-title {
+          color: var(--theme-color1-text-color);
+          a:hover{
+          color: var(--theme-color2);
+        }
+        }
+        .team-memeber-designation {
+          .team-subtitle{
+            color: var(--theme-color1-text-color);
+          }
+          .team-short-bio {
+            color: rgba(20, 68, 67, 0.8);
+          }
+        }
+      }
+      .team-social{
+        li{
+          a {
+            background-color: rgba(0, 0, 0, 0.1);
+            color: var(--theme-color3);
+          }
+        }
+      }
+      .hover-image {
+        opacity: 1;
+        z-index: 2;
+        @include media-breakpoint-down(sm) {
+          display: none;
+        }
+      }
+    }
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      content: "";
+      border-radius: 0;
+      transform: scale(0, 1);
+      transform-origin: top right;
+      background-color: var(--theme-color1);
+      border-radius: 20px;
+      transition: -webkit-transform 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
+      transition: transform 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
+      transition: transform 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000),
+      -webkit-transform 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
+      transition-timing-function: cubic-bezier(0.860, 0.000, 0.070, 1.000);
+    }
+    &:after {
+      position: absolute;
+      left: 0;
+      bottom: -20px;
+      width: 100%;
+      height: 1px;
+      content: "";
+      background-color: rgba(var(--theme-color-white-rgb), 0.1);
+    }
+  }
+  .content {
+    position: relative;
+    @include transition(all 300ms ease);
+    .team-title {
+      color: var(--theme-color-white);
+      margin-top: 0;
+      margin-bottom: 2px;
+      @include transition(all 300ms ease);
+    }
+    .team-memeber-designation {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      @include media-breakpoint-down(lg) {
+        flex-direction: column;
+        align-items: start;
+        gap: 0;
+        margin-top: 5px;
+      }
+      .team-subtitle{
+        color: var(--theme-color-white);
+        @include transition(all 300ms ease);
+      }
+      .team-short-bio {
+        color: rgba(var(--theme-color-white-rgb), 0.6);
+        @include transition(all 300ms ease);
+      }
+    }
+  }
+  .team-social {
+    position: relative;
+    display: flex;
+    align-items: none;
+    gap: 6px;
+    z-index: 3;
+    @include media-breakpoint-down(md) {
+      margin-top: 20px;
+    }
+    li{
+      list-style: none;
+      margin-top: 19px;
+      @include media-breakpoint-down(sm) {
+        margin-top: 0px;
+      }
+    }
+    a {
+      color: var(--theme-color-white);
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      background-color: rgba(var(--theme-color-white-rgb), 0.1);
+      border-radius: 50%;
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+      @include transition(all 300ms ease);
+      &:hover {
+        color: var(--theme-color1) !important;
+        &:before{
+          transform: scale(1, 1);
+          transform-origin: bottom left;
+        }
+      }
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        border-radius: 0;
+        transform: scale(0, 1);
+        transform-origin: top right;
+        background-color: var(--theme-color3);
+        transition: -webkit-transform 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
+        transition: transform 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
+        transition: transform 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000),
+        -webkit-transform 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
+        transition-timing-function: cubic-bezier(0.860, 0.000, 0.070, 1.000);
+      }
+      i {
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+  .hover-image {
+    width: 250px;
+    height: 280px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    opacity: 0;
+    margin: -200px 0 0 -150px;
+    overflow: hidden;
+    pointer-events: none;
+    transform: translate(0px, 0px) rotate(0);
+    transition: opacity 0.3s, transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+    @include media-breakpoint-down(sm){
+      width: 250px;
+      height: 150px;
+      margin: -100px 0 0 -75px;
+    }
+  }
+}

@@ -1,0 +1,155 @@
+@import "../../bootstrap-loader";
+
+.team-skin-style32 {
+  margin-bottom: 50px !important;
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 70px;
+  }
+  .inner-box {
+    position: relative;
+    border-radius: 0 150px 150px 150px;
+    background-color: #fff;
+    [data-tm-layout="dark"] & {
+      background-color: #0a0a0a;
+    }
+    border: 5px solid var(--theme-color1);
+    @include transition(all 300ms ease);
+    &:before {
+      content: "";
+      @include overlay;
+      background: var(--gradient-1);
+      opacity: 0;
+      transform: scale(0);
+      border-radius: 0 140px 144px 143px;
+      @include transition(all 300ms ease);
+    }
+    &:hover {
+      &:before {
+        opacity: 1;
+        transform: scale(1);
+      }
+      .image-box .image img {
+        transform: scale(1.1);
+      }
+      .content-box {
+        .team-title,
+        .team-title a,
+        .team-subtitle {
+          color: #fff;
+        }
+      }
+    }
+    .image-box {
+      position: relative;
+      .image {
+        position: relative;
+        overflow: hidden;
+        border-radius: 0 150px 150px 150px;
+        margin-bottom: 0;
+        img {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          @include transition(all 300ms ease);
+        }
+      }
+    }
+
+    .content-box {
+      position: relative;
+      padding-top: 10px;
+      text-align: center;
+      .team-title {
+        position: relative;
+        margin-bottom: 0;
+        a:hover {
+          color: var(--theme-color3);
+        }
+      }
+      .team-subtitle {
+        position: relative;
+        padding-bottom: 2px;
+        @include transition(all 300ms ease);
+      }
+      .icon-box {
+        position: relative;
+        cursor: pointer;
+        @include flex-center;
+        margin-bottom: -30px;
+        z-index: 5;
+        &:hover {
+          .icon:after {
+            opacity: 1;
+            transform: scale(1);
+          }
+          .team-social {
+            transform: scale(1);
+            visibility: visible;
+          }
+        }
+        .icon {
+          position: relative;
+          display: block;
+          height: 60px;
+          width: 60px;
+          @include flex-center;
+          font-size: 26px;
+          border-radius: 50%;
+          color: #fff;
+          font-weight: 900;
+          background: var(--gradient-1);
+          &:before {
+            position: relative;
+            z-index: 2;
+          }
+          &:after {
+            content: "";
+            @include overlay;
+            opacity: 0;
+            transform: scale(0);
+            border-radius: 50%;
+            background-color: var(--theme-color3);
+            @include transition(all 300ms ease);
+            z-index: 1;
+          }
+        }
+        .team-social {
+          position: absolute;
+          left: 50%;
+          bottom: 70px;
+          margin-left: -18px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          gap: 8px;
+          transform-origin: bottom;
+          transform: scaleY(0);
+          visibility: hidden;
+          z-index: 5;
+          @include transition(all 500ms ease);
+          li {
+            display: inline-block;
+            list-style: none;
+            margin-bottom: 0;
+            a {
+              position: relative;
+              height: 36px;
+              width: 36px;
+              @include flex-center;
+              border-radius: 50%;
+              font-size: var(--body-font-size);
+              color: var(--theme-color2);
+              background-color: #fff;
+              @include transition(all 300ms ease);
+              cursor: pointer;
+              &:hover {
+                color: #fff;
+                background-color: var(--theme-color2);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

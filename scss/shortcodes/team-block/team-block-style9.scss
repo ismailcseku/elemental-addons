@@ -1,11 +1,11 @@
 @import "../../bootstrap-loader";
-.team-current-theme9 {
+.team-skin-style9 {
   .inner-box {
     position: relative;
     margin-bottom: 50px;
     text-align: center;
     &:hover {
-      .social-links {
+      .team-social {
         transform: translateY(-40px);
         opacity: 1;
       }
@@ -50,7 +50,7 @@
       }
     }
   }
-  .social-links {
+  .team-social {
     position: absolute;
     left: 0;
     bottom: 0;

@@ -1,0 +1,166 @@
+@import "../../bootstrap-loader";
+
+.team-skin-style51 {
+  margin-bottom: 50px !important;
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 70px;
+  }
+  .inner-box {
+    position: relative;
+    &:hover {
+      &:before {
+        transform: scale(1);
+      }
+    }
+    .image-box {
+      position: relative;
+      .image {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 0;
+        mask-image: url(../../../images/current-theme/team3-mask.png);
+        mask-repeat: no-repeat;
+        mask-size: cover;
+        mask-position: center;
+        @include media-breakpoint-down(lg) {
+          margin-bottom: 30px;
+        }
+        img {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          @include transition(all 300ms ease);
+        }
+      }
+    }
+
+    .icon-box {
+      position: absolute;
+      cursor: pointer;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      &:hover {
+        .icon:after {
+          opacity: 1;
+          transform: scale(1);
+        }
+        .team-social {
+          transform: scale(1);
+          visibility: visible;
+        }
+      }
+      .icon {
+        position: relative;
+        display: block;
+        height: 55px;
+        width: 55px;
+        @include flex-center;
+        font-size: 23px;
+        border-radius: 50%;
+        color: var(--theme-color1-text-color);
+        background: var(--gradient-1);
+        font-weight: 600;
+        @include transition(all 300ms ease);
+        &:before {
+          position: relative;
+          z-index: 2;
+        }
+        &:after {
+          content: "";
+          @include overlay;
+          opacity: 0;
+          transform: scale(0);
+          border-radius: 50%;
+          background-color: var(--theme-color-black);
+          @include transition(all 300ms ease);
+          z-index: 1;
+        }
+      }
+      .team-social {
+        position: absolute;
+        left: 50%;
+        top: 75px;
+        margin-left: -18px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 8px;
+        transform-origin: top;
+        transform: scale(0);
+        visibility: hidden;
+        z-index: 5;
+        @include transition(all 500ms ease);
+        li {
+          display: inline-block;
+          list-style: none;
+          color: var(--theme-color2);
+          border-radius: 50%;
+          background-color: var(--theme-color-white);
+          margin-bottom: 0;
+          a {
+            position: relative;
+            height: 36px;
+            width: 36px;
+            @include flex-center;
+            border-radius: 50%;
+            font-size: var(--body-font-size);
+            color: var(--theme-color2);
+            [data-tm-layout="dark"] & {
+              color: var(--theme-color2-text-color);
+            }
+            background-color: var(--theme-color-white);
+            @include transition(all 300ms ease);
+            &:hover {
+              color: var(--theme-color3-text-color);
+              background-color: var(--theme-color3);
+            }
+          }
+        }
+      }
+    }
+
+    .content-box {
+      position: absolute;
+      text-align: center;
+      width: 290px;
+      padding: 20px 0;
+      border-radius: 50px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      bottom: -55px;
+      background-color: var(--theme-color-white);
+      box-shadow: 0px 4px 60px 0px #0000001a;
+      @include media-breakpoint-only(md) {
+        bottom: -40px;
+        padding: 12px 0;
+      }
+      @include media-breakpoint-only(sm) {
+        width: 210px;
+        bottom: -20px;
+        padding: 5px 0;
+      }
+      .team-title {
+        position: relative;
+        margin-bottom: 0px;
+        margin-top: 0;
+        a:hover {
+          color: var(--theme-color2);
+          [data-tm-layout="dark"] & {
+            color: var(--theme-color2-text-color);
+          }
+        }
+      }
+      .team-subtitle {
+        position: relative;
+        @include transition(all 300ms ease);
+      }
+    }
+    &:hover {
+      .icon {
+        transform: scale(-1);
+      }
+    }
+  }
+}

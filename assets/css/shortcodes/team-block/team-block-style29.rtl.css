@@ -1,0 +1,88 @@
+.team-skin-style29 .inner-box {
+  position: relative;
+  margin-bottom: 26px;
+}
+.team-skin-style29 .inner-box:hover:before {
+  transform: scale(1);
+}
+.team-skin-style29 .inner-box:hover .content-box .team-title {
+  transform: translateY(-40px);
+  opacity: 1;
+}
+.team-skin-style29 .inner-box:hover .content-box .team-subtitle {
+  transform: translateY(-38px);
+  opacity: 1;
+}
+.team-skin-style29 .inner-box:before {
+  background-color: rgba(var(--theme-color1-rgb), 0.8);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  right: 0%;
+  top: 0%;
+  z-index: 1;
+  pointer-events: none;
+  border-radius: 61% 91% 84% 68%/62% 73% 79% 89%;
+  transition: all 300ms ease;
+}
+.team-skin-style29 .inner-box .image-box .bg-image {
+  bottom: auto;
+  right: 0;
+  top: 24px;
+  left: auto;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+  position: absolute;
+  border: 1px solid #f3e9ff;
+}
+body.tm-dark-layout .team-skin-style29 .inner-box .image-box .bg-image {
+  border: 1px solid rgba(243, 233, 255, 0.1490196078);
+}
+.team-skin-style29 .inner-box .image-box .bg-image {
+  border-radius: 61% 91% 84% 68%/62% 73% 79% 89%;
+}
+@media (max-width: 1199.98px) {
+  .team-skin-style29 .inner-box .image-box .bg-image {
+    display: none;
+  }
+}
+.team-skin-style29 .inner-box .image-box .image img {
+  border-radius: 61% 91% 84% 68%/62% 73% 79% 89%;
+  width: 100%;
+}
+.team-skin-style29 .content-box {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 2;
+}
+.team-skin-style29 .content-box .team-title {
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 8px;
+  opacity: 0;
+  transform: translate(0);
+  transition: all 300ms ease;
+}
+.team-skin-style29 .content-box .team-title a:hover {
+  color: var(--theme-color2);
+}
+.team-skin-style29 .content-box .team-subtitle {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: var(--heading-font-family);
+  opacity: 0;
+  transform: translateY(0);
+  transition: all 300ms ease;
+}

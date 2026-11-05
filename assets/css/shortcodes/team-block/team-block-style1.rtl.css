@@ -1,16 +1,16 @@
-.team-current-theme1 {
+.team-skin-style1 {
   padding: 10px;
   background-color: var(--theme-color-white);
   border-radius: 20px;
   position: relative;
   z-index: 9;
 }
-.team-current-theme1 .thumb {
+.team-skin-style1 .team-media {
   overflow: hidden;
   position: relative;
   border-radius: 20px;
 }
-.team-current-theme1 .thumb img {
+.team-skin-style1 .team-media img {
   width: 100%;
   height: 100%;
   border-radius: 20px;
@@ -19,7 +19,7 @@
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
-.team-current-theme1 .thumb img:first-child {
+.team-skin-style1 .team-media img:first-child {
   position: absolute;
   right: 0;
   top: 0;
@@ -32,30 +32,30 @@
   -webkit-filter: blur(10px);
   filter: blur(10px);
 }
-.team-current-theme1 .team-content {
+.team-skin-style1 .team-content {
   background-color: #f7f8ed;
   padding: 20px 20px;
   border-radius: 20px;
   position: relative;
 }
-.team-current-theme1 .team-content .team-title {
+.team-skin-style1 .team-content .team-title {
   margin: 0;
 }
-[data-tm-layout=dark] .team-current-theme1 .team-content .team-title {
+[data-tm-layout=dark] .team-skin-style1 .team-content .team-title {
   color: var(--theme-color3);
 }
-.team-current-theme1 .team-content .team-title a {
+.team-skin-style1 .team-content .team-title a {
   background-position: 100% 95%;
   background-repeat: no-repeat;
   background-size: 0% 2px;
   display: inline;
 }
-.team-current-theme1 .team-content .team-title a:hover {
+.team-skin-style1 .team-content .team-title a:hover {
   color: var(--theme-color1);
   background-size: 100% 2px;
   background-image: linear-gradient(-180deg, var(--theme-color1) 0%, var(--theme-color1) 100%);
 }
-.team-current-theme1 .team-content .share-icon {
+.team-skin-style1 .team-content .team-share {
   background-color: var(--theme-color-white);
   background-size: 200%;
   border-radius: 50%;
@@ -74,21 +74,21 @@
   transition: all 300ms ease;
   z-index: 3;
 }
-[data-tm-layout=dark] .team-current-theme1 .team-content .share-icon {
+[data-tm-layout=dark] .team-skin-style1 .team-content .team-share {
   color: #fff;
 }
 @media (max-width: 575.98px) {
-  .team-current-theme1 .team-content .share-icon {
+  .team-skin-style1 .team-content .team-share {
     width: 40px;
     height: 40px;
     font-size: 14px;
     line-height: 40px;
   }
 }
-.team-current-theme1 .team-content .share-icon:hover {
+.team-skin-style1 .team-content .team-share:hover {
   background-position: 0% 0;
 }
-.team-current-theme1 .team-content .social-links {
+.team-skin-style1 .team-content .team-social {
   position: absolute;
   left: 20px;
   bottom: 80px;
@@ -114,7 +114,7 @@
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
 }
-.team-current-theme1 .team-content .social-links a {
+.team-skin-style1 .team-content .team-social a {
   background: var(--theme-color1);
   background-size: 200%;
   border-radius: 50%;
@@ -130,40 +130,40 @@
   transition: all 300ms ease;
 }
 @media (max-width: 575.98px) {
-  .team-current-theme1 .team-content .social-links a {
+  .team-skin-style1 .team-content .team-social a {
     width: 40px;
     height: 40px;
     font-size: 14px;
     line-height: 40px;
   }
 }
-.team-current-theme1 .team-content .social-links a:hover {
+.team-skin-style1 .team-content .team-social a:hover {
   background: #ffffff;
   background-position: 0% 0;
 }
-.team-current-theme1:hover .thumb img:first-child {
+.team-skin-style1:hover .team-media img:first-child {
   -webkit-transform: translateX(0) scaleX(1);
   transform: translate(0) scaleX(1);
   opacity: 1;
   -webkit-filter: blur(0);
   filter: blur(0);
 }
-.team-current-theme1:hover .thumb img:nth-child(2) {
+.team-skin-style1:hover .team-media img:nth-child(2) {
   -webkit-transform: translateX(50%) scaleX(2);
   transform: translateX(50%) scaleX(2);
   opacity: 0;
   -webkit-filter: blur(10px);
   filter: blur(10px);
 }
-.team-current-theme1:hover .team-content .social-links {
+.team-skin-style1:hover .team-content .team-social {
   opacity: 1;
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
   visibility: visible;
 }
-.team-current-theme1:hover .team-content .share-icon {
+.team-skin-style1:hover .team-content .team-share {
   background-color: var(--theme-color1);
 }
-[data-tm-layout=dark] .team-current-theme1:hover .team-content .share-icon {
+[data-tm-layout=dark] .team-skin-style1:hover .team-content .team-share {
   color: var(--theme-color3);
 }

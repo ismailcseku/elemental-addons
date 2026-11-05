@@ -1,0 +1,103 @@
+.team-skin-style15 .inner-box {
+  position: relative;
+  padding-bottom: 30px;
+}
+.team-skin-style15 .inner-box:hover .image-box .image::after {
+  opacity: 1;
+}
+.team-skin-style15 .inner-box:hover .image-box .image img {
+  transform: scale(1.1);
+}
+.team-skin-style15 .inner-box:hover .image-box .team-social {
+  opacity: 0.8;
+  transform: scaleX(1);
+}
+.team-skin-style15 .inner-box:hover .image-box .team-social li a {
+  opacity: 1;
+}
+.team-skin-style15 .inner-box .image-box {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.team-skin-style15 .inner-box .image-box .image {
+  margin: 0;
+}
+.team-skin-style15 .inner-box .image-box .image::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(185, 0, 0, 0.82);
+  width: 100%;
+  height: 100%;
+  content: "";
+  opacity: 0;
+  transition: all 300ms ease;
+}
+.team-skin-style15 .inner-box .image-box .image img {
+  width: 100%;
+  object-fit: cover;
+  transition: all 300ms ease;
+}
+.team-skin-style15 .inner-box .image-box .team-social {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scalex(0);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  transition: all 300ms ease;
+}
+.team-skin-style15 .inner-box .image-box .team-social li {
+  margin-bottom: 0;
+}
+.team-skin-style15 .inner-box .image-box .team-social li a {
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
+  transition: all 300ms ease;
+}
+.team-skin-style15 .inner-box .content-box {
+  position: absolute;
+  bottom: 0;
+  left: 55px;
+  right: 55px;
+  padding: 17px 30px;
+  border-radius: 20px;
+  background-color: #fcf2ea;
+}
+body.tm-dark-layout .team-skin-style15 .inner-box .content-box {
+  background-color: #1c1c1c;
+}
+.team-skin-style15 .inner-box .content-box {
+  text-align: center;
+}
+@media (max-width: 767.98px) {
+  .team-skin-style15 .inner-box .content-box {
+    left: 30px;
+    right: 30px;
+    padding: 17px 20px;
+  }
+}
+.team-skin-style15 .inner-box .content-box .team-title {
+  margin-top: 0;
+  color: var(--headings-color);
+  margin-bottom: 0px;
+  transition: all 300ms ease;
+}
+.team-skin-style15 .inner-box .content-box .team-title a:hover {
+  color: #ffffff;
+}
+.team-skin-style15 .inner-box .content-box .team-subtitle {
+  font-size: 14px;
+  transition: all 300ms ease;
+}

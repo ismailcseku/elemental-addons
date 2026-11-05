@@ -6,7 +6,7 @@ $team_item['subtitle_tag'] = $subtitle_tag;
 ?>
 <!-- Team block -->
 <div <?php post_class( 'team-item' ); ?>>
-	<div class="team-current-theme6 team-item">
+	<div class="team-skin-style6 team-item">
 		<div class="image-box">
 			<?php elemental_addons_get_shortcode_template_part( 'part-thumb', null, 'team-block/tpl', $team_item, false );?>
 		</div>

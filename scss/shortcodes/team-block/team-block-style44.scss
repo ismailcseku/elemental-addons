@@ -1,0 +1,124 @@
+@import "../../bootstrap-loader";
+.team-skin-style44 {
+  position: relative;
+  .inner-box {
+    position: relative;
+    padding-right: 40px;
+    &:hover {
+      .image img {
+        @include transform(scale(1.1));
+      }
+      .team-social {
+        @include transform(scaleY(1));
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  .image-box {
+    position: relative;
+    &:before {
+      background-image: url(../../../images/current-theme/pattern1.png);
+      content: "";
+      position: absolute;
+      top: 5%;
+      right: -25px;
+      height: 90%;
+      width: 90%;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      background-size: cover;
+      opacity: 0.4;
+    }
+    .image {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 0;
+      border-radius: 10px;
+      z-index: 1;
+      img {
+        width: 100%;
+        @include transition(all 400ms ease);
+      }
+    }
+  }
+  .info-box {
+    position: relative;
+    padding: 20px 0 0;
+    margin-bottom: 25px;
+    .team-title {
+      font-weight: 800;
+      z-index: 2;
+      margin-top: 0;
+      margin-bottom: 7px;
+      &:hover {
+        color: var(--theme-color2);
+      }
+    }
+    .team-subtitle {
+      position: relative;
+      display: block;
+      font-size: 14px;
+      font-weight: 500;
+      color: #6a6a6a;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      z-index: 2;
+      line-height: 1em;
+      @include transition(all 400ms ease);
+    }
+  }
+  .team-share {
+    position: absolute;
+    right: 20px;
+    bottom: -25px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: var(--theme-color1);
+    @include transition(all 300ms ease);
+    border-radius: 7px;
+    z-index: 3;
+  }
+  .team-social {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 15px 0;
+    margin-top: 5px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #ffffff;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 8px 8px 0 0;
+    @include transition(all 400ms ease);
+    li {
+      list-style: none;
+      a {
+        position: relative;
+        height: 35px;
+        width: 50px;
+        display: block;
+        font-size: 14px;
+        line-height: 35px;
+        margin: 0;
+        text-align: center;
+        color: var(--theme-color2);
+        @include transition(all 300ms ease);
+        &:hover {
+          color: var(--theme-color1);
+          background: transparent;
+        }
+      }
+    }
+  }
+}

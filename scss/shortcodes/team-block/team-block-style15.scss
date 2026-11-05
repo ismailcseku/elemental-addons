@@ -1,0 +1,112 @@
+@import "../../bootstrap-loader";
+.team-skin-style15 {
+  .inner-box {
+    position: relative;
+    padding-bottom: 30px;
+    &:hover {
+      .image-box {
+        .image {
+          &::after {
+            opacity: 1;
+          }
+          img {
+            transform: scale(1.1);
+          }
+        }
+        .team-social {
+          opacity: 0.8;
+          transform: scaleX(1);
+          li {
+            a {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    .image-box {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      .image {
+        margin: 0;
+        &::after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: rgb(185 0 0 / 82%);
+          width: 100%;
+          height: 100%;
+          content: "";
+          opacity: 0;
+          @include transition(all 300ms ease);
+        }
+        img {
+          width: 100%;
+          object-fit: cover;
+          @include transition(all 300ms ease);
+        }
+      }
+      .team-social {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scalex(0);
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        list-style: none;
+        @include transition(all 300ms ease);
+        li {
+          margin-bottom: 0;
+          a {
+            display: inline-block;
+            font-size: 20px;
+            color: #fff;
+            @include transition(all 300ms ease);
+          }
+        }
+      }
+    }
+    .content-box {
+      position: absolute;
+      bottom: 0;
+      left: 55px;
+      right: 55px;
+      padding: 17px 30px;
+      border-radius: 20px;
+      background-color: #fcf2ea;
+      body.tm-dark-layout & {
+        background-color: #1c1c1c;
+      }
+      text-align: center;
+      @include media-breakpoint-down(md) {
+        left: 30px;
+        right: 30px;
+        padding: 17px 20px;
+      }
+      .team-title {
+        margin-top: 0;
+        color: var(--headings-color);
+        margin-bottom: 0px;
+        @include transition(all 300ms ease);
+        a {
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+      .team-subtitle {
+        font-size: 14px;
+        @include transition(all 300ms ease);
+      }
+    }
+  }
+}

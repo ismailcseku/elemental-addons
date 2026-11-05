@@ -1,0 +1,158 @@
+@import "../../bootstrap-loader";
+.team-skin-style43 {
+  .inner-box {
+    background-color: var(--theme-color2);
+    border-radius: 20px;
+    padding: 15px;
+    position: relative;
+    @include transition(all 300ms ease);
+    z-index: 1;
+    .shape-style1 {
+      height: 468px;
+      left: 55px;
+      position: absolute;
+      top: 0;
+      @include transform(translateX(0%));
+      width: 270px;
+      z-index: -1;
+      @include transition(all 300ms ease);
+      path {
+        fill: rgba(255, 255, 255, 2.15);
+        @include transition(all 300ms ease);
+      }
+      @include media-breakpoint-down(lg) {
+        height: 430px;
+      }
+      @include media-breakpoint-down(sm) {
+        height: 445px;
+      }
+    }
+
+    .image {
+      border-radius: 20px;
+      margin-bottom: 0;
+      overflow: hidden;
+      position: relative;
+      @include transition(all 300ms ease);
+      img {
+        @include transition(all 300ms ease);
+        width: 100%;
+      }
+    }
+    .content-box {
+      border-radius: 0 0 20px 20px;
+      padding: 20px 50px 10px;
+      .team-title {
+        margin-bottom: 0;
+        color: #fff;
+        a {
+          &:hover,
+          &:focus {
+            color: #fff;
+          }
+        }
+      }
+      .team-subtitle {
+        color: #73787d;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 28px;
+        margin-bottom: 0;
+        color: #fff;
+        @include transition(all 300ms ease);
+      }
+    }
+    .socials {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border-radius: 50%;
+      background-color: #fff;
+      color: var(--theme-color2);
+      position: absolute;
+      right: 30px;
+      bottom: 100px;
+      cursor: pointer;
+      font-size: 14px;
+      @include transition(all 300ms ease);
+      .fa-plus {
+        @include transition(all 300ms ease);
+      }
+      ul {
+        width: 40px;
+        position: absolute;
+        bottom: 45px;
+        right: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+        visibility: hidden;
+
+        li {
+          opacity: 0;
+          visibility: hidden;
+          @include transform(translateY(10px));
+          display: inline-flex;
+          margin-bottom: 0;
+          @include transition(all 700ms ease);
+          &:nth-child(2) {
+            @include transition(all 500ms ease);
+          }
+          &:nth-child(3) {
+            @include transition(all 400ms ease);
+          }
+          &:nth-child(4) {
+            @include transition(all 300ms ease);
+          }
+          a {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: var(--theme-color2);
+            color: #fff;
+            border-radius: 50%;
+            &:hover {
+              background-color: var(--theme-color1);
+              color: var(--theme-color1-text-color);
+            }
+          }
+          i {
+            @include transition(all 900ms ease);
+          }
+          &:hover {
+            i {
+              @include transform(rotateY(360deg));
+            }
+          }
+        }
+      }
+    }
+    &:hover {
+      background-color: var(--theme-color1);
+      .shape-style1 {
+        path {
+          fill: var(--theme-color2);
+        }
+      }
+      .socials {
+        background-color: var(--theme-color2);
+        color: #fff;
+        .fa-plus {
+          display: inline-block;
+          @include transform(rotate(135deg));
+        }
+        ul {
+          visibility: visible;
+          li {
+            opacity: 1;
+            @include transform(translateY(0px));
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+}

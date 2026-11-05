@@ -11,7 +11,7 @@ $team_item['subtitle_tag'] = $subtitle_tag;
         <?php elemental_addons_get_shortcode_template_part( 'part-thumb', null, 'team-block/tpl', $team_item, false );?>
 			</div>
         <?php elemental_addons_get_shortcode_template_part( 'part-social-links', null, 'team-block/tpl', $team_item, false );?>
-        <span class="share-icon fa fa-share-alt"></span>
+        <span class="team-share fa fa-share-alt"></span>
 		</div>
 		<div class="team-content">
       <?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'team-block/tpl', $team_item, false );?>

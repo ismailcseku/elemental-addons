@@ -5,7 +5,7 @@ $team_item['title_tag'] = $title_tag;
 $team_item['subtitle_tag'] = $subtitle_tag;
 ?>
 <!-- Team block -->
-<div class="team-current-theme7 team-item">
+<div class="team-skin-style7 team-item">
 	<div class="inner-box">
 		<div class="image-box">
 			<div class="image">

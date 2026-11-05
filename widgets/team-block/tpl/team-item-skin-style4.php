@@ -6,7 +6,7 @@ $team_item['subtitle_tag'] = $subtitle_tag;
 ?>
 <!-- Team block -->
 <div <?php post_class( 'team-item' ); ?>>
-	<div class="team-current-theme4 team-item">
+	<div class="team-skin-style4 team-item">
 		<div class="inner-box">
 			<div class="image-box">
 				<div class="image">

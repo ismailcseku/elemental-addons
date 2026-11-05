@@ -1,0 +1,103 @@
+.team-skin-style26 .team-content {
+  position: relative;
+  overflow: hidden;
+}
+.team-skin-style26 .team-content:hover .image img {
+  transform: scale(1.1);
+}
+.team-skin-style26 .team-content:hover .image::after {
+  height: 100%;
+}
+.team-skin-style26 .team-content:hover .image .team-social {
+  opacity: 1;
+  list-style: none;
+}
+.team-skin-style26 .team-content:hover .image .team-social ul {
+  transform: scaleX(1);
+}
+.team-skin-style26 .team-content .team-title {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  position: relative;
+  display: inline-block;
+}
+.team-skin-style26 .team-content .team-title a:hover,
+.team-skin-style26 .team-content .team-title a:focus {
+  color: var(--theme-color2);
+}
+.team-skin-style26 .team-content .team-title:before {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  content: "";
+  background-color: #121c27;
+  transition: all 300ms ease;
+}
+.team-skin-style26 .team-content .team-title:hover:before {
+  left: unset;
+  right: 0;
+  width: 100%;
+}
+.team-skin-style26 .team-content .team-subtitle {
+  font-size: 14px;
+  line-height: 20px;
+}
+.team-skin-style26 .team-content .image {
+  position: relative;
+  overflow: hidden;
+}
+.team-skin-style26 .team-content .image img {
+  transition: 0.7s;
+  width: 100%;
+}
+.team-skin-style26 .team-content .image::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.1019607843);
+  content: "";
+  transition: all 300ms ease;
+}
+.team-skin-style26 .team-content .image .team-share {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  transition: all 400ms ease;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  cursor: pointer;
+  z-index: 1;
+}
+.team-skin-style26 .team-content .image .team-social {
+  width: 50px;
+  position: absolute;
+  bottom: 90px;
+  left: 28px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: all 300ms ease;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  padding: 30px 0;
+  opacity: 0;
+  z-index: 1;
+  list-style: none;
+}
+.team-skin-style26 .team-content .image .team-social a {
+  color: #fff;
+}
+.team-skin-style26 .team-content .image .team-social a:hover {
+  color: #222;
+}

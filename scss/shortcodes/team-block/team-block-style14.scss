@@ -1,0 +1,131 @@
+@import "../../bootstrap-loader";
+.team-skin-style14 {
+  .inner-box {
+    position: relative;
+    margin-bottom: 26px;
+    text-align: center;
+    &:hover {
+      .team-social {
+        transform: translateY(-28px);
+        opacity: 1;
+      }
+
+    .image-box {
+      .thumb {
+        &:before {
+          height: 100%;
+        }
+        .team-share {
+          background-color: #fff;
+          color: var(--theme-color1);
+        }
+        .team-social {
+          background-color: #fff;
+          a {
+            color: var(--theme-color1);
+            &:hover {
+              color: var(--theme-color1);
+            }
+          }
+          opacity: 1;
+          ul {
+            transform: scaleX(1);
+          }
+        }
+        img {
+          left: calc(50% + 15px);
+        }
+      }
+    }
+    }
+    .image-box {
+      position: relative;
+      padding-top: 103px;
+      .thumb {
+        background-color: #F1F1F1;
+        border-radius: 20px;
+        display: block;
+        margin-bottom: 0;
+        min-height: 530px;
+        @include transition(all 300ms ease);
+        &:before {
+          background-color: var(--theme-color1);
+          border-radius: 20px;
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 0;
+          width: 100%;
+          max-height: 530px;
+          @include transition(all 300ms ease);
+        }
+        img {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          max-width: 530px;
+          object-fit: cover;
+          transform: translateX(-50%);
+          @include transition(all 300ms ease);
+        }
+        .team-share {
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          border-radius: 50%;
+          transition: all 400ms ease;
+          background-color: var(--theme-color1);
+          color: #fff;
+          backdrop-filter: blur(10px);
+          position: absolute;
+          right: 30px;
+          bottom: 30px;
+          cursor: pointer;
+          z-index: 1;
+        }
+        .team-social {
+          width: 50px;
+          position: absolute;
+          bottom: 60px;
+          right: 30px;
+          @include flex;
+          flex-direction: column;
+          @include transition(all 300ms ease);
+          background-color: var(--theme-color1);
+          backdrop-filter: blur(10px);
+          border-radius: 50px;
+          padding: 30px 0;
+          opacity: 0;
+          z-index: 1;
+          a {
+            color: var(--theme-color-white);
+            &:hover {
+              color: var(--theme-color-white);
+            }
+          }
+        }
+      }
+    }
+  }
+  .content-box {
+    position: relative;
+    margin: 30px 0 0;
+    .team-title {
+      color: var(--headings-color);
+      margin-bottom: 0;
+      @include transition(all 300ms ease);
+      a {
+        &:hover {
+          color: var(--theme-color1);
+        }
+      }
+    }
+    .team-subtitle {
+      color: #666;
+      font-size: 14px;
+      @include transition(all 300ms ease);
+    }
+  }
+}

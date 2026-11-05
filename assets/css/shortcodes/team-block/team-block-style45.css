@@ -1,0 +1,194 @@
+.team-skin-style45 {
+  position: relative;
+  margin-bottom: 30px;
+  transition: all 300ms ease;
+}
+@media (max-width: 767.98px) {
+  .team-skin-style45 {
+    padding: 20px 0;
+  }
+}
+.team-skin-style45:hover .content .info-btn .text {
+  background-color: var(--theme-color1);
+  color: var(--text-color-bg-theme-color1);
+}
+.team-skin-style45:hover .image img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.team-skin-style45 .image {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0;
+  height: 270px;
+}
+.team-skin-style45 .image img {
+  position: relative;
+  width: 100%;
+  transition: all 300ms ease;
+}
+.team-skin-style45 .content {
+  position: relative;
+  padding: 23px 0 0;
+}
+.team-skin-style45 .content .team-title {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.team-skin-style45 .content .team-title a:hover {
+  color: var(--headings-color);
+}
+.team-skin-style45 .content .team-subtitle {
+  position: relative;
+  display: block;
+  margin-bottom: 0;
+  transition: all 300ms ease;
+}
+.team-skin-style45 .content .info-box {
+  display: flex;
+  margin-top: 23px;
+}
+.team-skin-style45 .content .info-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.team-skin-style45 .content .info-btn .icon {
+  position: relative;
+  width: 48px;
+  min-width: 48px;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  background-color: var(--theme-color1);
+  color: var(--text-color-bg-theme-color1);
+}
+body.tm-dark-layout .team-skin-style45 .content .info-btn .icon {
+  background-color: var(--theme-color-white);
+}
+.team-skin-style45 .content .info-btn .icon {
+  -webkit-transform: skewX(-12deg);
+  -moz-transform: skewX(-12deg);
+  -ms-transform: skewX(-12deg);
+  transform: skewX(-12deg);
+}
+@media (max-width: 991.98px) {
+  .team-skin-style45 .content .info-btn .icon {
+    transform: none;
+    margin-right: 5px;
+  }
+}
+.team-skin-style45 .content .info-btn .text {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  color: var(--headings-color);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 11px 25px 8px;
+  position: relative;
+  width: 100%;
+  clip-path: polygon(6.8% 0, 100% 0, 100% 100%, 0% 100%);
+  transition: all 300ms ease;
+}
+@media (max-width: 1199.98px) {
+  .team-skin-style45 .content .info-btn .text {
+    padding: 11px 5px 8px 18px;
+  }
+}
+@media (max-width: 991.98px) {
+  .team-skin-style45 .content .info-btn .text {
+    clip-path: none;
+  }
+}
+@media (max-width: 339.98px) {
+  .team-skin-style45 .content .info-btn .text {
+    padding: 11px 5px 8px 8px;
+    font-size: 15px;
+  }
+}
+.team-skin-style45 .content .info-btn .text::before {
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  -webkit-transform: skewX(-14deg);
+  -moz-transform: skewX(-14deg);
+  -ms-transform: skewX(-14deg);
+  transform: skewX(-14deg);
+  transition: all 300ms ease;
+}
+@media (max-width: 991.98px) {
+  .team-skin-style45 .content .info-btn .text::before {
+    display: none;
+  }
+}
+.team-skin-style45 .content .info-btn .text:hover {
+  background-color: var(--theme-color1);
+  color: var(--text-color-bg-theme-color1);
+}
+.team-skin-style45 .content .team-social {
+  position: relative;
+  display: flex;
+  margin: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.team-skin-style45 .content .team-social a {
+  position: relative;
+  display: block;
+  font-size: 16px;
+  color: var(--headings-color);
+  background: var(--theme-color-white);
+  text-align: center;
+  transition: all 300ms ease;
+  border: none;
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 11px 15px 8px;
+}
+.team-skin-style45 .content .team-social a i {
+  position: relative;
+}
+.team-skin-style45 .content .team-social a::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  background-color: var(--theme-color2);
+  transition: all 300ms ease;
+  content: "";
+}
+@media (max-width: 1199.98px) {
+  .team-skin-style45 .content .team-social a::before {
+    width: 52px;
+  }
+}
+.team-skin-style45 .content .team-social a:hover {
+  color: var(--theme-color-white);
+}
+body.tm-dark-layout .team-skin-style45 .content .team-social a:hover {
+  color: #fff;
+}
+.team-skin-style45 .content .team-social a:hover::before {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.tm-team-carousel .team-skin-style45 {
+  margin-left: 10px;
+}

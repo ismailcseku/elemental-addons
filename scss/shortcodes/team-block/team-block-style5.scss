@@ -1,5 +1,5 @@
 @import "../../bootstrap-loader";
-.team-current-theme5 {
+.team-skin-style5 {
   .inner-box {
     position: relative;
     padding: 25px 15px 0;
@@ -20,7 +20,7 @@
       position: relative;
       padding: 0 15px;
       margin-bottom: 25px;
-      .share-icon {
+      .team-share {
         position: absolute;
         right: 20px;
         bottom: -45px;
@@ -48,7 +48,7 @@
         line-height: 1em;
         @include transition(all 400ms ease);
       }
-      .social-links {
+      .team-social {
         position: absolute;
         right: 20px;
         top: 100%;
@@ -110,7 +110,7 @@
         background-color: var(--theme-color2);
       }
       .info-box {
-        .share-icon {
+        .team-share {
         }
         .team-title {
           color: #ffffff;
@@ -118,7 +118,7 @@
         .team-subtitle {
           color: #8c8f94;
         }
-        .social-links {
+        .team-social {
           -webkit-transform: scaleY(1);
           transform: scaleY(1);
           opacity: 1;

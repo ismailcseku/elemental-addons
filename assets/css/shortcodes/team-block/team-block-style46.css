@@ -1,0 +1,174 @@
+.team-skin-style46 .inner-block {
+  position: relative;
+  background: var(--theme-color-white);
+  border-radius: 30px;
+  overflow: visible;
+}
+.team-skin-style46 .thumb {
+  position: relative;
+  z-index: 1;
+  line-height: 0;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.team-skin-style46 .thumb img {
+  width: 100%;
+  display: block;
+  object-position: center bottom;
+  transition: transform 0.45s ease;
+}
+.team-skin-style46 .team-content {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  width: auto;
+  height: 104px;
+  overflow: visible;
+  background-image: url("../../../images/team-block/team-style1-bg.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% 100%;
+  z-index: 2;
+  transition: background-image 0.4s ease;
+}
+@media (max-width: 575.98px) {
+  .team-skin-style46 .team-content {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    height: 92px;
+  }
+}
+.team-skin-style46 .team-meta {
+  position: absolute;
+  left: 22px;
+  right: 66px;
+  top: 57%;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+@media (max-width: 575.98px) {
+  .team-skin-style46 .team-meta {
+    left: 16px;
+    right: 56px;
+  }
+}
+.team-skin-style46 .team-title {
+  margin: 0 0 4px;
+}
+.team-skin-style46 .team-title a {
+  color: inherit;
+  background: none;
+}
+.team-skin-style46 .team-subtitle {
+  margin: 0;
+  color: var(--text-color);
+  font-size: 14px;
+  line-height: 1.35;
+  transition: color 0.4s ease;
+}
+.team-skin-style46 .team-action {
+  position: absolute;
+  right: 20px;
+  top: 57%;
+  transform: translateY(-50%);
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+@media (max-width: 575.98px) {
+  .team-skin-style46 .team-action {
+    right: 14px;
+  }
+}
+.team-skin-style46 .team-social {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  transform: translateX(-50%) translateY(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+.team-skin-style46 .team-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--theme-color-white);
+  color: var(--theme-color2);
+  font-size: 15px;
+  line-height: 1;
+  box-shadow: 0 2px 8px rgba(var(--theme-color2-rgb), 0.1);
+  pointer-events: auto;
+  transition: background 0.3s ease;
+}
+.team-skin-style46 .team-social a:hover {
+  background: var(--theme-color1);
+}
+.team-skin-style46 .team-share {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--theme-color1);
+  color: var(--theme-color2);
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.4s ease;
+}
+.team-skin-style46:hover .thumb img {
+  transform: scale(1.03);
+}
+.team-skin-style46:hover .team-content {
+  background-image: url("../../../images/team-block/team-style1-bg-hover.png");
+}
+.team-skin-style46:hover .team-subtitle {
+  color: var(--theme-color2);
+}
+.team-skin-style46:hover .team-social {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+.team-skin-style46:hover .team-share {
+  background: var(--theme-color-white);
+}
+[dir=rtl] .team-skin-style46 .team-meta, html[dir=rtl] .team-skin-style46 .team-meta {
+  left: 66px;
+  right: 22px;
+  text-align: right;
+}
+@media (max-width: 575.98px) {
+  [dir=rtl] .team-skin-style46 .team-meta, html[dir=rtl] .team-skin-style46 .team-meta {
+    left: 56px;
+    right: 16px;
+  }
+}
+[dir=rtl] .team-skin-style46 .team-action, html[dir=rtl] .team-skin-style46 .team-action {
+  right: auto;
+  left: 20px;
+}
+@media (max-width: 575.98px) {
+  [dir=rtl] .team-skin-style46 .team-action, html[dir=rtl] .team-skin-style46 .team-action {
+    left: 14px;
+  }
+}

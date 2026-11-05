@@ -100,6 +100,25 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 		return [ 'elemental-addons-js', 'elemental-addons-isotope' ];
 	}
 
+	/**
+	 * Styles needed for hardcoded Font Awesome social / share icons in templates.
+	 *
+	 * Registers Elementor's FA assets under plugin handles so icons still load when
+	 * Elementor's "Inline Font Icons" experiment skips its own FA stylesheet registration.
+	 *
+	 * @return array
+	 */
+	public function get_style_depends() {
+		if ( function_exists( 'elemental_addons_enqueue_font_awesome' ) ) {
+			elemental_addons_enqueue_font_awesome();
+		}
+
+		return array(
+			'elemental-addons-fa-brands',
+			'elemental-addons-fa-solid',
+		);
+	}
+
 
 	/**
 	 * Skins
@@ -130,6 +149,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 			[
 				'label' => esc_html__( "Name", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
+				'label_block' => true,
 				'default' => esc_html__( "David Smith", 'elemental-addons' ),
 			]
 		);
@@ -138,6 +158,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 			[
 				'label' => esc_html__( "Sub Title/ Job Title", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
+				'label_block' => true,
 				'default' => esc_html__( "This is a section subtitle", 'elemental-addons' ),
 			]
 		);
@@ -146,6 +167,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 			[
 				'label' => esc_html__( "Phone Number", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
+				'label_block' => true,
 				'default' => esc_html__( "+123456789", 'elemental-addons' ),
 			]
 		);
@@ -154,10 +176,14 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 			[
 				'label' => esc_html__( "Title Link URL", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::URL,
+				'label_block' => true,
 				'show_external' => true,
+				'placeholder' => esc_html__( 'Paste URL or type', 'elemental-addons' ),
 				'default' => [
 					'url' => '',
-				]
+					'is_external' => false,
+					'nofollow' => false,
+				],
 			]
 		);
 		$repeater->add_control(
@@ -165,6 +191,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 			[
 				'label' => esc_html__( "Thumbnail Image", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::MEDIA,
+				'label_block' => true,
 			]
 		);
 		$repeater->add_control(
@@ -172,6 +199,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 			[
 				'label' => esc_html__( "Thumbnail Image Size", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
+				'label_block' => true,
 				'options' => elemental_addons_get_available_image_sizes(),
 				'default' => 'full',
 			]
@@ -189,13 +217,15 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 			[
 				'label' => esc_html__( "Facebook", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
+				'label_block' => true,
 			]
 		);
 		$repeater->add_control(
 			'twitter',
 			[
-				'label' => esc_html__( "Twitter", 'elemental-addons' ),
+				'label' => esc_html__( 'X', 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
+				'label_block' => true,
 			]
 		);
 		$repeater->add_control(
@@ -203,6 +233,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 			[
 				'label' => esc_html__( "Instagram", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
+				'label_block' => true,
 			]
 		);
 		$repeater->add_control(
@@ -210,6 +241,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 			[
 				'label' => esc_html__( "Linkedin", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
+				'label_block' => true,
 			]
 		);
 		$repeater->add_control(
@@ -217,6 +249,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 			[
 				'label' => esc_html__( "Github", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
+				'label_block' => true,
 			]
 		);
 		$repeater->add_control(
@@ -224,6 +257,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 			[
 				'label' => esc_html__( "Youtube", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
+				'label_block' => true,
 			]
 		);
 		$repeater->add_control(
@@ -231,6 +265,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 			[
 				'label' => esc_html__( "Short Bio", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
+				'label_block' => true,
 				'default' => esc_html__( "Write a short bio, that will describe the title or something informational and useful.", 'elemental-addons' ),
 				'separator' => 'before',
 			]
@@ -248,6 +283,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 			[
 				'label' => esc_html__( "Wow Appear Animation", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
+				'label_block' => true,
 				'options' => elemental_addons_animate_css_animation_list(),
 			]
 		);
@@ -256,6 +292,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 			[
 				'label' => esc_html__( 'Animation Delay', 'elemental-addons' ) . ' (ms)',
 				'type' => Controls_Manager::NUMBER,
+				'label_block' => true,
 				'default' => '',
 				'min' => 0,
 				'step' => 100,
@@ -276,6 +313,11 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 					[
 						'title' => esc_html__( 'Title #1', 'elemental-addons' ),
 						'subtitle' => esc_html__( 'subtitle #1', 'elemental-addons' ),
+						'feature_link' => [
+							'url' => '',
+							'is_external' => false,
+							'nofollow' => false,
+						],
 						'featured_image'     => [
 							'url' => Utils::get_placeholder_image_src(),
 						],
@@ -286,6 +328,11 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 					[
 						'title' => esc_html__( 'Title #2', 'elemental-addons' ),
 						'subtitle' => esc_html__( 'Title #2', 'elemental-addons' ),
+						'feature_link' => [
+							'url' => '',
+							'is_external' => false,
+							'nofollow' => false,
+						],
 						'featured_image'     => [
 							'url' => Utils::get_placeholder_image_src(),
 						],
@@ -296,6 +343,11 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 					[
 						'title' => esc_html__( 'Title #3', 'elemental-addons' ),
 						'subtitle' => esc_html__( 'Title #3', 'elemental-addons' ),
+						'feature_link' => [
+							'url' => '',
+							'is_external' => false,
+							'nofollow' => false,
+						],
 						'featured_image'     => [
 							'url' => Utils::get_placeholder_image_src(),
 						],
@@ -888,7 +940,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'options' => elemental_addons_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-links a' => 'color: var(--theme-color{{VALUE}});',
+					'{{WRAPPER}} .team-item .team-social a' => 'color: var(--theme-color{{VALUE}});',
 				],
 			]
 		);
@@ -898,7 +950,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'label' => esc_html__( "Icon Custom Color", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-links a' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .team-item .team-social a' => 'color: {{VALUE}};',
 				]
 			]
 		);
@@ -907,7 +959,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 			[
 				'name' => 'icon_typography',
 				'label' => esc_html__( 'Typography', 'elemental-addons' ),
-				'selector' => '{{WRAPPER}} .team-item ul.social-links a',
+				'selector' => '{{WRAPPER}} .team-item .team-social a',
 			]
 		);
 		$this->add_control(
@@ -931,7 +983,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'options' => elemental_addons_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-links a' => 'background-color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}} .team-item .team-social a' => 'background-color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);
@@ -941,7 +993,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'label' => esc_html__( "Icon Area Custom BG Color", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-links a' => 'background-color: {{VALUE}};',
+					'{{WRAPPER}} .team-item .team-social a' => 'background-color: {{VALUE}};',
 				]
 			]
 		);
@@ -959,7 +1011,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-links a' => 'line-height: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .team-item .team-social a' => 'line-height: {{SIZE}}{{UNIT}};',
 				]
 			]
 		);
@@ -971,7 +1023,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'size_units' => [ 'px', '%', 'em' ],
 				'separator' => 'before',
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-links a' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .team-item .team-social a' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
 		);
@@ -982,7 +1034,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-links a' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .team-item .team-social a' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
 		);
@@ -998,7 +1050,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 			[
 				'name' => 'icon_area_border',
 				'label' => esc_html__( 'Border', 'elemental-addons' ),
-				'selector' => '{{WRAPPER}} .team-item ul.social-links a',
+				'selector' => '{{WRAPPER}} .team-item .team-social a',
 			]
 		);
 		$this->add_responsive_control(
@@ -1008,7 +1060,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-links a' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
+					'{{WRAPPER}} .team-item .team-social a' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
 				]
 			]
 		);
@@ -1017,7 +1069,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 			[
 				'name' => 'icon_area_box_shadow',
 				'label' => esc_html__( 'Box Shadow', 'elemental-addons' ),
-				'selector' => '{{WRAPPER}} .team-item ul.social-links a',
+				'selector' => '{{WRAPPER}} .team-item .team-social a',
 			]
 		);
 		$this->add_control(
@@ -1041,7 +1093,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-links a' => 'width: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .team-item .team-social a' => 'width: {{SIZE}}{{UNIT}};',
 				]
 			]
 		);
@@ -1051,7 +1103,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'label' => esc_html__( "Make Icon Width to Auto?", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-links a' => 'width: auto;',
+					'{{WRAPPER}} .team-item .team-social a' => 'width: auto;',
 				]
 			]
 		);
@@ -1069,7 +1121,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-links a' => 'height: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .team-item .team-social a' => 'height: {{SIZE}}{{UNIT}};',
 				]
 			]
 		);
@@ -1079,7 +1131,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'label' => esc_html__( "Make Icon Height to Auto?", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-links a' => 'height: auto;',
+					'{{WRAPPER}} .team-item .team-social a' => 'height: auto;',
 				]
 			]
 		);
@@ -1106,7 +1158,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'options' => elemental_addons_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-links a:hover' => 'color: var(--theme-color{{VALUE}});',
+					'{{WRAPPER}} .team-item .team-social a:hover' => 'color: var(--theme-color{{VALUE}});',
 				],
 			]
 		);
@@ -1116,7 +1168,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'label' => esc_html__( "Icon Custom Color", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-links a:hover' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .team-item .team-social a:hover' => 'color: {{VALUE}};',
 				]
 			]
 		);
@@ -1141,7 +1193,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'options' => elemental_addons_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-links a:hover' => 'background-color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}} .team-item .team-social a:hover' => 'background-color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);
@@ -1151,7 +1203,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'label' => esc_html__( "Icon Area Custom BG Color", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .team-item ul.social-links a:hover' => 'background-color: {{VALUE}};'
+					'{{WRAPPER}} .team-item .team-social a:hover' => 'background-color: {{VALUE}};'
 				]
 			]
 		);
@@ -1159,49 +1211,6 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 		$this->end_controls_tabs();
 
 		$this->end_controls_section();
-
-
-
-
-
-
-		$this->start_controls_section(
-			'button_options',
-			[
-				'label' => esc_html__( 'Button Options', 'elemental-addons' ),
-				'tab'   => \Elementor\Controls_Manager::TAB_CONTENT,
-			]
-		);
-		elemental_addons_get_viewdetails_button_arraylist($this, 1);
-		elemental_addons_get_viewdetails_button_arraylist($this, 2);
-		elemental_addons_get_button_arraylist($this, 1);
-		$this->end_controls_section();
-
-
-
-		$this->start_controls_section(
-			'button_color_typo_options', [
-				'label' => esc_html__( 'Button Color/Typography', 'elemental-addons' ),
-				'tab'   => \Elementor\Controls_Manager::TAB_CONTENT,
-			]
-		);
-		elemental_addons_get_button_text_color_typo_arraylist($this, 1);
-		$this->end_controls_section();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	}
 
@@ -1217,22 +1226,15 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 	protected function render() {
 		$settings = $this->get_settings_for_display();
 
+		if ( function_exists( 'elemental_addons_enqueue_font_awesome' ) ) {
+			elemental_addons_enqueue_font_awesome();
+		}
+
 		$direction_suffix = is_rtl() ? '.rtl' : '';
 		wp_enqueue_style( 'team-block-style1', ELEMENTAL_ADDONS_ASSETS_URI . '/css/shortcodes/team-block/team-block-style1' . $direction_suffix . '.css' );
 
 
-		//icon classes
-		$icon_classes = array();
-		$settings['icon_classes'] = $icon_classes;
-
-		//button classes
-		$settings['btn_classes'] = elemental_addons_prepare_button_classes_from_params( $settings );
-
-
-		//icon classes
-		$icon_classes = array();
-		$settings['icon_classes'] = $icon_classes;
-
+		$settings['icon_classes'] = array();
 		$settings['holder_id'] = \elemental_addons_get_isotope_holder_ID('team-block');
 
 		$settings['settings'] = $settings;

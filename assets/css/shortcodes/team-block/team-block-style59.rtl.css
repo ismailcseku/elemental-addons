@@ -1,0 +1,185 @@
+.team-skin-style59 {
+  position: relative;
+  padding: 20px;
+  border-radius: 20px;
+  transform: translateY(0);
+  background: #1c1c1c;
+}
+.team-skin-style59 .image-box {
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 767.98px) {
+  .team-skin-style59 .image-box {
+    width: 100%;
+  }
+}
+.team-skin-style59 .image-box figure {
+  margin: 0;
+}
+.team-skin-style59 .image-box figure img {
+  mask-image: url(../../../images/current-theme/team-mask1.png);
+  mask-size: contain;
+  mask-position: center center;
+  mask-repeat: no-repeat;
+  width: 100%;
+}
+.team-skin-style59 .info-box {
+  position: relative;
+  transition: all 300ms ease;
+  z-index: 1;
+  margin-top: 20px;
+}
+.team-skin-style59 .info-box .team-title {
+  margin: 0;
+  transition: all 300ms ease;
+  display: inline-block;
+  color: #fff;
+}
+.team-skin-style59 .info-box .team-title a:hover, .team-skin-style59 .info-box .team-title a:focus {
+  color: var(--theme-color2);
+}
+.team-skin-style59 .info-box .team-subtitle {
+  position: relative;
+  display: block;
+  z-index: 2;
+  font-family: var(--heading-font-family);
+  transition: all 300ms ease;
+  font-size: 15px;
+  color: #fff;
+}
+.team-skin-style59 .team-share {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 18px;
+  background-color: #616161;
+  z-index: 3;
+  color: #fff;
+  transition: all 300ms ease;
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .team-skin-style59 .team-share {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    right: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .team-skin-style59 .team-share {
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+  }
+}
+.team-skin-style59 .team-social {
+  position: absolute;
+  right: 20px;
+  top: 70px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  z-index: 3;
+  visibility: visible;
+  opacity: 1;
+  transition: all 400ms ease;
+}
+.team-skin-style59 .team-social a {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: block;
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;
+  transition: all 300ms ease;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  margin-bottom: 10px;
+}
+.team-skin-style59 .team-social a:hover {
+  background: var(--theme-color1);
+  color: var(--theme-color1-text-color);
+}
+.team-skin-style59:hover .team-share {
+  background: var(--theme-color2);
+  color: var(--theme-color2-text-color);
+}
+.team-skin-style59:hover .team-social {
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+  opacity: 1;
+  visibility: visible;
+}
+.team-skin-style59:hover .info-box {
+  margin-right: 20px;
+}
+.team-skin-style59:hover .image-box {
+  z-index: 1;
+}
+.team-skin-style59:hover .team-title {
+  color: var(--theme-color2);
+}
+.team-skin-style59:hover .team-subtitle {
+  color: var(--theme-color2);
+}
+.team-skin-style59:hover .team-subtitle:before {
+  background: var(--theme-color1);
+}
+.team-skin-style59 .degency-hover-bx {
+  background: var(--theme-color1);
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  position: absolute;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  width: 25%;
+}
+.team-skin-style59 .hover-bx {
+  right: 0;
+  -webkit-transition-delay: 0.105s;
+  transition-delay: 0.105s;
+  border-radius: 0 20px 20px 0;
+}
+.team-skin-style59 .hover-bx2 {
+  right: 25%;
+  -webkit-transition-delay: 0.105s;
+  transition-delay: 0.105s;
+}
+.team-skin-style59 .hover-bx3 {
+  right: 50%;
+  -webkit-transition-delay: 0.105s;
+  transition-delay: 0.105s;
+}
+.team-skin-style59 .hover-bx4 {
+  right: 75%;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  border-radius: 20px 0 0 20px;
+}
+.team-skin-style59:hover .degency-hover-bx {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}

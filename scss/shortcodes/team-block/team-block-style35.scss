@@ -1,0 +1,183 @@
+@import "../../bootstrap-loader";
+.team-skin-style35 {
+  position: relative;
+  margin-bottom: 30px;
+  .inner-box {
+    position: relative;
+    padding: 0 0 24px;
+    @include transition(all 300ms ease);
+    @include media-breakpoint-down(md) {
+      padding: 20px 0;
+    }
+    &:hover {
+      .content {
+        .info-btn {
+          .text {
+            background-color: var(--theme-color1);
+            color: var(--text-color-bg-theme-color1);
+          }
+        }
+      }
+      .image {
+        img {
+          @include transform(scale(1.1));
+        }
+      }
+    }
+    .image {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 0;
+      height: 270px;
+      img {
+        position: relative;
+        width: 100%;
+        @include transition(all 300ms ease);
+      }
+    }
+    .content {
+      position: relative;
+      padding: 23px 0 0;
+      .team-title {
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        a:hover {
+          color: var(--headings-color);
+        }
+      }
+      .team-subtitle {
+        position: relative;
+        display: block;
+        margin-bottom: 0;
+        @include transition(all 300ms ease);
+      }
+      .info-box {
+        display: flex;
+        margin-top: 23px;
+      }
+      .info-btn {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        .icon {
+          position: relative;
+          width: 48px;
+          min-width: 48px;
+          height: 51px;
+          @include flex-center;
+          font-size: 24px;
+          color: var(--theme-color1);
+          background-color: var(--headings-color);
+          body.tm-dark-layout & {
+            background-color: var(--theme-color-white);
+          }
+          @include transform(skewX(-12deg));
+          @include media-breakpoint-down(lg) {
+            transform: none;
+            margin-right: 5px;
+          }
+        }
+        .text {
+          border: 1px solid rgba(0, 0, 0, 0.05);
+          color: var(--headings-color);
+          font-size: 16px;
+          font-weight: 700;
+          padding: 11px 25px 8px;
+          position: relative;
+          width: 100%;
+          clip-path: polygon(6.8% 0, 100% 0, 100% 100%, 0% 100%);
+          @include transition(all 300ms ease);
+          @include media-breakpoint-down(xl) {
+            padding: 11px 5px 8px 18px;
+          }
+          @include media-breakpoint-down(lg) {
+            clip-path: none;
+          }
+          @media (max-width: 339.98px) {
+            padding: 11px 5px 8px 8px;
+            font-size: 15px;
+          }
+          &::before {
+            border-left: 1px solid rgba(0, 0, 0, 0.05);
+            content: "";
+            position: absolute;
+            left: 6px;
+            top: 0;
+            width: 1px;
+            height: 100%;
+            @include transform(skewX(-14deg));
+            @include transition(all 300ms ease);
+            @include media-breakpoint-down(lg) {
+              display: none;
+            }
+          }
+          &:hover {
+            background-color: var(--theme-color1);
+            color: var(--text-color-bg-theme-color1);
+          }
+        }
+      }
+      .team-social {
+        position: relative;
+        display: flex;
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        position: relative;
+        li {
+          position: relative;
+          display: flex;
+          margin: 0;
+          a {
+            position: relative;
+            display: block;
+            font-size: 16px;
+            color: var(--headings-color);
+            background: var(--theme-color-white);
+            text-align: center;
+            @include transition(all 300ms ease);
+            border: none;
+            border-right: 1px solid rgba(0, 0, 0, 0.05);
+            padding: 11px 15px 8px;
+            i {
+              position: relative;
+            }
+            &::before {
+              position: absolute;
+              left: 0;
+              top: 0;
+              height: 100%;
+              width: 100%;
+              @include transform(scale(0));
+              background-color: var(--theme-color2);
+              @include transition(all 300ms ease);
+              content: "";
+              @include media-breakpoint-down(xl) {
+                width: 52px;
+              }
+            }
+            &:hover {
+              color: var(--theme-color-white);
+              body.tm-dark-layout & {
+                color: #fff;
+              }
+              &::before {
+                @include transform(scale(1));
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.tm-team-carousel {
+  .team-skin-style35 {
+    .inner-box {
+      margin-left: 10px;
+    }
+  }
+}

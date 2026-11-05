@@ -1,0 +1,85 @@
+.team-skin-style21 .team-info {
+  position: relative;
+  z-index: 1;
+}
+.team-skin-style21 .team-info:hover .team-social {
+  opacity: 1;
+  margin-bottom: 0;
+}
+.team-skin-style21 .team-info:hover .team-social a {
+  color: #fff;
+}
+.team-skin-style21 .team-info:hover .content {
+  padding: 40px 20px;
+  background-color: var(--theme-color1);
+}
+.team-skin-style21 .team-info:hover .content .team-social {
+  margin-bottom: 0;
+  opacity: 1;
+  visibility: visible;
+}
+.team-skin-style21 .team-info:hover .content .team-title a {
+  color: #fff;
+}
+.team-skin-style21 .team-info:hover .content .team-title {
+  color: #fff;
+}
+.team-skin-style21 .team-info:hover .content .team-title:before {
+  background-color: #fff;
+}
+.team-skin-style21 .team-info:hover .content .team-subtitle {
+  color: #fff;
+}
+.team-skin-style21 .team-info:hover .image img {
+  filter: grayscale(0%);
+}
+.team-skin-style21 .team-info .image img {
+  width: 100%;
+  filter: grayscale(100%);
+}
+.team-skin-style21 .team-info .content {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+  width: 90%;
+  padding: 25px;
+  background-color: #fff;
+  transition: all 300ms ease;
+}
+body.tm-dark-layout .team-skin-style21 .team-info .content {
+  background-color: #16202b;
+}
+.team-skin-style21 .team-info .content {
+  text-align: center;
+  margin: 0 auto;
+}
+.team-skin-style21 .team-info .content .team-title {
+  margin: 0;
+  position: relative;
+  display: inline-block;
+}
+.team-skin-style21 .team-info .content .team-title a:hover, .team-skin-style21 .team-info .content .team-title a:focus {
+  color: #fff;
+}
+.team-skin-style21 .team-info .content .team-social {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: -40px;
+  opacity: 0;
+  color: #fff;
+  list-style: none;
+}
+.team-skin-style21 .team-info .content .team-social li {
+  margin-bottom: 0;
+  list-style: none;
+}
+.team-skin-style21 .team-info .content .team-social {
+  transition: all 300ms ease;
+}
+.team-skin-style21 .team-info .content .team-social a:hover {
+  transform: translateY(-3px);
+}

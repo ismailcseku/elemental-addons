@@ -1,0 +1,184 @@
+@import "../../bootstrap-loader";
+.team-skin-style41 {
+  .inner-box {
+    position: relative;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 0 10px 2px;
+    overflow: hidden;
+    @media (max-width: 1200.98px) {
+      padding: 0 10px 12px;
+    }
+    &:hover {
+      .image-box {
+        .shape-team1 {
+          filter: brightness(1) invert(0);
+        }
+        .image {
+          img {
+            left: calc(0% + 15px);
+          }
+        }
+      }
+      .team-social {
+        transform: scaleY(1);
+        bottom: 55px;
+        opacity: 1;
+      }
+      .social-icon-style {
+        .team-share {
+          color: var(--theme-color1);
+        }
+      }
+      .content-box {
+        .inner {
+          &:before {
+            background: var(--theme-color2);
+          }
+        }
+      }
+      .team-title {
+        color: var(--theme-color-white);
+      }
+      .team-subtitle {
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+    .image-box {
+      position: relative;
+      text-align: center;
+      .image {
+        display: block;
+        margin-bottom: 0;
+        max-width: 286px;
+        position: relative;
+        margin: 0 auto;
+        z-index: 1;
+        @include transition(all 300ms ease);
+
+        img {
+          position: relative;
+          left: 0;
+          max-width: 286px;
+          object-fit: cover;
+          object-position: bottom center;
+          @include transition(all 300ms ease);
+        }
+      }
+      .shape-team1 {
+        content: "";
+        width: 75px;
+        height: 73px;
+        background-image: url(../../../images/current-theme/shape-team1.png);
+        top: 90px;
+        position: absolute;
+        left: calc(100% - 90px);
+        filter: brightness(0) invert(0);
+        @include transition(all 300ms ease);
+      }
+    }
+  }
+  .content-box {
+    position: relative;
+    margin: 0;
+    .inner {
+      width: 100%;
+      margin-top: -35px;
+      position: relative;
+      padding: 34px 20px 20px 29px;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      @include transition(all 300ms ease);
+      @include media-breakpoint-down(md) {
+        padding: 20px 20px 20px 29px;
+      }
+      &:before {
+        content: "";
+        mask-image: url(../../../images/current-theme/team-mask1.png);
+        mask-size: contain;
+        mask-position: center center;
+        mask-repeat: no-repeat;
+        position: absolute;
+        background: #f6f6f6;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        left: 0;
+        @include transition(all 300ms ease);
+        @media (max-width: 1024.98px) {
+          border-radius: 30px;
+          mask-size: cover;
+          mask-position: revert-layer;
+        }
+        @include media-breakpoint-down(md) {
+          mask: none;
+        }
+      }
+    }
+    .team-title {
+      margin-bottom: 0;
+      margin-top: 0;
+      position: relative;
+      z-index: 1;
+      a {
+        &:hover,
+        &:focus {
+          color: #fff;
+        }
+      }
+    }
+    .team-subtitle {
+      position: relative;
+      z-index: 1;
+      @include transition(all 300ms ease);
+    }
+  }
+  .social-icon-style {
+    position: relative;
+    .team-share {
+      font-size: 20px;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      color: var(--theme-color1);
+      cursor: pointer;
+      background-color: var(--theme-color-white);
+      border-radius: 50%;
+      position: relative;
+      z-index: 1;
+      @include transition(all 300ms ease);
+    }
+    .team-social {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      bottom: -50px;
+      left: 0;
+      margin-bottom: 5px;
+      transform: scaleY(0);
+      opacity: 0;
+      @include transition(all 500ms ease);
+      a {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        margin-bottom: 5px;
+        text-align: center;
+        background-color: var(--theme-color-white);
+        color: var(--theme-color2);
+        display: inline-block;
+        border-radius: 50%;
+        @include transition(all 300ms ease);
+        &:hover {
+          background-color: var(--theme-color1);
+          color: var(--theme-color1-text-color);
+        }
+      }
+    }
+  }
+}

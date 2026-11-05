@@ -1,0 +1,267 @@
+.team-skin-style20 {
+  position: relative;
+  border-radius: 40px;
+  background-color: #000000;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  z-index: 1;
+}
+.team-skin-style20::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: var(--theme-color1);
+  top: auto;
+  height: 0;
+  transition: all 0.2s ease-in-out;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+}
+.team-skin-style20 .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 40px 55px;
+}
+.team-skin-style20 .content .title-area {
+  border-left: 1px solid var(--theme-color1);
+  padding-left: 15px;
+  transition: all 0.2s ease-in-out;
+}
+.team-skin-style20 .content .team-title {
+  line-height: 20px;
+  margin: 0;
+  padding-bottom: 10px;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.team-skin-style20 .content .team-title a {
+  background-position: 0 95%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  display: inline;
+}
+.team-skin-style20 .content .team-title a:hover {
+  color: var(--theme-color2);
+  background-size: 100% 2px;
+  background-image: linear-gradient(180deg, var(--theme-color2) 0%, var(--theme-color2) 100%);
+}
+.team-skin-style20 .content .team-subtitle {
+  line-height: 16px;
+  transition: all 0.2s ease-in-out;
+}
+.team-skin-style20 .content .arrow-icon {
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: inherit;
+  transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer !important;
+  width: 56px;
+  height: 56px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.team-skin-style20 .content .arrow-icon i {
+  transition: all 0.2s ease-in-out;
+  rotate: -40deg;
+}
+.team-skin-style20 .image-wrap {
+  position: relative;
+  text-align: center;
+  background-color: var(--theme-color3);
+  border-radius: 40px;
+  height: 445px;
+  z-index: 1;
+}
+.team-skin-style20 .image-wrap::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  height: 250px;
+  background: linear-gradient(0deg, #000 -6.39%, rgba(0, 0, 0, 0) 100%);
+  top: auto;
+  transition: all 0.2s ease-in-out;
+}
+.team-skin-style20 .image-wrap::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  height: 0;
+  background: linear-gradient(0deg, #e92f00 -6.39%, rgba(0, 0, 0, 0) 100%);
+  top: auto;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 2;
+}
+.team-skin-style20 .image-wrap .image {
+  position: relative;
+  top: -30px;
+  width: 330px;
+  height: 475px;
+  margin: 0 auto;
+}
+.team-skin-style20 .image-wrap .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.team-skin-style20 .image-wrap .image-shape {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  content: "";
+  width: 376px;
+  height: 312px;
+  background-image: url(../../../images/current-theme/team-shape.png);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.team-skin-style20 .team-social {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 5;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer !important;
+}
+.team-skin-style20 .team-social li {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: var(--theme-color2);
+  margin-bottom: 0;
+}
+.team-skin-style20 .team-social li:hover {
+  background-color: var(--theme-color1);
+}
+.team-skin-style20 .team-social li a {
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: inherit;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer !important;
+  width: 50px;
+  height: 50px;
+  background: var(--theme-color3);
+  color: var(--theme-color3-text-color);
+}
+.team-skin-style20 .team-social li a:hover {
+  background: var(--theme-color1);
+  color: var(--theme-color1-text-color);
+}
+.team-skin-style20:hover::after {
+  opacity: 1;
+  height: 100%;
+  visibility: visible;
+}
+.team-skin-style20:hover .image-wrap {
+  position: relative;
+  text-align: center;
+  background-color: var(--theme-color3);
+  border-radius: 40px;
+  height: 445px;
+}
+.team-skin-style20:hover .image-wrap::after::after {
+  opacity: 0;
+}
+.team-skin-style20:hover .image-wrap::before {
+  opacity: 1;
+  height: 250px;
+  visibility: visible;
+}
+.team-skin-style20:hover .content .title-area {
+  border-color: #fff;
+}
+.team-skin-style20:hover .content .team-title {
+  color: #fff;
+}
+.team-skin-style20:hover .content .team-subtitle {
+  color: #fff;
+}
+.team-skin-style20:hover .content .arrow-icon {
+  background-color: var(--theme-color3);
+  cursor: pointer !important;
+}
+.team-skin-style20:hover .content .arrow-icon i {
+  rotate: 0deg;
+}
+.team-skin-style20:hover .team-social {
+  bottom: 30px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-item .team-skin-style20.active::after {
+  opacity: 1;
+  height: 100%;
+  visibility: visible;
+}
+.team-item .team-skin-style20.active .image-wrap {
+  position: relative;
+  text-align: center;
+  background-color: var(--theme-color3);
+  border-radius: 40px;
+  height: 445px;
+}
+.team-item .team-skin-style20.active .image-wrap::after::after {
+  opacity: 0;
+}
+.team-item .team-skin-style20.active .image-wrap::before {
+  opacity: 1;
+  height: 250px;
+  visibility: visible;
+}
+.team-item .team-skin-style20.active .content .title-area {
+  border-color: #fff;
+}
+.team-item .team-skin-style20.active .content .team-title {
+  color: #fff;
+}
+.team-item .team-skin-style20.active .content .team-title a:hover, .team-item .team-skin-style20.active .content .team-title a:focus {
+  color: #fff;
+}
+.team-item .team-skin-style20.active .content .team-subtitle {
+  color: #fff;
+}
+.team-item .team-skin-style20.active .content .arrow-icon {
+  background-color: var(--theme-color3);
+  cursor: pointer !important;
+}
+.team-item .team-skin-style20.active .content .arrow-icon i {
+  rotate: 0deg;
+}
+.team-item .team-skin-style20.active .team-social {
+  bottom: 30px;
+  opacity: 1;
+  visibility: visible;
+}

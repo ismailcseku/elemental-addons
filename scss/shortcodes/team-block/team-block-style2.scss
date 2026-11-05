@@ -1,6 +1,6 @@
 @import "../../bootstrap-loader";
 
-.team-current-theme2 {
+.team-skin-style2 {
   .inner-block {
     border-radius: 10px;
     position: relative;
@@ -15,7 +15,7 @@
           rgba(15, 53, 45, 0.4) -6.25%,
           rgba(18, 66, 56, 0.35) 100%
         );
-        .social-links {
+        .team-social {
           margin-bottom: 0;
           opacity: 1;
           visibility: visible;
@@ -63,7 +63,7 @@
       .team-subtitle {
         color: rgba(255, 255, 255, 0.65);
       }
-      .social-links {
+      .team-social {
         gap: 3.5px;
         margin-top: 18px;
         margin-bottom: -60px;

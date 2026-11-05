@@ -1,0 +1,167 @@
+.team-skin-style52 {
+  margin-bottom: 50px;
+}
+@media (max-width: 575.98px) {
+  .team-skin-style52 {
+    margin-bottom: 70px;
+  }
+}
+.team-skin-style52 .inner-box {
+  position: relative;
+  border-radius: 0 150px 150px 150px;
+  background-color: var(--theme-color-white);
+  border: 5px solid var(--theme-color1);
+  transition: all 300ms ease;
+}
+@media (max-width: 1199.98px) {
+  .team-skin-style52 .inner-box {
+    margin-bottom: 40px;
+  }
+}
+.team-skin-style52 .inner-box:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  height: 100%;
+  width: 100%;
+  background: var(--theme-color1);
+  opacity: 0;
+  transform: scale(0);
+  border-radius: 0 150px 150px 150px;
+  transition: all 300ms ease;
+}
+.team-skin-style52 .inner-box:hover:before {
+  opacity: 1;
+  transform: scale(1);
+}
+.team-skin-style52 .inner-box:hover .image-box .image img {
+  transform: scale(1.1);
+}
+.team-skin-style52 .inner-box:hover .content-box .team-title,
+.team-skin-style52 .inner-box:hover .content-box .team-title a,
+.team-skin-style52 .inner-box:hover .content-box .team-subtitle {
+  color: #fff;
+}
+.team-skin-style52 .inner-box:hover .content-box .icon-box .icon {
+  background-color: var(--theme-color1);
+  border: 2px solid #fff;
+}
+.team-skin-style52 .inner-box .image-box {
+  position: relative;
+}
+.team-skin-style52 .inner-box .image-box .image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 150px 150px 150px;
+  margin-bottom: 0;
+}
+.team-skin-style52 .inner-box .image-box .image img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: all 300ms ease;
+}
+.team-skin-style52 .inner-box .content-box {
+  position: relative;
+  padding-top: 10px;
+  text-align: center;
+}
+.team-skin-style52 .inner-box .content-box .team-title {
+  position: relative;
+  margin-bottom: 0;
+}
+.team-skin-style52 .inner-box .content-box .team-title a:hover, .team-skin-style52 .inner-box .content-box .team-title a:focus {
+  color: #fff;
+}
+.team-skin-style52 .inner-box .content-box .team-subtitle {
+  position: relative;
+  padding-bottom: 12px;
+  transition: all 300ms ease;
+}
+.team-skin-style52 .inner-box .content-box .icon-box {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -30px;
+  z-index: 5;
+}
+.team-skin-style52 .inner-box .content-box .icon-box:hover .icon:after {
+  opacity: 1;
+  transform: scale(1);
+}
+.team-skin-style52 .inner-box .content-box .icon-box:hover .team-social {
+  transform: scale(1);
+  visibility: visible;
+}
+.team-skin-style52 .inner-box .content-box .icon-box .icon {
+  position: relative;
+  display: block;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 900;
+  background: var(--theme-color2);
+}
+.team-skin-style52 .inner-box .content-box .icon-box .icon:before {
+  position: relative;
+  z-index: 2;
+}
+.team-skin-style52 .inner-box .content-box .icon-box .icon:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transform: scale(0);
+  border-radius: 50%;
+  background-color: var(--theme-color3);
+  transition: all 300ms ease;
+  z-index: 1;
+}
+.team-skin-style52 .inner-box .content-box .icon-box .team-social {
+  position: absolute;
+  left: 50%;
+  bottom: 70px;
+  margin-left: -18px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  transform-origin: bottom;
+  transform: scaleY(0);
+  visibility: hidden;
+  z-index: 5;
+  transition: all 500ms ease;
+}
+.team-skin-style52 .inner-box .content-box .icon-box .team-social li {
+  list-style: none;
+}
+.team-skin-style52 .inner-box .content-box .icon-box .team-social a {
+  position: relative;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: var(--body-font-size);
+  color: var(--theme-color2);
+  background-color: #fff;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+.team-skin-style52 .inner-box .content-box .icon-box .team-social a:hover {
+  color: #fff;
+  background-color: var(--theme-color2);
+  border: none;
+}
