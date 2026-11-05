@@ -1,3 +1,10 @@
+.team-skin-style10 {
+  /* team-social defaults */
+}
+.team-skin-style10 .team-social {
+  padding: 0;
+  list-style: none;
+}
 .team-skin-style10 .inner-block {
   padding: 0;
   position: relative;

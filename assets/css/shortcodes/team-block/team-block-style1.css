@@ -1,4 +1,11 @@
 .team-skin-style1 {
+  /* team-social defaults */
+}
+.team-skin-style1 .team-social {
+  padding: 0;
+  list-style: none;
+}
+.team-skin-style1 {
   padding: 10px;
   background-color: var(--theme-color-white);
   border-radius: 20px;

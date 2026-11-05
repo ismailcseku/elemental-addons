@@ -1,3 +1,10 @@
+.team-skin-style40 {
+  /* team-social defaults */
+}
+.team-skin-style40 .team-social {
+  padding: 0;
+  list-style: none;
+}
 .team-skin-style40 .inner-block {
   border-radius: 0 80px 0 80px;
   position: relative;

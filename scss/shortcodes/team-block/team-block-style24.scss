@@ -1,5 +1,10 @@
 @import "../../bootstrap-loader";
 .team-skin-style24 {
+  /* team-social defaults */
+  .team-social {
+    padding: 0;
+    list-style: none;
+  }
   position: relative;
   margin-bottom: 40px !important;
   .inner-box {

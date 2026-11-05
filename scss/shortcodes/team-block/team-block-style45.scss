@@ -1,6 +1,11 @@
 @import "../../bootstrap-loader";
 
 .team-skin-style45 {
+  /* team-social defaults */
+  .team-social {
+    padding: 0;
+    list-style: none;
+  }
   position: relative;
   margin-bottom: 30px;
   @include transition(all 300ms ease);
@@ -168,6 +173,11 @@
 
 .tm-team-carousel {
   .team-skin-style45 {
+  /* team-social defaults */
+  .team-social {
+    padding: 0;
+    list-style: none;
+  }
     margin-left: 10px;
   }
 }

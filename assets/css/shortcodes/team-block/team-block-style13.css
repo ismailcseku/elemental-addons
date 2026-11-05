@@ -1,3 +1,10 @@
+.team-skin-style13 {
+  /* team-social defaults */
+}
+.team-skin-style13 .team-social {
+  padding: 0;
+  list-style: none;
+}
 .team-skin-style13 .team-content {
   position: relative;
   overflow: hidden;

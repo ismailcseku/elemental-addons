@@ -1,3 +1,10 @@
+.team-skin-style37 {
+  /* team-social defaults */
+}
+.team-skin-style37 .team-social {
+  padding: 0;
+  list-style: none;
+}
 .team-skin-style37 .team-inner .team-thumb {
   position: relative;
   overflow: hidden;
@@ -122,6 +129,13 @@
   transform: scaleX(1);
 }
 
+.team-margin .owl-stage-outer .owl-item:nth-child(even) .team-skin-style37 {
+  /* team-social defaults */
+}
+.team-margin .owl-stage-outer .owl-item:nth-child(even) .team-skin-style37 .team-social {
+  padding: 0;
+  list-style: none;
+}
 .team-margin .owl-stage-outer .owl-item:nth-child(even) .team-skin-style37 {
   margin-top: 40px;
 }

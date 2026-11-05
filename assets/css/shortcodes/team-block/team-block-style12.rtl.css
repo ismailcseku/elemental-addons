@@ -1,4 +1,11 @@
 .team-skin-style12 {
+  /* team-social defaults */
+}
+.team-skin-style12 .team-social {
+  padding: 0;
+  list-style: none;
+}
+.team-skin-style12 {
   margin-bottom: 30px;
   position: relative;
   transition: all 500ms ease;

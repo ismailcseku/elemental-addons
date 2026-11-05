@@ -1,6 +1,11 @@
 @import "../../bootstrap-loader";
 
 .team-skin-style48 {
+  /* team-social defaults */
+  .team-social {
+    padding: 0;
+    list-style: none;
+  }
   .inner-box {
     position: relative;
     z-index: 1;
@@ -171,6 +176,11 @@
   }
 }
 .even .isotope-item:nth-child(even) .team-skin-style48 {
+  /* team-social defaults */
+  .team-social {
+    padding: 0;
+    list-style: none;
+  }
   padding-top: 35px;
   @include media-breakpoint-down(xl) {
     padding-top: 0px;

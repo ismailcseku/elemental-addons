@@ -1,3 +1,10 @@
+.team-skin-style33 {
+  /* team-social defaults */
+}
+.team-skin-style33 .team-social {
+  padding: 0;
+  list-style: none;
+}
 .team-skin-style33 .team-block {
   position: relative;
   margin-bottom: 40px;

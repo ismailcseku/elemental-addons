@@ -1,3 +1,10 @@
+.team-skin-style16 {
+  /* team-social defaults */
+}
+.team-skin-style16 .team-social {
+  padding: 0;
+  list-style: none;
+}
 .team-skin-style16 .inner-box {
   position: relative;
 }

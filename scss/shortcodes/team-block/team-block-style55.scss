@@ -1,6 +1,11 @@
 @import "../../bootstrap-loader";
 
 .team-skin-style55 {
+  /* team-social defaults */
+  .team-social {
+    padding: 0;
+    list-style: none;
+  }
   position: relative;
   z-index: 1;
   .inner-block {

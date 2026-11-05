@@ -1,6 +1,11 @@
 @import "../../bootstrap-loader";
 
 .team-skin-style46 {
+  /* team-social defaults */
+  .team-social {
+    padding: 0;
+    list-style: none;
+  }
   .inner-block {
     position: relative;
     background: var(--theme-color-white);

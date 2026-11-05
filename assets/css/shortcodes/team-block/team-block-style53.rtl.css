@@ -1,3 +1,10 @@
+.team-skin-style53 {
+  /* team-social defaults */
+}
+.team-skin-style53 .team-social {
+  padding: 0;
+  list-style: none;
+}
 .team-skin-style53 .inner-box {
   position: relative;
   z-index: 1;
@@ -157,6 +164,13 @@
   visibility: visible;
 }
 
+.even .isotope-item:nth-child(even) .team-skin-style53 {
+  /* team-social defaults */
+}
+.even .isotope-item:nth-child(even) .team-skin-style53 .team-social {
+  padding: 0;
+  list-style: none;
+}
 .even .isotope-item:nth-child(even) .team-skin-style53 {
   padding-top: 35px;
 }

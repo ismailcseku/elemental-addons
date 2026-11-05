@@ -1,3 +1,10 @@
+.team-skin-style28 {
+  /* team-social defaults */
+}
+.team-skin-style28 .team-social {
+  padding: 0;
+  list-style: none;
+}
 .team-skin-style28 .inner-box {
   background-color: #f7f8ed;
   border-radius: 20px;

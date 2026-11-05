@@ -1,8 +1,24 @@
 .swiper-slide:nth-child(odd) .team-skin-style54,
 .isotope-item:nth-child(odd) .team-skin-style54 {
+  /* team-social defaults */
+}
+.swiper-slide:nth-child(odd) .team-skin-style54 .team-social,
+.isotope-item:nth-child(odd) .team-skin-style54 .team-social {
+  padding: 0;
+  list-style: none;
+}
+.swiper-slide:nth-child(odd) .team-skin-style54,
+.isotope-item:nth-child(odd) .team-skin-style54 {
   transform: translateY(-40px);
 }
 
+.team-skin-style54 {
+  /* team-social defaults */
+}
+.team-skin-style54 .team-social {
+  padding: 0;
+  list-style: none;
+}
 .team-skin-style54 {
   position: relative;
   padding: 20px;

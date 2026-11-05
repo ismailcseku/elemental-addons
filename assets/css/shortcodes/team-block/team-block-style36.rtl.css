@@ -1,3 +1,10 @@
+.team-skin-style36 {
+  /* team-social defaults */
+}
+.team-skin-style36 .team-social {
+  padding: 0;
+  list-style: none;
+}
 .team-skin-style36 .team-image {
   overflow: hidden;
   position: relative;

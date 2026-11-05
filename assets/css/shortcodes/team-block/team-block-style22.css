@@ -1,3 +1,10 @@
+.team-skin-style22 {
+  /* team-social defaults */
+}
+.team-skin-style22 .team-social {
+  padding: 0;
+  list-style: none;
+}
 .team-skin-style22 .inner-block {
   padding: 40px 50px;
   background-color: transparent;

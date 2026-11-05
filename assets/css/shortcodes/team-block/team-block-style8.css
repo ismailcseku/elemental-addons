@@ -1,3 +1,10 @@
+.team-skin-style8 {
+  /* team-social defaults */
+}
+.team-skin-style8 .team-social {
+  padding: 0;
+  list-style: none;
+}
 .team-skin-style8 .inner-box {
   position: relative;
   margin-bottom: 26px;

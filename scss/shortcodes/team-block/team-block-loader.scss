@@ -1,5 +1,12 @@
 //Block Feature Styles
 @import "../../bootstrap-loader";
+
+// Defaults for all team skins
+.team-social {
+  padding: 0;
+  list-style: none;
+}
+
 @import "team-block-style1";
 @import "team-block-style2";
 @import "team-block-style3";

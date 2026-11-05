@@ -1,4 +1,11 @@
 .team-skin-style35 {
+  /* team-social defaults */
+}
+.team-skin-style35 .team-social {
+  padding: 0;
+  list-style: none;
+}
+.team-skin-style35 {
   position: relative;
   margin-bottom: 30px;
 }
@@ -198,6 +205,13 @@ body.tm-dark-layout .team-skin-style35 .inner-box .content .team-social li a:hov
   transform: scale(1);
 }
 
+.tm-team-carousel .team-skin-style35 {
+  /* team-social defaults */
+}
+.tm-team-carousel .team-skin-style35 .team-social {
+  padding: 0;
+  list-style: none;
+}
 .tm-team-carousel .team-skin-style35 .inner-box {
   margin-left: 10px;
 }

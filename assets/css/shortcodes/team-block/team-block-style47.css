@@ -1,4 +1,11 @@
 .team-skin-style47 {
+  /* team-social defaults */
+}
+.team-skin-style47 .team-social {
+  padding: 0;
+  list-style: none;
+}
+.team-skin-style47 {
   position: relative;
   margin-bottom: 30px;
 }

@@ -1,3 +1,10 @@
+.team-skin-style15 {
+  /* team-social defaults */
+}
+.team-skin-style15 .team-social {
+  padding: 0;
+  list-style: none;
+}
 .team-skin-style15 .inner-box {
   position: relative;
   padding-bottom: 30px;

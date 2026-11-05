@@ -1,6 +1,11 @@
 @import "../../bootstrap-loader";
 
 .team-skin-style40 {
+  /* team-social defaults */
+  .team-social {
+    padding: 0;
+    list-style: none;
+  }
   .inner-block {
     border-radius: 80px 0 80px 0;
     position: relative;

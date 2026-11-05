@@ -1,5 +1,10 @@
 @import "../../bootstrap-loader";
 .team-skin-style43 {
+  /* team-social defaults */
+  .team-social {
+    padding: 0;
+    list-style: none;
+  }
   .inner-box {
     background-color: var(--theme-color2);
     border-radius: 20px;

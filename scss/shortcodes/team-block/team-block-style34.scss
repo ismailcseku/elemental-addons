@@ -1,5 +1,10 @@
 @import "../../bootstrap-loader";
 .team-skin-style34 {
+  /* team-social defaults */
+  .team-social {
+    padding: 0;
+    list-style: none;
+  }
   position: relative;
   margin-bottom: 50px;
   .inner-box {
@@ -165,6 +170,11 @@
 
 .tm-team-carousel {
   .team-skin-style34 {
+  /* team-social defaults */
+  .team-social {
+    padding: 0;
+    list-style: none;
+  }
     .inner-box {
       .info-box {
         box-shadow: none;

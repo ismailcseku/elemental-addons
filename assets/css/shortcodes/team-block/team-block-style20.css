@@ -1,4 +1,11 @@
 .team-skin-style20 {
+  /* team-social defaults */
+}
+.team-skin-style20 .team-social {
+  padding: 0;
+  list-style: none;
+}
+.team-skin-style20 {
   position: relative;
   border-radius: 40px;
   background-color: #000000;
@@ -221,6 +228,13 @@
   visibility: visible;
 }
 
+.team-item .team-skin-style20 {
+  /* team-social defaults */
+}
+.team-item .team-skin-style20 .team-social {
+  padding: 0;
+  list-style: none;
+}
 .team-item .team-skin-style20.active::after {
   opacity: 1;
   height: 100%;

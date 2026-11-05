@@ -1,3 +1,10 @@
+.team-skin-style21 {
+  /* team-social defaults */
+}
+.team-skin-style21 .team-social {
+  padding: 0;
+  list-style: none;
+}
 .team-skin-style21 .team-info {
   position: relative;
   z-index: 1;

@@ -1,4 +1,11 @@
 .team-skin-style34 {
+  /* team-social defaults */
+}
+.team-skin-style34 .team-social {
+  padding: 0;
+  list-style: none;
+}
+.team-skin-style34 {
   position: relative;
   margin-bottom: 50px;
 }
@@ -160,6 +167,13 @@ body.tm-dark-layout .team-skin-style34 .inner-box:hover .info-box .team-share {
   background-color: var(--theme-color1);
 }
 
+.tm-team-carousel .team-skin-style34 {
+  /* team-social defaults */
+}
+.tm-team-carousel .team-skin-style34 .team-social {
+  padding: 0;
+  list-style: none;
+}
 .tm-team-carousel .team-skin-style34 .inner-box .info-box {
   box-shadow: none;
   border-width: 0 1px 1px 1px;

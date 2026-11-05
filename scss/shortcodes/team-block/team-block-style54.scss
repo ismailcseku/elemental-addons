@@ -3,10 +3,20 @@
 .swiper-slide:nth-child(odd),
 .isotope-item:nth-child(odd) {
   .team-skin-style54 {
+  /* team-social defaults */
+  .team-social {
+    padding: 0;
+    list-style: none;
+  }
     transform: translateY(-40px);
   }
 }
 .team-skin-style54 {
+  /* team-social defaults */
+  .team-social {
+    padding: 0;
+    list-style: none;
+  }
   position: relative;
   padding: 20px;
   border-radius: 20px;
