@@ -82,7 +82,6 @@
   position: relative;
   display: block;
   z-index: 2;
-  font-family: var(--heading-font-family);
   transition: all 300ms ease;
   padding-left: 50px;
 }

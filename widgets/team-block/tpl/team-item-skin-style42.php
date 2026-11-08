@@ -5,7 +5,7 @@ $team_item['title_tag'] = $title_tag;
 $team_item['subtitle_tag'] = $subtitle_tag;
 $count = $team_item['count'];
 ?>
-<div class="team-skin-style42 team-item">
+<div class="team-skin-style42">
 	<div class="inner-box">
 		<div class="bg bg-image">
 			<?php elemental_addons_get_shortcode_template_part( 'part-thumb', null, 'team-block/tpl', $team_item, false );?>

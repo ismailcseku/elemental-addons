@@ -1,0 +1,245 @@
+@import "../../bootstrap-loader";
+@import "features-common";
+.feature-layout {
+  background: #070C0F;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 30px;
+}
+.feature-layout > div:last-child .features-block-style31 .inner-box .title-box {
+	border-bottom: none;
+}
+.features-block7-outer {
+  display: flex;
+  min-height: 679px;
+  position: relative;
+  @media (max-width: 1365.98px) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  @include media-breakpoint-down(xl) {
+    max-width: 992px;
+  }
+  .feature-layout  {
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+    }
+  }
+  .features-block-style31 {
+    margin-bottom: 0;
+    .inner-box {
+      padding: 0;
+      &.active {
+        .title-box {
+          .content {
+            .icon {
+              background-color: var(--theme-color1);
+              color: var(--theme-color1-text-color);
+            }
+            .features-title {
+              &:hover {
+                color: #fff;
+                a {
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+        .content-box {
+          opacity: 1;
+          height: 100%;
+          visibility: visible;
+          transform: translate(0) scaleY(1);
+        }
+      }
+      &:hover {
+        .title-box {
+          .icon-box {
+            i,img,svg {
+              transform: scaleX(-1);
+            }
+          }
+        }
+      }
+      .title-box {
+        border-bottom: 1px solid rgba(174, 227, 23, 0.2);
+        color: #fff;
+        display: flex;
+        padding: 39px 40px 35px;
+        position: relative;
+        min-width: 534px;
+        max-width: 534px;
+        margin-bottom: 0;
+        z-index: 2;
+        @include transition(all 300ms ease);
+        @include media-breakpoint-down(xl) {
+          padding: 39px 22px 35px;
+          min-width: 460px;
+          max-width: 460px;
+        }
+        @include media-breakpoint-down(lg) {
+          max-width: none;
+          width: 100%;
+        }
+        @include media-breakpoint-down(sm) {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          padding: 30px 15px 27px;
+          min-width: auto;
+        }
+        .content {
+          position: relative;
+          @include media-breakpoint-down(lg) {
+            width: 100%;
+          }
+          .icon {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: #ffffff;
+            display: inline-block;
+            font-size: 14px;
+            position: absolute;
+            right: -1px;
+            top: 0;
+            height: 30px;
+            line-height: 32px;
+            text-align: center;
+            width: 30px;
+            @include media-breakpoint-down(sm) {
+              display: none;
+            }
+          }
+        }
+        .icon-box {
+          color: var(--theme-color1);
+          font-size: 30px;
+          position: relative;
+          top: -2px;
+          line-height: 1;
+          min-width: 30px;
+          margin-right: 20px;
+          @include transition(all 300ms ease);
+          @include media-breakpoint-down(sm) {
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 5px;
+          }
+          i, img, svg {
+            @include transition(all 300ms ease);
+          }
+        }
+        .features-title {
+          color: #fff;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 1.28;
+          margin-top: 0;
+          margin-bottom: 16px;
+          @include transition(all 300ms ease);
+          @include media-breakpoint-down(sm) {
+            font-size: 25px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+          }
+        }
+        .features-details {
+          color: rgba(255, 255, 255, 0.6);
+          font-weight: 600;
+          line-height: 1.5;
+        }
+      }
+      .content-box {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        width: 100%;
+        max-width: 760px;
+        max-height: 679px;
+        display: none;
+        align-items: center;
+        transform: translateY(10px) scaleY(0);
+        -webkit-transition: opacity 0.4s;
+        transition: opacity 0.4s;
+        @media (max-width: 1365.98px) {
+          max-width: 630px;
+        }
+        @media (max-width: 1200.98px) {
+          max-width: 625px;
+        }
+        @include media-breakpoint-down(xl) {
+          max-width: 510px;
+        }
+        @media (max-width: 1023.98px) {
+          max-width: 490px;
+        }
+        @include media-breakpoint-down(lg) {
+          height: auto;
+          width: 100%;
+          max-width: none;
+          max-height: none;
+          position: relative;
+          top: 0;
+          right: 0;
+          transform: translateY(10px) scaleY(1);
+          transform-origin: top;
+          margin-bottom: 20px;
+        }
+        @include media-breakpoint-down(sm) {
+          padding: 0;
+          border-radius: 30px;
+        }
+        &.active {
+          display: block;
+          .inner-content {
+            transform: translate(0) scaleY(1);
+          }
+        }
+        .inner-content {
+          background: #070C0F;
+          border: 1px solid rgba(255,255,255, .13);
+          border-radius: 30px;
+          height: 100%;
+          overflow: hidden;
+          @include media-breakpoint-down(xl) {
+          }
+          @include media-breakpoint-down(lg) {
+            border: none;
+          }
+          @include media-breakpoint-down(md) {
+            display: block;
+          }
+          @include media-breakpoint-down(sm) {
+          }
+          .features-title {
+            margin-bottom: 14px;
+          }
+          .image {
+            height: 100%;
+            margin-top: 0;
+            @include media-breakpoint-down(lg) {
+              margin-top: 30px;
+            }
+            img {
+              object-fit: cover;
+              object-position: top left;
+              height: 100%;
+              width: 100%;
+              @include media-breakpoint-down(lg) {
+                object-position: bottom left;
+                max-height: 400px;
+              }
+              @include media-breakpoint-down(md) {
+                max-height: 375px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

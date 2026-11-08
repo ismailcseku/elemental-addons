@@ -1,0 +1,164 @@
+@import "../../bootstrap-loader";
+@import "service-common";
+.service-block-style46 {
+  margin-bottom: 30px;
+  .inner-box {
+    position: relative;
+    background-color: #f5f5f5;
+    transition: all 0.3s ease;
+    height: 100%;
+    z-index: 9;
+    &:hover {
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 147px;
+        height: 228px;
+        background-image: url(../../../images/current-theme/pattern2.png);
+      }
+      &:after {
+        transition: all 0.5s ease;
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+      }
+      .icon-box {
+        &::before {
+          background-color: var(--theme-color2);
+        }
+        .service-icon {
+          i {
+            transform: scale(0.8) rotate(-360deg);
+          }
+        }
+        img {
+          transform: scale(0.8) rotate(-360deg);
+        }
+        .number {
+          color: #fff;
+          &:before {
+            transform: scaleX(1.1);
+            background: #fff;
+          }
+        }
+      }
+      .content-box {
+        .service-title {
+          color: #fff;
+        }
+        .service-details {
+          color: #fff;
+        }
+        .view-more {
+          color: #fff;
+          i {
+            background-color: #fff;
+            color: var(--theme-color1);
+          }
+        }
+      }
+    }
+    &:after {
+      transition: all 0.5s ease;
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      -webkit-transform: scaleY(0);
+      transform: scaleY(0);
+      background-color: var(--theme-color1);
+      -webkit-transform-origin: bottom;
+      transform-origin: bottom;
+      -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      z-index: -1;
+    }
+    .icon-box {
+      margin-bottom: 25px;
+      padding: 10px 0 0 10px;
+      position: relative;
+      z-index: 99;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 80px;
+        background-color: var(--theme-color1);
+        z-index: -1;
+        transition: all 0.3s ease;
+      }
+      .image {
+        width: 84px;
+        height: 84px;
+        line-height: 84px;
+        text-align: center;
+        background-color: #fff;
+        display: inline-block;
+        .service-icon {
+          font-size: 42px;
+          color: var(--theme-color1);
+          transition: all 0.3s ease;
+          i {
+            display: inline-block;
+            transition: all 0.3s ease;
+          }
+        }
+        img {
+          transition: all 0.3s ease;
+        }
+      }
+      .number {
+        position: relative;
+        color: var(--theme-color1);
+        margin-left: 107px;
+        @include media-breakpoint-down(xl) {
+          margin-left: 30px;
+        }
+        &::before {
+          position: absolute;
+          top: 10px;
+          right: 40px;
+          background: var(--theme-color1);
+          width: 61px;
+          content: "";
+          height: 2px;
+          transition: all 0.3s ease;
+          @include media-breakpoint-down(xl) {
+            display: none;
+          }
+        }
+      }
+    }
+    .content-box {
+      padding: 0 25px 32px;
+      .service-title {
+        margin-top: 0;
+        margin-bottom: 14px;
+      }
+      .service-details {
+        margin-bottom: 21px;
+      }
+      .view-more {
+        color: var(--theme-color1);
+        text-transform: capitalize;
+        font-weight: 600;
+        i {
+          font-size: 13px;
+          width: 34px;
+          height: 34px;
+          text-align: center;
+          line-height: 34px;
+          border-radius: 50%;
+          background-color: var(--theme-color1);
+          color: #fff;
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}

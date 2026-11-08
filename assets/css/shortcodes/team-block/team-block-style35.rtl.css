@@ -48,7 +48,6 @@
   position: relative;
   margin-top: 0;
   margin-bottom: 0;
-  text-transform: uppercase;
 }
 .team-skin-style35 .inner-box .content .team-title a:hover {
   color: var(--headings-color);

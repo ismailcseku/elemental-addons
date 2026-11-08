@@ -1,0 +1,126 @@
+@import "../../bootstrap-loader";
+@import "features-common";
+
+.features-block-style27 {
+  .feature-content {
+    &:hover {
+      .head {
+        .icon-box {
+          background-color: #121c27;
+          color: #fff;
+          svg {
+            transform: rotateY(360deg);
+            path {
+              fill: #fff;
+            }
+          }
+        }
+        &::after {
+          width: 100%;
+        }
+        .features-title {
+          color: var(--heading-color);
+        }
+      }
+      .image {
+        img {
+          transform: scale(1.1);
+        }
+      }
+      .content {
+        background-color: #f5f5f5;
+        [data-tm-layout="dark"] & {
+          background-color: #171e27;
+        }
+
+        .features-details {
+          color: #4b535d;
+          [data-tm-layout="dark"] & {
+            color: #fff;
+          }
+        }
+        .btn-more {
+          color: #121c27;
+          [data-tm-layout="dark"] & {
+            color: #fff;
+          }
+        }
+      }
+    }
+    .head {
+      background-color: #121c27;
+      @include flex;
+      gap: 30px;
+      position: relative;
+      z-index: 1;
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        z-index: -1;
+        content: "";
+        background-color: #fff;
+        [data-tm-layout="dark"] & {
+          background-color: #131b24;
+        }
+
+        @include transition(all 300ms ease);
+      }
+      .icon-box {
+        @include radius(85px, 85px, 85px);
+        transition: all 300ms ease;
+        width: 85px;
+        height: 85px;
+        font-size: 40px;
+        text-align: center;
+        border-radius: 50%;
+        @include transition(all 300ms ease);
+        border-radius: 0;
+        background-color: #fff;
+        [data-tm-layout="dark"] & {
+          background-color: #16202b;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+          transition: 0.9s;
+        }
+      }
+      .features-title {
+        color: #fff;
+        margin: 0;
+        a:hover,
+        a:focus {
+          [data-tm-layout="dark"] & {
+            color: #fff;
+          }
+        }
+        @include transition(all 300ms ease);
+      }
+    }
+    .image {
+      overflow: hidden;
+      img {
+        transition: 0.7s;
+      }
+    }
+    .content {
+      @include transition(all 300ms ease);
+      padding: 30px;
+      background-color: #121c27;
+      [data-tm-layout="dark"] & {
+        background-color: #16202b;
+      }
+      .features-details {
+        color: #b8bfc5;
+        margin-bottom: 15px;
+      }
+      .btn-more {
+        color: #fff;
+      }
+    }
+  }
+}

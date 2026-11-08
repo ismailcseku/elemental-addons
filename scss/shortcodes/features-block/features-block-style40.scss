@@ -1,0 +1,226 @@
+@import "../../bootstrap-loader";
+
+.features-block-style40 {
+  position: relative;
+  background-color: var(--theme-color-white);
+  border: 1px solid #e6ebff;
+  border-radius: 30px;
+  padding: 60px 50px 50px;
+  @include transition(all 0.2s ease-in-out);
+  .icon {
+    @include icon;
+    width: 90px;
+    height: 90px;
+    border-radius: 20px;
+    font-size: 60px;
+    background-color: #edf0fd;
+
+    &.style-1 {
+      i {
+        background: linear-gradient(45deg, #3188ff 0%, #d34be9 49.19%, #ffaf56 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    &.style-2 {
+      background-color: #ebfbf3;
+      i {
+        color: #21d37e;
+      }
+    }
+    &.style-3 {
+      background-color: #fff8f0;
+      i {
+        color: #ff9548;
+      }
+    }
+    &.style-4 {
+      i {
+        background: linear-gradient(45deg, #3188ff 0%, #d34be9 49.19%, #ffaf56 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    &.style-5 {
+      background-color: #ebfbf3;
+      i {
+        color: #21d37e;
+      }
+    }
+    &.style-6 {
+      background-color: #fff8f0;
+      i {
+        color: #ff9548;
+      }
+    }
+    &.style-7 {
+      i {
+        background: linear-gradient(45deg, #3188ff 0%, #d34be9 49.19%, #ffaf56 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    &.style-8 {
+      background-color: #ebfbf3;
+      i {
+        color: #21d37e;
+      }
+    }
+    &.style-9 {
+      background-color: #fff8f0;
+      i {
+        color: #ff9548;
+      }
+    }
+  }
+  .features-title {
+    color: var(--headings-color);
+    padding: 35px 0;
+    margin: 0;
+  }
+  .arrow-icon {
+    @include icon;
+    width: 40px;
+    height: 40px;
+    background-color: #e6ebff;
+    color: var(--theme-color1);
+    &.style-2 {
+      background-color: #ebfbf3;
+      i {
+        color: #21d37e;
+      }
+    }
+    &.style-3 {
+      background-color: #fff8f0;
+      i {
+        color: #ff9548;
+      }
+    }
+    &.style-4 {
+      background-color: #e6ebff;
+      i {
+        color: var(--theme-color1);
+      }
+    }
+    &.style-5 {
+      background-color: #ebfbf3;
+      i {
+        color: #21d37e;
+      }
+    }
+    &.style-6 {
+      background-color: #fff8f0;
+      i {
+        color: #ff9548;
+      }
+    }
+    &.style-7 {
+      background-color: #e6ebff;
+      i {
+        color: var(--theme-color1);
+      }
+    }
+    &.style-8 {
+      background-color: #ebfbf3;
+      i {
+        color: #21d37e;
+      }
+    }
+    &.style-9 {
+      background-color: #fff8f0;
+      i {
+        color: #ff9548;
+      }
+    }
+    &:hover {
+      background-color: var(--theme-color1);
+      color: var(--theme-color-white);
+      &.style-2 {
+        i {
+          color: var(--theme-color-white);
+        }
+      }
+      &.style-3 {
+        i {
+          color: var(--theme-color-white);
+        }
+      }
+      &.style-4 {
+        i {
+          color: var(--theme-color-white);
+        }
+      }
+      &.style-5 {
+        i {
+          color: var(--theme-color-white);
+        }
+      }
+      &.style-6 {
+        i {
+          color: var(--theme-color-white);
+        }
+      }
+      &.style-7 {
+        i {
+          color: var(--theme-color-white);
+        }
+      }
+      &.style-8 {
+        i {
+          color: var(--theme-color-white);
+        }
+      }
+      &.style-9 {
+        i {
+          color: var(--theme-color-white);
+        }
+      }
+    }
+  }
+  &:hover {
+    border-color: #d34be9;
+  }
+  &.style-2 {
+    &:hover {
+      border-color: #21d37e;
+    }
+  }
+  &.style-3 {
+    &:hover {
+      border-color: #ff9548;
+    }
+  }
+  &.style-4 {
+    &:hover {
+      border-color: #d34be9;
+    }
+  }
+  &.style-5 {
+    &:hover {
+      border-color: #21d37e;
+    }
+  }
+  &.style-6 {
+    &:hover {
+      border-color: #ff9548;
+    }
+  }
+  &.style-7 {
+    &:hover {
+      border-color: #d34be9;
+    }
+  }
+  &.style-8 {
+    &:hover {
+      border-color: #21d37e;
+    }
+  }
+  &.style-9 {
+    &:hover {
+      border-color: #ff9548;
+    }
+  }
+}

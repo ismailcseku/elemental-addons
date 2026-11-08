@@ -1,0 +1,57 @@
+@import "../../bootstrap-loader";
+.features-block-style25 {
+  margin-bottom: 32px;
+  .inner-box {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: var(--theme-color2);
+      .features-featured-img {
+        img {
+          transform: scale(1.1);
+        }
+      }
+      .content-box {
+        &::after {
+          height: 100%;
+        }
+        .features-title {
+          color: #fff;
+        }
+      }
+    }
+    .features-featured-img {
+      img {
+        width: 100%;
+        transition: all 0.3s ease;
+      }
+    }
+    .content-box {
+      background-color: var(--theme-color2);
+      padding: 21px 15px 17px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      &::after {
+        background-color: var(--theme-color1);
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 0;
+        transition: all 0.3s ease;
+      }
+      .features-title {
+        margin-top: 0;
+        color: #fff;
+        margin-bottom: 0;
+        z-index: 1;
+        position: relative;
+      }
+    }
+  }
+}

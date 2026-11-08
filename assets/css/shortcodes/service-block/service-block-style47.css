@@ -1,0 +1,228 @@
+.tm-sc-service .icon {
+  display: inline-block;
+}
+.tm-sc-service .icon,
+.tm-sc-service .feature-title,
+.tm-sc-service .feature-details {
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.service-block-style47 {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+.service-block-style47:last-child::after {
+  content: "";
+  position: absolute;
+  top: -125px;
+  right: -100px;
+  width: 106px;
+  height: 124px;
+  background-image: url(../images/resource/zigzag.png);
+}
+@media (max-width: 991.98px) {
+  .service-block-style47:last-child::after {
+    display: none;
+  }
+}
+.service-block-style47 .inner-box {
+  position: relative;
+  transition: all 0.3s ease;
+  height: 100%;
+  z-index: 9;
+}
+.service-block-style47 .inner-box .content-box {
+  padding: 21px 40px 30px;
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+@media (max-width: 575.98px) {
+  .service-block-style47 .inner-box .content-box {
+    padding: 21px 30px 30px;
+  }
+}
+.service-block-style47 .inner-box .content-box .service-title {
+  margin-bottom: 11px;
+}
+.service-block-style47 .inner-box .content-box .service-details {
+  line-height: 30px;
+  margin-bottom: 28px;
+}
+.service-block-style47 .inner-box .content-box .arry-btn,
+.service-block-style47 .inner-box .content-box .btn-plain-text-with-arrow-right {
+  color: #73787d;
+  text-transform: capitalize;
+  font-weight: 600;
+  background-color: #ecf0f4;
+  width: 100%;
+  height: 51px;
+  line-height: 51px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  position: relative;
+  z-index: 99;
+  transition: all 0.3s ease;
+}
+.service-block-style47 .inner-box .content-box .arry-btn:hover,
+.service-block-style47 .inner-box .content-box .btn-plain-text-with-arrow-right:hover {
+  color: #fff !important;
+}
+.service-block-style47 .inner-box .content-box .arry-btn:hover,
+.service-block-style47 .inner-box .content-box .btn-plain-text-with-arrow-right:hover {
+  background-color: var(--theme-color1);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.service-block-style47 .inner-box .content-box .arry-btn:hover::after,
+.service-block-style47 .inner-box .content-box .btn-plain-text-with-arrow-right:hover::after {
+  color: #fff !important;
+}
+.service-block-style47 .inner-box .image-box {
+  position: relative;
+}
+.service-block-style47 .inner-box .image-box .image {
+  overflow: hidden;
+}
+.service-block-style47 .inner-box .image-box .image:before {
+  background: rgba(255, 255, 255, 0.3);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0;
+  opacity: 1;
+  z-index: 9;
+  pointer-events: none;
+}
+.service-block-style47 .inner-box .image-box .image img {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.service-block-style47 .inner-box .image-box .service-icon {
+  background-color: var(--theme-color1);
+  bottom: 0;
+  width: 97px;
+  height: 85px;
+  left: 40px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service-block-style47 .inner-box .image-box .service-icon i {
+  font-size: 56px;
+  line-height: 85px;
+  color: var(--theme-color1-text-color);
+  transition: all 700ms ease;
+}
+.service-block-style47 .inner-box:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 147px;
+  height: 228px;
+  background-image: url(../images/resource/pattern2.png);
+}
+.service-block-style47 .inner-box:hover:after {
+  transition: all 0.5s ease;
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+.service-block-style47 .inner-box:hover .image-box .image:before {
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all 400ms linear;
+  transition: all 400ms linear;
+}
+.service-block-style47 .inner-box:hover .image-box .image img {
+  transform: scale(1.1);
+}
+.service-block-style47 .inner-box:hover .image-box .service-icon {
+  background-color: var(--theme-color2);
+  color: #fff;
+}
+.service-block-style47 .inner-box:hover .image-box .service-icon i {
+  transform: translate(0%, 0%) rotateY(360deg);
+}
+.service-block-style47 {
+  /*Btn Style */
+}
+.service-block-style47 .btn-style1 {
+  background-color: var(--theme-color1);
+  border-radius: 30px;
+  border: none;
+  color: var(--theme-color1-text-color);
+  line-height: var(--body-line-height);
+  overflow: hidden;
+  padding-left: 30px;
+  position: relative;
+  text-transform: capitalize;
+  z-index: 0;
+}
+.service-block-style47 .btn-style1 .btn-title {
+  color: var(--theme-color1-text-color);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 54px;
+  transition: all 300ms ease;
+}
+.service-block-style47 .btn-style1 .icon {
+  background-color: var(--theme-color2);
+  color: var(--theme-color2-text-color);
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 20px;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  transform: rotate(-30deg);
+  transition: all 300ms ease;
+  margin-right: 5px;
+  margin-top: 4px;
+}
+.service-block-style47 .btn-style1 .icon svg {
+  width: 30px;
+}
+.service-block-style47 .btn-style1 .icon svg path {
+  stroke: var(--theme-color2-text-color) !important;
+}
+.service-block-style47 .btn-style1:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  border-radius: 30px;
+  transform: scaleX(0);
+  transform-origin: right center;
+  background-color: var(--theme-color2);
+  transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  z-index: -1;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+.service-block-style47 .btn-style1:hover .btn-title {
+  color: var(--theme-color2-text-color);
+}
+.service-block-style47 .btn-style1:hover:before {
+  transform: scaleX(1);
+  transform-origin: left center;
+}
+.service-block-style47 .btn-style1:hover .icon {
+  background-color: #fff;
+  color: #333;
+  transform: rotate(0deg);
+}
+.service-block-style47 .btn-style1:hover .icon svg path {
+  stroke: #000 !important;
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="300" viewBox="0 0 480 300" role="img">
+  <rect width="480" height="300" rx="18" fill="#f8fafc"/>
+  <rect x="28" y="28" width="424" height="244" rx="14" fill="#fff" stroke="#dc2626" stroke-opacity="0.28" stroke-width="2"/>
+  <circle cx="90" cy="110" r="36" fill="#dc2626" fill-opacity="0.14"/>
+  <circle cx="90" cy="110" r="22" fill="#dc2626"/>
+  <rect x="150" y="82" width="220" height="18" rx="9" fill="#dc2626" fill-opacity="0.9"/>
+  <rect x="150" y="112" width="160" height="12" rx="6" fill="#94a3b8" fill-opacity="0.4"/>
+  <rect x="150" y="136" width="190" height="12" rx="6" fill="#94a3b8" fill-opacity="0.25"/>
+  <rect x="48" y="190" width="110" height="54" rx="12" fill="#dc2626" fill-opacity="0.12"/>
+  <rect x="178" y="190" width="110" height="54" rx="12" fill="#dc2626" fill-opacity="0.12"/>
+  <rect x="308" y="190" width="110" height="54" rx="12" fill="#dc2626" fill-opacity="0.12"/>
+  <text x="400" y="70" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700" fill="#dc2626" fill-opacity="0.35">26</text>
+  <text x="48" y="52" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600" fill="#0f172a">Skin Style26</text>
+  <text x="48" y="268" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#64748b">Testimonial Block</text>
+</svg>

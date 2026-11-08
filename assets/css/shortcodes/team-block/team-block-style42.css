@@ -119,7 +119,6 @@
   align-items: center;
 }
 .team-skin-style42 .inner-box .content-box .number {
-  font-family: var(--extra-font-family);
   font-weight: 400;
   font-style: italic;
   font-size: 30px;
@@ -157,7 +156,6 @@
   line-height: 24px;
   font-weight: 400;
   color: var(--headings-color);
-  font-family: var(--extra-font-family);
   transition: all 300ms ease;
 }
 .team-skin-style42 .inner-box .content-box .content .info-box .team-title {
@@ -218,7 +216,6 @@
   max-width: 400px;
   width: 100%;
   flex-shrink: 0;
-  font-family: var(--body-font-family);
 }
 @media (max-width: 1399.98px) {
   .team-skin-style42 .inner-box .content-box .content .team-short-bio {

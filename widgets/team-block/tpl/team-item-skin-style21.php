@@ -7,7 +7,7 @@ $feature_link = $team_item['feature_link'];
 $target = ( $feature_link && $feature_link['is_external'] ) ? ' target="_blank"' : '';
 $url = ( $feature_link && $feature_link['url'] ) ? $feature_link['url'] : '';
 ?>
-<div class="team-skin-style21 team-item">
+<div class="team-skin-style21">
   <div class="team-content team-info">
     <div class="team-media image">
       <?php elemental_addons_get_shortcode_template_part( 'part-thumb', null, 'team-block/tpl', $team_item, false );?>

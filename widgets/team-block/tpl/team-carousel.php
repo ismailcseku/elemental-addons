@@ -22,7 +22,7 @@
 							$animation_delay = $team_item['wow_animation_delay'] . 'ms';
 						}
 					?>
-					<div class="swiper-slide elementor-repeater-item-<?php echo esc_attr( $team_item['_id'] ); ?> <?php echo esc_attr($animation);?>" data-wow-delay="<?php echo esc_attr($animation_delay);?>">
+					<div class="swiper-slide team-item elementor-repeater-item-<?php echo esc_attr( $team_item['_id'] ); ?> <?php echo esc_attr($animation);?>" data-wow-delay="<?php echo esc_attr($animation_delay);?>">
 						<?php elemental_addons_get_shortcode_template_part( 'team-item', $_skin, 'team-block/tpl', $settings, false ); ?>
 					</div>
 				<?php } ?>

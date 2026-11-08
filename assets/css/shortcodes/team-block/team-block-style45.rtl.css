@@ -44,7 +44,6 @@
   position: relative;
   margin-top: 0;
   margin-bottom: 0;
-  text-transform: uppercase;
 }
 .team-skin-style45 .content .team-title a:hover {
   color: var(--headings-color);

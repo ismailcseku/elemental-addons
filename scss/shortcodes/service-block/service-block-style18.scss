@@ -1,0 +1,98 @@
+@import "../../bootstrap-loader";
+@import "service-common";
+.service-block-style18 {
+  .inner-box {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding: 46px 23px 40px 40px;
+    border-radius: 10px;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    @include media-breakpoint-down(xl) {
+      padding: 30px 30px;
+    }
+    &:before {
+      @include overlay;
+      height: 0;
+      background-color: var(--theme-color1);
+      content: "";
+      @include transition(all 300ms ease);
+    }
+    &:hover {
+      &:before {
+        height: 100%;
+      }
+      .content {
+        .icon-box {
+          border-color: #fff;
+          .service-icon {
+            i {
+              color: var(--theme-color1);
+              background-color: #fff;
+              &::before {
+                @include transform(scaleX(-1));
+              }
+            }
+          }
+        }
+        .service-details {
+          color: #fff;
+        }
+        .service-title {
+          color: #fff;
+        }
+      }
+    }
+    .content {
+      position: relative;
+      padding-left: 95px;
+      @include media-breakpoint-down(lg) {
+        padding-left: 0;
+        text-align: center;
+      }
+      .icon-box {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        border: 1px solid var(--theme-color1);
+        padding: 7px;
+        border-radius: 50%;
+        @include transition(all 300ms ease);
+        @include media-breakpoint-down(lg) {
+          display: inline-block;
+          position: relative;
+          margin-bottom: 10px;
+        }
+        .service-icon {
+          i {
+            display: block;
+            height: 65px;
+            width: 65px;
+            font-size: 36px;
+            line-height: 65px;
+            background-color: var(--theme-color1);
+            text-align: center;
+            border-radius: 50%;
+            color: #fff;
+            &::before {
+              @include transition(all 0.3s ease);
+              display: inline-block;
+            }
+          }
+        }
+      }
+      .service-title {
+        color: var(--theme-color2);
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+      .service-details {
+        color: var(--text-color);
+        @include transition(all 300ms ease);
+        margin-bottom: 0;
+      }
+    }
+  }
+}

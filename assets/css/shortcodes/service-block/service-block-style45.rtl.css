@@ -1,0 +1,225 @@
+.tm-sc-service .icon {
+  display: inline-block;
+}
+.tm-sc-service .icon,
+.tm-sc-service .feature-title,
+.tm-sc-service .feature-details {
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.service-block-wrapper-two {
+  display: flex;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+@media (max-width: 1399.98px) {
+  .service-block-wrapper-two {
+    margin: 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .service-block-wrapper-two {
+    flex-direction: column;
+    height: auto;
+  }
+}
+.service-block-wrapper-two .service-block-style45 {
+  flex: 0.7;
+  min-width: 190px;
+  transition: 0.7s;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.service-block-wrapper-two .service-block-style45 .head .head-title {
+  margin: 0;
+  padding-right: 25px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  writing-mode: vertical-rl;
+  height: 100%;
+  transform: rotate(-180deg);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.service-block-wrapper-two .service-block-style45 .head .head-title .service-title {
+  display: block;
+  max-height: 410px;
+  text-align: right;
+  color: #fff;
+}
+.service-block-wrapper-two .service-block-style45 .head .head-title .service-title a:hover,
+.service-block-wrapper-two .service-block-style45 .head .head-title .service-title a:focus {
+  color: #fff;
+}
+.service-block-wrapper-two .service-block-style45 .head .head-title .service-count {
+  font-size: 150px;
+  line-height: 150px;
+  font-weight: 500;
+  color: #fff;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  transition: 0.5s;
+  transition: -webkit-text-fill-color 0.5s ease, -webkit-text-stroke-color 0.5s ease;
+}
+.service-block-wrapper-two .service-block-style45 .head .head-title:hover .service-count {
+  -webkit-text-fill-color: #fff;
+  color: #fff;
+}
+.service-block-wrapper-two .service-block-style45 .content {
+  display: none;
+  height: 100%;
+  margin-right: 180px;
+  position: relative;
+  z-index: 1;
+}
+.service-block-wrapper-two .service-block-style45 .content .wrp {
+  padding: 0 60px;
+  gap: 60px;
+  display: flex;
+  height: 100%;
+}
+.service-block-wrapper-two .service-block-style45 .content .wrp .image {
+  height: 100%;
+  flex-shrink: 0;
+  max-width: 50%;
+}
+.service-block-wrapper-two .service-block-style45 .content .wrp .image .service-featured-img {
+  height: 100%;
+}
+.service-block-wrapper-two .service-block-style45 .content .wrp .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.service-block-wrapper-two .service-block-style45 .content .wrp .shape {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+.service-block-wrapper-two .service-block-style45 .content .content-wrp {
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+}
+.service-block-wrapper-two .service-block-style45 .content .arry-btn {
+  font-size: 70px;
+  color: #4b535d;
+  line-height: 1;
+}
+.service-block-wrapper-two .service-block-style45 .content .arry-btn i {
+  transform: rotate(45deg);
+  display: inline-block;
+  transition: all 300ms ease;
+}
+.service-block-wrapper-two .service-block-style45 .content .arry-btn i:hover {
+  transform: rotate(0deg);
+}
+.service-block-wrapper-two .service-block-style45 .content .service-details {
+  color: #c4c4c4;
+}
+.service-block-wrapper-two .service-block-style45.last-child .head .head-title {
+  padding-right: 0;
+  border: 1px solid transparent;
+}
+.service-block-wrapper-two .service-block-style45.last-child.active .head .head-title {
+  padding-right: 25px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+.service-block-wrapper-two .service-block-style45.active .head .service-count {
+  -webkit-text-fill-color: #fff;
+  color: #fff;
+}
+.service-block-wrapper-two .service-block-style45.active {
+  flex: 4;
+}
+.service-block-wrapper-two .service-block-style45.active .content {
+  display: block;
+}
+.service-block-wrapper-two .service-block-style45.active .content .wrp .shape {
+  top: 40%;
+  right: 80px;
+  width: 378px;
+  height: 361px;
+  background-image: url(../../../images/current-theme/pattern.png);
+}
+@media (max-width: 1399.98px) {
+  .service-block-wrapper-two .service-block-style45 {
+    min-width: 75px;
+  }
+  .service-block-wrapper-two .service-block-style45 .head .head-title {
+    padding-right: 5px;
+  }
+  .service-block-wrapper-two .service-block-style45 .head .head-title .service-title {
+    font-size: 22px;
+    line-height: 30px;
+    max-height: 280px;
+  }
+  .service-block-wrapper-two .service-block-style45 .head .head-title .service-count {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .service-block-wrapper-two .service-block-style45 .content {
+    margin-right: 120px;
+  }
+  .service-block-wrapper-two .service-block-style45 .content .wrp {
+    padding: 0 20px;
+    gap: 10px;
+  }
+  .service-block-wrapper-two .service-block-style45 .content .arry-btn {
+    font-size: 40px;
+  }
+}
+@media (max-width: 991.98px) {
+  .service-block-wrapper-two .service-block-style45 .head .head-title {
+    position: unset;
+    writing-mode: unset;
+    transform: unset;
+    border: none;
+    padding: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+  .service-block-wrapper-two .service-block-style45 .head .head-title .service-count {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .service-block-wrapper-two .service-block-style45 .content {
+    margin-right: 0;
+  }
+  .service-block-wrapper-two .service-block-style45 .content .wrp {
+    padding: 20px 15px;
+  }
+  .service-block-wrapper-two .service-block-style45 .content .wrp .image {
+    height: auto;
+  }
+  .service-block-wrapper-two .service-block-style45 .content .wrp .image img {
+    max-height: 400px;
+    width: auto;
+  }
+  .service-block-wrapper-two .service-block-style45.active .head .head-title {
+    margin-bottom: 0px;
+  }
+  .service-block-wrapper-two .service-block-style45.last-child .head .head-title {
+    margin-bottom: 0;
+  }
+  .service-block-wrapper-two .service-block-style45.last-child.active .head .head-title {
+    padding-right: 0;
+    border-right: none;
+  }
+}

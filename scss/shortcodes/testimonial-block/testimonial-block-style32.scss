@@ -1,0 +1,165 @@
+@import "../../bootstrap-loader";
+@import "testimonial-common";
+
+.testimonial-block-style32{
+  .inner-block{
+    background: linear-gradient(168.16deg, #FFFFFF -0.39%, #F4F6F0 96.18%);
+    border: 1px solid rgba(0, 0, 71, 0.1);
+    border-radius: 20px;
+    padding: 38px 39px 29px;
+    position: relative;
+    @include media-breakpoint-down(sm){
+      padding: 30px;
+    }
+    @media (max-width: 475.98px){
+      padding: 25px 15px;
+    }
+    .icon2{
+      display: none;
+      position: absolute;
+      right: 40px;
+      top: 18px;
+      @media (max-width: 475.98px){
+        display: block;
+      }
+      i,img {
+        color: var(--theme-color3);
+        font-size: 50px;
+        @include transition(all 400ms ease);
+      }
+    }
+    .rating {
+      align-items: center;
+      color: var(--theme-color1);
+      display: flex;
+      gap: 5px;
+      margin-bottom: 19px;
+      .star-rating {
+        font-size: 18px;
+        margin-bottom: 0;
+        margin-top: 0;
+        &::before {
+          color: var(--theme-color1);
+          font-weight: 500;
+        }
+        span {
+          &::before {
+            color: var(--theme-color1);
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .testi-text{
+      font-weight: 500;
+      font-size: 20px;
+      letter-spacing: -0.03em;
+      margin-bottom: 30px;
+    }
+    .bottom-box{
+      border-radius: 30px;
+      display: block;
+      overflow: hidden;
+      position: relative;
+      @include media-breakpoint-down(sm){
+        background: var(--theme-color-white);
+      }
+      .author-box{
+        background: var(--theme-color-white);
+        align-items: center;
+        display: flex;
+        gap: 12px;
+        padding: 30px;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        -webkit-mask-size: cover;
+        mask-image: url("../../../images/current-theme/author-box.png");
+        mask-position: right;
+        mask-repeat: no-repeat;
+        mask-size: right;
+        margin-right: 19%;
+        @include media-breakpoint-down(sm){
+          mask-image: none;
+          -webkit-mask-image: none;
+          margin-right: 0;
+          flex-wrap: wrap;
+        }
+        .thumb{
+          border-radius: 50%;
+          overflow: hidden;
+          position: relative;
+        }
+        .author-info{
+          .testimonial-name{
+            color: var(--theme-color1);
+            letter-spacing: -0.03em;
+            margin-bottom: 4px;
+            margin-top: -5px;
+            line-height: 1.2;
+          }
+          .testimonial-position{
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            line-height: 1;
+          }
+        }
+      }
+      .quote-box{
+        background: var(--theme-color1);
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        -webkit-mask-size: cover;
+        mask-image: url("../../../images/current-theme/quote-box.png");
+        mask-position: left;
+        mask-repeat: no-repeat;
+        mask-size: left;
+
+        align-items: center;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        max-width: 198px;
+        @include media-breakpoint-down(sm){
+          mask-image: none;
+          -webkit-mask-image: none;
+          max-width: 134px;
+        }
+        @media (max-width: 475.98px){
+          display: none;
+        }
+        .icon{
+          display: inline-block;
+          margin-left: 35px;
+          @include media-breakpoint-down(sm){
+            margin-left: 0;
+          }
+          i,img{
+            color: var(--theme-color3);
+            font-size: 50px;
+            @include transition(all 400ms ease);
+          }
+        }
+      }
+      &:hover{
+      }
+    }
+    &:hover{
+      .icon2{
+        i,img{
+          transform: scaleX(-1);
+        }
+      }
+      .bottom-box {
+        .icon{
+          i,img{
+            transform: scaleX(-1);
+          }
+        }
+      }
+    }
+  }
+}

@@ -5,89 +5,92 @@
   padding: 0;
   list-style: none;
 }
-.team-skin-style8 .inner-box {
-  position: relative;
-  margin-bottom: 26px;
-  text-align: center;
-}
-.team-skin-style8 .inner-box:hover .image-box .image .shape-style1 path {
-  fill: var(--theme-color1);
-}
-.team-skin-style8 .inner-box:hover .team-social {
-  opacity: 1;
-  transform: translateY(-30px);
-}
-.team-skin-style8 .inner-box .image-box {
+.team-skin-style8 .inner-block {
   position: relative;
 }
-.team-skin-style8 .inner-box .image-box .image {
-  background-color: #222222;
-  border-radius: 20px;
-  display: block;
-  margin-bottom: 0;
-  padding-top: 48px;
-  position: relative;
-  z-index: 1;
-  transition: all 300ms ease;
+.team-skin-style8 .inner-block:hover .image-box img {
+  transform: scale(1.1);
 }
-.team-skin-style8 .inner-box .image-box .image .shape-style1 {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  z-index: -1;
-  height: 543px;
-  width: 304px;
-  transform: translateX(-50%);
-  transition: all 300ms ease;
-}
-.team-skin-style8 .inner-box .image-box .image .shape-style1 path {
-  fill: rgba(102, 102, 102, 0.2705882353);
-  transition: all 300ms ease;
-}
-.team-skin-style8 .team-social {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-  list-style: none;
-  opacity: 0;
-  transition: all 300ms ease;
+.team-skin-style8 .inner-block:hover .content-box .inner-box {
   transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
 }
-.team-skin-style8 .team-social li {
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  display: inline-block;
-  border-radius: 50%;
-  background-color: var(--theme-color-gray);
-  margin-bottom: 0;
+.team-skin-style8 .image-box {
+  border-radius: 15px;
+  overflow: hidden;
 }
-.team-skin-style8 .team-social li:hover {
-  background-color: var(--theme-color1);
-}
-.team-skin-style8 .team-social li:hover a {
-  color: var(--theme-color2);
-}
-.team-skin-style8 .team-social li a {
-  color: #fff;
+.team-skin-style8 .image-box img {
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  transition: all 500ms ease;
 }
 .team-skin-style8 .content-box {
-  position: relative;
-  margin: 20px 0 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 30px 20px;
+  overflow: hidden;
 }
-.team-skin-style8 .content-box .team-title {
-  color: var(--headings-color);
-  margin-bottom: 0;
+.team-skin-style8 .content-box .inner-box {
+  background-color: #fff;
+  padding: 19px 15px 17px;
+  border-radius: 4px;
+  text-align: center;
+  max-width: 310px;
+  margin: 0 auto;
+  transform: translateY(100px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 500ms ease;
+}
+.team-skin-style8 .content-box .inner-box .team-title {
+  color: #000002;
+  margin-bottom: 3px;
+  margin-top: 0;
+}
+.team-skin-style8 .content-box .inner-box .team-title span {
+  font-weight: 300;
+}
+.team-skin-style8 .content-box .inner-box .team-subtitle {
+  margin: 0;
+  color: #505050;
+}
+.team-skin-style8 .content-box .inner-box .team-social {
+  margin-top: 11px;
+  gap: 11px;
+  display: flex;
+  justify-content: center;
+}
+.team-skin-style8 .content-box .inner-box .team-social li {
+  list-style-type: none;
+}
+.team-skin-style8 .content-box .inner-box .team-social li a {
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  width: 32px;
   transition: all 300ms ease;
 }
-.team-skin-style8 .content-box .team-title a:hover {
-  color: var(--theme-color1);
+.team-skin-style8 .content-box .inner-box .team-social li a:hover {
+  background-color: var(--theme-color1);
+  border-color: var(--theme-color1);
 }
-.team-skin-style8 .content-box .team-subtitle {
-  color: #666666;
-  font-size: 14px;
+.team-skin-style8 .content-box .inner-box .team-social li a:hover i {
+  color: var(--theme-color1-text-color);
+}
+.team-skin-style8 .content-box .inner-box .team-social li a i {
+  color: #000;
   transition: all 300ms ease;
+}
+
+.swiper-slide-active .team-skin-style8 .inner-block .content-box .inner-box,
+.swiper-slide-duplicate-prev .team-skin-style8 .inner-block .content-box .inner-box {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
 }

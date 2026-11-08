@@ -1,0 +1,123 @@
+.tm-sc-service .icon {
+  display: inline-block;
+}
+.tm-sc-service .icon,
+.tm-sc-service .feature-title,
+.tm-sc-service .feature-details {
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.service-block-style31 {
+  padding: 40px 30px;
+  background-color: var(--theme-color-white);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  border-radius: 30px;
+  transition: all 500ms ease;
+}
+.service-block-style31::before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0;
+  -webkit-transform: scale(1, 0.3);
+  transform: scale(1, 0.3);
+  background-color: var(--theme-color1);
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  z-index: -1;
+  border-radius: 30px;
+}
+.service-block-style31.active::before, .service-block-style31:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+.service-block-style31.active .content .service-title a, .service-block-style31:hover .content .service-title a {
+  color: var(--theme-color-white);
+}
+.service-block-style31.active .content .icon img, .service-block-style31.active .content .icon i, .service-block-style31.active .content .icon svg, .service-block-style31:hover .content .icon img, .service-block-style31:hover .content .icon i, .service-block-style31:hover .content .icon svg {
+  animation: wobble 1.5s ease-in-out;
+  color: var(--theme-color-white);
+}
+.service-block-style31.active .thumb, .service-block-style31:hover .thumb {
+  transform: rotateY(360deg);
+}
+.service-block-style31 .content .icon {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  font-size: 60px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.service-block-style31 .content .icon i, .service-block-style31 .content .icon svg {
+  display: inline-block;
+  font-size: 60px;
+  color: var(--theme-color1);
+  will-change: transform;
+}
+.service-block-style31 .content .service-title {
+  margin: 0;
+}
+.service-block-style31 .content .service-title a {
+  background-position: 0 95%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  display: inline;
+  color: var(--headings-color);
+  transition: all 0.4s ease-in-out;
+}
+.service-block-style31 .content .service-title a:hover {
+  color: var(--theme-color-white);
+  background-size: 100% 2px;
+  background-image: linear-gradient(180deg, var(--theme-color-white) 0%, var(--theme-color-white) 100%);
+}
+.service-block-style31 .thumb {
+  max-width: 252px;
+  position: relative;
+  mask-image: url("../../../images/current-theme/mask-image.png");
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-size: cover;
+  transition: all 900ms ease;
+  margin: 30px auto 0;
+}
+.service-block-style31 .thumb img {
+  width: 100%;
+  height: 100%;
+}
+@keyframes wobble {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  15% {
+    -webkit-transform: translate3d(-25%, 0, 0) rotate(-5deg);
+    transform: translate3d(-25%, 0, 0) rotate(-5deg);
+  }
+  30% {
+    -webkit-transform: translate3d(20%, 0, 0) rotate(3deg);
+    transform: translate3d(20%, 0, 0) rotate(3deg);
+  }
+  45% {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate(-3deg);
+    transform: translate3d(-15%, 0, 0) rotate(-3deg);
+  }
+  60% {
+    -webkit-transform: translate3d(10%, 0, 0) rotate(2deg);
+    transform: translate3d(10%, 0, 0) rotate(2deg);
+  }
+  75% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate(-1deg);
+    transform: translate3d(-5%, 0, 0) rotate(-1deg);
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}

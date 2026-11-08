@@ -1,0 +1,133 @@
+@import "../../bootstrap-loader";
+@import "testimonial-common";
+.testimonial-block-style26 {
+  position: relative;
+  z-index: 3;
+  .inner-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .image-box {
+      position: relative;
+      display: flex;
+      @include media-breakpoint-down(xl) {
+        display: block;
+        flex-shrink: 0;
+        margin-right: 30px;
+      }
+      @include media-breakpoint-down(md) {
+        margin-right: 0;
+      }
+      .image {
+        position: relative;
+        flex-shrink: 0;
+        clip-path: polygon(31% 0, 100% 0, 69% 100%, 0% 100%);
+        @include media-breakpoint-down(xl) {
+          clip-path: none;
+        }
+        img {
+          position: relative;
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          @include transition(all 300ms ease);
+        }
+        &.two {
+          margin-left: -80px;
+          @include media-breakpoint-down(xl) {
+            display: none;
+          }
+        }
+      }
+      .icon-quote {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 73px;
+        height: 73px;
+        @include flex-center;
+        font-size: 30px;
+        border-radius: 50%;
+        color: var(--headings-color);
+        background-color: var(--theme-color1);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../../../images/current-theme/icon-quote3.png);
+        @include media-breakpoint-down(xl) {
+          top: 10px;
+          right: 10px;
+        }
+      }
+    }
+    .content {
+      position: relative;
+      max-width: 540px;
+      padding-right: 30px;
+      @include media-breakpoint-down(xxl) {
+        max-width: 550px;
+      }
+      @include media-breakpoint-down(xl) {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .author-text {
+        position: relative;
+        color: var(--headings-color);
+        font-size: 20px;
+        line-height: 36px;
+        margin-bottom: 12px;
+        @include media-breakpoint-down(sm) {
+          font-size: 16px;
+          line-height: 30px;
+          margin-top: 20px;
+          margin-bottom: 0;
+        }
+      }
+      .author-box {
+        position: relative;
+        display: flex;
+        .author-info {
+          position: relative;
+          padding-top: 19px;
+          .testimonial-name {
+            position: relative;
+            margin-top: 0;
+            margin-bottom: 1px;
+          }
+          .rating-box {
+            position: relative;
+            display: flex;
+            align-items: center;
+            .testimonial-position {
+              position: relative;
+              display: block;
+              color: #161616;
+              margin-bottom: 0;
+            }
+            .rating {
+              position: relative;
+              padding-left: 15px;
+              .star-rating {
+                font-size: 12px;
+                width: 7.6em;
+                letter-spacing: 6px;
+                span {
+                  &:before {
+                    color: #101010;
+                    font-weight: 600;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

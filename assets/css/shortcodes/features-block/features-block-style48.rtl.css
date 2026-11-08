@@ -1,0 +1,55 @@
+.features-block-style48 .inner-block {
+  display: flex;
+  gap: 24px;
+}
+.features-block-style48 .inner-block:hover .icon-block i,
+.features-block-style48 .inner-block:hover .icon-block img {
+  animation: wobble 1.5s ease-in-out;
+}
+.features-block-style48 .inner-block .icon-block {
+  background-color: #f7f8ed;
+  border-radius: 50%;
+  height: 70px;
+  line-height: 1;
+  width: 70px;
+  min-width: 70px;
+  font-size: 40px;
+  color: var(--theme-color3);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  margin-bottom: 15px;
+  position: relative;
+  top: 5px;
+  transition: all 300ms ease;
+}
+.features-block-style48 .inner-block .icon-block .icon {
+  position: relative;
+}
+.features-block-style48 .inner-block .icon-block .icon:before {
+  border-radius: 50%;
+  background-color: var(--theme-color1);
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  right: calc(50% - 8px);
+  height: 16px;
+  width: 16px;
+  transition: all 300ms ease;
+}
+.features-block-style48 .inner-block .icon-block i,
+.features-block-style48 .inner-block .icon-block img {
+  display: inline-block;
+  position: relative;
+  transition: all 300ms ease;
+}
+.features-block-style48 .inner-block .features-title {
+  margin-top: 0;
+  margin-bottom: 6px;
+  transition: all 300ms ease;
+}
+.features-block-style48 .inner-block .features-details {
+  margin-bottom: 0;
+  transition: all 300ms ease;
+}

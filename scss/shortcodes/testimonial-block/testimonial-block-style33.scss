@@ -1,0 +1,100 @@
+@import "../../bootstrap-loader";
+@import "testimonial-common";
+
+.testimonial-block-style33 {
+    display: flex;
+    background-color: var(--theme-color2);
+    padding: 50px 30px;
+    padding-right: 40px;
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+    .clints-info {
+      text-align: center;
+      padding-right: 25px;
+      @include media-breakpoint-down(sm) {
+        text-align: left;
+      }
+      .name {
+        display: inline-flex;
+        flex-direction: column;
+        text-align: start;
+        writing-mode: sideways-lr;
+        @include media-breakpoint-down(sm) {
+          writing-mode: inherit;
+        }
+      }
+      .testimonial-name {
+        color: var(--theme-color-white);
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: -0.48px;
+        text-transform: capitalize;
+        margin: 0;
+      }
+      .testimonial-position {
+        color: #878787;
+        font-weight: 600;
+      }
+      .image {
+        padding-top: 90px;
+        img {
+          width: 70px;
+          height: 63px;
+          object-fit: cover;
+          border-radius: 100%;
+        }
+        @include media-breakpoint-down(sm) {
+          padding: 20px 0;
+        }
+      }
+    }
+    .content {
+      border-left: 1px solid #ffffff1a;
+      padding-left: 40px;
+      @include media-breakpoint-down(sm) {
+        border-left: 0;
+        padding-left: 0;
+      }
+      .star-rating {
+        @include flex;
+        gap: 5px;
+        padding-bottom: 52px;
+        color: var(--theme-color1);
+        @include media-breakpoint-down(sm) {
+          padding-bottom: 20px;
+        }
+        &::before {
+          color: #fbaa7e;
+          font-weight: 500;
+          font-size: 16px;
+          letter-spacing: 5px;
+          top: -1px;
+          left: -3px;
+        }
+        span {
+          width: 100%;
+          &::before {
+            color: #fbaa7e;
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 5px;
+            top: -1px;
+            left: -3px;
+            opacity: 0;
+          }
+        }
+      }
+      .author-text {
+        color: #878787;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 34px;
+        letter-spacing: -0.48px;
+        padding-bottom: 60px;
+        @include media-breakpoint-down(sm) {
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }

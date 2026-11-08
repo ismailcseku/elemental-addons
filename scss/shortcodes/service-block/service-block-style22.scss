@@ -1,0 +1,257 @@
+@import "../../bootstrap-loader";
+@import "service-common";
+
+.service-block-style22 {
+  background-color: #C3ABFF;
+  padding: 66px 10px 80px;
+  border-radius: 32px;
+  .content-column {
+    .inner-column {
+      margin-left: 195px;
+      @media (max-width: 1599.98px) {
+        margin-left: 0;
+      }
+    }
+    .content {
+      color: rgba(30, 30, 30, 0.24);
+      font-size: 120px;
+      font-weight: 600;
+      line-height: 1;
+      margin-bottom: 50px;
+      @include media-breakpoint-down(sm){
+        font-size: 80px;
+        margin-bottom: 30px;
+      }
+    }
+    .service-title {
+      color: var(--theme-color2);
+      margin-bottom: 23px;
+      margin-top: 0;
+    }
+    .text {
+      color: #474747;
+      margin-bottom: 20px;
+      @media (max-width: 1399.98px) {
+        br {
+          display: none;
+        }
+      }
+    }
+    .list-style-one {
+      margin-top: 36px;
+      margin-bottom: 60px;
+      @include media-breakpoint-down(sm){
+        margin-bottom: 30px;
+      }
+    }
+    /*=== List Style One ===*/
+    .list-style-one {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        li {
+            position: relative;
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 600;
+            color: #121212;
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            &:last-child {margin-right: 0 !important;}
+            i {
+              color: #121212;
+              font-size: 13px;
+              line-height: 1;
+            }
+        }
+        &.light{
+            li{
+                color: var(--theme-color-light);
+                a{
+                    color: var(--theme-color-light);
+                    &:hover{
+                        color: var(--theme-color1);
+                    }
+                }
+            }
+            i{color: var(--theme-color-light);}
+        }
+    }
+    .theme-btn {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      gap: 8px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-transition: all 300ms ease;
+      transition: all 300ms ease;
+    }
+    .btn-style-one {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      .left-arrow {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        opacity: 0;
+        width: 52px;
+        height: 52px;
+        font-size: 18px;
+        line-height: 52px;
+        border-radius: 50%;
+        display: inline-flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0);
+        background-color: #FED35B;
+        color: var(--theme-color1);
+        @include transition(all 500ms ease);
+        &:hover {
+          color: var(--theme-color1-text-color);
+          background-color: #fff;
+        }
+        &:before {
+          display: inline-block;
+          transform: rotate(-45deg);
+        }
+        img {
+          width: 19px;
+          height: 12px;
+        }
+        i {
+          color: var(--theme-color2);
+        }
+      }
+      .btn-text {
+        position: relative;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 600;
+        padding: 10px 31px;
+        border-radius: 40px;
+        display: inline-block;
+        text-transform: capitalize;
+        color: var(--theme-color2);
+        border: 1px solid rgba(30, 30, 30, 0.28);
+        @include transition(all 500ms ease);
+      }
+      .right-arrow {
+        position: relative;
+        font-size: 18px;
+        width: 52px;
+        height: 52px;
+        line-height: 52px;
+        border-radius: 50%;
+        display: inline-block;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--theme-color1);
+        background-color: #FED35B;
+        @include transition(all 500ms ease);
+        &:before {
+          display: inline-block;
+          transform: rotate(-45deg);
+        }
+        &:hover {
+          color: var(--theme-color1-text-color);
+          background-color: #fff;
+        }
+        img {
+          width: 19px;
+          height: 12px;
+        }
+        i {
+          color: var(--theme-color2);
+        }
+      }
+
+      // Hover Effect
+      &:hover {
+        //Left Arrow
+        .left-arrow {
+          opacity: 1;
+          transform: scale(1);
+        }
+
+        .btn-text {
+          transform: translateX(60px);
+        }
+
+        .right-arrow {
+          transform: scale(0);
+        }
+      }
+    }
+  }
+  .image-column {
+    .inner-column {
+      @include media-breakpoint-down(lg){
+        margin-top: 30px;
+      }
+      .image {
+        border-radius: 16px;
+        max-width: 722px;
+        margin-left: 74px;
+        overflow: hidden;
+        @media (max-width: 1399.98px) {
+          margin-left: 0;
+        }
+        @include media-breakpoint-down(lg){
+          max-width: 100%;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .container {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto
+  }
+}
+.isotope-item:nth-child(2) .service-block-style22 {
+  background-color: #FFFFFF;
+
+}
+.isotope-item:nth-child(3) .service-block-style22 {
+  background-color: #FED35B;
+ .btn-style-one {
+    .left-arrow {
+      color: var(--theme-color2);
+      background-color: #FFFFFF;;
+    }
+    .right-arrow {
+      color: var(--theme-color2);
+      background-color: #FFFFFF;;
+    }
+  }
+}
+.isotope-item:nth-child(4) .service-block-style22 {
+  background-color: #FFB6D0;
+  .btn-style-one {
+    .left-arrow {
+      color: var(--theme-color2);
+      background-color: #FFFFFF;
+    }
+    .right-arrow {
+      color: var(--theme-color2);
+      background-color: #FFFFFF;
+    }
+  }
+}

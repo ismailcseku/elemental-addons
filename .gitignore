@@ -3,3 +3,9 @@ npm-debug.log*
 package-lock.json
 *.log
 .DS_Store
+
+# Local porting / tooling artifacts
+*.csv
+*.py
+__pycache__/
+*.pyc

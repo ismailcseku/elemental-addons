@@ -114,8 +114,6 @@
       z-index: 2;
       line-height: 1em;
       letter-spacing: 0.1em;
-      font-family: var(--heading-font-family);
-      text-transform: uppercase;
       margin-bottom: 5px;
       @include transition(all 400ms ease);
     }

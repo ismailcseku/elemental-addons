@@ -62,7 +62,6 @@
   position: relative;
   display: block;
   z-index: 2;
-  font-family: var(--heading-font-family);
   transition: all 300ms ease;
   font-size: 15px;
   color: #fff;

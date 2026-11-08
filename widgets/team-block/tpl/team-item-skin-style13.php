@@ -4,7 +4,7 @@ $team_item['settings'] = $settings;
 $team_item['title_tag'] = $title_tag;
 $team_item['subtitle_tag'] = $subtitle_tag;
 ?>
-<div class="team-skin-style13 team-item">
+<div class="team-skin-style13">
   <div class="team-content">
     <div class="social-wrap">
       <span class="team-share fa fa-share-alt"></span>

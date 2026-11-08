@@ -1,0 +1,185 @@
+@import "../../bootstrap-loader";
+@import "service-common";
+.service-block-style14 {
+  .inner-box {
+    margin-bottom: 40px;
+    &.active {
+      .title-box {
+        .title-area {
+          .service-count {
+            color: var(--theme-color1);
+          }
+        }
+        .icon-2 {
+          background-color: var(--theme-color1);
+          color: var(--theme-color1-text-color);
+          i {
+            @include transform(rotate(0deg));
+          }
+        }
+      }
+      .content-box {
+        display: inline-flex;
+      }
+    }
+    .title-box {
+      padding-left: 70px;
+      @include flex-between;
+      background-color: var(--theme-color2);
+      padding: 20px 20px 20px 77px;
+      border-radius: 120px;
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      @include media-breakpoint-down(xl) {
+        padding-left: 20px;
+      }
+      @include media-breakpoint-down(md) {
+        flex-direction: column;
+        text-align: center;
+        border-radius: 30px;
+        gap: 25px;
+      }
+      .icon-2 {
+        @include icon;
+        width: 100px;
+        height: 100px;
+        background: var(--theme-color3);
+        color: var(--theme-color1);
+        @include transition(all 500 ease);
+        @include media-breakpoint-down(md) {
+          width: 80px;
+          height: 80px;
+
+          i {
+            font-size: 35px !important;
+            @include transition(all 500ms ease);
+          }
+        }
+
+        i {
+          font-size: 50px;
+          @include transform(rotate(-30deg));
+        }
+
+        &:hover {
+          background: var(--theme-color1);
+          color: var(--theme-color2);
+          i {
+            @include transform(rotate(0));
+          }
+        }
+      }
+
+      .title-area {
+        display: inline-flex;
+        @include media-breakpoint-down(md) {
+          flex-direction: column;
+        }
+        .service-count {
+          margin-right: 26px;
+          font-size: 48px;
+          font-weight: 500;
+          line-height: var(--headings-line-height);
+          color: #fff;
+          display: inline-block;
+          @include media-breakpoint-down(lg) {
+            font-size: 34px;
+          }
+          @include media-breakpoint-down(md) {
+            margin-right: 0;
+            line-height: 1;
+          }
+        }
+        .service-title {
+          color: #fff;
+          margin: 0;
+          @include media-breakpoint-down(xxl) {
+            flex-basis: initial;
+          }
+          @include media-breakpoint-down(lg) {
+            font-size: 34px;
+          }
+        }
+      }
+    }
+
+    .content-box {
+      text-align: left;
+      padding: 39px 0 10px 0;
+      border-radius: 0;
+      margin: 0 56px 0 70px;
+      display: none;
+      gap: 80px;
+      @include media-breakpoint-down(xxl) {
+        gap: 30px;
+      }
+      @include media-breakpoint-down(xl) {
+        margin: 0 40px;
+      }
+      @include media-breakpoint-down(lg) {
+        flex-direction: column;
+        margin: 0 20px 40px;
+      }
+      @include media-breakpoint-down(md) {
+        margin: 0 0px 40px;
+      }
+      .content {
+        padding-top: 10px;
+        display: inline-flex;
+        justify-content: space-between;
+        .service-details {
+          font-size: 18px;
+          line-height: 30px;
+          position: relative;
+          letter-spacing: -0.36px;
+          .list {
+            @include flex-center;
+            flex-wrap: wrap;
+            justify-content: start;
+            &:first-child {
+              border-top: 1px solid rgba(255, 255, 255, 0.2);
+              margin-top: 30px;
+              padding-top: 30px;
+              margin-bottom: 0;
+            }
+            li {
+              list-style: none;
+              color: #fff;
+              font-size: 16px;
+              font-weight: 400;
+              letter-spacing: -0.32px;
+              margin-right: 35px;
+              margin-bottom: 19px;
+              &:last-child {
+                margin-bottom: 19px;
+              }
+              @include media-breakpoint-down(md) {
+                margin-right: 15px;
+              }
+              i {
+                color: var(--theme-color1);
+                padding-right: 10px;
+              }
+            }
+          }
+        }
+      }
+
+      .service-image {
+        min-width: 400px;
+        max-width: 400px;
+        @include media-breakpoint-down(lg) {
+          min-width: 220px;
+        }
+        @include media-breakpoint-down(lg) {
+          max-width: 100%;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

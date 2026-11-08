@@ -1,0 +1,60 @@
+@import "../../bootstrap-loader";
+@import "testimonial-common";
+
+// Testimonial area start here ***
+.testimonial-block-style7 {
+  position: relative;
+  &:hover {
+    .inner-box {
+      .icon {
+      }
+    }
+  }
+  .inner-box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    .icon {
+      @include radius(60px, 60px, 60px);
+      width: 60px;
+      height: 60px;
+      align-items: center;
+      border-radius: 50%;
+      transition: var(--transition);
+      background-color: var(--theme-color1);
+      backdrop-filter: blur(10px);
+      color: #fff;
+      margin-bottom: 50px;
+      font-size: 30px;
+    }
+    .author-text {}
+    .testi-info {
+      display: flex;
+      position: relative;
+      align-items: center;
+      margin-top: 100px;
+      .testimonial-name {
+        position: relative;
+        padding-left: 50px;
+        margin: 0;
+        &::after {
+          position: absolute;
+          top: 20px;
+          left: 0px;
+          width: 32px;
+          height: 2px;
+          background-color: #222;
+          content: "";
+        }
+      }
+      .testimonial-position {
+        color: #868686dd;
+        font-weight: 400;
+        position: relative;
+        padding-left: 10px;
+      }
+    }
+  }
+}
+// Testimonial area end here ***

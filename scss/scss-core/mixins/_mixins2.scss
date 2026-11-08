@@ -49,6 +49,22 @@
   justify-content: space-between;
 }
 
+@mixin justify-wrp {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin radius($width, $height, $line-hight) {
+  width: $width;
+  height: $height;
+  line-height: $line-hight;
+  text-align: center;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
 @mixin overlay {
   position: absolute;
   left: 0;

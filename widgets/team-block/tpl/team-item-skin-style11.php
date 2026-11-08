@@ -12,7 +12,7 @@ if ( $image_id ) {
 ?>
 
 
-<div class="team-skin-style11 team-item">
+<div class="team-skin-style11">
 	<div class="inner-box">
 		<div class="team-media member-image" style="background-image: url(<?php echo esc_url( $image_url ); ?>)"></div>
 		<div class="team-content content-box">

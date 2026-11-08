@@ -1,0 +1,101 @@
+@import "../../bootstrap-loader";
+@import "testimonial-common";
+.testimonial-block-style15 {
+  margin-bottom: 30px;
+  position: relative;
+  .inner-box {
+    background-color: var(--theme-color2);
+    body.tm-dark-layout & {
+      background-color: #323232;
+    }
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 30px 40px;
+    position: relative;
+    transition: all 300ms ease;
+    &:hover {
+      background: var(--theme-color1);
+      .content-box {
+        .icon {
+          color: #fff;
+        }
+        .author-text {
+          color: #fff;
+        }
+      }
+      .info-box {
+        .thumb {
+          transform: scaleX(-1);
+        }
+        .testimonial-name {
+          color: #fff;
+        }
+        .testimonial-position {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .content-box {
+    position: relative;
+    .icon {
+      color: var(--theme-color1);
+      display: inline-block;
+      font-size: 56px;
+      line-height: 36px;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    .author-text {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      margin-bottom: 0;
+      position: relative;
+      transition: all 100ms ease;
+    }
+  }
+  .info-box {
+    align-items: center;
+    border-top: 1px solid rgb(204, 204, 204, 0.3);
+    display: flex;
+    margin-top: 23px;
+    padding: 30px 0 0;
+    position: relative;
+    @include media-breakpoint-down(sm) {
+      padding: 30px 30px;
+      text-align: center;
+    }
+    .thumb {
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      margin: 0 15px 0 0;
+      overflow: hidden;
+      transition: all 300ms ease;
+      @include media-breakpoint-down(sm) {
+        display: inline-block;
+        left: 0;
+        margin-bottom: 0px;
+        position: relative;
+        top: 0;
+      }
+    }
+    .testimonial-name {
+      margin: 0;
+      color: #fff;
+    }
+    .testimonial-position {
+      color: #999;
+      display: block;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.tm-testimonial-carousel {
+  .testimonial-block-style15 {
+    .inner-box {
+      box-shadow: none;
+    }
+  }
+}

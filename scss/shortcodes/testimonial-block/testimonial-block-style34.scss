@@ -1,0 +1,177 @@
+@import "../../bootstrap-loader";
+@import "testimonial-common";
+
+.testimonial-block-style34 {
+  .inner-box {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @include media-breakpoint-down(xxl) {
+      flex-wrap: wrap;
+    }
+    @include media-breakpoint-down(xl) {
+      display: block;
+    }
+    .image-box {
+      max-width: 25%;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      @include media-breakpoint-down(xl) {
+        max-width: 300px;
+        margin: 0 auto;
+      }
+      .quate {
+        svg {
+          path {
+            width: 90px;
+            height: 90px;
+            line-height: 90px;
+            text-align: center;
+            border-radius: 50%;
+            background-color: var(--theme-color3);
+            position: absolute;
+            top: -15px;
+            right: 5px;
+            font-size: 30px;
+            fill: var(--theme-color1);
+          }
+        }
+        i {
+          width: 90px;
+          height: 90px;
+          line-height: 90px;
+          text-align: center;
+          border-radius: 50%;
+          background-color: var(--theme-color3);
+          position: absolute;
+          top: -15px;
+          right: 5px;
+          font-size: 30px;
+          color: var(--theme-color1);
+        }
+      }
+      .image {
+        overflow: hidden;
+        border-radius: 50%;
+        &::after {
+          background-color: rgba(var(--theme-color-white-rgb), 0.3);
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 0;
+          opacity: 1;
+          z-index: 9;
+          pointer-events: none;
+        }
+      }
+      .star {
+        padding: 15px 0px;
+        border: 1px solid #e1e1e1;
+        [data-tm-layout="dark"] & {
+          border-color: #ffffff1c;
+        }
+        border-radius: 30px;
+        max-width: 200px;
+        margin: 40px auto 40px;
+        position: relative;
+        @include media-breakpoint-down(md) {
+          max-width: 100%;
+          margin: 30px 0 0 0;
+        }
+        &::after {
+          position: absolute;
+          top: -14px;
+          left: 50%;
+          transform: translateX(-50%) rotate(45deg);
+          border-top: 1px solid #e1e1e1;
+          [data-tm-layout="dark"] & {
+            border-color: #ffffff1c;
+          }
+          border-left: 1px solid #e1e1e1;
+          [data-tm-layout="dark"] & {
+            border-color: #ffffff1c;
+          }
+          background-color: var(--theme-color-white);
+          width: 25px;
+          height: 25px;
+          content: "";
+        }
+        .star-rating {
+          width: 100%;
+          text-align: center;
+          margin: 0;
+          &::before {
+            right: 0;
+          }
+          span {
+            &::before {
+              right: 0;
+              color: #ff8c22;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+      @include media-breakpoint-down(lg) {
+        margin: 0 auto;
+      }
+    }
+    .content-box {
+      max-width: 65%;
+      @include media-breakpoint-down(xl) {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+      .author-text {
+        font-size: 28px;
+        line-height: 50px;
+        font-weight: 500;
+        padding-bottom: 30px;
+        margin-bottom: 35px;
+        color: var(--headings-color);
+        border-bottom: 1px solid rgba(var(--theme-color2-rgb), 0.1);
+        @include media-breakpoint-down(sm) {
+          font-size: 20px;
+          line-height: 30px;
+          padding: 30px 20px;
+        }
+      }
+      .testimonial-name {
+        display: inline-block;
+        margin: 0px 10px 0px 0px;
+      }
+      .testimonial-position {
+        color: var(--text-color);
+        font-size: 14px;
+        font-weight: 400;
+        display: inline-block;
+      }
+    }
+    &:hover {
+      .image-box {
+        .quate {
+          svg {
+            animation: iconBounceIn 1s forwards;
+          }
+        }
+        .image {
+          &::after {
+            height: 100%;
+            opacity: 0;
+            -webkit-transition: all 400ms linear;
+            transition: all 400ms linear;
+          }
+        }
+      }
+    }
+  }
+}

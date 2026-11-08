@@ -9,7 +9,7 @@ $team_item['subtitle_tag'] = $subtitle_tag;
 $team_item['title_tag'] = $title_tag;
 $team_item['subtitle_tag'] = $subtitle_tag;
 ?>
-<div class="team-skin-style24 team-item">
+<div class="team-skin-style24">
   <div class="inner-box">
     <div class="team-media image-box">
       <div class="team-media thumb">

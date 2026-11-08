@@ -1,0 +1,204 @@
+.tm-sc-service .icon {
+  display: inline-block;
+}
+.tm-sc-service .icon,
+.tm-sc-service .feature-title,
+.tm-sc-service .feature-details {
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.service-block-style32 .inner-block {
+  background-color: #faf0e8;
+  border-radius: 30px;
+  position: relative;
+  transition: all 300ms ease;
+}
+.service-block-style32 .inner-block:hover {
+  background-color: var(--theme-color1);
+}
+.service-block-style32 .inner-block:hover .image-box .image:before {
+  height: 0;
+}
+.service-block-style32 .inner-block:hover .image-box .image:after {
+  height: 100%;
+}
+.service-block-style32 .inner-block:hover .image-box .image img:first-child {
+  transform: translateX(0) scaleX(1);
+  opacity: 1;
+  filter: blur(0);
+}
+.service-block-style32 .inner-block:hover .image-box .image img:nth-child(2) {
+  transform: translateX(50%) scaleX(2);
+  opacity: 0;
+  filter: blur(10px);
+}
+.service-block-style32 .inner-block:hover .content-box .icon-block {
+  background-color: var(--theme-color3);
+  color: var(--theme-color3-text-color);
+}
+.service-block-style32 .inner-block:hover .content-box .icon-block i,
+.service-block-style32 .inner-block:hover .content-box .icon-block img {
+  transform: scaleX(-1);
+}
+.service-block-style32 .inner-block:hover .content-box .service-title {
+  color: #fff;
+}
+.service-block-style32 .inner-block:hover .content-box .service-details {
+  color: rgba(255, 255, 255, 0.8);
+}
+.service-block-style32 .inner-block:hover .content-box .btn-more {
+  background: var(--theme-color3);
+  color: var(--theme-color3-text-color);
+}
+.service-block-style32 .inner-block:hover .content-box .btn-more .btn-icon {
+  background-color: var(--theme-color1);
+  color: var(--theme-color1-text-color);
+}
+.service-block-style32 .inner-block:hover .shape-style1 {
+  opacity: 0;
+}
+.service-block-style32 .inner-block:hover .shape-style1 svg path {
+  fill: var(--theme-color1);
+}
+.service-block-style32 .inner-block .image-box {
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+.service-block-style32 .inner-block .image-box .image {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  z-index: 0;
+}
+.service-block-style32 .inner-block .image-box .image:before {
+  background-color: #faf0e8;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  transition: all 300ms ease;
+}
+.service-block-style32 .inner-block .image-box .image:after {
+  background: linear-gradient(-180deg, rgba(87, 48, 68, 0) 0%, #573044 100%);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 0;
+  width: 100%;
+  z-index: 2;
+  transition: all 300ms ease;
+}
+.service-block-style32 .inner-block .image-box .image img {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: all 500ms ease;
+}
+.service-block-style32 .inner-block .image-box .image img:first-child {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  z-index: 1;
+  transform: translateX(-50%) scaleX(2);
+  opacity: 0;
+  filter: blur(10px);
+}
+.service-block-style32 .inner-block .content-box {
+  padding: 30px;
+  position: relative;
+}
+.service-block-style32 .inner-block .content-box .icon-block {
+  background-color: var(--theme-color1);
+  border-radius: 50%;
+  height: 70px;
+  line-height: 1;
+  width: 70px;
+  font-size: 40px;
+  color: var(--theme-color1-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  margin-bottom: 23px;
+  transition: all 300ms ease;
+}
+.service-block-style32 .inner-block .content-box .icon-block .icon {
+  position: relative;
+}
+.service-block-style32 .inner-block .content-box .icon-block i,
+.service-block-style32 .inner-block .content-box .icon-block img {
+  display: inline-block;
+  position: relative;
+  transition: all 300ms ease;
+}
+.service-block-style32 .inner-block .content-box .service-title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  transition: all 300ms ease;
+}
+.service-block-style32 .inner-block .content-box .service-title a:hover, .service-block-style32 .inner-block .content-box .service-title a:focus {
+  color: #fff;
+}
+.service-block-style32 .inner-block .content-box .service-details {
+  margin-bottom: 50px;
+  transition: all 300ms ease;
+}
+.service-block-style32 .inner-block .content-box .btn-more {
+  background-color: #fff;
+  border-radius: 25px;
+  color: var(--theme-color2);
+  font-weight: 600;
+  padding: 6px 20px 6px 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 300ms ease;
+}
+.service-block-style32 .inner-block .content-box .btn-more .btn-title {
+  transition: all 300ms ease;
+}
+.service-block-style32 .inner-block .content-box .btn-more .btn-icon {
+  background-color: #faf0e8;
+  border-radius: 50%;
+  height: 40px;
+  line-height: 1;
+  width: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms ease;
+}
+.service-block-style32 .inner-block .content-box .btn-more i,
+.service-block-style32 .inner-block .content-box .btn-more img {
+  display: inline-block;
+  transform: rotate(45deg);
+  transition: all 300ms ease;
+}
+.service-block-style32 .inner-block .content-box .btn-more:hover i,
+.service-block-style32 .inner-block .content-box .btn-more:hover img {
+  transform: rotate(0deg);
+}
+.service-block-style32 .inner-block .shape-style1 {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  background-image: url(../../../images/current-theme/love.png);
+  width: 91px;
+  height: 88px;
+  transition: all 300ms ease;
+}

@@ -1,0 +1,213 @@
+@import "../../bootstrap-loader";
+@import "service-common";
+.service-block-style32 {
+  .inner-block {
+    background-color: #faf0e8;
+    border-radius: 30px;
+    position: relative;
+    @include transition(all 300ms ease);
+    &:hover {
+      background-color: var(--theme-color1);
+      .image-box {
+        .image {
+          &:before {
+            height: 0;
+          }
+          &:after {
+            height: 100%;
+          }
+          img {
+            &:first-child {
+              transform: translateX(0) scaleX(1);
+              opacity: 1;
+              filter: blur(0);
+            }
+            &:nth-child(2) {
+              transform: translateX(-50%) scaleX(2);
+              opacity: 0;
+              filter: blur(10px);
+            }
+          }
+        }
+      }
+      .content-box {
+        .icon-block {
+          background-color: var(--theme-color3);
+          color: var(--theme-color3-text-color);
+          i,
+          img {
+            transform: scaleX(-1);
+          }
+        }
+        .service-title {
+          color: #fff;
+        }
+        .service-details {
+          color: rgba(255, 255, 255, 0.8);
+        }
+        .btn-more {
+          background: var(--theme-color3);
+          color: var(--theme-color3-text-color);
+          .btn-icon {
+            background-color: var(--theme-color1);
+            color: var(--theme-color1-text-color);
+          }
+        }
+      }
+      .shape-style1 {
+        opacity: 0;
+        svg {
+          path {
+            fill: var(--theme-color1);
+          }
+        }
+      }
+    }
+    .image-box {
+      border-radius: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      .image {
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+        z-index: 0;
+        &:before {
+          background-color: #faf0e8;
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          z-index: 2;
+          @include transition(all 300ms ease);
+        }
+        &:after {
+          background: linear-gradient(180deg, rgba(87, 48, 68, 0) 0%, #573044 100%);
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 0;
+          width: 100%;
+          z-index: 2;
+          @include transition(all 300ms ease);
+        }
+        img {
+          position: relative;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          display: block;
+          @include transition(all 500ms ease);
+          &:first-child {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            z-index: 1;
+            transform: translateX(50%) scaleX(2);
+            opacity: 0;
+            filter: blur(10px);
+          }
+        }
+      }
+    }
+    .content-box {
+      padding: 30px;
+      position: relative;
+      .icon-block {
+        background-color: var(--theme-color1);
+        border-radius: 50%;
+        height: 70px;
+        line-height: 1;
+        width: 70px;
+        font-size: 40px;
+        color: var(--theme-color1-text-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        margin-bottom: 23px;
+        @include transition(all 300ms ease);
+        .icon {
+          position: relative;
+        }
+        i,
+        img {
+          display: inline-block;
+          position: relative;
+          @include transition(all 300ms ease);
+        }
+      }
+      .service-title {
+        margin-top: 0;
+        margin-bottom: 16px;
+        @include transition(all 300ms ease);
+        a {
+          &:hover,
+          &:focus {
+            color: #fff;
+          }
+        }
+      }
+      .service-details {
+        margin-bottom: 50px;
+        @include transition(all 300ms ease);
+      }
+      .btn-more {
+        background-color: #fff;
+        border-radius: 25px;
+        color: var(--theme-color2);
+        font-weight: 600;
+        padding: 6px 6px 6px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include transition(all 300ms ease);
+        .btn-title {
+          @include transition(all 300ms ease);
+        }
+        .btn-icon {
+          background-color: #faf0e8;
+          border-radius: 50%;
+          height: 40px;
+          line-height: 1;
+          width: 40px;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          @include transition(all 300ms ease);
+        }
+        i,
+        img {
+          display: inline-block;
+          transform: rotate(-45deg);
+          @include transition(all 300ms ease);
+        }
+        &:hover {
+          i,
+          img {
+            transform: rotate(0deg);
+          }
+        }
+      }
+    }
+    .shape-style1 {
+      content: "";
+      position: absolute;
+      right: 5px;
+      top: 10px;
+      background-image: url(../../../images/current-theme/love.png);
+      width: 91px;
+      height: 88px;
+      @include transition(all 300ms ease);
+    }
+  }
+}

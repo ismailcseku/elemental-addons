@@ -1,0 +1,102 @@
+.tm-sc-features .icon {
+  display: inline-block;
+}
+.tm-sc-features .icon,
+.tm-sc-features .features-title,
+.tm-sc-features .features-details {
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.feature-side-line {
+  position: relative;
+}
+.feature-side-line .icon-box-wrapper:after {
+  content: "";
+  background: #333;
+  width: 2px;
+  position: absolute;
+  right: 25px;
+  top: 60px;
+  bottom: -12px;
+}
+@media (max-width: 575.98px) {
+  .feature-side-line .icon-box-wrapper:after {
+    display: none;
+  }
+}
+
+.features-block-style45 {
+  margin-bottom: 49px;
+}
+.features-block-style45:last-child .inner-box:before {
+  width: 100%;
+}
+.features-block-style45 .inner-box {
+  position: relative;
+}
+.features-block-style45 .inner-box:hover .content-box {
+  border-color: var(--theme-color1);
+}
+.features-block-style45 .inner-box:hover .content-box .icon-box {
+  background-color: var(--theme-color1);
+  border-color: var(--theme-color1);
+}
+.features-block-style45 .inner-box:hover .content-box .icon-box i {
+  transform: scale(1);
+  opacity: 1;
+}
+.features-block-style45 .inner-box:hover .content-box .icon-box .number {
+  display: none;
+}
+.features-block-style45 .inner-box .content-box {
+  display: flex;
+  transition: all 300ms ease;
+}
+@media (max-width: 575.98px) {
+  .features-block-style45 .inner-box .content-box {
+    display: block;
+  }
+}
+.features-block-style45 .inner-box .content-box .title {
+  margin-bottom: 12px;
+}
+.features-block-style45 .inner-box .icon-box {
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  border-radius: 50%;
+  color: var(--theme-color1);
+  font-size: 50px;
+  line-height: 1;
+  margin-bottom: 0;
+  margin-left: 30px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  width: 100px;
+  min-width: 100px;
+  position: relative;
+  transition: all 300ms ease;
+}
+@media (max-width: 575.98px) {
+  .features-block-style45 .inner-box .icon-box {
+    margin-bottom: 20px;
+  }
+}
+.features-block-style45 .inner-box .icon-box i {
+  color: var(--theme-color-white);
+  display: inline-block;
+  transform: scale(0);
+  transition: all 300ms ease;
+  opacity: 0;
+}
+.features-block-style45 .inner-box .icon-box .number {
+  color: var(--headings-color);
+  font-style: italic;
+  font-size: 50px;
+  line-height: 1;
+  position: absolute;
+  top: calc(50% - 6px);
+  right: 50%;
+  transform: translate(50%, -50%);
+  transition: all 300ms ease;
+}

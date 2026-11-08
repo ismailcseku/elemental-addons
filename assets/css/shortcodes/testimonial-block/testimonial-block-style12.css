@@ -1,0 +1,164 @@
+.tm-sc-testimonials .star-rating {
+  float: right;
+  overflow: hidden;
+  position: relative;
+  height: 1.1em;
+  line-height: 1.2;
+  font-size: 0.9em;
+  width: 5.6em;
+}
+.tm-sc-testimonials .star-rating::before {
+  content: "\f005\f005\f005\f005\f005";
+  color: #d3ced2;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 500;
+  float: left;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.tm-sc-testimonials .star-rating span {
+  overflow: hidden;
+  float: left;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding-top: 1.5em;
+}
+.tm-sc-testimonials .star-rating span::before {
+  content: "\f005\f005\f005\f005\f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 500;
+  color: #f1c40f;
+  top: 0;
+  position: absolute;
+  left: 0;
+}
+.tm-sc-testimonials .star-rating {
+  float: none;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  overflow: visible;
+}
+.tm-sc-testimonials .star-rating span:before {
+  color: var(--theme-color2);
+}
+.tm-sc-testimonials .author-text,
+.tm-sc-testimonials .name,
+.tm-sc-testimonials .job-position {
+  transition: all 0.3s ease-in-out;
+}
+.tm-sc-testimonials .star-rating span:before {
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonial-block-style12 .inner-box {
+  padding: 45px 42px 48px 50px;
+  border: 1px solid #202020;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #d7d9cf;
+  transition: all 500ms ease;
+}
+.testimonial-block-style12 .inner-box:hover .info-box:before {
+  -webkit-filter: contrast(100%);
+  filter: contrast(100%);
+  opacity: 1;
+}
+.testimonial-block-style12 .inner-box .review {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.testimonial-block-style12 .inner-box .review .rating-count {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+.testimonial-block-style12 .inner-box .review .rating .star-rating {
+  font-size: 15px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.testimonial-block-style12 .inner-box .review .rating .star-rating span:before {
+  color: #f1f2eb;
+  font-weight: 500;
+}
+.testimonial-block-style12 .inner-box .review .rating .icon {
+  color: #f1f2eb;
+  font-size: 15px;
+  margin-right: 4px;
+}
+@media (max-width: 575.98px) {
+  .testimonial-block-style12 .inner-box .review .rating .icon {
+    font-size: 14px;
+  }
+}
+.testimonial-block-style12 .inner-box .review .rating .icon:last-child {
+  margin-right: 0;
+}
+.testimonial-block-style12 .inner-box .author-text {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 45px;
+  color: #fff;
+}
+.testimonial-block-style12 .inner-box .info-box {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 1px solid #202020;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  padding-top: 45px;
+  position: relative;
+}
+.testimonial-block-style12 .inner-box .info-box:before {
+  background-image: url(../../../images/current-theme/quote1-2.png);
+  content: "";
+  color: #f1f2eb;
+  font-size: 50px;
+  line-height: 1;
+  position: absolute;
+  right: -10px;
+  top: calc(50% + 15px);
+  height: 76px;
+  width: 76px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-filter: contrast(10%);
+  filter: contrast(10%);
+  opacity: 0.1;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.testimonial-block-style12 .inner-box .info-box .user-thumb {
+  border: 2px solid #f1f2eb;
+  border-radius: 50%;
+  max-width: 75px;
+  padding: 3px;
+  transition: all 500ms ease;
+}
+.testimonial-block-style12 .inner-box .info-box .user-thumb img {
+  border-radius: 50%;
+  border: 5px solid #fff;
+  max-width: 65px;
+  transition: all 500ms ease;
+}
+.testimonial-block-style12 .inner-box .info-box .testimonial-name {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+.testimonial-block-style12 .inner-box .info-box .testimonial-position {
+  color: #9d9d9d;
+  font-size: 12px;
+  display: block;
+  font-weight: 400;
+}

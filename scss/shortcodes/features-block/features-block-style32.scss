@@ -1,0 +1,111 @@
+@import "../../bootstrap-loader";
+@import "features-common";
+.features-block-style32 {
+  position: relative;
+  margin-bottom: 30px;
+  .inner-box{
+      position: relative;
+      display: flex;
+      width: 100%;
+      background-color: #fff;
+      @include media-breakpoint-down(xl){
+          flex-direction: column;
+      }
+      &:hover {
+          .features-featured-img {
+              img {
+                  transform: scale(1.1);
+              }
+          }
+      }
+      .image-box {
+          position: relative;
+          flex-shrink: 0;
+          .features-featured-img {
+              max-width: 260px;  
+              position: relative;
+              overflow: hidden;
+              margin-bottom: 0;
+              @include media-breakpoint-down(xl){
+                max-width: 100%;
+               }
+              img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  @include transition(all 300ms ease);
+                  @include media-breakpoint-down(xl){
+                      max-height: 300px;
+                  }
+              }
+          }
+          .word {
+              position: absolute;
+              top: 40px;
+              left: -10px;
+              width: 70px;
+              height: 66px;
+              font-weight: 800;
+              color: #fff;
+              font-size: 30px;
+              @include flex-center;
+              overflow: visible;
+              background: var(--gradient-2);
+              @include media-breakpoint-down(md){
+                  left: 0;
+              }
+              &:before {
+                  position: absolute;
+                  bottom: -10px;
+                  left: 0;
+                  width: 0;
+                  height: 0;
+                  border-top: 10px solid var(--theme-color2);
+                  border-left: 10px solid transparent;
+                  content: '';
+                  @include media-breakpoint-down(md){
+                      left: 0;
+                  }
+              }
+          }
+      }
+
+      .content-box {
+          position: relative;
+          padding: 30px 45px 35px 45px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          border-bottom: 16px solid var(--theme-color1);
+          background-color: #fff;
+          z-index: 0;
+          @media only screen and (min-width:1441px) and (max-width:1600px){
+            padding: 30px;
+          }
+          @include media-breakpoint-down(sm){
+            padding: 30px;
+          }
+          .features-title {
+              color: var(--theme-color2);
+              margin-bottom: 10px;
+              margin-top: 0;
+              @include media-breakpoint-down(sm){
+                  font-size: 24px;
+              }
+          }
+          .features-details {
+              margin-bottom: 20px;
+          }
+          .icon-lines-3 {
+              @include absolute-bottom-right;
+              pointer-events: none;
+          }
+      }
+      .icon-lines-3 {
+        width: 168px;
+        height: 200px;
+        background-image: url(../../../images/current-theme/icon-lines-3.png);
+        z-index: -1;
+    }
+  }
+}

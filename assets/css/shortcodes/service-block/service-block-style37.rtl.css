@@ -1,0 +1,176 @@
+.tm-sc-service .icon {
+  display: inline-block;
+}
+.tm-sc-service .icon,
+.tm-sc-service .feature-title,
+.tm-sc-service .feature-details {
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.service-block-style37 .inner-box {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.service-block-style37 .inner-box .service-featured-img img {
+  transition: all 300ms ease;
+  width: 100%;
+}
+.service-block-style37 .inner-box .content-box {
+  background-color: var(--theme-color-white);
+  backdrop-filter: blur(89px);
+  border-radius: 8px;
+  position: absolute;
+  transform: translateX(50%);
+  right: 50%;
+  bottom: 20px;
+  width: 90%;
+  padding: 30px;
+  opacity: 0.95;
+  transition: all 300ms ease;
+  z-index: 1;
+}
+.service-block-style37 .inner-box .content-box .service-subtitle {
+  font-weight: 600;
+  color: var(--theme-color2);
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0;
+}
+.service-block-style37 .inner-box .content-box .service-title {
+  max-width: 300px;
+  margin: 0;
+}
+.service-block-style37 .inner-box .content-box .service-title a {
+  color: var(--headings-color);
+}
+.service-block-style37 .inner-box .content-box .service-title a:hover {
+  color: var(--theme-color-white);
+}
+.service-block-style37 .inner-box .hover-content {
+  position: absolute;
+  transform: translateX(50%);
+  right: 50%;
+  bottom: 10px;
+  width: 85%;
+  transition: all 300ms ease;
+  z-index: 1;
+}
+.service-block-style37 .inner-box .hover-content .service-subtitle {
+  font-weight: 600;
+  color: var(--theme-color-white);
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0;
+}
+.service-block-style37 .inner-box .hover-content .service-title {
+  max-width: 300px;
+  color: var(--theme-color-white);
+  margin-top: 0;
+}
+.service-block-style37 .inner-box .hover-content .service-title a {
+  color: var(--theme-color-white);
+}
+.service-block-style37 .inner-box .hover-content .service-title a:hover {
+  color: var(--theme-color-white);
+}
+.service-block-style37 .inner-box .hover-content {
+  opacity: 0;
+  visibility: hidden;
+}
+.service-block-style37 .inner-box::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms ease;
+  background: linear-gradient(-180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 19.36%, #163839 71.26%, #163839 100%);
+  z-index: 0;
+  content: "";
+}
+.service-block-style37 .inner-box .btn-view-details {
+  display: block;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  background-color: var(--theme-color3);
+  position: absolute;
+  top: 48%;
+  right: 50%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(50%, -50%);
+  text-align: center;
+  font-size: 24px;
+  color: #163839;
+  border-radius: 50%;
+  z-index: 1;
+  transition: all 300ms ease;
+}
+.service-block-style37 .inner-box .btn-view-details a {
+  background-color: transparent;
+}
+.service-block-style37 .inner-box .btn-view-details a::after {
+  transition: all 500ms ease;
+  transform: rotate(45deg);
+  top: 0;
+  right: 30%;
+}
+.service-block-style37 .inner-box .btn-view-details i {
+  transition: all 300ms ease;
+}
+.service-block-style37 .inner-box .btn-view-details::after {
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  background-color: var(--theme-color-white);
+  position: absolute;
+  top: -3px;
+  right: 1px;
+  border-radius: 50%;
+  content: "";
+  z-index: -1;
+  transition: all 300ms ease;
+}
+.service-block-style37 .inner-box .btn-view-details:hover i {
+  display: inline-block;
+  transform: rotate(-45deg);
+}
+.service-block-style37 .inner-box .btn-view-details:hover a::after {
+  transform: rotate(0deg);
+  color: var(--theme-color2);
+  transition: all 500ms ease;
+}
+.service-block-style37 .inner-box .btn-view-details:hover::after {
+  top: 0;
+  right: 0;
+  transition: all 300ms ease;
+}
+.service-block-style37 .inner-box:hover::after {
+  height: 90%;
+  opacity: 1;
+  visibility: visible;
+}
+.service-block-style37 .inner-box:hover .service-featured-img img {
+  filter: grayscale(100%);
+}
+.service-block-style37 .inner-box:hover .btn-view-details {
+  top: 50%;
+  opacity: 1;
+  visibility: visible;
+}
+.service-block-style37 .inner-box:hover .content-box {
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.service-block-style37 .inner-box:hover .hover-content {
+  opacity: 1;
+  visibility: visible;
+  bottom: 30px;
+}

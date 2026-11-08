@@ -1,0 +1,88 @@
+@import "../../bootstrap-loader";
+@import "testimonial-common";
+.testimonial-block-style9 {
+  position: relative;
+  .inner {
+    position: relative;
+    padding: 40px 0px 35px;
+    @include media-breakpoint-down(sm) {
+      padding: 25px 25px;
+    }
+    &:before {
+      position: absolute;
+      content: "";
+      left: 80px;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      background-color: var(--theme-color-white);
+      @include media-breakpoint-down(sm) {
+        left: 0px;
+      }
+    }
+  }
+  .content {
+    position: relative;
+    padding-left: 180px;
+    padding-right: 50px;
+    @include media-breakpoint-down(sm) {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    .author {
+      position: absolute;
+      left: 0px;
+      top: 0;
+      @include media-breakpoint-down(sm) {
+        position: relative;
+        margin-bottom: 50px;
+        display: inline-block;
+      }
+      img {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+      }
+      .quote {
+        position: absolute;
+        left: 50%;
+        bottom: -32px;
+        width: 75px;
+        height: 75px;
+        font-size: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        transform: translateX(-50%);
+        color: var(--theme-color-white);
+        background-color: var(--theme-color1);
+      }
+    }
+    .author-text {
+      position: relative;
+      color: #8c8c8c;
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 18px;
+      @include media-breakpoint-down(sm) {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+    .testimonial-name {
+      position: relative;
+      font-size: 18px;
+      margin: 0;
+      color: var(--theme-color1);
+      font-weight: var(--h6-font-weight);
+      .testimonial-position {
+        display: block;
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--text-color);
+      }
+    }
+  }
+}

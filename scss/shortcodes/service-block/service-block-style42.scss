@@ -1,0 +1,113 @@
+@import "../../bootstrap-loader";
+@import "service-common";
+.service-item {
+  margin: 0 !important;
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 60px !important;
+  }
+  &:last-child {
+    @include media-breakpoint-down(xl) {
+      margin-bottom: 0 !important;
+    }
+    .service-block-style42 {
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+.service-block-style42 {
+  &:after {
+    position: absolute;
+    content: "";
+    height: 200%;
+    width: 1px;
+    background: #202020;
+    top: -120px;
+    right: 0;
+    @include media-breakpoint-down(xl) {
+      display: none;
+    }
+  }
+  .inner-box {
+    position: relative;
+    &:hover {
+      .image-box {
+        .icon-box {
+          background-color: var(--theme-color1);
+          color: var(--theme-color2);
+          .icon {
+            transform: rotateY(-180deg);
+          }
+          .icon-img {
+            filter: brightness(0);
+            transform: rotateY(-180deg);
+          }
+        }
+      }
+      .content-box {
+        .title {
+          a {
+            color: var(--theme-color1);
+          }
+        }
+      }
+    }
+    .icon-box {
+      background-color: #272824;
+      border-radius: 50%;
+      color: var(--theme-color1);
+      font-size: 42px;
+      height: 71px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+      width: 71px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      @include transition(all 300ms ease);
+      .icon-img {
+        @include transition(all 300ms ease);
+      }
+    }
+    .image-box {
+      position: relative;
+      margin-bottom: 30px;
+      img {
+        width: 100%;
+        border-radius: var(--r);
+        mask:
+          calc(var(--s) + var(--r)) 0 var(--_m),
+          0 calc(var(--s) + var(--r)) var(--_m),
+          radial-gradient(var(--s) at 0 0, #0000 99%, #000 calc(100% + 1px)) var(--r) var(--r) no-repeat,
+          conic-gradient(at calc(var(--s) + 2 * var(--r)) calc(var(--s) + 2 * var(--r)), #000 75%, #0000 0);
+      }
+    }
+    .content-box {
+      @include transition(all 300ms ease);
+      .service-title {
+        margin-bottom: 13px;
+        @include transition(all 300ms ease);
+        a {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+.swiper-slide {
+  .service-block-style42 {
+    &:after {
+      position: absolute;
+      content: "";
+      height: 200%;
+      width: 1px;
+      background: #202020;
+      top: -120px;
+      right: calc(100% + 40px);
+    }
+  }
+}

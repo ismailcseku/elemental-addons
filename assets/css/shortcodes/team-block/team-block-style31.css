@@ -83,7 +83,6 @@
 }
 .team-skin-style31 .content-box .team-subtitle {
   color: var(--text-color);
-  font-family: var(--body-font-family);
 }
 .team-skin-style31:hover .social {
   opacity: 1;

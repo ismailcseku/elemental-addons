@@ -1,0 +1,190 @@
+@import "../../bootstrap-loader";
+@import "service-common";
+.service-block-style34 {
+  .inner-box {
+    border: 1px solid #d9d9d9;
+    position: relative;
+    border-radius: 5px;
+    z-index: 1;
+    [data-tm-layout="dark"] & {
+      border-color: rgba(255, 255, 255, 0.17);
+    }
+    .image-two {
+      margin-bottom: 0;
+      img {
+        object-position: top center;
+        object-fit: cover;
+        min-height: 457px;
+        width: 100%;
+        opacity: 0;
+        border-radius: 5px;
+        @include transition(all 300ms ease);
+      }
+    }
+    &:hover {
+      .image-two {
+        img {
+          opacity: 1;
+        }
+      }
+      .content-box-hover {
+        &:before {
+          height: 100%;
+          opacity: 1;
+        }
+        .content-box {
+          justify-content: flex-end;
+          .icon,
+          .service-title,
+          .service-details,
+          a {
+            color: #fff;
+            transform: translateY(-65px);
+          }
+          .service-icon {
+            filter: brightness(0) invert(1);
+            transform: translateY(-65px) rotateY(360deg) !important;
+          }
+          .read-more {
+            background-color: var(--theme-color1);
+            color: var(--theme-color1-text-color);
+            opacity: 1;
+            transform: translateY(-30px);
+          }
+        }
+        .image-box {
+          margin-top: -100%;
+          transform: translateY(100%);
+        }
+      }
+    }
+    .content-box-hover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+      justify-content: space-between;
+      border-radius: 5px;
+      z-index: 1;
+      padding: 50px 29px 0;
+      &:before {
+        background: linear-gradient(
+          180deg,
+          rgba(58, 42, 31, 0.8) 0%,
+          rgba(57, 41, 31, 0.8) 100%
+        );
+        border-radius: 5px 5px 0px 0px;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 60%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0;
+        @include transition(all 100ms ease);
+      }
+      .content-box {
+        height: 100%;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include transition(all 300ms ease);
+        @include media-breakpoint-down(lg) {
+          padding: 0;
+        }
+        .service-icon {
+          color: var(--theme-color2);
+          font-size: 60px;
+          display: inline-block;
+          line-height: 1;
+          @include transition(all 300ms ease);
+          [data-tm-layout="dark"] & {
+            color: #fff;
+          }
+        }
+        .service-title {
+          margin-top: 20px;
+          margin-bottom: 10px;
+          @include transition(all 300ms ease);
+          @include media-breakpoint-down(xl) {
+            font-size: 20px;
+          }
+          @include media-breakpoint-down(md) {
+            font-size: 30px;
+          }
+          @include media-breakpoint-down(sm) {
+            font-size: 20px;
+          }
+          a {
+            &:hover {
+              color: var(--theme-color1);
+            }
+          }
+        }
+        .service-details {
+          @include transition(all 300ms ease);
+          @include media-breakpoint-down(xl) {
+            font-size: 14px;
+          }
+        }
+        .read-more {
+          background-color: var(--theme-color1);
+          color: var(--theme-color1-text-color);
+          font-size: 20px;
+          height: 40px;
+          width: 40px;
+          line-height: 42px;
+          border-radius: 50%;
+          text-align: center;
+          opacity: 0;
+          margin-top: -17px;
+          position: relative;
+          transform: translateY(17px);
+          z-index: 1;
+          @include transition(all 300ms ease);
+          &:hover {
+            color: var(--theme-color1);
+            &::before {
+              @include transform(scale(1));
+            }
+          }
+          &::before {
+            position: absolute;
+            content: "";
+            background-color: var(--theme-color-white);
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            top: 0;
+            left: 0;
+            @include transform(scale(0));
+            z-index: -1;
+            @include transition(all 300ms ease);
+          }
+        }
+      }
+      .image-box {
+        @include transition(all 300ms ease);
+        @include media-breakpoint-down(lg) {
+          width: 100%;
+        }
+        .image {
+          margin-bottom: 0;
+          img {
+            border-radius: 5px 5px 0 0;
+            width: 100%;
+            @include transition(all 300ms ease);
+          }
+        }
+      }
+    }
+  }
+}

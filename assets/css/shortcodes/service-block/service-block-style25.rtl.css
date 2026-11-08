@@ -1,0 +1,151 @@
+.tm-sc-service .icon {
+  display: inline-block;
+}
+.tm-sc-service .icon,
+.tm-sc-service .feature-title,
+.tm-sc-service .feature-details {
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.service-block-style25 {
+  position: relative;
+}
+.service-block-style25 .inner {
+  background-color: #F3F3F3;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 20px 20px;
+  position: relative;
+  text-align: center;
+}
+.service-block-style25 .inner:before {
+  background-color: var(--theme-color2);
+  bottom: 0px;
+  content: "";
+  right: 0px;
+  opacity: 0;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  transform: scale(0.2, 1);
+  transition: all 500ms ease;
+}
+.service-block-style25 .inner:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+.service-block-style25 .inner:hover .icon {
+  background-color: var(--theme-color1);
+  transform: scaleX(-1);
+}
+.service-block-style25 .inner:hover .service-title:before {
+  background-color: rgb(255, 255, 255);
+  opacity: 0.22;
+}
+.service-block-style25 .inner:hover .service-title a {
+  color: var(--theme-color-white);
+}
+.service-block-style25 .inner:hover .service-details {
+  color: #DAD6DD;
+}
+.service-block-style25 .inner:hover .image img {
+  transform: scale(1.1);
+}
+.service-block-style25 .image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.service-block-style25 .image img {
+  position: relative;
+  width: 100%;
+  display: block;
+  transition: all 500ms ease;
+}
+.service-block-style25 .overlay-anim {
+  position: relative;
+}
+.service-block-style25 .overlay-anim:after {
+  /* background: rgba(255, 255, 255, 0.3); */
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 0;
+  opacity: 1;
+  z-index: 9;
+  pointer-events: none;
+}
+.service-block-style25 .overlay-anim:hover:after {
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all 400ms linear;
+  transition: all 400ms linear;
+}
+.service-block-style25 .content {
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+.service-block-style25 .content .icon {
+  background-color: var(--theme-color3);
+  border: 5px solid var(--theme-color-white);
+  color: var(--theme-color-white);
+  font-size: 40px;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: -45px;
+  position: relative;
+  text-align: center;
+  transition: all 400ms ease;
+}
+.service-block-style25 .content .icon .service-icon i {
+  display: flex;
+  line-height: 1;
+}
+.service-block-style25 .content .service-title {
+  position: relative;
+  margin-top: 25px;
+  padding-bottom: 25px;
+}
+.service-block-style25 .content .service-title:before {
+  position: absolute;
+  content: "";
+  right: 50%;
+  bottom: 0px;
+  width: 100px;
+  height: 1px;
+  opacity: 0.12;
+  transform: translateX(50%);
+  background-color: rgb(0, 0, 0);
+}
+.service-block-style25 .content .service-title:after {
+  position: absolute;
+  content: "";
+  right: 50%;
+  bottom: 0px;
+  width: 50px;
+  height: 3px;
+  transform: translateX(50%);
+  background-color: var(--theme-color1);
+}
+.service-block-style25 .content .service-title a:hover {
+  color: var(--theme-color1);
+}
+.service-block-style25 .content .service-details {
+  margin-top: 25px;
+  padding: 0px 25px;
+  position: relative;
+}
+@media (max-width: 575.98px) {
+  .service-block-style25 .content .service-details {
+    padding: 0px 0px;
+  }
+}

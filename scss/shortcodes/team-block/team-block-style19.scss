@@ -61,7 +61,6 @@
     }
     .team-title {
       margin-bottom: 0;
-      font-family: var(--title-font2);
       margin-top: 0;
       font-weight: 600;
       @include media-breakpoint-down(xl) {
@@ -80,7 +79,6 @@
       display: block;
       font-size: 15px;
       transition: all 400ms ease;
-      font-family: var(--text-font2);
     }
   }
   .team-share {

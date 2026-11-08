@@ -35,28 +35,27 @@
   transition: all 300ms ease;
   visibility: hidden;
 }
-.team-skin-style17 .inner-box .content-box {
+.team-skin-style17 .inner-box .team-content {
   padding: 20px 30px;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.0509803922);
-  color: var(--theme-color-white);
   border-radius: 0 0 20px 20px;
   transition: all 600ms ease;
 }
-.team-skin-style17 .inner-box .content-box .team-subtitle {
+.team-skin-style17 .inner-box .team-content .team-subtitle {
   color: var(--headings-color);
 }
-[data-tm-layout=dark] .team-skin-style17 .inner-box .content-box .team-subtitle {
+[data-tm-layout=dark] .team-skin-style17 .inner-box .team-content .team-subtitle {
   color: #fff;
 }
-.team-skin-style17 .inner-box .content-box .team-subtitle {
+.team-skin-style17 .inner-box .team-content .team-subtitle {
   font-size: 14px;
   transition: all 300ms ease;
   margin: 0;
 }
-.team-skin-style17 .inner-box .content-box .team-title {
+.team-skin-style17 .inner-box .team-content .team-title {
   margin: 0;
 }
-.team-skin-style17 .inner-box .content-box .team-title a:hover {
+.team-skin-style17 .inner-box .team-content .team-title a:hover {
   color: var(--theme-color-white);
 }
 .team-skin-style17 .inner-box .socials {
@@ -82,7 +81,6 @@
   position: absolute;
   bottom: 45px;
   left: 0;
-  right: -100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -148,22 +146,22 @@
   opacity: 0;
   visibility: visible;
 }
-.team-skin-style17 .inner-box:hover .content-box .team-title {
+.team-skin-style17 .inner-box:hover .team-content .team-title {
   color: var(--theme-color-white);
 }
-[data-tm-layout=dark] .team-skin-style17 .inner-box:hover .content-box .team-title {
+[data-tm-layout=dark] .team-skin-style17 .inner-box:hover .team-content .team-title {
   color: #fff;
 }
-.team-skin-style17 .inner-box:hover .content-box .team-title a {
+.team-skin-style17 .inner-box:hover .team-content .team-title a {
   color: var(--theme-color-white);
 }
-[data-tm-layout=dark] .team-skin-style17 .inner-box:hover .content-box .team-title a {
+[data-tm-layout=dark] .team-skin-style17 .inner-box:hover .team-content .team-title a {
   color: #fff;
 }
-.team-skin-style17 .inner-box:hover .content-box .team-subtitle {
+.team-skin-style17 .inner-box:hover .team-content .team-subtitle {
   color: var(--theme-color-white);
 }
-[data-tm-layout=dark] .team-skin-style17 .inner-box:hover .content-box .team-subtitle {
+[data-tm-layout=dark] .team-skin-style17 .inner-box:hover .team-content .team-subtitle {
   color: #fff;
 }
 .team-skin-style17 .inner-box:hover .socials {

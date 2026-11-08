@@ -1,0 +1,236 @@
+@import "../../bootstrap-loader";
+@import "service-common";
+.service-block-style36 {
+  position: relative;
+  .single-inner {
+    display: flex;
+    @include media-breakpoint-down(lg) {
+      display: inline;
+    }
+    .service-count {
+      padding-top: 50px;
+      font-size: 150px;
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: -4.5px;
+      background: linear-gradient(180deg, #fff -29.94%, #0071f5 93.24%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      @include media-breakpoint-down(lg) {
+        padding-top: 30px;
+      }
+    }
+
+    .single-card {
+      @include flex-between;
+      position: relative;
+      padding-top: 60px;
+      padding-bottom: 40px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      @include media-breakpoint-down(lg) {
+        padding-top: 30px;
+      }
+      @include media-breakpoint-down(md) {
+        flex-direction: column;
+      }
+      &.style-2 {
+        border-top: none;
+      }
+      .shape-1 {
+        position: absolute;
+        left: -133px;
+        top: 125px;
+        width: 133px;
+        z-index: -1;
+        height: 9px;
+        background-image: url(../../../images/current-theme/shape-02.png);
+        @include media-breakpoint-down(xl) {
+          left: -66px;
+        }
+        @include media-breakpoint-down(lg) {
+          left: 201px;
+          top: -100px;
+        }
+      }
+      .equal-section {
+        display: flex;
+        align-items: stretch;
+        gap: 0px;
+        @include media-breakpoint-down(md) {
+          display: inline;
+        }
+        .content {
+          flex: 1;
+          background-color: #091e47;
+          color: #fff;
+          padding: 50px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          .service-title {
+            margin-top: 0;
+            margin-bottom: 30px;
+            color: #fff;
+            font-size: 30px;
+          }
+          .service-details {
+            padding-bottom: 30px;
+            color: var(--theme-color-white);
+          }
+        }
+        .service-featured-img {
+          flex: 1;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+
+      .theme-btn-main {
+        display: inline-flex;
+        align-items: center;
+        gap: 0px;
+        position: relative;
+        transition: all 400ms ease;
+
+        &:hover {
+          .theme-btn-arrow-left {
+            scale: 1;
+          }
+          .theme-btn-arrow-right {
+            scale: 0;
+          }
+          .theme-btn {
+            transform: translateX(56px);
+          }
+        }
+
+        .theme-btn-arrow-left,
+        .theme-btn-arrow-right {
+          height: 56px;
+          line-height: 56px;
+          width: 56px;
+          line-height: 1;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          background: var(--theme-color3);
+          color: var(--theme-color2);
+          border-radius: 50%;
+          transition: 0.4s;
+          text-align: center;
+
+          i {
+            rotate: -30deg;
+          }
+          &.theme-btn-arrow-small {
+            width: 40px;
+            height: 40px;
+          }
+          &.gray-arrow {
+            background: #7e8596;
+            color: var(--theme-color-white);
+          }
+          &.black-arrow {
+            background: #0f0f11;
+            color: var(--theme-color-white);
+          }
+          &.white-arrow {
+            background: var(--theme-color-white);
+            color: var(--theme-color-black);
+          }
+          &.it-btn-arrow {
+            background: var(--theme-color2);
+            color: var(--theme-color2-text-color);
+          }
+          &.fa-theme-btn-trasparent-arrow {
+            background-color: transparent;
+            color: var(--theme-color1);
+            border: 1px solid rgba(6, 21, 50, 0.1);
+          }
+          &.transparent-arrow {
+            border: 1px solid rgba(6, 21, 50, 1);
+            background: transparent;
+            color: var(--theme-color-black);
+          }
+          &.transparent-arrow-2 {
+            border: 1px solid rgba(255, 255, 255, 1);
+            background: transparent;
+            color: var(--theme-color-white);
+          }
+          &.transparent-arrow-3 {
+            border: 1px solid var(--theme-color1);
+            background: transparent;
+            color: var(--theme-color-white);
+          }
+        }
+
+        .theme-btn-arrow-left {
+          scale: 0;
+          left: 0;
+          right: auto;
+          position: absolute;
+        }
+        .theme-btn {
+          background: var(--theme-color1);
+          color: var(--theme-color-white);
+          font-weight: 700;
+          font-size: 16px;
+          padding: 13px 30px;
+          display: inline-flex;
+          align-items: center;
+          gap: 30px;
+          border-radius: 40px;
+          transition: 0.4s;
+          &.theme-btn-light {
+            background: var(--theme-color-light);
+            color: #000;
+          }
+          &.theme-btn-white {
+            background-color: var(--theme-color-white);
+            color: #000;
+          }
+
+          &.it-theme-btn {
+            background: var(--theme-color1);
+            color: var(--theme-color1-text-color);
+          }
+          &.theme-btn-transparent {
+            background-color: transparent;
+            color: var(--theme-color1);
+            border: 1px solid var(--theme-color1);
+          }
+          &.fa-theme-btn-trasparent {
+            background-color: transparent;
+            color: var(--theme-color1);
+            border: 1px solid rgba(6, 21, 50, 0.1);
+          }
+          &.theme-btn-small {
+            padding: 6px 20px 5px;
+            font-size: 14px;
+            font-weight: 600;
+          }
+        }
+
+        &.style-2 {
+          &:hover {
+            .theme-btn {
+              transform: translateX(40px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.tm-sc-service .service-item:first-child .service-block-style36 .single-inner .single-card {
+  border-top: none;
+}
+
+.tm-sc-service .service-item:nth-child(even) .service-block-style36 .single-inner .single-card .equal-section {
+  flex-direction: row-reverse;
+}

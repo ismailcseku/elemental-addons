@@ -16,7 +16,7 @@
 						$animation_delay = $team_item['wow_animation_delay'] . 'ms';
 					}
 				?>
-				<div class="<?php echo esc_attr($animation);?>" data-wow-delay="<?php echo esc_attr($animation_delay);?>">
+				<div class="team-item <?php echo esc_attr($animation);?>" data-wow-delay="<?php echo esc_attr($animation_delay);?>">
 					<?php elemental_addons_get_shortcode_template_part( 'team-item', $_skin, 'team-block/tpl', $settings, false ); ?>
 				</div>
 				<?php } ?>

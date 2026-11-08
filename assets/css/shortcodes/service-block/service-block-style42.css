@@ -1,0 +1,106 @@
+.tm-sc-service .icon {
+  display: inline-block;
+}
+.tm-sc-service .icon,
+.tm-sc-service .feature-title,
+.tm-sc-service .feature-details {
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.service-item {
+  margin: 0 !important;
+}
+@media (max-width: 1199.98px) {
+  .service-item {
+    margin-bottom: 60px !important;
+  }
+}
+@media (max-width: 1199.98px) {
+  .service-item:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+.service-item:last-child .service-block-style42:after {
+  display: none;
+}
+
+.service-block-style42:after {
+  position: absolute;
+  content: "";
+  height: 200%;
+  width: 1px;
+  background: #202020;
+  top: -120px;
+  right: 0;
+}
+@media (max-width: 1199.98px) {
+  .service-block-style42:after {
+    display: none;
+  }
+}
+.service-block-style42 .inner-box {
+  position: relative;
+}
+.service-block-style42 .inner-box:hover .image-box .icon-box {
+  background-color: var(--theme-color1);
+  color: var(--theme-color2);
+}
+.service-block-style42 .inner-box:hover .image-box .icon-box .icon {
+  transform: rotateY(-180deg);
+}
+.service-block-style42 .inner-box:hover .image-box .icon-box .icon-img {
+  filter: brightness(0);
+  transform: rotateY(-180deg);
+}
+.service-block-style42 .inner-box:hover .content-box .title a {
+  color: var(--theme-color1);
+}
+.service-block-style42 .inner-box .icon-box {
+  background-color: #272824;
+  border-radius: 50%;
+  color: var(--theme-color1);
+  font-size: 42px;
+  height: 71px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  width: 71px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 300ms ease;
+}
+.service-block-style42 .inner-box .icon-box .icon-img {
+  transition: all 300ms ease;
+}
+.service-block-style42 .inner-box .image-box {
+  position: relative;
+  margin-bottom: 30px;
+}
+.service-block-style42 .inner-box .image-box img {
+  width: 100%;
+  border-radius: var(--r);
+  mask: calc(var(--s) + var(--r)) 0 var(--_m), 0 calc(var(--s) + var(--r)) var(--_m), radial-gradient(var(--s) at 0 0, rgba(0, 0, 0, 0) 99%, #000 calc(100% + 1px)) var(--r) var(--r) no-repeat, conic-gradient(at calc(var(--s) + 2 * var(--r)) calc(var(--s) + 2 * var(--r)), #000 75%, rgba(0, 0, 0, 0) 0);
+}
+.service-block-style42 .inner-box .content-box {
+  transition: all 300ms ease;
+}
+.service-block-style42 .inner-box .content-box .service-title {
+  margin-bottom: 13px;
+  transition: all 300ms ease;
+}
+.service-block-style42 .inner-box .content-box .service-title a {
+  color: #ffffff;
+}
+
+.swiper-slide .service-block-style42:after {
+  position: absolute;
+  content: "";
+  height: 200%;
+  width: 1px;
+  background: #202020;
+  top: -120px;
+  right: calc(100% + 40px);
+}

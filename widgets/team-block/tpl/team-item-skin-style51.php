@@ -5,7 +5,7 @@ $team_item['title_tag'] = $title_tag;
 $team_item['subtitle_tag'] = $subtitle_tag;
 ?>
 
-<div class="team-skin-style51 team-item">
+<div class="team-skin-style51">
   <div class="inner-box">
       <div class="icon-box">
           <span class="icon team-share fa fa-share-alt"></span>

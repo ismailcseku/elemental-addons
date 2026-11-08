@@ -1,0 +1,166 @@
+.tm-sc-testimonials .star-rating {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  height: 1.1em;
+  line-height: 1.2;
+  font-size: 0.9em;
+  width: 5.6em;
+}
+.tm-sc-testimonials .star-rating::before {
+  content: "\f005\f005\f005\f005\f005";
+  color: #d3ced2;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 500;
+  float: right;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+.tm-sc-testimonials .star-rating span {
+  overflow: hidden;
+  float: right;
+  top: 0;
+  right: 0;
+  position: absolute;
+  padding-top: 1.5em;
+}
+.tm-sc-testimonials .star-rating span::before {
+  content: "\f005\f005\f005\f005\f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 500;
+  color: #f1c40f;
+  top: 0;
+  position: absolute;
+  right: 0;
+}
+.tm-sc-testimonials .star-rating {
+  float: none;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  overflow: visible;
+}
+.tm-sc-testimonials .star-rating span:before {
+  color: var(--theme-color2);
+}
+.tm-sc-testimonials .author-text,
+.tm-sc-testimonials .name,
+.tm-sc-testimonials .job-position {
+  transition: all 0.3s ease-in-out;
+}
+.tm-sc-testimonials .star-rating span:before {
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonial-block-style18 {
+  position: relative;
+}
+.testimonial-block-style18 .inner-box {
+  background: #C3ABFF;
+  border-radius: 32px;
+  padding: 50px 60px 60px 90px;
+  position: relative;
+  transition: all 300ms ease;
+}
+@media (max-width: 767.98px) {
+  .testimonial-block-style18 .inner-box {
+    padding: 40px 20px 40px 20px;
+  }
+}
+.testimonial-block-style18 .text {
+  color: var(--theme-color2);
+  font-size: 28px;
+  line-height: 42px;
+  margin-bottom: 18px;
+}
+@media (max-width: 1399.98px) {
+  .testimonial-block-style18 .text {
+    padding-left: 0px;
+  }
+}
+@media (max-width: 575.98px) {
+  .testimonial-block-style18 .text {
+    font-size: 20px;
+    line-height: 36px;
+  }
+}
+.testimonial-block-style18 .author-info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+@media (max-width: 767.98px) {
+  .testimonial-block-style18 .author-info .shape-1 {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+  }
+}
+.testimonial-block-style18 .info-box {
+  align-items: center;
+  display: flex;
+  position: relative;
+  gap: 24px;
+}
+@media (max-width: 575.98px) {
+  .testimonial-block-style18 .info-box {
+    align-items: self-start;
+    gap: 6px;
+    flex-direction: column;
+  }
+}
+.testimonial-block-style18 .info-box .info {
+  margin-top: 7px;
+}
+.testimonial-block-style18 .info-box .thumb {
+  border-radius: 50%;
+  height: 70px;
+  line-height: 70px;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+  width: 70px;
+  transition: all 300ms ease;
+}
+.testimonial-block-style18 .info-box .thumb img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.testimonial-block-style18 .info-box .testimonial-name {
+  color: var(--theme-color2);
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.testimonial-block-style18 .info-box .testimonial-position {
+  color: rgba(0, 0, 0, 0.6196078431);
+  margin: 0;
+}
+
+[data-widget_type="tm-ele-testimonial-block.skin-style3"] .swiper-slide:nth-child(1) .testimonial-block-style18 .inner-box {
+  background: #FFFFFF;
+}
+[data-widget_type="tm-ele-testimonial-block.skin-style3"] .swiper-slide:nth-child(2) .testimonial-block-style18 .inner-box {
+  background: #C3ABFF;
+}
+[data-widget_type="tm-ele-testimonial-block.skin-style3"] .swiper-slide:nth-child(3) .testimonial-block-style18 .inner-box {
+  background: #FED35B;
+}
+[data-widget_type="tm-ele-testimonial-block.skin-style3"] .swiper-slide:nth-child(4) .testimonial-block-style18 .inner-box {
+  background: #FFFFFF;
+}
+[data-widget_type="tm-ele-testimonial-block.skin-style3"] .swiper-slide:nth-child(5) .testimonial-block-style18 .inner-box {
+  background: #C3ABFF;
+}
+[data-widget_type="tm-ele-testimonial-block.skin-style3"] .swiper-slide:nth-child(6) .testimonial-block-style18 .inner-box {
+  background: #FED35B;
+}
+[data-widget_type="tm-ele-testimonial-block.skin-style3"] .swiper-slide:nth-child(7) .testimonial-block-style18 .inner-box {
+  background: #FFFFFF;
+}
+[data-widget_type="tm-ele-testimonial-block.skin-style3"] .swiper-slide:nth-child(8) .testimonial-block-style18 .inner-box {
+  background: #C3ABFF;
+}
+[data-widget_type="tm-ele-testimonial-block.skin-style3"] .swiper-slide:nth-child(9) .testimonial-block-style18 .inner-box {
+  background: #FED35B;
+}

@@ -1,0 +1,154 @@
+.tm-sc-service .icon {
+  display: inline-block;
+}
+.tm-sc-service .icon,
+.tm-sc-service .feature-title,
+.tm-sc-service .feature-details {
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.service-block-style49 .inner-block {
+  padding: 0 10px 41px;
+  position: relative;
+  z-index: 1;
+  transition: all 300ms ease;
+}
+.service-block-style49 .inner-block:after {
+  background-color: #114036;
+  border: 1px solid rgba(var(--theme-color-white-rgb), 0.1);
+  border-radius: 14px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: calc(100% - 130px);
+  width: 100%;
+  z-index: -1;
+  transition: all 300ms ease;
+}
+.service-block-style49 .inner-block:hover .image img:first-child {
+  transform: translateX(0) scaleX(1);
+  opacity: 1;
+  filter: blur(0);
+}
+.service-block-style49 .inner-block:hover .image img:nth-child(2) {
+  transform: translateX(-50%) scaleX(2);
+  opacity: 0;
+  filter: blur(10px);
+}
+.service-block-style49 .inner-block .image {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.service-block-style49 .inner-block .image img {
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  display: block;
+  transition: all 500ms ease;
+}
+.service-block-style49 .inner-block .image img:first-child {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1;
+  transform: translateX(50%) scaleX(2);
+  opacity: 0;
+  filter: blur(10px);
+}
+.service-block-style49 .inner-block .content {
+  margin-top: 30px;
+  padding: 0 30px;
+}
+@media (max-width: 767.98px) {
+  .service-block-style49 .inner-block .content {
+    padding: 0 5px;
+  }
+}
+.service-block-style49 .inner-block .content .service-title {
+  color: var(--theme-color-white);
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.service-block-style49 .inner-block .content .service-title:hover a {
+  color: var(--theme-color1);
+}
+.service-block-style49 .inner-block .content .text {
+  color: rgba(var(--theme-color-white-rgb), 0.65);
+  margin-bottom: 30px;
+}
+.service-block-style49 .inner-block .content .info-box {
+  margin-bottom: 30px;
+}
+.service-block-style49 .inner-block .content .count-box {
+  position: relative;
+  width: 100%;
+  height: 13px;
+  background-color: var(--theme-color-white);
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+.service-block-style49 .inner-block .content .count-box .count-bar {
+  position: relative;
+  display: block;
+  width: 0px;
+  height: 13px;
+  border-radius: 7px;
+  background-color: var(--theme-color1);
+  transition: all 1500ms ease;
+}
+.service-block-style49 .inner-block .content .donate-info {
+  color: var(--theme-color-white);
+}
+.service-block-style49 .inner-block .content .donate-info .service-subtitle {
+  color: var(--theme-color-white);
+}
+.service-block-style49 .inner-block .content .btn-style-three {
+  background: transparent;
+  border: 1px solid rgba(var(--theme-color-white-rgb), 0.1);
+  border-radius: 14px;
+  color: rgba(var(--theme-color-white-rgb), 0.55);
+  padding: 15px 30px 15px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  text-transform: capitalize;
+  z-index: 0;
+  transition: all 300ms ease;
+}
+.service-block-style49 .inner-block .content .btn-style-three:before {
+  background-color: var(--theme-color1);
+  border-radius: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  transform: scale(0, 1);
+  transform-origin: top right;
+  transition: -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  z-index: -1;
+}
+.service-block-style49 .inner-block .content .btn-style-three .btn-title {
+  transition: all 300ms ease;
+}
+.service-block-style49 .inner-block .content .btn-style-three:hover {
+  color: var(--theme-color1-text-color);
+}
+.service-block-style49 .inner-block .content .btn-style-three:hover:before {
+  transform: scale(1, 1);
+  transform-origin: bottom left;
+}

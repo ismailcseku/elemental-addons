@@ -1,0 +1,44 @@
+@import "../../bootstrap-loader";
+
+.features-block-style41 {
+  .inner-box {
+    padding: 30px;
+    padding-bottom: 0;
+    border-right: 1px solid #d9d9d9;
+    [data-tm-layout="dark"] & {
+      border-color: #ffffff1c;
+    }
+    .features-count {
+      font-size: 66px;
+      font-weight: 700;
+      line-height: 66px;
+      margin-bottom: 30px;
+      color: transparent;
+      -webkit-text-stroke: 1px var(--headings-color);
+      transition: all 300ms ease;
+    }
+    .features-title {
+      margin-bottom: 10px;
+    }
+    .features-details {
+    }
+    &.last-block {
+      border: none;
+    }
+    &:hover {
+      .features-count {
+        color: var(--theme-color1);
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      border: none;
+      .features-count {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+.isotope-item:last-child .features-block-style41 .inner-box {
+  border: none;
+}

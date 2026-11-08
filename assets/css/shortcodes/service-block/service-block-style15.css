@@ -1,0 +1,144 @@
+.tm-sc-service .icon {
+  display: inline-block;
+}
+.tm-sc-service .icon,
+.tm-sc-service .feature-title,
+.tm-sc-service .feature-details {
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.service-block-style15 .inner-block {
+  position: relative;
+  border: 1px solid rgba(var(--theme-color2-rgb), 0.1);
+  background-color: var(--theme-color-white);
+  padding: 30px 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 300ms ease;
+}
+@media (max-width: 575.98px) {
+  .service-block-style15 .inner-block {
+    padding: 30px 20px;
+  }
+}
+.service-block-style15 .inner-block:hover .service-btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+.service-block-style15 .inner-block:hover:before {
+  transform: scale(1, 1);
+  transform-origin: bottom left;
+}
+.service-block-style15 .inner-block:hover .service-icon i, .service-block-style15 .inner-block:hover .service-icon img {
+  transform: scaleX(-1);
+}
+.service-block-style15 .inner-block:hover .service-title {
+  color: var(--theme-color-white);
+}
+.service-block-style15 .inner-block:hover .service-details {
+  color: var(--theme-color-white);
+}
+.service-block-style15 .inner-block:hover .theme-btn:before {
+  transform: scale(1, 1);
+  transform-origin: bottom left;
+}
+.service-block-style15 .inner-block:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  border-radius: 0;
+  transform: scale(0, 1);
+  transform-origin: top right;
+  background-image: url(../../../images/current-theme/service-bg.jpg);
+  transition: -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  z-index: -1;
+}
+.service-block-style15 .service-icon {
+  background-color: var(--theme-color1);
+  border-radius: 10px;
+  color: var(--theme-color1-text-color);
+  position: relative;
+  font-size: 38px;
+  width: 65px;
+  height: 65px;
+  line-height: 62px;
+  text-align: center;
+  margin-bottom: 22px;
+  transition: all 300ms ease;
+}
+.service-block-style15 .service-icon i, .service-block-style15 .service-icon img {
+  transition: all 300ms ease;
+}
+.service-block-style15 .service-icon img {
+  position: relative;
+  top: -4px;
+}
+.service-block-style15 .service-title {
+  position: relative;
+  margin-bottom: 50px;
+  letter-spacing: -1px;
+  margin-top: 0;
+  transition: all 300ms ease;
+}
+.service-block-style15 .service-details {
+  position: relative;
+  margin-bottom: 20px;
+  transition: all 300ms ease;
+}
+.service-block-style15 .service-btn {
+  width: 100%;
+  position: relative;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 600;
+  border-radius: 14px;
+  padding: 17.5px 30.48px 16.5px;
+  color: var(--theme-color2);
+  background-color: rgba(9, 186, 147, 0.13);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  z-index: 0;
+  display: inline-flex;
+  gap: 8px;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  transition: all 300ms ease;
+}
+.service-block-style15 .service-btn:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  border-radius: 0;
+  transform: scale(0, 1);
+  transform-origin: top right;
+  background-color: var(--theme-color1);
+  transition: -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  z-index: -1;
+}
+.service-block-style15 .service-btn .btn-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.service-block-style15 .service-btn:hover {
+  color: #fff;
+}
+.service-block-style15 .service-btn:hover:before {
+  transform: scale(1, 1);
+  transform-origin: bottom left;
+}
