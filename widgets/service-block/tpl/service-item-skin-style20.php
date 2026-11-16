@@ -8,19 +8,25 @@ $count = $service_item['count'];
 $target = ( $feature_link && $feature_link['is_external'] ) ? ' target="_blank"' : '';
 $url = ( $feature_link && $feature_link['url'] ) ? $feature_link['url'] : '';
 ?>
-
-<div class="service-block service-block-style20">
-	<div class="inner-box">
-		<div class="image-area">
-			<?php elemental_addons_get_shortcode_template_part( 'icon-type', $service_item['icon_type'], 'service-block/tpl', $service_item, false );?>
-			<div class="image-box">
+<div class="service-block-style20">
+  <div class="inner-block">
+    <div class="content-box">
+      <div class="title-box">
+        <div class="service-count"><?php echo $count;?><span>.</span></div>
+        <div class="icon">
+          <?php elemental_addons_get_shortcode_template_part( 'icon-type', $service_item['icon_type'], 'service-block/tpl', $service_item, false );?>
+        </div>
+        <?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'service-block/tpl', $service_item, false );?>
+        <?php elemental_addons_get_shortcode_template_part( 'part-content', null, 'service-block/tpl', $service_item, false );?>
+      </div>
+      <div class="image">
 				<?php elemental_addons_get_shortcode_template_part( 'part-featured-image', null, 'service-block/tpl', $service_item, false );?>
-			</div>
-		</div>
-		<div class="content">
-			<?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'service-block/tpl', $service_item, false );?>
-			<?php elemental_addons_get_shortcode_template_part( 'part-content', null, 'service-block/tpl', $service_item, false );?>
-		</div>
-		<div class="background-bg"></div>
-	</div>
+      </div>
+      <a class="service-btn" href="<?php echo esc_url( $feature_link['url'] );?>">
+        <div class="btn-title"><?php echo esc_html( $settings['view_details_button_text']  ); ?></div>
+        <img src="<?php echo esc_url(ELEMENTAL_ADDONS_ASSETS_URI . '/images/current-theme/icon-arrow-theme1.png'); ?>" alt="">
+      </a>
+    </div>
+    <a class="plus-more" href="<?php echo esc_url( $feature_link['url'] );?>"><i class="flaticon-common-plus1"></i></a>
+  </div>
 </div>

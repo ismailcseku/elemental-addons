@@ -29,15 +29,13 @@ class Skin_Style11 extends Elementor_Skin_Base {
 		$settings = $this->parent->get_settings_for_display();
 		$direction_suffix = is_rtl() ? '.rtl' : '';
 		wp_enqueue_style( 'service-block-style11', ELEMENTAL_ADDONS_ASSETS_URI . '/css/shortcodes/service-block/service-block-style11' . $direction_suffix . '.css', array(), ELEMENTAL_ADDONS_VERSION );
-
 		wp_enqueue_script(
 			'tm-service-block-style11-script',
-			ELEMENTAL_ADDONS_ASSETS_URI . '/js/widgets/service-block.js',
+			ELEMENTAL_ADDONS_ASSETS_URI . '/js/widgets/service-block-style11.js',
 			array( 'jquery', 'elementor-frontend' ),
 			ELEMENTAL_ADDONS_VERSION,
 			true
 		);
-
 		$classes = array();
 		if ( ! empty( $settings['animate_icon_on_hover'] ) ) {
 			$classes[] = 'animate-hover animate-icon-' . $settings['animate_icon_on_hover'];

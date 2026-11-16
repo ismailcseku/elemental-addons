@@ -14,105 +14,38 @@ Plugin path: `wp-content/plugins/mascot-core-{source}/`
 
 ## service-block
 
-Total skins: **50** (ported from mascot: **40**, pre-existing: **10**)
+Total skins: **28** (kept skin1 + skin3; ported **26**)
 
 | Skin | Source plugin | Orig. style |
 |------|---------------|-------------|
-| 1 | (pre-existing in elemental-addons) | — |
-| 2 | (pre-existing in elemental-addons) | — |
+| 1 | `mascot-core-lexicon` (default) | 1 |
 | 3 | (pre-existing in elemental-addons) | — |
-| 4 | (pre-existing in elemental-addons) | — |
-| 5 | (pre-existing in elemental-addons) | — |
-| 6 | (pre-existing in elemental-addons) | — |
-| 7 | (pre-existing in elemental-addons) | — |
-| 8 | (pre-existing in elemental-addons) | — |
-| 9 | (pre-existing in elemental-addons) | — |
-| 10 | (pre-existing in elemental-addons) | — |
-| 11 | `mascot-core-abogada` | 7 |
-| 12 | `mascot-core-ackare` | 3 |
-| 13 | `mascot-core-agencyo` | 9 |
-| 14 | `mascot-core-aiteck` | 3 |
-| 15 | `mascot-core-appteck` | 1 |
-| 16 | `mascot-core-archinest` | 2 |
-| 17 | `mascot-core-archiora` | 1 |
-| 18 | `mascot-core-archisky` | 7 |
-| 19 | `mascot-core-archizen` | 2 |
-| 20 | `mascot-core-arotech` | 4 |
-| 21 | `mascot-core-ascendify` | 5 |
-| 22 | `mascot-core-aurex` | 3 |
-| 23 | `mascot-core-autoexpert` | 2 |
-| 24 | `mascot-core-autofixer` | 3 |
-| 25 | `mascot-core-autofixia` | 1 |
-| 26 | `mascot-core-avocate` | 2 |
-| 27 | `mascot-core-axino` | 3 |
-| 28 | `mascot-core-beauta` | 9 |
-| 29 | `mascot-core-buildz` | 2 |
-| 30 | `mascot-core-builton` | 2 |
-| 31 | `mascot-core-cannora` | 2 |
-| 32 | `mascot-core-carenest` | 5 |
-| 33 | `mascot-core-carentz` | 13 |
-| 34 | `mascot-core-carpenterz` | 2 |
-| 35 | `mascot-core-cleanify` | 5 |
-| 36 | `mascot-core-consulten` | 9 |
-| 37 | `mascot-core-consultez` | 2 |
-| 38 | `mascot-core-coolex` | 5 |
-| 39 | `mascot-core-creovibe` | 4 |
-| 40 | `mascot-core-creovio` | 4 |
-| 41 | `mascot-core-decorex` | 7 |
-| 42 | `mascot-core-degency` | 1 |
-| 43 | `mascot-core-dermisio` | 4 |
-| 44 | `mascot-core-desify` | 7 |
-| 45 | `mascot-core-digilink` | 6 |
-| 46 | `mascot-core-digiplus` | 16 |
-| 47 | `mascot-core-digitos` | 13 |
-| 48 | `mascot-core-digivibe` | 2 |
-| 49 | `mascot-core-ecovera` | 1 |
-| 50 | `mascot-core-elderkare` | 9 |
-
-### By source plugin
-
-| Plugin | Skins (new←orig) |
-|--------|------------------|
-| `mascot-core-abogada` | 11←7 |
-| `mascot-core-ackare` | 12←3 |
-| `mascot-core-agencyo` | 13←9 |
-| `mascot-core-aiteck` | 14←3 |
-| `mascot-core-appteck` | 15←1 |
-| `mascot-core-archinest` | 16←2 |
-| `mascot-core-archiora` | 17←1 |
-| `mascot-core-archisky` | 18←7 |
-| `mascot-core-archizen` | 19←2 |
-| `mascot-core-arotech` | 20←4 |
-| `mascot-core-ascendify` | 21←5 |
-| `mascot-core-aurex` | 22←3 |
-| `mascot-core-autoexpert` | 23←2 |
-| `mascot-core-autofixer` | 24←3 |
-| `mascot-core-autofixia` | 25←1 |
-| `mascot-core-avocate` | 26←2 |
-| `mascot-core-axino` | 27←3 |
-| `mascot-core-beauta` | 28←9 |
-| `mascot-core-buildz` | 29←2 |
-| `mascot-core-builton` | 30←2 |
-| `mascot-core-cannora` | 31←2 |
-| `mascot-core-carenest` | 32←5 |
-| `mascot-core-carentz` | 33←13 |
-| `mascot-core-carpenterz` | 34←2 |
-| `mascot-core-cleanify` | 35←5 |
-| `mascot-core-consulten` | 36←9 |
-| `mascot-core-consultez` | 37←2 |
-| `mascot-core-coolex` | 38←5 |
-| `mascot-core-creovibe` | 39←4 |
-| `mascot-core-creovio` | 40←4 |
-| `mascot-core-decorex` | 41←7 |
-| `mascot-core-degency` | 42←1 |
-| `mascot-core-dermisio` | 43←4 |
-| `mascot-core-desify` | 44←7 |
-| `mascot-core-digilink` | 45←6 |
-| `mascot-core-digiplus` | 46←16 |
-| `mascot-core-digitos` | 47←13 |
-| `mascot-core-digivibe` | 48←2 |
-| `mascot-core-ecovera` | 49←1 |
-| `mascot-core-elderkare` | 50←9 |
+| 2 | `mascot-core-autofixia` | 1 |
+| 4 | `mascot-core-coolora` | 1 |
+| 5 | `mascot-core-renovix` | 1 |
+| 6 | `mascot-core-webnexa` | 4 |
+| 7 | `mascot-core-tilenest` | 1 |
+| 8 | `mascot-core-doorix` | 1 |
+| 9 | `mascot-core-fertiora` | 5 |
+| 10 | `mascot-core-gadgetcare` | 1 |
+| 11 | `mascot-core-landfixing` | 2 |
+| 12 | `mascot-core-luxearura` | 1 |
+| 13 | `mascot-core-nourio` | 5 |
+| 14 | `mascot-core-ventiq` | 1 |
+| 15 | `mascot-core-dermisio` | 1 |
+| 16 | `mascot-core-insurio` | 1 |
+| 17 | `mascot-core-yogava` | 1 |
+| 18 | `mascot-core-glowra` | 1 |
+| 19 | `mascot-core-fieldora` | 2 |
+| 20 | `mascot-core-optipress` | 1 |
+| 21 | `mascot-core-desify` | 1 |
+| 22 | `mascot-core-bixom` | 1 |
+| 23 | `mascot-core-greenland` | 1 |
+| 24 | `mascot-core-digilink` | 7 |
+| 25 | `mascot-core-tranxo` | 3 |
+| 26 | `mascot-core-solarixia` | 1 |
+| 27 | `mascot-core-realwide` | 2 |
+| 28 | `mascot-core-creovibe` | 1 |
 
 ## features-block
 

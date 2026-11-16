@@ -1,122 +1,211 @@
 @import "../../bootstrap-loader";
 @import "service-common";
 .service-block-style9 {
-  position: relative;
+  padding: 25px;
+  border-radius: 20px;
+  z-index: 0;
   margin-bottom: 30px;
-  z-index: 1;
-  .inner-box {
-    position: relative;
-    margin-top: 30px;
+  position: relative;
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    padding: 35px 50px 25px;
-    padding-left: 270px;
+    content: "";
+    z-index: -1;
+    transition: 0.4s;
+    border-radius: 20px;
     background-color: #fff;
-    [data-tm-layout="dark"] & {
-      background-color: #141212;
+    -webkit-mask-image: url(../../../images/current-theme/mask-2.png);
+    -webkit-mask-size: cover;
+    -webkit-mask-position: top right;
+    -webkit-mask-repeat: no-repeat;
+    body.rtl & {
+      @include transform(scaleX(-1));
     }
-    min-height: 260px;
-    -webkit-box-shadow: 0 0px 15px rgba(0, 0, 0, 0.07);
-    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.07);
-    @include transition(all 300ms linear);
-    border-right: 6px solid var(--theme-color1);
-    @include media-breakpoint-down(md) {
-      padding: 30px 20px;
-      text-align: center;
-      border-right: 0;
-      margin-bottom: 30px;
+  }
+  &:hover {
+    &::after {
+      background-color: var(--theme-color3);
     }
-    &:before {
-      position: absolute;
-      left: 0;
-      top: 0;
-      height: 100%;
-      width: 100%;
-      background-color: #fff;
-      background-image: url(../../../images/current-theme/icon-lines-2.png);
-      background-repeat: no-repeat;
-      background-position: right bottom;
-      content: "";
-      @include transition(all 300ms linear);
-      [data-tm-layout="dark"] & {
-        background-color: #141212;
+    .service-title {
+      color: #fff;
+    }
+    .service-details {
+      .ks-service-list-box {
+        color: #DAD6DE;
       }
     }
-    &:hover {
-      .image {
-        img {
-          -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+    .ks-service-more {
+      color: #fff;
+      &::before {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+
+      &::after {
+        background-color: var(--gray-color);
+      }
+    }
+
+    .ks-service-link {
+      & a {
+        color: #fff;
+        &::after {
+          transform: scale(1);
         }
-        &:after {
-          height: 100%;
-          opacity: 0;
-          @include transition(all 400ms linear);
-        }
-        .icon {
-          background-color: var(--theme-color1);
-        }
+      }
+    }
+    .ks-service-thumb {
+      & img {
+        transform: scale(1.1);
       }
     }
   }
-  .image {
-    position: absolute;
-    left: 30px;
-    top: -30px;
-    margin-bottom: 0px;
-    overflow: hidden;
-    @include transition(all 200ms linear);
-    max-width: 200px;
-    @include media-breakpoint-down(md) {
-      position: relative;
-      left: 0;
-      top: 0;
-      margin-bottom: 20px;
-      max-width: 100%;
-    }
-    img {
-      width: 100%;
-      @include transition(all 300ms linear);
-    }
-    &:after {
-      background: rgba(255, 255, 255, 0.3);
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 0;
-      opacity: 1;
-      z-index: 9;
-      pointer-events: none;
-    }
-    .icon {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      height: 75px;
-      width: 75px;
-      color: var(--theme-color2);
-      background-color: var(--theme-color1);
-      font-size: 30px;
-      font-weight: 700;
-      text-align: center;
-      line-height: 75px;
-      border-radius: 50%;
-      @include transition(all 300ms linear);
+  .ks-service-list-box {
+    margin-bottom: 15px;
+    li {
+      &:not(:last-child) {
+        margin-bottom: 6px;
+      }
     }
   }
   .service-title {
-    position: relative;
     margin-bottom: 15px;
-    @media (max-width: $ele-breakpoint-tablet-max) {
-      margin-top: 25px;
+    position: relative;
+    color: var(--theme-color3);
+    display: inline;
+    background-repeat: no-repeat;
+    background-size:
+      0% 1px,
+      0 1px;
+    background-position:
+      100% 100%,
+      0 100%;
+    transition: background-size 0.3s linear;
+    background-image: linear-gradient(currentcolor, currentcolor), linear-gradient(currentcolor, currentcolor);
+    &:hover {
+      background-size:
+        0% 1px,
+        100% 1px;
+      &:before {
+        right: unset;
+        left: 0;
+        width: 100%;
+      }
+    }
+    a {
+      &:hover,
+      &:focus {
+        color: #fff;
+      }
+    }
+
+    @include media-breakpoint-down(xl) {
+      font-size: 22px;
+    }
+    @include media-breakpoint-only(sm) {
+      font-size: 19px;
     }
   }
-  .service-details {
+  .ks-service-thumb {
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
     position: relative;
-    position: relative;
+    & img {
+      width: 100%;
+      border-radius: 20px;
+      transition: 1.3s all ease;
+    }
+  }
+  .ks-service-icon {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
     margin-bottom: 0;
+    .service-icon {
+      position: relative;
+      display: inline-block;
+      height: 62px;
+      width: 62px;
+      font-size: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: var(--theme-color1-text-color);
+      border-color: var(--theme-color1);
+      background-color: var(--theme-color1);
+      i {
+        display: flex;
+        line-height: 1;
+      }
+    }
+  }
+  .ks-service-more {
+    font-weight: 700;
+    font-size: 12px;
+    color: #9393a9;
+    &::before {
+      content: "";
+      display: inline-block;
+      height: 1px;
+      width: 70%;
+      transform: translateY(-3px);
+      margin-right: 20px;
+      background-color: rgba($color: #9393a9, $alpha: 0.3);
+      @include media-breakpoint-down(xl) {
+        width: 80%;
+      }
+    }
+
+    &:hover {
+      color: var(--theme-color-white);
+    }
+  }
+  .ks-service-more::before {
+    @include media-breakpoint-only(sm) {
+      width: 80%;
+    }
+  }
+  .ks-service-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    a {
+      display: inline-block;
+      border-radius: 200px;
+      padding: 10px 15px;
+      width: 48px;
+      height: 62px;
+      line-height: 41px;
+      text-align: center;
+      transition: 0.3s;
+      color: var(--theme-color1-text-color);
+      background-color: var(--theme-color1);
+      @include media-breakpoint-down(xl) {
+        height: 55px;
+        width: 42px;
+        line-height: 2;
+      }
+      svg {
+        position: relative;
+        z-index: 1;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 200px;
+        transform: scale(0);
+        transition: 0.3s;
+        background-color: var(--theme-color3);
+      }
+    }
   }
 }

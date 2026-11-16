@@ -5,7 +5,7 @@ use Elementor\Controls_Manager;
 use Elementor\Group_Control_Image_Size;
 use Elementor\Skin_Base as Elementor_Skin_Base;
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) exit;
 
 class Skin_Style1 extends Elementor_Skin_Base {
 
@@ -17,11 +17,9 @@ class Skin_Style1 extends Elementor_Skin_Base {
 		return 'skin-style1';
 	}
 
-
 	public function get_title() {
 		return __( 'Skin Style1', 'elemental-addons' );
 	}
-
 
 	public function register_layout_controls( Widget_Base $widget ) {
 		$this->parent = $widget;
@@ -29,45 +27,27 @@ class Skin_Style1 extends Elementor_Skin_Base {
 
 	public function render() {
 		$settings = $this->parent->get_settings_for_display();
-
 		$direction_suffix = is_rtl() ? '.rtl' : '';
 		wp_enqueue_style( 'service-block-style1', ELEMENTAL_ADDONS_ASSETS_URI . '/css/shortcodes/service-block/service-block-style1' . $direction_suffix . '.css', array(), ELEMENTAL_ADDONS_VERSION );
 		wp_enqueue_script(
 			'tm-service-block-style1-script',
-			ELEMENTAL_ADDONS_ASSETS_URI . '/js/widgets/service-block.js',
+			ELEMENTAL_ADDONS_ASSETS_URI . '/js/widgets/service-block-style1.js',
 			array( 'jquery', 'elementor-frontend' ),
 			ELEMENTAL_ADDONS_VERSION,
 			true
 		);
-
-
-		if( $settings['animate_icon_on_hover'] ) {
-			$classes[] = 'animate-hover animate-icon-'.$settings['animate_icon_on_hover'];
-		}
-
-		//classes
 		$classes = array();
+		if ( ! empty( $settings['animate_icon_on_hover'] ) ) {
+			$classes[] = 'animate-hover animate-icon-' . $settings['animate_icon_on_hover'];
+		}
 		$settings['classes'] = $classes;
-
-		//icon classes
-		$icon_classes = array();
-		$settings['icon_classes'] = $icon_classes;
-
-		//button classes
-		$settings['btn_classes'] = elemental_addons_prepare_button_classes_from_params( $settings );
-
-
-		//icon classes
-		$icon_classes = array();
-		$settings['icon_classes'] = $icon_classes;
-
-		$settings['holder_id'] = \elemental_addons_get_isotope_holder_ID('service-block');
-
+		$settings['icon_classes'] = array();
+		if ( function_exists( 'elemental_addons_prepare_button_classes_from_params' ) ) {
+			$settings['btn_classes'] = elemental_addons_prepare_button_classes_from_params( $settings );
+		}
+		$settings['holder_id'] = \elemental_addons_get_isotope_holder_ID( 'service-block' );
 		$settings['settings'] = $settings;
-
-		//Produce HTML version by using the parameters (filename, variation, folder name, parameters, shortcode_ob_start)
 		$html = elemental_addons_get_shortcode_template_part( 'service', $settings['display_type'], 'service-block/tpl', $settings, true );
-
 		\elemental_addons_print_html( $html );
 	}
 }

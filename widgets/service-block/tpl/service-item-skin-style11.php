@@ -1,4 +1,4 @@
-<!-- Service Block Six -->
+<!-- Service Block Style2-->
 <?php
 $service_item['settings'] = $settings;
 $service_item['title_tag'] = $title_tag;
@@ -8,24 +8,20 @@ $count = $service_item['count'];
 $target = ( $feature_link && $feature_link['is_external'] ) ? ' target="_blank"' : '';
 $url = ( $feature_link && $feature_link['url'] ) ? $feature_link['url'] : '';
 ?>
-<div class="service-block-style11">
-  <div class="head">
-    <div class="head-title">
-      <?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'service-block/tpl', $service_item, false );?>
-      <?php elemental_addons_get_shortcode_template_part( 'part-count', null, 'service-block/tpl', $service_item, false );?>
-    </div>
-  </div>
-  <div class="content">
-    <div class="wrp">
-      <div class="content-wrp">
-        <?php elemental_addons_get_shortcode_template_part( 'part-content', null, 'service-block/tpl', $service_item, false );?>
-        <a href="<?php echo esc_url( $url );?>" class="arry-btn"><i class="flaticon-common-right-arrow"></i></a>
-      </div>
-      <div class="shape">
-      </div>
-      <div class="image">
-        <?php elemental_addons_get_shortcode_template_part( 'part-featured-image', null, 'service-block/tpl', $service_item, false );?>
-      </div>
-    </div>
-  </div>
+<div class="service-block service-block-style11">
+	<div class="content">
+		<div class="icon">
+			<?php elemental_addons_get_shortcode_template_part( 'icon-type', $service_item['icon_type'], 'service-block/tpl', $service_item, false );?>
+		</div>
+		<?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'service-block/tpl', $service_item, false );?>
+	</div>
+	<div class="thumb">
+		<?php if( !empty( $service_item['featured_image']['id'] ) ) : ?>
+			<?php elemental_addons_get_shortcode_template_part( 'part-featured-image', null, 'service-block/tpl', $service_item, false );?>
+		<?php endif; ?>
+	</div>
+	<div class="service-shape">
+		<img class="shape-default" src="<?php echo esc_url( ELEMENTAL_ADDONS_ASSETS_URI . '/images/current-theme/service-shape1-1.png' ); ?>" alt="<?php esc_attr_e( 'Service Shape', 'elemental-addons' ); ?>">
+		<img class="shape-hover" src="<?php echo esc_url( ELEMENTAL_ADDONS_ASSETS_URI . '/images/current-theme/service-shape1-2.png' ); ?>" alt="<?php esc_attr_e( 'Service Shape', 'elemental-addons' ); ?>">
+	</div>
 </div>

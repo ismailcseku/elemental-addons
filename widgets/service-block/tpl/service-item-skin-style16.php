@@ -3,37 +3,32 @@
 $service_item['settings'] = $settings;
 $service_item['title_tag'] = $title_tag;
 $service_item['subtitle_tag'] = $subtitle_tag;
-$feature_link = $service_item['feature_link'];
-$count = $service_item['count'];
-$target = ( $feature_link && $feature_link['is_external'] ) ? ' target="_blank"' : '';
-$url = ( $feature_link && $feature_link['url'] ) ? $feature_link['url'] : '';
-$featured_image = $service_item['featured_image'];
-$featured_image_size = $service_item['featured_image_size'];
-$image = wp_get_attachment_image_src( $featured_image['id'], $featured_image_size);
+$feature_link = isset( $service_item['feature_link'] ) ? $service_item['feature_link'] : [];
+$target = ( $feature_link && ! empty( $feature_link['is_external'] ) ) ? ' target="_blank"' : '';
+$rel = ( $feature_link && ! empty( $feature_link['nofollow'] ) ) ? ' rel="nofollow"' : '';
+$url = ( $feature_link && ! empty( $feature_link['url'] ) ) ? $feature_link['url'] : '#';
 ?>
 
-<div class="service-block-style16" data-bg="<?php if( isset($image[0]) && !empty($image[0]) ) echo esc_url( $image[0] )?>">
-  <div class="inner-box">
-    <div class="content">
-      <?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'service-block/tpl', $service_item, false );?>
-      <?php elemental_addons_get_shortcode_template_part( 'part-subtitle', null, 'service-block/tpl', $service_item, false );?>
-    </div>
-    <div class="overlay-content">
-      <?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'service-block/tpl', $service_item, false );?>
-      <?php elemental_addons_get_shortcode_template_part( 'part-subtitle', null, 'service-block/tpl', $service_item, false );?>
-
-
-      <?php elemental_addons_get_shortcode_template_part( 'part-content', null, 'service-block/tpl', $service_item, false );?>
-
-      <?php if ( $show_view_details_button == 'yes' ) : ?>
-      <div class="btn-box">
-        <a href="<?php echo esc_url( $url );?>" class="theme-btn btn-style-two">
-          <span class="btn-title"><?php echo esc_html( $settings['view_details_button_text']  ); ?></span>
-          <i class="icon fa fa-arrow-right"></i>
-        </a>
-      </div>
-      <?php endif; ?>
-
-    </div>
+<div class="service-block-style16">
+  <div class="inner-block">
+	<?php if ( ! empty( $service_item['featured_image']['id'] ) ) : ?>
+	<div class="image">
+	  <?php elemental_addons_get_shortcode_template_part( 'part-featured-image', null, 'service-block/tpl', $service_item, false ); ?>
+	</div>
+	<?php endif; ?>
+	<div class="icon">
+	  <?php elemental_addons_get_shortcode_template_part( 'icon-type', $service_item['icon_type'], 'service-block/tpl', $service_item, false ); ?>
+	</div>
+	<div class="content-box">
+	  <div class="inner-box">
+		<?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'service-block/tpl', $service_item, false ); ?>
+		<div class="text">
+		  <?php elemental_addons_get_shortcode_template_part( 'part-content', null, 'service-block/tpl', $service_item, false ); ?>
+		</div>
+		<?php if ( ! empty( $show_view_details_button ) && $show_view_details_button === 'yes' ) : ?>
+		  <a href="<?php echo esc_url( $url ); ?>"<?php echo $target; ?><?php echo $rel; ?> class="btn-more"><span class="btn-title"><?php echo esc_html( $view_details_button_text ); ?></span> <i class="fa fa-arrow-right"></i></a>
+		<?php endif; ?>
+	  </div>
+	</div>
   </div>
 </div>

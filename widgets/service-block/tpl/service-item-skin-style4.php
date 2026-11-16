@@ -1,4 +1,4 @@
-<!-- Service Block Style4-->
+<!-- Service Block Style1-->
 <?php
 $service_item['settings'] = $settings;
 $service_item['title_tag'] = $title_tag;
@@ -9,24 +9,26 @@ $target = ( $feature_link && $feature_link['is_external'] ) ? ' target="_blank"'
 $url = ( $feature_link && $feature_link['url'] ) ? $feature_link['url'] : '';
 ?>
 <div class="service-block-style4">
-  <div class="inner-block">
-    <div class="content">
-      <?php elemental_addons_get_shortcode_template_part( 'part-count', null, 'service-block/tpl', $service_item, false );?>
-      <?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'service-block/tpl', $service_item, false );?>
+  <div class="inner-box">
+    <div class="image-box">
+      <div class="bg-gradient-shape"></div>
+      <div class="service-featured-img">
+        <?php elemental_addons_get_shortcode_template_part( 'part-featured-image', null, 'service-block/tpl', $service_item, false );?>
+      </div>
+
+      <div class="icon-box">
+        <div class="icon">
+          <?php elemental_addons_get_shortcode_template_part( 'icon-type', $service_item['icon_type'], 'service-block/tpl', $service_item, false );?>
+        </div>
+      </div>
     </div>
-    <div class="image">
-      <?php elemental_addons_get_shortcode_template_part( 'part-featured-image', null, 'service-block/tpl', $service_item, false );?>
-      <?php elemental_addons_get_shortcode_template_part( 'part-featured-image', null, 'service-block/tpl', $service_item, false );?>
+    <div class="content-box">
+      <?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'service-block/tpl', $service_item, false );?>
       <div class="text">
         <?php elemental_addons_get_shortcode_template_part( 'part-content', null, 'service-block/tpl', $service_item, false );?>
       </div>
+      <a href="<?php echo esc_url( $url );?>" class="btn-more"><?php echo esc_html( $settings['view_details_button_text'] ?? 'Read More' ); ?> <i class="fa fa-arrow-right ms-2"></i></a>
+      <div class="count"><?php echo esc_html( str_pad( $count, 2, '0', STR_PAD_LEFT ) ); ?></div>
     </div>
-    <?php if ( $show_view_details_button == 'yes' ) : ?>
-      <a class="btn-more" href="<?php echo esc_url( $url );?>"<?php echo esc_attr( $target );?>>
-        <span class="btn-title"><?php echo esc_html( $settings['view_details_button_text'] ); ?></span>
-        <span class="line"></span>
-        <span class="arrow lnr-icon-arrow-right1"></span>
-      </a>
-    <?php endif; ?>
   </div>
 </div>

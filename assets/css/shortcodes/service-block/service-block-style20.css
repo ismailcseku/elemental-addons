@@ -8,226 +8,164 @@
   transition: all 300ms ease;
 }
 
-.service-block-style20 {
-  position: relative;
-  margin-bottom: 40px;
+.service-block-style20 .inner-block:hover .content-box {
+  background-color: var(--theme-color2);
 }
-.service-block-style20 .inner-box {
-  position: relative;
-  background-color: #ffffff;
-  box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  height: 100%;
-  padding: 50px 50px 50px;
-  padding-right: 270px;
-  min-height: 350px;
-  transition: all 300ms linear;
-  z-index: 2;
+.service-block-style20 .inner-block:hover .content-box .title-box .service-count {
+  color: var(--theme-color2-text-color);
 }
-body.tm-dark-layout .service-block-style20 .inner-box {
-  background: #1a1b1d;
+.service-block-style20 .inner-block:hover .content-box .icon i,
+.service-block-style20 .inner-block:hover .content-box .icon img {
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
-@media (max-width: 1199.98px) {
-  .service-block-style20 .inner-box {
-    padding: 30px !important;
-  }
+.service-block-style20 .inner-block:hover .content-box .service-title {
+  color: var(--theme-color2-text-color);
 }
-.service-block-style20 .inner-box:after {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: var(--theme-color1);
-  transform: scale(0);
-  transform-origin: right bottom;
-  border-radius: 500px 0 0;
-  z-index: -1;
-  content: "";
-  transition: all 300ms linear;
+.service-block-style20 .inner-block:hover .content-box .service-title a {
+  color: var(--theme-color2-text-color);
 }
-.service-block-style20 .inner-box .background-bg {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 0;
-  opacity: 0;
-  background-repeat: no-repeat;
-  background-image: url(../../../images/current-theme/pattern1.png);
-  transition: all 300ms linear;
+.service-block-style20 .inner-block:hover .content-box .service-details {
+  color: #b5b5b5;
 }
-.service-block-style20 .inner-box:hover::after {
-  transform: scale(1.5);
+.service-block-style20 .inner-block:hover .content-box .image img {
+  transform: scale(1.2);
 }
-.service-block-style20 .inner-box:hover .background-bg {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 0;
-  opacity: 0.7;
-  background-repeat: no-repeat;
-  background-image: url(../../../images/current-theme/pattern1.png);
+.service-block-style20 .inner-block:hover .content-box .service-btn {
+  color: var(--theme-color2-text-color);
 }
-.service-block-style20 .inner-box:hover .service-details {
-  color: var(--text-color-bg-theme-color1);
-}
-.service-block-style20 .inner-box:hover .service-title a {
-  color: var(--text-color-bg-theme-color1);
-}
-.service-block-style20 .inner-box:hover .service-icon {
-  transform: rotate(180deg) scale(-1);
-}
-.service-block-style20 .inner-box:hover .image-area .service-featured-img img {
-  transform: scale(1.1);
-}
-.service-block-style20 .image-area {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-@media (max-width: 1199.98px) {
-  .service-block-style20 .image-area {
-    position: relative;
-    left: 0;
-    top: 0;
-    margin-bottom: 70px;
-  }
-}
-.service-block-style20 .image-area .service-featured-img {
-  border-radius: 400px 0 0 0;
-  overflow: hidden;
-  width: 265px;
-}
-@media (max-width: 1199.98px) {
-  .service-block-style20 .image-area .service-featured-img {
-    border-radius: 0 !important;
-    width: 100%;
-  }
-}
-.service-block-style20 .image-area .service-featured-img img {
-  width: 100%;
-  transition: all 300ms ease;
-}
-.service-block-style20 .image-area .service-icon {
-  position: absolute;
-  right: 75px;
-  top: -10px;
-  height: 88px;
-  width: 88px;
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 34px;
-  color: var(--theme-color1);
-  box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  z-index: 2;
-  transition: all 300ms ease;
-}
-@media (max-width: 1199.98px) {
-  .service-block-style20 .image-area .service-icon {
-    right: 0 !important;
-    left: 0 !important;
-    top: auto;
-    bottom: 0;
-    margin: 0 auto -40px;
-  }
-}
-.service-block-style20 .content {
-  position: relative;
-}
-@media (max-width: 1199.98px) {
-  .service-block-style20 .content {
-    text-align: center;
-  }
-}
-.service-block-style20 .content .service-details {
-  max-width: 230px;
-}
-@media (max-width: 1199.98px) {
-  .service-block-style20 .content .service-details {
-    max-width: 100%;
-  }
-}
-.service-block-style20 .service-title {
-  font-size: 30px;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-@media (max-width: 575.98px) {
-  .service-block-style20 .service-title {
-    font-size: 24px;
-  }
-}
-.service-block-style20 .service-title:hover {
+.service-block-style20 .inner-block:hover .content-box .service-btn i,
+.service-block-style20 .inner-block:hover .content-box .service-btn img {
   color: var(--theme-color1);
 }
-.service-block-style20 .service-title a:hover {
+.service-block-style20 .inner-block:hover .plus-more:before {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.service-block-style20 .inner-block:hover .plus-more i,
+.service-block-style20 .inner-block:hover .plus-more img {
   color: #fff;
 }
-.service-block-style20 .service-details {
-  line-height: 30px;
-  transition: all 300ms linear;
+.service-block-style20 .inner-block .content-box {
+  background-color: var(--theme-color-white);
+  border-radius: 40px;
+  mask-image: url(../../../images/current-theme/service1-mask1.png);
+  mask-size: cover;
+  mask-position: right center;
+  padding: 35px 20px 20px;
+  transition: all 500ms ease;
 }
-.image-position-bottom-left .service-block-style20 .inner-box {
-  padding-left: 280px;
-  padding-right: 50px;
+.service-block-style20 .inner-block .content-box .title-box {
+  padding: 13px 22px 32px;
+  position: relative;
 }
-.image-position-bottom-left .service-block-style20 .inner-box:after {
-  transform-origin: left bottom;
-  border-radius: 0 500px 0 0;
+.service-block-style20 .inner-block .content-box .title-box .service-count {
+  color: #dddddd;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1;
+  position: absolute;
+  right: 0;
+  top: 23px;
+  transition: all 300ms ease;
 }
-.image-position-bottom-left .service-block-style20 .image-area {
-  right: auto;
+.service-block-style20 .inner-block .content-box .title-box .service-count span {
+  color: var(--theme-color1);
+  transition: all 300ms ease;
+}
+.service-block-style20 .inner-block .content-box .icon {
+  color: var(--theme-color1);
+  font-size: 60px;
+  line-height: 1;
+  margin-bottom: 33px;
+}
+.service-block-style20 .inner-block .content-box .icon i,
+.service-block-style20 .inner-block .content-box .icon img {
+  display: inline-block;
+  transition: all 300ms ease;
+}
+.service-block-style20 .inner-block .content-box .service-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  transition: all 300ms ease;
+}
+.service-block-style20 .inner-block .content-box .service-details {
+  transition: all 300ms ease;
+}
+.service-block-style20 .inner-block .content-box .image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 34px;
+}
+.service-block-style20 .inner-block .content-box .image img {
+  border-radius: 20px;
+  display: block;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  transition: 1.3s all ease;
+}
+.service-block-style20 .inner-block .content-box .service-btn {
+  font-weight: 500;
+  margin-left: 23px;
+  margin-bottom: 13px;
+  gap: 10px;
+  display: inline-flex;
+  align-items: center;
+  transition: all 300ms ease;
+}
+.service-block-style20 .inner-block .content-box .service-btn:hover {
+  color: var(--theme-color1);
+}
+.service-block-style20 .inner-block .content-box .service-btn .btn-title {
+  text-decoration: underline;
+  transition: all 300ms ease;
+}
+.service-block-style20 .inner-block .content-box .service-btn i,
+.service-block-style20 .inner-block .content-box .service-btn img {
+  color: var(--theme-color1);
+  display: inline-block;
+  transition: all 300ms ease;
+}
+.service-block-style20 .inner-block .plus-more {
+  background-color: var(--theme-color2);
+  border-radius: 50%;
+  color: var(--theme-color2-text-color);
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  width: 60px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  transition: all 300ms ease;
+}
+.service-block-style20 .inner-block .plus-more:before {
+  background: linear-gradient(90deg, #804613 0%, #e67e22 100%);
+  border-radius: 50%;
+  content: "";
+  position: absolute;
   left: 0;
-}
-.image-position-bottom-left .service-block-style20 .image-area .service-featured-img {
-  border-radius: 0 400px 0 0;
-}
-.image-position-bottom-left .service-block-style20 .image-area .service-icon {
-  right: auto;
-  left: 75px;
-}
-.image-position-top-right .service-block-style20 .inner-box:after {
-  transform-origin: right top;
-  border-radius: 0 0 0 500px;
-}
-.image-position-top-right .service-block-style20 .image-area {
   top: 0;
-  bottom: auto;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transition: all 300ms ease;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
 }
-.image-position-top-right .service-block-style20 .image-area .service-featured-img {
-  border-radius: 0 0 0 400px;
-}
-.image-position-top-right .service-block-style20 .image-area .service-icon {
-  top: auto;
-  bottom: -10px;
-}
-.image-position-top-left .service-block-style20 .inner-box {
-  padding-left: 280px;
-  padding-right: 30px;
-}
-.image-position-top-left .service-block-style20 .inner-box:after {
-  transform-origin: left top;
-  border-radius: 0 0 500px 0;
-}
-.image-position-top-left .service-block-style20 .image-area {
-  bottom: auto;
-  top: 0;
-  left: 0;
-  right: auto;
-}
-.image-position-top-left .service-block-style20 .image-area .service-featured-img {
-  border-radius: 0 0 400px 0;
-}
-.image-position-top-left .service-block-style20 .image-area .service-icon {
-  right: auto;
-  left: 75px;
-  top: auto;
-  bottom: -10px;
+.service-block-style20 .inner-block .plus-more i,
+.service-block-style20 .inner-block .plus-more img {
+  transition: all 300ms ease;
 }
