@@ -1,181 +1,94 @@
 @import "../../bootstrap-loader";
-
+@import "features-common";
 .features-block-style23 {
+  margin-bottom: 40px;
   .inner-box {
-    background-color: #F1F2EB;
-    border-radius: 0;
-    padding: 40px;
-    z-index: 1;
     position: relative;
-    &:hover {
-      &:before {
-        transform-origin: bottom left;
-        transform: scale(1, 1);
-      }
-      .icon-box {
-        i {
-          transform: rotate(360deg);
-        }
-      }
-      .content-box {
-        .features-title {
-          color: var(--theme-color-white);
-        }
-        .features-details {
-          color: var(--theme-color-white);
-        }
-      }
-      .theme-btn {
-        color: var(--theme-color1);
-        background-color: #fff;
-        .icon {
-          color: var(--theme-color1);
-        }
-      }
+    padding-left: 140px;
+    padding-bottom: 50px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #2f2929;
+    @include media-breakpoint-down(xl) {
+      border-bottom: none;
     }
-    &:before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      z-index: -1;
-      background-color: var(--theme-color1);
-      transform-origin: top right;
-      transform-origin: bottom right;
-      transform: scale(0, 1);
-      transition: -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
-      transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
-      transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
-      transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-    }
-    .content-box {
-      @include transition(all 300ms ease);
-      .features-title {
-        margin-bottom: 10px;
-        margin-top: 0;
-        @include transition(all 300ms ease);
-        a {
-        }
-      }
-      .features-details {
-        margin-bottom: 40px;
-        position: relative;
-        @include transition(all 300ms ease);
-        @include media-breakpoint-down(lg) {
-          margin-bottom: 50px;
-        }
-      }
-    }
-    .theme-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
+    @include media-breakpoint-down(sm) {
+      padding-bottom: 0;
+      padding-left: 0;
+      margin-bottom: 0;
       text-align: center;
-      white-space: nowrap;
-      gap: 14px;
-      z-index: 1;
-      width: 100%;
-      @include transition(all 300ms ease);
-      .btn-title {
-        position: relative;
-        display: flex;
-        align-items: center;
-        @include transition(all 300ms ease);
-      }
     }
-    .btn-style-two {
-      background-color: var(--theme-color1);
-      color: var(--theme-color-white);
-      padding: 9px 20px;
-      position: relative;
-      justify-content: center;
-      align-items: center;
+    &:hover {
       .icon {
-        font-size: 20px;
-        line-height: 1;
-        color: var(--theme-color-white);
-        @include transition(all 300ms ease);
-      }
-      &:before {
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        content: "";
-        background-color: #F1F2EB;
-        border-radius: 0;
-        transform: scale(0, 1);
-        transform-origin: top right;
-        transition: -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
-        transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
-        transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
-        transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-        z-index: -1;
-        transform-origin: bottom right;
-      }
-      &:hover {
-        color: var(--theme-color1);
-        .icon {
-          color: var(--theme-color1);
+        background-color: var(--theme-color3);
+        color: var(--theme-color3-text-color);
+        &:after {
+          background-color: var(--theme-color3);
+        }
+        i {
+          @include transform(rotateY(360deg));
+          @include transition(all 900ms ease);
         }
       }
-      &:hover:before {
-        transform: scale(1, 1);
-        transform-origin: bottom left;
-      }
     }
-    .icon-box {
-      margin-bottom: 42px;
+    .icon {
+      position: absolute;
+      top: 6px;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      line-height: 1;
+      font-size: 60px;
+      margin-right: 35px;
+      border-radius: 20px;
+      color: #fff;
+      background-color: var(--theme-color1);
+      text-align: center;
       display: inline-flex;
-      align-items: center;
       justify-content: center;
-      border-radius: 50%;
-      width: 80px;
-      height: 80px;
-      background-color: #fff;
+      align-items: center;
       @include transition(all 300ms ease);
-      svg path {
+      i {
+        @include transition(all 900ms ease);
+        display: inline-block;
+        position: relative;
+        top: 4px;
+      }
+      @include media-breakpoint-down(sm) {
+        position: relative;
+        margin: 0 auto 30px;
+        text-align: center;
+      }
+      &:after {
+        background-color: var(--theme-color1);
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 34px;
+        bottom: 35%;
+        right: -8px;
+        clip-path: polygon(0% 0, 100% 50%, 0 100%, 0 100%);
         @include transition(all 300ms ease);
       }
-      i {
-        font-size: 36px;
-        line-height: 1;
-        color: var(--theme-color1);
-        display: flex;
-        @include transition(all 300ms ease);
-      }
     }
-  }
-}
-
-.features-block-style23.active {
-  .inner-box {
-    &:before {
-      transform-origin: bottom left;
-      transform: scale(1, 1);
-    }
-    .icon-box {
-      i {
-        transform: rotate(360deg);
-        color: var(--theme-color1) !important;
-      }
-    }
-    .content-box {
+    .content {
       .features-title {
-        color: var(--theme-color-white);
-      }
-      .features-details {
-        color: var(--theme-color-white);
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-bottom: 10px;
+        letter-spacing: -0.01em;
       }
     }
-    .theme-btn {
-      color: var(--theme-color1) !important;
-      background-color: #fff;
-      .icon {
-        color: var(--theme-color1) !important;
+    &:after {
+      position: absolute;
+      top: 0;
+      right: -10px;
+      width: 97px;
+      height: 19px;
+      background-image: url(../../../images/current-theme/vector3.png);
+      content: "";
+      @include transition(all 300ms ease);
+      @include media-breakpoint-down(xxl) {
+        display: none;
       }
     }
   }

@@ -1,67 +1,73 @@
 @import "../../bootstrap-loader";
+
 .features-block-style26 {
-  position: relative;
-  margin-bottom: 30px;
-  z-index: 1;
   .inner-box {
+    background: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0) 0%,
+      var(--theme-color1) 100%
+    );
+    border-radius: 21px;
+    margin-bottom: 30px;
+    padding: 40px 40px 33px;
     position: relative;
-    overflow: hidden;
-    height: 100%;
-    padding: 35px 40px 10px;
-    background-color: #171717;
-    z-index: 2;
-    @include transition(all 300ms ease);
-    .content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    z-index: 1;
+    @include transition(all 0.4s ease);
+    &:after {
+      background: var(--theme-color2);
+      border-radius: 21px;
+      content: "";
+      height: calc(100% - 10px);
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: calc(100% - 10px);
+      z-index: -1;
+      @include transition(all 0.3s ease);
     }
     &:hover {
-      &:after {
-        transform: scale(1.5);
-        opacity: 1;
-      }
-      &:before {
-        opacity: 0;
-      }
-      .features-title,
-      .text,
       .icon {
-        color: #ffffff;
+        background-position: 100% 0;
+        i,
+        img {
+          @include transform(scaleX(-1));
+        }
       }
-      .count {
-        background-color: rgba(255, 255, 255, 0.2);
-      }
-    }
-  }
-  .features-title {
-    position: relative;
-    padding-bottom: 30px;
-    margin-top: 0;
-    margin-bottom: 0px;
-    color: #ffffff;
-    &:hover {
-      color: var(--theme-color1);
     }
   }
   .icon {
-    position: relative;
-    display: block;
-    font-size: 62px;
-    color: var(--theme-color1);
-    font-weight: 400;
-    line-height: 1em;
-    @include transition(all 200ms linear);
-    margin-bottom: 14px;
-  }
-  .btn-view-details .btn.btn-plain-text {
-    position: relative;
-    display: block;
-    color: #ffffff;
-    font-size: 0.9rem;
-    line-height: 30px;
+    background: var(--theme-color3);
+    border-radius: 50%;
+    font-size: 30px;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 25px;
     text-align: center;
-    border-top: 3px solid rgba(255, 255, 255, 0.1);
-    padding: 10px 30px 2px;
+    width: 60px;
+    color: var(--theme-color1);
+    @include transition(all 0.3s ease);
+    i,
+    img {
+      @include transition(all 0.3s ease);
+    }
+  }
+  .features-title {
+    color: #fff;
+    margin-bottom: 10px;
+    margin-top: 0;
+    text-transform: capitalize;
+    a {
+      background-position: 0 95%;
+      background-repeat: no-repeat;
+      background-size: 0% 2px;
+      display: inline;
+      &:hover {
+        background-size: 100% 2px;
+        background-image: var(--gradient-3);
+      }
+    }
+  }
+  .text {
+    color: rgb(255 255 255 / 60%);
   }
 }

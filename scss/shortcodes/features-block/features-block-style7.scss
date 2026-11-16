@@ -1,104 +1,129 @@
 @import "../../bootstrap-loader";
 @import "features-common";
-// Feature Current Style7
+
 .features-block-style7 {
-  position: relative;
+  background-color: rgba(var(--theme-color2-rgb), 0.1);
+  border-radius: 30px;
   overflow: hidden;
-  .inner-box {
+  padding: 1px;
+  position: relative;
+  z-index: 0;
+  -webkit-mask-image: url(../../../images/current-theme/features2-mask1.png);
+  mask-image: url(../../../images/current-theme/features2-mask1.png);
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-mask-position: right top;
+  mask-position: right top;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  .inner-block {
+    background-color: #F4F0ED;
+    border-radius: 30px;
+    overflow: hidden;
     position: relative;
+    -webkit-mask-image: url(../../../images/current-theme/features2-mask1.png);
+    mask-image: url(../../../images/current-theme/features2-mask1.png);
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-position: right top;
+    mask-position: right top;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    @include transition(all 300ms ease);
     &:hover {
-      .image-box .image {
-        img {
-          transform: scale(1.1);
-        }
-        &:after {
-          left: 0;
-          right: 0;
-          opacity: 0;
-          @include transition(all 400ms linear);
+      background-color: #fff;
+      .title-box {
+        .icon {
+          background-color: var(--theme-color1);
+          color: #fff;
+          i,
+          img {
+            @include transform(scaleX(-1));
+          }
         }
       }
-      .info-box {
-        bottom: -30px;
-      }
-      .overlay-content {
-        transform: translate(0);
+      .content-box {
+        &:before {
+          height: 0;
+        }
+        .inner-box {
+          &:before {
+            height: 100%;
+          }
+          .text {
+            color: var(--theme-color1-text-color);
+          }
+        }
       }
     }
-  }
-  .image-box {
-    position: relative;
-    padding-right: 20px;
-    @include transition(all 300ms ease);
     .image {
-      position: relative;
-      overflow: hidden;
-      margin-bottom: 0;
-      img {
-        width: 100%;
-        @include transition(all 300ms ease);
-      }
-      &:after {
-        background: rgba(255, 255, 255, 0.3);
-        bottom: 0;
-        content: "";
-        left: 50%;
-        position: absolute;
-        right: 51%;
-        top: 0;
-        opacity: 1;
-        pointer-events: none;
-        @include transition(all 400ms linear);
-      }
-    }
-  }
-  .info-box {
-    position: absolute;
-    right: 0;
-    left: 20px;
-    bottom: 20px;
-    background-color: #fff;
-    padding: 25px 20px;
-    padding-left: 30px;
-    padding-right: 40px;
-    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
-    @include transition(all 300ms ease);
-    .features-title {
-      font-weight: 700;
-      line-height: 35px;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-    .read-more {
       position: absolute;
-      @include flex-center;
-      right: 20px;
-      top: 22px;
-      height: 40px;
-      width: 40px;
-      background-color: #ecf0f4;
-      border-radius: 50%;
-      @include transition(all 300ms ease);
-      &:hover {
-        background-color: var(--theme-color1);
-        color: #fff;
+      top: 44px;
+      right: 44px;
+      z-index: 1;
+      pointer-events: none;
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
       }
     }
-  }
-  .overlay-content {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background-color: #ffffff;
-    transform: translateY(100%);
-    @include transition(all 500ms ease);
-    .info-box {
-      position: relative;
-      left: 0;
-      bottom: 0 !important;
+    .title-box {
+      padding: 39px 39px 0;
+      margin-bottom: 30px;
+      .icon {
+        background-color: #fff;
+        border-radius: 50%;
+        color: var(--theme-color1);
+        font-size: 38px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 1;
+        text-align: center;
+        height: 80px;
+        width: 80px;
+        margin-bottom: 60px;
+        @include transition(all 300ms ease);
+        i,
+        img {
+          display: flex;
+          line-height: 1;
+          @include transition(all 300ms ease);
+        }
+      }
       .features-title {
         margin-top: 0;
-        margin-bottom: 10px;
+        margin-bottom: 0;
+      }
+    }
+    .content-box {
+      padding: 0 9px 9px;
+      position: relative;
+      z-index: 0;
+      @include transition(all 300ms ease);
+      .inner-box {
+        border-radius: 20px;
+        padding: 25px 30px 26px;
+        position: relative;
+        z-index: 0;
+        @include transition(all 300ms ease);
+        background-color: #fff;
+        &:before {
+          background-color: var(--theme-color1);
+          border-radius: 20px;
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 0;
+          width: 100%;
+          z-index: -1;
+          @include transition(all 300ms ease);
+        }
+        .text {
+          @include transition(all 300ms ease);
+        }
       }
     }
   }

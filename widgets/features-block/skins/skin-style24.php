@@ -30,6 +30,14 @@ class Skin_Style24 extends Elementor_Skin_Base {
 		$direction_suffix = is_rtl() ? '.rtl' : '';
 		wp_enqueue_style( 'tm-features-block-style24', ELEMENTAL_ADDONS_ASSETS_URI . '/css/shortcodes/features-block/features-block-style24' . $direction_suffix . '.css', array(), ELEMENTAL_ADDONS_VERSION );
 
+		wp_enqueue_script(
+			'tm-features-block-style24-script',
+			ELEMENTAL_ADDONS_ASSETS_URI . '/js/widgets/features-block-style24.js',
+			array( 'jquery', 'elementor-frontend' ),
+			ELEMENTAL_ADDONS_VERSION,
+			true
+		);
+
 		$classes = array();
 		if ( ! empty( $settings['animate_icon_on_hover'] ) ) {
 			$classes[] = 'animate-hover animate-icon-' . $settings['animate_icon_on_hover'];

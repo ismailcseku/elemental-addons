@@ -27,54 +27,75 @@
 }
 
 .features-block-style15 {
-  position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 30px !important;
 }
-.features-block-style15 .inner-box {
-  position: relative;
-  background-color: #ffffff;
-  padding: 54px 30px 54px;
+@media (max-width: 767.98px) {
+  .features-block-style15 {
+    margin-top: 30px;
+  }
+}
+.features-block-style15 .icon {
+  width: 65px;
+  height: 65px;
+  line-height: 65px;
+  background: rgba(255, 255, 255, 0.1);
   text-align: center;
-  height: 100%;
-  background-image: var(--block-feature-style15-bg-featured-image);
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: all 300ms ease;
+  border-radius: 50%;
 }
-.features-block-style15 .inner-box:before {
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: var(--theme-color1);
-  opacity: 0.9;
-  content: "";
+.features-block-style15 .icon i {
+  font-size: 40px;
+  color: var(--theme-color1);
+  display: inline-block;
+  transform-origin: center;
 }
-.features-block-style15 .inner-box:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+[data-tm-layout=dark] .features-block-style15 .icon i {
+  color: #fff;
 }
-.features-block-style15 .inner-box .count,
-.features-block-style15 .inner-box .icon {
-  position: relative;
+.features-block-style15 .icon i {
+  transition: all 900ms ease;
+}
+.features-block-style15 .icon img,
+.features-block-style15 .icon svg {
   display: block;
-  font-size: 60px;
-  color: var(--theme-color2);
-  font-family: var(--title-font);
-  line-height: 1em;
-  font-weight: 700;
+  transition: all 900ms ease;
+}
+.features-block-style15 .content {
+  max-width: 340px;
+  margin-top: 30px;
+}
+.features-block-style15 .content .features-title {
+  color: var(--theme-color-white);
   margin-bottom: 10px;
-  transition: all 300ms ease;
 }
-.features-block-style15 .inner-box .features-title {
-  margin-bottom: 25px;
-  position: relative;
-  font-weight: 400;
+.features-block-style15 .content .features-title a {
+  background-position: 100% 95%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  display: inline;
 }
-.features-block-style15 .inner-box .features-title a {
-  color: var(--theme-color2);
+.features-block-style15 .content .features-title a:hover {
+  background-size: 100% 2px;
+  background-image: linear-gradient(-180deg, var(--theme-color-white) 0%, var(--theme-color-white) 100%);
+}
+.features-block-style15 .content .features-details {
+  color: var(--theme-color-white);
+}
+.features-block-style15 .content .text-btn {
+  color: var(--theme-color-white);
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 20px;
+}
+.features-block-style15:hover .icon {
+  background-color: var(--theme-color1);
+}
+.features-block-style15:hover .icon i {
+  color: var(--theme-color3);
+  transform: rotateY(-360deg);
+  transition: all 900ms ease;
+}
+.features-block-style15:hover .icon img,
+.features-block-style15:hover .icon svg {
+  transform: rotateY(-360deg);
+  transition: all 900ms ease;
 }

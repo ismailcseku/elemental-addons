@@ -1,101 +1,74 @@
-.features-block-style20 .inner-box {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+.features-block-style20 .inner-block {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px 30px 23px 30px;
+}
+.features-block-style20 .inner-block:hover .icon-block {
+  background-color: var(--theme-color1);
+  color: var(--theme-color1-text-color);
+}
+.features-block-style20 .inner-block:hover .icon-block i,
+.features-block-style20 .inner-block:hover .icon-block img {
+  transform: scaleX(-1);
+}
+.features-block-style20 .inner-block .icon-block {
+  line-height: 1;
+  font-size: 29px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--theme-color2);
+  border-radius: 50%;
+  color: #ffffff;
+  margin-bottom: 22px;
   display: flex;
-  align-items: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 43px 60px 42px 40px;
+  justify-content: center;
+  transition: all 300ms ease;
+}
+.features-block-style20 .inner-block .icon-block .icon {
   position: relative;
 }
-.features-block-style20 .inner-box:hover::before {
-  height: 100%;
-  opacity: 1;
-  visibility: visible;
+.features-block-style20 .inner-block .icon-block i,
+.features-block-style20 .inner-block .icon-block img {
+  display: flex;
+  position: relative;
+  transition: all 300ms ease;
 }
-.features-block-style20 .inner-box::before {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: -4px;
-  content: "";
-  border-radius: 10px;
-  width: 6px;
-  height: 0;
-  background-color: var(--theme-color1);
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.4s ease-in-out;
-}
-@media (max-width: 1399.98px) {
-  .features-block-style20 .inner-box {
-    padding-right: 25px;
-    padding-left: 0;
-  }
-}
-@media (max-width: 575.98px) {
-  .features-block-style20 .inner-box {
-    display: block;
-  }
-}
-.features-block-style20 .inner-box .features-title {
-  color: #ffffff;
+.features-block-style20 .inner-block .features-title {
   margin-top: 0;
+  margin-bottom: 8px;
+  transition: all 300ms ease;
+}
+.features-block-style20 .inner-block .features-details {
+  margin-bottom: 20px;
+  transition: all 300ms ease;
+}
+.features-block-style20 .inner-block .list-info li {
+  color: var(--theme-color2);
+  list-style-type: none;
+  margin-bottom: 7px;
+  position: relative;
+  padding-right: 28px;
+}
+.features-block-style20 .inner-block .list-info li:last-child {
   margin-bottom: 0;
-  text-transform: capitalize;
 }
-.features-block-style20 .inner-box .info-box {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  flex-basis: 55%;
-  padding: 10px;
-}
-@media (max-width: 1199.98px) {
-  .features-block-style20 .inner-box .info-box {
-    flex-basis: 65%;
-  }
-}
-@media (max-width: 575.98px) {
-  .features-block-style20 .inner-box .info-box {
-    flex-basis: initial;
-    margin-top: 20px;
-  }
-}
-.features-block-style20 .inner-box .info-box .features-subtitle {
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: -0.32px;
-  opacity: 0.6;
-  position: relative;
-}
-@media (max-width: 1199.98px) {
-  .features-block-style20 .inner-box .info-box .features-subtitle {
-    font-size: 14px;
-  }
-}
-.features-block-style20 .inner-box .info-box .dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 6px;
+.features-block-style20 .inner-block .list-info li:after {
   background-color: var(--theme-color1);
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 7px;
+  height: 16px;
+  width: 16px;
 }
-.features-block-style20 .inner-box .info-box .features-details {
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: -0.32px;
-  opacity: 0.6;
-  position: relative;
-}
-@media (max-width: 1199.98px) {
-  .features-block-style20 .inner-box .info-box .features-details {
-    font-size: 14px;
-  }
-}
-
-.features-item .features-block-style20.active .inner-box:before {
-  opacity: 1;
-  visibility: visible;
-  height: 100px;
+.features-block-style20 .inner-block .list-info li:before {
+  color: #fff;
+  content: "\f107";
+  font-size: 8px;
+  position: absolute;
+  top: 7.5px;
+  right: 4px;
+  z-index: 1;
 }

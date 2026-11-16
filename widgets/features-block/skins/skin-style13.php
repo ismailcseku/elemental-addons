@@ -5,7 +5,7 @@ use Elementor\Controls_Manager;
 use Elementor\Group_Control_Image_Size;
 use Elementor\Skin_Base as Elementor_Skin_Base;
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) exit;
 
 class Skin_Style13 extends Elementor_Skin_Base {
 
@@ -17,46 +17,31 @@ class Skin_Style13 extends Elementor_Skin_Base {
 		return 'skin-style13';
 	}
 
-
 	public function get_title() {
 		return __( 'Skin Style13', 'elemental-addons' );
 	}
 
-
 	public function register_layout_controls( Widget_Base $widget ) {
 		$this->parent = $widget;
-
 	}
 
 	public function render() {
 		$settings = $this->parent->get_settings_for_display();
-
 		$direction_suffix = is_rtl() ? '.rtl' : '';
-		wp_enqueue_style( 'tm-features-block-style13', ELEMENTAL_ADDONS_ASSETS_URI . '/css/shortcodes/features-block/features-block-style13' . $direction_suffix . '.css' );
+		wp_enqueue_style( 'tm-features-block-style13', ELEMENTAL_ADDONS_ASSETS_URI . '/css/shortcodes/features-block/features-block-style13' . $direction_suffix . '.css', array(), ELEMENTAL_ADDONS_VERSION );
 
-		if( $settings['animate_icon_on_hover'] ) {
-			$classes[] = 'animate-hover animate-icon-'.$settings['animate_icon_on_hover'];
+		$classes = array();
+		if ( ! empty( $settings['animate_icon_on_hover'] ) ) {
+			$classes[] = 'animate-hover animate-icon-' . $settings['animate_icon_on_hover'];
 		}
-
-		//icon classes
-		$icon_classes = array();
-		$settings['icon_classes'] = $icon_classes;
-
-		//button classes
-		$settings['btn_classes'] = elemental_addons_prepare_button_classes_from_params( $settings );
-
-
-		//icon classes
-		$icon_classes = array();
-		$settings['icon_classes'] = $icon_classes;
-
-		$settings['holder_id'] = \elemental_addons_get_isotope_holder_ID('features-block');
-
+		$settings['classes'] = $classes;
+		$settings['icon_classes'] = array();
+		if ( function_exists( 'elemental_addons_prepare_button_classes_from_params' ) ) {
+			$settings['btn_classes'] = elemental_addons_prepare_button_classes_from_params( $settings );
+		}
+		$settings['holder_id'] = \elemental_addons_get_isotope_holder_ID( 'features-block' );
 		$settings['settings'] = $settings;
-
-		//Produce HTML version by using the parameters (filename, variation, folder name, parameters, shortcode_ob_start)
 		$html = elemental_addons_get_shortcode_template_part( 'features', $settings['display_type'], 'features-block/tpl', $settings, true );
-
 		\elemental_addons_print_html( $html );
 	}
 }

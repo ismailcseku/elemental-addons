@@ -1,50 +1,123 @@
 .features-block-style25 {
-  margin-bottom: 32px;
-}
-.features-block-style25 .inner-box {
+  padding: 40px 40px 30px;
+  border-radius: 10px;
   position: relative;
+  z-index: 1;
+  background: radial-gradient(169.32% 111.67% at 100.08% 111.67%, #2f2f00 0%, #000000 61.47%);
   overflow: hidden;
   transition: all 0.3s ease;
 }
-.features-block-style25 .inner-box:hover {
-  background-color: var(--theme-color2);
+@media (max-width: 1399.98px) {
+  .features-block-style25 {
+    padding: 20px;
+    padding-bottom: 20px;
+  }
 }
-.features-block-style25 .inner-box:hover .features-featured-img img {
-  transform: scale(1.1);
+@media (max-width: 991.98px) {
+  .features-block-style25 {
+    margin-bottom: 30px;
+  }
 }
-.features-block-style25 .inner-box:hover .content-box::after {
-  height: 100%;
+@media (max-width: 767.98px) {
+  .features-block-style25 {
+    margin-bottom: 30px;
+  }
 }
-.features-block-style25 .inner-box:hover .content-box .features-title {
-  color: #fff;
-}
-.features-block-style25 .inner-box .features-featured-img img {
-  width: 100%;
-  transition: all 0.3s ease;
-}
-.features-block-style25 .inner-box .content-box {
-  background-color: var(--theme-color2);
-  padding: 21px 15px 17px;
+.features-block-style25::after {
   position: absolute;
+  top: 0;
   bottom: 0;
-  right: 0;
-  width: 100%;
-  text-align: center;
-}
-.features-block-style25 .inner-box .content-box::after {
-  background-color: var(--theme-color1);
-  content: "";
-  position: absolute;
-  right: 0;
+  right: auto;
   left: 0;
-  bottom: 0;
-  height: 0;
+  content: "";
+  height: 100%;
+  width: 0;
+  z-index: -1;
+  background-color: var(--theme-color1);
+  transition: all 0.4s ease;
+}
+.features-block-style25 .ks-choose-icon {
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  font-size: 37px;
+  line-height: 70px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background-color: #1c1c1c;
+  color: var(--theme-color1);
+}
+.features-block-style25 .features-title {
+  font-weight: 600;
+  margin-bottom: 12px;
   transition: all 0.3s ease;
 }
-.features-block-style25 .inner-box .content-box .features-title {
-  margin-top: 0;
-  color: #fff;
-  margin-bottom: 0;
-  z-index: 1;
+.features-block-style25 .features-details {
+  margin-bottom: 15px;
+}
+.features-block-style25 .btn-view-details {
+  transition: all 300ms ease;
+  margin-top: 25px;
+}
+.features-block-style25 .btn-view-details:hover .btn-plain-text-with-arrow-right {
+  color: var(--theme-color2) !important;
+}
+[data-tm-layout=dark] .features-block-style25 .btn-view-details:hover .btn-plain-text-with-arrow-right {
+  color: var(--theme-color2) !important;
+}
+.features-block-style25 .btn-view-details:hover .btn-plain-text-with-arrow-right:after {
+  color: var(--theme-color2) !important;
+}
+[data-tm-layout=dark] .features-block-style25 .btn-view-details:hover .btn-plain-text-with-arrow-right:after {
+  color: var(--theme-color2) !important;
+}
+.features-block-style25 .btn-view-details .btn-plain-text-with-arrow-right {
   position: relative;
+}
+[data-tm-layout=dark] .features-block-style25 .btn-view-details .btn-plain-text-with-arrow-right {
+  color: #a1a1a1 !important;
+}
+.features-block-style25 .btn-view-details .btn-plain-text-with-arrow-right::after {
+  top: 2px;
+  content: "\f118";
+  color: #222;
+}
+[data-tm-layout=dark] .features-block-style25 .btn-view-details .btn-plain-text-with-arrow-right::after {
+  color: #a1a1a1 !important;
+}
+.features-block-style25:hover::after {
+  right: 0;
+  left: auto;
+  width: 100%;
+}
+.features-block-style25:hover .features-title,
+.features-block-style25:hover .features-details {
+  color: #222;
+}
+.features-block-style25:hover a:hover {
+  color: #222;
+}
+.features-block-style25:hover .btn-view-details .btn-plain-text-with-arrow-right {
+  color: var(--theme-color2) !important;
+}
+[data-tm-layout=dark] .features-block-style25:hover .btn-view-details .btn-plain-text-with-arrow-right {
+  color: var(--theme-color2) !important;
+}
+.features-block-style25:hover .btn-view-details .btn-plain-text-with-arrow-right:after {
+  color: var(--theme-color2) !important;
+}
+[data-tm-layout=dark] .features-block-style25:hover .btn-view-details .btn-plain-text-with-arrow-right:after {
+  color: var(--theme-color2) !important;
+}
+.features-block-style25 p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.79;
+  margin-bottom: 0;
+}
+@media (max-width: 1399.98px) {
+  .features-block-style25 p br {
+    display: none;
+  }
 }

@@ -1,141 +1,133 @@
-.tm-sc-features .icon {
-  display: inline-block;
-}
-.tm-sc-features .icon,
-.tm-sc-features .features-title,
-.tm-sc-features .features-details {
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
-}
-
-.feature-side-line {
+.features-block-style2 {
+  padding: 40px 40px 30px;
+  border-radius: 10px;
   position: relative;
+  z-index: 1;
+  background-color: #ffffff;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
-.feature-side-line .icon-box-wrapper:after {
-  content: "";
-  background: #333;
-  width: 2px;
-  position: absolute;
-  left: 25px;
-  top: 60px;
-  bottom: -12px;
-}
-@media (max-width: 575.98px) {
-  .feature-side-line .icon-box-wrapper:after {
-    display: none;
+@media (max-width: 1399.98px) {
+  .features-block-style2 {
+    padding: 20px;
+    padding-bottom: 20px;
   }
 }
-
-.features-block-style2 {
-  border-radius: 30px;
-  overflow: hidden;
-  position: relative;
-  z-index: 0;
+@media (max-width: 991.98px) {
+  .features-block-style2 {
+    margin-bottom: 30px;
+  }
 }
-.features-block-style2:hover:before {
-  background-color: var(--theme-color1);
+@media (max-width: 767.98px) {
+  .features-block-style2 {
+    margin-bottom: 30px;
+  }
 }
-.features-block-style2:before {
-  background-color: #ecf9ed;
-  content: "";
+.features-block-style2::after {
   position: absolute;
   top: 0;
-  left: 0;
-  height: 150px;
-  width: 100%;
+  bottom: 0;
+  left: auto;
+  right: 0;
+  content: "";
+  height: 100%;
+  width: 0;
   z-index: -1;
+  background-color: var(--theme-color2);
+  transition: all 0.4s ease;
+}
+.features-block-style2 .shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 1;
+  visibility: visible;
+  height: 236px;
+  width: 205px;
+  background-image: url(../../../images/current-theme/Vector.png);
   transition: all 300ms ease;
 }
-.features-block-style2 .inner-block {
-  background-color: #fff;
-  border: 1px solid rgba(var(--theme-color2-rgb), 0.1);
-  border-radius: 30px;
-  overflow: hidden;
-  mask-image: url(../../../images/current-theme/features2-mask1.png);
-  mask-size: cover;
-  mask-position: right top;
-  mask-repeat: no-repeat;
-}
-.features-block-style2 .inner-block:hover .title-box .icon i,
-.features-block-style2 .inner-block:hover .title-box .icon img {
-  -webkit-transform: scaleX(-1);
-  -moz-transform: scaleX(-1);
-  -ms-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
-.features-block-style2 .inner-block:hover .content-box:before {
-  height: 0;
-}
-.features-block-style2 .inner-block:hover .content-box .inner-box:before {
-  height: 100%;
-}
-.features-block-style2 .inner-block:hover .content-box .inner-box .text {
+.features-block-style2 .ks-choose-icon {
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  font-size: 37px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  background-color: var(--theme-color1);
   color: var(--theme-color1-text-color);
 }
-.features-block-style2 .inner-block .title-box {
-  padding: 39px 39px 0;
-  margin-bottom: 30px;
+.features-block-style2 .features-title {
+  font-weight: 600;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
 }
-.features-block-style2 .inner-block .title-box .icon {
-  background-color: #ecf9ed;
-  border-radius: 50%;
+@media (max-width: 1399.98px) {
+  .features-block-style2 .features-title {
+    font-size: 18px;
+  }
+}
+.features-block-style2 .features-details {
+  margin-bottom: 15px;
+}
+.features-block-style2 .btn-view-details {
+  transition: all 300ms ease;
+  margin-top: 25px;
+}
+.features-block-style2 .btn-view-details:hover .btn-plain-text-with-arrow-right {
+  color: var(--theme-color2) !important;
+}
+.features-block-style2 .btn-view-details:hover .btn-plain-text-with-arrow-right:after {
+  color: var(--theme-color2) !important;
+}
+.features-block-style2 .btn-view-details .btn-plain-text-with-arrow-right {
+  position: relative;
+}
+[data-tm-layout=dark] .features-block-style2 .btn-view-details .btn-plain-text-with-arrow-right {
+  color: #a1a1a1 !important;
+}
+.features-block-style2 .btn-view-details .btn-plain-text-with-arrow-right::after {
+  content: "\f118";
+  color: #222;
+}
+.features-block-style2:hover::after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+.features-block-style2:hover .shape {
+  filter: brightness(0) invert(1);
+  opacity: 1;
+  visibility: visible;
+}
+.features-block-style2:hover .ks-choose-icon {
+  background-color: #fff;
   color: var(--theme-color1);
-  font-size: 38px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 1;
-  text-align: center;
-  height: 80px;
-  width: 80px;
-  margin-bottom: 20px;
-  transition: all 300ms ease;
 }
-.features-block-style2 .inner-block .title-box .icon i,
-.features-block-style2 .inner-block .title-box .icon img {
-  display: inline-block;
-  transition: all 300ms ease;
+.features-block-style2:hover .features-title {
+  color: #fff !important;
 }
-.features-block-style2 .inner-block .title-box .features-title {
-  margin-top: 0;
+.features-block-style2:hover .features-details {
+  color: rgb(172, 178, 182) !important;
+}
+.features-block-style2:hover .btn-view-details .btn-plain-text-with-arrow-right {
+  color: #fff !important;
+}
+.features-block-style2:hover .btn-view-details .btn-plain-text-with-arrow-right:after {
+  color: #fff !important;
+}
+.features-block-style2 p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.79;
   margin-bottom: 0;
 }
-.features-block-style2 .inner-block .content-box {
-  padding: 0 9px 9px;
-  position: relative;
-  z-index: 0;
-  transition: all 300ms ease;
-}
-.features-block-style2 .inner-block .content-box:before {
-  background-color: #ecf9ed;
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  transition: all 300ms ease;
-}
-.features-block-style2 .inner-block .content-box .inner-box {
-  border-radius: 20px;
-  padding: 25px 30px 26px;
-  position: relative;
-  z-index: 0;
-  transition: all 300ms ease;
-}
-.features-block-style2 .inner-block .content-box .inner-box:before {
-  background-color: var(--theme-color1);
-  border-radius: 20px;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 0;
-  width: 100%;
-  z-index: -1;
-  transition: all 300ms ease;
-}
-.features-block-style2 .inner-block .content-box .inner-box .text {
-  transition: all 300ms ease;
+@media (max-width: 1399.98px) {
+  .features-block-style2 p br {
+    display: none;
+  }
 }

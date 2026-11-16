@@ -2,17 +2,21 @@
 <?php
 $features_item['title_tag'] = $title_tag;
 $features_item['subtitle_tag'] = $subtitle_tag;
+$features_link = $features_item['features_link'];
+$target = ( $features_link && $features_link['is_external'] ) ? ' target="_blank"' : '';
+$url = ( $features_link && $features_link['url'] ) ? $features_link['url'] : '';
 ?>
-  <div class="features-item features-block-style19">
-		<div class="inner-box">
-      <div class="number"><?php echo $features_item['count']; ?></div>
-      <?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'features-block/tpl', $features_item, false );?>
-      <div class="icon">
-        <?php elemental_addons_get_shortcode_template_part( 'icon-type', $features_item['icon_type'], 'features-block/tpl', $features_item, false );?>
-      </div>
+<div class="features-block features-block-style19">
+  <div class="inner-box">
+    <div class="count"><?php echo $features_item['count']; ?></div>
+    <div class="icon">
+      <?php elemental_addons_get_shortcode_template_part( 'icon-type', $features_item['icon_type'], 'features-block/tpl', $features_item, false );?>
+    </div>
+    <?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'features-block/tpl', $features_item, false );?>
+    <div class="info-box">
+      <?php elemental_addons_get_shortcode_template_part( 'part-subtitle', null, 'features-block/tpl', $features_item, false );?>
+      <span class="dot"></span>
       <?php elemental_addons_get_shortcode_template_part( 'part-content', null, 'features-block/tpl', $features_item, false );?>
-			<div class="image-box">
-				<?php elemental_addons_get_shortcode_template_part( 'part-featured-image', null, 'features-block/tpl', $features_item, false );?>
-			</div>
-		</div>
-	</div>
+    </div>
+  </div>
+</div>

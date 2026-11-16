@@ -1,94 +1,169 @@
 @import "../../bootstrap-loader";
 @import "testimonial-common";
-
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 90deg;
+  inherits: false;
+}
+@keyframes rotate {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
 .testimonial-block-style2 {
-  .inner-block {
-    background-color: #ecf9ed;
-    border: 1px solid rgba(var(--theme-color2-rgb), 0.1);
-    border-radius: 20px;
+  margin-bottom: 30px;
+  position: relative;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    inset: -0.1rem;
+    background: conic-gradient(from var(--gradient-angle), var(--theme-color2), var(--theme-color1), var(--theme-color2));
+    opacity: 0;
+    transform: scale(0);
+    visibility: hidden;
+    border-radius: 30px;
+    animation: rotate 2.5s linear infinite;
+    @include transition(all 300ms ease);
+    @include media-breakpoint-down(sm) {
+      border-radius: 25px;
+    }
+  }
+  &:hover {
+    &::before,
+    &::after {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+    }
+  }
+  .inner-box {
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 30px;
     position: relative;
+    background: #0D0D0D;
     overflow: hidden;
-    padding: 40px 39px 39px;
+    padding: 50px 60px 55px;
+    z-index: 1;
+    @include transition;
+    @include media-breakpoint-down(lg) {
+      padding: 41px 30px 37px;
+    }
+    @include media-breakpoint-down(sm) {
+      border-radius: 25px;
+      padding: 41px 15px 37px;
+    }
+    &::before {
+      position: absolute;
+      inset: 0;
+      content: "";
+      background: radial-gradient(
+        ellipse at 100% 100%,
+        rgba(var(--theme-color1-rgb), 0.35) 0%,
+        rgba(var(--theme-color1-rgb), 0) 50%
+      );
+      border-radius: inherit;
+      opacity: 0;
+      pointer-events: none;
+      z-index: -1;
+      @include transition(opacity 400ms ease);
+    }
     &:hover {
-      .bottom-box {
-        .author-info {
-          .icon {
-            i,
-            img {
-              @include transform(scaleX(-1));
+      &::before {
+        opacity: 1;
+      }
+      .info-box {
+        .thumb {
+          box-shadow: 0 0 0 2px var(--theme-color1) !important;
+        }
+      }
+    }
+    .author-info {
+      @include media-breakpoint-up(sm) {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+      .info-box {
+        align-items: center;
+        display: flex;
+        position: relative;
+        .thumb {
+          border-radius: 50%;
+          height: 60px;
+          line-height: 60px;
+          margin: 0 18px 0 0;
+          overflow: hidden;
+          text-align: center;
+          width: 60px;
+          box-shadow: 0 0 0 2px #fff;
+          @include transition(all 300ms ease);
+          img {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+          }
+          @include media-breakpoint-down(sm) {
+            display: inline-block;
+            left: 0;
+            margin-bottom: 0px;
+            position: relative;
+            top: 0;
+          }
+        }
+        .testimonial-name {
+          color: #fff;
+          margin-bottom: 0;
+          margin-top: 0;
+          text-transform: capitalize;
+        }
+      }
+    }
+    .content-box {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      margin-bottom: 47px;
+      padding-bottom: 42px;
+      .quote-icon {
+        position: absolute;
+        right: 58px;
+        bottom: 58px;
+        @include media-breakpoint-down(lg) {
+          right: 30px;
+        }
+        @include media-breakpoint-down(sm) {
+          right: 15px;
+        }
+        .icon {
+          color: rgba(255, 255, 255, 0.2);
+          font-size: 56px;
+          line-height: 1;
+        }
+      }
+      .rating {
+        align-items: center;
+        display: flex;
+        gap: 5px;
+        margin-bottom: 18px;
+        .star-rating {
+          font-size: 18px;
+          letter-spacing: 5px;
+          width: calc(5.6em + 25px);
+          span {
+            &:before {
+              color: var(--theme-color1);
+              font-weight: 600;
             }
           }
         }
       }
-    }
-    .rating-star {
-      color: var(--theme-color1);
-      font-size: 20px;
-      line-height: 1;
-      margin-bottom: 19px;
-      .star-rating {
-        &:before {
-          color: var(--theme-color1);
-          font-weight: 600;
-        }
-        span {
-          &:before {
-            color: var(--theme-color1);
-          }
-        }
-      }
-    }
-    .author-text {
-      font-size: 20px;
-      font-weight: 500;
-      line-height: 1.5;
-      letter-spacing: -2%;
-      margin-bottom: 45px;
-      color: var(--theme-color2);
-      margin: 0 auto;
-      @include media-breakpoint-down(sm) {
-        font-size: 16px;
-        line-height: 1.5;
-      }
-    }
-    .bottom-box {
-      border-top: 1px solid rgba(var(--theme-color2-rgb), 0.1);
-      padding-top: 30px;
-      margin-top: 65px;
-      display: flex;
-      align-items: center;
-      .author-info {
-        display: inline-flex;
-        gap: 16px;
-        align-items: center;
-        @include media-breakpoint-down(sm) {
-          flex-direction: column;
-          align-items: start;
-        }
-        .image {
-          width: 60px;
-          height: 60px;
-          border-radius: 8px;
-          object-fit: cover;
-          img {
-            width: 60px;
-            height: 60px;
-            border-radius: 8px;
-            object-fit: cover;
-          }
-        }
-        .info {
-          position: relative;
-          top: -2px;
-        }
-        .testimonial-name {
-          font-family: var(--body-font-family);
-          margin-bottom: 2px;
-          margin-top: 0;
-        }
-        .testimonial-position {
-          line-height: 1.2;
-        }
+      .author-text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 36px;
       }
     }
   }

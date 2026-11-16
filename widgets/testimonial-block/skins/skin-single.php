@@ -103,7 +103,7 @@ class Skin_Single extends Elementor_Skin_Base {
 			[
 				'label' => esc_html__( "Make BG Theme Colored", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
-				'options' => elemental_addons_theme_color_list(),
+				'options' => \elemental_addons_theme_color_list(),
 				'default' => '',
 				'selectors' => [
 					'{{WRAPPER}} .testimonial-item .inner-box' => 'background-color: var(--theme-color{{VALUE}});'
@@ -160,7 +160,7 @@ class Skin_Single extends Elementor_Skin_Base {
 			[
 				'label' => esc_html__( "Make BG Theme Colored", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
-				'options' => elemental_addons_theme_color_list(),
+				'options' => \elemental_addons_theme_color_list(),
 				'default' => '',
 				'selectors' => [
 					'{{WRAPPER}} .testimonial-item:hover .inner-box' => 'background-color: var(--theme-color{{VALUE}});'
@@ -222,7 +222,7 @@ class Skin_Single extends Elementor_Skin_Base {
 			[
 				'label' => esc_html__( "Quote Icon Bg Theme Colored", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
-				'options' => elemental_addons_theme_color_list(),
+				'options' => \elemental_addons_theme_color_list(),
 				'default' => '',
 				'selectors' => [
 					'{{WRAPPER}} .testimonial-item .inner-box .quote-icon .icon' => 'background-color: var(--theme-color{{VALUE}});'
@@ -244,7 +244,7 @@ class Skin_Single extends Elementor_Skin_Base {
 			[
 				'label' => esc_html__( "Quote Icon Theme Colored", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
-				'options' => elemental_addons_theme_color_list(),
+				'options' => \elemental_addons_theme_color_list(),
 				'default' => '',
 				'selectors' => [
 					'{{WRAPPER}} .testimonial-item .inner-box .quote-icon .icon' => 'color: var(--theme-color{{VALUE}});'
@@ -283,7 +283,7 @@ class Skin_Single extends Elementor_Skin_Base {
 			[
 				'label' => esc_html__( "Quote Icon Bg Theme Colored (Hover)", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
-				'options' => elemental_addons_theme_color_list(),
+				'options' => \elemental_addons_theme_color_list(),
 				'default' => '',
 				'selectors' => [
 					'{{WRAPPER}} .testimonial-item:hover .inner-box .quote-icon .icon' => 'background-color: var(--theme-color{{VALUE}});'
@@ -305,7 +305,7 @@ class Skin_Single extends Elementor_Skin_Base {
 			[
 				'label' => esc_html__( "Quote Icon Theme Colored (Hover)", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
-				'options' => elemental_addons_theme_color_list(),
+				'options' => \elemental_addons_theme_color_list(),
 				'default' => '',
 				'selectors' => [
 					'{{WRAPPER}} .testimonial-item:hover .inner-box .quote-icon .icon' => 'color: var(--theme-color{{VALUE}});'
@@ -335,7 +335,7 @@ class Skin_Single extends Elementor_Skin_Base {
 		$settings['icon_classes'] = $icon_classes;
 
 		//button classes
-		$settings['btn_classes'] = elemental_addons_prepare_button_classes_from_params( $settings );
+		$settings['btn_classes'] = \elemental_addons_prepare_button_classes_from_params( $settings );
 
 
 		//icon classes

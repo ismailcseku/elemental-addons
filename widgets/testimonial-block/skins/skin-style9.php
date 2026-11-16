@@ -29,7 +29,6 @@ class Skin_Style9 extends Elementor_Skin_Base {
 		$settings = $this->parent->get_settings_for_display();
 		$direction_suffix = is_rtl() ? '.rtl' : '';
 		wp_enqueue_style( 'tm-testimonial-block-style9', ELEMENTAL_ADDONS_ASSETS_URI . '/css/shortcodes/testimonial-block/testimonial-block-style9' . $direction_suffix . '.css', array(), ELEMENTAL_ADDONS_VERSION );
-
 		$classes = array();
 		if ( ! empty( $settings['animate_icon_on_hover'] ) ) {
 			$classes[] = 'animate-hover animate-icon-' . $settings['animate_icon_on_hover'];

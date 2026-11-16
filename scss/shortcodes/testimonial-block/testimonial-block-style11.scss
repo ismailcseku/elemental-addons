@@ -1,75 +1,128 @@
 @import "../../bootstrap-loader";
 @import "testimonial-common";
+
 .testimonial-block-style11 {
-  .inner-block {
+  margin: 0 auto;
+  .inner-box{
     display: flex;
-    align-items: start;
-    gap: 70px;
-    border: 1px solid #7214FF1A;
-    border-radius: 12px;
-    padding: 50px 50px 40px 50px;
-    background-color: var(--theme-color-white);
-    @include media-breakpoint-down(xl){
-      gap: 40px;
+    justify-content: center;
+    gap: 0px;
+    @include media-breakpoint-down(md){
+      flex-wrap: wrap;
     }
-    @include media-breakpoint-down(sm) {
-      flex-direction: column;
-      gap: 20px;
-      padding: 20px;
-    }
-  }
-  .author-image {
-    max-width: 85px;
-    max-height: 85px;
-    flex-shrink: 0;
-    border-radius: 12px;
-    overflow: hidden;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-  .content {
-    .rating {
+    .content-box{
+      background-color: #f3f3f3;
       display: flex;
-      align-items: center;
-      gap: 5px;
-      margin-bottom: 16px;
-      .star-rating {
-        margin-bottom: 0;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px 50px 45px;
+      @include media-breakpoint-down(sm){
+        padding: 20px 20px 45px;
+      }
+      .logo{
+        color: var(--theme-color1);
+        font-size: 40px;
+        margin-bottom: 19px;
+      }
+      .testimonial-title {
+        font-style: italic;
         margin-top: 0;
-        @include media-breakpoint-down(md){
-          width: 5.7em;
+      }
+      .text{
+        color: var(--text-color);
+        letter-spacing: -0.03em;
+        margin-top: 0;
+        font-size: 20px;
+        font-weight: 500;
+        padding-right: 30px;
+        line-height: 26px;
+        @include media-breakpoint-down(xxl){
+          padding-right: 0px;
         }
-        @include media-breakpoint-down(sm){
-          width: 5.8em;
+      }
+      .info-box{
+        align-items: end;
+        border-top: 1px solid var(--theme-color-white);
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 37px;
+        padding-top: 27px;
+        .user-info{
+          .testimonial-name{
+            letter-spacing: -0.03em;
+            margin-bottom: 0;
+            margin-top: 0;
+          }
+          .testimonial-position{
+            font-weight: 500;
+          }
         }
-        &::before {
-          left: -1px;
-          top: -1px;
-        }
-        span {
-          &:before {
-            font-size: 14px;
-            line-height: 1;
-            color: #fe7f0a;
-            font-weight: 600;
+        .star-rating {
+          align-items: center;
+          color: var(--theme-color2);
+          display: inline-flex;
+          gap: 4px;
+          justify-content: center;
+          position: relative;
+          font-size: 16px;
+          margin: 0;
+          &::before {
+            color: var(--theme-color2);
+          }
+          span {
+            width: 100%;
+            &::before {
+              font-weight: 600;
+              color: var(--theme-color2);
+            }
           }
         }
       }
     }
-  }
-  .author-text {
-    margin-bottom: 18px;
-  }
-  .author-info {
-    .testimonial-name {
-      color: transparent;
-      background: linear-gradient(90deg, #9DEF36, #238B3C);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin: 0;
+    .image-box{
+      flex-shrink: 0;
+      margin-bottom: 0;
+      max-width: 37%;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      @include media-breakpoint-down(md){
+        display: none;
+        margin-bottom: 40px;
+      }
+      img{
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+        @include transition(all 400ms ease);
+      }
+      .video-btn{
+        background-color: rgba(var(--theme-color-white-rgb), 0.1);
+        border: 1px solid rgba(var(--theme-color-white-rgb), 0.2);
+        border-radius: 50%;
+        backdrop-filter: blur(4px);
+        color: #fff;
+        display: inline-block;
+        font-size: 24px;
+        height: 75px;
+        left: 50%;
+        line-height: 75px;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        width: 75px;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+    }
+    &:hover{
+      .image-box{
+        img{
+          transform: scale(1.1);
+        }
+      }
     }
   }
 }

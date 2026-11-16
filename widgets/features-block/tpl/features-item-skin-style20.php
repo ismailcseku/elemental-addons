@@ -6,13 +6,33 @@ $features_link = $features_item['features_link'];
 $target = ( $features_link && $features_link['is_external'] ) ? ' target="_blank"' : '';
 $url = ( $features_link && $features_link['url'] ) ? $features_link['url'] : '';
 ?>
+
 <div class="features-block features-block-style20">
-  <div class="inner-box">
-    <?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'features-block/tpl', $features_item, false );?>
-    <div class="info-box">
-      <?php elemental_addons_get_shortcode_template_part( 'part-subtitle', null, 'features-block/tpl', $features_item, false );?>
-      <span class="dot"></span>
-      <?php elemental_addons_get_shortcode_template_part( 'part-content', null, 'features-block/tpl', $features_item, false );?>
-    </div>
-  </div>
+	<div class="inner-block">
+		<div class="icon-block">
+			<div class="icon">
+				<?php elemental_addons_get_shortcode_template_part( 'icon-type', $features_item['icon_type'], 'features-block/tpl', $features_item, false );?>
+			</div>
+		</div>
+		<?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'features-block/tpl', $features_item, false );?>
+		<?php elemental_addons_get_shortcode_template_part( 'part-content', null, 'features-block/tpl', $features_item, false );?>
+		<?php
+			// Sanitize the features list
+			$list = wp_kses( $features_item['features_list'], 'post' );
+
+			// Split into array by line breaks
+			$items = preg_split('/\r\n|\r|\n/', $list);
+
+			if ( ! empty( $items ) ) {
+				echo '<ul class="list-info">';
+				foreach ( $items as $item ) {
+					$item = trim( $item );
+					if ( ! empty( $item ) ) {
+						echo '<li>' . esc_html( $item ) . '</li>';
+					}
+				}
+				echo '</ul>';
+			}
+		?>
+	</div>
 </div>

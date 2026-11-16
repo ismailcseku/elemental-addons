@@ -1,29 +1,30 @@
-<?php $features_item['settings'] = $settings; ?>
+<!-- Features Block Style6 -->
 <?php
+$features_item['settings'] = $settings;
 $features_item['title_tag'] = $title_tag;
 $features_item['subtitle_tag'] = $subtitle_tag;
-$image[0] = '';
-if( isset($skin_style10_featured_image['id']) && !empty($skin_style10_featured_image['id']) ){
-  $image = wp_get_attachment_image_src( $skin_style10_featured_image['id'], 'full');
-}
+$features_link = $features_item['features_link'];
+$target = ( $features_link && $features_link['is_external'] ) ? ' target="_blank"' : '';
+$url = ( $features_link && $features_link['url'] ) ? $features_link['url'] : '';
 
-//if empty then use this default image
-if( empty($image[0])) {
-  $image[0] = ELEMENTAL_ADDONS_ASSETS_URI . '/images/current-theme/icon-shape-9.png';
-}
+//Bg Image
+$featured_image = $features_item['featured_image'];
+$featured_image_size = isset( $features_item['featured_image_size'] ) ? $features_item['featured_image_size'] : 'full';
+$image = ! empty( $featured_image['id'] ) ? wp_get_attachment_image_src( $featured_image['id'], $featured_image_size ) : null;
 ?>
-<div class="features-block-style11">
-  <div class="info-box-wrapper">
-    <div class="icon-wrapper elementor-icon">
-      <?php elemental_addons_get_shortcode_template_part( 'icon-type', $features_item['icon_type'], 'features-block/tpl', $features_item, false );?>
+
+<div class="features-block-style11" data-bg="<?php if( isset($image[0]) && !empty($image[0]) ) echo esc_url( $image[0] ); ?>">
+  <div class="inner-block">
+    <div class="icon-block">
+      <div class="icon">
+        <?php elemental_addons_get_shortcode_template_part( 'icon-type', $features_item['icon_type'], 'features-block/tpl', $features_item, false );?>
+      </div>
     </div>
-    <div class="info-text">
+    <div class="content-box">
       <?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'features-block/tpl', $features_item, false );?>
-      <?php elemental_addons_get_shortcode_template_part( 'part-content', null, 'features-block/tpl', $features_item, false );?>
-      <?php if ( $show_view_details_button == 'yes' ) : ?>
-        <?php elemental_addons_get_shortcode_template_part( 'button', null, 'info-box/tpl', $settings, false );?>
-      <?php endif; ?>
+      <div class="features-details">
+        <?php elemental_addons_get_shortcode_template_part( 'part-content', null, 'features-block/tpl', $features_item, false );?>
+      </div>
     </div>
-    <div class="top-shape"></div>
   </div>
 </div>

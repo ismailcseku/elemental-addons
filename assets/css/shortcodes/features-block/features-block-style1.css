@@ -1,34 +1,185 @@
-.features-block-style1 .inner-block {
+.features-block-style1 .inner-box {
+  border: 1px solid rgba(17, 17, 17, 0.2);
+  border-radius: 0;
+  padding: 40px;
+  z-index: 1;
+  position: relative;
+}
+.features-block-style1 .inner-box:hover:before {
+  transform-origin: bottom left;
+  transform: scale(1, 1);
+}
+.features-block-style1 .inner-box:hover .icon-box {
+  transform: scale(-1) rotate(180deg);
+}
+.features-block-style1 .inner-box:hover .icon-box svg path {
+  fill: var(--theme-color-white);
+}
+.features-block-style1 .inner-box:hover .icon-box i {
+  color: var(--theme-color-white);
+}
+.features-block-style1 .inner-box:hover .content-box .features-title {
+  color: var(--theme-color-white);
+}
+.features-block-style1 .inner-box:hover .content-box .features-details {
+  color: var(--theme-color-white);
+  border-color: var(--theme-color-white);
+}
+.features-block-style1 .inner-box:hover .content-box .features-details:before {
+  background-color: var(--theme-color-white);
+}
+.features-block-style1 .inner-box:hover .theme-btn {
+  background-color: var(--theme-color-white);
+  color: var(--theme-color2);
+}
+.features-block-style1 .inner-box:hover .theme-btn:hover {
+  color: var(--theme-color2);
+}
+.features-block-style1 .inner-box:hover .theme-btn:hover .icon {
+  color: var(--theme-color2);
+}
+.features-block-style1 .inner-box:hover .theme-btn .icon {
+  color: var(--theme-color-white);
+}
+.features-block-style1 .inner-box:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background-color: var(--theme-color1);
+  transform-origin: top right;
+  transform-origin: bottom right;
+  transform: scale(0, 1);
+  transition: -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+}
+.features-block-style1 .inner-box .content-box {
+  transition: all 300ms ease;
+}
+.features-block-style1 .inner-box .content-box .features-title {
+  margin-bottom: 5px;
+  margin-top: 0;
+  transition: all 300ms ease;
+}
+.features-block-style1 .inner-box .content-box .features-title a:hover {
+  color: #fff;
+}
+.features-block-style1 .inner-box .content-box .features-details {
+  font-size: 18px;
+  margin-bottom: 30px;
+  position: relative;
+  transition: all 300ms ease;
+}
+.features-block-style1 .inner-box .theme-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  margin-top: 5px;
+  gap: 14px;
+  z-index: 1;
+  width: 100%;
+  transition: all 300ms ease;
+}
+.features-block-style1 .inner-box .theme-btn .btn-title {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: 10px;
-  position: relative;
-}
-.features-block-style1 .inner-block:hover .icon i,
-.features-block-style1 .inner-block:hover .icon img {
-  -webkit-transform: scaleX(-1);
-  -moz-transform: scaleX(-1);
-  -ms-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
-.features-block-style1 .inner-block .content-box {
-  position: relative;
-}
-.features-block-style1 .inner-block .content-box .features-title {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.features-block-style1 .inner-block .icon {
-  color: var(--theme-color1);
-  font-size: 40px;
-  margin-bottom: 0;
-  min-width: 50px;
-  text-align: center;
-}
-.features-block-style1 .inner-block .icon i,
-.features-block-style1 .inner-block .icon img {
-  display: inline-block;
-  position: relative;
-  top: 4px;
   transition: all 300ms ease;
+}
+.features-block-style1 .inner-box .btn-style-two {
+  background-color: transparent;
+  border: 1px solid rgba(17, 17, 17, 0.2);
+  color: var(--headings-color);
+  padding: 9px 20px;
+  position: relative;
+  justify-content: space-between;
+}
+.features-block-style1 .inner-box .btn-style-two .icon {
+  font-size: 20px;
+  line-height: 1;
+  transition: all 300ms ease;
+}
+.features-block-style1 .inner-box .btn-style-two:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background-color: rgb(241, 242, 235);
+  border-radius: 0;
+  transform: scale(0, 1);
+  transform-origin: top right;
+  transition: -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  z-index: -1;
+  transform-origin: bottom right;
+}
+.features-block-style1 .inner-box .btn-style-two:hover {
+  color: var(--theme-color4);
+}
+.features-block-style1 .inner-box .btn-style-two:hover .icon {
+  color: var(--theme-color4);
+}
+.features-block-style1 .inner-box .btn-style-two:hover:before {
+  transform: scale(1, 1);
+  transform-origin: bottom left;
+}
+.features-block-style1 .inner-box .icon-box {
+  margin-bottom: 25px;
+  display: inline-block;
+  transition: all 300ms ease;
+}
+.features-block-style1 .inner-box .icon-box svg path {
+  transition: all 300ms ease;
+}
+.features-block-style1 .inner-box .icon-box i {
+  font-size: 80px;
+  line-height: 1;
+  color: var(--theme-color-dark);
+}
+
+.features-block-style1.active .inner-box:before {
+  transform-origin: bottom left;
+  transform: scale(1, 1);
+}
+.features-block-style1.active .inner-box .icon-box {
+  transform: scale(-1) rotate(180deg);
+}
+.features-block-style1.active .inner-box .icon-box svg path {
+  fill: var(--theme-color-white);
+}
+.features-block-style1.active .inner-box .icon-box i {
+  color: var(--theme-color-white);
+}
+.features-block-style1.active .inner-box .content-box .features-title {
+  color: var(--theme-color-white);
+}
+.features-block-style1.active .inner-box .content-box .features-details {
+  color: var(--theme-color-white);
+  border-color: var(--theme-color-white);
+}
+.features-block-style1.active .inner-box .content-box .features-details:before {
+  background-color: var(--theme-color-white);
+}
+.features-block-style1.active .inner-box .theme-btn {
+  color: var(--theme-color-white);
+}
+.features-block-style1.active .inner-box .theme-btn:hover {
+  color: var(--theme-color4);
+}
+.features-block-style1.active .inner-box .theme-btn:hover .icon {
+  color: var(--theme-color4);
+}
+.features-block-style1.active .inner-box .theme-btn .icon {
+  color: var(--theme-color-white);
 }

@@ -2,20 +2,21 @@
 <?php
 $features_item['title_tag'] = $title_tag;
 $features_item['subtitle_tag'] = $subtitle_tag;
+$features_link = $features_item['features_link'];
+$target = ( $features_link && $features_link['is_external'] ) ? ' target="_blank"' : '';
+$url = ( $features_link && $features_link['url'] ) ? $features_link['url'] : '';
 ?>
-  <div class="features-block-style8">
-    <div class="thumb">
-      <?php elemental_addons_get_shortcode_template_part( 'part-featured-image', null, 'features-block/tpl', $features_item, false );?>
-    </div>
-    <div class="content">
-      <div class="service-icon icon">
+
+<div class="features-block-style8">
+  <div class="inner-block">
+    <div class="icon-block">
+      <div class="icon">
         <?php elemental_addons_get_shortcode_template_part( 'icon-type', $features_item['icon_type'], 'features-block/tpl', $features_item, false );?>
       </div>
-      <?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'features-block/tpl', $features_item, false );?>
-      <?php elemental_addons_get_shortcode_template_part( 'part-content', null, 'features-block/tpl', $features_item, false );?>
-      <?php if ( $show_view_details_button == 'yes' ) : ?>
-        <?php elemental_addons_get_shortcode_template_part( 'button', null, 'services/tpl', $params, false ); ?>
-      <?php endif; ?>
     </div>
-    <div class="clearfix"></div>
+    <?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'features-block/tpl', $features_item, false );?>
+    <div class="features-details">
+      <?php elemental_addons_get_shortcode_template_part( 'part-content', null, 'features-block/tpl', $features_item, false );?>
+    </div>
   </div>
+</div>

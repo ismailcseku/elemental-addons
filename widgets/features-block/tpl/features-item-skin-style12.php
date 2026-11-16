@@ -2,12 +2,23 @@
 <?php
 $features_item['title_tag'] = $title_tag;
 $features_item['subtitle_tag'] = $subtitle_tag;
+$features_link = isset( $features_item['features_link'] ) ? $features_item['features_link'] : [];
+$target = ( $features_link && ! empty( $features_link['is_external'] ) ) ? ' target="_blank"' : '';
+$url = ( $features_link && ! empty( $features_link['url'] ) ) ? $features_link['url'] : '';
 ?>
 <div class="features-block-style12">
-  <div class="inner-box">
-    <?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'features-block/tpl', $features_item, false );?>
-    <div class="features-icon">
+	<div class="inner-block">
+		<div class="icon-block">
       <?php elemental_addons_get_shortcode_template_part( 'icon-type', $features_item['icon_type'], 'features-block/tpl', $features_item, false );?>
-    </div>
-  </div>
+		</div>
+		<div class="content-block">
+			<?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'features-block/tpl', $features_item, false );?>
+			<?php elemental_addons_get_shortcode_template_part( 'part-content', null, 'features-block/tpl', $features_item, false );?>
+			<div class="button-items">
+				<div class="bottom-line"></div>
+				<a href="<?php echo esc_url( $features_link['url'] );?>" class="plus-button"><i class="icon lnr-icon-plus"></i>
+				</a>
+			</div>
+		</div>
+	</div>
 </div>

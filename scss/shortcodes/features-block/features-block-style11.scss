@@ -1,103 +1,109 @@
 @import "../../bootstrap-loader";
 @import "features-common";
-// Feature Current Style11
+
+[data-widget_type="tm-ele-features-block.skin-style11"] {
+  .tm-features-basic {
+    background-size: cover;
+    border-radius: 23px;
+    min-height: 690px;
+    padding: 100px 0 6px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    .feature-layout {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: auto auto auto;
+      max-width: 1320px;
+      gap: 24px;
+    }
+  }
+}
+
 .features-block-style11 {
-  position: relative;
-  margin-bottom: 30px;
-  .info-box-wrapper {
-    background-color: var(--theme-color-white);
+  .inner-block {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 27px 30px 28px;
+    gap: 20px;
     position: relative;
-    display: block;
-    text-align: center;
-    padding: 50px 25px 45px;
-    border-radius: 10px;
-    box-shadow: 0px 10px 40px 0px rgba(22, 32, 60, 0.08);
-    overflow: hidden;
-    @include transition(all 500ms ease);
-    &:after {
-      position: absolute;
-      left: 0;
-      top: 0;
-      height: 100%;
-      width: 100%;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: auto;
-      background-image: url(../../../images/current-theme/icon-shape-9.png);
-      background-position: right bottom;
-      background-repeat: no-repeat;
-      opacity: 0.1;
-      content: "";
-    }
-    .elementor-icon {
-      color: var(--theme-color1);
-    }
-    .features-title {
-      a {
-      }
+    display: flex;
+    z-index: 0;
+    @include media-breakpoint-down(sm) {
+      display: block;
     }
     &:before {
+      background-color: var(--theme-color2);
+      border-radius: 20px;
       content: "";
-      background: var(--theme-color1);
       position: absolute;
-      bottom: 0;
+      top: 0;
+      left: 0;
       height: 0;
       width: 100%;
-      right: 0;
-      @include transition(all 500ms ease);
+      z-index: -1;
+      @include transition(all 300ms ease);
     }
+    &.active,
     &:hover {
-      .icon-wrapper {
-        color: #fff;
-        position: relative;
-        z-index: 1;
-        &::after {
-          opacity: 0.32;
-          transform: scaleX(-1);
-        }
-        &:before {
-          opacity: 0.28;
-          transform: scaleX(-1);
-        }
-      }
-      .features-title {
-        color: #ffffff;
-        position: relative;
-        z-index: 1;
-        @include transition(all 500ms ease);
-        a {
-          color: #ffffff;
-        }
-      }
-      .features-details {
-        color: #fff;
-        position: relative;
-        z-index: 1;
-      }
       &:before {
         height: 100%;
-        top: 0;
+      }
+      .content-box {
+        .features-title {
+          color: var(--theme-color3-text-color);
+        }
+        .features-details {
+          color: #F4F8F1;
+        }
+      }
+      .icon-block {
+        background-color: var(--theme-color1);
+        i,
+        img {
+          animation: wobble 1.5s ease-in-out;
+        }
       }
     }
-  }
-  .features-details {
-    position: relative;
-    display: block;
-    z-index: 1;
-    @include transition(all 500ms ease);
-  }
-  .link-box {
-    position: absolute;
-    right: 3px;
-    bottom: 8px;
-    width: 30px;
-    height: 30px;
-    z-index: 1;
-    a {
+    .icon-block {
+      background-color: #F4F8F1;
+      border-radius: 50%;
+      height: 60px;
+      line-height: 1;
+      width: 60px;
+      min-width: 60px;
+      font-size: 30px;
+      color: var(--theme-color2);
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      margin-bottom: 23px;
       position: relative;
-      line-height: 30px;
-      font-size: 20px;
-      color: #ffffff;
+      top: 5px;
+      @include transition(all 300ms ease);
+      .icon {
+        position: relative;
+        display: flex;
+        line-height: 1;
+      }
+      i,
+      img {
+        display: flex;
+        line-height: 1;
+        position: relative;
+        @include transition(all 300ms ease);
+      }
+    }
+    .content-box {
+      .features-title {
+        margin-top: 0;
+        margin-bottom: 6px;
+        @include transition(all 300ms ease);
+      }
+      .features-details {
+        @include transition(all 300ms ease);
+      }
     }
   }
 }

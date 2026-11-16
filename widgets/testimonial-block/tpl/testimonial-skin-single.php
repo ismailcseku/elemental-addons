@@ -29,19 +29,15 @@
 							$animation_delay = $testimonial_item['wow_animation_delay'] . 'ms';
 						}
 					?>
-					<div class="swiper-slide elementor-repeater-item-<?php echo esc_attr( $testimonial_item['_id'] ); ?> <?php echo esc_attr($animation);?>" data-wow-delay="<?php echo esc_attr($animation_delay);?>">
-						<div class="testimonial-block-five swiper-slide">
-							<div class="inner-box">
-								<div class="quote-icon">
-									<?php \Elementor\Icons_Manager::render_icon( $settings['icon'], [ 'aria-hidden' => 'true' , 'class' => 'icon' ] ); ?>
-								</div>
-								<div class="info-box">
-									<div class="author-info">
-										<?php elemental_addons_get_shortcode_template_part( 'part-name', null, 'testimonial-block/tpl', $testimonial_item, false );?>
-										<?php elemental_addons_get_shortcode_template_part( 'part-position', null, 'testimonial-block/tpl', $testimonial_item, false );?>
-									</div>
-									<?php elemental_addons_get_shortcode_template_part( 'part-author-text', null, 'testimonial-block/tpl', $testimonial_item, false ); ?>
-								</div>
+					<div class="swiper-slide elementor-repeater-item-<?php echo $testimonial_item['_id']; ?> <?php echo esc_attr($animation);?>" data-wow-delay="<?php echo esc_attr($animation_delay);?>">
+						<div class="testimonial-item testimonial-block-five swiper-slide">
+							<div class="info-box">
+							<div class="quote-icon">
+								<?php \Elementor\Icons_Manager::render_icon( $settings['icon'], [ 'aria-hidden' => 'true' , 'class' => 'icon' ] ); ?>
+							</div>
+								<?php elemental_addons_get_shortcode_template_part( 'part-author-text', null, 'testimonial-block/tpl', $testimonial_item, false ); ?>
+								<?php elemental_addons_get_shortcode_template_part( 'part-name', null, 'testimonial-block/tpl', $testimonial_item, false );?>
+								<?php elemental_addons_get_shortcode_template_part( 'part-position', null, 'testimonial-block/tpl', $testimonial_item, false );?>
 							</div>
 						</div>
 					</div>
@@ -76,5 +72,5 @@
 	</div>
 
 <?php else : ?>
-	<?php elemental_addons_no_posts_match_criteria_text(); ?>
+	<?php elemental_addons_text(); ?>
 <?php endif; ?>

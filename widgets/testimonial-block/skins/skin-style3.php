@@ -5,7 +5,7 @@ use Elementor\Controls_Manager;
 use Elementor\Group_Control_Image_Size;
 use Elementor\Skin_Base as Elementor_Skin_Base;
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) exit;
 
 class Skin_Style3 extends Elementor_Skin_Base {
 
@@ -17,11 +17,9 @@ class Skin_Style3 extends Elementor_Skin_Base {
 		return 'skin-style3';
 	}
 
-
 	public function get_title() {
 		return __( 'Skin Style3', 'elemental-addons' );
 	}
-
 
 	public function register_layout_controls( Widget_Base $widget ) {
 		$this->parent = $widget;
@@ -29,34 +27,20 @@ class Skin_Style3 extends Elementor_Skin_Base {
 
 	public function render() {
 		$settings = $this->parent->get_settings_for_display();
-
 		$direction_suffix = is_rtl() ? '.rtl' : '';
-		wp_enqueue_style( 'tm-testimonial-block-style3', ELEMENTAL_ADDONS_ASSETS_URI . '/css/shortcodes/testimonial-block/testimonial-block-style3' . $direction_suffix . '.css' );
-
-
-		if( $settings['animate_icon_on_hover'] ) {
-			$classes[] = 'animate-hover animate-icon-'.$settings['animate_icon_on_hover'];
+		wp_enqueue_style( 'tm-testimonial-block-style3', ELEMENTAL_ADDONS_ASSETS_URI . '/css/shortcodes/testimonial-block/testimonial-block-style3' . $direction_suffix . '.css', array(), ELEMENTAL_ADDONS_VERSION );
+		$classes = array();
+		if ( ! empty( $settings['animate_icon_on_hover'] ) ) {
+			$classes[] = 'animate-hover animate-icon-' . $settings['animate_icon_on_hover'];
 		}
-
-		//icon classes
-		$icon_classes = array();
-		$settings['icon_classes'] = $icon_classes;
-
-		//button classes
-		$settings['btn_classes'] = elemental_addons_prepare_button_classes_from_params( $settings );
-
-
-		//icon classes
-		$icon_classes = array();
-		$settings['icon_classes'] = $icon_classes;
-
-		$settings['holder_id'] = \elemental_addons_get_isotope_holder_ID('testimonial-block');
-
+		$settings['classes'] = $classes;
+		$settings['icon_classes'] = array();
+		if ( function_exists( 'elemental_addons_prepare_button_classes_from_params' ) ) {
+			$settings['btn_classes'] = elemental_addons_prepare_button_classes_from_params( $settings );
+		}
+		$settings['holder_id'] = \elemental_addons_get_isotope_holder_ID( 'testimonial-block' );
 		$settings['settings'] = $settings;
-
-		//Produce HTML version by using the parameters (filename, variation, folder name, parameters, shortcode_ob_start)
 		$html = elemental_addons_get_shortcode_template_part( 'testimonial', $settings['display_type'], 'testimonial-block/tpl', $settings, true );
-
 		\elemental_addons_print_html( $html );
 	}
 }

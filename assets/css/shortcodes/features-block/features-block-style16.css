@@ -26,96 +26,71 @@
   }
 }
 
-.features-block-style16 {
+.features-block-style16 .benifit-image {
   position: relative;
-  margin-bottom: 40px;
-}
-.features-block-style16:last-child .image-box:before {
-  display: none;
-}
-.features-block-style16 .inner-box {
-  position: relative;
-}
-.features-block-style16 .inner-box .icon-box {
-  position: relative;
-  padding-top: 60px;
-}
-.features-block-style16 .inner-box .icon-box::before {
-  position: absolute;
-  left: 60px;
-  top: 0;
-  width: 190px;
-  height: 146px;
-  transition: all 300ms linear;
-  background-image: url(../../../images/current-theme/process-arrow.png);
-  content: "";
-}
-.features-block-style16 .inner-box .icon-box .icon {
-  position: relative;
-}
-.features-block-style16 .inner-box .icon-box .icon::after {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 155px;
-  width: 155px;
-  display: block;
-  background-color: #ffffff;
-  border-radius: 50%;
-  z-index: -1;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
-  -webkit-box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
-  content: "";
-}
-[data-tm-layout=dark] .features-block-style16 .inner-box .icon-box .icon::after {
-  background-color: #141212;
-}
-.features-block-style16 .inner-box .icon-box .icon i {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 135px;
-  width: 135px;
-  border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 30px;
-  color: var(--theme-color1-text-color);
-  font-size: 72px;
-  background-color: var(--theme-color1);
-  transition: all 300ms linear;
+  border-radius: 10px;
 }
-.features-block-style16 .inner-box .icon-box .count {
+.features-block-style16 .benifit-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: all 400ms ease;
+}
+.features-block-style16 .benifit-image img {
+  background-size: cover;
+  transition: 0.5s;
+  width: 100%;
+}
+.features-block-style16 .benifit-image .features-featured-img:nth-child(1) img {
+  transform: translatex(50%) scalex(2);
+  opacity: 0;
+  filter: blur(10px);
+}
+.features-block-style16 .benifit-image .features-featured-img:nth-child(2) img {
   position: absolute;
-  top: -30px;
-  left: 140px;
-  margin-top: -30px;
-  font-size: 7rem;
-  font-family: var(--heading-font-family);
-  font-weight: 800;
-  color: #e3e7f1;
-  opacity: 0.3;
-  z-index: -1;
-  transition: all 300ms linear;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
 }
-.features-block-style16 .inner-box .feature-title {
-  z-index: 2;
-  margin-top: 0;
-  margin-bottom: 20px;
+.features-block-style16 .benefit-content {
+  margin-top: 25px;
 }
-.features-block-style16 .inner-box:hover .icon-box .icon::after {
-  height: 135px;
-  width: 135px;
+.features-block-style16 .benefit-content .features-title {
+  margin-bottom: 10px;
 }
-.features-block-style16 .inner-box:hover .icon-box .icon i {
-  color: var(--theme-color1);
-  background-color: var(--theme-color1-text-color);
+.features-block-style16 .benefit-content .text-btn {
+  margin-top: 10px;
+  display: inline-block;
+  color: var(--theme-color3);
+  font-size: 14px;
+  font-weight: 600;
+}
+.features-block-style16 .benefit-content .text-btn i {
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  font-size: 14px;
+  color: var(--theme-color3);
+  margin-left: 8px;
+  transition: all 0.2s ease-in-out;
+}
+.features-block-style16 .benefit-content .text-btn i::before {
+  content: "\f118";
+}
+.features-block-style16 .benefit-content .text-btn:hover i {
+  color: var(--theme-color2);
+  transform: rotate(0);
+}
+.features-block-style16:hover .benifit-image .features-featured-img:nth-child(1) img {
+  transform: translatex(0) scalex(1);
+  opacity: 1;
+  filter: blur(0);
+}
+.features-block-style16:hover .benifit-image .features-featured-img:nth-child(2) img {
+  transform: translatex(-50%) scalex(2);
+  opacity: 0;
+  filter: blur(10px);
 }

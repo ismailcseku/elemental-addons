@@ -1,138 +1,155 @@
 @import "../../bootstrap-loader";
 @import "features-common";
-// Feature Current Style14
 .features-block-style14 {
   position: relative;
-  .thumb {
+  .inner {
     position: relative;
-    img {
-      border-radius: 10px;
-    }
-    .info-box {
-      text-align: center;
-      position: absolute;
-      top: 0;
-      padding: 30px;
-      align-items: center;
-      height: 100%;
-      display: flex;
-      flex-wrap: nowrap;
-      flex-direction: column;
-      justify-content: space-evenly;
-      z-index: 1;
-      opacity: 0;
-      transform: translateY(30px);
-      @include transition(all 0.5s);
-      .features-details {
-        color: #fff;
-      }
-    }
-    &:after {
-      content: "";
-      background-color: rgba(25, 25, 25, 0.9);
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      left: 0;
-      top: 0;
-      opacity: 0;
-      border-radius: 10px;
-      @include transition(all 0.4s);
-    }
-  }
-  .title-area {
-    @include transition(all 0.5s);
-    display: flex;
-    align-items: center;
-    box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    border-radius: 0 10px 10px 10px;
-    margin-top: -30px;
-    position: relative;
-    margin-right: 60px;
+    padding: 35px 35px 25px;
     overflow: hidden;
-    [data-tm-layout="dark"] & {
-      background-color: #1b1b1b;
+    border-radius: 15px;
+    background-color: rgba(238, 245, 243, 1);
+    z-index: 1;
+    border: 1px solid rgba($color: #000000, $alpha: 0.08);
+    @include media-breakpoint-down(xxl) {
+      padding: 35px 20px 25px;
     }
-    @include media-breakpoint-down(md) {
-      border-radius: 0 0 10px 10px;
-      margin-right: 0;
+    @include media-breakpoint-down(sm) {
+      padding: 25px 25px;
     }
-    &:after {
-      content: "";
-      background-color: var(--theme-color1);
+    &:before {
       position: absolute;
-      top: 0;
-      right: 0;
-      height: 100%;
-      width: 100%;
-      z-index: 0;
+      content: "";
+      left: 0px;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
       opacity: 0;
-      transform: translateX(-100%);
-      @include transition(all 700ms ease);
+      z-index: -1;
+      background-color: var(--theme-color1);
+      transform: scale(0.2, 1);
+      @include transition(all 500ms ease);
     }
-    .features-title {
-      margin-top: 0;
-      margin-left: 15px;
-      padding-left: 15px;
-      padding-right: 30px;
-      @include transition(all 0.5s);
-      &:before {
-        position: absolute;
-        content: "";
-        top: 0;
-        bottom: 0;
-        left: -18px;
-        width: 4px;
-        height: 100%;
-        background-color: #fff;
-        transform: scaleY(0);
-        @include transition(all 0.5s);
+    &:hover {
+      &::before {
+        opacity: 1;
+        transform: scale(1, 1);
       }
     }
-    .feature-icon {
-      padding: 18px;
-      background-color: var(--theme-color1);
-      z-index: 1;
-      min-height: 93px;
-      display: flex;
-      min-width: 85px;
-      align-items: center;
-      justify-content: center;
+    &:hover {
+      .shape {
+        opacity: 1;
+        visibility: visible;
+      }
       .icon {
-        color: var(--theme-color2-text-color);
-        line-height: 0;
-        i {
-          &::before {
-            font-size: 36px;
-            line-height: 36px;
+        transform: rotateY(180deg);
+        color: var(--theme-color1);
+        [data-tm-layout="dark"] & {
+          color: var(--theme-color-white);
+        }
+        background-color: var(--theme-color-white);
+      }
+      .features-title a{
+        color: var(--theme-color-white);
+        [data-tm-layout="dark"] & {
+          color: var(--theme-color-white);
+        }
+      }
+      .features-details{
+        color: rgb(185, 185, 185);
+      }
+      .btn-view-details {
+        .btn-plain-text-with-arrow-right {
+          color: var(--theme-color-white) !important;
+          [data-tm-layout="dark"] & {
+            color: var(--theme-color-white) !important;
+          }
+          &:after {
+            color: var(--theme-color-white) !important;
+            [data-tm-layout="dark"] & {
+              color: var(--theme-color-white) !important;
+            }
           }
         }
       }
     }
-  }
-  &:hover {
-    .thumb {
-      .info-box {
-        opacity: 1;
-        transform: translateY(0);
+    .icon {
+      position: relative;
+      width: 80px;
+      height: 80px;
+      font-size: 44px;
+      margin: 0 auto;
+      line-height: 94px;
+      text-align: center;
+      border-radius: 10px;
+      color: var(--theme-color-white);
+      background-color: var(--theme-color1);
+      [data-tm-layout="dark"] & {
+        background-color: #1d1d1d;
       }
-      &:after {
-        opacity: 0.95;
+      @include transition(all 500ms ease);
+    }
+    .shape {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      opacity: 1;
+      visibility: visible;
+      @include transition(all 300ms ease);
+      background: url(../../../../assets/images/current-theme/feature-three-item-shape.png);
+      height: 269px;
+      width: 186px;
+    }
+  }
+
+  .features-title {
+    margin-top: 35px;
+    margin-bottom: 0;
+    @include media-breakpoint-down(xxl) {
+      font-size: 20px;
+    }
+    a {
+      color: var(--theme-color1);
+    }
+  }
+
+  .features-details {
+    position: relative;
+    color: #4e595d;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+  .btn-view-details {
+    @include transition(all 300ms ease);
+    margin-top: 18px;
+    &:hover {
+      .btn-plain-text-with-arrow-right {
+        color: var(--theme-color2) !important;
+        [data-tm-layout="dark"] & {
+          color: var(--theme-color2) !important;
+        }
+        &:after {
+          color: var(--theme-color2) !important;
+          [data-tm-layout="dark"] & {
+            color: var(--theme-color2) !important;
+          }
+        }
       }
     }
-    .features-details {
-      &:after {
-        transform: translateX(0);
-        opacity: 1;
+    .btn-plain-text-with-arrow-right {
+      position: relative;
+      font-weight: 400 !important;
+      font-size: 14px !important;
+      [data-tm-layout="dark"] & {
+        color: #a1a1a1 !important;
       }
-      .features-title {
-        position: relative;
-        z-index: 1;
-        color: var(--theme-color1-text-color);
-        &:before {
-          transform: scaleY(1);
-          transition-delay: 600ms;
+      &::after {
+        content: "\f118";
+        color: #222;
+        [data-tm-layout="dark"] & {
+          color: #a1a1a1 !important;
         }
       }
     }

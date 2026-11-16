@@ -1,56 +1,148 @@
 @import "../../bootstrap-loader";
 .features-block-style25 {
-  margin-bottom: 32px;
-  .inner-box {
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s ease;
+  padding: 40px 40px 30px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  background: radial-gradient(169.32% 111.67% at 100.08% 111.67%, #2f2f00 0%, #000000 61.47%);
+  overflow: hidden;
+  @include transition(all 0.3s ease);
+  @include media-breakpoint-down(xxl) {
+    padding: 20px;
+    padding-bottom: 20px;
+  }
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 30px;
+  }
+  @include media-breakpoint-down(md) {
+    margin-bottom: 30px;
+  }
+  &::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    content: "";
+    height: 100%;
+    width: 0;
+    z-index: -1;
+    background-color: var(--theme-color1);
+    @include transition(all 0.4s ease);
+  }
+  .ks-choose-icon {
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    font-size: 37px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-color: #1c1c1c;
+    color: var(--theme-color1);
+  }
+  .features-title {
+    font-weight: 600;
+    margin-bottom: 12px;
+    @include transition(all 0.3s ease);
+  }
+  .features-details {
+    margin-bottom: 15px;
+  }
+
+  .btn-view-details {
+    @include transition(all 300ms ease);
+    margin-top: 25px;
     &:hover {
-      background-color: var(--theme-color2);
-      .features-featured-img {
-        img {
-          transform: scale(1.1);
+      .btn-plain-text-with-arrow-right {
+        color: var(--theme-color2) !important;
+        [data-tm-layout="dark"] & {
+          color: var(--theme-color2) !important;
         }
-      }
-      .content-box {
-        &::after {
-          height: 100%;
-        }
-        .features-title {
-          color: #fff;
+        // &:before {
+        //   width: 100%;
+        //   color: var(--theme-color2) !important;
+        // }
+        &:after {
+          color: var(--theme-color2) !important;
+          [data-tm-layout="dark"] & {
+            color: var(--theme-color2) !important;
+          }
         }
       }
     }
-    .features-featured-img {
-      img {
-        width: 100%;
-        transition: all 0.3s ease;
+    .btn-plain-text-with-arrow-right {
+      position: relative;
+      [data-tm-layout="dark"] & {
+        color: #a1a1a1 !important;
       }
-    }
-    .content-box {
-      background-color: var(--theme-color2);
-      padding: 21px 15px 17px;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      text-align: center;
       &::after {
-        background-color: var(--theme-color1);
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 0;
-        transition: all 0.3s ease;
+        top: 2px;
+        content: "\f118";
+        color: #222;
+        [data-tm-layout="dark"] & {
+          color: #a1a1a1 !important;
+        }
       }
-      .features-title {
-        margin-top: 0;
-        color: #fff;
-        margin-bottom: 0;
-        z-index: 1;
-        position: relative;
+      // &:before {
+      //   background-color: var(--theme-color-white);
+      //   border-radius: 10px;
+      //   content: "";
+      //   position: absolute;
+      //   bottom: 2px;
+      //   left: 0;
+      //   height: 1px;
+      //   width: 0;
+      //   @include transition(all 300ms ease);
+      // }
+    }
+  }
+
+  &:hover {
+    &::after {
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
+    .ks-choose-icon {
+    }
+    .features-title,
+    .features-details {
+      color: #222;
+    }
+    a:hover {
+      color: #222;
+    }
+    .btn-view-details {
+      .btn-plain-text-with-arrow-right {
+        color: var(--theme-color2) !important;
+        [data-tm-layout="dark"] & {
+          color: var(--theme-color2) !important;
+        }
+        // &:before {
+        //   width: 100%;
+        //   color: var(--theme-color2) !important;
+        // }
+        &:after {
+          color: var(--theme-color2) !important;
+          [data-tm-layout="dark"] & {
+            color: var(--theme-color2) !important;
+          }
+        }
+      }
+    }
+  }
+
+  & p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.79;
+    margin-bottom: 0;
+
+    @include media-breakpoint-down(xxl) {
+      & br {
+        display: none;
       }
     }
   }

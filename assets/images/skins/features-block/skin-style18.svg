@@ -9,7 +9,7 @@
   <rect x="48" y="190" width="110" height="54" rx="12" fill="#ea580c" fill-opacity="0.12"/>
   <rect x="178" y="190" width="110" height="54" rx="12" fill="#ea580c" fill-opacity="0.12"/>
   <rect x="308" y="190" width="110" height="54" rx="12" fill="#ea580c" fill-opacity="0.12"/>
-  <text x="400" y="70" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700" fill="#ea580c" fill-opacity="0.35">18</text>
+  <text x="400" y="70" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700" fill="#ea580c" fill-opacity="0.35">skin-style18</text>
   <text x="48" y="52" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600" fill="#0f172a">Skin Style18</text>
   <text x="48" y="268" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#64748b">Features Block</text>
 </svg>

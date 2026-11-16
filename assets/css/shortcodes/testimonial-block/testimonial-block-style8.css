@@ -54,121 +54,123 @@
 
 .testimonial-block-style8 {
   position: relative;
-  margin-bottom: 30px;
 }
-.testimonial-block-style8 .inner-box {
+.testimonial-block-style8 .inner-block {
+  background-color: var(--theme-color-white);
+  border: 1px solid #dddddd;
+  border-radius: 20px;
   position: relative;
-  margin: 1px;
-}
-.testimonial-block-style8 .inner-box .content-box {
-  position: relative;
-  display: block;
-  background-color: var(--theme-color2);
-  background-image: url(../../../images/current-theme/shape-22.png);
-  background-position: left top;
-  background-repeat: no-repeat;
-  padding: 55px 60px;
-  margin-bottom: 45px;
-}
-.testimonial-block-style8 .inner-box .content-box:before {
-  position: absolute;
-  left: 60px;
-  top: 100%;
-  border-right: 150px solid transparent;
-  border-top: 45px solid var(--theme-color2);
-  content: "";
+  padding: 49px 49px 47px;
+  transition: all 300ms ease;
 }
 @media (max-width: 575.98px) {
-  .testimonial-block-style8 .inner-box .content-box:before {
-    content: none;
+  .testimonial-block-style8 .inner-block {
+    padding: 30px 25px;
   }
 }
-.testimonial-block-style8 .inner-box .content-box .icon-quote {
+.testimonial-block-style8 .inner-block:before {
+  background: linear-gradient(90deg, #804613 0%, #e67e22 100%);
+  content: "";
+  mask-image: url(../../../images/current-theme/test1-mask1.png);
+  mask-size: cover;
+  mask-position: center center;
+  height: 81px;
+  width: 85px;
   position: absolute;
   right: 0;
   top: 0;
-  height: 72px;
-  width: 72px;
-  font-size: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  color: var(--text-color-bg-theme-color1);
-  background-color: var(--theme-color1);
-  background-image: url(../../../images/current-theme/testimonial-quote-icon2-white.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-transition: all 100ms ease;
-  transition: all 100ms ease;
 }
-.testimonial-block-style8 .inner-box .content-box .star-rating {
-  margin-bottom: 20px;
+.testimonial-block-style8 .inner-block:hover {
+  border-color: var(--theme-color1);
 }
-.testimonial-block-style8 .inner-box .content-box .star-rating span:before {
-  color: var(--theme-color1);
-  font-weight: 600;
+.testimonial-block-style8 .inner-block:hover .info-box .quote-icon i,
+.testimonial-block-style8 .inner-block:hover .info-box .quote-icon img {
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
-.testimonial-block-style8 .inner-box .content-box .author-text {
-  position: relative;
+.testimonial-block-style8 .inner-block .author-text {
+  color: #838383;
   font-size: 20px;
-  line-height: 38px;
-  color: #ffffff;
-  margin-bottom: 0;
-}
-.testimonial-block-style8 .inner-box .info-box {
-  position: relative;
-  margin-top: -30px;
-  margin-left: 160px;
-  padding-left: 115px;
-  min-height: 94px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 23px;
 }
 @media (max-width: 575.98px) {
-  .testimonial-block-style8 .inner-box .info-box {
-    margin-left: 0;
+  .testimonial-block-style8 .inner-block .author-text {
+    font-size: 16px;
+    line-height: 26px;
   }
 }
-.testimonial-block-style8 .inner-box .info-box .thumb {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 94px;
-  width: 94px;
-  border: 2px solid var(--theme-color1);
-  border-radius: 50%;
-  overflow: hidden;
-  padding: 10px;
+.testimonial-block-style8 .inner-block .info-box {
+  display: inline-flex;
+  margin-bottom: 21px;
 }
-.testimonial-block-style8 .inner-box .info-box .thumb img {
+.testimonial-block-style8 .inner-block .info-box .user-thumb {
   border-radius: 50%;
-  -webkit-transition: all 300ms ease;
+  width: 80px;
+  position: relative;
+  z-index: 1;
   transition: all 300ms ease;
 }
-.testimonial-block-style8 .inner-box .info-box .testimonial-name {
-  margin-top: 0;
-  margin-bottom: 2px;
+.testimonial-block-style8 .inner-block .info-box .user-thumb img {
+  border-radius: 50%;
+  object-fit: cover;
+  transition: all 300ms ease;
 }
-.testimonial-block-style8 .inner-box .info-box .testimonial-position {
-  position: relative;
+.testimonial-block-style8 .inner-block .info-box .quote-icon {
+  background-color: #f6f6f6;
+  border-radius: 50%;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  width: 80px;
+  margin-left: -10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-block-style8 .inner-block .info-box .quote-icon i,
+.testimonial-block-style8 .inner-block .info-box .quote-icon img {
+  display: inline-block;
+  color: var(--theme-color2);
+  font-size: 34px;
+  transition: all 300ms ease;
+}
+.testimonial-block-style8 .inner-block .bottom-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.testimonial-block-style8 .inner-block .bottom-box .testimonial-name {
+  margin-top: 0;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+.testimonial-block-style8 .inner-block .bottom-box .testimonial-position {
+  color: #838383;
   display: block;
-  font-size: 13px;
-  color: #808287;
   font-weight: 500;
-  line-height: 22px;
-  letter-spacing: 0.1em;
+  line-height: 1;
+}
+.testimonial-block-style8 .inner-block .bottom-box .review .rating .star-rating {
+  font-size: 16px;
+  margin: 0;
+}
+.testimonial-block-style8 .inner-block .bottom-box .review .rating .star-rating span:before {
+  color: var(--theme-color1);
+  font-weight: 600;
+  margin-right: 4px;
+}
+@media (max-width: 575.98px) {
+  .testimonial-block-style8 .inner-block .bottom-box .review .rating .star-rating span:before {
+    font-size: 14px;
+  }
+}
+.testimonial-block-style8 .inner-block .bottom-box .review .rating .star-rating span:before:last-child {
+  margin-right: 0;
 }

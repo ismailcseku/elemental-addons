@@ -1,81 +1,104 @@
 @import "../../bootstrap-loader";
-@import "features-common";
-// Feature Current Style12
 .features-block-style12 {
-  position: relative;
-  z-index: 1;
-  &:after {
-    height: 100%;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    content: "";
-    background-color: #171717;
-    position: absolute;
-    pointer-events: none;
-    z-index: 1;
-    transition: all 0.2s ease;
-  }
-  .inner-box {
+  .inner-block {
     position: relative;
-    overflow: hidden;
-    height: 100%;
+    z-index: 9;
+    border-radius: 20px;
     padding: 40px 30px 35px;
-    z-index: 2;
-    padding-right: 110px;
-    @include transition(all 300ms ease);
-    background: #1a1b1d;
-    &:hover {
-      &:after {
-        height: 24px;
+
+    @include media-breakpoint-down(xxl) {
+      padding: 30px 25px;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.95);
+      backdrop-filter: blur(26.1px);
+      opacity: 0.75;
+      z-index: -1;
+      border-radius: 20px;
+    }
+
+    .icon-block {
+      display: inline-block;
+      i {
+        font-size: 60px;
+        line-height: 1;
+        color: var(--theme-color1);
+      }
+
+      @include media-breakpoint-down(xl) {
+        margin-bottom: 20px;
       }
     }
-    &:before {
-      position: absolute;
-      left: 30px;
-      top: 0;
-      width: 2px;
-      height: 24px;
-      background-color: rgba(255, 255, 255, 0.1);
-      content: "";
-      @include transition(all 300ms ease);
+
+    .content-block {
+      .features-title {
+        color: #fff;
+        margin-bottom: 10px;
+
+        @include media-breakpoint-down(xxl) {
+          margin-bottom: 20px;
+          font-size: 19px;
+        }
+      }
+
+      .features-details {
+        color: #717171;
+      }
+
+      .button-items {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-top: 40px;
+
+        @include media-breakpoint-down(xl) {
+          margin-top: 20px;
+          gap: 20px;
+        }
+
+        .bottom-line {
+          display: inline-block;
+          width: 100%;
+          height: 1px;
+          background: rgba(255, 255, 255, 0.15);
+          transition: all 0.4s ease-in-out;
+        }
+
+        .plus-button {
+          display: inline-block;
+          max-width: 34px;
+          height: 34px;
+          width: 100%;
+          line-height: 34px;
+          text-align: center;
+          border-radius: 50%;
+          background: rgba(25, 26, 28, 1);
+          color: var(--theme-color-white);
+        }
+      }
     }
-    &:after {
-      position: absolute;
-      left: 30px;
-      top: 0;
-      width: 2px;
-      height: 0;
-      background-color: var(--theme-color1);
-      content: "";
-      @include transition(all 300ms ease);
-    }
-  }
-  .features-icon {
-    position: absolute;
-    right: 30px;
-    top: 0;
-    height: 100%;
-    @include flex-center;
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 1em;
-    background: linear-gradient(173deg, var(--theme-color1), #fff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .features-title {
-    position: relative;
-    color: #fff;
-    display: block;
-    margin-top: 0;
-    margin-bottom: 0px;
-    text-transform: uppercase;
-    background: linear-gradient(32deg, #fff, rgba(var(--theme-color1-rgb), 0.2));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
     &:hover {
-      color: var(--theme-color1);
+      .icon-block {
+        animation: 1.5s ease-in-out 0s 1 normal none running wobble;
+      }
+      .content-block {
+        .bottom-line {
+          background-color: var(--theme-color1) !important;
+        }
+        .plus-button {
+          background: var(--theme-color1);
+        }
+      }
     }
   }
 }

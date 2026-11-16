@@ -1,89 +1,95 @@
 @import "../../bootstrap-loader";
-@import "features-common";
-
 
 .features-block-style24 {
-  position: relative;
-  margin-bottom: 30px;
-  .inner-box {
+  .inner-block {
+    background-color: #f5f7f6;
+    border-radius: 20px;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    gap: 27px;
     position: relative;
-    padding: 50px 30px 75px;
-    text-align: center;
-    box-shadow: 0px 0px 18px 3px rgba(0, 0, 0, 0.05);
-    border-radius: 5px;
-    margin-bottom: 33px;
-    background-color: #ffffff;
-    @include transition(all 300ms ease);
-    z-index: 0;
-    &:before {
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      top: -20px;
-      width: 444px;
-      height: 444px;
-      background-image: url(../../../images/current-theme/shadow-1.png);
-      opacity: 0.8;
-      transform: scale(0);
-      background-repeat: no-repeat;
-      background-position: center;
-      @include transition(all 300ms ease);
-      content: "";
-      z-index: -1;
-    }
-    &:hover {
+    overflow: hidden;
+    margin-bottom: 10px;
+    @include transition(all 500ms ease);
+    &.active {
+      align-items: start;
+      padding: 40px 40px 32px;
       &:before {
-        @include transform(scale(1));
+        opacity: 1;
+        height: 100%;
       }
-      .icon-box {
-        @include transform(scaleX(-1));
+      .icon {
+        background-color: var(--theme-color1);
+        color: var(--theme-color1-text-color);
+        i,
+        img {
+          @include transform(scaleX(-1));
+        }
+        svg {
+          @include transform(scaleX(-1));
+          filter: brightness(0) invert(1);
+        }
       }
-      .features-title {
-      }
-      .btn-circle-arrow {
-        color: var(--theme-color1);
-        background-color: #fff;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-        &:after {
-          color: var(--theme-color1);
+      .content {
+        .features-title {
+          color: #fff;
+        }
+        .text {
+          color: #fff;
+          clip-path: inset(0 0 0 0);
+          visibility: visible;
+          opacity: 1;
+          max-height: 83px;
+          margin-top: 7px;
         }
       }
     }
-    .icon-box {
-      position: relative;
-      display: inline-block;
-      @include transition(all 300ms ease);
-      margin-bottom: 30px;
-      i {
-        font-size: 60px;
-      }
-    }
-    .features-title {
-      margin-bottom: 23px;
-    }
-    .features-details {
-      position: relative;
-      margin-bottom: 0px;
-    }
-    .btn-circle-arrow {
+    &:before {
+      content: "";
       position: absolute;
-      display: inline-block;
-      width: 65px;
-      height: 65px;
-      line-height: 65px;
-      text-align: center;
-      background-color: var(--theme-color1);
-      border-radius: 50%;
-      font-size: 20px;
-      left: 50%;
-      bottom: -33px;
-      transform: translateX(-50%);
-      color: #fff;
-      @include transition(all 300ms ease);
-      &:after {
-        color: #fff;
-      }
+      background-color: var(--theme-color3);
+      width: 100%;
+      height: 0;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      @include transition(all 500ms ease);
+    }
+  }
+  .icon {
+    min-width: 70px;
+    height: 70px;
+    line-height: 66px;
+    background-color: var(--theme-color3);
+    border-radius: 50%;
+    font-size: 30px;
+    color: var(--theme-color3-text-color);
+    text-align: center;
+    position: relative;
+    @include transition(all 500ms ease);
+    i,
+    img,
+    svg {
+      @include transition(all 900ms ease);
+    }
+  }
+  .content {
+    position: relative;
+    .features-title {
+      margin: 0;
+      line-height: 1;
+    }
+    .text {
+      margin-top: 0;
+      line-height: 30px;
+      color: rgba(12, 64, 62, 0.8);
+      max-width: 329px;
+      max-height: 0;
+      clip-path: inset(100% 0 0 0);
+      visibility: hidden;
+      opacity: 0;
+      @include transition(all 500ms ease);
     }
   }
 }

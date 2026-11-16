@@ -2,23 +2,23 @@
 <?php
 $features_item['title_tag'] = $title_tag;
 $features_item['subtitle_tag'] = $subtitle_tag;
+$first_letter_title = substr($features_item['title'], 0, 1);
 ?>
+
 <div class="features-block-style7">
-  <div class="inner-box">
-    <div class="image-box">
-      <div class="image">
-        <?php elemental_addons_get_shortcode_template_part( 'part-featured-image', null, 'features-block/tpl', $features_item, false );?>
-      </div>
-      <div class="info-box">
-        <?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'features-block/tpl', $features_item, false );?>
-        <a href="<?php echo esc_url( $url );?>" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
-      </div>
+  <div class="inner-block">
+    <div class="image">
+      <?php elemental_addons_get_shortcode_template_part( 'part-featured-image', null, 'features-block/tpl', $features_item, false );?>
     </div>
-    <div class="overlay-content">
-      <div class="info-box">
-        <?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'features-block/tpl', $features_item, false );?>
-        <?php elemental_addons_get_shortcode_template_part( 'part-content', null, 'features-block/tpl', $features_item, false );?>
-        <a href="<?php echo esc_url( $url );?>" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
+    <div class="title-box">
+      <div class="icon">
+        <?php elemental_addons_get_shortcode_template_part( 'icon-type', $features_item['icon_type'], 'features-block/tpl', $features_item, false );?>
+      </div>
+      <?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'features-block/tpl', $features_item, false );?>
+    </div>
+    <div class="content-box">
+      <div class="inner-box">
+        <div class="text"><?php elemental_addons_get_shortcode_template_part( 'part-content', null, 'features-block/tpl', $features_item, false );?></div>
       </div>
     </div>
   </div>

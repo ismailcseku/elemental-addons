@@ -1,60 +1,75 @@
 @import "../../bootstrap-loader";
 @import "testimonial-common";
 
-// Testimonial area start here ***
 .testimonial-block-style7 {
-  position: relative;
-  &:hover {
-    .inner-box {
-      .icon {
+  .inner-block {
+    &:hover {
+    }
+  }
+  .top-box {
+    margin-bottom: 20px;
+    .star-rating {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      width: 11.6em !important;
+      margin-bottom: 30px;
+      &::before {
+        font-size: 20px;
+        color: var(--theme-color1);
+        letter-spacing: 5px;
+      }
+      span {
+        width: 100%;
+        &::before {
+          font-size: 20px;
+          color: var(--theme-color1);
+          font-weight: 600;
+          letter-spacing: 5px;
+        }
       }
     }
   }
-  .inner-box {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    height: 100%;
-    .icon {
-      @include radius(60px, 60px, 60px);
-      width: 60px;
-      height: 60px;
-      align-items: center;
-      border-radius: 50%;
-      transition: var(--transition);
-      background-color: var(--theme-color1);
-      backdrop-filter: blur(10px);
-      color: #fff;
-      margin-bottom: 50px;
-      font-size: 30px;
+  .text {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #fff;
+    @include media-breakpoint-down(sm) {
+      font-size: 16px;
+      line-height: 1.5;
     }
-    .author-text {}
-    .testi-info {
+  }
+  .author-info {
+    display: flex;
+    align-items: center;
+    align-items: flex-end;
+    justify-content: space-between;
+    .info {
       display: flex;
-      position: relative;
-      align-items: center;
-      margin-top: 100px;
       .testimonial-name {
-        position: relative;
-        padding-left: 50px;
-        margin: 0;
-        &::after {
-          position: absolute;
-          top: 20px;
-          left: 0px;
-          width: 32px;
-          height: 2px;
-          background-color: #222;
-          content: "";
-        }
+        color: #fff;
+        letter-spacing: -0.02em;
+        margin-top: 0;
+        margin-bottom: 4px;
       }
       .testimonial-position {
-        color: #868686dd;
-        font-weight: 400;
-        position: relative;
-        padding-left: 10px;
+        letter-spacing: -0.03em;
+        margin-left: 15px;
+        color: rgba(255, 255, 255, 0.9);
+      }
+    }
+    .quote-icon {
+      display: flex;
+      justify-content: space-between;
+      i {
+        font-size: 70px;
+        color: var(--theme-color1);
+        @include transition(all 300ms ease);
+      }
+      img {
+        @include transition(all 300ms ease);
       }
     }
   }
 }
-// Testimonial area end here ***
