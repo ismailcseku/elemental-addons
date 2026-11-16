@@ -1,13 +1,19 @@
 (function ($) {
   "use strict";
 
+  var relayoutIsotope = function ($scope) {
+    var $inner = $scope.find(".isotope-layout-inner");
+    if ($inner.length && $inner.data("isotope") && typeof $inner.isotope === "function") {
+      $inner.isotope("layout");
+    }
+  };
+
   var WidgetServiceBlock1Handler = function ($scope) {
     var $innerBlocks = $scope.find(".service-block-style7 .inner-block");
     if (!$innerBlocks.length) {
       return;
     }
 
-    // Accordion lives inside this widget only (multiple instances / Elementor preview).
     $scope.off("click.tmServiceBlock1", ".service-block-style7 .inner-block .title-box");
     $scope.on(
       "click.tmServiceBlock1",
@@ -25,19 +31,32 @@
         if (!wasActive) {
           $clickedInner.addClass("active");
         }
+
+        relayoutIsotope($scope);
+        setTimeout(function () {
+          relayoutIsotope($scope);
+        }, 520);
       }
     );
 
-    // First item open by default; opening/closing is driven by `.inner-block.active` (see service-block-style7.css).
     $innerBlocks.removeClass("active");
     $innerBlocks.first().addClass("active");
+    relayoutIsotope($scope);
+    setTimeout(function () {
+      relayoutIsotope($scope);
+    }, 520);
   };
 
-  //elementor front start
-  $(window).on("elementor/frontend/init", function () {
+  var bind = function () {
     elementorFrontend.hooks.addAction(
       "frontend/element_ready/tm-ele-service-block.skin-style7",
-      WidgetServiceBlock1Handler,
+      WidgetServiceBlock1Handler
     );
-  });
+  };
+
+  if (typeof elementorFrontend !== "undefined" && elementorFrontend.hooks) {
+    bind();
+  } else {
+    $(window).on("elementor/frontend/init", bind);
+  }
 })(jQuery);

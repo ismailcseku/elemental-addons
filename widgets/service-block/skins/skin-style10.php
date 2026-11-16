@@ -29,11 +29,12 @@ class Skin_Style10 extends Elementor_Skin_Base {
 		$settings = $this->parent->get_settings_for_display();
 		$direction_suffix = is_rtl() ? '.rtl' : '';
 		wp_enqueue_style( 'service-block-style10', ELEMENTAL_ADDONS_ASSETS_URI . '/css/shortcodes/service-block/service-block-style10' . $direction_suffix . '.css', array(), ELEMENTAL_ADDONS_VERSION );
+		$style10_js = ELEMENTAL_ADDONS_ABS_PATH . 'assets/js/widgets/service-block-style10.js';
 		wp_enqueue_script(
 			'tm-service-block-style10-script',
 			ELEMENTAL_ADDONS_ASSETS_URI . '/js/widgets/service-block-style10.js',
 			array( 'jquery', 'elementor-frontend' ),
-			ELEMENTAL_ADDONS_VERSION,
+			file_exists( $style10_js ) ? (string) filemtime( $style10_js ) : ELEMENTAL_ADDONS_VERSION,
 			true
 		);
 		$classes = array();
