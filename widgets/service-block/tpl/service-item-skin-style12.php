@@ -19,7 +19,7 @@ if( isset($service_item['featured_image_mask']['id']) && !empty($service_item['f
 }
 //if empty then use this default image
 if( empty($mask_image_url)) {
-  $mask_image_url = ELEMENTAL_ADDONS_ASSETS_URI . '/images/current-theme/service1-shape-mask1.png';
+  $mask_image_url = ELEMENTAL_ADDONS_ASSETS_URI . '/images/current-theme/service-block-style12-image-mask.png';
 }
 
 ?>

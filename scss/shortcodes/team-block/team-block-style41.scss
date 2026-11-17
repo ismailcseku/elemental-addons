@@ -74,7 +74,7 @@
         content: "";
         width: 75px;
         height: 73px;
-        background-image: url(../../../images/current-theme/shape-team1.png);
+        background-image: url(../../../images/current-theme/team-block-style41-image-mask.png);
         top: 90px;
         position: absolute;
         left: calc(100% - 90px);
@@ -102,7 +102,7 @@
       }
       &:before {
         content: "";
-        mask-image: url(../../../images/current-theme/team-mask1.png);
+        mask-image: url(../../../images/current-theme/team-block-style41-shape.png);
         mask-size: contain;
         mask-position: center center;
         mask-repeat: no-repeat;

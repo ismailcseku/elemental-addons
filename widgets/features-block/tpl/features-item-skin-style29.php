@@ -14,10 +14,10 @@ $url = ( $features_link && $features_link['url'] ) ? $features_link['url'] : '#0
   <?php endif; ?>
   <div class="inner-box">
 	<div class="block-dots">
-	  <img src="<?php echo esc_url( ELEMENTAL_ADDONS_ASSETS_URI . '/images/current-theme/service-block-dots.png' ); ?>" alt="Image">
+	  <img src="<?php echo esc_url( ELEMENTAL_ADDONS_ASSETS_URI . '/images/current-theme/features-block-style29-dots-active.png' ); ?>" alt="Image">
 	</div>
 	<div class="block-dots-active">
-	  <img src="<?php echo esc_url( ELEMENTAL_ADDONS_ASSETS_URI . '/images/current-theme/service-block-dots-active.png' ); ?>" alt="Image">
+	  <img src="<?php echo esc_url( ELEMENTAL_ADDONS_ASSETS_URI . '/images/current-theme/features-block-style29-dots.png' ); ?>" alt="Image">
 	</div>
 	<div class="icon-box2">
 	  <i class="icon">
@@ -27,7 +27,7 @@ $url = ( $features_link && $features_link['url'] ) ? $features_link['url'] : '#0
 	<?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'features-block/tpl', $features_item, false );?>
   <p class="text"><?php elemental_addons_get_shortcode_template_part( 'part-content', null, 'features-block/tpl', $features_item, false );?></p>
 	<div class="block-shadow">
-	  <img src="<?php echo esc_url( ELEMENTAL_ADDONS_ASSETS_URI . '/images/current-theme/service-block-shadow.png' ); ?>" alt="">
+	  <img src="<?php echo esc_url( ELEMENTAL_ADDONS_ASSETS_URI . '/images/current-theme/features-block-style29-shadow.png' ); ?>" alt="">
 	</div>
   </div>
 </div>

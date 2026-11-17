@@ -21,7 +21,7 @@ $url = ( $feature_link && $feature_link['url'] ) ? $feature_link['url'] : '';
 		<?php endif; ?>
 	</div>
 	<div class="service-shape">
-		<img class="shape-default" src="<?php echo esc_url( ELEMENTAL_ADDONS_ASSETS_URI . '/images/current-theme/service-shape1-1.png' ); ?>" alt="<?php esc_attr_e( 'Service Shape', 'elemental-addons' ); ?>">
-		<img class="shape-hover" src="<?php echo esc_url( ELEMENTAL_ADDONS_ASSETS_URI . '/images/current-theme/service-shape1-2.png' ); ?>" alt="<?php esc_attr_e( 'Service Shape', 'elemental-addons' ); ?>">
+		<img class="shape-default" src="<?php echo esc_url( ELEMENTAL_ADDONS_ASSETS_URI . '/images/current-theme/service-block-style11-shape-default.png' ); ?>" alt="<?php esc_attr_e( 'Service Shape', 'elemental-addons' ); ?>">
+		<img class="shape-hover" src="<?php echo esc_url( ELEMENTAL_ADDONS_ASSETS_URI . '/images/current-theme/service-block-style11-shape-hover.png' ); ?>" alt="<?php esc_attr_e( 'Service Shape', 'elemental-addons' ); ?>">
 	</div>
 </div>

@@ -16,7 +16,7 @@ $features_item['subtitle_tag'] = $subtitle_tag;
 			</div>
 		</div>
 		<div class="shape-1">
-			<img src="<?php echo esc_url( ELEMENTAL_ADDONS_ASSETS_URI . '/images/current-theme/choose-shape1-1.png' ); ?>" alt="<?php esc_attr_e( 'Shape', 'elemental-addons' ); ?>">
+			<img src="<?php echo esc_url( ELEMENTAL_ADDONS_ASSETS_URI . '/images/current-theme/features-block-style9-shape.png' ); ?>" alt="<?php esc_attr_e( 'Shape', 'elemental-addons' ); ?>">
 		</div>
 	</div>
 </div>

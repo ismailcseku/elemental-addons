@@ -25,7 +25,7 @@
   margin: 0;
 }
 .team-skin-style30 .image-box figure img {
-  mask-image: url(../../../images/current-theme/team-mask1.png);
+  mask-image: url(../../../images/current-theme/team-block-style30-image-mask.png);
   mask-size: contain;
   mask-position: center center;
   mask-repeat: no-repeat;

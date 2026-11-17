@@ -24,7 +24,7 @@ $url = ( $feature_link && $feature_link['url'] ) ? $feature_link['url'] : '';
       </div>
       <a class="service-btn" href="<?php echo esc_url( $feature_link['url'] );?>">
         <div class="btn-title"><?php echo esc_html( $settings['view_details_button_text']  ); ?></div>
-        <img src="<?php echo esc_url(ELEMENTAL_ADDONS_ASSETS_URI . '/images/current-theme/icon-arrow-theme1.png'); ?>" alt="">
+        <img src="<?php echo esc_url(ELEMENTAL_ADDONS_ASSETS_URI . '/images/current-theme/service-block-style20-arrow.png'); ?>" alt="">
       </a>
     </div>
     <a class="plus-more" href="<?php echo esc_url( $feature_link['url'] );?>"><i class="flaticon-common-plus1"></i></a>

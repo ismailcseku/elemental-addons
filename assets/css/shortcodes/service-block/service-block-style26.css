@@ -96,7 +96,7 @@
 .service-block-style26 .inner-block .content-box {
   background-color: #fff;
   border-radius: 30px;
-  -webkit-mask-image: url(../../../images/current-theme/service2-shape1.png);
+  -webkit-mask-image: url(../../../images/current-theme/service-block-style26-box-mask.png);
   -webkit-mask-repeat: no-repeat;
   padding: 23px 40px 62px;
 }
@@ -134,7 +134,7 @@
   border-radius: 30px;
   overflow: hidden;
   position: relative;
-  -webkit-mask-image: url(../../../images/current-theme/service2-image-shape1.png);
+  -webkit-mask-image: url(../../../images/current-theme/service-block-style26-image-mask.png);
   -webkit-mask-position: center center;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: cover;

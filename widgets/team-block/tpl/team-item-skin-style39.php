@@ -9,7 +9,7 @@ $team_item['subtitle_tag'] = $subtitle_tag;
 	<div class="inner-box">
 		<div class="team-media image-box">
 			<figure class="image1">
-				<img class="team-bg" src="<?php echo plugins_url('assets/images/current-theme/team-bg01.jpg', dirname(__FILE__, 3)); ?>" alt="">
+				<img class="team-bg" src="<?php echo plugins_url('assets/images/current-theme/team-block-style39-bg.jpg', dirname(__FILE__, 3)); ?>" alt="">
 			</figure>
 			<figure class="image2">
 				<?php elemental_addons_get_shortcode_template_part( 'part-thumb', null, 'team-block/tpl', $team_item, false );?>
