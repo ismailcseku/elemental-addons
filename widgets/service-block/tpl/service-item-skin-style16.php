@@ -6,7 +6,7 @@ $service_item['subtitle_tag'] = $subtitle_tag;
 $feature_link = isset( $service_item['feature_link'] ) ? $service_item['feature_link'] : [];
 $target = ( $feature_link && ! empty( $feature_link['is_external'] ) ) ? ' target="_blank"' : '';
 $rel = ( $feature_link && ! empty( $feature_link['nofollow'] ) ) ? ' rel="nofollow"' : '';
-$url = ( $feature_link && ! empty( $feature_link['url'] ) ) ? $feature_link['url'] : '#';
+$url = ( $feature_link && ! empty( $feature_link['url'] ) && '#' !== $feature_link['url'] ) ? $feature_link['url'] : '';
 ?>
 
 <div class="service-block-style16">

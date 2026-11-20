@@ -155,9 +155,12 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				'label' => esc_html__( "Link URL", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::URL,
 				'show_external' => true,
+				'placeholder' => esc_html__( 'https://your-link.com', 'elemental-addons' ),
 				'default' => [
 					'url' => '',
-				]
+					'is_external' => '',
+					'nofollow' => '',
+				],
 			]
 		);
 		$repeater->add_control(
@@ -345,6 +348,9 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 						'featured_image' => Utils::get_placeholder_image_src(),
 						'content' => esc_html__( 'Item content. Click the edit button to change this text.', 'elemental-addons' ),
 						'count' => esc_html__( '01', 'elemental-addons' ),
+						'feature_link' => [
+							'url' => '',
+						],
 					],
 					[
 						'title' => esc_html__( 'Title #2', 'elemental-addons' ),
@@ -352,6 +358,9 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 						'featured_image' => Utils::get_placeholder_image_src(),
 						'content' => esc_html__( 'Item content. Click the edit button to change this text.', 'elemental-addons' ),
 						'count' => esc_html__( '02', 'elemental-addons' ),
+						'feature_link' => [
+							'url' => '',
+						],
 					],
 					[
 						'title' => esc_html__( 'Title #3', 'elemental-addons' ),
@@ -359,6 +368,9 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 						'featured_image' => Utils::get_placeholder_image_src(),
 						'content' => esc_html__( 'Item content. Click the edit button to change this text.', 'elemental-addons' ),
 						'count' => esc_html__( '03', 'elemental-addons' ),
+						'feature_link' => [
+							'url' => '',
+						],
 					],
 				],
 			]
