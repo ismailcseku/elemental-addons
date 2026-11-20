@@ -64,6 +64,8 @@ if ( ! class_exists( 'Elemental_Addons_Plugin' ) ) {
 			add_action( 'wp_enqueue_scripts', array( $this, 'register_assets' ), 5 );
 			add_action( 'elementor/editor/before_enqueue_scripts', array( $this, 'register_assets' ) );
 			add_action( 'elementor/frontend/before_enqueue_scripts', array( $this, 'register_assets' ) );
+			add_action( 'elementor/preview/enqueue_styles', array( $this, 'register_assets' ) );
+			add_action( 'elementor/preview/enqueue_styles', array( $this, 'enqueue_preview_styles' ) );
 			add_action( 'elementor/widgets/register', array( $this, 'register_widgets' ) );
 		}
 
@@ -118,12 +120,16 @@ if ( ! class_exists( 'Elemental_Addons_Plugin' ) ) {
 			);
 
 			// Slim Bootstrap 5.3 grid (containers / row / col / gutters / flex align). No reboot.
-			wp_register_style(
-				'elemental-addons-bootstrap-grid',
-				ELEMENTAL_ADDONS_ASSETS_URI . '/css/bootstrap-grid' . $direction_suffix . '.css',
-				array(),
-				$ver
-			);
+			if ( function_exists( 'elemental_addons_register_bootstrap_grid' ) ) {
+				elemental_addons_register_bootstrap_grid();
+			} else {
+				wp_register_style(
+					'elemental-addons-bootstrap-grid',
+					ELEMENTAL_ADDONS_ASSETS_URI . '/css/bootstrap-grid' . $direction_suffix . '.css',
+					array(),
+					$ver
+				);
+			}
 
 			wp_register_script(
 				'elemental-addons-js',
@@ -202,6 +208,16 @@ if ( ! class_exists( 'Elemental_Addons_Plugin' ) ) {
 			);
 
 			wp_enqueue_style( 'elemental-addons-widgets' );
+		}
+
+		/**
+		 * Styles that must be present in the Elementor preview iframe
+		 * (enqueue-during-render is not always printed there).
+		 */
+		public function enqueue_preview_styles() {
+			if ( function_exists( 'elemental_addons_enqueue_bootstrap_grid' ) ) {
+				elemental_addons_enqueue_bootstrap_grid();
+			}
 		}
 
 		/**

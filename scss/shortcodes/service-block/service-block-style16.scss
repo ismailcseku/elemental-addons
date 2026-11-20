@@ -2,410 +2,143 @@
 @import "service-common";
 
 .service-block-style16 {
-    .inner-block {
-        position: relative;
-        border-radius: 20px;
-        overflow: hidden;
-        margin-bottom: 20px;
-        &:hover {
-            .image {
-                img {
-                    transform: scale(1.1);
-                }
+  .inner-block {
+    background-color: #fff;
+    border-radius: 20px;
+    @include transition(all 300ms ease);
+    &:hover {
+      background-color: var(--theme-color1);
+      .image-box {
+        .image {
+          img {
+            &:first-child {
+              transform: translateX(0) scaleX(1);
+              opacity: 1;
+              filter: blur(0);
             }
-            .icon {
-                i,
-                img,
-                svg,
-                .service-icon i,
-                .service-icon img,
-                .service-icon svg {
-                    transform: scaleX(-1);
-                }
+            &:nth-child(2) {
+              transform: translateX(-50%) scaleX(2);
+              opacity: 0;
+              filter: blur(10px);
             }
-            .icon-plus {
-                transform: rotate(180deg);
-            }
+          }
         }
+        .icon-block {
+          i,
+          img {
+            transform: scaleX(-1);
+          }
+        }
+      }
+      .content-box {
+        .btn-more {
+          i,
+          img {
+            transform: rotate(0deg);
+          }
+        }
+      }
     }
-    .icon {
-        width: 100px;
-        height: 100px;
-        display: flex !important;
-        align-items: center;
-        justify-content: center;
+    .image-box {
+      position: relative;
+      .icon-block {
+        background-color: #fff;
         border-radius: 50%;
-        background-color: var(--theme-color1);
+        height: 70px;
+        line-height: 1;
+        width: 70px;
+        font-size: 40px;
+        color: var(--theme-color3);
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
         position: absolute;
         top: 20px;
         left: 20px;
-        transition: transform 300ms ease;
-        .service-icon {
-            display: flex !important;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 100%;
+        z-index: 1;
+        .icon {
+          position: relative;
+          &:before {
+            border-radius: 50%;
+            background-color: var(--theme-color1);
+            content: "";
+            position: absolute;
+            bottom: 5px;
+            left: calc(50% - 8px);
+            height: 16px;
+            width: 16px;
+            z-index: -1;
+            @include transition(all 300ms ease);
+          }
         }
         i,
-        .service-icon i {
-            color: var(--theme-color2);
-            font-size: 46px;
-            display: flex;
-            line-height: 1;
-            transform: scaleX(1);
-            transform-origin: center center;
-            transition: transform 300ms ease;
-        }
-        img,
-        .service-icon img {
-            max-width: 56px;
-            max-height: 56px;
-            width: auto;
-            height: auto;
-            object-fit: contain;
-            transform: scaleX(1);
-            transform-origin: center center;
-            transition: transform 300ms ease;
-        }
-        svg,
-        .service-icon svg {
-            width: 56px;
-            height: 56px;
-            transform: scaleX(1);
-            transform-origin: center center;
-            transition: transform 300ms ease;
-        }
-    }
-    .image {
-        width: 100%;
-        height: 100%;
         img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            @include transition(all 300ms ease);
+          display: inline-block;
+          position: relative;
+          @include transition(all 300ms ease);
         }
+        img {
+          position: relative;
+          top: -3px;
+        }
+      }
+      .image {
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        mask-image: url(../../../images/current-theme/service-block-style16-image-mask.png);
+        mask-size: cover;
+        mask-position: center center;
+        img {
+          position: relative;
+          object-fit: cover;
+          width: 100%;
+          height: 330px;
+          display: block;
+          @include transition(all 500ms ease);
+          &:first-child {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            z-index: 1;
+            transform: translateX(50%) scaleX(2);
+            opacity: 0;
+            filter: blur(10px);
+          }
+        }
+      }
     }
     .content-box {
-        position: absolute;
-        left: 10px;
-        right: 10px;
-        bottom: 10px;
-        @include transition(all 300ms ease);
-        .inner-box {
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 25px 25px 25px;
-            width: 100%;
-            @include transition(all 300ms ease);
+      padding: 25px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .service-title {
+        margin-top: 0;
+        margin-bottom: 0;
+        a:hover {
+          color: #333;
         }
-        .service-title {
-            margin-bottom: 0;
-            letter-spacing: -0.02em;
-            margin-left: 10px;
-            margin: 0;
-            margin-top: -5px;
-        }
-        .text {
-            letter-spacing: -0.03em;
-            margin-left: 10px;
-            display: none;
-            height: auto;
-            margin: 0;
-            padding-right: 5px;
-        }
-        .btn-more {
-          background-color: #F7F8ED;
-          color: var(--headings-color);
-          padding: 6px 6px 6px 20px;
-          font-weight: 500;
-          font-size: 16px;
-          letter-spacing: -0.02em;
-          line-height: 1;
-          border-radius: 10px;
-          display: inline-flex;
-          align-items: center;
-          justify-content: space-between;
-          position: relative;
-          overflow: hidden;
-          z-index: 0;
-          gap: 10px;
-          width: 100%;
-          margin-top: 19px;
+      }
+      .btn-more {
+        background-color: #f7f8ed;
+        border-radius: 50%;
+        color: var(--theme-color2);
+        display: block;
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        min-width: 44px !important;
+        i,
+        img {
+          display: inline-block;
+          @include transform(rotate(-45deg));
           @include transition(all 300ms ease);
-          &:before {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            content: "";
-            border-radius: 0;
-            transform: scale(0, 1);
-            transform-origin: top right;
-            background-color: var(--theme-color1);
-            transition: -webkit-transform 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
-            transition: transform 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
-            transition: transform 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000),
-            -webkit-transform 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
-            transition-timing-function: cubic-bezier(0.860, 0.000, 0.070, 1.000);
-          }
-          .btn-title {
-            position: relative;
-            z-index: 1;
-            @include transition(all 300ms ease);
-          }
-          i {
-            background-color: #fff;
-            color: var(--headings-color);
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            line-height: 40px;
-            font-size: 16px;
-            font-weight: 600;
-            text-align: center;
-            border-radius: 50%;
-            position: relative;
-            @include transition(all 300ms ease);
-          }
-          &:hover {
-            color: var(--headings-color);
-            &:before{
-              transform: scale(1, 1);
-              transform-origin: bottom left;
-            }
-            i {
-              transform: rotate(45deg);
-            }
-          }
         }
+      }
     }
-}
-
-// Responsive: all screens (smaller at each breakpoint, like service-block-style3)
-.service-block-style16 {
-    @include media-breakpoint-down(xxl) {
-        .inner-block {
-            margin-bottom: 16px;
-            border-radius: 16px;
-        }
-        .icon {
-            width: 84px;
-            height: 84px;
-            top: 16px;
-            left: 16px;
-            i,
-            .service-icon i {
-                font-size: 42px;
-            }
-            img,
-            .service-icon img {
-                max-width: 48px;
-                max-height: 48px;
-            }
-            svg,
-            .service-icon svg {
-                width: 48px;
-                height: 48px;
-            }
-        }
-        .content-box {
-            left: 8px;
-            right: 8px;
-            bottom: 8px;
-            gap: 30px;
-            .text {
-                padding-right: 0px;
-            }
-            .btn-more {
-                padding: 5px 5px 5px 16px;
-                font-size: 15px;
-                margin-top: 14px;
-                gap: 8px;
-                i {
-                    width: 34px;
-                    height: 34px;
-                    line-height: 34px;
-                    font-size: 14px;
-                }
-            }
-        }
-    }
-    @include media-breakpoint-down(xl) {
-        .inner-block {
-            margin-bottom: 14px;
-            border-radius: 14px;
-        }
-        .icon {
-            width: 72px;
-            height: 72px;
-            top: 14px;
-            left: 14px;
-            i,
-            .service-icon i {
-                font-size: 34px;
-            }
-            img,
-            .service-icon img {
-                max-width: 40px;
-                max-height: 40px;
-            }
-            svg,
-            .service-icon svg {
-                width: 40px;
-                height: 40px;
-            }
-        }
-        .content-box {
-            left: 6px;
-            right: 6px;
-            bottom: 6px;
-            .btn-more {
-                padding: 5px 5px 5px 14px;
-                font-size: 14px;
-                margin-top: 12px;
-                gap: 6px;
-                i {
-                    width: 32px;
-                    height: 32px;
-                    line-height: 32px;
-                    font-size: 13px;
-                }
-            }
-        }
-    }
-    @include media-breakpoint-down(lg) {
-        .inner-block {
-            margin-bottom: 12px;
-            border-radius: 12px;
-        }
-        .icon {
-            width: 64px;
-            height: 64px;
-            top: 12px;
-            left: 12px;
-            i,
-            .service-icon i {
-                font-size: 34px;
-            }
-            img,
-            .service-icon img {
-                max-width: 36px;
-                max-height: 36px;
-            }
-            svg,
-            .service-icon svg {
-                width: 36px;
-                height: 36px;
-            }
-        }
-        .content-box {
-            left: 6px;
-            right: 6px;
-            bottom: 6px;
-            .btn-more {
-                padding: 4px 4px 4px 12px;
-                font-size: 14px;
-                margin-top: 10px;
-                gap: 6px;
-                i {
-                    width: 30px;
-                    height: 30px;
-                    line-height: 30px;
-                    font-size: 12px;
-                }
-            }
-        }
-    }
-    @include media-breakpoint-down(md) {
-        .inner-block {
-            margin-bottom: 10px;
-            border-radius: 10px;
-        }
-        .icon {
-            width: 70px;
-            height: 70px;
-            top: 10px;
-            left: 10px;
-            i,
-            .service-icon i {
-                font-size: 34px;
-            }
-            img,
-            .service-icon img {
-                max-width: 32px;
-                max-height: 32px;
-            }
-            svg,
-            .service-icon svg {
-                width: 32px;
-                height: 32px;
-            }
-        }
-        .content-box {
-            left: 5px;
-            right: 5px;
-            bottom: 5px;
-            .btn-more {
-                padding: 4px 4px 4px 10px;
-                font-size: 13px;
-                margin-top: 8px;
-                gap: 5px;
-                i {
-                    width: 28px;
-                    height: 28px;
-                    line-height: 28px;
-                    font-size: 11px;
-                }
-            }
-        }
-    }
-    @include media-breakpoint-down(sm) {
-        .inner-block {
-            margin-bottom: 8px;
-            border-radius: 8px;
-        }
-        .icon {
-            width: 70px;
-            height: 70px;
-            top: 10px;
-            left: 10px;
-            i,
-            .service-icon i {
-                font-size: 34px;
-            }
-            img,
-            .service-icon img {
-                max-width: 28px;
-                max-height: 28px;
-            }
-            svg,
-            .service-icon svg {
-                width: 28px;
-                height: 28px;
-            }
-        }
-        .content-box {
-            left: 5px;
-            right: 5px;
-            bottom: 5px;
-            .inner-box {
-                padding: 20px 20px 20px;
-            }
-            .btn-more {
-                padding: 10px;
-                font-size: 14px;
-                margin-top: 6px;
-                gap: 4px;
-                i {
-                    width: 24px;
-                    height: 24px;
-                    line-height: 24px;
-                    font-size: 10px;
-                }
-            }
-        }
-    }
+  }
 }

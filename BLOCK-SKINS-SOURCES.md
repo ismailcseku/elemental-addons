@@ -14,7 +14,7 @@ Plugin path: `wp-content/plugins/mascot-core-{source}/`
 
 ## service-block
 
-Total skins: **28** (kept skin1 + skin3; ported **26**)
+Total skins: **19** (skins 20–28 removed)
 
 | Skin | Source plugin | Orig. style |
 |------|---------------|-------------|
@@ -33,19 +33,10 @@ Total skins: **28** (kept skin1 + skin3; ported **26**)
 | 13 | `mascot-core-nourio` | 5 |
 | 14 | `mascot-core-ventiq` | 1 |
 | 15 | `mascot-core-dermisio` | 1 |
-| 16 | `mascot-core-insurio` | 1 |
+| 16 | `mascot-core-greenland` (was copy of former skin 23; was insurio 1) | 1 |
 | 17 | `mascot-core-yogava` | 1 |
 | 18 | `mascot-core-glowra` | 1 |
-| 19 | `mascot-core-fieldora` | 2 |
-| 20 | `mascot-core-optipress` | 1 |
-| 21 | `mascot-core-desify` | 1 |
-| 22 | `mascot-core-bixom` | 1 |
-| 23 | `mascot-core-greenland` | 1 |
-| 24 | `mascot-core-digilink` | 7 |
-| 25 | `mascot-core-tranxo` | 3 |
-| 26 | `mascot-core-solarixia` | 1 |
-| 27 | `mascot-core-realwide` | 2 |
-| 28 | `mascot-core-creovibe` | 1 |
+| 19 | `mascot-core-tranxo` (was copy of former skin 25; was fieldora 2) | 3 |
 
 ## features-block
 

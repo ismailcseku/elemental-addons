@@ -2295,6 +2295,27 @@ if(!function_exists('elemental_addons_heading_tag_list_all')) {
 		return $heading_tag_list_all;
 	}
 }
+if ( ! function_exists( 'elemental_addons_register_bootstrap_grid' ) ) {
+	/**
+	 * Register slim Bootstrap 5 grid stylesheet (safe to call multiple times).
+	 */
+	function elemental_addons_register_bootstrap_grid() {
+		if ( wp_style_is( 'elemental-addons-bootstrap-grid', 'registered' ) ) {
+			return;
+		}
+		if ( ! defined( 'ELEMENTAL_ADDONS_ASSETS_URI' ) || ! defined( 'ELEMENTAL_ADDONS_VERSION' ) ) {
+			return;
+		}
+		$direction_suffix = is_rtl() ? '.rtl' : '';
+		wp_register_style(
+			'elemental-addons-bootstrap-grid',
+			ELEMENTAL_ADDONS_ASSETS_URI . '/css/bootstrap-grid' . $direction_suffix . '.css',
+			array(),
+			ELEMENTAL_ADDONS_VERSION
+		);
+	}
+}
+
 if ( ! function_exists( 'elemental_addons_enqueue_bootstrap_grid' ) ) {
 	/**
 	 * Enqueue Bootstrap 5 grid CSS for skins that use .row / .col-* / .g-* markup.
@@ -2315,6 +2336,7 @@ if ( ! function_exists( 'elemental_addons_enqueue_bootstrap_grid' ) ) {
 			return;
 		}
 
+		elemental_addons_register_bootstrap_grid();
 		wp_enqueue_style( 'elemental-addons-bootstrap-grid' );
 	}
 }

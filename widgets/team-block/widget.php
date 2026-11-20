@@ -112,10 +112,14 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 		if ( function_exists( 'elemental_addons_enqueue_font_awesome' ) ) {
 			elemental_addons_enqueue_font_awesome();
 		}
+		if ( function_exists( 'elemental_addons_register_bootstrap_grid' ) ) {
+			elemental_addons_register_bootstrap_grid();
+		}
 
 		return array(
 			'elemental-addons-fa-brands',
 			'elemental-addons-fa-solid',
+			'elemental-addons-bootstrap-grid',
 		);
 	}
 

@@ -100,6 +100,18 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 		return [ 'elemental-addons-js', 'elemental-addons-isotope' ];
 	}
 
+	/**
+	 * Styles for Elementor editor/preview + frontend.
+	 * Bootstrap grid is required by skins that use .row / .col-* markup (e.g. Skin 15).
+	 *
+	 * @return array
+	 */
+	public function get_style_depends() {
+		if ( function_exists( 'elemental_addons_register_bootstrap_grid' ) ) {
+			elemental_addons_register_bootstrap_grid();
+		}
+		return array( 'elemental-addons-bootstrap-grid' );
+	}
 
 	/**
 	 * Skins
