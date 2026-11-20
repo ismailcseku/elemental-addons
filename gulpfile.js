@@ -13,7 +13,12 @@ gulp.task("default", function () {
 // Task 1 - scss to css
 gulp.task("elemental-addons-sass", function () {
   return gulp
-    .src(["scss/**/*.scss", "!scss/**/_*.scss"])
+    .src([
+      "scss/**/*.scss",
+      "!scss/**/_*.scss",
+      // Vendored Bootstrap sources — compile only via scss/bootstrap-grid.scss.
+      "!scss/scss-bootstrap/**",
+    ])
     .pipe(errorHandler())
     .pipe(sass().on("error", sass.logError))
     .pipe(lec())

@@ -2295,6 +2295,30 @@ if(!function_exists('elemental_addons_heading_tag_list_all')) {
 		return $heading_tag_list_all;
 	}
 }
+if ( ! function_exists( 'elemental_addons_enqueue_bootstrap_grid' ) ) {
+	/**
+	 * Enqueue Bootstrap 5 grid CSS for skins that use .row / .col-* / .g-* markup.
+	 * Skips when the active theme already provides Bootstrap.
+	 */
+	function elemental_addons_enqueue_bootstrap_grid() {
+		if ( wp_style_is( 'bootstrap', 'enqueued' ) || wp_style_is( 'bootstrap-grid', 'enqueued' ) || wp_style_is( 'elemental-addons-bootstrap-grid', 'enqueued' ) ) {
+			return;
+		}
+
+		if ( wp_style_is( 'bootstrap', 'registered' ) ) {
+			wp_enqueue_style( 'bootstrap' );
+			return;
+		}
+
+		if ( wp_style_is( 'bootstrap-grid', 'registered' ) ) {
+			wp_enqueue_style( 'bootstrap-grid' );
+			return;
+		}
+
+		wp_enqueue_style( 'elemental-addons-bootstrap-grid' );
+	}
+}
+
 if ( ! function_exists( 'elemental_addons_enqueue_font_awesome' ) ) {
 	/**
 	 * Enqueue Font Awesome brands/solid from Elementor assets for hardcoded fab/fas icons.

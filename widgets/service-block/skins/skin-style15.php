@@ -28,6 +28,9 @@ class Skin_Style15 extends Elementor_Skin_Base {
 	public function render() {
 		$settings = $this->parent->get_settings_for_display();
 		$direction_suffix = is_rtl() ? '.rtl' : '';
+		if ( function_exists( 'elemental_addons_enqueue_bootstrap_grid' ) ) {
+			elemental_addons_enqueue_bootstrap_grid();
+		}
 		wp_enqueue_style( 'service-block-style15', ELEMENTAL_ADDONS_ASSETS_URI . '/css/shortcodes/service-block/service-block-style15' . $direction_suffix . '.css', array(), ELEMENTAL_ADDONS_VERSION );
 		$classes = array();
 		if ( ! empty( $settings['animate_icon_on_hover'] ) ) {

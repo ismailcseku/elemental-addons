@@ -1,0 +1,39 @@
+/*!
+ * Elemental Addons — Bootstrap 5.3 grid only (no reboot/components).
+ * Used by skins that rely on .container / .row / .col-* / .g-* / offsets.
+ */
+
+// Configuration
+@import "scss-bootstrap/functions";
+@import "scss-bootstrap/variables";
+@import "scss-bootstrap/variables-dark";
+@import "scss-bootstrap/maps";
+@import "scss-bootstrap/mixins";
+@import "scss-bootstrap/utilities";
+
+// Layout
+@import "scss-bootstrap/containers";
+@import "scss-bootstrap/grid";
+
+// Flex / spacing utilities used with the grid (e.g. align-items-center).
+// Gutters (.g-*) come from grid, not this list.
+$utilities: map-get-multiple(
+	$utilities,
+	(
+		"display",
+		"order",
+		"flex",
+		"flex-direction",
+		"flex-grow",
+		"flex-shrink",
+		"flex-wrap",
+		"justify-content",
+		"align-items",
+		"align-content",
+		"align-self",
+		"margin",
+		"padding"
+	)
+);
+
+@import "scss-bootstrap/utilities/api";

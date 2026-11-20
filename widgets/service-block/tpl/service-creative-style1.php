@@ -4,6 +4,9 @@
 	wp_enqueue_script( 'swiper' );
 
 	$direction_suffix = is_rtl() ? '.rtl' : '';
+	if ( function_exists( 'elemental_addons_enqueue_bootstrap_grid' ) ) {
+		elemental_addons_enqueue_bootstrap_grid();
+	}
 	wp_enqueue_style( 'service-creative-style1', ELEMENTAL_ADDONS_ASSETS_URI . '/css/shortcodes/service-block/service-creative-style1' . $direction_suffix . '.css' );
 	wp_register_script( 'service-creative-style1', ELEMENTAL_ADDONS_ASSETS_URI . '/js/widgets/service-creative-style1.js', array( 'jquery' ), false, true );
 	wp_enqueue_script( 'service-creative-style1' );

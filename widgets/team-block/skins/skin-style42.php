@@ -29,6 +29,9 @@ class Skin_Style42 extends Elementor_Skin_Base {
 		elemental_addons_enqueue_font_awesome();
 		$settings = $this->parent->get_settings_for_display();
 		$direction_suffix = is_rtl() ? '.rtl' : '';
+		if ( function_exists( 'elemental_addons_enqueue_bootstrap_grid' ) ) {
+			elemental_addons_enqueue_bootstrap_grid();
+		}
 		wp_enqueue_style( 'team-block-style42', ELEMENTAL_ADDONS_ASSETS_URI . '/css/shortcodes/team-block/team-block-style42' . $direction_suffix . '.css', array(), ELEMENTAL_ADDONS_VERSION );
 		
 		$icon_classes = array();

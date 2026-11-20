@@ -148,6 +148,9 @@ class Skin_Creative1 extends Elementor_Skin_Base {
 		$settings = $this->parent->get_settings_for_display();
 
 		$direction_suffix = is_rtl() ? '.rtl' : '';
+		if ( function_exists( 'elemental_addons_enqueue_bootstrap_grid' ) ) {
+			elemental_addons_enqueue_bootstrap_grid();
+		}
 		wp_enqueue_style( 'service-block-creative1', ELEMENTAL_ADDONS_ASSETS_URI . '/css/shortcodes/service-block/service-block-creative1' . $direction_suffix . '.css' );
 		wp_register_script( 'service-block-creative1', ELEMENTAL_ADDONS_ASSETS_URI . '/js/widgets/service-block-creative1.js', array( 'jquery' ), false, true );
 		wp_enqueue_script( 'service-block-creative1' );

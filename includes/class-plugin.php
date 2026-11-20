@@ -117,6 +117,14 @@ if ( ! class_exists( 'Elemental_Addons_Plugin' ) ) {
 				$ver
 			);
 
+			// Slim Bootstrap 5.3 grid (containers / row / col / gutters / flex align). No reboot.
+			wp_register_style(
+				'elemental-addons-bootstrap-grid',
+				ELEMENTAL_ADDONS_ASSETS_URI . '/css/bootstrap-grid' . $direction_suffix . '.css',
+				array(),
+				$ver
+			);
+
 			wp_register_script(
 				'elemental-addons-js',
 				ELEMENTAL_ADDONS_ASSETS_URI . '/js/elementor-mascot.js',
