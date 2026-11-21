@@ -11,23 +11,21 @@ Raw port data also lives in `_team-skins-*.csv` (especially `_team-skins-ported.
 
 Plugin path: `mascot-core-{source}/`
 
-## Skins 1–9 (pre-port / existing)
+## Skins 1–9 (from evolta baseline)
 
-Not listed in `_team-skins-ported.csv`. They were already in elemental-addons before the bulk port from mascot-core-*.
+`elemental-addons` was originally forked from `mascot-core-evolta`. Skins **1–9** came from evolta’s team-block styles 1–9 (not from the later `_team-skins-ported.csv` bulk port). SCSS for 1–6 still tracks evolta (~83–95% after EA class renames / Skin1 DOM work).
 
-| Skin | Current design origin (after later swaps) |
-|------|-------------------------------------------|
-| 1 | existing (Skin1 standard) |
-| 2 | existing |
-| 3 | existing |
-| 4 | existing |
-| 5 | existing |
-| 6 | existing |
-| 7 | **now** `saasive` style2 (swapped with 55) |
-| 8 | **now** `creovibe` style2 (swapped with 56) |
-| 9 | **now** `elderkare` style3 (swapped with 57) |
-
-Former 7/8/9 designs moved to skins 55/56/57.
+| Skin | Source | Orig. style | Notes |
+|------|--------|-------------|-------|
+| 1 | evolta | 1 | Skin1 standard DOM |
+| 2 | evolta | 2 | |
+| 3 | evolta | 3 | |
+| 4 | evolta | 4 | |
+| 5 | evolta | 5 | |
+| 6 | evolta | 6 | |
+| 7 | **now** `saasive` | 2 | swapped with 55; former evolta 7 → 55 |
+| 8 | **now** `creovibe` | 2 | swapped with 56; former evolta 8 → 56 |
+| 9 | **now** `elderkare` | 3 | swapped with 57; former evolta 9 → 57 |
 
 ## Skins 10–59 (initial port)
 

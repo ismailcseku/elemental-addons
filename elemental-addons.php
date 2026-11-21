@@ -49,8 +49,10 @@ function elemental_addons_init() {
 	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/helpers.php';
 	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/controls.php';
 	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/blog-compat.php';
+	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/class-icons.php';
 	require_once ELEMENTAL_ADDONS_ABS_PATH . 'includes/class-plugin.php';
 
+	Elemental_Addons_Icons::init();
 	Elemental_Addons_Plugin::instance();
 }
 add_action( 'elementor/loaded', 'elemental_addons_init' );
