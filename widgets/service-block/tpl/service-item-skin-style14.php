@@ -39,7 +39,7 @@ $url = ( $feature_link && $feature_link['url'] ) ? $feature_link['url'] : '';
 		<?php if ( $show_view_details_button == 'yes' ) : ?>
 			<a href="<?php echo esc_url( $url );?>" class="btn-more">
 				<span class="btn-title"><?php echo esc_html( $settings['view_details_button_text'] ?? '' ); ?></span>
-				<span class="btn-icon"><i class="flaticon-common-arrow-right1"></i></span>
+				<span class="btn-icon"><i class="ei ei-arrow-right"></i></span>
 			</a>
 		<?php endif; ?>
 	</div>

@@ -27,7 +27,7 @@ $url = ( $feature_link && $feature_link['url'] ) ? $feature_link['url'] : '';
       <div class="text">
         <?php elemental_addons_get_shortcode_template_part( 'part-content', null, 'service-block/tpl', $service_item, false );?>
       </div>
-      <a href="<?php echo esc_url( $url );?>" class="btn-more"><?php echo esc_html( $settings['view_details_button_text'] ?? 'Read More' ); ?> <i class="fa fa-arrow-right ms-2"></i></a>
+      <a href="<?php echo esc_url( $url );?>" class="btn-more"><?php echo esc_html( $settings['view_details_button_text'] ?? 'Read More' ); ?> <i class="ei ei-arrow-right"></i></a>
       <div class="count"><?php echo esc_html( str_pad( $count, 2, '0', STR_PAD_LEFT ) ); ?></div>
     </div>
   </div>

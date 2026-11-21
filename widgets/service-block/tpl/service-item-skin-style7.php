@@ -20,7 +20,7 @@ $url = ( $feature_link && $feature_link['url'] ) ? $feature_link['url'] : '';
         </div>
         <?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'service-block/tpl', $service_item, false );?>
         <?php elemental_addons_get_shortcode_template_part( 'part-content', null, 'service-block/tpl', $service_item, false );?>
-        <a class="read-more" href="<?php echo esc_url( $url );?>"><i class="flaticon-common-right-arrow"></i></a>
+        <a class="read-more" href="<?php echo esc_url( $url );?>"><i class="ei ei-arrow-right"></i></a>
       </div>
       <div class="image-box">
         <?php elemental_addons_get_shortcode_template_part( 'part-featured-image', null, 'service-block/tpl', $service_item, false );?>

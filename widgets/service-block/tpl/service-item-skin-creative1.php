@@ -25,11 +25,7 @@ $service_item['subtitle_tag'] = $subtitle_tag;
         </div>
         <div class="link-block">
           <a <?php if ( ! empty( $target ) ) : ?> target="_blank"<?php endif; ?> href="<?php echo esc_url( $url );?>">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
-              <g id="surface1">
-              <path d="M 29.992188 23.992188 L 30 0 L 6 0.00390625 L 5.996094 3 L 24.878906 3 L 0 27.878906 L 2.121094 30 L 27 5.121094 L 27 24 Z M 29.992188 23.992188 "/>
-              </g>
-            </svg>
+            <i class="ei ei-arrow-right"></i>
           </a>
         </div>
       </div>

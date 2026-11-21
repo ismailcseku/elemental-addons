@@ -22,7 +22,7 @@ $url = ( $feature_link && $feature_link['url'] ) ? $feature_link['url'] : '';
           <?php elemental_addons_get_shortcode_template_part( 'part-content', null, 'service-block/tpl', $service_item, false );?>
           <?php if ( $show_view_details_button == 'yes' ) : ?>
             <a class="read-more" href="<?php echo esc_url( $url );?>">
-              <i class=" flaticon-common-arrow-right1"></i>
+              <i class="ei ei-arrow-right"></i>
             </a>
           <?php endif; ?>
         </div>

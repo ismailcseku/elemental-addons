@@ -33,7 +33,7 @@ if( empty($mask_image_url)) {
       <?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'service-block/tpl', $service_item, false );?>
       <?php elemental_addons_get_shortcode_template_part( 'part-content', null, 'service-block/tpl', $service_item, false );?>
       <?php if ( $show_view_details_button == 'yes' ) : ?>
-        <a href="<?php echo esc_url( $feature_link['url'] );?>" class="theme-btn-two"><?php echo esc_html( $view_details_button_text  ); ?> <i class="flaticon-common-arrow-right1"></i></a>
+        <a href="<?php echo esc_url( $feature_link['url'] );?>" class="theme-btn-two"><?php echo esc_html( $view_details_button_text  ); ?> <i class="ei ei-arrow-right"></i></a>
       <?php endif; ?>
     </div>
   </div>

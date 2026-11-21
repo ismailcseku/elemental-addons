@@ -17,7 +17,7 @@ $url = ( $feature_link && $feature_link['url'] ) ? $feature_link['url'] : '';
         <?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'service-block/tpl', $service_item, false );?>
       </div>
       <div class="arrow-icon">
-        <i class="flaticon-common-right-arrow"></i>
+        <i class="ei ei-arrow-right"></i>
       </div>
     </div>
     <div class="content-box">

@@ -19,7 +19,7 @@ $url = ( $feature_link && $feature_link['url'] ) ? $feature_link['url'] : '';
       <div class="title-box">
         <?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'service-block/tpl', $service_item, false );?>
         <a href="<?php echo esc_url( $url );?>" class="btn-more">
-          <i class="flaticon-common-right-arrow"></i>
+          <i class="ei ei-arrow-right"></i>
         </a>
       </div>
       <?php elemental_addons_get_shortcode_template_part( 'part-content', null, 'service-block/tpl', $service_item, false );?>

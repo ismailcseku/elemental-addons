@@ -26,7 +26,7 @@ $url = ( $feature_link && ! empty( $feature_link['url'] ) && '#' !== $feature_li
 		  <?php elemental_addons_get_shortcode_template_part( 'part-content', null, 'service-block/tpl', $service_item, false ); ?>
 		</div>
 		<?php if ( ! empty( $show_view_details_button ) && $show_view_details_button === 'yes' ) : ?>
-		  <a href="<?php echo esc_url( $url ); ?>"<?php echo $target; ?><?php echo $rel; ?> class="btn-more"><span class="btn-title"><?php echo esc_html( $view_details_button_text ); ?></span> <i class="fa fa-arrow-right"></i></a>
+		  <a href="<?php echo esc_url( $url ); ?>"<?php echo $target; ?><?php echo $rel; ?> class="btn-more"><span class="btn-title"><?php echo esc_html( $view_details_button_text ); ?></span> <i class="ei ei-arrow-right"></i></a>
 		<?php endif; ?>
 	  </div>
 	</div>

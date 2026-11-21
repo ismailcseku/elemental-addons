@@ -24,9 +24,7 @@ $url = ( $feature_link && $feature_link['url'] ) ? $feature_link['url'] : '';
           <a href="<?php echo esc_url( $url );?>" class="theme-btn btn-style1">
             <span class="btn-title"><?php echo esc_html( $view_details_button_text  ); ?></span>
                 <div class="icon">
-                <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 8.00008L15 8.00008M18.3361 8.01939C15.2241 7.82927 9 9.16017 9 16.0048M18.3361 7.98545C15.2241 8.17558 9 6.84467 9 0" stroke="#FF6B1E" stroke-width="1.5"></path>
-                </svg>
+                <i class="ei ei-arrow-right"></i>
               </div>
             </a>
         </div>

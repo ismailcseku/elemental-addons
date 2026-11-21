@@ -25,7 +25,7 @@ $url = ( $feature_link && $feature_link['url'] ) ? $feature_link['url'] : '';
     <a class="btn-more" href="<?php echo esc_url( $url );?>"<?php echo $target;?>>
       <span class="btn-title"><?php echo esc_html( $settings['view_details_button_text'] ); ?></span>
       <span class="line"></span>
-      <span class="arrow lnr-icon-arrow-right1"></span>
+      <span class="arrow"><i class="ei ei-arrow-right"></i></span>
     </a>
     <?php endif; ?>
   </div>

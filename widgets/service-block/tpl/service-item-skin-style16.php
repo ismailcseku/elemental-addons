@@ -30,9 +30,7 @@ $featured_image_size           = isset( $service_item['featured_image_size'] ) ?
     <div class="content-box">
       <?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'service-block/tpl', $service_item, false );?>
       <a class="btn-more" href="<?php echo esc_url( $url );?>">
-        <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 8.00008L15 8.00008M18.3361 8.01939C15.2241 7.82927 9 9.16017 9 16.0048M18.3361 7.98545C15.2241 8.17558 9 6.84467 9 0" stroke="#0c2f25" stroke-width="1.5"/>
-        </svg>
+        <i class="ei ei-arrow-right"></i>
       </a>
     </div>
   </div>

@@ -33,8 +33,8 @@
 		<div class="swiper-pagination <?php if( $bullets !== 'yes' ) echo esc_attr( "d-none" ); ?>"></div>
 
 		<div class="tm-swiper-arrow tm-swiper-button-wrap <?php if( $arrow !== 'yes' ) echo esc_attr( "d-none" ); ?>">
-			<div class="tm-swiper-arrow tm-swiper-button-prev"><i class="lnr-icon-arrow-left"></i></div>
-			<div class="tm-swiper-arrow tm-swiper-button-next"><i class="lnr-icon-arrow-right"></i></div>
+			<div class="tm-swiper-arrow tm-swiper-button-prev"><i class="ei ei-arrow-left"></i></div>
+			<div class="tm-swiper-arrow tm-swiper-button-next"><i class="ei ei-arrow-right"></i></div>
 		</div>
 	</div>
 

@@ -16,7 +16,7 @@ $url = ( $feature_link && $feature_link['url'] ) ? $feature_link['url'] : '';
       </div>
       <?php if ( ! empty( $url ) ) : ?>
         <a href="<?php echo esc_url( $url );?>" class="icon"<?php if ( ! empty( $target ) ) : ?> target="_blank"<?php endif; ?>>
-          <i class="flaticon-common-arrow-right"></i>
+          <i class="ei ei-arrow-right"></i>
         </a>
       <?php endif; ?>
     </div>

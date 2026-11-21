@@ -119,6 +119,13 @@ if ( ! class_exists( 'Elemental_Addons_Plugin' ) ) {
 				$ver
 			);
 
+			wp_register_style(
+				'elemental-addons-icons',
+				ELEMENTAL_ADDONS_ASSETS_URI . '/css/elemental-icons.css',
+				array(),
+				$ver
+			);
+
 			// Slim Bootstrap 5.3 grid (containers / row / col / gutters / flex align). No reboot.
 			if ( function_exists( 'elemental_addons_register_bootstrap_grid' ) ) {
 				elemental_addons_register_bootstrap_grid();

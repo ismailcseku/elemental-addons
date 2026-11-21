@@ -110,7 +110,7 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 		if ( function_exists( 'elemental_addons_register_bootstrap_grid' ) ) {
 			elemental_addons_register_bootstrap_grid();
 		}
-		return array( 'elemental-addons-bootstrap-grid' );
+		return array( 'elemental-addons-bootstrap-grid', 'elemental-addons-icons' );
 	}
 
 	/**
