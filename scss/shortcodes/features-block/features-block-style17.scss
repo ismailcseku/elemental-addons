@@ -29,14 +29,12 @@
           a {
             color: #fff;
             [data-tm-layout="dark"] & {
-              color: var(--headings-color);
             }
           }
         }
         .features-details {
           color: #fff;
           [data-tm-layout="dark"] & {
-            color: var(--headings-color);
           }
         }
       }

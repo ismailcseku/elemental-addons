@@ -94,8 +94,6 @@
   transition: all 300ms ease;
 }
 .pricing-plan-skin-style3 .price-head .price {
-  color: var(--headings-color);
-  font-family: var(--heading-font-family);
   font-weight: 500;
   font-size: 65px;
   word-spacing: -10px;
@@ -132,7 +130,6 @@
   }
 }
 .pricing-plan-skin-style3 .features-list li {
-  color: var(--headings-color);
   font-weight: 500;
   letter-spacing: -0.02em;
   margin-bottom: 0;

@@ -48,7 +48,7 @@
   transition: all 300ms ease;
 }
 .service-block-style4 .inner-box:hover .content-box .count {
-  -webkit-text-stroke: 1px rgba(var(--theme-color-white-rgb), 0.3);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
 }
 .service-block-style4 .inner-box .image-box {
   height: 329px;
@@ -90,7 +90,7 @@
   height: 86px;
   right: 45px;
   line-height: 86px;
-  outline: 12px solid rgba(var(--theme-color-white-rgb), 0.3);
+  outline: 12px solid rgba(255, 255, 255, 0.3);
   position: absolute;
   text-align: center;
   display: flex;
@@ -106,9 +106,8 @@
 }
 .service-block-style4 .inner-box .content-box {
   background: #f6f7f8;
-  border: 1px solid var(--theme-color-lighter);
   border-radius: 30px;
-  box-shadow: 0px 4px 40px rgba(var(--theme-color-black-rgb), 0.06);
+  box-shadow: 0px 4px 40px rgba(17, 24, 39, 0.06);
   margin-top: -120px;
   padding: 155px 40px 35px;
   position: relative;

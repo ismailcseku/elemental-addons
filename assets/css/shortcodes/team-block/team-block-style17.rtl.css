@@ -41,9 +41,6 @@
   border-radius: 0 0 20px 20px;
   transition: all 600ms ease;
 }
-.team-skin-style17 .inner-box .team-content .team-subtitle {
-  color: var(--headings-color);
-}
 [data-tm-layout=dark] .team-skin-style17 .inner-box .team-content .team-subtitle {
   color: #fff;
 }

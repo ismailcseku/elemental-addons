@@ -53,8 +53,4 @@
 .counter-block-six .inner .count-box .counter {
   font-size: 48px;
   margin-top: 0;
-  color: var(--headings-color);
-}
-.counter-block-six .inner .title {
-  color: var(--headings-color);
 }

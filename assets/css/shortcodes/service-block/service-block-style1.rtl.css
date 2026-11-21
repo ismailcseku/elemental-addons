@@ -151,12 +151,10 @@
 }
 .service-block-style1 .content-box .btn-more {
   background-color: rgb(247, 248, 237);
-  color: var(--headings-color);
   padding: 6px 20px 6px 6px;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
-  font-family: var(--heading-font-family);
   line-height: 1;
   border-radius: 10px;
   display: inline-flex;
@@ -193,7 +191,7 @@
 }
 .service-block-style1 .content-box .btn-more .arrow {
   background-color: #fff;
-  color: var(--headings-color);
+  color: #111;
   display: inline-flex;
   align-items: center;
   justify-content: center;

@@ -179,7 +179,6 @@
   margin-bottom: 0;
 }
 .icon-box .content a {
-  color: var(--text-color);
   font-weight: var(--body-font-weight);
 }
 .icon-box.icon-left .icon-box-wrapper {
@@ -268,7 +267,6 @@
 .icon-box .icon-box-title,
 .icon-box .icon-box-title a {
   transition: all 0.3s ease;
-  font-family: var(--heading-font-family);
   font-weight: var(--headings-font-weight-h6);
   line-height: var(--section-title-subtitle-line-height);
 }

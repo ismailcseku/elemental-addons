@@ -118,7 +118,6 @@
         font-style: italic;
         font-size: 30px;
         line-height: 60px;
-        color: var(--headings-color);
         @include media-breakpoint-down(xxl) {
           display: none;
         }
@@ -142,7 +141,6 @@
             font-size: 14px;
             line-height: 24px;
             font-weight: 400;
-            color: var(--headings-color);
             @include transition(all 300ms ease);
           }
           .team-title {
@@ -150,7 +148,6 @@
             font-weight: 600;
             line-height: 36px;
             margin-bottom: 20px;
-            color: var(--headings-color);
             @include transition(all 300ms ease);
             a {
               &:hover {

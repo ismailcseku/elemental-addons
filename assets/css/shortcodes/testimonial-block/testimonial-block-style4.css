@@ -161,7 +161,6 @@
 }
 .testimonial-block-style4 .content .quote-icon {
   background: var(--theme-color1);
-  color: var(--headings-color);
 }
 [data-tm-layout=dark] .testimonial-block-style4 .content .quote-icon {
   color: var(--theme-color1);

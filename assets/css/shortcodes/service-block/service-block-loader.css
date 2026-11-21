@@ -152,12 +152,10 @@
 }
 .service-block-style1 .content-box .btn-more {
   background-color: rgb(247, 248, 237);
-  color: var(--headings-color);
   padding: 6px 6px 6px 20px;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
-  font-family: var(--heading-font-family);
   line-height: 1;
   border-radius: 10px;
   display: inline-flex;
@@ -194,7 +192,7 @@
 }
 .service-block-style1 .content-box .btn-more .arrow {
   background-color: #fff;
-  color: var(--headings-color);
+  color: #111;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -869,7 +867,7 @@
   transition: all 300ms ease;
 }
 .service-block-style4 .inner-box:hover .content-box .count {
-  -webkit-text-stroke: 1px rgba(var(--theme-color-white-rgb), 0.3);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
 }
 .service-block-style4 .inner-box .image-box {
   height: 329px;
@@ -911,7 +909,7 @@
   height: 86px;
   left: 45px;
   line-height: 86px;
-  outline: 12px solid rgba(var(--theme-color-white-rgb), 0.3);
+  outline: 12px solid rgba(255, 255, 255, 0.3);
   position: absolute;
   text-align: center;
   display: flex;
@@ -927,9 +925,8 @@
 }
 .service-block-style4 .inner-box .content-box {
   background: #f6f7f8;
-  border: 1px solid var(--theme-color-lighter);
   border-radius: 30px;
-  box-shadow: 0px 4px 40px rgba(var(--theme-color-black-rgb), 0.06);
+  box-shadow: 0px 4px 40px rgba(17, 24, 39, 0.06);
   margin-top: -120px;
   padding: 155px 40px 35px;
   position: relative;
@@ -1060,16 +1057,12 @@
   margin-left: 10px;
   position: relative;
   bottom: 2px;
-  color: var(--theme-color-black);
   transition: all 300ms ease;
 }
 @media (max-width: 1199.98px) {
   .service-block-style5 .inner-block .content-box .inner-box .link-btn-style i {
     bottom: 0;
   }
-}
-.service-block-style5 .inner-block .content-box .inner-box .link-btn-style:hover {
-  color: var(--theme-color-black);
 }
 .service-block-style5 .inner-block .content-box .inner-box .link-btn-style:hover i {
   color: var(--theme-color1);
@@ -1246,7 +1239,7 @@
   filter: blur(10px);
 }
 .service-block-style6 .inner-block .image .text {
-  color: rgba(var(--theme-color-white-rgb), 0.6);
+  color: rgba(255, 255, 255, 0.6);
   position: absolute;
   bottom: 30px;
   left: 30px;
@@ -1278,7 +1271,6 @@
 .service-block-style6 .inner-block .btn-more {
   background-color: #f5f5f5;
   border-radius: 67px;
-  color: var(--headings-color);
   position: relative;
   z-index: 1;
   font-weight: 600;
@@ -1670,7 +1662,6 @@
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
-  color: var(--headings-color);
 }
 .service-block-style8 .content-box .service-title a:hover,
 .service-block-style8 .content-box .service-title a:focus {
@@ -1735,9 +1726,6 @@ body.rtl .service-block-style9::after {
 }
 .service-block-style9:hover .ks-service-more::before {
   background-color: rgba(255, 255, 255, 0.3);
-}
-.service-block-style9:hover .ks-service-more::after {
-  background-color: var(--gray-color);
 }
 .service-block-style9:hover .ks-service-link a {
   color: #fff;
@@ -2217,13 +2205,10 @@ body.rtl .service-block-style9::after {
   background-repeat: no-repeat;
   background-size: 0% 2px;
   display: inline;
-  color: var(--headings-color);
   transition: all 0.4s ease-in-out;
 }
 .service-block-style11 .content .service-title a:hover {
-  color: var(--headings-color);
   background-size: 100% 2px;
-  background-image: linear-gradient(180deg, var(--headings-color) 0%, var(--headings-color) 100%);
   color: var(--theme-color1-text-color);
   background-image: linear-gradient(180deg, var(--theme-color1-text-color) 0%, var(--theme-color1-text-color) 100%);
 }
@@ -3385,7 +3370,6 @@ body.rtl .service-block-style9::after {
 }
 .service-block-style17 .content .head .service-title {
   writing-mode: sideways-lr;
-  color: var(--headings-color);
   text-align: left;
   margin: 0;
   margin-right: 30px;
@@ -3508,7 +3492,6 @@ body.rtl .service-block-style9::after {
   border-radius: 30px;
   border: none;
   color: var(--theme-color1-text-color);
-  line-height: var(--body-line-height);
   overflow: hidden;
   padding-left: 30px;
   position: relative;
@@ -3722,7 +3705,6 @@ body.rtl .service-block-style9::after {
 .service-block-style18 .inner-block .btn-more {
   background-color: #fff;
   border-radius: 67px;
-  color: var(--headings-color);
   position: relative;
   font-weight: 600;
   font-size: 16px;

@@ -51,14 +51,8 @@
 .features-block-style17.active .inner-box .content-box .features-title a, .features-block-style17:hover .inner-box .content-box .features-title a {
   color: #fff;
 }
-[data-tm-layout=dark] .features-block-style17.active .inner-box .content-box .features-title a, [data-tm-layout=dark] .features-block-style17:hover .inner-box .content-box .features-title a {
-  color: var(--headings-color);
-}
 .features-block-style17.active .inner-box .content-box .features-details, .features-block-style17:hover .inner-box .content-box .features-details {
   color: #fff;
-}
-[data-tm-layout=dark] .features-block-style17.active .inner-box .content-box .features-details, [data-tm-layout=dark] .features-block-style17:hover .inner-box .content-box .features-details {
-  color: var(--headings-color);
 }
 .features-block-style17 .inner-box {
   position: relative;

@@ -16,7 +16,6 @@
   // overflow: hidden;
   [data-tm-layout="dark"] & {
     border-color: transparent;
-    // background-color: var(--dark-color2);
   }
   @include media-breakpoint-down(xl) {
     display: block;
@@ -101,7 +100,6 @@
     }
     .quote-icon {
       background: var(--theme-color1);
-      color: var(--headings-color);
       [data-tm-layout="dark"] & {
         color: var(--theme-color1);
       }

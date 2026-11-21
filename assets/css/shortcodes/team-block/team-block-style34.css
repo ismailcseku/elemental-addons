@@ -33,9 +33,6 @@
 .team-skin-style34 .inner-box:hover .info-box .team-share {
   background-color: #fff;
 }
-body.tm-dark-layout .team-skin-style34 .inner-box:hover .info-box .team-share {
-  background-color: var(--theme-color-light);
-}
 .team-skin-style34 .image-box {
   position: relative;
 }
@@ -115,8 +112,6 @@ body.tm-dark-layout .team-skin-style34 .inner-box:hover .info-box .team-share {
   line-height: 46px;
   font-size: 20px;
   border-radius: 10px;
-  color: var(--headings-color);
-  border: 1px solid var(--theme-color-light);
   transition: all 300ms ease;
   transform: translateY(-50%);
   text-align: center;
@@ -155,8 +150,6 @@ body.tm-dark-layout .team-skin-style34 .inner-box:hover .info-box .team-share {
   width: 46px;
   line-height: 46px;
   text-align: center;
-  font-size: var(--body-font-size);
-  color: var(--headings-color);
   background-color: var(--theme-color-white);
   margin-top: 10px;
   border-radius: 10px;

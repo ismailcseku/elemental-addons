@@ -67,7 +67,6 @@
 }
 .service-block-style17 .content .head .service-title {
   writing-mode: sideways-lr;
-  color: var(--headings-color);
   text-align: right;
   margin: 0;
   margin-left: 30px;
@@ -190,7 +189,6 @@
   border-radius: 30px;
   border: none;
   color: var(--theme-color1-text-color);
-  line-height: var(--body-line-height);
   overflow: hidden;
   padding-right: 30px;
   position: relative;

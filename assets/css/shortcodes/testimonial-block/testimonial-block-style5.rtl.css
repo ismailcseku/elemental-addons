@@ -82,9 +82,6 @@
 .testimonial-block-style5::before {
   background-color: var(--theme-color-white);
 }
-html.tm-dark-mode .testimonial-block-style5::before {
-  border-color: var(--dark-color3);
-}
 .testimonial-block-style5::before {
   z-index: -1;
   top: 30px;

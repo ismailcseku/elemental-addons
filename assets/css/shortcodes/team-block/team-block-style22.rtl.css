@@ -87,7 +87,7 @@
   width: 100%;
   height: 1px;
   content: "";
-  background-color: rgba(var(--theme-color-white-rgb), 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .team-skin-style22 .content {
   position: relative;
@@ -117,7 +117,7 @@
   transition: all 300ms ease;
 }
 .team-skin-style22 .content .team-memeber-designation .team-short-bio {
-  color: rgba(var(--theme-color-white-rgb), 0.6);
+  color: rgba(255, 255, 255, 0.6);
   transition: all 300ms ease;
 }
 .team-skin-style22 .team-social {
@@ -147,7 +147,7 @@
   height: 35px;
   line-height: 35px;
   text-align: center;
-  background-color: rgba(var(--theme-color-white-rgb), 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   display: inline-block;
   position: relative;

@@ -117,7 +117,6 @@
   background-color: var(--theme-color1);
 }
 .tm-accordion.skin-active-light .card .card-header .title:not(.collapsed) {
-  color: var(--headings-color);
   background-color: #fff;
 }
 .tm-accordion.skin-active-light .card .card-body {

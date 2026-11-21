@@ -124,7 +124,6 @@
 .features-block-style1 .inner-box .btn-style-two {
   background-color: transparent;
   border: 1px solid rgba(17, 17, 17, 0.2);
-  color: var(--headings-color);
   padding: 9px 20px;
   position: relative;
   justify-content: space-between;
@@ -173,7 +172,6 @@
 .features-block-style1 .inner-box .icon-box i {
   font-size: 80px;
   line-height: 1;
-  color: var(--theme-color-dark);
 }
 
 .features-block-style1.active .inner-box:before {
@@ -665,7 +663,6 @@
   margin-bottom: 12px;
 }
 .features-block-style5 .inner-box .content .features-details {
-  color: var(--body-text-color);
   margin-bottom: 0;
 }
 
@@ -2069,14 +2066,8 @@
 .features-block-style17.active .inner-box .content-box .features-title a, .features-block-style17:hover .inner-box .content-box .features-title a {
   color: #fff;
 }
-[data-tm-layout=dark] .features-block-style17.active .inner-box .content-box .features-title a, [data-tm-layout=dark] .features-block-style17:hover .inner-box .content-box .features-title a {
-  color: var(--headings-color);
-}
 .features-block-style17.active .inner-box .content-box .features-details, .features-block-style17:hover .inner-box .content-box .features-details {
   color: #fff;
-}
-[data-tm-layout=dark] .features-block-style17.active .inner-box .content-box .features-details, [data-tm-layout=dark] .features-block-style17:hover .inner-box .content-box .features-details {
-  color: var(--headings-color);
 }
 .features-block-style17 .inner-box {
   position: relative;
@@ -3090,14 +3081,12 @@
   text-align: center;
 }
 .features-block-style27 .content .service-icon {
-  background-color: var(--theme-color-gray);
   border-radius: 50%;
   height: 90px;
   margin: 0 auto;
   position: absolute;
   right: 0;
   left: 0;
-  border: 6px solid var(--theme-color-gray);
   top: -55px;
   width: 90px;
   text-align: center;

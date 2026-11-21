@@ -131,7 +131,6 @@
       color: var(--theme-color1);
       @include transition(all 300ms ease);
       &:hover {
-        color: var(--headings-color);
         background-color: transparent;
       }
     }

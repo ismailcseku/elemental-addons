@@ -80,14 +80,12 @@
   text-align: center;
 }
 .features-block-style27 .content .service-icon {
-  background-color: var(--theme-color-gray);
   border-radius: 50%;
   height: 90px;
   margin: 0 auto;
   position: absolute;
   right: 0;
   left: 0;
-  border: 6px solid var(--theme-color-gray);
   top: -55px;
   width: 90px;
   text-align: center;

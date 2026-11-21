@@ -71,7 +71,6 @@
       text-align: center;
       display: inline-block;
       border-radius: 50%;
-      background-color: var(--theme-color-gray);
       margin-bottom: 0;
       &:hover {
         background-color: var(--theme-color1);
@@ -88,7 +87,6 @@
     position: relative;
     margin: 20px 0 0;
     .team-title {
-      color: var(--headings-color);
       margin-bottom: 0;
       @include transition(all 300ms ease);
       a {

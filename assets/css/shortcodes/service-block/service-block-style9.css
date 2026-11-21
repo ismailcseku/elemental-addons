@@ -52,9 +52,6 @@ body.rtl .service-block-style9::after {
 .service-block-style9:hover .ks-service-more::before {
   background-color: rgba(255, 255, 255, 0.3);
 }
-.service-block-style9:hover .ks-service-more::after {
-  background-color: var(--gray-color);
-}
 .service-block-style9:hover .ks-service-link a {
   color: #fff;
 }

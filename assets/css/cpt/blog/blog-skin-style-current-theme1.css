@@ -112,7 +112,6 @@
   padding-bottom: 15px;
 }
 .blog-item-current-style1 .content .entry-title a {
-  color: var(--headings-color);
   background: linear-gradient(to right, currentcolor 0%, currentcolor 100%) 0px 95%/0px 1px no-repeat;
   transition: all 500ms ease;
 }
@@ -123,7 +122,6 @@
 .blog-item-current-style1 .content .read {
   color: var(--theme-color2);
   font-weight: 500;
-  font-family: var(--heading-font-family);
   gap: 7px;
   line-height: 1;
   display: inline-flex;

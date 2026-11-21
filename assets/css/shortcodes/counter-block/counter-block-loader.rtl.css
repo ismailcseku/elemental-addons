@@ -306,12 +306,7 @@
 .counter-block-six .inner .count-box .counter {
   font-size: 48px;
   margin-top: 0;
-  color: var(--headings-color);
 }
-.counter-block-six .inner .title {
-  color: var(--headings-color);
-}
-
 .counter-block-seven {
   position: relative;
   margin-bottom: 50px;
@@ -343,7 +338,6 @@
   position: absolute;
   left: -70px;
   top: -20px;
-  color: var(--headings-color);
   font-family: var(--body-font-family);
   font-size: 80px;
   z-index: 1;

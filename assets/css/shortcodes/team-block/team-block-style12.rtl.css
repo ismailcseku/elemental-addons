@@ -113,7 +113,6 @@
   line-height: 46px;
   font-size: 20px;
   border-radius: 10px;
-  color: var(--headings-color);
   border: 1px solid #e1e1e1;
 }
 [data-tm-layout=dark] .team-skin-style12 .team-share {
@@ -158,8 +157,6 @@
   width: 46px;
   line-height: 46px;
   text-align: center;
-  font-size: var(--body-font-size);
-  color: var(--headings-color);
   background-color: var(--theme-color-white);
   margin-top: 10px;
   border-radius: 10px;

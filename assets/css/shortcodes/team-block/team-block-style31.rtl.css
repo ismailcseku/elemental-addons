@@ -81,9 +81,6 @@
   margin-bottom: 5px;
   margin-top: 0;
 }
-.team-skin-style31 .content-box .team-subtitle {
-  color: var(--text-color);
-}
 .team-skin-style31:hover .social {
   opacity: 1;
   visibility: visible;

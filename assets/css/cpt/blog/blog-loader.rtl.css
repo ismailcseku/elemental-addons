@@ -147,7 +147,6 @@
   padding-bottom: 15px;
 }
 .blog-item-current-style1 .content .entry-title a {
-  color: var(--headings-color);
   background: linear-gradient(to left, currentcolor 0%, currentcolor 100%) 0px 95%/0px 1px no-repeat;
   transition: all 500ms ease;
 }
@@ -158,7 +157,6 @@
 .blog-item-current-style1 .content .read {
   color: var(--theme-color2);
   font-weight: 500;
-  font-family: var(--heading-font-family);
   gap: 7px;
   line-height: 1;
   display: inline-flex;
@@ -521,7 +519,6 @@
   font-size: 40px;
   font-weight: 500;
   color: var(--theme-color2);
-  font-family: var(--heading-font-family);
   display: block;
   line-height: 1;
   padding: 0 4px;
@@ -628,7 +625,6 @@
   align-items: center;
   justify-content: center;
   background: var(--theme-color-white);
-  color: var(--theme-color-black);
   border-radius: 50%;
   transition: 0.4s;
 }
@@ -643,7 +639,6 @@
 }
 .blog-item-current-style3 .entry-content .theme-btn-main .theme-btn-arrow-left.black-arrow,
 .blog-item-current-style3 .entry-content .theme-btn-main .theme-btn-arrow-right.black-arrow {
-  background: var(--theme-color-black);
   color: var(--theme-color1);
 }
 .blog-item-current-style3 .entry-content .theme-btn-main .theme-btn-arrow-left.transparent-arrow,
@@ -660,7 +655,6 @@
 }
 .blog-item-current-style3 .entry-content .theme-btn-main .btn-title {
   background: var(--theme-color1);
-  color: var(--theme-color-black);
   font-weight: 700;
   font-size: 16px;
   padding: 13px 30px;
@@ -749,7 +743,6 @@
 .blog-item-current-style4 {
   position: relative;
   transition: all 300ms ease;
-  border-bottom: 3px solid var(--theme-color-light);
 }
 [data-tm-layout=dark] .blog-item-current-style4 {
   border-bottom-color: #1d1d1d;
@@ -821,7 +814,6 @@
   font-size: 30px;
   font-weight: 500;
   color: var(--theme-color1-text-color);
-  font-family: var(--heading-font-family);
   display: block;
   margin-bottom: 3px;
   line-height: 1;
@@ -840,7 +832,6 @@
   position: relative;
   text-transform: capitalize !important;
   margin-bottom: 15px !important;
-  background-color: var(--theme-color-light);
   padding: 5px 12px;
 }
 [data-tm-layout=dark] .blog-item-current-style4 .entry-meta {

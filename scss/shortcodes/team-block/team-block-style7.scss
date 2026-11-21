@@ -10,7 +10,7 @@
   z-index: 1;
   .inner-block {
     background-color: #131420;
-    border: 1px solid rgba(var(--theme-color-white-rgb), 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 40px;
     position: relative;
     overflow: hidden;
@@ -79,7 +79,7 @@
         margin-top: 0;
       }
       .team-subtitle {
-        color: rgba(var(--theme-color-white-rgb), 0.6);
+        color: rgba(255, 255, 255, 0.6);
       }
     }
 
@@ -131,11 +131,11 @@
         }
       }
       .team-subtitle {
-        color: rgba(var(--theme-color-white-rgb), 0.76);
+        color: rgba(255, 255, 255, 0.76);
         font-weight: 600;
       }
       .team-socials {
-        border-top: 1px solid rgba(var(--theme-color-white-rgb), 0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
         position: relative;
         margin-top: 40px;
         padding-top: 40px;

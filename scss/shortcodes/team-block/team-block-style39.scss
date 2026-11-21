@@ -27,17 +27,14 @@
     }
 
     &:hover .team-title a {
-      color: var(--theme-color-black);
       z-index: 2;
       position: relative;
     }
 
     &:hover .team-subtitle {
-      color: var(--theme-color-black);
     }
 
     &:hover .team-subtitle:before {
-      background: var(--theme-color-black);
     }
 
     &:hover .nexella-hover-bx {
@@ -74,7 +71,6 @@
 
   .info-box {
     padding: 32px 35px 36px;
-    background: var(--body-bg);
     margin-left: 42px;
     position: relative;
     transition: all 300ms ease;
@@ -190,7 +186,6 @@
       margin-bottom: 10px;
 
       &:hover {
-        color: var(--theme-color-black);
         background-color: var(--theme-color1);
       }
     }

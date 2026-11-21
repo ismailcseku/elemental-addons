@@ -67,17 +67,10 @@
         background-repeat: no-repeat;
         background-size: 0% 2px;
         display: inline;
-        color: var(--headings-color);
         transition: all 0.4s ease-in-out;
 
         &:hover {
-          color: var(--headings-color);
           background-size: 100% 2px;
-          background-image: linear-gradient(
-            180deg,
-            var(--headings-color) 0%,
-            var(--headings-color) 100%
-          );
           color: var(--theme-color1-text-color);
           background-image: linear-gradient(
             180deg,

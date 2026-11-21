@@ -77,7 +77,6 @@
       margin: 0;
       padding-bottom: 15px;
       a {
-        color: var(--headings-color);
         background: linear-gradient(
             to right,
             currentcolor 0%,
@@ -96,7 +95,6 @@
     .read {
       color: var(--theme-color2);
       font-weight: 500;
-      font-family: var(--heading-font-family);
       gap: 7px;
       line-height: 1;
       display: inline-flex;

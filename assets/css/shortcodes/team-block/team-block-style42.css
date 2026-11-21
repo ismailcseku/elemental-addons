@@ -123,7 +123,6 @@
   font-style: italic;
   font-size: 30px;
   line-height: 60px;
-  color: var(--headings-color);
 }
 @media (max-width: 1399.98px) {
   .team-skin-style42 .inner-box .content-box .number {
@@ -155,7 +154,6 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  color: var(--headings-color);
   transition: all 300ms ease;
 }
 .team-skin-style42 .inner-box .content-box .content .info-box .team-title {
@@ -163,7 +161,6 @@
   font-weight: 600;
   line-height: 36px;
   margin-bottom: 20px;
-  color: var(--headings-color);
   transition: all 300ms ease;
 }
 .team-skin-style42 .inner-box .content-box .content .info-box .team-title a:hover {

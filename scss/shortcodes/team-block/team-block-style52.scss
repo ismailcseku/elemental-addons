@@ -153,7 +153,6 @@
             width: 36px;
             @include flex-center;
             border-radius: 50%;
-            font-size: var(--body-font-size);
             color: var(--theme-color2);
             background-color: #fff;
             @include transition(all 300ms ease);

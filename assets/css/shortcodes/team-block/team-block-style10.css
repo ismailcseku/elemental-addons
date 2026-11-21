@@ -110,7 +110,6 @@
   text-align: center;
   font-size: 18px;
   background-color: var(--theme-color-white);
-  color: var(--headings-color);
   display: inline-block;
   transition: all 300ms ease;
 }

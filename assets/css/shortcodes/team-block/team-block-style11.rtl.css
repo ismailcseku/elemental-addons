@@ -202,7 +202,6 @@
   line-height: 40px;
   text-align: center;
   font-size: 18px;
-  color: var(--headings-color);
   border-top: 1px solid var(--theme-color-white);
   background-color: var(--theme-color-white);
   transition: all 300ms ease;

@@ -375,7 +375,6 @@
   color: var(--theme-color1-text-color);
 }
 .btn-style5 .dot-box {
-  background-color: var(--theme-color-gray);
   color: #fff;
   border-radius: 50%;
   font-size: 12px;

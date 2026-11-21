@@ -149,12 +149,6 @@
 .team-skin-style54:hover .image-box {
   z-index: 1;
 }
-.team-skin-style54:hover .team-title a {
-  color: var(--theme-color-black);
-}
-.team-skin-style54:hover .team-subtitle {
-  color: var(--theme-color-black);
-}
 .team-skin-style54:hover .team-subtitle:before {
   background: var(--theme-color1);
 }

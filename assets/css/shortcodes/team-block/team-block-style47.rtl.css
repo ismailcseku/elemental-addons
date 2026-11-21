@@ -56,9 +56,6 @@ body.tm-dark-layout .team-skin-style47 .inner-box {
   margin-top: 0;
   margin-bottom: 0;
 }
-.team-skin-style47 .inner-box .content .team-title a:hover {
-  color: var(--headings-color);
-}
 .team-skin-style47 .inner-box .content .team-subtitle {
   position: relative;
   display: block;
@@ -93,7 +90,6 @@ body.tm-dark-layout .team-skin-style47 .inner-box {
   position: relative;
   font-size: 20px;
   font-weight: 700;
-  color: var(--headings-color);
 }
 .team-skin-style47 .inner-box .content .info-btn strong:hover {
   text-decoration: underline;
@@ -141,7 +137,6 @@ body.tm-dark-layout .team-skin-style47 .inner-box .team-social li a {
   border-color: #1d1d1d;
 }
 .team-skin-style47 .inner-box .team-social li a {
-  color: var(--headings-color);
   background: var(--theme-color-white);
   text-align: center;
   transition: all 300ms ease;

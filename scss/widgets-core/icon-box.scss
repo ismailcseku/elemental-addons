@@ -206,7 +206,6 @@
       margin-bottom: 0;
     }
     a {
-      color: var(--text-color);
       font-weight: var(--body-font-weight);
     }
   }
@@ -319,7 +318,6 @@
   .icon-box-title,
   .icon-box-title a {
     @include transition(all 0.3s ease);
-    font-family: var(--heading-font-family);
     font-weight: var(--headings-font-weight-h6);
     line-height: var(--section-title-subtitle-line-height);
   }

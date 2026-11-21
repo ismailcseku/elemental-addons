@@ -48,7 +48,6 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--heading-font-family);
   font-size: 30px;
   font-weight: 600;
   width: 70px;

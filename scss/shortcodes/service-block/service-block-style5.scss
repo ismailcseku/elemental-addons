@@ -74,14 +74,12 @@
             margin-left: 10px;
             position: relative;
             bottom: 2px;
-            color: var(--theme-color-black);
             @include transition(all 300ms ease);
             @include media-breakpoint-down(xl) {
               bottom: 0;
             }
           }
           &:hover {
-            color: var(--theme-color-black);
             i {
               color: var(--theme-color1);
             }

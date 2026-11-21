@@ -41,7 +41,6 @@
       border-radius: 0 0 20px 20px;
       @include transition(all 600ms ease);
       .team-subtitle {
-        color: var(--headings-color);
         [data-tm-layout="dark"] & {
           color: #fff;
         }

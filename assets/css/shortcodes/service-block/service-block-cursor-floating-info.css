@@ -94,7 +94,6 @@
 }
 .service-block-cursor-floating-info .inner-box .content-box .service-list li {
   align-items: center;
-  color: var(--headings-color);
   display: flex;
   font-size: 14px;
   font-weight: 600;

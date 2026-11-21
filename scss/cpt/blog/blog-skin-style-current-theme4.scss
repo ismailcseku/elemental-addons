@@ -3,7 +3,6 @@
 .blog-item-current-style4 {
   position: relative;
   @include transition(all 300ms ease);
-  border-bottom: 3px solid var(--theme-color-light);
   [data-tm-layout="dark"] & {
     border-bottom-color: #1d1d1d;
   }
@@ -76,7 +75,6 @@
           font-size: 30px;
           font-weight: 500;
           color: var(--theme-color1-text-color);
-          font-family: var(--heading-font-family);
           display: block;
           margin-bottom: 3px;
           line-height: 1;
@@ -98,7 +96,6 @@
     position: relative;
     text-transform: capitalize !important;
     margin-bottom: 15px !important;
-    background-color: var(--theme-color-light);
     padding: 5px 12px;
     [data-tm-layout="dark"] & {
       background-color: #1d1d1d;
