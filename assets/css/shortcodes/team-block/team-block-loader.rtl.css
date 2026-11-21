@@ -382,7 +382,7 @@
 .team-skin-style3 .inner-box .content-box {
   border: 1px solid rgba(28, 32, 41, 0.1);
   margin-bottom: 0;
-  mask-image: url(../../../images/current-theme/team-masking-img.png);
+  mask-image: url(../../../images/current-theme/team-block-style3-image-mask.png);
   mask-size: cover;
   mask-position: top;
   mask-repeat: no-repeat;
@@ -1380,7 +1380,7 @@
   height: 74px;
   transform: scaleY(-1);
   z-index: 1;
-  background: url(../../../images/current-theme/team-vector.png) no-repeat;
+  background: url(../../../images/current-theme/team-block-style11-vector.png) no-repeat;
   filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(200deg) brightness(107%) contrast(101%);
 }
 [data-tm-layout=dark] .team-skin-style11 .inner-box:before {
@@ -2772,7 +2772,7 @@ body.tm-dark-layout .team-skin-style15 .inner-box .content-box {
   content: "";
   width: 376px;
   height: 312px;
-  background-image: url(../../../images/current-theme/team-shape.png);
+  background-image: url(../../../images/current-theme/team-block-style20-shape.png);
   right: 50%;
   transform: translateX(50%);
 }
@@ -3229,7 +3229,7 @@ body.tm-dark-layout .team-skin-style21 .team-info .content {
   text-align: center;
 }
 .team-skin-style23 .inner-box:before {
-  background-image: url(../../../images/current-theme/noise-1.png);
+  background-image: url(../../../images/current-theme/team-block-style23-noise.png);
   border-radius: 30px;
   content: "";
   position: absolute;
@@ -3998,7 +3998,7 @@ body.tm-dark-layout .team-skin-style24 .image-box:before {
 .team-skin-style28 .inner-box {
   background-color: #f7f8ed;
   border-radius: 20px;
-  mask-image: url(../../../images/current-theme/team-mask-bg.png);
+  mask-image: url(../../../images/current-theme/team-block-style28-bg-mask.png);
   mask-repeat: no-repeat;
   mask-size: cover;
   mask-position: top;
@@ -4295,7 +4295,7 @@ body.tm-dark-layout .team-skin-style29 .inner-box .image-box .bg-image {
   margin: 0;
 }
 .team-skin-style30 .image-box figure img {
-  mask-image: url(../../../images/current-theme/team-mask1.png);
+  mask-image: url(../../../images/current-theme/team-block-style30-image-mask.png);
   mask-size: contain;
   mask-position: center center;
   mask-repeat: no-repeat;
@@ -6067,7 +6067,7 @@ body.tm-dark-layout .team-skin-style35 .inner-box .content .team-social li a:hov
   content: "";
   width: 75px;
   height: 73px;
-  background-image: url(../../../images/current-theme/shape-team1.png);
+  background-image: url(../../../images/current-theme/team-block-style41-image-mask.png);
   top: 90px;
   position: absolute;
   right: calc(100% - 90px);
@@ -6097,7 +6097,7 @@ body.tm-dark-layout .team-skin-style35 .inner-box .content .team-social li a:hov
 }
 .team-skin-style41 .content-box .inner:before {
   content: "";
-  mask-image: url(../../../images/current-theme/team-mask1.png);
+  mask-image: url(../../../images/current-theme/team-block-style41-shape.png);
   mask-size: contain;
   mask-position: center center;
   mask-repeat: no-repeat;
@@ -6611,7 +6611,7 @@ body.tm-dark-layout .team-skin-style35 .inner-box .content .team-social li a:hov
   position: relative;
 }
 .team-skin-style44 .image-box:before {
-  background-image: url(../../../images/current-theme/pattern1.png);
+  background-image: url(../../../images/current-theme/team-block-style44-pattern.png);
   content: "";
   position: absolute;
   top: 5%;
@@ -7770,7 +7770,7 @@ body.tm-dark-layout .team-skin-style47 .inner-box .team-social li a {
   position: relative;
   overflow: hidden;
   margin-bottom: 0;
-  mask-image: url(../../../images/current-theme/team3-mask.png);
+  mask-image: url(../../../images/current-theme/team-block-style51-image-mask.png);
   mask-repeat: no-repeat;
   mask-size: cover;
   mask-position: center;
@@ -8323,7 +8323,7 @@ body.tm-dark-layout .team-skin-style47 .inner-box .team-social li a {
   margin: 0;
 }
 .team-skin-style54 .image-box figure img {
-  mask-image: url(../../../images/current-theme/team-mask1.png);
+  mask-image: url(../../../images/current-theme/team-block-style54-image-mask.png);
   mask-size: contain;
   mask-position: center center;
   mask-repeat: no-repeat;
@@ -9058,7 +9058,7 @@ body.tm-dark-layout .team-skin-style47 .inner-box .team-social li a {
   margin: 0;
 }
 .team-skin-style59 .image-box figure img {
-  mask-image: url(../../../images/current-theme/team-mask1.png);
+  mask-image: url(../../../images/current-theme/team-block-style59-image-mask.png);
   mask-size: contain;
   mask-position: center center;
   mask-repeat: no-repeat;

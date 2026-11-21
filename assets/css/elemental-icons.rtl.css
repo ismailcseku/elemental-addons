@@ -1,0 +1,1046 @@
+/**
+ * Elemental Icons — curated Lucide subset (ISC License).
+ * Business / UI focused (~253 icons).
+ * https://lucide.dev
+ */
+
+.ei {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -0.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ei:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: currentColor;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+.ei-activity:before {
+  -webkit-mask-image: url(../icons/lucide/activity.svg);
+  mask-image: url(../icons/lucide/activity.svg);
+}
+.ei-arrow-down:before {
+  -webkit-mask-image: url(../icons/lucide/arrow-down.svg);
+  mask-image: url(../icons/lucide/arrow-down.svg);
+}
+.ei-arrow-down-left:before {
+  -webkit-mask-image: url(../icons/lucide/arrow-down-left.svg);
+  mask-image: url(../icons/lucide/arrow-down-left.svg);
+}
+.ei-arrow-down-right:before {
+  -webkit-mask-image: url(../icons/lucide/arrow-down-right.svg);
+  mask-image: url(../icons/lucide/arrow-down-right.svg);
+}
+.ei-arrow-left:before {
+  -webkit-mask-image: url(../icons/lucide/arrow-left.svg);
+  mask-image: url(../icons/lucide/arrow-left.svg);
+}
+.ei-arrow-right:before {
+  -webkit-mask-image: url(../icons/lucide/arrow-right.svg);
+  mask-image: url(../icons/lucide/arrow-right.svg);
+}
+.ei-arrow-up:before {
+  -webkit-mask-image: url(../icons/lucide/arrow-up.svg);
+  mask-image: url(../icons/lucide/arrow-up.svg);
+}
+.ei-arrow-up-left:before {
+  -webkit-mask-image: url(../icons/lucide/arrow-up-left.svg);
+  mask-image: url(../icons/lucide/arrow-up-left.svg);
+}
+.ei-arrow-up-right:before {
+  -webkit-mask-image: url(../icons/lucide/arrow-up-right.svg);
+  mask-image: url(../icons/lucide/arrow-up-right.svg);
+}
+.ei-audio-lines:before {
+  -webkit-mask-image: url(../icons/lucide/audio-lines.svg);
+  mask-image: url(../icons/lucide/audio-lines.svg);
+}
+.ei-award:before {
+  -webkit-mask-image: url(../icons/lucide/award.svg);
+  mask-image: url(../icons/lucide/award.svg);
+}
+.ei-badge:before {
+  -webkit-mask-image: url(../icons/lucide/badge.svg);
+  mask-image: url(../icons/lucide/badge.svg);
+}
+.ei-badge-check:before {
+  -webkit-mask-image: url(../icons/lucide/badge-check.svg);
+  mask-image: url(../icons/lucide/badge-check.svg);
+}
+.ei-badge-percent:before {
+  -webkit-mask-image: url(../icons/lucide/badge-percent.svg);
+  mask-image: url(../icons/lucide/badge-percent.svg);
+}
+.ei-banknote:before {
+  -webkit-mask-image: url(../icons/lucide/banknote.svg);
+  mask-image: url(../icons/lucide/banknote.svg);
+}
+.ei-bell:before {
+  -webkit-mask-image: url(../icons/lucide/bell.svg);
+  mask-image: url(../icons/lucide/bell.svg);
+}
+.ei-bell-ring:before {
+  -webkit-mask-image: url(../icons/lucide/bell-ring.svg);
+  mask-image: url(../icons/lucide/bell-ring.svg);
+}
+.ei-bike:before {
+  -webkit-mask-image: url(../icons/lucide/bike.svg);
+  mask-image: url(../icons/lucide/bike.svg);
+}
+.ei-bluetooth:before {
+  -webkit-mask-image: url(../icons/lucide/bluetooth.svg);
+  mask-image: url(../icons/lucide/bluetooth.svg);
+}
+.ei-book:before {
+  -webkit-mask-image: url(../icons/lucide/book.svg);
+  mask-image: url(../icons/lucide/book.svg);
+}
+.ei-bookmark:before {
+  -webkit-mask-image: url(../icons/lucide/bookmark.svg);
+  mask-image: url(../icons/lucide/bookmark.svg);
+}
+.ei-book-open:before {
+  -webkit-mask-image: url(../icons/lucide/book-open.svg);
+  mask-image: url(../icons/lucide/book-open.svg);
+}
+.ei-bot:before {
+  -webkit-mask-image: url(../icons/lucide/bot.svg);
+  mask-image: url(../icons/lucide/bot.svg);
+}
+.ei-boxes:before {
+  -webkit-mask-image: url(../icons/lucide/boxes.svg);
+  mask-image: url(../icons/lucide/boxes.svg);
+}
+.ei-briefcase:before {
+  -webkit-mask-image: url(../icons/lucide/briefcase.svg);
+  mask-image: url(../icons/lucide/briefcase.svg);
+}
+.ei-briefcase-business:before {
+  -webkit-mask-image: url(../icons/lucide/briefcase-business.svg);
+  mask-image: url(../icons/lucide/briefcase-business.svg);
+}
+.ei-bug:before {
+  -webkit-mask-image: url(../icons/lucide/bug.svg);
+  mask-image: url(../icons/lucide/bug.svg);
+}
+.ei-building:before {
+  -webkit-mask-image: url(../icons/lucide/building.svg);
+  mask-image: url(../icons/lucide/building.svg);
+}
+.ei-bus:before {
+  -webkit-mask-image: url(../icons/lucide/bus.svg);
+  mask-image: url(../icons/lucide/bus.svg);
+}
+.ei-cake:before {
+  -webkit-mask-image: url(../icons/lucide/cake.svg);
+  mask-image: url(../icons/lucide/cake.svg);
+}
+.ei-calculator:before {
+  -webkit-mask-image: url(../icons/lucide/calculator.svg);
+  mask-image: url(../icons/lucide/calculator.svg);
+}
+.ei-calendar:before {
+  -webkit-mask-image: url(../icons/lucide/calendar.svg);
+  mask-image: url(../icons/lucide/calendar.svg);
+}
+.ei-calendar-check:before {
+  -webkit-mask-image: url(../icons/lucide/calendar-check.svg);
+  mask-image: url(../icons/lucide/calendar-check.svg);
+}
+.ei-calendar-clock:before {
+  -webkit-mask-image: url(../icons/lucide/calendar-clock.svg);
+  mask-image: url(../icons/lucide/calendar-clock.svg);
+}
+.ei-calendar-days:before {
+  -webkit-mask-image: url(../icons/lucide/calendar-days.svg);
+  mask-image: url(../icons/lucide/calendar-days.svg);
+}
+.ei-camera:before {
+  -webkit-mask-image: url(../icons/lucide/camera.svg);
+  mask-image: url(../icons/lucide/camera.svg);
+}
+.ei-car:before {
+  -webkit-mask-image: url(../icons/lucide/car.svg);
+  mask-image: url(../icons/lucide/car.svg);
+}
+.ei-chart-area:before {
+  -webkit-mask-image: url(../icons/lucide/chart-area.svg);
+  mask-image: url(../icons/lucide/chart-area.svg);
+}
+.ei-chart-column:before {
+  -webkit-mask-image: url(../icons/lucide/chart-column.svg);
+  mask-image: url(../icons/lucide/chart-column.svg);
+}
+.ei-chart-column-increasing:before {
+  -webkit-mask-image: url(../icons/lucide/chart-column-increasing.svg);
+  mask-image: url(../icons/lucide/chart-column-increasing.svg);
+}
+.ei-chart-line:before {
+  -webkit-mask-image: url(../icons/lucide/chart-line.svg);
+  mask-image: url(../icons/lucide/chart-line.svg);
+}
+.ei-chart-no-axes-column:before {
+  -webkit-mask-image: url(../icons/lucide/chart-no-axes-column.svg);
+  mask-image: url(../icons/lucide/chart-no-axes-column.svg);
+}
+.ei-chart-pie:before {
+  -webkit-mask-image: url(../icons/lucide/chart-pie.svg);
+  mask-image: url(../icons/lucide/chart-pie.svg);
+}
+.ei-check:before {
+  -webkit-mask-image: url(../icons/lucide/check.svg);
+  mask-image: url(../icons/lucide/check.svg);
+}
+.ei-check-check:before {
+  -webkit-mask-image: url(../icons/lucide/check-check.svg);
+  mask-image: url(../icons/lucide/check-check.svg);
+}
+.ei-chevron-down:before {
+  -webkit-mask-image: url(../icons/lucide/chevron-down.svg);
+  mask-image: url(../icons/lucide/chevron-down.svg);
+}
+.ei-chevron-left:before {
+  -webkit-mask-image: url(../icons/lucide/chevron-left.svg);
+  mask-image: url(../icons/lucide/chevron-left.svg);
+}
+.ei-chevron-right:before {
+  -webkit-mask-image: url(../icons/lucide/chevron-right.svg);
+  mask-image: url(../icons/lucide/chevron-right.svg);
+}
+.ei-chevrons-down:before {
+  -webkit-mask-image: url(../icons/lucide/chevrons-down.svg);
+  mask-image: url(../icons/lucide/chevrons-down.svg);
+}
+.ei-chevrons-left:before {
+  -webkit-mask-image: url(../icons/lucide/chevrons-left.svg);
+  mask-image: url(../icons/lucide/chevrons-left.svg);
+}
+.ei-chevrons-right:before {
+  -webkit-mask-image: url(../icons/lucide/chevrons-right.svg);
+  mask-image: url(../icons/lucide/chevrons-right.svg);
+}
+.ei-chevrons-up:before {
+  -webkit-mask-image: url(../icons/lucide/chevrons-up.svg);
+  mask-image: url(../icons/lucide/chevrons-up.svg);
+}
+.ei-chevron-up:before {
+  -webkit-mask-image: url(../icons/lucide/chevron-up.svg);
+  mask-image: url(../icons/lucide/chevron-up.svg);
+}
+.ei-circle-check:before {
+  -webkit-mask-image: url(../icons/lucide/circle-check.svg);
+  mask-image: url(../icons/lucide/circle-check.svg);
+}
+.ei-circle-check-big:before {
+  -webkit-mask-image: url(../icons/lucide/circle-check-big.svg);
+  mask-image: url(../icons/lucide/circle-check-big.svg);
+}
+.ei-circle-dollar-sign:before {
+  -webkit-mask-image: url(../icons/lucide/circle-dollar-sign.svg);
+  mask-image: url(../icons/lucide/circle-dollar-sign.svg);
+}
+.ei-circle-minus:before {
+  -webkit-mask-image: url(../icons/lucide/circle-minus.svg);
+  mask-image: url(../icons/lucide/circle-minus.svg);
+}
+.ei-circle-pause:before {
+  -webkit-mask-image: url(../icons/lucide/circle-pause.svg);
+  mask-image: url(../icons/lucide/circle-pause.svg);
+}
+.ei-circle-play:before {
+  -webkit-mask-image: url(../icons/lucide/circle-play.svg);
+  mask-image: url(../icons/lucide/circle-play.svg);
+}
+.ei-circle-plus:before {
+  -webkit-mask-image: url(../icons/lucide/circle-plus.svg);
+  mask-image: url(../icons/lucide/circle-plus.svg);
+}
+.ei-circle-x:before {
+  -webkit-mask-image: url(../icons/lucide/circle-x.svg);
+  mask-image: url(../icons/lucide/circle-x.svg);
+}
+.ei-clipboard:before {
+  -webkit-mask-image: url(../icons/lucide/clipboard.svg);
+  mask-image: url(../icons/lucide/clipboard.svg);
+}
+.ei-clipboard-check:before {
+  -webkit-mask-image: url(../icons/lucide/clipboard-check.svg);
+  mask-image: url(../icons/lucide/clipboard-check.svg);
+}
+.ei-clipboard-list:before {
+  -webkit-mask-image: url(../icons/lucide/clipboard-list.svg);
+  mask-image: url(../icons/lucide/clipboard-list.svg);
+}
+.ei-clock:before {
+  -webkit-mask-image: url(../icons/lucide/clock.svg);
+  mask-image: url(../icons/lucide/clock.svg);
+}
+.ei-cloud:before {
+  -webkit-mask-image: url(../icons/lucide/cloud.svg);
+  mask-image: url(../icons/lucide/cloud.svg);
+}
+.ei-cloud-download:before {
+  -webkit-mask-image: url(../icons/lucide/cloud-download.svg);
+  mask-image: url(../icons/lucide/cloud-download.svg);
+}
+.ei-cloud-sun:before {
+  -webkit-mask-image: url(../icons/lucide/cloud-sun.svg);
+  mask-image: url(../icons/lucide/cloud-sun.svg);
+}
+.ei-cloud-upload:before {
+  -webkit-mask-image: url(../icons/lucide/cloud-upload.svg);
+  mask-image: url(../icons/lucide/cloud-upload.svg);
+}
+.ei-code:before {
+  -webkit-mask-image: url(../icons/lucide/code.svg);
+  mask-image: url(../icons/lucide/code.svg);
+}
+.ei-coffee:before {
+  -webkit-mask-image: url(../icons/lucide/coffee.svg);
+  mask-image: url(../icons/lucide/coffee.svg);
+}
+.ei-coins:before {
+  -webkit-mask-image: url(../icons/lucide/coins.svg);
+  mask-image: url(../icons/lucide/coins.svg);
+}
+.ei-compass:before {
+  -webkit-mask-image: url(../icons/lucide/compass.svg);
+  mask-image: url(../icons/lucide/compass.svg);
+}
+.ei-contact:before {
+  -webkit-mask-image: url(../icons/lucide/contact.svg);
+  mask-image: url(../icons/lucide/contact.svg);
+}
+.ei-contact-round:before {
+  -webkit-mask-image: url(../icons/lucide/contact-round.svg);
+  mask-image: url(../icons/lucide/contact-round.svg);
+}
+.ei-copy:before {
+  -webkit-mask-image: url(../icons/lucide/copy.svg);
+  mask-image: url(../icons/lucide/copy.svg);
+}
+.ei-corner-down-right:before {
+  -webkit-mask-image: url(../icons/lucide/corner-down-right.svg);
+  mask-image: url(../icons/lucide/corner-down-right.svg);
+}
+.ei-corner-up-right:before {
+  -webkit-mask-image: url(../icons/lucide/corner-up-right.svg);
+  mask-image: url(../icons/lucide/corner-up-right.svg);
+}
+.ei-cpu:before {
+  -webkit-mask-image: url(../icons/lucide/cpu.svg);
+  mask-image: url(../icons/lucide/cpu.svg);
+}
+.ei-credit-card:before {
+  -webkit-mask-image: url(../icons/lucide/credit-card.svg);
+  mask-image: url(../icons/lucide/credit-card.svg);
+}
+.ei-database:before {
+  -webkit-mask-image: url(../icons/lucide/database.svg);
+  mask-image: url(../icons/lucide/database.svg);
+}
+.ei-dollar-sign:before {
+  -webkit-mask-image: url(../icons/lucide/dollar-sign.svg);
+  mask-image: url(../icons/lucide/dollar-sign.svg);
+}
+.ei-download:before {
+  -webkit-mask-image: url(../icons/lucide/download.svg);
+  mask-image: url(../icons/lucide/download.svg);
+}
+.ei-droplet:before {
+  -webkit-mask-image: url(../icons/lucide/droplet.svg);
+  mask-image: url(../icons/lucide/droplet.svg);
+}
+.ei-earth:before {
+  -webkit-mask-image: url(../icons/lucide/earth.svg);
+  mask-image: url(../icons/lucide/earth.svg);
+}
+.ei-ellipsis:before {
+  -webkit-mask-image: url(../icons/lucide/ellipsis.svg);
+  mask-image: url(../icons/lucide/ellipsis.svg);
+}
+.ei-ellipsis-vertical:before {
+  -webkit-mask-image: url(../icons/lucide/ellipsis-vertical.svg);
+  mask-image: url(../icons/lucide/ellipsis-vertical.svg);
+}
+.ei-expand:before {
+  -webkit-mask-image: url(../icons/lucide/expand.svg);
+  mask-image: url(../icons/lucide/expand.svg);
+}
+.ei-external-link:before {
+  -webkit-mask-image: url(../icons/lucide/external-link.svg);
+  mask-image: url(../icons/lucide/external-link.svg);
+}
+.ei-eye:before {
+  -webkit-mask-image: url(../icons/lucide/eye.svg);
+  mask-image: url(../icons/lucide/eye.svg);
+}
+.ei-eye-off:before {
+  -webkit-mask-image: url(../icons/lucide/eye-off.svg);
+  mask-image: url(../icons/lucide/eye-off.svg);
+}
+.ei-factory:before {
+  -webkit-mask-image: url(../icons/lucide/factory.svg);
+  mask-image: url(../icons/lucide/factory.svg);
+}
+.ei-file:before {
+  -webkit-mask-image: url(../icons/lucide/file.svg);
+  mask-image: url(../icons/lucide/file.svg);
+}
+.ei-file-check:before {
+  -webkit-mask-image: url(../icons/lucide/file-check.svg);
+  mask-image: url(../icons/lucide/file-check.svg);
+}
+.ei-file-plus:before {
+  -webkit-mask-image: url(../icons/lucide/file-plus.svg);
+  mask-image: url(../icons/lucide/file-plus.svg);
+}
+.ei-files:before {
+  -webkit-mask-image: url(../icons/lucide/files.svg);
+  mask-image: url(../icons/lucide/files.svg);
+}
+.ei-file-text:before {
+  -webkit-mask-image: url(../icons/lucide/file-text.svg);
+  mask-image: url(../icons/lucide/file-text.svg);
+}
+.ei-film:before {
+  -webkit-mask-image: url(../icons/lucide/film.svg);
+  mask-image: url(../icons/lucide/film.svg);
+}
+.ei-flag:before {
+  -webkit-mask-image: url(../icons/lucide/flag.svg);
+  mask-image: url(../icons/lucide/flag.svg);
+}
+.ei-flame:before {
+  -webkit-mask-image: url(../icons/lucide/flame.svg);
+  mask-image: url(../icons/lucide/flame.svg);
+}
+.ei-folder:before {
+  -webkit-mask-image: url(../icons/lucide/folder.svg);
+  mask-image: url(../icons/lucide/folder.svg);
+}
+.ei-folder-open:before {
+  -webkit-mask-image: url(../icons/lucide/folder-open.svg);
+  mask-image: url(../icons/lucide/folder-open.svg);
+}
+.ei-folder-plus:before {
+  -webkit-mask-image: url(../icons/lucide/folder-plus.svg);
+  mask-image: url(../icons/lucide/folder-plus.svg);
+}
+.ei-forklift:before {
+  -webkit-mask-image: url(../icons/lucide/forklift.svg);
+  mask-image: url(../icons/lucide/forklift.svg);
+}
+.ei-funnel:before {
+  -webkit-mask-image: url(../icons/lucide/funnel.svg);
+  mask-image: url(../icons/lucide/funnel.svg);
+}
+.ei-gauge:before {
+  -webkit-mask-image: url(../icons/lucide/gauge.svg);
+  mask-image: url(../icons/lucide/gauge.svg);
+}
+.ei-gavel:before {
+  -webkit-mask-image: url(../icons/lucide/gavel.svg);
+  mask-image: url(../icons/lucide/gavel.svg);
+}
+.ei-gift:before {
+  -webkit-mask-image: url(../icons/lucide/gift.svg);
+  mask-image: url(../icons/lucide/gift.svg);
+}
+.ei-globe:before {
+  -webkit-mask-image: url(../icons/lucide/globe.svg);
+  mask-image: url(../icons/lucide/globe.svg);
+}
+.ei-graduation-cap:before {
+  -webkit-mask-image: url(../icons/lucide/graduation-cap.svg);
+  mask-image: url(../icons/lucide/graduation-cap.svg);
+}
+.ei-hammer:before {
+  -webkit-mask-image: url(../icons/lucide/hammer.svg);
+  mask-image: url(../icons/lucide/hammer.svg);
+}
+.ei-hand-coins:before {
+  -webkit-mask-image: url(../icons/lucide/hand-coins.svg);
+  mask-image: url(../icons/lucide/hand-coins.svg);
+}
+.ei-handshake:before {
+  -webkit-mask-image: url(../icons/lucide/handshake.svg);
+  mask-image: url(../icons/lucide/handshake.svg);
+}
+.ei-hard-drive:before {
+  -webkit-mask-image: url(../icons/lucide/hard-drive.svg);
+  mask-image: url(../icons/lucide/hard-drive.svg);
+}
+.ei-headset:before {
+  -webkit-mask-image: url(../icons/lucide/headset.svg);
+  mask-image: url(../icons/lucide/headset.svg);
+}
+.ei-heart:before {
+  -webkit-mask-image: url(../icons/lucide/heart.svg);
+  mask-image: url(../icons/lucide/heart.svg);
+}
+.ei-heart-handshake:before {
+  -webkit-mask-image: url(../icons/lucide/heart-handshake.svg);
+  mask-image: url(../icons/lucide/heart-handshake.svg);
+}
+.ei-heart-pulse:before {
+  -webkit-mask-image: url(../icons/lucide/heart-pulse.svg);
+  mask-image: url(../icons/lucide/heart-pulse.svg);
+}
+.ei-hotel:before {
+  -webkit-mask-image: url(../icons/lucide/hotel.svg);
+  mask-image: url(../icons/lucide/hotel.svg);
+}
+.ei-hourglass:before {
+  -webkit-mask-image: url(../icons/lucide/hourglass.svg);
+  mask-image: url(../icons/lucide/hourglass.svg);
+}
+.ei-house:before {
+  -webkit-mask-image: url(../icons/lucide/house.svg);
+  mask-image: url(../icons/lucide/house.svg);
+}
+.ei-id-card:before {
+  -webkit-mask-image: url(../icons/lucide/id-card.svg);
+  mask-image: url(../icons/lucide/id-card.svg);
+}
+.ei-image:before {
+  -webkit-mask-image: url(../icons/lucide/image.svg);
+  mask-image: url(../icons/lucide/image.svg);
+}
+.ei-images:before {
+  -webkit-mask-image: url(../icons/lucide/images.svg);
+  mask-image: url(../icons/lucide/images.svg);
+}
+.ei-inbox:before {
+  -webkit-mask-image: url(../icons/lucide/inbox.svg);
+  mask-image: url(../icons/lucide/inbox.svg);
+}
+.ei-info:before {
+  -webkit-mask-image: url(../icons/lucide/info.svg);
+  mask-image: url(../icons/lucide/info.svg);
+}
+.ei-key:before {
+  -webkit-mask-image: url(../icons/lucide/key.svg);
+  mask-image: url(../icons/lucide/key.svg);
+}
+.ei-landmark:before {
+  -webkit-mask-image: url(../icons/lucide/landmark.svg);
+  mask-image: url(../icons/lucide/landmark.svg);
+}
+.ei-laptop:before {
+  -webkit-mask-image: url(../icons/lucide/laptop.svg);
+  mask-image: url(../icons/lucide/laptop.svg);
+}
+.ei-layers:before {
+  -webkit-mask-image: url(../icons/lucide/layers.svg);
+  mask-image: url(../icons/lucide/layers.svg);
+}
+.ei-layout-dashboard:before {
+  -webkit-mask-image: url(../icons/lucide/layout-dashboard.svg);
+  mask-image: url(../icons/lucide/layout-dashboard.svg);
+}
+.ei-layout-grid:before {
+  -webkit-mask-image: url(../icons/lucide/layout-grid.svg);
+  mask-image: url(../icons/lucide/layout-grid.svg);
+}
+.ei-leaf:before {
+  -webkit-mask-image: url(../icons/lucide/leaf.svg);
+  mask-image: url(../icons/lucide/leaf.svg);
+}
+.ei-lightbulb:before {
+  -webkit-mask-image: url(../icons/lucide/lightbulb.svg);
+  mask-image: url(../icons/lucide/lightbulb.svg);
+}
+.ei-link:before {
+  -webkit-mask-image: url(../icons/lucide/link.svg);
+  mask-image: url(../icons/lucide/link.svg);
+}
+.ei-link-2:before {
+  -webkit-mask-image: url(../icons/lucide/link-2.svg);
+  mask-image: url(../icons/lucide/link-2.svg);
+}
+.ei-list:before {
+  -webkit-mask-image: url(../icons/lucide/list.svg);
+  mask-image: url(../icons/lucide/list.svg);
+}
+.ei-list-checks:before {
+  -webkit-mask-image: url(../icons/lucide/list-checks.svg);
+  mask-image: url(../icons/lucide/list-checks.svg);
+}
+.ei-list-filter:before {
+  -webkit-mask-image: url(../icons/lucide/list-filter.svg);
+  mask-image: url(../icons/lucide/list-filter.svg);
+}
+.ei-list-ordered:before {
+  -webkit-mask-image: url(../icons/lucide/list-ordered.svg);
+  mask-image: url(../icons/lucide/list-ordered.svg);
+}
+.ei-lock:before {
+  -webkit-mask-image: url(../icons/lucide/lock.svg);
+  mask-image: url(../icons/lucide/lock.svg);
+}
+.ei-lock-open:before {
+  -webkit-mask-image: url(../icons/lucide/lock-open.svg);
+  mask-image: url(../icons/lucide/lock-open.svg);
+}
+.ei-mail:before {
+  -webkit-mask-image: url(../icons/lucide/mail.svg);
+  mask-image: url(../icons/lucide/mail.svg);
+}
+.ei-mail-open:before {
+  -webkit-mask-image: url(../icons/lucide/mail-open.svg);
+  mask-image: url(../icons/lucide/mail-open.svg);
+}
+.ei-map:before {
+  -webkit-mask-image: url(../icons/lucide/map.svg);
+  mask-image: url(../icons/lucide/map.svg);
+}
+.ei-map-pin:before {
+  -webkit-mask-image: url(../icons/lucide/map-pin.svg);
+  mask-image: url(../icons/lucide/map-pin.svg);
+}
+.ei-map-pinned:before {
+  -webkit-mask-image: url(../icons/lucide/map-pinned.svg);
+  mask-image: url(../icons/lucide/map-pinned.svg);
+}
+.ei-maximize:before {
+  -webkit-mask-image: url(../icons/lucide/maximize.svg);
+  mask-image: url(../icons/lucide/maximize.svg);
+}
+.ei-medal:before {
+  -webkit-mask-image: url(../icons/lucide/medal.svg);
+  mask-image: url(../icons/lucide/medal.svg);
+}
+.ei-megaphone:before {
+  -webkit-mask-image: url(../icons/lucide/megaphone.svg);
+  mask-image: url(../icons/lucide/megaphone.svg);
+}
+.ei-menu:before {
+  -webkit-mask-image: url(../icons/lucide/menu.svg);
+  mask-image: url(../icons/lucide/menu.svg);
+}
+.ei-message-circle:before {
+  -webkit-mask-image: url(../icons/lucide/message-circle.svg);
+  mask-image: url(../icons/lucide/message-circle.svg);
+}
+.ei-message-square:before {
+  -webkit-mask-image: url(../icons/lucide/message-square.svg);
+  mask-image: url(../icons/lucide/message-square.svg);
+}
+.ei-messages-square:before {
+  -webkit-mask-image: url(../icons/lucide/messages-square.svg);
+  mask-image: url(../icons/lucide/messages-square.svg);
+}
+.ei-mic:before {
+  -webkit-mask-image: url(../icons/lucide/mic.svg);
+  mask-image: url(../icons/lucide/mic.svg);
+}
+.ei-mic-off:before {
+  -webkit-mask-image: url(../icons/lucide/mic-off.svg);
+  mask-image: url(../icons/lucide/mic-off.svg);
+}
+.ei-minimize:before {
+  -webkit-mask-image: url(../icons/lucide/minimize.svg);
+  mask-image: url(../icons/lucide/minimize.svg);
+}
+.ei-minus:before {
+  -webkit-mask-image: url(../icons/lucide/minus.svg);
+  mask-image: url(../icons/lucide/minus.svg);
+}
+.ei-monitor:before {
+  -webkit-mask-image: url(../icons/lucide/monitor.svg);
+  mask-image: url(../icons/lucide/monitor.svg);
+}
+.ei-moon:before {
+  -webkit-mask-image: url(../icons/lucide/moon.svg);
+  mask-image: url(../icons/lucide/moon.svg);
+}
+.ei-move-left:before {
+  -webkit-mask-image: url(../icons/lucide/move-left.svg);
+  mask-image: url(../icons/lucide/move-left.svg);
+}
+.ei-move-right:before {
+  -webkit-mask-image: url(../icons/lucide/move-right.svg);
+  mask-image: url(../icons/lucide/move-right.svg);
+}
+.ei-navigation:before {
+  -webkit-mask-image: url(../icons/lucide/navigation.svg);
+  mask-image: url(../icons/lucide/navigation.svg);
+}
+.ei-newspaper:before {
+  -webkit-mask-image: url(../icons/lucide/newspaper.svg);
+  mask-image: url(../icons/lucide/newspaper.svg);
+}
+.ei-notepad-text:before {
+  -webkit-mask-image: url(../icons/lucide/notepad-text.svg);
+  mask-image: url(../icons/lucide/notepad-text.svg);
+}
+.ei-package:before {
+  -webkit-mask-image: url(../icons/lucide/package.svg);
+  mask-image: url(../icons/lucide/package.svg);
+}
+.ei-package-check:before {
+  -webkit-mask-image: url(../icons/lucide/package-check.svg);
+  mask-image: url(../icons/lucide/package-check.svg);
+}
+.ei-package-open:before {
+  -webkit-mask-image: url(../icons/lucide/package-open.svg);
+  mask-image: url(../icons/lucide/package-open.svg);
+}
+.ei-paintbrush:before {
+  -webkit-mask-image: url(../icons/lucide/paintbrush.svg);
+  mask-image: url(../icons/lucide/paintbrush.svg);
+}
+.ei-palette:before {
+  -webkit-mask-image: url(../icons/lucide/palette.svg);
+  mask-image: url(../icons/lucide/palette.svg);
+}
+.ei-panel-left:before {
+  -webkit-mask-image: url(../icons/lucide/panel-left.svg);
+  mask-image: url(../icons/lucide/panel-left.svg);
+}
+.ei-panel-right:before {
+  -webkit-mask-image: url(../icons/lucide/panel-right.svg);
+  mask-image: url(../icons/lucide/panel-right.svg);
+}
+.ei-panels-top-left:before {
+  -webkit-mask-image: url(../icons/lucide/panels-top-left.svg);
+  mask-image: url(../icons/lucide/panels-top-left.svg);
+}
+.ei-pause:before {
+  -webkit-mask-image: url(../icons/lucide/pause.svg);
+  mask-image: url(../icons/lucide/pause.svg);
+}
+.ei-pencil:before {
+  -webkit-mask-image: url(../icons/lucide/pencil.svg);
+  mask-image: url(../icons/lucide/pencil.svg);
+}
+.ei-pen-line:before {
+  -webkit-mask-image: url(../icons/lucide/pen-line.svg);
+  mask-image: url(../icons/lucide/pen-line.svg);
+}
+.ei-percent:before {
+  -webkit-mask-image: url(../icons/lucide/percent.svg);
+  mask-image: url(../icons/lucide/percent.svg);
+}
+.ei-phone:before {
+  -webkit-mask-image: url(../icons/lucide/phone.svg);
+  mask-image: url(../icons/lucide/phone.svg);
+}
+.ei-phone-call:before {
+  -webkit-mask-image: url(../icons/lucide/phone-call.svg);
+  mask-image: url(../icons/lucide/phone-call.svg);
+}
+.ei-phone-incoming:before {
+  -webkit-mask-image: url(../icons/lucide/phone-incoming.svg);
+  mask-image: url(../icons/lucide/phone-incoming.svg);
+}
+.ei-phone-outgoing:before {
+  -webkit-mask-image: url(../icons/lucide/phone-outgoing.svg);
+  mask-image: url(../icons/lucide/phone-outgoing.svg);
+}
+.ei-piggy-bank:before {
+  -webkit-mask-image: url(../icons/lucide/piggy-bank.svg);
+  mask-image: url(../icons/lucide/piggy-bank.svg);
+}
+.ei-plane:before {
+  -webkit-mask-image: url(../icons/lucide/plane.svg);
+  mask-image: url(../icons/lucide/plane.svg);
+}
+.ei-play:before {
+  -webkit-mask-image: url(../icons/lucide/play.svg);
+  mask-image: url(../icons/lucide/play.svg);
+}
+.ei-plus:before {
+  -webkit-mask-image: url(../icons/lucide/plus.svg);
+  mask-image: url(../icons/lucide/plus.svg);
+}
+.ei-printer:before {
+  -webkit-mask-image: url(../icons/lucide/printer.svg);
+  mask-image: url(../icons/lucide/printer.svg);
+}
+.ei-projector:before {
+  -webkit-mask-image: url(../icons/lucide/projector.svg);
+  mask-image: url(../icons/lucide/projector.svg);
+}
+.ei-quote:before {
+  -webkit-mask-image: url(../icons/lucide/quote.svg);
+  mask-image: url(../icons/lucide/quote.svg);
+}
+.ei-radio:before {
+  -webkit-mask-image: url(../icons/lucide/radio.svg);
+  mask-image: url(../icons/lucide/radio.svg);
+}
+.ei-receipt:before {
+  -webkit-mask-image: url(../icons/lucide/receipt.svg);
+  mask-image: url(../icons/lucide/receipt.svg);
+}
+.ei-receipt-text:before {
+  -webkit-mask-image: url(../icons/lucide/receipt-text.svg);
+  mask-image: url(../icons/lucide/receipt-text.svg);
+}
+.ei-refresh-cw:before {
+  -webkit-mask-image: url(../icons/lucide/refresh-cw.svg);
+  mask-image: url(../icons/lucide/refresh-cw.svg);
+}
+.ei-rocket:before {
+  -webkit-mask-image: url(../icons/lucide/rocket.svg);
+  mask-image: url(../icons/lucide/rocket.svg);
+}
+.ei-rotate-cw:before {
+  -webkit-mask-image: url(../icons/lucide/rotate-cw.svg);
+  mask-image: url(../icons/lucide/rotate-cw.svg);
+}
+.ei-save:before {
+  -webkit-mask-image: url(../icons/lucide/save.svg);
+  mask-image: url(../icons/lucide/save.svg);
+}
+.ei-scale:before {
+  -webkit-mask-image: url(../icons/lucide/scale.svg);
+  mask-image: url(../icons/lucide/scale.svg);
+}
+.ei-scan:before {
+  -webkit-mask-image: url(../icons/lucide/scan.svg);
+  mask-image: url(../icons/lucide/scan.svg);
+}
+.ei-school:before {
+  -webkit-mask-image: url(../icons/lucide/school.svg);
+  mask-image: url(../icons/lucide/school.svg);
+}
+.ei-scroll-text:before {
+  -webkit-mask-image: url(../icons/lucide/scroll-text.svg);
+  mask-image: url(../icons/lucide/scroll-text.svg);
+}
+.ei-search:before {
+  -webkit-mask-image: url(../icons/lucide/search.svg);
+  mask-image: url(../icons/lucide/search.svg);
+}
+.ei-send:before {
+  -webkit-mask-image: url(../icons/lucide/send.svg);
+  mask-image: url(../icons/lucide/send.svg);
+}
+.ei-send-horizontal:before {
+  -webkit-mask-image: url(../icons/lucide/send-horizontal.svg);
+  mask-image: url(../icons/lucide/send-horizontal.svg);
+}
+.ei-server:before {
+  -webkit-mask-image: url(../icons/lucide/server.svg);
+  mask-image: url(../icons/lucide/server.svg);
+}
+.ei-settings:before {
+  -webkit-mask-image: url(../icons/lucide/settings.svg);
+  mask-image: url(../icons/lucide/settings.svg);
+}
+.ei-settings-2:before {
+  -webkit-mask-image: url(../icons/lucide/settings-2.svg);
+  mask-image: url(../icons/lucide/settings-2.svg);
+}
+.ei-share:before {
+  -webkit-mask-image: url(../icons/lucide/share.svg);
+  mask-image: url(../icons/lucide/share.svg);
+}
+.ei-share-2:before {
+  -webkit-mask-image: url(../icons/lucide/share-2.svg);
+  mask-image: url(../icons/lucide/share-2.svg);
+}
+.ei-shield:before {
+  -webkit-mask-image: url(../icons/lucide/shield.svg);
+  mask-image: url(../icons/lucide/shield.svg);
+}
+.ei-shield-check:before {
+  -webkit-mask-image: url(../icons/lucide/shield-check.svg);
+  mask-image: url(../icons/lucide/shield-check.svg);
+}
+.ei-shopping-bag:before {
+  -webkit-mask-image: url(../icons/lucide/shopping-bag.svg);
+  mask-image: url(../icons/lucide/shopping-bag.svg);
+}
+.ei-shopping-cart:before {
+  -webkit-mask-image: url(../icons/lucide/shopping-cart.svg);
+  mask-image: url(../icons/lucide/shopping-cart.svg);
+}
+.ei-shrink:before {
+  -webkit-mask-image: url(../icons/lucide/shrink.svg);
+  mask-image: url(../icons/lucide/shrink.svg);
+}
+.ei-signature:before {
+  -webkit-mask-image: url(../icons/lucide/signature.svg);
+  mask-image: url(../icons/lucide/signature.svg);
+}
+.ei-sliders-horizontal:before {
+  -webkit-mask-image: url(../icons/lucide/sliders-horizontal.svg);
+  mask-image: url(../icons/lucide/sliders-horizontal.svg);
+}
+.ei-smartphone:before {
+  -webkit-mask-image: url(../icons/lucide/smartphone.svg);
+  mask-image: url(../icons/lucide/smartphone.svg);
+}
+.ei-sparkles:before {
+  -webkit-mask-image: url(../icons/lucide/sparkles.svg);
+  mask-image: url(../icons/lucide/sparkles.svg);
+}
+.ei-square:before {
+  -webkit-mask-image: url(../icons/lucide/square.svg);
+  mask-image: url(../icons/lucide/square.svg);
+}
+.ei-square-pen:before {
+  -webkit-mask-image: url(../icons/lucide/square-pen.svg);
+  mask-image: url(../icons/lucide/square-pen.svg);
+}
+.ei-star:before {
+  -webkit-mask-image: url(../icons/lucide/star.svg);
+  mask-image: url(../icons/lucide/star.svg);
+}
+.ei-stethoscope:before {
+  -webkit-mask-image: url(../icons/lucide/stethoscope.svg);
+  mask-image: url(../icons/lucide/stethoscope.svg);
+}
+.ei-store:before {
+  -webkit-mask-image: url(../icons/lucide/store.svg);
+  mask-image: url(../icons/lucide/store.svg);
+}
+.ei-sun:before {
+  -webkit-mask-image: url(../icons/lucide/sun.svg);
+  mask-image: url(../icons/lucide/sun.svg);
+}
+.ei-tablet:before {
+  -webkit-mask-image: url(../icons/lucide/tablet.svg);
+  mask-image: url(../icons/lucide/tablet.svg);
+}
+.ei-target:before {
+  -webkit-mask-image: url(../icons/lucide/target.svg);
+  mask-image: url(../icons/lucide/target.svg);
+}
+.ei-terminal:before {
+  -webkit-mask-image: url(../icons/lucide/terminal.svg);
+  mask-image: url(../icons/lucide/terminal.svg);
+}
+.ei-thumbs-down:before {
+  -webkit-mask-image: url(../icons/lucide/thumbs-down.svg);
+  mask-image: url(../icons/lucide/thumbs-down.svg);
+}
+.ei-thumbs-up:before {
+  -webkit-mask-image: url(../icons/lucide/thumbs-up.svg);
+  mask-image: url(../icons/lucide/thumbs-up.svg);
+}
+.ei-timer:before {
+  -webkit-mask-image: url(../icons/lucide/timer.svg);
+  mask-image: url(../icons/lucide/timer.svg);
+}
+.ei-trash:before {
+  -webkit-mask-image: url(../icons/lucide/trash.svg);
+  mask-image: url(../icons/lucide/trash.svg);
+}
+.ei-trending-down:before {
+  -webkit-mask-image: url(../icons/lucide/trending-down.svg);
+  mask-image: url(../icons/lucide/trending-down.svg);
+}
+.ei-trending-up:before {
+  -webkit-mask-image: url(../icons/lucide/trending-up.svg);
+  mask-image: url(../icons/lucide/trending-up.svg);
+}
+.ei-trophy:before {
+  -webkit-mask-image: url(../icons/lucide/trophy.svg);
+  mask-image: url(../icons/lucide/trophy.svg);
+}
+.ei-truck:before {
+  -webkit-mask-image: url(../icons/lucide/truck.svg);
+  mask-image: url(../icons/lucide/truck.svg);
+}
+.ei-tv:before {
+  -webkit-mask-image: url(../icons/lucide/tv.svg);
+  mask-image: url(../icons/lucide/tv.svg);
+}
+.ei-umbrella:before {
+  -webkit-mask-image: url(../icons/lucide/umbrella.svg);
+  mask-image: url(../icons/lucide/umbrella.svg);
+}
+.ei-unlink:before {
+  -webkit-mask-image: url(../icons/lucide/unlink.svg);
+  mask-image: url(../icons/lucide/unlink.svg);
+}
+.ei-upload:before {
+  -webkit-mask-image: url(../icons/lucide/upload.svg);
+  mask-image: url(../icons/lucide/upload.svg);
+}
+.ei-usb:before {
+  -webkit-mask-image: url(../icons/lucide/usb.svg);
+  mask-image: url(../icons/lucide/usb.svg);
+}
+.ei-user:before {
+  -webkit-mask-image: url(../icons/lucide/user.svg);
+  mask-image: url(../icons/lucide/user.svg);
+}
+.ei-user-check:before {
+  -webkit-mask-image: url(../icons/lucide/user-check.svg);
+  mask-image: url(../icons/lucide/user-check.svg);
+}
+.ei-user-cog:before {
+  -webkit-mask-image: url(../icons/lucide/user-cog.svg);
+  mask-image: url(../icons/lucide/user-cog.svg);
+}
+.ei-user-plus:before {
+  -webkit-mask-image: url(../icons/lucide/user-plus.svg);
+  mask-image: url(../icons/lucide/user-plus.svg);
+}
+.ei-user-round:before {
+  -webkit-mask-image: url(../icons/lucide/user-round.svg);
+  mask-image: url(../icons/lucide/user-round.svg);
+}
+.ei-users:before {
+  -webkit-mask-image: url(../icons/lucide/users.svg);
+  mask-image: url(../icons/lucide/users.svg);
+}
+.ei-utensils:before {
+  -webkit-mask-image: url(../icons/lucide/utensils.svg);
+  mask-image: url(../icons/lucide/utensils.svg);
+}
+.ei-video:before {
+  -webkit-mask-image: url(../icons/lucide/video.svg);
+  mask-image: url(../icons/lucide/video.svg);
+}
+.ei-volume-2:before {
+  -webkit-mask-image: url(../icons/lucide/volume-2.svg);
+  mask-image: url(../icons/lucide/volume-2.svg);
+}
+.ei-wallet:before {
+  -webkit-mask-image: url(../icons/lucide/wallet.svg);
+  mask-image: url(../icons/lucide/wallet.svg);
+}
+.ei-warehouse:before {
+  -webkit-mask-image: url(../icons/lucide/warehouse.svg);
+  mask-image: url(../icons/lucide/warehouse.svg);
+}
+.ei-wifi:before {
+  -webkit-mask-image: url(../icons/lucide/wifi.svg);
+  mask-image: url(../icons/lucide/wifi.svg);
+}
+.ei-wrench:before {
+  -webkit-mask-image: url(../icons/lucide/wrench.svg);
+  mask-image: url(../icons/lucide/wrench.svg);
+}
+.ei-x:before {
+  -webkit-mask-image: url(../icons/lucide/x.svg);
+  mask-image: url(../icons/lucide/x.svg);
+}
+.ei-zap:before {
+  -webkit-mask-image: url(../icons/lucide/zap.svg);
+  mask-image: url(../icons/lucide/zap.svg);
+}

@@ -771,7 +771,7 @@
   z-index: 1;
   width: 156px;
   height: 166px;
-  background-image: url(../../../images/current-theme/box-shape.png);
+  background-image: url(../../../images/current-theme/testimonial-block-style4-box-shape.png);
 }
 @media screen and (max-width: 1200px) {
   .testimonial-block-style4 .box-shape {
@@ -1406,7 +1406,7 @@ html.tm-dark-mode .testimonial-block-style5::before {
 .testimonial-block-style8 .inner-block:before {
   background: linear-gradient(90deg, #804613 0%, #e67e22 100%);
   content: "";
-  mask-image: url(../../../images/current-theme/test1-mask1.png);
+  mask-image: url(../../../images/current-theme/testimonial-block-style8-image-mask.png);
   mask-size: cover;
   mask-position: center center;
   height: 81px;
