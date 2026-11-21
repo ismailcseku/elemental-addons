@@ -67,6 +67,7 @@
 }
 .service-block-style14 .inner-block .list-info {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 0;
   padding-top: 35px;
   margin-bottom: 32px;
 }

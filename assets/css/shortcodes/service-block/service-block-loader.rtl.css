@@ -2873,6 +2873,7 @@ body.rtl .service-block-style9::after {
 }
 .service-block-style14 .inner-block .list-info {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-right: 0;
   padding-top: 35px;
   margin-bottom: 32px;
 }
