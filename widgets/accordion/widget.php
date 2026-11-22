@@ -17,7 +17,13 @@ class TM_Elementor_Accordion extends Widget_Base {
 	public function __construct($data = [], $args = null) {
 		parent::__construct($data, $args);
 		$direction_suffix = is_rtl() ? '.rtl' : '';
-		wp_register_style( 'tm-accordion-style', ELEMENTAL_ADDONS_ASSETS_URI . '/css/widgets-core/accordion' . $direction_suffix . '.css' );
+		$accordion_css    = ELEMENTAL_ADDONS_ABS_PATH . 'assets/css/widgets-core/accordion' . $direction_suffix . '.css';
+		wp_register_style(
+			'tm-accordion-style',
+			ELEMENTAL_ADDONS_ASSETS_URI . '/css/widgets-core/accordion' . $direction_suffix . '.css',
+			array(),
+			file_exists( $accordion_css ) ? filemtime( $accordion_css ) : ELEMENTAL_ADDONS_VERSION
+		);
 	}
 
 	/**
@@ -93,7 +99,7 @@ class TM_Elementor_Accordion extends Widget_Base {
 	 * @return array Widget scripts dependencies.
 	 */
 	public function get_script_depends() {
-		return [ 'elemental-addons-js' ];
+		return [ 'elemental-addons-js', 'tm-accordion' ];
 	}
 
 	public function get_style_depends() {

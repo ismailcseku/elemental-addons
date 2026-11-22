@@ -205,6 +205,13 @@ if ( ! class_exists( 'Elemental_Addons_Plugin' ) ) {
 				$ver,
 				true
 			);
+			wp_register_script(
+				'tm-accordion',
+				ELEMENTAL_ADDONS_ASSETS_URI . '/js/widgets/accordion.js',
+				array( 'jquery' ),
+				filemtime( ELEMENTAL_ADDONS_ABS_PATH . 'assets/js/widgets/accordion.js' ),
+				true
+			);
 
 			wp_register_script(
 				'elemental-addons-swiper-init',

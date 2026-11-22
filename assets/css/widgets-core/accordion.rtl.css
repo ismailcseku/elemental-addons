@@ -1,3 +1,11 @@
+.tm-accordion .collapse:not(.show) {
+  display: none;
+}
+.tm-accordion .collapsing {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
 .tm-accordion .card {
   margin-bottom: 10px;
   overflow: hidden;
