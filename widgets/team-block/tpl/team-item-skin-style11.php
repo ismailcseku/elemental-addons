@@ -20,7 +20,7 @@ if ( $image_id ) {
       <?php elemental_addons_get_shortcode_template_part( 'part-subtitle', null, 'team-block/tpl', $team_item, false );?>
 		</div>
 		<div class="team-share">
-			<span class="icon team-share fa fa-share-alt"></span>
+			<span class="icon fa fa-share-alt"></span>
 				<?php elemental_addons_get_shortcode_template_part( 'part-social-links', null, 'team-block/tpl', $team_item, false );?>
 		</div>
 	</div>
