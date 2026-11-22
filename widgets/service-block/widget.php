@@ -487,8 +487,6 @@ class TM_Elementor_ServiceBlock extends Widget_Base {
 				]
 			]
 		);
-		elemental_addons_get_viewdetails_button_arraylist( $this, 1 );
-		elemental_addons_get_viewdetails_button_arraylist( $this, 2 );
 		$this->end_controls_section();
 
 

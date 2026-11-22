@@ -1023,43 +1023,6 @@ class TM_Elementor_TestimonialBlock extends Widget_Base {
 
 
 
-		$this->start_controls_section(
-			'button_options',
-			[
-				'label' => esc_html__( 'Button Options', 'elemental-addons' ),
-				'tab'   => \Elementor\Controls_Manager::TAB_CONTENT,
-			]
-		);
-		elemental_addons_get_viewdetails_button_arraylist($this, 1);
-		elemental_addons_get_viewdetails_button_arraylist($this, 2);
-		elemental_addons_get_button_arraylist($this, 1);
-		$this->end_controls_section();
-
-
-
-		$this->start_controls_section(
-			'button_color_typo_options', [
-				'label' => esc_html__( 'Button Color/Typography', 'elemental-addons' ),
-				'tab'   => \Elementor\Controls_Manager::TAB_CONTENT,
-			]
-		);
-		elemental_addons_get_button_text_color_typo_arraylist($this, 1);
-		$this->end_controls_section();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	}
 
