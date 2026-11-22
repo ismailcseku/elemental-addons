@@ -908,20 +908,6 @@ return array(
 				'default' => true,
 				'preview' => 'assets/images/skins/testimonial-block/skin-style9.svg',
 			),
-			'skin-style10' => array(
-				'label'   => esc_html__( 'Skin Style10', 'elemental-addons' ),
-				'class'   => 'ElementalAddons\Widgets\TestimonialBlock\Skins\Skin_Style10',
-				'file'    => 'widgets/testimonial-block/skins/skin-style10.php',
-				'default' => true,
-				'preview' => 'assets/images/skins/testimonial-block/skin-style10.svg',
-			),
-			'skin-style11' => array(
-				'label'   => esc_html__( 'Skin Style11', 'elemental-addons' ),
-				'class'   => 'ElementalAddons\Widgets\TestimonialBlock\Skins\Skin_Style11',
-				'file'    => 'widgets/testimonial-block/skins/skin-style11.php',
-				'default' => true,
-				'preview' => 'assets/images/skins/testimonial-block/skin-style11.svg',
-			),
 		),
 	),
 
