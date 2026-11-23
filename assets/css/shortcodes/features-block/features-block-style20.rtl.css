@@ -5,7 +5,7 @@
 }
 .features-block-style20 .inner-block:hover .icon-block {
   background-color: var(--theme-color1);
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }
 .features-block-style20 .inner-block:hover .icon-block i,
 .features-block-style20 .inner-block:hover .icon-block img {

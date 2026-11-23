@@ -135,7 +135,7 @@
 }
 .team-skin-style28 .inner-box .team-social a:hover {
   background: var(--theme-color1);
-  color: var(--theme-color1-text-color);
+  color: #fff;
   background-position: 0% 0;
 }
 .team-skin-style28 .inner-box:before {
@@ -180,5 +180,5 @@
 }
 .team-skin-style28 .inner-box:hover .team-share {
   background-color: var(--theme-color1);
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }

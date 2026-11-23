@@ -134,7 +134,7 @@
       align-items: center;
       justify-content: center;
       border-radius: 50%;
-      color: var(--theme-color1-text-color);
+      color: #fff;
       border-color: var(--theme-color1);
       background-color: var(--theme-color1);
       i {
@@ -182,7 +182,7 @@
       line-height: 41px;
       text-align: center;
       transition: 0.3s;
-      color: var(--theme-color1-text-color);
+      color: #fff;
       background-color: var(--theme-color1);
       @include media-breakpoint-down(xl) {
         height: 55px;

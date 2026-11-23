@@ -33,7 +33,7 @@
 .team-skin-style3 .inner-box:hover .content-box .team-title,
 .team-skin-style3 .inner-box:hover .content-box .team-title a,
 .team-skin-style3 .inner-box:hover .content-box .team-subtitle {
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }
 .team-skin-style3 .inner-box:hover .content-box .team-title,
 .team-skin-style3 .inner-box:hover .content-box .team-subtitle {
@@ -100,7 +100,7 @@
   transition: all 300ms ease;
 }
 .team-skin-style3 .inner-box .team-social a:hover {
-  color: var(--theme-color2-text-color);
+  color: #fff;
   background-color: var(--theme-color2);
 }
 .team-skin-style3 .inner-box .content-box {

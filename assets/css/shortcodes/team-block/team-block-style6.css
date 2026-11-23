@@ -54,7 +54,7 @@
   height: 45px;
   line-height: 45px;
   text-align: center;
-  color: var(--theme-color1-text-color);
+  color: #fff;
   cursor: pointer;
   opacity: 1;
   transition: all 0.4s ease-in-out;

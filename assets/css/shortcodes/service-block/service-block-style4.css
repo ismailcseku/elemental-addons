@@ -44,7 +44,7 @@
 .service-block-style4 .inner-box:hover .content-box .service-title a,
 .service-block-style4 .inner-box:hover .content-box .text,
 .service-block-style4 .inner-box:hover .content-box .btn-more {
-  color: var(--theme-color1-text-color);
+  color: #fff;
   transition: all 300ms ease;
 }
 .service-block-style4 .inner-box:hover .content-box .count {

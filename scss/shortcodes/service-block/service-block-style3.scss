@@ -10,6 +10,9 @@
     &:hover,
     .active {
       background-color: var(--theme-color2);
+      .service-title, .service-title a {
+        color: #fff;
+      }
       .image-box {
         .image {
           opacity: 1;

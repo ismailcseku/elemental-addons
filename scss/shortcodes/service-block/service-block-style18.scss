@@ -43,10 +43,10 @@
       }
       .content {
         .service-count {
-          color: var(--theme-color2-text-color);
+          color: #fff;
         }
         .service-title {
-          color: var(--theme-color2-text-color);
+          color: #fff;
         }
       }
     }
@@ -164,7 +164,7 @@
         display: inline-block;
         text-align: center;
         background-color: var(--theme-color1);
-        color: var(--theme-color1-text-color);
+        color: #fff;
         @include transition(all 300ms ease);
         &:before {
           display: inline-block;

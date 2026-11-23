@@ -24,7 +24,7 @@
 }
 .team-skin-style23 .inner-box:hover .content-box .team-subtitle,
 .team-skin-style23 .inner-box:hover .content-box .team-title {
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }
 .team-skin-style23 .inner-box:hover .image-box::before {
   opacity: 1;
@@ -36,7 +36,7 @@
 }
 .team-skin-style23 .inner-box:hover .team-share .icon {
   background-color: var(--theme-color1);
-  color: var(--theme-color1-text-color);
+  color: #fff;
   transform: rotate(-45deg);
 }
 .team-skin-style23 .inner-box:hover .team-social {
@@ -162,7 +162,7 @@
 }
 .team-skin-style23 .team-social a:before {
   background: var(--theme-color1);
-  color: var(--theme-color1-text-color);
+  color: #fff;
   border-radius: 50%;
   content: "";
   position: absolute;
@@ -178,7 +178,7 @@
   color: var(--theme-color-white);
 }
 .team-skin-style23 .team-social a:hover i {
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }
 .team-skin-style23 .team-social a:hover:before {
   transform: scale(1);
@@ -198,7 +198,7 @@
 }
 .team-skin-style23 .content-box .team-title a:hover,
 .team-skin-style23 .content-box .team-title a:focus {
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }
 .team-skin-style23 .content-box .team-subtitle {
   color: var(--theme-color-white);

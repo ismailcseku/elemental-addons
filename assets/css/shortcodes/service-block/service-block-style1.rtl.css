@@ -35,8 +35,8 @@
   transform: rotate(-180deg);
 }
 .service-block-style1 .icon {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   display: flex !important;
   align-items: center;
   justify-content: center;

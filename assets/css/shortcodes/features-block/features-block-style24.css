@@ -20,7 +20,7 @@
 }
 .features-block-style24 .inner-block.active .icon {
   background-color: var(--theme-color1);
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }
 .features-block-style24 .inner-block.active .icon i,
 .features-block-style24 .inner-block.active .icon img {

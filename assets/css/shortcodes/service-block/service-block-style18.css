@@ -51,10 +51,10 @@
   transform: translateY(0px);
 }
 .service-block-style18 .inner-block:hover .content .service-count {
-  color: var(--theme-color2-text-color);
+  color: #fff;
 }
 .service-block-style18 .inner-block:hover .content .service-title {
-  color: var(--theme-color2-text-color);
+  color: #fff;
 }
 .service-block-style18 .inner-block .image {
   border-radius: 30px;
@@ -174,7 +174,7 @@
   display: inline-block;
   text-align: center;
   background-color: var(--theme-color1);
-  color: var(--theme-color1-text-color);
+  color: #fff;
   transition: all 300ms ease;
 }
 .service-block-style18 .inner-block .btn-more .arrow:before {

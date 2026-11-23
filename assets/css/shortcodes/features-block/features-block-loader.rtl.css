@@ -271,7 +271,7 @@
   border-radius: 10px;
   margin-bottom: 30px;
   background-color: var(--theme-color1);
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }
 .features-block-style2 .features-title {
   font-weight: 600;
@@ -605,7 +605,7 @@
 }
 .features-block-style5 .inner-box:hover .icon {
   background-color: var(--theme-color1);
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }
 .features-block-style5 .inner-box:hover .icon i,
 .features-block-style5 .inner-box:hover .icon img {
@@ -857,7 +857,7 @@
   height: 100%;
 }
 .features-block-style7 .inner-block:hover .content-box .inner-box .text {
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }
 .features-block-style7 .inner-block .image {
   position: absolute;
@@ -2281,7 +2281,7 @@
 }
 .features-block-style20 .inner-block:hover .icon-block {
   background-color: var(--theme-color1);
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }
 .features-block-style20 .inner-block:hover .icon-block i,
 .features-block-style20 .inner-block:hover .icon-block img {
@@ -2692,7 +2692,7 @@
 }
 .features-block-style24 .inner-block.active .icon {
   background-color: var(--theme-color1);
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }
 .features-block-style24 .inner-block.active .icon i,
 .features-block-style24 .inner-block.active .icon img {
@@ -3094,7 +3094,7 @@
   transform: scaleX(1);
 }
 .features-block-style27:hover .content .service-icon i {
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }
 
 @media (max-width: 1200.98px) {

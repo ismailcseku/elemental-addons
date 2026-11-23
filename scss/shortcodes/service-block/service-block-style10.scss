@@ -143,7 +143,7 @@
           padding: 30px 20px 32px;
         }
         .service-details {
-          color: var(--theme-color1-text-color);
+          color: #fff;
         }
         .tag-items {
           border-top: 1px solid rgba(var(--theme-color2-rgb), 0.1);
@@ -161,7 +161,7 @@
           li {
             background-color: var(--theme-color2);
             border-radius: 20px;
-            color: var(--theme-color2-text-color);
+            color: #fff;
             display: inline-block;
             font-size: 16px;
             font-weight: 500;
@@ -174,7 +174,7 @@
               background-color: var(--theme-color1);
               border-radius: 50%;
               content: "\f123";
-              color: var(--theme-color1-text-color);
+              color: #fff;
               font-size: 8px;
               position: absolute;
               height: 14px;
@@ -187,7 +187,7 @@
           }
         }
         .service-btn {
-          color: var(--theme-color1-text-color);
+          color: #fff;
           font-weight: 500;
           text-decoration: underline;
         }
@@ -214,7 +214,7 @@
       .title-box {
         margin-bottom: 0;
         .arrow-icon {
-          color: var(--theme-color1-text-color);
+          color: #fff;
           transform: rotate(90deg);
           &:before {
             transform: scale(1);

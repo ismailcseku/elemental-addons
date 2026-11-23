@@ -93,5 +93,5 @@
 .team-skin-style2 .inner-block .content .team-social a:hover {
   background-color: var(--theme-color1);
   border-color: var(--theme-color1);
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }

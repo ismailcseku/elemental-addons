@@ -158,5 +158,5 @@
 }
 .team-skin-style7 .inner-block .content .team-socials a:hover {
   background-color: var(--theme-color1);
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }

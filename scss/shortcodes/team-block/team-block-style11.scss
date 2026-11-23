@@ -31,7 +31,7 @@
       }
       .plus {
         background-color: var(--theme-color1);
-        color: var(--theme-color1-text-color);
+        color: #fff;
         display: none;
       }
       .team-share {
@@ -219,7 +219,7 @@
       }
       a {
         background-color: var(--theme-color2);
-        color: var(--theme-color2-text-color);
+        color: #fff;
         border-radius: 10px;
         position: relative;
         height: 48px;
@@ -249,7 +249,7 @@
           @include transition(all 300ms ease);
         }
         &:hover {
-          color: var(--theme-color1-text-color);
+          color: #fff;
           &:before {
             transform: scale(1);
           }

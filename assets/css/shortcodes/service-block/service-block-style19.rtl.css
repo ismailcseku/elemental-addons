@@ -173,7 +173,7 @@
 .service-block-style19 .inner-block .content .title-box .btn-more svg path {
   transition: all 300ms ease;
   fill: none;
-  stroke: var(--theme-color1-text-color);
+  stroke: #fff;
 }
 .service-block-style19 .inner-block .content .title-box .btn-more:hover i,
 .service-block-style19 .inner-block .content .title-box .btn-more:hover svg {

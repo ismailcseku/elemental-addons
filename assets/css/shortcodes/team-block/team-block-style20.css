@@ -185,7 +185,7 @@
 }
 .team-skin-style20 .team-social li a:hover {
   background: var(--theme-color1);
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }
 .team-skin-style20:hover::after {
   opacity: 1;

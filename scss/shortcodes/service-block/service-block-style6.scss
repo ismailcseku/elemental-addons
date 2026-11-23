@@ -77,19 +77,17 @@ $hover-duration: 0.9s;
       }
       .content {
         .service-count {
-          color: var(--theme-color1-text-color);
+          color: #fff;
         }
         .service-title {
-          color: var(--theme-color1-text-color);
+          color: #fff;
         }
       }
       .btn-more {
         background-color: #fff;
-        .btn-title {
-        }
         .arrow {
           background-color: var(--theme-color2);
-          color: var(--theme-color2-text-color);
+          color: #fff;
         }
         .line {
           background-color: #33333352;
@@ -163,7 +161,7 @@ $hover-duration: 0.9s;
         a {
           &:hover,
           &:focus {
-            color: var(--theme-color1-text-color);
+            color: #fff;
           }
         }
       }
@@ -231,7 +229,7 @@ $hover-duration: 0.9s;
         display: inline-block;
         text-align: center;
         background-color: var(--theme-color1);
-        color: var(--theme-color1-text-color);
+        color: #fff;
         @include transition(all $hover-duration $hover-ease);
         &:before {
           display: inline-block;

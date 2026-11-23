@@ -78,7 +78,7 @@
   height: 100%;
 }
 .features-block-style7 .inner-block:hover .content-box .inner-box .text {
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }
 .features-block-style7 .inner-block .image {
   position: absolute;

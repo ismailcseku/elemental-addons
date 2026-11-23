@@ -36,8 +36,8 @@
   transform: rotate(-180deg);
 }
 .service-block-style1 .icon {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   display: flex !important;
   align-items: center;
   justify-content: center;
@@ -613,6 +613,11 @@
 .service-block-style3 .inner-block .active {
   background-color: var(--theme-color2);
 }
+.service-block-style3 .inner-block:hover .service-title, .service-block-style3 .inner-block:hover .service-title a,
+.service-block-style3 .inner-block .active .service-title,
+.service-block-style3 .inner-block .active .service-title a {
+  color: #fff;
+}
 .service-block-style3 .inner-block:hover .image-box .image,
 .service-block-style3 .inner-block .active .image-box .image {
   opacity: 1;
@@ -863,7 +868,7 @@
 .service-block-style4 .inner-box:hover .content-box .service-title a,
 .service-block-style4 .inner-box:hover .content-box .text,
 .service-block-style4 .inner-box:hover .content-box .btn-more {
-  color: var(--theme-color1-text-color);
+  color: #fff;
   transition: all 300ms ease;
 }
 .service-block-style4 .inner-box:hover .content-box .count {
@@ -1181,17 +1186,17 @@
   color: #fff;
 }
 .service-block-style6 .inner-block:hover .content .service-count {
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }
 .service-block-style6 .inner-block:hover .content .service-title {
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }
 .service-block-style6 .inner-block:hover .btn-more {
   background-color: #fff;
 }
 .service-block-style6 .inner-block:hover .btn-more .arrow {
   background-color: var(--theme-color2);
-  color: var(--theme-color2-text-color);
+  color: #fff;
 }
 .service-block-style6 .inner-block:hover .btn-more .line {
   background-color: rgba(51, 51, 51, 0.3215686275);
@@ -1263,7 +1268,7 @@
   margin-bottom: 24px;
 }
 .service-block-style6 .inner-block .content .service-title a:hover, .service-block-style6 .inner-block .content .service-title a:focus {
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }
 .service-block-style6 .inner-block .btn-more {
   background-color: #f5f5f5;
@@ -1327,7 +1332,7 @@
   display: inline-block;
   text-align: center;
   background-color: var(--theme-color1);
-  color: var(--theme-color1-text-color);
+  color: #fff;
   transition: all 0.9s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 .service-block-style6 .inner-block .btn-more .arrow:before {
@@ -1799,7 +1804,7 @@ body.rtl .service-block-style9::after {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  color: var(--theme-color1-text-color);
+  color: #fff;
   border-color: var(--theme-color1);
   background-color: var(--theme-color1);
 }
@@ -1848,7 +1853,7 @@ body.rtl .service-block-style9::after {
   line-height: 41px;
   text-align: center;
   transition: 0.3s;
-  color: var(--theme-color1-text-color);
+  color: #fff;
   background-color: var(--theme-color1);
 }
 @media (max-width: 1199.98px) {
@@ -2042,7 +2047,7 @@ body.rtl .service-block-style9::after {
   }
 }
 .service-block-style10 .inner-block .content-box .inner-content .service-details {
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }
 .service-block-style10 .inner-block .content-box .inner-content .tag-items {
   border-top: 1px solid rgba(var(--theme-color2-rgb), 0.1);
@@ -2063,7 +2068,7 @@ body.rtl .service-block-style9::after {
 .service-block-style10 .inner-block .content-box .inner-content .tag-items li {
   background-color: var(--theme-color2);
   border-radius: 20px;
-  color: var(--theme-color2-text-color);
+  color: #fff;
   display: inline-block;
   font-size: 16px;
   font-weight: 500;
@@ -2077,7 +2082,7 @@ body.rtl .service-block-style9::after {
   background-color: var(--theme-color1);
   border-radius: 50%;
   content: "\f123";
-  color: var(--theme-color1-text-color);
+  color: #fff;
   font-size: 8px;
   position: absolute;
   height: 14px;
@@ -2088,7 +2093,7 @@ body.rtl .service-block-style9::after {
   text-align: center;
 }
 .service-block-style10 .inner-block .content-box .inner-content .service-btn {
-  color: var(--theme-color1-text-color);
+  color: #fff;
   font-weight: 500;
   text-decoration: underline;
 }
@@ -2117,7 +2122,7 @@ body.rtl .service-block-style9::after {
   margin-bottom: 0;
 }
 .service-block-style10 .inner-block.active .title-box .arrow-icon {
-  color: var(--theme-color1-text-color);
+  color: #fff;
   transform: rotate(-90deg);
 }
 .service-block-style10 .inner-block.active .title-box .arrow-icon:before {
@@ -2206,8 +2211,8 @@ body.rtl .service-block-style9::after {
 }
 .service-block-style11 .content .service-title a:hover {
   background-size: 100% 2px;
-  color: var(--theme-color1-text-color);
-  background-image: linear-gradient(-180deg, var(--theme-color1-text-color) 0%, var(--theme-color1-text-color) 100%);
+  color: #fff;
+  background-image: linear-gradient(-180deg, #fff 0%, #fff 100%);
 }
 .service-block-style11 .thumb {
   max-width: 205px;
@@ -2264,10 +2269,10 @@ body.rtl .service-block-style9::after {
 }
 .service-block-style11.active .content .icon i,
 .service-block-style11.active .content .icon svg {
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }
 .service-block-style11.active .content .service-title a {
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }
 .service-block-style11.active .service-shape .shape-default {
   opacity: 0;
@@ -2590,7 +2595,7 @@ body.rtl .service-block-style9::after {
 }
 .service-block-style13 .inner-box:hover .content-box-hover .content-box .read-more {
   background-color: var(--theme-color1);
-  color: var(--theme-color1-text-color);
+  color: #fff;
   opacity: 1;
   transform: translateY(0px);
 }
@@ -2711,7 +2716,7 @@ body.rtl .service-block-style9::after {
 }
 .service-block-style13 .inner-box .content-box-hover .content-box .read-more {
   background-color: var(--theme-color1);
-  color: var(--theme-color1-text-color);
+  color: #fff;
   font-size: 20px;
   height: 56px;
   width: 56px;
@@ -3468,10 +3473,10 @@ body.rtl .service-block-style9::after {
 }
 .service-block-style17:hover .btn-style1 .icon {
   background-color: var(--theme-color1);
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }
 .service-block-style17:hover .btn-style1 .icon svg path {
-  stroke: var(--theme-color1-text-color) !important;
+  stroke: #fff !important;
 }
 .service-block-style17 .theme-btn {
   display: inline-flex;
@@ -3488,7 +3493,7 @@ body.rtl .service-block-style9::after {
   background-color: var(--theme-color1);
   border-radius: 30px;
   border: none;
-  color: var(--theme-color1-text-color);
+  color: #fff;
   overflow: hidden;
   padding-right: 30px;
   position: relative;
@@ -3496,14 +3501,14 @@ body.rtl .service-block-style9::after {
   z-index: 0;
 }
 .service-block-style17 .btn-style1 .btn-title {
-  color: var(--theme-color1-text-color);
+  color: #fff;
   font-weight: 500;
   letter-spacing: -0.03em;
   line-height: 54px;
   transition: all 300ms ease;
 }
 .service-block-style17 .btn-style1 .icon {
-  background-color: var(--theme-color1-text-color);
+  background-color: #fff;
   border: none;
   color: #000;
   border-radius: 50%;
@@ -3551,11 +3556,11 @@ body.rtl .service-block-style9::after {
 }
 .service-block-style17 .btn-style1:hover .icon {
   background-color: var(--theme-color1);
-  color: var(--theme-color1-text-color);
+  color: #fff;
   transform: rotate(0deg);
 }
 .service-block-style17 .btn-style1:hover .icon svg path {
-  stroke: var(--theme-color1-text-color) !important;
+  stroke: #fff !important;
 }
 
 .tm-sc-service .icon {
@@ -3611,10 +3616,10 @@ body.rtl .service-block-style9::after {
   transform: translateY(0px);
 }
 .service-block-style18 .inner-block:hover .content .service-count {
-  color: var(--theme-color2-text-color);
+  color: #fff;
 }
 .service-block-style18 .inner-block:hover .content .service-title {
-  color: var(--theme-color2-text-color);
+  color: #fff;
 }
 .service-block-style18 .inner-block .image {
   border-radius: 30px;
@@ -3734,7 +3739,7 @@ body.rtl .service-block-style9::after {
   display: inline-block;
   text-align: center;
   background-color: var(--theme-color1);
-  color: var(--theme-color1-text-color);
+  color: #fff;
   transition: all 300ms ease;
 }
 .service-block-style18 .inner-block .btn-more .arrow:before {
@@ -3925,7 +3930,7 @@ body.rtl .service-block-style9::after {
 .service-block-style19 .inner-block .content .title-box .btn-more svg path {
   transition: all 300ms ease;
   fill: none;
-  stroke: var(--theme-color1-text-color);
+  stroke: #fff;
 }
 .service-block-style19 .inner-block .content .title-box .btn-more:hover i,
 .service-block-style19 .inner-block .content .title-box .btn-more:hover svg {

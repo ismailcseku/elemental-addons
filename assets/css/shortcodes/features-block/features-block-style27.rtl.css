@@ -153,5 +153,5 @@
   transform: scaleX(1);
 }
 .features-block-style27:hover .content .service-icon i {
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }

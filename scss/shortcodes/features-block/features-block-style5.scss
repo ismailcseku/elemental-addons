@@ -9,7 +9,7 @@
     &:hover {
       .icon {
         background-color: var(--theme-color1);
-        color: var(--theme-color1-text-color);
+        color: #fff;
         i,
         img {
           @include transform(rotateY(360deg));

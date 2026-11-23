@@ -18,6 +18,11 @@
 .service-block-style3 .inner-block .active {
   background-color: var(--theme-color2);
 }
+.service-block-style3 .inner-block:hover .service-title, .service-block-style3 .inner-block:hover .service-title a,
+.service-block-style3 .inner-block .active .service-title,
+.service-block-style3 .inner-block .active .service-title a {
+  color: #fff;
+}
 .service-block-style3 .inner-block:hover .image-box .image,
 .service-block-style3 .inner-block .active .image-box .image {
   opacity: 1;

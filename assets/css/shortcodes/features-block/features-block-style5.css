@@ -36,7 +36,7 @@
 }
 .features-block-style5 .inner-box:hover .icon {
   background-color: var(--theme-color1);
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }
 .features-block-style5 .inner-box:hover .icon i,
 .features-block-style5 .inner-box:hover .icon img {

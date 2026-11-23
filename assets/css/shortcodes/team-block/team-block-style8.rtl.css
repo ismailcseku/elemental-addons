@@ -81,7 +81,7 @@
   border-color: var(--theme-color1);
 }
 .team-skin-style8 .content-box .inner-box .team-social li a:hover i {
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }
 .team-skin-style8 .content-box .inner-box .team-social li a i {
   color: #000;

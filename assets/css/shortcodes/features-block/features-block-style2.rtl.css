@@ -59,7 +59,7 @@
   border-radius: 10px;
   margin-bottom: 30px;
   background-color: var(--theme-color1);
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }
 .features-block-style2 .features-title {
   font-weight: 600;

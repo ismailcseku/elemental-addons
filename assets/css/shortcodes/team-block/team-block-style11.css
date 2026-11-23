@@ -29,7 +29,7 @@
 }
 .team-skin-style11 .inner-box:hover .plus {
   background-color: var(--theme-color1);
-  color: var(--theme-color1-text-color);
+  color: #fff;
   display: none;
 }
 .team-skin-style11 .inner-box:hover .team-share {
@@ -198,7 +198,7 @@
 }
 .team-skin-style11 .inner-box .team-social a {
   background-color: var(--theme-color2);
-  color: var(--theme-color2-text-color);
+  color: #fff;
   border-radius: 10px;
   position: relative;
   height: 48px;
@@ -228,7 +228,7 @@
   transition: all 300ms ease;
 }
 .team-skin-style11 .inner-box .team-social a:hover {
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }
 .team-skin-style11 .inner-box .team-social a:hover:before {
   transform: scale(1);

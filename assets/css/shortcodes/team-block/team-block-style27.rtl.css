@@ -131,7 +131,7 @@
   background-color: var(--theme-color1);
 }
 .team-skin-style27 .inner-block .team-items-hover .inner-box .bottom-box .team-social li:hover a {
-  color: var(--theme-color1-text-color);
+  color: #fff;
 }
 .team-skin-style27 .inner-block .team-items-hover .inner-box .bottom-box .team-social li a {
   color: #000000;
