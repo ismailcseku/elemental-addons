@@ -14,7 +14,9 @@ $testimonial_item['title_tag'] = $title_tag;
       <div class="rating">
         <?php elemental_addons_get_shortcode_template_part( 'part-star-rating', null, 'testimonial-block/tpl', $testimonial_item, false );?>
       </div>
-      <?php elemental_addons_get_shortcode_template_part( 'part-author-text', null, 'testimonial-block/tpl', $testimonial_item, false ); ?>
+      <div class="author-text">
+        <?php elemental_addons_get_shortcode_template_part( 'part-author-text', null, 'testimonial-block/tpl', $testimonial_item, false ); ?>
+      </div>
     </div>
     <div class="author-info">
       <div class="info-box">
