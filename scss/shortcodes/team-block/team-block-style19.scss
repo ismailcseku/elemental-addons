@@ -22,6 +22,7 @@
       }
       .team-share {
         background-color: var(--theme-color1);
+        color: #fff;
       }
       .info-box {
         &::before {
@@ -127,7 +128,8 @@
       display: block;
       transition: all 300ms ease;
       &:hover {
-        background-color: #df0e0e;
+        background-color: #fff;
+        color: var(--theme-color1);
       }
       &:first-child {
         margin-top: 0;

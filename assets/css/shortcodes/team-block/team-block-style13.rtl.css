@@ -99,6 +99,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  gap: 5px;
   transform: scaleY(0);
   transform-origin: top;
   z-index: 3;

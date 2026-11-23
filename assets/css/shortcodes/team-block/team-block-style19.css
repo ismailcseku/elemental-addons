@@ -24,6 +24,7 @@
 }
 .team-skin-style19 .inner-box:hover .team-share {
   background-color: var(--theme-color1);
+  color: #fff;
 }
 .team-skin-style19 .inner-box:hover .info-box::before {
   background-color: var(--theme-color1);
@@ -131,7 +132,8 @@
   transition: all 300ms ease;
 }
 .team-skin-style19 .team-social a:hover {
-  background-color: #df0e0e;
+  background-color: #fff;
+  color: var(--theme-color1);
 }
 .team-skin-style19 .team-social a:first-child {
   margin-top: 0;

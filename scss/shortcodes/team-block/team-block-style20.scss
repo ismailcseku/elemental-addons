@@ -114,6 +114,7 @@
   }
   .team-social {
     @include flex;
+    gap: 5px;
     position: absolute;
     bottom: 0;
     opacity: 0;

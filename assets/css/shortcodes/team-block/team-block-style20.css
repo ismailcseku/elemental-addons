@@ -146,6 +146,7 @@
 .team-skin-style20 .team-social {
   display: flex;
   align-items: center;
+  gap: 5px;
   position: absolute;
   bottom: 0;
   opacity: 0;

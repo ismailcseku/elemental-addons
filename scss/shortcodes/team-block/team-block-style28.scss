@@ -6,7 +6,7 @@
     list-style: none;
   }
   .inner-box {
-    background-color: #f7f8ed;
+    background-color: #444444;
     border-radius: 20px;
     mask-image: url(../../../images/current-theme/team-block-style28-bg-mask.png);
     mask-repeat: no-repeat;
@@ -88,7 +88,7 @@
     .team-social {
       position: absolute;
       right: 20px;
-      bottom: 60px;
+      bottom: 80px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
