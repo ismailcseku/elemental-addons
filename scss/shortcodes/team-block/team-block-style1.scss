@@ -77,7 +77,7 @@
       background-size: 200%;
       border-radius: 50%;
       bottom: 19px;
-      color: var(--theme-color3);
+      color: var(--theme-color1);
       cursor: pointer;
       font-size: 16px;
       height: 50px;
@@ -138,7 +138,7 @@
         background: var(--theme-color1);
         background-size: 200%;
         border-radius: 50%;
-        color: var(--theme-color3);
+        color: #fff;
         display: block;
         font-size: 16px;
         height: 50px;
@@ -194,6 +194,7 @@
 
       .team-share {
         background-color: var(--theme-color1);
+        color: #fff;
         [data-tm-layout="dark"] & {
           color: var(--theme-color3);
         }
