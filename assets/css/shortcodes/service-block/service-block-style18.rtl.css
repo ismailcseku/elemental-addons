@@ -53,7 +53,7 @@
 .service-block-style18 .inner-block:hover .content .service-count {
   color: #fff;
 }
-.service-block-style18 .inner-block:hover .content .service-title {
+.service-block-style18 .inner-block:hover .content .service-title, .service-block-style18 .inner-block:hover .content .service-title a {
   color: #fff;
 }
 .service-block-style18 .inner-block .image {

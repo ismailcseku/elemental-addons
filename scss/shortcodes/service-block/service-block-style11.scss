@@ -36,20 +36,6 @@
       font-size: 60px;
       line-height: 1;
       margin-bottom: 20px;
-
-      &::before {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        content: "";
-        width: 24px;
-        height: 24px;
-        background-color: var(--theme-color1);
-        border-radius: 50%;
-        z-index: -1;
-        transition: all 500ms ease;
-      }
       i,
       svg {
         display: inline-block;
@@ -72,11 +58,7 @@
         &:hover {
           background-size: 100% 2px;
           color: #fff;
-          background-image: linear-gradient(
-            180deg,
-            #fff 0%,
-            #fff 100%
-          );
+          background-image: linear-gradient(180deg, #fff 0%, #fff 100%);
         }
       }
     }
@@ -160,12 +142,12 @@
       .icon {
         i,
         svg {
-            color: #fff;
+          color: #fff;
         }
       }
       .service-title {
         a {
-            color: #fff;
+          color: #fff;
         }
       }
     }

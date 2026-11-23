@@ -29,7 +29,7 @@
     &::after {
       background-color: var(--theme-color3);
     }
-    .service-title {
+    .service-title, .service-title a {
       color: #fff;
     }
     .service-details {
@@ -72,7 +72,7 @@
   .service-title {
     margin-bottom: 15px;
     position: relative;
-    color: var(--theme-color3);
+    color: var(--theme-color2);
     display: inline;
     background-repeat: no-repeat;
     background-size:
@@ -94,6 +94,7 @@
       }
     }
     a {
+      color: var(--theme-color2);
       &:hover,
       &:focus {
         color: #fff;

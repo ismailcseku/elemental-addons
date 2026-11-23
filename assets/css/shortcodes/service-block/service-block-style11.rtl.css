@@ -42,19 +42,6 @@
   line-height: 1;
   margin-bottom: 20px;
 }
-.service-block-style11 .content .icon::before {
-  position: absolute;
-  bottom: 0;
-  right: 50%;
-  transform: translateX(50%);
-  content: "";
-  width: 24px;
-  height: 24px;
-  background-color: var(--theme-color1);
-  border-radius: 50%;
-  z-index: -1;
-  transition: all 500ms ease;
-}
 .service-block-style11 .content .icon i,
 .service-block-style11 .content .icon svg {
   display: inline-block;

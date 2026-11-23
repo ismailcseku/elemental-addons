@@ -40,18 +40,6 @@
   font-size: 60px;
   line-height: 1;
 }
-.service-block-style15 .content .icon::before {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  content: "";
-  width: 24px;
-  height: 24px;
-  background-color: var(--theme-color3);
-  border-radius: 50%;
-  z-index: -1;
-}
 .service-block-style15 .content .icon i,
 .service-block-style15 .content .icon svg {
   display: inline-block;

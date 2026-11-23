@@ -40,7 +40,7 @@ body.rtl .service-block-style9::after {
 .service-block-style9:hover::after {
   background-color: var(--theme-color3);
 }
-.service-block-style9:hover .service-title {
+.service-block-style9:hover .service-title, .service-block-style9:hover .service-title a {
   color: #fff;
 }
 .service-block-style9:hover .service-details .ks-service-list-box {
@@ -70,7 +70,7 @@ body.rtl .service-block-style9::after {
 .service-block-style9 .service-title {
   margin-bottom: 15px;
   position: relative;
-  color: var(--theme-color3);
+  color: var(--theme-color2);
   display: inline;
   background-repeat: no-repeat;
   background-size: 0% 1px, 0 1px;
@@ -85,6 +85,9 @@ body.rtl .service-block-style9::after {
   left: unset;
   right: 0;
   width: 100%;
+}
+.service-block-style9 .service-title a {
+  color: var(--theme-color2);
 }
 .service-block-style9 .service-title a:hover, .service-block-style9 .service-title a:focus {
   color: #fff;

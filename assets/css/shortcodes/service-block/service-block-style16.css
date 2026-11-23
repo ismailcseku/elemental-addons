@@ -16,6 +16,9 @@
 .service-block-style16 .inner-block:hover {
   background-color: var(--theme-color1);
 }
+.service-block-style16 .inner-block:hover .service-title, .service-block-style16 .inner-block:hover .service-title a {
+  color: #fff;
+}
 .service-block-style16 .inner-block:hover .image-box .image img:first-child {
   transform: translateX(0) scaleX(1);
   opacity: 1;
