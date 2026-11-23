@@ -17,9 +17,7 @@
           transform: rotateY(360deg);
           path {
             fill: #fff;
-            [data-tm-layout="dark"] & {
-              fill: #ffffff;
-            }
+
           }
         }
       }
@@ -28,14 +26,12 @@
           color: #fff;
           a {
             color: #fff;
-            [data-tm-layout="dark"] & {
-            }
+
           }
         }
         .features-details {
           color: #fff;
-          [data-tm-layout="dark"] & {
-          }
+
         }
       }
     }

@@ -42,9 +42,6 @@
 .features-block-style17.active .inner-box .feature-icon .svg-icon path, .features-block-style17:hover .inner-box .feature-icon .svg-icon path {
   fill: #fff;
 }
-[data-tm-layout=dark] .features-block-style17.active .inner-box .feature-icon .svg-icon path, [data-tm-layout=dark] .features-block-style17:hover .inner-box .feature-icon .svg-icon path {
-  fill: #ffffff;
-}
 .features-block-style17.active .inner-box .content-box .features-title, .features-block-style17:hover .inner-box .content-box .features-title {
   color: #fff;
 }

@@ -85,9 +85,7 @@
     }
     .btn-plain-text-with-arrow-right {
       position: relative;
-      [data-tm-layout="dark"] & {
-        color: #a1a1a1 !important;
-      }
+
       &::after {
         content: "\f118";
         color: #222;

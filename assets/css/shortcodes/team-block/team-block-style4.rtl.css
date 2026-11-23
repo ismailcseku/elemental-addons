@@ -49,11 +49,6 @@
   position: absolute;
   content: "";
   border: 2px solid #ebeef5;
-}
-[data-tm-layout=dark] .team-skin-style4 .image-box::before {
-  border-color: #1b1b1b;
-}
-.team-skin-style4 .image-box::before {
   border-radius: 5px;
   top: 0;
   right: 0;
@@ -88,11 +83,6 @@
   right: -80px;
   top: -110px;
   background: #ebeef5;
-}
-[data-tm-layout=dark] .team-skin-style4 .image-box .image::after {
-  background: #1b1b1b;
-}
-.team-skin-style4 .image-box .image::after {
   border-radius: 500%;
   position: absolute;
   -webkit-transform: scale(1);

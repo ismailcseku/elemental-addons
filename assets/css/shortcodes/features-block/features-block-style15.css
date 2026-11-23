@@ -47,11 +47,6 @@
   color: var(--theme-color1);
   display: inline-block;
   transform-origin: center;
-}
-[data-tm-layout=dark] .features-block-style15 .icon i {
-  color: #fff;
-}
-.features-block-style15 .icon i {
   transition: all 900ms ease;
 }
 .features-block-style15 .icon img,

@@ -41,9 +41,7 @@
       border-radius: 0 0 20px 20px;
       @include transition(all 600ms ease);
       .team-subtitle {
-        [data-tm-layout="dark"] & {
-          color: #fff;
-        }
+
         font-size: 14px;
         @include transition(all 300ms ease);
         margin: 0;
@@ -108,9 +106,7 @@
             text-align: center;
             background-color: var(--theme-color-white);
             color: var(--theme-color2);
-            [data-tm-layout="dark"] & {
-              color: #fff;
-            }
+
             border-radius: 50%;
           }
           i {
@@ -142,21 +138,15 @@
       .team-content {
         .team-title {
           color: var(--theme-color-white);
-          [data-tm-layout="dark"] & {
-            color: #fff;
-          }
+
           a {
             color: var(--theme-color-white);
-            [data-tm-layout="dark"] & {
-              color: #fff;
-            }
+
           }
         }
         .team-subtitle {
           color: var(--theme-color-white);
-          [data-tm-layout="dark"] & {
-            color: #fff;
-          }
+
         }
       }
       .socials {

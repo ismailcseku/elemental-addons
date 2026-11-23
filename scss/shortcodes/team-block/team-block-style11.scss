@@ -14,9 +14,7 @@
     overflow: hidden;
     padding: 40px 30px 30px;
     background-color: #f5f5f5;
-    [data-tm-layout="dark"] & {
-      background-color: #051a25;
-    }
+
     @include media-breakpoint-down(sm) {
       padding: 40px 15px 30px;
     }
@@ -25,16 +23,12 @@
         .team-title {
           a {
             color: var(--theme-color-white);
-            [data-tm-layout="dark"] & {
-              color: #fff;
-            }
+
           }
         }
         .team-subtitle {
           color: var(--theme-color-white);
-          [data-tm-layout="dark"] & {
-            color: #fff;
-          }
+
         }
       }
       .plus {
@@ -46,9 +40,7 @@
         @include transition(all 300ms ease);
         .icon {
           background-color: var(--theme-color1);
-          [data-tm-layout="dark"] & {
-            background-color: #0f2727;
-          }
+
           color: #fff;
           transform: rotate(-45deg);
         }
@@ -73,9 +65,7 @@
       z-index: 1;
       background: url(../../../images/current-theme/team-block-style11-vector.png) no-repeat;
       filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(200deg) brightness(107%) contrast(101%);
-      [data-tm-layout="dark"] & {
-        filter: brightness(0) saturate(100%) invert(11%) sepia(55%) saturate(855%) hue-rotate(157deg) brightness(92%) contrast(95%);
-      }
+
     }
     &:hover {
       .member-image {
@@ -155,16 +145,11 @@
       display: inline-block;
       background-color: #f5f5f5;
       cursor: pointer;
-      [data-tm-layout="dark"] & {
-        background-color: #051a25;
-        color: #fff;
-      }
+
     }
     .team-share {
       background-color: #fff;
-      [data-tm-layout="dark"] & {
-        background-color: #092837;
-      }
+
       border-radius: 0 0 0 30px;
       padding: 0 0 0 18px;
       position: absolute;
@@ -180,9 +165,7 @@
       //   width: 20px;
       //   background-color: transparent;
       //   box-shadow: 0 20px 0 0 #f6f5ef;
-      //   [data-tm-layout="dark"] & {
-      //     box-shadow: 0 20px 0 0 #f6f5ef;
-      //   }
+
       //   border-radius: 0 0 30px 0;
       //   right: 100%;
       //   z-index: -1;
@@ -197,10 +180,7 @@
         width: 20px;
         background-color: transparent;
         box-shadow: 0 17px 0 0 #fff;
-        [data-tm-layout="dark"] & {
-          box-shadow: 0 17px 0 0 #0f2727;
-          @include transition(all 300ms ease);
-        }
+
         border-radius: 0 0 30px 0;
         border-right: 0;
         z-index: -1;
@@ -252,10 +232,7 @@
         display: block;
         font-size: 16px;
         text-align: center;
-        [data-tm-layout="dark"] & {
-          background-color: var(--theme-color1);
-          color: var(--theme-color1-text-color);
-        }
+
         margin-bottom: 10px;
         @include transition(all 300ms ease);
         z-index: 1;

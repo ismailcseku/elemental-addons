@@ -75,11 +75,6 @@
   content: "";
   border-radius: 20px;
   border: 1px solid #c9c9c9;
-}
-[data-tm-layout=dark] .testimonial-block-style5::before {
-  border-color: rgba(255, 255, 255, 0.0705882353);
-}
-.testimonial-block-style5::before {
   background-color: var(--theme-color-white);
 }
 .testimonial-block-style5::before {
@@ -152,7 +147,4 @@
 }
 .testimonial-block-style5 .testimonial-content .author-text {
   color: #646464;
-}
-[data-tm-layout=dark] .testimonial-block-style5 .testimonial-content .author-text {
-  color: #fff;
 }

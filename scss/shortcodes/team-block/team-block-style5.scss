@@ -15,9 +15,7 @@
       bottom: 120px;
       width: 100%;
       background-color: #f4f5f8;
-      [data-tm-layout="dark"] & {
-        background-color: #1b1b1b;
-      }
+
       content: "";
       @include transition(all 400ms ease);
     }

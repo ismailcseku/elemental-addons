@@ -46,9 +46,7 @@
       position: absolute;
       content: "";
       border: 2px solid #ebeef5;
-      [data-tm-layout="dark"] & {
-        border-color: #1b1b1b;
-      }
+
       border-radius: 5px;
       top: 0;
       left: 0;
@@ -79,9 +77,7 @@
         left: -80px;
         top: -110px;
         background: #ebeef5;
-        [data-tm-layout="dark"] & {
-          background: #1b1b1b;
-        }
+
         border-radius: 500%;
         position: absolute;
         @include transform(scale(1));

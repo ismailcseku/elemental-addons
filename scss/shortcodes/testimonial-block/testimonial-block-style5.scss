@@ -23,9 +23,7 @@
     content: "";
     border-radius: 20px;
     border: 1px solid #c9c9c9;
-    [data-tm-layout="dark"] & {
-      border-color: #ffffff12;
-    }
+
     background-color: var(--theme-color-white);
     html.tm-dark-mode & {
     }
@@ -104,9 +102,7 @@
     }
     .author-text {
       color: #646464;
-      [data-tm-layout="dark"] & {
-        color: #fff;
-      }
+
     }
   }
 }

@@ -50,9 +50,6 @@
 
     .team-title {
       margin: 0;
-      [data-tm-layout="dark"] & {
-        color: var(--theme-color3);
-      }
 
       a {
         background-position: 0 95%;
@@ -90,9 +87,6 @@
       width: 50px;
       transition: all 300ms ease;
       z-index: 3;
-      [data-tm-layout="dark"] & {
-        color: #fff;
-      }
 
       @include media-breakpoint-down(sm) {
         width: 40px;
@@ -195,9 +189,7 @@
       .team-share {
         background-color: var(--theme-color1);
         color: #fff;
-        [data-tm-layout="dark"] & {
-          color: var(--theme-color3);
-        }
+
       }
     }
   }

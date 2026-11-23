@@ -19,9 +19,7 @@
       color: var(--theme-color1);
       display: inline-block;
       transform-origin: center;
-      [data-tm-layout="dark"] & {
-        color: #fff;
-      }
+
       transition: all 900ms ease;
     }
     img,

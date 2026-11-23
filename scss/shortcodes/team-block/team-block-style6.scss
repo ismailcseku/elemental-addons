@@ -23,9 +23,7 @@
     width: 90%;
     margin: -45px 0;
     @include transition(all 0.3s ease 0s);
-    [data-tm-layout="dark"] & {
-      background-color: #1b1b1b;
-    }
+
     .team-information {
       .team-subtitle {
         color: var(--theme-color1);

@@ -3,9 +3,7 @@
 
 .testimonial-block-style4 {
   background-color: #fff;
-  [data-tm-layout="dark"] & {
-    background-color: #00403f;
-  }
+
   border: 1px solid #c9c9c9;
   border-radius: 20px;
   display: inline-flex;
@@ -14,9 +12,7 @@
   margin-top: 15px;
   z-index: 1;
   // overflow: hidden;
-  [data-tm-layout="dark"] & {
-    border-color: transparent;
-  }
+
   @include media-breakpoint-down(xl) {
     display: block;
     text-align: center;
@@ -100,9 +96,7 @@
     }
     .quote-icon {
       background: var(--theme-color1);
-      [data-tm-layout="dark"] & {
-        color: var(--theme-color1);
-      }
+
       font-size: 30px;
       height: 67px;
       line-height: 67px;

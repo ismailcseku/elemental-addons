@@ -48,9 +48,6 @@
 .team-skin-style1 .team-content .team-title {
   margin: 0;
 }
-[data-tm-layout=dark] .team-skin-style1 .team-content .team-title {
-  color: var(--theme-color3);
-}
 .team-skin-style1 .team-content .team-title a {
   background-position: 100% 95%;
   background-repeat: no-repeat;
@@ -80,9 +77,6 @@
   width: 50px;
   transition: all 300ms ease;
   z-index: 3;
-}
-[data-tm-layout=dark] .team-skin-style1 .team-content .team-share {
-  color: #fff;
 }
 @media (max-width: 575.98px) {
   .team-skin-style1 .team-content .team-share {
@@ -174,7 +168,4 @@
 .team-skin-style1:hover .team-content .team-share {
   background-color: var(--theme-color1);
   color: #fff;
-}
-[data-tm-layout=dark] .team-skin-style1:hover .team-content .team-share {
-  color: var(--theme-color3);
 }

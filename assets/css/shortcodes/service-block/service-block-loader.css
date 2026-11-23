@@ -1037,9 +1037,6 @@
   letter-spacing: -0.32px;
   margin-bottom: 31px;
 }
-[data-tm-layout=dark] .service-block-style5 .inner-block .content-box .inner-box .service-details {
-  color: #8c8f94;
-}
 .service-block-style5 .inner-block .content-box .inner-box .link-btn-style {
   font-size: 18px;
   color: var(--theme-color1);
