@@ -60,10 +60,13 @@
       @include media-breakpoint-down(sm) {
         padding: 22px 15px 25px;
       }
-      .team-title {
+      .team-title, .team-title a {
         color: #fff;
         margin-bottom: 0;
         margin-top: 0;
+        &:hover {
+          color: #fff;
+        }
       }
       .team-subtitle {
         color: rgba(255, 255, 255, 0.65);

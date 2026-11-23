@@ -766,8 +766,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'label' => esc_html__( "Text Color", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .team-item .team-subtitle:hover' => 'color: {{VALUE}};',
-					'{{WRAPPER}} .team-item .team-subtitle a:hover' => 'color: {{VALUE}};'
+					'{{WRAPPER}} .team-item .team-subtitle:hover' => 'color: {{VALUE}};'
 				]
 			]
 		);
@@ -779,8 +778,7 @@ class TM_Elementor_TeamBlock extends Widget_Base {
 				'options' => elemental_addons_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .team-item .team-subtitle:hover' => 'color: var(--theme-color{{VALUE}});',
-					'{{WRAPPER}} .team-item .team-subtitle a:hover' => 'color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}} .team-item .team-subtitle:hover' => 'color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);
