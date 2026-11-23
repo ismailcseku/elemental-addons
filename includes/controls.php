@@ -489,44 +489,6 @@ if(!function_exists('elemental_addons_row_typography')){
 	}
 }
 
-if ( ! function_exists( 'elemental_addons_base_64_decode' ) ) {
-	/**
-	 * Decode a base64/urlencoded string for widget settings.
-	 *
-	 * @param string $code Encoded string.
-	 * @return string
-	 */
-	function elemental_addons_base_64_decode( $code ) {
-		if ( ! is_string( $code ) || '' === $code ) {
-			return '';
-		}
-		$decoded = base64_decode( $code, true );
-		if ( false === $decoded ) {
-			return '';
-		}
-		return urldecode( $decoded );
-	}
-}
-
-if ( ! function_exists( 'elemental_addons_base_64_decode_raw_html' ) ) {
-	/**
-	 * Decode a base64/urlencoded string and strip tags.
-	 *
-	 * @param string $code Encoded string.
-	 * @return string
-	 */
-	function elemental_addons_base_64_decode_raw_html( $code ) {
-		if ( ! is_string( $code ) || '' === $code ) {
-			return '';
-		}
-		$decoded = base64_decode( wp_strip_all_tags( $code ), true );
-		if ( false === $decoded ) {
-			return '';
-		}
-		return rawurldecode( $decoded );
-	}
-}
-
 if(!function_exists('elemental_addons_get_animation_type')) {
 	/**
 	 * Return animation type

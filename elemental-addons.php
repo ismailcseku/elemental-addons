@@ -2,10 +2,11 @@
 /**
  * Plugin Name:       Elemental Addons for Elementor
  * Plugin URI:        https://wordpress.org/plugins/elemental-addons/
- * Description:       Extra Elementor widgets for teams, services, pricing, galleries, testimonials, counters, and section titles.
- * Version:           1.0.01
+ * Description:       Extra Elementor widgets for teams, services, galleries, testimonials, features, and accordions.
+ * Version:           1.0.0
  * Requires at least: 6.2
  * Requires PHP:      7.4
+ * Requires Plugins:  elementor
  * Author:            KodeSolution
  * Author URI:        https://kodesolution.com
  * License:           GPL-2.0-or-later

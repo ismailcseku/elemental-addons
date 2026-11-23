@@ -19,19 +19,6 @@ if ( ! function_exists( 'elemental_addons_allowed_html' ) ) {
 		$allowed = wp_kses_allowed_html( 'post' );
 
 		$extra_tags = array(
-			'iframe' => array(
-				'src'             => true,
-				'width'           => true,
-				'height'          => true,
-				'frameborder'     => true,
-				'allow'           => true,
-				'allowfullscreen' => true,
-				'loading'         => true,
-				'title'           => true,
-				'class'           => true,
-				'id'              => true,
-				'style'           => true,
-			),
 			'svg'    => array(
 				'class'           => true,
 				'aria-hidden'     => true,

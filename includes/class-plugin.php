@@ -167,9 +167,6 @@ if ( ! class_exists( 'Elemental_Addons_Plugin' ) ) {
 			wp_register_style( 'lightgallery', ELEMENTAL_ADDONS_ASSETS_URI . '/js/plugins/lightgallery/css/lightgallery.min.css', array(), '1.6.10' );
 			wp_register_script( 'jquery-mousewheel', ELEMENTAL_ADDONS_ASSETS_URI . '/js/plugins/jquery.mousewheel.min.js', array( 'jquery' ), '3.1.13', true );
 			wp_register_script( 'mediko-custom-lightgallery', ELEMENTAL_ADDONS_ASSETS_URI . '/js/custom-lightgallery.js', array( 'jquery', 'lightgallery' ), $ver, true );
-			wp_register_script( 'matchHeight', ELEMENTAL_ADDONS_ASSETS_URI . '/js/plugins/jquery.matchHeight-min.js', array( 'jquery' ), '0.7.2', true );
-			wp_register_script( 'jquery-parallax-scroll', ELEMENTAL_ADDONS_ASSETS_URI . '/js/plugins/jquery.parallax-scroll.js', array( 'jquery' ), $ver, true );
-
 			wp_register_script(
 				'tm-accordion',
 				ELEMENTAL_ADDONS_ASSETS_URI . '/js/widgets/accordion.js',

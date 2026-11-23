@@ -90,7 +90,7 @@ if ( ! class_exists( 'Elemental_Addons_Admin' ) ) {
 						<p class="elemental-about__eyebrow"><?php esc_html_e( 'Elementor Addon', 'elemental-addons' ); ?></p>
 						<h1><?php esc_html_e( 'Elemental Addons for Elementor', 'elemental-addons' ); ?></h1>
 						<p class="elemental-about__lead">
-							<?php esc_html_e( 'Extra Elementor widgets for teams, services, pricing, galleries, testimonials, counters, and more. Works with any theme, including Hello Elementor.', 'elemental-addons' ); ?>
+							<?php esc_html_e( 'Extra Elementor widgets for teams, services, galleries, testimonials, features, and accordions. Works with any theme, including Hello Elementor.', 'elemental-addons' ); ?>
 						</p>
 						<p class="elemental-about__meta">
 							<span><?php echo esc_html( sprintf( __( 'Version %s', 'elemental-addons' ), ELEMENTAL_ADDONS_VERSION ) ); ?></span>

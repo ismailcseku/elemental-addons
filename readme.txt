@@ -14,6 +14,8 @@ Extra Elementor widgets for teams, services, galleries, testimonials, features, 
 
 Elemental Addons for Elementor adds content widgets to the Elementor editor. Each widget stores its own text and images, so it works on any theme, including Hello Elementor.
 
+Elementor is a trademark of Elementor Ltd. This plugin is not affiliated with, endorsed by, or sponsored by Elementor Ltd.
+
 Widgets included:
 
 * Team Block
@@ -23,11 +25,14 @@ Widgets included:
 * Features Block
 * Accordion
 
-LightGallery 1.6.10 is included under GPLv3 for the image gallery lightbox.
+Third-party libraries included with this plugin:
 
-Isotope 3.0.6 (https://isotope.metafizzy.co) by Metafizzy is included under GPLv3 for grid and masonry layouts.
+* LightGallery 1.6.10, GPLv3, for the image gallery lightbox.
+* Isotope 3.0.6 (https://isotope.metafizzy.co) by Metafizzy, GPLv3, for grid and masonry layouts.
+* Swiper 8.4.7, MIT, for carousels.
+* jQuery Mousewheel 3.1.13, MIT, for the gallery lightbox.
 
-Widget type IDs match the KodeSolution Evolta Elementor widgets (tm-ele-*), so sections that only use supported widgets can be copied between sites. For full layouts that include unsupported widgets, use **Elemental Addons → Layout Converter**.
+Saved Elementor sections that use these widgets can be copied between sites. **Elemental Addons → Layout Converter** turns exported Elementor JSON into a layout this plugin can import. Widgets this plugin does not include are replaced or removed.
 
 Enable or disable individual widgets from **Elemental Addons → Widgets Manager**.
 

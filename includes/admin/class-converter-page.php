@@ -1,6 +1,6 @@
 <?php
 /**
- * Admin UI: Evolta → Elemental layout converter.
+ * Admin UI: Elementor JSON layout converter.
  *
  * @package Elemental_Addons
  */
@@ -56,12 +56,12 @@ if ( ! class_exists( 'Elemental_Addons_Converter_Page' ) ) {
 			?>
 			<div class="wrap">
 				<h1><?php echo esc_html__( 'Elemental Layout Converter', 'elemental-addons' ); ?></h1>
-				<p><?php echo esc_html__( 'Paste or upload Elementor JSON exported from an Evolta / mascot-core site. Unsupported widgets are converted so the layout can be imported into Hello Elementor + Elemental Addons.', 'elemental-addons' ); ?></p>
+				<p><?php echo esc_html__( 'Paste or upload exported Elementor JSON. Widgets this plugin does not include are converted so the layout can be imported with Hello Elementor and Elemental Addons.', 'elemental-addons' ); ?></p>
 
 				<div class="card" style="max-width:960px;padding:16px 20px;margin-top:16px;">
 					<h2 style="margin-top:0;"><?php echo esc_html__( 'How to use', 'elemental-addons' ); ?></h2>
 					<ol>
-						<li><?php echo esc_html__( 'On the Evolta site: in Elementor, save the section/page as a Template, then Templates → Saved Templates → Export (JSON).', 'elemental-addons' ); ?></li>
+						<li><?php echo esc_html__( 'In Elementor, save the section or page as a template, then Templates → Saved Templates → Export (JSON).', 'elemental-addons' ); ?></li>
 						<li><?php echo esc_html__( 'Upload that JSON here (or paste it). Choose what to do with widgets not included in Elemental Addons.', 'elemental-addons' ); ?></li>
 						<li><?php echo esc_html__( 'Download the converted JSON and import it via Elementor → Templates → Import, or save it directly as a library template.', 'elemental-addons' ); ?></li>
 						<li><?php echo esc_html__( 'Shortcut: for a single widget/section that only uses supported widgets (same tm-ele-* IDs), Elementor Ctrl+C / Ctrl+V between sites should work after a hard refresh.', 'elemental-addons' ); ?></li>
