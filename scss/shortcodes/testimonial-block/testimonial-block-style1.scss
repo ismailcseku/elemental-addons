@@ -1,6 +1,12 @@
 @import "../../bootstrap-loader";
 @import "testimonial-common";
+
+.tm-testimonial-carousel:has(.testimonial-block-style1) .swiper-container-inner {
+  overflow: hidden;
+}
+
 .testimonial-block-style1 {
+  overflow: hidden;
   @include media-breakpoint-down(xxl) {
     margin-top: 40px;
   }

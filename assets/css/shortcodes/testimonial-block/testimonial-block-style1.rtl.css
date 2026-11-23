@@ -52,6 +52,13 @@
   transition: all 0.3s ease-in-out;
 }
 
+.tm-testimonial-carousel:has(.testimonial-block-style1) .swiper-container-inner {
+  overflow: hidden;
+}
+
+.testimonial-block-style1 {
+  overflow: hidden;
+}
 @media (max-width: 1399.98px) {
   .testimonial-block-style1 {
     margin-top: 40px;
