@@ -624,7 +624,7 @@ class TM_Elementor_TestimonialBlock extends Widget_Base {
 				'label' => esc_html__( "Text Color", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .tm-sc-testimonials .testimonial-item .inner-box .testimonial-position' => 'color: {{VALUE}};'
+					'{{WRAPPER}} .tm-sc-testimonials .testimonial-item .inner-box .testimonial-designation' => 'color: {{VALUE}};'
 				]
 			]
 		);
@@ -636,7 +636,7 @@ class TM_Elementor_TestimonialBlock extends Widget_Base {
 				'options' => elemental_addons_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .tm-sc-testimonials .testimonial-item .inner-box .testimonial-position' => 'color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}} .tm-sc-testimonials .testimonial-item .inner-box .testimonial-designation' => 'color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);
@@ -645,7 +645,7 @@ class TM_Elementor_TestimonialBlock extends Widget_Base {
 			[
 				'name' => 'author_position_typography',
 				'label' => esc_html__( 'Typography', 'elemental-addons' ),
-				'selector' => '{{WRAPPER}} .tm-sc-testimonials .testimonial-item .inner-box .testimonial-position',
+				'selector' => '{{WRAPPER}} .tm-sc-testimonials .testimonial-item .inner-box .testimonial-designation',
 			]
 		);
 		$this->add_responsive_control(
@@ -655,7 +655,7 @@ class TM_Elementor_TestimonialBlock extends Widget_Base {
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .tm-sc-testimonials .testimonial-item .inner-box .testimonial-position' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .tm-sc-testimonials .testimonial-item .inner-box .testimonial-designation' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
 		);
@@ -666,7 +666,7 @@ class TM_Elementor_TestimonialBlock extends Widget_Base {
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .tm-sc-testimonials .testimonial-item .inner-box .testimonial-position' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .tm-sc-testimonials .testimonial-item .inner-box .testimonial-designation' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
 		);
@@ -684,7 +684,7 @@ class TM_Elementor_TestimonialBlock extends Widget_Base {
 				'label' => esc_html__( "Text Color", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .tm-sc-testimonials .testimonial-item:hover .inner-box .testimonial-position' => 'color: {{VALUE}};'
+					'{{WRAPPER}} .tm-sc-testimonials .testimonial-item:hover .inner-box .testimonial-designation' => 'color: {{VALUE}};'
 				]
 			]
 		);
@@ -696,7 +696,7 @@ class TM_Elementor_TestimonialBlock extends Widget_Base {
 				'options' => elemental_addons_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .tm-sc-testimonials .testimonial-item:hover .inner-box .testimonial-position' => 'color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}} .tm-sc-testimonials .testimonial-item:hover .inner-box .testimonial-designation' => 'color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);
@@ -714,8 +714,8 @@ class TM_Elementor_TestimonialBlock extends Widget_Base {
 				'label' => esc_html__( "Text Color", 'elemental-addons' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .tm-sc-testimonials .testimonial-item .inner-box .testimonial-position:hover' => 'color: {{VALUE}};',
-					'{{WRAPPER}} .tm-sc-testimonials .testimonial-item .inner-box .testimonial-position a:hover' => 'color: {{VALUE}};'
+					'{{WRAPPER}} .tm-sc-testimonials .testimonial-item .inner-box .testimonial-designation:hover' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .tm-sc-testimonials .testimonial-item .inner-box .testimonial-designation a:hover' => 'color: {{VALUE}};'
 				]
 			]
 		);
@@ -727,8 +727,8 @@ class TM_Elementor_TestimonialBlock extends Widget_Base {
 				'options' => elemental_addons_theme_color_list(),
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .tm-sc-testimonials .testimonial-item .inner-box .testimonial-position:hover' => 'color: var(--theme-color{{VALUE}});',
-					'{{WRAPPER}} .tm-sc-testimonials .testimonial-item .inner-box .testimonial-position a:hover' => 'color: var(--theme-color{{VALUE}});'
+					'{{WRAPPER}} .tm-sc-testimonials .testimonial-item .inner-box .testimonial-designation:hover' => 'color: var(--theme-color{{VALUE}});',
+					'{{WRAPPER}} .tm-sc-testimonials .testimonial-item .inner-box .testimonial-designation a:hover' => 'color: var(--theme-color{{VALUE}});'
 				],
 			]
 		);

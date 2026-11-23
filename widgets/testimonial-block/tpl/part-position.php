@@ -1,6 +1,6 @@
 <?php if ( $settings['show_author_position'] == 'yes' ) { ?>
 	<?php if( !empty( $position ) ) : ?>
-	<<?php echo esc_attr( $position_tag );?> class="testimonial-position">
+	<<?php echo esc_attr( $position_tag );?> class="testimonial-designation">
 		<?php if( !empty( $url ) ): ?>
 		<a
 			<?php if ( ! empty( $target ) ) : ?> target="_blank"<?php endif; ?>

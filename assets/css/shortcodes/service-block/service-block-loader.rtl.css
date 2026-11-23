@@ -1717,7 +1717,7 @@ body.rtl .service-block-style9::after {
 .service-block-style9:hover::after {
   background-color: var(--theme-color3);
 }
-.service-block-style9:hover .service-title {
+.service-block-style9:hover .service-title, .service-block-style9:hover .service-title a {
   color: #fff;
 }
 .service-block-style9:hover .service-details .ks-service-list-box {
@@ -1747,7 +1747,7 @@ body.rtl .service-block-style9::after {
 .service-block-style9 .service-title {
   margin-bottom: 15px;
   position: relative;
-  color: var(--theme-color3);
+  color: var(--theme-color2);
   display: inline;
   background-repeat: no-repeat;
   background-size: 0% 1px, 0 1px;
@@ -1762,6 +1762,9 @@ body.rtl .service-block-style9::after {
   left: unset;
   right: 0;
   width: 100%;
+}
+.service-block-style9 .service-title a {
+  color: var(--theme-color2);
 }
 .service-block-style9 .service-title a:hover, .service-block-style9 .service-title a:focus {
   color: #fff;
@@ -2057,6 +2060,7 @@ body.rtl .service-block-style9::after {
   margin-bottom: 31px;
   margin-top: 35px;
   padding-top: 40px;
+  padding-right: 0;
 }
 @media (max-width: 1199.98px) {
   .service-block-style10 .inner-block .content-box .inner-content .tag-items {
@@ -2178,19 +2182,6 @@ body.rtl .service-block-style9::after {
   font-size: 60px;
   line-height: 1;
   margin-bottom: 20px;
-}
-.service-block-style11 .content .icon::before {
-  position: absolute;
-  bottom: 0;
-  right: 50%;
-  transform: translateX(50%);
-  content: "";
-  width: 24px;
-  height: 24px;
-  background-color: var(--theme-color1);
-  border-radius: 50%;
-  z-index: -1;
-  transition: all 500ms ease;
 }
 .service-block-style11 .content .icon i,
 .service-block-style11 .content .icon svg {
@@ -2812,7 +2803,7 @@ body.rtl .service-block-style9::after {
 }
 .service-block-style14 .inner-block:hover .icon-block {
   background-color: var(--theme-color3);
-  color: var(--theme-color1);
+  color: #fff;
 }
 .service-block-style14 .inner-block:hover .icon-block i,
 .service-block-style14 .inner-block:hover .icon-block img {
@@ -2820,11 +2811,11 @@ body.rtl .service-block-style9::after {
 }
 .service-block-style14 .inner-block:hover .btn-more {
   background: var(--theme-color3);
-  color: var(--theme-color1);
+  color: #fff;
 }
 .service-block-style14 .inner-block:hover .btn-more .btn-icon {
   background-color: var(--theme-color1);
-  color: var(--theme-color3);
+  color: #fff;
 }
 .service-block-style14 .inner-block .icon-block {
   line-height: 1;
@@ -2965,18 +2956,6 @@ body.rtl .service-block-style9::after {
   z-index: 1;
   font-size: 60px;
   line-height: 1;
-}
-.service-block-style15 .content .icon::before {
-  position: absolute;
-  bottom: 0;
-  right: 50%;
-  transform: translateX(50%);
-  content: "";
-  width: 24px;
-  height: 24px;
-  background-color: var(--theme-color3);
-  border-radius: 50%;
-  z-index: -1;
 }
 .service-block-style15 .content .icon i,
 .service-block-style15 .content .icon svg {
@@ -3179,6 +3158,9 @@ body.rtl .service-block-style9::after {
 }
 .service-block-style16 .inner-block:hover {
   background-color: var(--theme-color1);
+}
+.service-block-style16 .inner-block:hover .service-title, .service-block-style16 .inner-block:hover .service-title a {
+  color: #fff;
 }
 .service-block-style16 .inner-block:hover .image-box .image img:first-child {
   transform: translateX(0) scaleX(1);
@@ -3618,7 +3600,7 @@ body.rtl .service-block-style9::after {
 .service-block-style18 .inner-block:hover .content .service-count {
   color: #fff;
 }
-.service-block-style18 .inner-block:hover .content .service-title {
+.service-block-style18 .inner-block:hover .content .service-title, .service-block-style18 .inner-block:hover .content .service-title a {
   color: #fff;
 }
 .service-block-style18 .inner-block .image {
