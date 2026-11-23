@@ -60,7 +60,7 @@
         }
         .star-rating {
           align-items: center;
-          color: var(--theme-color2);
+          color: #ffc107;
           display: inline-flex;
           gap: 4px;
           justify-content: center;
@@ -68,13 +68,13 @@
           font-size: 16px;
           margin: 0;
           &::before {
-            color: var(--theme-color2);
+            color: #d3ced2;
           }
           span {
             width: 100%;
             &::before {
               font-weight: 600;
-              color: var(--theme-color2);
+              color: #ffc107;
             }
           }
         }

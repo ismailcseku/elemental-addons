@@ -41,7 +41,7 @@
   overflow: visible;
 }
 .tm-sc-testimonials .star-rating span:before {
-  color: var(--theme-color2);
+  color: #ffc107;
 }
 .tm-sc-testimonials .author-text,
 .tm-sc-testimonials .name,

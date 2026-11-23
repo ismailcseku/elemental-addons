@@ -143,7 +143,7 @@
   font-weight: 600;
   margin-bottom: 10px;
   width: calc(5.6em + 20px);
-  color: #ffc65e !important;
+  color: #ffc107 !important;
   &::before {
       letter-spacing: 5px;
     }
@@ -151,7 +151,7 @@
     display: inline-flex;
   }
   span::before {
-    color: #ffc65e !important;
+    color: #ffc107 !important;
     font-weight: 600;
     letter-spacing: 5px;
   }

@@ -106,7 +106,7 @@
             margin: 0;
             span {
               &:before {
-                color: var(--theme-color1);
+                color: #ffc107;
                 font-weight: 600;
                 margin-right: 4px;
                 @include media-breakpoint-down(sm) {

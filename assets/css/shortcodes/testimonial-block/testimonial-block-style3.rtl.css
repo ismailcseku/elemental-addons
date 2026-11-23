@@ -29,7 +29,7 @@
   content: "\f005\f005\f005\f005\f005";
   font-family: "Font Awesome 5 Free";
   font-weight: 500;
-  color: #f1c40f;
+  color: #ffc107;
   top: 0;
   position: absolute;
   right: 0;
@@ -41,7 +41,7 @@
   overflow: visible;
 }
 .tm-sc-testimonials .star-rating span:before {
-  color: var(--theme-color2);
+  color: #ffc107;
 }
 .tm-sc-testimonials .author-text,
 .tm-sc-testimonials .name,
@@ -150,18 +150,18 @@
 }
 .testimonial-block-style3 .inner-box .content-box .rating .star-rating {
   margin: 0;
-  color: var(--theme-color1);
+  color: #ffc107;
   font-size: 20px;
   margin-top: 20px;
   width: calc(5.6em + 40px);
 }
 .testimonial-block-style3 .inner-box .content-box .rating .star-rating::before {
-  color: rgba(var(--theme-color1-rgb), 0.5);
+  color: #d3ced2;
   font-weight: 400;
   letter-spacing: 10px;
 }
 .testimonial-block-style3 .inner-box .content-box .rating .star-rating span::before {
-  color: var(--theme-color1);
+  color: #ffc107;
   font-weight: 600;
   letter-spacing: 10px;
 }

@@ -19,7 +19,7 @@ $video_url = !empty($testimonial_item['video_url']) ? $testimonial_item['video_u
 		<?php endif; ?>
 	  </div>
 		<?php elemental_addons_get_shortcode_template_part( 'part-title', null, 'testimonial-block/tpl', $testimonial_item, false );?>
-		<div class="text"><?php elemental_addons_get_shortcode_template_part( 'part-author-text', null, 'testimonial-block/tpl', $testimonial_item, false );?></div>
+		<div class="text author-text"><?php elemental_addons_get_shortcode_template_part( 'part-author-text', null, 'testimonial-block/tpl', $testimonial_item, false );?></div>
 	  <div class="info-box">
 		<div class="user-info">
 		  <?php elemental_addons_get_shortcode_template_part( 'part-name', null, 'testimonial-block/tpl', $testimonial_item, false );?>

@@ -19,7 +19,7 @@ $testimonial_item['title_tag'] = $title_tag;
 			<img src="<?php echo esc_url( ELEMENTAL_ADDONS_ASSETS_URI . '/images/icons/quote.png' ); ?>" alt="<?php esc_attr_e( 'Quote Icon', 'elemental-addons' ); ?>">
 		<?php endif; ?>
 	</div>
-	<p>
+	<p class="author-text">
 		<?php elemental_addons_get_shortcode_template_part( 'part-author-text', null, 'testimonial-block/tpl', $testimonial_item, false ); ?>
 	</p>
 	<div class="client-info">

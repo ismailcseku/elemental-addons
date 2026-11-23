@@ -92,17 +92,17 @@
         margin-bottom: 60px;
         .star-rating {
           margin: 0;
-          color: var(--theme-color1);
+          color: #ffc107;
           font-size: 20px;
           margin-top: 20px;
           width: calc(5.6em + 40px);
           &::before {
-            color: rgba(var(--theme-color1-rgb), 0.5);
+            color: #d3ced2;
             font-weight: 400;
             letter-spacing: 10px;
           }
           span::before {
-            color: var(--theme-color1);
+            color: #ffc107;
             font-weight: 600;
             letter-spacing: 10px;
           }
