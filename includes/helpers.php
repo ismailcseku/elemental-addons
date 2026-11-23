@@ -734,34 +734,6 @@ if(!function_exists('elemental_addons_get_shortcode_snippet')) {
 
 
 
-if(!function_exists('elemental_addons_get_wpcf7_list')) {
-    /**
-     * Get Contact Form 7 [ if exists ]
-     */
-    function elemental_addons_get_wpcf7_list()
-    {
-        $options = array();
-
-        if (function_exists('wpcf7')) {
-            $wpcf7_form_list = get_posts(array(
-                'post_type' => 'wpcf7_contact_form',
-                'showposts' => 999,
-            ));
-            $options[0] = esc_html__('Select a Contact Form', 'elemental-addons');
-            if (!empty($wpcf7_form_list) && !is_wp_error($wpcf7_form_list)) {
-                foreach ($wpcf7_form_list as $post) {
-                    $options[$post->ID] = $post->post_title;
-                }
-            } else {
-                $options[0] = esc_html__('Create a Form First', 'elemental-addons');
-            }
-        }
-        return $options;
-    }
-}
-
-
-
 if(!function_exists('elemental_addons_isotope_gutter_list_elementor')) {
 	/**
 	 * Masorny Gutter list Elementor

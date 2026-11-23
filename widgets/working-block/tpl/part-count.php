@@ -1,1 +1,0 @@
-<?php echo esc_html( $count ); ?>

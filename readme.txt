@@ -8,7 +8,7 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Extra Elementor widgets for teams, services, pricing, galleries, testimonials, counters, and section titles.
+Extra Elementor widgets for teams, services, galleries, testimonials, features, and accordions.
 
 == Description ==
 
@@ -19,29 +19,9 @@ Widgets included:
 * Team Block
 * Testimonial Block
 * Service Block
-* Pricing Block
 * Image Gallery
 * Features Block
-* Counter Block
 * Accordion
-* Animated Layers
-* Clients Logo
-* Contact Form 7
-* Floating Objects
-* Funfact Counter
-* Progress Bar
-* Section Title
-* Text Editor
-* Text Editor Advanced
-* Theme Button
-* List
-* Icon Box
-* Working Process Block
-* Swiper Carousel Arrow
-* Pricing Plan
-* Blog / News Grid
-
-Contact Form 7 is optional. The Contact Form widget shows a notice in the editor when Contact Form 7 is not active.
 
 LightGallery 1.6.10 is included under GPLv3 for the image gallery lightbox.
 
@@ -62,10 +42,6 @@ Enable or disable individual widgets from **Elemental Addons → Widgets Manager
 = Does this plugin require a theme? =
 
 No. It runs with Elementor on any theme.
-
-= Does the contact form widget require another plugin? =
-
-Yes. Install the free Contact Form 7 plugin to use the Contact Form widget. The other widgets work without it.
 
 == Changelog ==
 

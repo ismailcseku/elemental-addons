@@ -21,24 +21,13 @@ if ( ! class_exists( 'Elemental_Addons_Layout_Converter' ) ) {
 		public static function type_map() {
 			return array(
 				// Keep identical Evolta IDs; add aliases only if needed later.
-				'elemental-text-editor'            => 'tm-ele-text-editor',
-				'elemental-text-editor-advanced'   => 'tm-ele-text-editor-advanced',
 				'elemental-team-block'             => 'tm-ele-team-block',
 				'elemental-testimonial-block'      => 'tm-ele-testimonial-block',
 				'elemental-service-block'          => 'tm-ele-service-block',
-				'elemental-pricing-block'          => 'tm-ele-pricing-block',
 				'elemental-image-gallery'          => 'tm-ele-image-gallery2',
 				'elemental-image-gallery2'         => 'tm-ele-image-gallery2',
 				'elemental-features-block'         => 'tm-ele-features-block',
-				'elemental-counter-block'          => 'tm-ele-counter-block',
 				'elemental-accordion'              => 'tm-ele-accordion',
-				'elemental-animated-layers'        => 'tm-ele-animated-layers',
-				'elemental-clients-logo'           => 'tm-ele-clients-logo',
-				'elemental-contact-form-7'         => 'tm-ele-contact-form-7',
-				'elemental-floating-objects'       => 'tm-ele-floating-objects',
-				'elemental-funfact-counter'        => 'tm-ele-funfact-counter',
-				'elemental-progress-bar'           => 'tm-ele-progress-bar',
-				'elemental-section-title'          => 'tm-ele-section-title',
 			);
 		}
 
